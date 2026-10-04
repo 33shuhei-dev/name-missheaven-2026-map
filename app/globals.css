@@ -319,7 +319,7 @@ p {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 16px;
+  padding: 16px 12px;
 }
 .hero h1 {
   font-size: 1.375rem;
@@ -361,7 +361,8 @@ p {
 .search-box button {
   flex: none;
   min-height: 48px;
-  min-width: 64px;
+  min-width: 56px;
+  padding: 0 14px;
   border: none;
   border-radius: 10px;
   background: var(--primary);
@@ -448,8 +449,10 @@ p {
   font-size: 0.75rem;
   color: var(--muted);
   line-height: 1.4;
+  white-space: nowrap;
 }
 .stats dd {
+  white-space: nowrap;
   margin: 2px 0 0;
   font-size: 1.375rem;
   font-weight: 700;

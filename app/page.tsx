@@ -37,7 +37,7 @@ export default function HomePage() {
             <dd>{stats.categoryNameCount}</dd>
           </div>
           <div>
-            <dt>情報がある都道府県</dt>
+            <dt>掲載都道府県</dt>
             <dd>
               {stats.prefectureWithDataCount}
               <small> / {stats.prefectureTotal}</small>
@@ -65,7 +65,7 @@ export default function HomePage() {
         <p className="hint">
           {stats.lastCheckedAt ? `最終確認日：${stats.lastCheckedAt}` : "確認日が登録された情報はまだありません。"}
           {" "}
-          部門は「都道府県・エリア・部門名」の組み合わせ単位で数えています。
+          掲載都道府県は情報が1件以上ある都道府県の数、部門は「都道府県・エリア・部門名」の組み合わせ単位で数えています。
         </p>
       </section>
 

@@ -51,6 +51,8 @@ export interface PrefectureView {
   areas: AreaView[];
   divisionCount: number;
   recordCount: number;
+  /** この都道府県の集計値（情報件数・部門数・出場者数・店舗数・確認状態別 等） */
+  summary: Summary;
 }
 
 export interface CategoryGroup {
@@ -60,17 +62,29 @@ export interface CategoryGroup {
   names: { name: string; divisions: Division[] }[];
 }
 
-export interface Stats {
+/**
+ * 任意のレコード集合の集計値。全国・都道府県・エリアなど、どの単位にも同じ関数で使う。
+ * （将来の全国マップの濃淡・概要パネルも、この値を都道府県ごとに使う想定）
+ */
+export interface Summary {
   recordCount: number;
   byDataset: Record<Dataset, number>;
   byConfidence: Record<Confidence, number>;
+  /** 部門数（都道府県 × エリア × 部門名 の組み合わせ） */
   divisionCount: number;
+  /** 部門名（原文）の種類数 */
   categoryNameCount: number;
-  prefectureWithDataCount: number;
-  prefectureTotal: number;
+  /** エリア数（エリア名が判明しているもののみ） */
+  areaCount: number;
   entrantCount: number;
   storeCount: number;
   lastCheckedAt: string | null;
+}
+
+/** 全国の掲載状況 */
+export interface Stats extends Summary {
+  prefectureWithDataCount: number;
+  prefectureTotal: number;
 }
 
 export interface SiteModel {
@@ -116,6 +130,38 @@ function sortRecords(list: DataRecord[]): DataRecord[] {
 
 function prefOrder(slug: string): number {
   return PREFECTURES.find((p) => p.slug === slug)?.code ?? 999;
+}
+
+export function summarize(records: readonly DataRecord[]): Summary {
+  const count = (f: (r: DataRecord) => string | undefined) =>
+    new Set(records.map(f).filter((v) => v !== undefined && v !== "")).size;
+  const checked = records
+    .map((r) => r.checkedAt)
+    .filter((d): d is string => !!d)
+    .sort();
+  return {
+    recordCount: records.length,
+    byDataset: {
+      verified: records.filter((r) => r.dataset === "verified").length,
+      candidate: records.filter((r) => r.dataset === "candidate").length,
+    },
+    byConfidence: {
+      confirmed: records.filter((r) => r.confidence === "confirmed").length,
+      probable: records.filter((r) => r.confidence === "probable").length,
+      unverified: records.filter((r) => r.confidence === "unverified").length,
+    },
+    divisionCount: count((r) =>
+      r.categoryOriginal ? divisionIdOf(prefSlugOf(r), r.area, r.categoryOriginal) : undefined,
+    ),
+    categoryNameCount: count((r) => r.categoryOriginal),
+    areaCount: count((r) => (r.area ? `${prefSlugOf(r)}|${r.area}` : undefined)),
+    // 同名別人の可能性があるため、出場者は「都道府県・店舗・名前」の組で数える
+    entrantCount: count((r) =>
+      r.entrantName ? `${r.prefecture ?? ""}|${r.storeName ?? ""}|${r.entrantName}` : undefined,
+    ),
+    storeCount: count((r) => (r.storeName ? `${r.prefecture ?? ""}|${r.storeName}` : undefined)),
+    lastCheckedAt: checked.length ? checked[checked.length - 1] : null,
+  };
 }
 
 export function buildModel(records: DataRecord[]): SiteModel {
@@ -185,6 +231,7 @@ export function buildModel(records: DataRecord[]): SiteModel {
       areas,
       divisionCount: areas.reduce((n, a) => n + a.divisions.length, 0),
       recordCount: prefRecords.length,
+      summary: summarize(prefRecords),
     };
     return view;
   };
@@ -209,33 +256,10 @@ export function buildModel(records: DataRecord[]): SiteModel {
     .sort((a, b) => compareJa(a.names[0].name, b.names[0].name));
 
   // 4) 掲載状況
-  const count = <T>(f: (r: DataRecord) => T | undefined) =>
-    new Set(records.map(f).filter((v) => v !== undefined && v !== "")).size;
-  const checked = records
-    .map((r) => r.checkedAt)
-    .filter((d): d is string => !!d)
-    .sort();
   const stats: Stats = {
-    recordCount: records.length,
-    byDataset: {
-      verified: records.filter((r) => r.dataset === "verified").length,
-      candidate: records.filter((r) => r.dataset === "candidate").length,
-    },
-    byConfidence: {
-      confirmed: records.filter((r) => r.confidence === "confirmed").length,
-      probable: records.filter((r) => r.confidence === "probable").length,
-      unverified: records.filter((r) => r.confidence === "unverified").length,
-    },
-    divisionCount: divisions.length,
-    categoryNameCount: count((r) => r.categoryOriginal),
+    ...summarize(records),
     prefectureWithDataCount: prefectures.filter((p) => p.recordCount > 0).length,
     prefectureTotal: PREFECTURES.length,
-    // 同名別人の可能性があるため、出場者は「都道府県・店舗・名前」の組で数える
-    entrantCount: count((r) =>
-      r.entrantName ? `${r.prefecture ?? ""}|${r.storeName ?? ""}|${r.entrantName}` : undefined,
-    ),
-    storeCount: count((r) => (r.storeName ? `${r.prefecture ?? ""}|${r.storeName}` : undefined)),
-    lastCheckedAt: checked.length ? checked[checked.length - 1] : null,
   };
 
   return {
