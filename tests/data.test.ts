@@ -3,7 +3,22 @@ import { createHash } from "node:crypto";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import kpi from "@/data/phase1/kpi_comparison_v1.json";
-import { campaignSupportStores, phase1Dataset, phase1Map, phase3Coverage, phase3Relations, phase3Stores, site } from "@/lib/data";
+import { campaignSupportStores, phase1Dataset, phase1Map, phase3b, phase3Coverage, phase3Relations, phase3Stores, site } from "@/lib/data";
+import type { StoreLayer } from "@/data/types";
+
+/** サイトの店舗レイヤーから、指定した出どころの店舗だけを取り出す */
+function siteLayerOf(origin: "phase3" | "phase3b" | "update"): StoreLayer {
+  const stores = site.stores.filter((s) => s.origin === origin);
+  const ids = new Set(stores.map((s) => s.id));
+  return {
+    stores,
+    relations: site.stores
+      .filter((s) => ids.has(s.id))
+      .flatMap((s) => s.categories.map((c) => ({ id: c.relationId, storeId: s.id, categoryOriginal: c.categoryOriginal, confidence: c.confidence, sourceIds: [], phase1RecordIds: [] }))),
+    sources: [],
+    countFacts: [],
+  };
+}
 import { PREFECTURES } from "@/data/geo";
 import { JAPAN_MAP_SHAPES } from "@/data/japan-map.generated";
 import { updates } from "@/data/updates";
@@ -58,10 +73,17 @@ describe("47都道府県と地図状態", () => {
     expect(new Set(phase1Map.prefectures.map((p) => p.prefectureCode)).size).toBe(47);
     expect(site.prefectures.map((p) => p.name)).toEqual(PREFECTURES.map((p) => p.name));
   });
-  it("サイトの状態が Phase 3 の最新カバレッジの status と一致する", () => {
+  it("Phase 1 ＋ Phase 3 だけで導出した状態が Phase 3 カバレッジの status と一致する", () => {
+    const p3only = buildModel(phase1Records, { layer: { ...siteLayerOf("phase3") } });
+    for (const c of phase3Coverage.prefectures) {
+      expect(p3only.prefectures.find((p) => p.name === c.prefecture)!.status, c.prefecture).toBe(c.status);
+    }
+  });
+  it("サイトの状態は全レイヤー（Phase 1・3・3b・個別追加）から導出され、確認済みの県は Phase 3 と同じ", () => {
     for (const c of phase3Coverage.prefectures) {
       const v = site.prefectures.find((p) => p.name === c.prefecture)!;
-      expect(v.status, c.prefecture).toBe(c.status);
+      if (c.status === "confirmed") expect(v.status, c.prefecture).toBe("confirmed");
+      if (c.status === "candidate") expect(v.status, c.prefecture).not.toBe("searched_no_evidence");
     }
   });
   it("Phase 1 だけで導出した状態は Phase 1 地図データと一致する（Phase 1 を壊していない）", () => {
@@ -72,10 +94,10 @@ describe("47都道府県と地図状態", () => {
     expect(p1only.stats.statusCounts.confirmed).toBe(kpi.end.prefecturesWithConfirmed);
     expect(p1only.stats.statusCounts.searched_no_evidence).toBe(kpi.end.searchedNoEvidencePrefectures);
   });
-  it("状態別の県数が Phase 3 カバレッジと一致する", () => {
+  it("状態別の県数（Phase 1 ＋ Phase 3）が Phase 3 カバレッジと一致する", () => {
     const fromCov = { confirmed: 0, candidate: 0, searched_no_evidence: 0 } as Record<string, number>;
     for (const c of phase3Coverage.prefectures) fromCov[c.status]++;
-    expect(site.stats.statusCounts).toEqual(fromCov);
+    expect(buildModel(phase1Records, { layer: siteLayerOf("phase3") }).stats.statusCounts).toEqual(fromCov);
   });
   it("県別集計が地図データと一致する", () => {
     for (const m of phase1Map.prefectures) {
@@ -209,9 +231,9 @@ describe("Phase 3 店舗の統合", () => {
     expect(new Set(p3.flatMap((s) => s.categoryOriginals)).size).toBe(sm.categoryOriginalCount);
     expect(p3.filter((s) => !s.prefecture).length).toBe(sm.unknownPrefectureStoreCount);
   });
-  it("サイト全体の店舗数 = Phase 3 ＋ 差分更新", () => {
-    expect(site.stats.stores.storeCount).toBe(phase3Stores.stores.length + storeUpdates.length);
-    expect(site.stats.stores.relationCount).toBe(phase3Relations.length + relationUpdates.length);
+  it("サイト全体の店舗数 = Phase 3 ＋ Phase 3b ＋ 個別追加", () => {
+    expect(site.stats.stores.storeCount).toBe(phase3Stores.stores.length + phase3b.stores.length + storeUpdates.length);
+    expect(site.stats.stores.relationCount).toBe(phase3Relations.length + phase3b.relations.length + relationUpdates.length);
   });
   it("店舗IDに重複がなく、県別店舗数がカバレッジと一致する", () => {
     expect(new Set(site.stores.map((s) => s.id)).size).toBe(site.stores.length);

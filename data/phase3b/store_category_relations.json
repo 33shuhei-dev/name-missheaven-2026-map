@@ -1,0 +1,1545 @@
+{
+ "schemaVersion": "1.0.0",
+ "event": "ミスヘブン総選挙2026",
+ "phase": "Phase3b_nationwide_search_sweep",
+ "checkedAt": "2026-10-05",
+ "scope": "検索エンジンの索引で、ヘブン掲載の店舗ページに2026年の参加の記載が確認できた店舗。全参加店舗の網羅ではない。個人名簿ではない。",
+ "relations": [
+  {
+   "relationId": "p3b-rel-87c2a707419ef364",
+   "storeId": "mh26-p3b-store-60d73d489688af0c",
+   "categoryOriginal": "100名店在籍部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-8e881fd13e312123"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-0bff3717bb2616cf",
+   "storeId": "mh26-p3b-store-62fb82015e704df7",
+   "categoryOriginal": "大食い部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-3eb74312dc7298f1"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-cc3ad6c8f8eb7fca",
+   "storeId": "mh26-p3b-store-d8bd432ace34c4e3",
+   "categoryOriginal": "おっぱい自慢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7bd4464875da80cb"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-668c42f5795e980a",
+   "storeId": "mh26-p3b-store-55adc325309817ff",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ab13abe9d3fb6ca0"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1c3666603074f5ee",
+   "storeId": "mh26-p3b-store-f43de8faeea2edb0",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-a529523942205d8c"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-e49edcbee28e52bc",
+   "storeId": "mh26-p3b-store-e0d0d22f2f687218",
+   "categoryOriginal": "エステ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-716f1c08760c20e1"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-70d687a7fc274a59",
+   "storeId": "mh26-p3b-store-f0edf9ea05a045fb",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-5d511d6221b2edf9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-b9e94b94038230d7",
+   "storeId": "mh26-p3b-store-f0edf9ea05a045fb",
+   "categoryOriginal": "アイドル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-5d511d6221b2edf9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-cf3d70631b4fc544",
+   "storeId": "mh26-p3b-store-13dc19fedaa3bd7a",
+   "categoryOriginal": "店長オススメ",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-a2c7ad2ffdb00729"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-ebeaaf69fb97286b",
+   "storeId": "mh26-p3b-store-db9b7988d79b2d98",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-63668e9282ea59f6"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-150e285f83ad37df",
+   "storeId": "mh26-p3b-store-206249a8882ea0fb",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ab66376044f54ca1"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-bad95642d24e2e97",
+   "storeId": "mh26-p3b-store-fca1a0d1eaa56c50",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-83eb996b88f0d88a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-af1db80dd979c995",
+   "storeId": "mh26-p3b-store-88f4a1d4b94b1a91",
+   "categoryOriginal": "前立腺達人部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-e6fb08b480069ca6"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-9c631cd86dd95855",
+   "storeId": "mh26-p3b-store-b2f7757e927a9d4c",
+   "categoryOriginal": "マッサージ得意部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ab0449c8102c774d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-b75eba7c350b0cb8",
+   "storeId": "mh26-p3b-store-b2f7757e927a9d4c",
+   "categoryOriginal": "前立腺達人部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ab0449c8102c774d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3f24aeabf0100928",
+   "storeId": "mh26-p3b-store-939b06df964617e9",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-6405099b5e9fa340"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d710d21caebe8558",
+   "storeId": "mh26-p3b-store-0f8116f3ae20a72a",
+   "categoryOriginal": "レア出勤部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-37182262deff01bd"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-5d24eb4c305cb065",
+   "storeId": "mh26-p3b-store-b077e8430ada684b",
+   "categoryOriginal": "人妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-b6e57375056c20dd"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-fe414205c5a09bef",
+   "storeId": "mh26-p3b-store-c8573b24f4afa3ad",
+   "categoryOriginal": "新人部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-8844c6dc47db9475"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-73fb7123bb1e5d6e",
+   "storeId": "mh26-p3b-store-72ce90741c8cbcac",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-018cc84b4521e08d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-a52e7ad0cf592cd9",
+   "storeId": "mh26-p3b-store-6ccba78ee356feb4",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-1559137ca4260e02"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-997935db37dd9fb7",
+   "storeId": "mh26-p3b-store-3593ad21ad009675",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-4ca5cc873dca2eeb"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-129be987a3c1bb6f",
+   "storeId": "mh26-p3b-store-3593ad21ad009675",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-4ca5cc873dca2eeb"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-9cc80e59960681f8",
+   "storeId": "mh26-p3b-store-6e441dc1fe6c9078",
+   "categoryOriginal": "イチャイチャ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-fbfbcfdcf8dbd580"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-135626351dd9f45b",
+   "storeId": "mh26-p3b-store-f47e4555fb255fba",
+   "categoryOriginal": "イチャイチャ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-5deb94b95a1f61e0"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-ead2018daee8b5a7",
+   "storeId": "mh26-p3b-store-9ee6272f1483f7d8",
+   "categoryOriginal": "イチャイチャ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-3aa1cc6c99f7b59a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-dbdf2076d8a4f7f2",
+   "storeId": "mh26-p3b-store-d3cdce631ad1757e",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-460e14201ed92aa4"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-97c2b50cc57acf94",
+   "storeId": "mh26-p3b-store-90bb3c4ae61dc740",
+   "categoryOriginal": "イチャイチャ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-e0f5bbfe2deb0647"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1cf997780ecf6fb2",
+   "storeId": "mh26-p3b-store-66d07af875fd2570",
+   "categoryOriginal": "道産子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-08deb8241a8a6c90"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-6c2e01011ad24050",
+   "storeId": "mh26-p3b-store-b10721b83db053f4",
+   "categoryOriginal": "店長オススメ",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-71dbec3a1a8305fe"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-aa9ba97fc976888c",
+   "storeId": "mh26-p3b-store-8c9e53d4b500b7ba",
+   "categoryOriginal": "次世代スター部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-f45fc60f5c412673"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-934677acf021ba4e",
+   "storeId": "mh26-p3b-store-f6940b4b6172e957",
+   "categoryOriginal": "店長オススメ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b3c2a82a0bdadf5b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-885e1c0d86c05086",
+   "storeId": "mh26-p3b-store-f6940b4b6172e957",
+   "categoryOriginal": "隠れ美女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b3c2a82a0bdadf5b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d1883f052b7aff8d",
+   "storeId": "mh26-p3b-store-0c62fceb04620ee9",
+   "categoryOriginal": "神スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-e2d42733fd9d8f51"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-fed3ecfc910843ce",
+   "storeId": "mh26-p3b-store-70053d0acf76e2d9",
+   "categoryOriginal": "アイドル・ロリ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b2c0fe99e73681de"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-9e55bf0b0bf1f90e",
+   "storeId": "mh26-p3b-store-14badae830c7f8c4",
+   "categoryOriginal": "人妻・若妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-dea073ff5e7edd4b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-7fbaf11a0ca52d93",
+   "storeId": "mh26-p3b-store-5464959aa99adefa",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-8753067915d98af0"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-db8c743a553f206c",
+   "storeId": "mh26-p3b-store-4697a7b475c0c7f3",
+   "categoryOriginal": "デリヘル・エステ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-8a2b3f705178c75f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-086e7bf80be129c1",
+   "storeId": "mh26-p3b-store-c81d08b03caa6803",
+   "categoryOriginal": "大人の色気部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ec2a0967eb0a2ef4"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-36bf9cbdcc140f48",
+   "storeId": "mh26-p3b-store-c81d08b03caa6803",
+   "categoryOriginal": "大好き♡おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ec2a0967eb0a2ef4"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-4431c27d5254aafb",
+   "storeId": "mh26-p3b-store-c8d67ca5a7c552e1",
+   "categoryOriginal": "店長オススメ",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-20d2798fde3136d2"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-9563789a4f541639",
+   "storeId": "mh26-p3b-store-9b0a453f187e20db",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-80f292ce6e14ddba"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1fcb10147be5f0f8",
+   "storeId": "mh26-p3b-store-43ce56cadee98b94",
+   "categoryOriginal": "極嬢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-057760ad9c5810c7"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-750878201715d74a",
+   "storeId": "mh26-p3b-store-8ab29c22e82643a6",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c833c3f08a61ad81"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-32c608c9572dfad8",
+   "storeId": "mh26-p3b-store-8ab29c22e82643a6",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c833c3f08a61ad81"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-8f78c635f3ec59d5",
+   "storeId": "mh26-p3b-store-fdd75c0785c560ee",
+   "categoryOriginal": "人妻熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-79510bd9032636c9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-f8faf153a8f34ae6",
+   "storeId": "mh26-p3b-store-4507b6d98f247018",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-9583b4fd57977799"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d2a29fe73fa03af6",
+   "storeId": "mh26-p3b-store-6b3650b31908661d",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-8c4c3d92d119f2d1"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d0187c07814da73c",
+   "storeId": "mh26-p3b-store-520b898d7e645a96",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-dd39c8dcb5ef7209"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-5632bfcc7e51f4d6",
+   "storeId": "mh26-p3b-store-f9eb1dd739c46959",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c1740fcbc1b66802"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d74bc6620a5774d3",
+   "storeId": "mh26-p3b-store-ad3615df606dc616",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-958495517d142e89"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-f33f915cc686c017",
+   "storeId": "mh26-p3b-store-247cff2d720c61dd",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-e9aad4ee7e28b2b3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1eefcd031c01c880",
+   "storeId": "mh26-p3b-store-5ec48f5eb3d8c93c",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-aacc1a597bff9a14"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-af367bf62b90f097",
+   "storeId": "mh26-p3b-store-f154591ab0db1948",
+   "categoryOriginal": "人妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-791580137a299c5b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-6dc320d4530b410c",
+   "storeId": "mh26-p3b-store-b4d8969f0f8c6bda",
+   "categoryOriginal": "人妻・若妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-dae3b1b2753f8819"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-4958150290faa4fa",
+   "storeId": "mh26-p3b-store-4fe31db28d47a3b1",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-a2ce5238388f77ae"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d31e15fbfb789c64",
+   "storeId": "mh26-p3b-store-02a7daca4f83b0f3",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-20887a347921632b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3ec07a6e0c23fa20",
+   "storeId": "mh26-p3b-store-02a7daca4f83b0f3",
+   "categoryOriginal": "店長オススメ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-20887a347921632b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d2a74eeb103443c6",
+   "storeId": "mh26-p3b-store-b32e279b948537f2",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-9ecbac26288215c7"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。3ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-06d894a112ee3598",
+   "storeId": "mh26-p3b-store-b32e279b948537f2",
+   "categoryOriginal": "店長オススメ部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-9ecbac26288215c7"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-49e8db3e56dd7dc2",
+   "storeId": "mh26-p3b-store-6525e5df32d22940",
+   "categoryOriginal": "コスプレ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-26e8e2159a7a904e"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-32c7af642cdeb3e1",
+   "storeId": "mh26-p3b-store-adf7d7926a6b1c63",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-45aced3b0abc5fca"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-f3ee55d42f72d4f4",
+   "storeId": "mh26-p3b-store-289a3f0c4927e5d1",
+   "categoryOriginal": "顔出しNG部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-42657828ac7df619"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-f1018f701f2affff",
+   "storeId": "mh26-p3b-store-80730f7d6972e13b",
+   "categoryOriginal": "人妻・若妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b82c544b201d7d4b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-7edf42ff0019cfda",
+   "storeId": "mh26-p3b-store-80730f7d6972e13b",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b82c544b201d7d4b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-c422f8f7b1909800",
+   "storeId": "mh26-p3b-store-e48ab21e59b478e6",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7e062dae6bbad49a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1c3bb96a69f02d63",
+   "storeId": "mh26-p3b-store-8232fd1f1457c063",
+   "categoryOriginal": "顔出しNG部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-18d708c62097dd68"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-32ac7b5c8ad3b14b",
+   "storeId": "mh26-p3b-store-6240d78bc04a88a6",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-59e32bdf3d1617c2"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-245695946573ba01",
+   "storeId": "mh26-p3b-store-ddf9887143de1fec",
+   "categoryOriginal": "撮影OK女子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-74ff2ca4f7a6868c"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-686b9b48e2e8301a",
+   "storeId": "mh26-p3b-store-409c1f4244be65f8",
+   "categoryOriginal": "人妻・若妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c35a549ac95e8821"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1d1eea6444eb57db",
+   "storeId": "mh26-p3b-store-21044add38e3541b",
+   "categoryOriginal": "ギャル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-12fc3c94679f0236"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-50a9f41738a6de0f",
+   "storeId": "mh26-p3b-store-22c7bcc0ec6df931",
+   "categoryOriginal": "アイドル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-8eec245154c55ae6"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3b5ba2fcf4e8ddfe",
+   "storeId": "mh26-p3b-store-967e7ce0468438a4",
+   "categoryOriginal": "ギャル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-75e4bd6baba89829"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3838f2101e79c3ca",
+   "storeId": "mh26-p3b-store-541e2814b67f1c43",
+   "categoryOriginal": "100名店在籍部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7a288a8fe798382c"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-6fa1045aea2749ff",
+   "storeId": "mh26-p3b-store-2d721d9a28871c72",
+   "categoryOriginal": "人妻・若妻・熟女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-4d5e85db08c966d3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-37c7099df1e702bd",
+   "storeId": "mh26-p3b-store-2d721d9a28871c72",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-4d5e85db08c966d3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d2de26f33e294939",
+   "storeId": "mh26-p3b-store-99878d420769b68f",
+   "categoryOriginal": "隠れ美女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-1563522dd59a42b5"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-70708f5d2bc6d1fc",
+   "storeId": "mh26-p3b-store-08e312d947265588",
+   "categoryOriginal": "隠れ美女部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-bef9aab665521d01"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-2475350a47c399bc",
+   "storeId": "mh26-p3b-store-42cc8d46f464af7e",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-3367184f7151cca7"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-4681aa2280906585",
+   "storeId": "mh26-p3b-store-2901bc6b15177d0e",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-429bc4cf91aeea41"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-994791275568d3bf",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "おっぱい自慢部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。3ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-711ff524b76e79f9",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "スタイル自慢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-958035e5ba6a9714",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "スプラッシュくじら部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-bd03bf7656514dda",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1c11f11566b5d3ac",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "レア出勤部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-f63253ca9f161351",
+   "storeId": "mh26-p3b-store-6324b842fadbf58a",
+   "categoryOriginal": "大食い部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-c1b8d8acb6e67523"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-02d20c1e38d0e545",
+   "storeId": "mh26-p3b-store-2eb27bfac4c191f9",
+   "categoryOriginal": "店長一押し部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-dda87940a08048d7"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-22d62f9a43ea7c8b",
+   "storeId": "mh26-p3b-store-830f7e6a9b63d4f5",
+   "categoryOriginal": "スタイル自慢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-14603ff131443d0c"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-7009d3ea7d86e63c",
+   "storeId": "mh26-p3b-store-484bdbf2fa67f4dd",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ac300af6b3a63c75"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d718586bff0cc411",
+   "storeId": "mh26-p3b-store-484bdbf2fa67f4dd",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ac300af6b3a63c75"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-50d5246694f2b5f8",
+   "storeId": "mh26-p3b-store-ddf6d62a291dfa87",
+   "categoryOriginal": "おっぱい自慢部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-fd574682f701d422"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-a2570b8c2ed7f353",
+   "storeId": "mh26-p3b-store-2f26f876a9eb70c8",
+   "categoryOriginal": "ギャンブル大好き部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-237ed1e22183fc22"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-c15485d64b45091f",
+   "storeId": "mh26-p3b-store-3935965b33359d5f",
+   "categoryOriginal": "ニューヒロイン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-ce9e437add9e4e38"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-19ce99d8a48be3c0",
+   "storeId": "mh26-p3b-store-028aa508ceb44c42",
+   "categoryOriginal": "スタイル自慢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-025ee1170448511a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-aea9a410b4d254e9",
+   "storeId": "mh26-p3b-store-40c460ef4aca18ea",
+   "categoryOriginal": "お尻好きならココ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b9aa4c1b15edaef9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-bce8f80111ce5f00",
+   "storeId": "mh26-p3b-store-40c460ef4aca18ea",
+   "categoryOriginal": "大好き♡おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b9aa4c1b15edaef9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-8b5cead818460af3",
+   "storeId": "mh26-p3b-store-b1a526810f0ad2c6",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-caf70c54fa85b2b4"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-8454b10b83510e93",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "テクニシャン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-69cb06dbcd2624e5",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "ヌルヌル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-011a3dfecb83ade6",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "ルックス部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1cc423f56a47fffb",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-28dc4c2891573a93",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-e1adcd6390d5cedf",
+   "storeId": "mh26-p3b-store-480dbafd215b568c",
+   "categoryOriginal": "顔出しNG部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c640d670bf929732"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1208751c6116f957",
+   "storeId": "mh26-p3b-store-733574e24fe31ede",
+   "categoryOriginal": "美乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-b8905dc712f010a3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-cd3ad4c77ffad70b",
+   "storeId": "mh26-p3b-store-d8d6e87b5ffd5d36",
+   "categoryOriginal": "テクニシャン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-14ae9adf23641473"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-23a196d57b61835f",
+   "storeId": "mh26-p3b-store-1e2d2b8a9e7041b3",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-eedd2f1f502b7b9e"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-a1c29b049bd0f58f",
+   "storeId": "mh26-p3b-store-0869bb09f645501e",
+   "categoryOriginal": "お姉さん部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-45deb502e44652fc"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-163271af01a667c8",
+   "storeId": "mh26-p3b-store-0869bb09f645501e",
+   "categoryOriginal": "ルックス部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-45deb502e44652fc"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-dfe6c7a901af47e2",
+   "storeId": "mh26-p3b-store-d7994797d05aaba4",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-d8da697a48de1335"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-db69326c29222cb4",
+   "storeId": "mh26-p3b-store-fa5fd026b3a01e17",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-a6e8096f4ef56d18"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-af26d4dded54545d",
+   "storeId": "mh26-p3b-store-c7a3853697174bc1",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-43b1dfa4bd84ccce"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-947cd715bf98f6db",
+   "storeId": "mh26-p3b-store-df38da5c254c232c",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-dc9559d2860995a1"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-6ed9be5823089059",
+   "storeId": "mh26-p3b-store-8b4a97253ad220f1",
+   "categoryOriginal": "テクニシャン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-859baccf271274be"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-a1d081c313fd0761",
+   "storeId": "mh26-p3b-store-86ada7aba4554e71",
+   "categoryOriginal": "ヌルヌル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-956922fd105cb09d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-1051f3c96772c859",
+   "storeId": "mh26-p3b-store-86ada7aba4554e71",
+   "categoryOriginal": "ロリっ子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-956922fd105cb09d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-41c83f5fb1f896ee",
+   "storeId": "mh26-p3b-store-57b0ba8cf666af66",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-2997d3329fdfc100"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-dbb85108ca72d82b",
+   "storeId": "mh26-p3b-store-1a05461f46c00e0e",
+   "categoryOriginal": "高級部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-098b28b3b24a5e73"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-c5df67807249a7ef",
+   "storeId": "mh26-p3b-store-88c7f5eafa290d04",
+   "categoryOriginal": "お姉さん部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-c9d41341b3d3236a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3fcd9505e420ffd1",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "ギャル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-c857afe6eb93f8a1",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "コスプレ・アイドル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-903a5dd232905c66",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-3ca9998d9a5e80f7",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "ロリっ子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-80d4c34b3f0c3a6a",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-96820b296987c426",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "美乳部門",
+   "categoryNormalized": null,
+   "confidence": "probable",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。2ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-aa0ea43e4132a857",
+   "storeId": "mh26-p3b-store-22f6797cc2c2646b",
+   "categoryOriginal": "顔出しNG部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-7eac7897201aadd9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-d684acaf92f280b0",
+   "storeId": "mh26-p3b-store-5f1324cb6e24cb72",
+   "categoryOriginal": "テクニシャン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-e5fc24fa7da97466"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-506f1860376d19d2",
+   "storeId": "mh26-p3b-store-c1d4cc09f6428106",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-843c4f201ea3fe3f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  },
+  {
+   "relationId": "p3b-rel-69e2ad67b06ad9a0",
+   "storeId": "mh26-p3b-store-efce4850dd8e4659",
+   "categoryOriginal": "店長オススメ",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "p3b-src-39c77d284d56865b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "検索結果の抜粋に記載された部門名（原文）。1ページで確認。店舗の全員がこの部門という意味ではない。"
+  }
+ ]
+}

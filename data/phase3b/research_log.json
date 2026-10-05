@@ -1,0 +1,4409 @@
+{
+ "schemaVersion": "1.0.0",
+ "event": "ミスヘブン総選挙2026",
+ "phase": "Phase3b_nationwide_search_sweep",
+ "checkedAt": "2026-10-05",
+ "scope": "検索エンジンの索引で、ヘブン掲載の店舗ページに2026年の参加の記載が確認できた店舗。全参加店舗の網羅ではない。個人名簿ではない。",
+ "matchedExisting": [
+  {
+   "key": "fukuoka/A4001/A400102/lesson1",
+   "name": "イエスグループ福岡Lesson.1福岡校",
+   "prefecture": "福岡県",
+   "existingStoreId": "mh26-store-34145e31a1c19c66",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  },
+  {
+   "key": "fukuoka/A4001/A400102/n_tiamo",
+   "name": "Ti Amo",
+   "prefecture": "福岡県",
+   "existingStoreId": "mh26-store-7c7746b5dd8aa34d",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 2
+  },
+  {
+   "key": "gunma/A1001/A100102/karentakasaki",
+   "name": "可憐な妻たち 高崎店",
+   "prefecture": "群馬県",
+   "existingStoreId": "mh26-store-63db1d0c06c4fcd8",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 3
+  },
+  {
+   "key": "hiroshima/A3401/A340101/palette_hiroshima",
+   "name": "PaleTTe",
+   "prefecture": "広島県",
+   "existingStoreId": "mh26-store-90522f3bdfdaa139",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 5
+  },
+  {
+   "key": "hokkaido/A0101/A010103/batugun",
+   "name": "SAPPORO ばつぐんnet",
+   "prefecture": "北海道",
+   "existingStoreId": "mh26-store-e4dde524cbfbb303",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 2
+  },
+  {
+   "key": "hokkaido/A0101/A010103/exceed",
+   "name": "エクシード",
+   "prefecture": "北海道",
+   "existingStoreId": "mh26-store-5fb62be563b1ee81",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 2
+  },
+  {
+   "key": "hyogo/A2801/A280102/kobe_rb",
+   "name": "神戸R＆B",
+   "prefecture": "兵庫県",
+   "existingStoreId": "mh26-store-faacbc3c4321993c",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  },
+  {
+   "key": "ibaraki/A0802/A080202/purecos",
+   "name": "ピュアコス学園",
+   "prefecture": "茨城県",
+   "existingStoreId": "mh26-store-e44a56a769ae3fcd",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 2
+  },
+  {
+   "key": "kanagawa/A1401/A140103/onemorecoming",
+   "name": "One More 奥様 横浜関内店",
+   "prefecture": "神奈川県",
+   "existingStoreId": "mh26-store-b33dc19606e7c823",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 3
+  },
+  {
+   "key": "kanagawa/A1403/A140301/akatombo-k",
+   "name": "赤とんぼ",
+   "prefecture": "神奈川県",
+   "existingStoreId": "mh26-store-5c65f10f579ffd51",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  },
+  {
+   "key": "kanagawa/A1403/A140301/bijin-kenkyujo",
+   "name": "美人研究所",
+   "prefecture": "神奈川県",
+   "existingStoreId": "mh26-store-a7403750a263dd98",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 3
+  },
+  {
+   "key": "okayama/A3302/A330201/ecstasy_kurashiki",
+   "name": "素人清楚専門店 Ecstasy",
+   "prefecture": "岡山県",
+   "existingStoreId": "mh26-store-34d8beb9b9f38b14",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 23
+  },
+  {
+   "key": "saitama/A1102/A110201/hybridhealth",
+   "name": "ハイブリッドヘルス西川口",
+   "prefecture": "埼玉県",
+   "existingStoreId": "mh26-store-9dd53dd1558220fa",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  },
+  {
+   "key": "saitama/A1115/A111501/annex",
+   "name": "Ⅰ KASUKABE（アイラブ春日部）",
+   "prefecture": "埼玉県",
+   "existingStoreId": "mh26-store-931aedef40ef7167",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  },
+  {
+   "key": "shiga/A2501/A250101/tetsudou_0510",
+   "name": "電車ごっこ",
+   "prefecture": "滋賀県",
+   "existingStoreId": "mh26-store-8b5a048ed65adc3a",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 4
+  },
+  {
+   "key": "tochigi/A0901/A090101/mikado_utsunomiya",
+   "name": "MIKADO",
+   "prefecture": "栃木県",
+   "existingStoreId": "mh26-store-62fb3c8e8d7b02d7",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 12
+  },
+  {
+   "key": "yamanashi/A1901/A190101/barubora",
+   "name": "BARUBORA",
+   "prefecture": "山梨県",
+   "existingStoreId": "mh26-store-1d1e8f3a479a8ecc",
+   "existingOrigin": "phase3",
+   "evidencePageCount": 1
+  }
+ ],
+ "skipped": [
+  {
+   "key": "ehime/A3801/A380101/marinesnow",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "ehime/A3801/A380101/yes_g_line_matuyama",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "fukuoka/A4001/A400102/new_soap_hitoduma",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "gifu/A2101/A210102/jyukupara_g",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "gifu/A2101/A210103/jyukupara_g",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "gifu/A2102/A210201/jyukupara_hashima",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "gunma/A1001/A100102/cutyexpress",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "hiroshima/A3401/A340101/agora",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "hiroshima/A3401/A340101/hiroshima_hyoban",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "hiroshima/A3401/A340101/maruhi_sekai",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "kagawa/A3702/A370205/tiamo_aishitemasu",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "mie/A2402/A240201/y-classy",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "niigata/A1501/A150101/milk-pie",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "osaka/A2705/A270501/tsuyahime",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "shizuoka/A2201/A220101/pocha_doll_c",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "shizuoka/A2202/A220201/salon-de-mrs",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "tokyo/A1305/A130505/analerdry",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "wakayama/A3001/A300101/okutetu_wakayama",
+   "reason": "店名を特定できない"
+  },
+  {
+   "key": "yamanashi/A1901/A190101/E190020",
+   "reason": "店名を特定できない"
+  }
+ ],
+ "queries": [
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:smart.cityheaven.net/hokkaido/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/hokkaido/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "\"ミスヘブン総選挙2026\" 北海道 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%8C%97%E6%B5%B7%E9%81%93%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "\"ミスヘブン総選挙2026\" 北海道 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%8C%97%E6%B5%B7%E9%81%93%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "site:www.cityheaven.net/aomori/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aomori/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "site:www.cityheaven.net/aomori/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aomori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "site:www.cityheaven.net/aomori/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aomori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "site:smart.cityheaven.net/aomori/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/aomori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "\"ミスヘブン総選挙2026\" 青森 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%9D%92%E6%A3%AE%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:aomori",
+   "query": "\"ミスヘブン総選挙2026\" 青森 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%9D%92%E6%A3%AE%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:www.cityheaven.net/iwate/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/iwate/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:www.cityheaven.net/iwate/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/iwate/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:www.cityheaven.net/iwate/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/iwate/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:www.cityheaven.net/iwate/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/iwate/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:www.cityheaven.net/iwate/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/iwate/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "site:smart.cityheaven.net/iwate/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/iwate/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "\"ミスヘブン総選挙2026\" 岩手 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%A9%E6%89%8B%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:iwate",
+   "query": "\"ミスヘブン総選挙2026\" 岩手 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%A9%E6%89%8B%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:www.cityheaven.net/miyagi/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "site:smart.cityheaven.net/miyagi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/miyagi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "\"ミスヘブン総選挙2026\" 宮城 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AE%AE%E5%9F%8E%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:miyagi",
+   "query": "\"ミスヘブン総選挙2026\" 宮城 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AE%AE%E5%9F%8E%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:smart.cityheaven.net/akita/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/akita/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "\"ミスヘブン総選挙2026\" 秋田 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A7%8B%E7%94%B0%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "\"ミスヘブン総選挙2026\" 秋田 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A7%8B%E7%94%B0%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "site:www.cityheaven.net/yamagata/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamagata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "site:www.cityheaven.net/yamagata/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamagata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "site:www.cityheaven.net/yamagata/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamagata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "site:smart.cityheaven.net/yamagata/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/yamagata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "\"ミスヘブン総選挙2026\" 山形 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E5%BD%A2%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:yamagata",
+   "query": "\"ミスヘブン総選挙2026\" 山形 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E5%BD%A2%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:www.cityheaven.net/fukushima/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:www.cityheaven.net/fukushima/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:www.cityheaven.net/fukushima/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:www.cityheaven.net/fukushima/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:www.cityheaven.net/fukushima/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "site:smart.cityheaven.net/fukushima/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/fukushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "\"ミスヘブン総選挙2026\" 福島 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E5%B3%B6%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:fukushima",
+   "query": "\"ミスヘブン総選挙2026\" 福島 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E5%B3%B6%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:smart.cityheaven.net/ibaraki/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/ibaraki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "\"ミスヘブン総選挙2026\" 茨城 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E8%8C%A8%E5%9F%8E%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "\"ミスヘブン総選挙2026\" 茨城 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E8%8C%A8%E5%9F%8E%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:www.cityheaven.net/tochigi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tochigi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "site:smart.cityheaven.net/tochigi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/tochigi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "\"ミスヘブン総選挙2026\" 栃木 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%A0%83%E6%9C%A8%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:tochigi",
+   "query": "\"ミスヘブン総選挙2026\" 栃木 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%A0%83%E6%9C%A8%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:smart.cityheaven.net/gunma/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/gunma/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "\"ミスヘブン総選挙2026\" 群馬 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%BE%A4%E9%A6%AC%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "\"ミスヘブン総選挙2026\" 群馬 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%BE%A4%E9%A6%AC%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:smart.cityheaven.net/saitama/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/saitama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "\"ミスヘブン総選挙2026\" 埼玉 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%9F%BC%E7%8E%89%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "\"ミスヘブン総選挙2026\" 埼玉 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%9F%BC%E7%8E%89%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:smart.cityheaven.net/chiba/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/chiba/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "\"ミスヘブン総選挙2026\" 千葉 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%8D%83%E8%91%89%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "\"ミスヘブン総選挙2026\" 千葉 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%8D%83%E8%91%89%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:smart.cityheaven.net/tokyo/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:smart.cityheaven.net/tokyo/ ミスヘブン 2026",
+   "page": 2,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/tokyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026&b=11"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "\"ミスヘブン総選挙2026\" 東京 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%9D%B1%E4%BA%AC%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "\"ミスヘブン総選挙2026\" 東京 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%9D%B1%E4%BA%AC%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:smart.cityheaven.net/kanagawa/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/kanagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "\"ミスヘブン総選挙2026\" 神奈川 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A5%9E%E5%A5%88%E5%B7%9D%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "\"ミスヘブン総選挙2026\" 神奈川 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A5%9E%E5%A5%88%E5%B7%9D%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:smart.cityheaven.net/niigata/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/niigata/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "\"ミスヘブン総選挙2026\" 新潟 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%96%B0%E6%BD%9F%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "\"ミスヘブン総選挙2026\" 新潟 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%96%B0%E6%BD%9F%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "site:www.cityheaven.net/toyama/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/toyama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "site:www.cityheaven.net/toyama/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/toyama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "site:www.cityheaven.net/toyama/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/toyama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "site:smart.cityheaven.net/toyama/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/toyama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "\"ミスヘブン総選挙2026\" 富山 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AF%8C%E5%B1%B1%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:toyama",
+   "query": "\"ミスヘブン総選挙2026\" 富山 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AF%8C%E5%B1%B1%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "site:www.cityheaven.net/ishikawa/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ishikawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "site:www.cityheaven.net/ishikawa/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ishikawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "site:www.cityheaven.net/ishikawa/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ishikawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "site:smart.cityheaven.net/ishikawa/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/ishikawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "\"ミスヘブン総選挙2026\" 石川 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%9F%B3%E5%B7%9D%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:ishikawa",
+   "query": "\"ミスヘブン総選挙2026\" 石川 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%9F%B3%E5%B7%9D%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:smart.cityheaven.net/fukui/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/fukui/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "\"ミスヘブン総選挙2026\" 福井 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E4%BA%95%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "\"ミスヘブン総選挙2026\" 福井 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E4%BA%95%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:www.cityheaven.net/yamanashi/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "site:smart.cityheaven.net/yamanashi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/yamanashi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "\"ミスヘブン総選挙2026\" 山梨 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E6%A2%A8%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:yamanashi",
+   "query": "\"ミスヘブン総選挙2026\" 山梨 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E6%A2%A8%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "site:www.cityheaven.net/nagano/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagano/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "site:www.cityheaven.net/nagano/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagano/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "site:www.cityheaven.net/nagano/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagano/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "site:www.cityheaven.net/nagano/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagano/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "site:smart.cityheaven.net/nagano/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/nagano/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "\"ミスヘブン総選挙2026\" 長野 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%95%B7%E9%87%8E%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:nagano",
+   "query": "\"ミスヘブン総選挙2026\" 長野 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%95%B7%E9%87%8E%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:www.cityheaven.net/gifu/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "site:smart.cityheaven.net/gifu/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/gifu/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "\"ミスヘブン総選挙2026\" 岐阜 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%90%E9%98%9C%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:gifu",
+   "query": "\"ミスヘブン総選挙2026\" 岐阜 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%90%E9%98%9C%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:smart.cityheaven.net/shizuoka/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/shizuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "\"ミスヘブン総選挙2026\" 静岡 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%9D%99%E5%B2%A1%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "\"ミスヘブン総選挙2026\" 静岡 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%9D%99%E5%B2%A1%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:smart.cityheaven.net/aichi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/aichi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "\"ミスヘブン総選挙2026\" 愛知 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%84%9B%E7%9F%A5%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "\"ミスヘブン総選挙2026\" 愛知 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%84%9B%E7%9F%A5%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:mie",
+   "query": "site:www.cityheaven.net/mie/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/mie/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:mie",
+   "query": "site:www.cityheaven.net/mie/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/mie/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:mie",
+   "query": "site:www.cityheaven.net/mie/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:mie",
+   "query": "site:smart.cityheaven.net/mie/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/mie/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:mie",
+   "query": "\"ミスヘブン総選挙2026\" 三重 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E4%B8%89%E9%87%8D%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:mie",
+   "query": "\"ミスヘブン総選挙2026\" 三重 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E4%B8%89%E9%87%8D%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shiga/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shiga/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shiga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shiga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:www.cityheaven.net/shiga/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "site:smart.cityheaven.net/shiga/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/shiga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "\"ミスヘブン総選挙2026\" 滋賀 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%BB%8B%E8%B3%80%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:shiga",
+   "query": "\"ミスヘブン総選挙2026\" 滋賀 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E6%BB%8B%E8%B3%80%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "site:www.cityheaven.net/kyoto/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "site:www.cityheaven.net/kyoto/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kyoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "site:www.cityheaven.net/kyoto/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kyoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "site:www.cityheaven.net/kyoto/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kyoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "site:smart.cityheaven.net/kyoto/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/kyoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:kyoto",
+   "query": "\"ミスヘブン総選挙2026\" 京都 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:www.cityheaven.net/osaka/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "site:smart.cityheaven.net/osaka/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/osaka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "\"ミスヘブン総選挙2026\" 大阪 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%A4%A7%E9%98%AA%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:osaka",
+   "query": "\"ミスヘブン総選挙2026\" 大阪 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%A4%A7%E9%98%AA%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:www.cityheaven.net/hyogo/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "site:smart.cityheaven.net/hyogo/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/hyogo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "\"ミスヘブン総選挙2026\" 兵庫 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%85%B5%E5%BA%AB%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:hyogo",
+   "query": "\"ミスヘブン総選挙2026\" 兵庫 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%85%B5%E5%BA%AB%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "site:www.cityheaven.net/nara/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nara/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "site:www.cityheaven.net/nara/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nara/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "site:www.cityheaven.net/nara/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nara/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "site:smart.cityheaven.net/nara/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/nara/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "\"ミスヘブン総選挙2026\" 奈良 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%A5%88%E8%89%AF%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:nara",
+   "query": "\"ミスヘブン総選挙2026\" 奈良 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "site:www.cityheaven.net/wakayama/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/wakayama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "site:www.cityheaven.net/wakayama/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/wakayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "site:www.cityheaven.net/wakayama/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/wakayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "site:smart.cityheaven.net/wakayama/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/wakayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "\"ミスヘブン総選挙2026\" 和歌山 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%92%8C%E6%AD%8C%E5%B1%B1%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:wakayama",
+   "query": "\"ミスヘブン総選挙2026\" 和歌山 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%92%8C%E6%AD%8C%E5%B1%B1%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "site:www.cityheaven.net/tottori/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tottori/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "site:www.cityheaven.net/tottori/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tottori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "site:www.cityheaven.net/tottori/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tottori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "site:smart.cityheaven.net/tottori/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/tottori/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "\"ミスヘブン総選挙2026\" 鳥取 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%B3%A5%E5%8F%96%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:tottori",
+   "query": "\"ミスヘブン総選挙2026\" 鳥取 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%B3%A5%E5%8F%96%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "site:www.cityheaven.net/shimane/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shimane/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "site:www.cityheaven.net/shimane/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shimane/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "site:www.cityheaven.net/shimane/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shimane/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "site:smart.cityheaven.net/shimane/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/shimane/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "\"ミスヘブン総選挙2026\" 島根 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B3%B6%E6%A0%B9%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:shimane",
+   "query": "\"ミスヘブン総選挙2026\" 島根 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B3%B6%E6%A0%B9%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:www.cityheaven.net/okayama/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "site:smart.cityheaven.net/okayama/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 6,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/okayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "\"ミスヘブン総選挙2026\" 岡山 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%A1%E5%B1%B1%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:okayama",
+   "query": "\"ミスヘブン総選挙2026\" 岡山 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B2%A1%E5%B1%B1%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:www.cityheaven.net/hiroshima/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "site:smart.cityheaven.net/hiroshima/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/hiroshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "\"ミスヘブン総選挙2026\" 広島 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%BA%83%E5%B3%B6%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:hiroshima",
+   "query": "\"ミスヘブン総選挙2026\" 広島 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%BA%83%E5%B3%B6%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:www.cityheaven.net/yamaguchi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamaguchi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:www.cityheaven.net/yamaguchi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamaguchi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:www.cityheaven.net/yamaguchi/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamaguchi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:www.cityheaven.net/yamaguchi/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamaguchi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:www.cityheaven.net/yamaguchi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamaguchi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "site:smart.cityheaven.net/yamaguchi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/yamaguchi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "\"ミスヘブン総選挙2026\" 山口 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E5%8F%A3%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:yamaguchi",
+   "query": "\"ミスヘブン総選挙2026\" 山口 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%B1%B1%E5%8F%A3%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 9,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:smart.cityheaven.net/tokushima/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/tokushima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "\"ミスヘブン総選挙2026\" 徳島 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%BE%B3%E5%B3%B6%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "\"ミスヘブン総選挙2026\" 徳島 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%BE%B3%E5%B3%B6%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=11"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=21"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 4,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=31"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 5,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=41"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:smart.cityheaven.net/kagawa/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/kagawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "\"ミスヘブン総選挙2026\" 香川 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%A6%99%E5%B7%9D%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "\"ミスヘブン総選挙2026\" 香川 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%A6%99%E5%B7%9D%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:www.cityheaven.net/ehime/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 7,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:www.cityheaven.net/ehime/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:www.cityheaven.net/ehime/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=11"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:www.cityheaven.net/ehime/ ミスヘブン 2026 エントリー",
+   "page": 3,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC&b=21"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:www.cityheaven.net/ehime/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "site:smart.cityheaven.net/ehime/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/ehime/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:ehime",
+   "query": "\"ミスヘブン総選挙2026\" 愛媛 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "site:www.cityheaven.net/kochi/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "site:www.cityheaven.net/kochi/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kochi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "site:www.cityheaven.net/kochi/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 5,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kochi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "site:smart.cityheaven.net/kochi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/kochi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "\"ミスヘブン総選挙2026\" 高知 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%AB%98%E7%9F%A5%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:kochi",
+   "query": "\"ミスヘブン総選挙2026\" 高知 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%AB%98%E7%9F%A5%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=11"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:www.cityheaven.net/fukuoka/ ミスヘブン 2026 ノミネート",
+   "page": 3,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88&b=21"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "site:smart.cityheaven.net/fukuoka/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/fukuoka/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "\"ミスヘブン総選挙2026\" 福岡 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E5%B2%A1%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:fukuoka",
+   "query": "\"ミスヘブン総選挙2026\" 福岡 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E7%A6%8F%E5%B2%A1%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:saga",
+   "query": "site:www.cityheaven.net/saga/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saga/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:saga",
+   "query": "site:www.cityheaven.net/saga/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:saga",
+   "query": "site:www.cityheaven.net/saga/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:saga",
+   "query": "site:www.cityheaven.net/saga/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:saga",
+   "query": "site:smart.cityheaven.net/saga/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/saga/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:saga",
+   "query": "\"ミスヘブン総選挙2026\" 佐賀 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:nagasaki",
+   "query": "site:www.cityheaven.net/nagasaki/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:nagasaki",
+   "query": "site:www.cityheaven.net/nagasaki/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:nagasaki",
+   "query": "site:www.cityheaven.net/nagasaki/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagasaki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:nagasaki",
+   "query": "site:smart.cityheaven.net/nagasaki/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:nagasaki",
+   "query": "\"ミスヘブン総選挙2026\" 長崎 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 9,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%95%B7%E5%B4%8E%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:www.cityheaven.net/kumamoto/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kumamoto/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:www.cityheaven.net/kumamoto/ \"ミスヘブン総選挙2026\"",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:www.cityheaven.net/kumamoto/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:www.cityheaven.net/kumamoto/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kumamoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:www.cityheaven.net/kumamoto/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "site:smart.cityheaven.net/kumamoto/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/kumamoto/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:kumamoto",
+   "query": "\"ミスヘブン総選挙2026\" 熊本 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:oita",
+   "query": "site:www.cityheaven.net/oita/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 9,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/oita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:oita",
+   "query": "site:www.cityheaven.net/oita/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:oita",
+   "query": "site:www.cityheaven.net/oita/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/oita/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:oita",
+   "query": "site:www.cityheaven.net/oita/ ミスヘブン 2026 ノミネート",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:oita",
+   "query": "site:smart.cityheaven.net/oita/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/oita/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:oita",
+   "query": "\"ミスヘブン総選挙2026\" 大分 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "site:www.cityheaven.net/miyazaki/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyazaki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "site:www.cityheaven.net/miyazaki/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/miyazaki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "site:www.cityheaven.net/miyazaki/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "site:smart.cityheaven.net/miyazaki/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/miyazaki/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "\"ミスヘブン総選挙2026\" 宮崎 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AE%AE%E5%B4%8E%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:miyazaki",
+   "query": "\"ミスヘブン総選挙2026\" 宮崎 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E5%AE%AE%E5%B4%8E%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "site:www.cityheaven.net/kagoshima/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagoshima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22"
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "site:www.cityheaven.net/kagoshima/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagoshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "site:www.cityheaven.net/kagoshima/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagoshima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%83%8E%E3%83%9F%E3%83%8D%E3%83%BC%E3%83%88"
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "site:smart.cityheaven.net/kagoshima/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "\"ミスヘブン総選挙2026\" 鹿児島 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%B9%BF%E5%85%90%E5%B3%B6%20-site%3Acityheaven.net"
+  },
+  {
+   "tag": "pref:kagoshima",
+   "query": "\"ミスヘブン総選挙2026\" 鹿児島 -site:cityheaven.net",
+   "page": 2,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22%20%E9%B9%BF%E5%85%90%E5%B3%B6%20-site%3Acityheaven.net&b=11"
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "site:www.cityheaven.net/okinawa/ \"ミスヘブン総選挙2026\"",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "site:www.cityheaven.net/okinawa/ ミスヘブン 2026 エントリー",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/okinawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026%20%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AA%E3%83%BC"
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "site:www.cityheaven.net/okinawa/ ミスヘブン 2026 エントリー",
+   "page": 2,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "site:www.cityheaven.net/okinawa/ ミスヘブン 2026 ノミネート",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "site:smart.cityheaven.net/okinawa/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Asmart.cityheaven.net/okinawa/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:okinawa",
+   "query": "\"ミスヘブン総選挙2026\" 沖縄 -site:cityheaven.net",
+   "page": 1,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": null
+  },
+  {
+   "tag": "shop:aichi/A2301/A230101/dombunny_n",
+   "query": "site:www.cityheaven.net/aichi/A2301/A230101/dombunny_n/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/A2301/A230101/dombunny_n/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:ehime/A3801/A380101/burning",
+   "query": "site:www.cityheaven.net/ehime/A3801/A380101/burning/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 4,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/A3801/A380101/burning/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:ehime/A3801/A380101/marinesnow",
+   "query": "site:www.cityheaven.net/ehime/A3801/A380101/marinesnow/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ehime/A3801/A380101/marinesnow/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:fukuoka/A4001/A400102/elumo",
+   "query": "site:www.cityheaven.net/fukuoka/A4001/A400102/elumo/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/A4001/A400102/elumo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:fukuoka/A4004/A400402/kurume_delivery_health_club",
+   "query": "site:www.cityheaven.net/fukuoka/A4004/A400402/kurume_delivery_health_club/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukuoka/A4004/A400402/kurume_delivery_health_club/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:gifu/A2101/A210102/jyukupara_g",
+   "query": "site:www.cityheaven.net/gifu/A2101/A210102/jyukupara_g/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/A2101/A210102/jyukupara_g/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:gifu/A2101/A210103/jyukupara_g",
+   "query": "site:www.cityheaven.net/gifu/A2101/A210103/jyukupara_g/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/A2101/A210103/jyukupara_g/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:gifu/A2102/A210201/jyukupara_hashima",
+   "query": "site:www.cityheaven.net/gifu/A2102/A210201/jyukupara_hashima/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/A2102/A210201/jyukupara_hashima/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:gunma/A1001/A100102/cutyexpress",
+   "query": "site:www.cityheaven.net/gunma/A1001/A100102/cutyexpress/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/A1001/A100102/cutyexpress/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:hiroshima/A3401/A340101/agora",
+   "query": "site:www.cityheaven.net/hiroshima/A3401/A340101/agora/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/A3401/A340101/agora/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:hiroshima/A3401/A340101/gokinjyo",
+   "query": "site:www.cityheaven.net/hiroshima/A3401/A340101/gokinjyo/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hiroshima/A3401/A340101/gokinjyo/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:hokkaido/A0101/A010103/batugun",
+   "query": "site:www.cityheaven.net/hokkaido/A0101/A010103/batugun/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/A0101/A010103/batugun/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:hokkaido/A0101/A010103/saishokuenbi",
+   "query": "site:www.cityheaven.net/hokkaido/A0101/A010103/saishokuenbi/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/A0101/A010103/saishokuenbi/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:kagawa/A3702/A370205/tiamo_aishitemasu",
+   "query": "site:www.cityheaven.net/kagawa/A3702/A370205/tiamo_aishitemasu/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/A3702/A370205/tiamo_aishitemasu/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:kanagawa/A1401/A140103/onemorecoming",
+   "query": "site:www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:kanagawa/A1403/A140301/sapphire",
+   "query": "site:www.cityheaven.net/kanagawa/A1403/A140301/sapphire/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/A1403/A140301/sapphire/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:mie/A2402/A240201/y-classy",
+   "query": "site:www.cityheaven.net/mie/A2402/A240201/y-classy/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/mie/A2402/A240201/y-classy/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:nagano/A2002/A200201/matumotohitodumakeiderihel_sincere",
+   "query": "site:www.cityheaven.net/nagano/A2002/A200201/matumotohitodumakeiderihel_sincere/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/nagano/A2002/A200201/matumotohitodumakeiderihel_sincere/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:niigata/A1501/A150101/milk-pie",
+   "query": "site:www.cityheaven.net/niigata/A1501/A150101/milk-pie/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 2,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/A1501/A150101/milk-pie/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:osaka/A2702/A270202/shirouto_pocha",
+   "query": "site:www.cityheaven.net/osaka/A2702/A270202/shirouto_pocha/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/A2702/A270202/shirouto_pocha/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:osaka/A2705/A270501/tsuyahime",
+   "query": "site:www.cityheaven.net/osaka/A2705/A270501/tsuyahime/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/osaka/A2705/A270501/tsuyahime/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:saitama/A1102/A110201/marutsuma_n",
+   "query": "site:www.cityheaven.net/saitama/A1102/A110201/marutsuma_n/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/A1102/A110201/marutsuma_n/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:saitama/A1104/A110401/surprisegakuen",
+   "query": "site:www.cityheaven.net/saitama/A1104/A110401/surprisegakuen/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/A1104/A110401/surprisegakuen/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:shizuoka/A2201/A220101/pocha_doll_c",
+   "query": "site:www.cityheaven.net/shizuoka/A2201/A220101/pocha_doll_c/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/A2201/A220101/pocha_doll_c/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:shizuoka/A2202/A220201/salon-de-mrs",
+   "query": "site:www.cityheaven.net/shizuoka/A2202/A220201/salon-de-mrs/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/A2202/A220201/salon-de-mrs/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:tokyo/A1312/A131205/chloeueno",
+   "query": "site:www.cityheaven.net/tokyo/A1312/A131205/chloeueno/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/A1312/A131205/chloeueno/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:wakayama/A3001/A300101/okutetu_wakayama",
+   "query": "site:www.cityheaven.net/wakayama/A3001/A300101/okutetu_wakayama/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/wakayama/A3001/A300101/okutetu_wakayama/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "shop:yamanashi/A1901/A190101/E190020",
+   "query": "site:www.cityheaven.net/yamanashi/A1901/A190101/E190020/ ミスヘブン 2026",
+   "page": 1,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/yamanashi/A1901/A190101/E190020/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026"
+  },
+  {
+   "tag": "pref:hokkaido",
+   "query": "site:www.cityheaven.net/hokkaido/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 9,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/hokkaido/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:akita",
+   "query": "site:www.cityheaven.net/akita/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 3,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/akita/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:ibaraki",
+   "query": "site:www.cityheaven.net/ibaraki/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/ibaraki/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:gunma",
+   "query": "site:www.cityheaven.net/gunma/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gunma/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:saitama",
+   "query": "site:www.cityheaven.net/saitama/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/saitama/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:chiba",
+   "query": "site:www.cityheaven.net/chiba/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:tokyo",
+   "query": "site:www.cityheaven.net/tokyo/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:kanagawa",
+   "query": "site:www.cityheaven.net/kanagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kanagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:niigata",
+   "query": "site:www.cityheaven.net/niigata/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 1,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/niigata/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:fukui",
+   "query": "site:www.cityheaven.net/fukui/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 8,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/fukui/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:shizuoka",
+   "query": "site:www.cityheaven.net/shizuoka/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/shizuoka/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:aichi",
+   "query": "site:www.cityheaven.net/aichi/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:tokushima",
+   "query": "site:www.cityheaven.net/tokushima/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 0,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 6,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=51"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 7,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=61"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 8,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=71"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 9,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=81"
+  },
+  {
+   "tag": "pref:kagawa",
+   "query": "site:www.cityheaven.net/kagawa/ \"ミスヘブン総選挙2026\"",
+   "page": 10,
+   "resultCount": 10,
+   "error": null,
+   "searchUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/%20%22%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%22&b=91"
+  }
+ ]
+}

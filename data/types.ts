@@ -236,8 +236,17 @@ export interface Phase2CountFact {
 /** 画面が扱う店舗（Phase 3 storeId が主キー） */
 export interface SiteStore {
   id: string;
-  /** データの出どころ（Phase 3 成果物 / Phase 3 以降の差分更新 data/store-updates.ts） */
-  origin: "phase3" | "update";
+  /**
+   * データの出どころ
+   * - phase3: Phase 3 成果物
+   * - phase3b: Phase 3b 全国走査（検索結果からの発見。data/phase3b）
+   * - update: 個別の差分更新（data/store-updates.ts）
+   */
+  origin: "phase3" | "phase3b" | "update";
+  /** 確認方法（Phase 3b 以降。例: search_index_multiple） */
+  verificationMethod?: string;
+  /** 2026年の参加を示した店舗ページの数（検索結果で確認できた範囲） */
+  evidencePageCount?: number;
   name: string;
   nameOriginals: string[];
   prefecture?: string;
@@ -292,4 +301,21 @@ export interface StoreLayer {
   relations: SiteRelation[];
   sources: SiteSource[];
   countFacts: StoreCountFact[];
+}
+
+/** Phase 3b 全国走査の都道府県別カバレッジ */
+export interface Phase3bCoveragePrefecture {
+  prefecture: string;
+  prefSlug: string;
+  /** searched = 予定した検索をすべて実行 / not_searched = 未実行・失敗あり */
+  researchStatus: "searched" | "not_searched";
+  queryCount: number;
+  pageCount: number;
+  resultCount: number;
+  storesFound: number;
+  newStores: number;
+  matchedExisting: number;
+  byConfidence: Record<string, number>;
+  /** found = 店舗を発見 / insufficient = 検索したが店舗を特定できる根拠なし */
+  dataStatus: "found" | "insufficient";
 }
