@@ -1,0 +1,730 @@
+{
+ "schemaVersion": "1.0.0",
+ "event": "ミスヘブン総選挙2026",
+ "phase": "Phase3b_nationwide_search_sweep",
+ "checkedAt": "2026-10-05",
+ "scope": "検索エンジンの索引で、ヘブン掲載の店舗ページに2026年の参加の記載が確認できた店舗。全参加店舗の網羅ではない。個人名簿ではない。",
+ "prefectures": [
+  {
+   "prefecture": "北海道",
+   "prefSlug": "hokkaido",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 15,
+   "resultCount": 139,
+   "storesFound": 21,
+   "newStores": 19,
+   "matchedExisting": 2,
+   "byConfidence": {
+    "unverified": 13,
+    "probable": 6
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "青森県",
+   "prefSlug": "aomori",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 28,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "岩手県",
+   "prefSlug": "iwate",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 8,
+   "resultCount": 59,
+   "storesFound": 3,
+   "newStores": 3,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 2,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "宮城県",
+   "prefSlug": "miyagi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 14,
+   "resultCount": 117,
+   "storesFound": 17,
+   "newStores": 17,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 10,
+    "probable": 7
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "秋田県",
+   "prefSlug": "akita",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 11,
+   "resultCount": 76,
+   "storesFound": 1,
+   "newStores": 1,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "山形県",
+   "prefSlug": "yamagata",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 27,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "福島県",
+   "prefSlug": "fukushima",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 8,
+   "resultCount": 61,
+   "storesFound": 6,
+   "newStores": 6,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 5,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "茨城県",
+   "prefSlug": "ibaraki",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 18,
+   "resultCount": 167,
+   "storesFound": 4,
+   "newStores": 3,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "probable": 2,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "栃木県",
+   "prefSlug": "tochigi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 10,
+   "resultCount": 79,
+   "storesFound": 4,
+   "newStores": 3,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "unverified": 2,
+    "probable": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "群馬県",
+   "prefSlug": "gunma",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 19,
+   "resultCount": 172,
+   "storesFound": 10,
+   "newStores": 9,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "probable": 5,
+    "unverified": 4
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "埼玉県",
+   "prefSlug": "saitama",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 19,
+   "resultCount": 182,
+   "storesFound": 24,
+   "newStores": 22,
+   "matchedExisting": 2,
+   "byConfidence": {
+    "probable": 7,
+    "unverified": 15
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "千葉県",
+   "prefSlug": "chiba",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 19,
+   "resultCount": 181,
+   "storesFound": 10,
+   "newStores": 10,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 6,
+    "probable": 4
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "東京都",
+   "prefSlug": "tokyo",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 20,
+   "resultCount": 192,
+   "storesFound": 43,
+   "newStores": 43,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 28,
+    "probable": 15
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "神奈川県",
+   "prefSlug": "kanagawa",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 19,
+   "resultCount": 185,
+   "storesFound": 20,
+   "newStores": 17,
+   "matchedExisting": 3,
+   "byConfidence": {
+    "unverified": 11,
+    "probable": 6
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "新潟県",
+   "prefSlug": "niigata",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 18,
+   "resultCount": 153,
+   "storesFound": 5,
+   "newStores": 5,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 3,
+    "probable": 2
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "富山県",
+   "prefSlug": "toyama",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 33,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "石川県",
+   "prefSlug": "ishikawa",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 40,
+   "storesFound": 5,
+   "newStores": 5,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 5
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "福井県",
+   "prefSlug": "fukui",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 13,
+   "resultCount": 112,
+   "storesFound": 1,
+   "newStores": 1,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "山梨県",
+   "prefSlug": "yamanashi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 10,
+   "resultCount": 63,
+   "storesFound": 6,
+   "newStores": 5,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "probable": 4,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "長野県",
+   "prefSlug": "nagano",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 7,
+   "resultCount": 39,
+   "storesFound": 5,
+   "newStores": 5,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 4,
+    "probable": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "岐阜県",
+   "prefSlug": "gifu",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 12,
+   "resultCount": 94,
+   "storesFound": 7,
+   "newStores": 7,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 2,
+    "unverified": 5
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "静岡県",
+   "prefSlug": "shizuoka",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 17,
+   "resultCount": 158,
+   "storesFound": 5,
+   "newStores": 5,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 4,
+    "probable": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "愛知県",
+   "prefSlug": "aichi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 19,
+   "resultCount": 172,
+   "storesFound": 24,
+   "newStores": 24,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 17,
+    "probable": 7
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "三重県",
+   "prefSlug": "mie",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 30,
+   "storesFound": 1,
+   "newStores": 1,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "滋賀県",
+   "prefSlug": "shiga",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 10,
+   "resultCount": 64,
+   "storesFound": 10,
+   "newStores": 9,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "unverified": 5,
+    "probable": 4
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "京都府",
+   "prefSlug": "kyoto",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 15,
+   "storesFound": 6,
+   "newStores": 6,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 6
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "大阪府",
+   "prefSlug": "osaka",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 11,
+   "resultCount": 89,
+   "storesFound": 21,
+   "newStores": 21,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 9,
+    "unverified": 12
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "兵庫県",
+   "prefSlug": "hyogo",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 12,
+   "resultCount": 102,
+   "storesFound": 13,
+   "newStores": 12,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "unverified": 6,
+    "probable": 6
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "奈良県",
+   "prefSlug": "nara",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 19,
+   "storesFound": 2,
+   "newStores": 2,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 2
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "和歌山県",
+   "prefSlug": "wakayama",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 31,
+   "storesFound": 1,
+   "newStores": 1,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "鳥取県",
+   "prefSlug": "tottori",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 20,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "島根県",
+   "prefSlug": "shimane",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 20,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "岡山県",
+   "prefSlug": "okayama",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 11,
+   "resultCount": 96,
+   "storesFound": 4,
+   "newStores": 3,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "probable": 3
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "広島県",
+   "prefSlug": "hiroshima",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 10,
+   "resultCount": 83,
+   "storesFound": 11,
+   "newStores": 10,
+   "matchedExisting": 1,
+   "byConfidence": {
+    "probable": 6,
+    "unverified": 4
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "山口県",
+   "prefSlug": "yamaguchi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 8,
+   "resultCount": 61,
+   "storesFound": 4,
+   "newStores": 4,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 1,
+    "unverified": 3
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "徳島県",
+   "prefSlug": "tokushima",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 15,
+   "resultCount": 124,
+   "storesFound": 3,
+   "newStores": 3,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 3
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "香川県",
+   "prefSlug": "kagawa",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 17,
+   "resultCount": 151,
+   "storesFound": 8,
+   "newStores": 8,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 4,
+    "probable": 4
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "愛媛県",
+   "prefSlug": "ehime",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 7,
+   "resultCount": 29,
+   "storesFound": 6,
+   "newStores": 6,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 4,
+    "probable": 2
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "高知県",
+   "prefSlug": "kochi",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 30,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "福岡県",
+   "prefSlug": "fukuoka",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 10,
+   "resultCount": 73,
+   "storesFound": 24,
+   "newStores": 22,
+   "matchedExisting": 2,
+   "byConfidence": {
+    "unverified": 10,
+    "probable": 12
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "佐賀県",
+   "prefSlug": "saga",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 16,
+   "storesFound": 2,
+   "newStores": 2,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 1,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "長崎県",
+   "prefSlug": "nagasaki",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 5,
+   "resultCount": 11,
+   "storesFound": 3,
+   "newStores": 3,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 1,
+    "unverified": 2
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "熊本県",
+   "prefSlug": "kumamoto",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 7,
+   "resultCount": 22,
+   "storesFound": 8,
+   "newStores": 8,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 5,
+    "probable": 3
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "大分県",
+   "prefSlug": "oita",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 20,
+   "storesFound": 5,
+   "newStores": 5,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "unverified": 2,
+    "probable": 3
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "宮崎県",
+   "prefSlug": "miyazaki",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 23,
+   "storesFound": 0,
+   "newStores": 0,
+   "matchedExisting": 0,
+   "byConfidence": {},
+   "dataStatus": "insufficient"
+  },
+  {
+   "prefecture": "鹿児島県",
+   "prefSlug": "kagoshima",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 33,
+   "storesFound": 3,
+   "newStores": 3,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 2,
+    "unverified": 1
+   },
+   "dataStatus": "found"
+  },
+  {
+   "prefecture": "沖縄県",
+   "prefSlug": "okinawa",
+   "researchStatus": "searched",
+   "queryCount": 5,
+   "pageCount": 6,
+   "resultCount": 10,
+   "storesFound": 1,
+   "newStores": 1,
+   "matchedExisting": 0,
+   "byConfidence": {
+    "probable": 1
+   },
+   "dataStatus": "found"
+  }
+ ]
+}

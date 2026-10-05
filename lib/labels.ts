@@ -76,6 +76,8 @@ export const PARTICIPATION_TYPE_LABEL: Record<string, string> = {
   group_entry_claim: "系列としての出場告知",
   candidate: "候補（未確認）",
   store_banner_reported: "店舗ページの告知バナーで確認（利用者からの情報提供）",
+  search_index_reported: "店舗ページ（ヘブン掲載）の検索結果で参加の記載を確認",
+  official_site_reported: "店舗の公式サイトで参加を確認",
 };
 
 /** 店舗公開ページのリンク状態（publicUrlAccessStatus） */
@@ -91,6 +93,7 @@ export const PUBLISHER_ROLE_LABEL: Record<string, string> = {
   event_organizer: "大会運営の公式案内",
   official_media_guide: "公式媒体の案内",
   store_announcement: "店舗の告知",
+  search_engine_result: "検索結果（店舗ページの抜粋）",
   store_public_page: "店舗の公開ページ",
   store_geography: "店舗の所在地情報",
   campaign_support: "応援キャンペーンの案内",
@@ -104,6 +107,7 @@ export const SOURCE_ACCESS_LABEL: Record<string, string> = {
   indexed_only_403: "検索結果のみ（本文は取得不可）",
   indexed_only_fetch_failed: "検索結果のみ（本文の取得に失敗）",
   user_screenshot_only: "利用者提供のスクリーンショットで確認（調査側は本文を直接取得していない）",
+  search_index_only: "検索結果の抜粋で確認（本文は直接取得していない）",
 };
 
 /** Phase 2 の人数の種類（countType）。在籍・申込・出場・ノミネートを混同しない */
@@ -116,4 +120,12 @@ export const COUNT_TYPE_LABEL: Record<string, { label: string; note: string }> =
     label: "店舗が告知したエントリー人数",
     note: "店舗の告知に書かれた人数です。正式なノミネート人数とは照合していません。",
   },
+};
+
+/** 店舗の確認方法（verificationMethod。Phase 3b 以降） */
+export const VERIFICATION_METHOD_LABEL: Record<string, string> = {
+  search_index_multiple: "検索結果で、この店舗の複数のページに2026年の参加の記載を確認（ページ本文は直接取得していない）",
+  search_index_single: "検索結果で、この店舗の1ページに2026年の参加の記載を確認（ページ本文は直接取得していない）",
+  official_site_body: "店舗の公式サイトの本文で2026年の参加を確認",
+  user_screenshot: "利用者提供のスクリーンショットで店舗の告知を確認",
 };

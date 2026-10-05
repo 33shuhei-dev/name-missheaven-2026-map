@@ -7,6 +7,10 @@ import relationsJson from "@/data/phase3/store_category_relations.json";
 import sourcesJson from "@/data/phase3/store_sources.json";
 import campaignJson from "@/data/phase3/campaign_support_stores.json";
 import coverageJson from "@/data/phase3/coverage_47prefectures.json";
+import phase3bStoresJson from "@/data/phase3b/stores.json";
+import phase3bRelationsJson from "@/data/phase3b/store_category_relations.json";
+import phase3bSourcesJson from "@/data/phase3b/store_sources.json";
+import phase3bCoverageJson from "@/data/phase3b/coverage_47prefectures.json";
 import { updates } from "@/data/updates";
 import { relationUpdates, sourceUpdates, storeUpdates } from "@/data/store-updates";
 import type {
@@ -19,6 +23,7 @@ import type {
   Phase3RawSource,
   Phase3RawStore,
   Phase3StoresFile,
+  Phase3bCoveragePrefecture,
 } from "@/data/types";
 import { buildModel, type SiteModel } from "./model";
 import { adaptAll } from "./phase1";
@@ -41,6 +46,16 @@ export const phase3Relations = (relationsJson as unknown as { relations: Phase3R
 export const phase3Sources = (sourcesJson as unknown as { sources: Phase3RawSource[] }).sources;
 export const phase3Coverage = coverageJson as unknown as Phase3Coverage;
 export const campaignSupportStores = (campaignJson as unknown as { stores: Phase3CampaignStore[] }).stores;
+/** Phase 3b：全国走査（検索結果からの発見。調査側で生成した成果物） */
+export const phase3b = {
+  stores: (phase3bStoresJson as unknown as { stores: Phase3RawStore[] }).stores,
+  relations: (phase3bRelationsJson as unknown as { relations: Phase3RawRelation[] }).relations,
+  sources: (phase3bSourcesJson as unknown as { sources: Phase3RawSource[] }).sources,
+  summary: (phase3bStoresJson as unknown as { summary: Record<string, unknown> }).summary,
+  checkedAt: (phase3bStoresJson as unknown as { checkedAt: string }).checkedAt,
+  coverage: (phase3bCoverageJson as unknown as { prefectures: Phase3bCoveragePrefecture[] }).prefectures,
+};
+
 const phase2 = phase2Json as unknown as { countFacts: Phase2CountFact[]; nationalApproximateScale: number | null };
 
 function load(): SiteModel {
@@ -60,9 +75,20 @@ function load(): SiteModel {
       },
       phase1Dataset.records,
     ),
+    // Phase 3b は Phase 3 に対して、個別の差分更新は Phase 3 ＋ Phase 3b に対して重複・形式を検証する
+    ...validateStoreUpdates(
+      phase3b,
+      { stores: phase3Stores.stores, relations: phase3Relations, sources: phase3Sources },
+      phase1Dataset.records,
+      campaignSupportStores,
+    ),
     ...validateStoreUpdates(
       { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
-      { stores: phase3Stores.stores, relations: phase3Relations, sources: phase3Sources },
+      {
+        stores: [...phase3Stores.stores, ...phase3b.stores],
+        relations: [...phase3Relations, ...phase3b.relations],
+        sources: [...phase3Sources, ...phase3b.sources],
+      },
       phase1Dataset.records,
       campaignSupportStores,
     ),
@@ -76,6 +102,7 @@ function load(): SiteModel {
     relations: phase3Relations,
     sources: phase3Sources,
     countFacts: phase2.countFacts,
+    phase3b,
     updates: { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
   });
   return buildModel(adaptAll(sets), { mapInfo: phase1Map.prefectures, layer });
@@ -97,4 +124,9 @@ export const datasetInfo = {
 /** 応援キャンペーンのみ確認された店舗（参加店舗の件数には含めない） */
 export function campaignStoresIn(prefecture: string | undefined) {
   return campaignSupportStores.filter((c) => (c.prefecture ?? undefined) === prefecture);
+}
+
+/** Phase 3b 全国走査の都道府県別の調査状況 */
+export function phase3bCoverageOf(prefecture: string) {
+  return phase3b.coverage.find((c) => c.prefecture === prefecture) ?? null;
 }

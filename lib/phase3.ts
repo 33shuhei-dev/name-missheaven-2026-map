@@ -44,6 +44,8 @@ export function adaptStore(raw: Phase3RawStore, origin: SiteStore["origin"] = "p
     sourceIds: [...raw.sourceIds],
     checkedAt: opt(raw.checkedAt),
     notes: opt(raw.notes),
+    verificationMethod: opt(raw.verificationMethod),
+    evidencePageCount: typeof raw.evidencePageCount === "number" ? raw.evidencePageCount : undefined,
   };
 }
 
@@ -95,26 +97,31 @@ export function linkCountFacts(facts: readonly Phase2CountFact[], stores: readon
   return out;
 }
 
+export interface StoreLayerInput {
+  stores: readonly Phase3RawStore[];
+  relations: readonly Phase3RawRelation[];
+  sources: readonly Phase3RawSource[];
+}
+
 export function adaptStoreLayer(input: {
   stores: readonly Phase3RawStore[];
   relations: readonly Phase3RawRelation[];
   sources: readonly Phase3RawSource[];
   countFacts: readonly Phase2CountFact[];
   /** Phase 3 以降の差分更新（data/store-updates.ts） */
-  updates?: {
-    stores: readonly Phase3RawStore[];
-    relations: readonly Phase3RawRelation[];
-    sources: readonly Phase3RawSource[];
-  };
+  updates?: StoreLayerInput;
+  /** Phase 3b 全国走査（data/phase3b） */
+  phase3b?: StoreLayerInput;
 }): StoreLayer {
   const stores = [
     ...input.stores.map((s) => adaptStore(s, "phase3")),
+    ...(input.phase3b?.stores ?? []).map((s) => adaptStore(s, "phase3b")),
     ...(input.updates?.stores ?? []).map((s) => adaptStore(s, "update")),
   ];
   return {
     stores,
-    relations: [...input.relations, ...(input.updates?.relations ?? [])].map(adaptRelation),
-    sources: [...input.sources, ...(input.updates?.sources ?? [])].map(adaptSource),
+    relations: [...input.relations, ...(input.phase3b?.relations ?? []), ...(input.updates?.relations ?? [])].map(adaptRelation),
+    sources: [...input.sources, ...(input.phase3b?.sources ?? []), ...(input.updates?.sources ?? [])].map(adaptSource),
     countFacts: linkCountFacts(input.countFacts, stores),
   };
 }

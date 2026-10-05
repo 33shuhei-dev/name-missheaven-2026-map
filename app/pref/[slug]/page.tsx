@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { campaignStoresIn, site } from "@/lib/data";
+import { campaignStoresIn, phase3b, phase3bCoverageOf, site } from "@/lib/data";
 import { entrantHref, findPrefectureView } from "@/lib/model";
 import { MAP_STATUS_DESCRIPTION } from "@/lib/labels";
 import { PREFECTURES, REGIONS, UNKNOWN_PREFECTURE_SLUG, prefecturesInRegion } from "@/data/geo";
@@ -50,6 +50,7 @@ export default async function PrefecturePage({ params }: Params) {
   const s = pref.summary;
   const hasData = pref.recordCount > 0 || pref.stores.length > 0;
   const campaign = campaignStoresIn(isUnknown ? undefined : pref.name);
+  const sweep = isUnknown ? null : phase3bCoverageOf(pref.name);
 
   return (
     <>
@@ -66,6 +67,15 @@ export default async function PrefecturePage({ params }: Params) {
         </p>
       ) : (
         <p className="hint">{MAP_STATUS_DESCRIPTION[pref.status]}</p>
+      )}
+      {sweep && (
+        <p className="hint hint--tight sweep-line">
+          全国走査（{phase3b.checkedAt}）：{sweep.researchStatus === "searched" ? "調査済み" : "未調査・一部未実行"}
+          {sweep.researchStatus === "searched" &&
+            (sweep.storesFound > 0
+              ? `。検索結果で参加の記載を確認できた店舗 ${sweep.storesFound}店（うち既存データと一致 ${sweep.matchedExisting}店）`
+              : "。検索結果から参加店舗を特定できる記載は見つかりませんでした（参加店舗がないという意味ではありません）")}
+        </p>
       )}
 
       {!hasData ? (

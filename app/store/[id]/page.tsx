@@ -9,6 +9,7 @@ import {
   PARTICIPATION_TYPE_LABEL,
   PUBLIC_URL_STATUS_NOTE,
   PUBLISHER_ROLE_LABEL,
+  VERIFICATION_METHOD_LABEL,
   SOURCE_ACCESS_LABEL,
   SOURCE_TYPE_LABEL,
   UNKNOWN_AREA_LABEL,
@@ -69,7 +70,9 @@ export default async function StorePage({ params }: Params) {
           { label: s.name },
         ]}
       />
-      <p className="eyebrow">参加関連店舗{s.origin === "update" ? "（Phase 3 以降の追加情報）" : ""}</p>
+      <p className="eyebrow">
+        参加関連店舗{s.origin === "update" ? "（Phase 3 以降の追加情報）" : s.origin === "phase3b" ? "（全国走査で発見）" : ""}
+      </p>
       <div className="page-head">
         <h1>{s.name}</h1>
         <ConfidenceBadge value={s.confidence} />
@@ -160,7 +163,13 @@ export default async function StorePage({ params }: Params) {
         <h2 id="evidence-heading">参加の根拠</h2>
         <div className="evidence">
           <p className="evidence__label">根拠の種類：{evidenceKind}</p>
-          {s.evidenceSource && SOURCE_ACCESS_LABEL[s.evidenceSource.accessStatus] && (
+          {s.verificationMethod && VERIFICATION_METHOD_LABEL[s.verificationMethod] && (
+            <p className="hint hint--tight">
+              確認方法：{VERIFICATION_METHOD_LABEL[s.verificationMethod]}
+              {typeof s.evidencePageCount === "number" && s.evidencePageCount > 1 && `（${s.evidencePageCount}ページ）`}
+            </p>
+          )}
+          {!s.verificationMethod && s.evidenceSource && SOURCE_ACCESS_LABEL[s.evidenceSource.accessStatus] && (
             <p className="hint hint--tight">確認方法：{SOURCE_ACCESS_LABEL[s.evidenceSource.accessStatus]}</p>
           )}
           {s.participationEvidenceUrl ? (
