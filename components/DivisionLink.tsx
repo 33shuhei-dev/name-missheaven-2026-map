@@ -1,10 +1,9 @@
 import Link from "next/link";
 import type { Division } from "@/lib/model";
 import { UNKNOWN_AREA_LABEL } from "@/lib/labels";
-import { ConfidenceBadge } from "./Badges";
 
 /**
- * 部門カード。視覚的な優先順位：部門名 ＞ 確認状態 ＞ 店舗 ＞ 出場者数・所在地
+ * 部門カード。視覚的な優先順位：部門名 ＞ 店舗 ＞ 出場者数・所在地（確認状態は部門ページで表示）
  */
 export function DivisionLink({
   division: d,
@@ -24,7 +23,7 @@ export function DivisionLink({
     <Link href={`/division/${d.id}`} className={`div-card div-card--${d.confidence}`}>
       <span className="div-card__head">
         <span className="div-card__title">{d.categoryOriginal}</span>
-        <ConfidenceBadge value={d.confidence} small />
+        <span aria-hidden="true" className="row-link__arrow">›</span>
       </span>
       {place && <span className="div-card__place">{place}</span>}
       <span className="div-card__meta">

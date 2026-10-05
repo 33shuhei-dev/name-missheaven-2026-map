@@ -48,8 +48,34 @@ export default async function DivisionPage({ params }: Params) {
           { label: d.categoryOriginal },
         ]}
       />
-      <p className="eyebrow">部門（掲載原文）</p>
+      <p className="eyebrow">ミスヘブン総選挙2026の部門</p>
       <h1 className="division-title">{d.categoryOriginal}</h1>
+      <p className="store-place">
+        <Link href={`/pref/${d.prefSlug}`}>{d.prefectureName}</Link>
+        {" ・ "}
+        <Link href={`/pref/${d.prefSlug}/area/${d.areaId}`}>{areaLabel}</Link>
+      </p>
+
+      <section className="section section--first" aria-labelledby="store-heading">
+        <h2 id="store-heading">
+          この部門の店舗<span className="count">{d.stores.length ? `${d.stores.length}店` : ""}</span>
+        </h2>
+        {d.stores.length ? (
+          <div className="list">
+            {d.stores.map((st) => (
+              <StoreRow
+                key={st.id}
+                store={{ id: st.id, name: st.name, hasPublicUrl: st.hasPublicUrl }}
+                confidence={st.storeConfidence}
+                showArea={false}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="empty">この部門に関係する店舗はまだ確認できていません。</p>
+        )}
+        <p className="hint hint--tight">「公開ページあり」の店舗は、店舗ページから店舗の公開ページへ進めます。</p>
+      </section>
 
       <dl className="facts">
         <div>
@@ -80,31 +106,10 @@ export default async function DivisionPage({ params }: Params) {
       </dl>
 
       {d.confidence !== "confirmed" && (
-        <p className="notice notice--warn">
-          この部門の情報は<strong>候補情報</strong>のみです。部門名・地域・店舗の関係は確認しきれていません。各情報の根拠・留保をご確認ください。
+        <p className="notice">
+          検索結果・店舗の告知などで見つかった部門の情報です。詳しい出場者情報は、各店舗の公開ページでご確認ください。
         </p>
       )}
-
-      <section className="section" aria-labelledby="store-heading">
-        <h2 id="store-heading">
-          店舗<span className="count">{d.stores.length ? `見つかった範囲 ${d.stores.length}店` : ""}</span>
-        </h2>
-        {d.stores.length ? (
-          <div className="list">
-            {d.stores.map((st) => (
-              <StoreRow
-                key={st.id}
-                store={{ id: st.id, name: st.name, hasPublicUrl: st.hasPublicUrl }}
-                confidence={st.relationConfidence}
-                showArea={false}
-              />
-            ))}
-          </div>
-        ) : (
-          <p className="empty">この部門に関係する店舗はまだ確認できていません。</p>
-        )}
-        <p className="hint hint--tight">確認状態は「店舗とこの部門の関係」の確認状態です。</p>
-      </section>
 
       {d.records.length > 0 && (
       <section className="section" aria-labelledby="obs-heading">

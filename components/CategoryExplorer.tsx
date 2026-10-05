@@ -2,10 +2,8 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
-import type { Confidence } from "@/data/types";
-import { CONFIDENCE_LABEL, CONFIDENCE_ORDER, confidenceRank } from "@/lib/labels";
-import { tokenizeQuery } from "@/lib/text";
-import { ConfidenceBadge } from "./Badges";
+import { useSearchParams } from "next/navigation";
+import { normalizeForSearch, tokenizeQuery } from "@/lib/text";
 
 export interface CategoryRow {
   name: string;
@@ -15,49 +13,67 @@ export interface CategoryRow {
   recordCount: number;
   /** この部門名に関係する店舗数（店舗×部門関係の店舗IDの重複なし） */
   storeCount: number;
+  /** この部門名の情報がある都道府県（地域未判明を含むことがある） */
   prefectures: { slug: string; label: string }[];
-  confidence: Confidence;
-  divisions: { id: string; label: string; confidence: Confidence }[];
+  /** 情報が見つかった都道府県の数（地域未判明は数えない） */
+  prefectureCount: number;
+  divisions: { id: string; label: string; storeCount: number }[];
 }
 
-type Sort = "stores" | "count" | "name" | "prefs";
+type Sort = "stores" | "prefs" | "name";
 
 const PAGE_SIZE = 40;
+/** 1つの部門名で最初に見せる地域の数（残りは「ほか」で開く）。一覧では短く、部門名で探したときは多めに */
+const PLACE_PREVIEW = 2;
+const PLACE_PREVIEW_SEARCH = 6;
 
-export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; prefOptions: { slug: string; label: string }[] }) {
-  const [q, setQ] = useState("");
+/** URL の ?q=（トップの部門から来たとき）を初期値にする。読み込み前は q なしで全件を描画する */
+export function CategoryExplorerWithParams(props: { rows: CategoryRow[]; prefOptions: { slug: string; label: string }[] }) {
+  const q = useSearchParams().get("q") ?? "";
+  return <CategoryExplorer key={q} {...props} initialQ={q} />;
+}
+
+export function CategoryExplorer({
+  rows,
+  prefOptions,
+  initialQ = "",
+}: {
+  rows: CategoryRow[];
+  prefOptions: { slug: string; label: string }[];
+  initialQ?: string;
+}) {
+  const [q, setQ] = useState(initialQ);
   const [pref, setPref] = useState("");
-  const [confidence, setConfidence] = useState<Confidence | "">("");
   const [sort, setSort] = useState<Sort>("stores");
   const [limit, setLimit] = useState(PAGE_SIZE);
 
   const list = useMemo(() => {
     const tokens = tokenizeQuery(q);
+    const exact = normalizeForSearch(q);
     const filtered = rows.filter(
-      (r) =>
-        tokens.every((t) => r.keys.some((k) => k.includes(t))) &&
-        (!pref || r.prefectures.some((p) => p.slug === pref)) &&
-        (!confidence || r.confidence === confidence),
+      (r) => tokens.every((t) => r.keys.some((k) => k.includes(t))) && (!pref || r.prefectures.some((p) => p.slug === pref)),
     );
     const byName = (a: CategoryRow, b: CategoryRow) => a.name.localeCompare(b.name, "ja");
-    return filtered.sort((a, b) =>
-      sort === "name"
-        ? byName(a, b)
-        : sort === "prefs"
-          ? b.prefectures.length - a.prefectures.length || b.recordCount - a.recordCount || byName(a, b)
-          : sort === "stores"
-            ? b.storeCount - a.storeCount || b.recordCount - a.recordCount || byName(a, b)
-            : b.recordCount - a.recordCount || confidenceRank(a.confidence) - confidenceRank(b.confidence) || byName(a, b),
+    const isExact = (r: CategoryRow) => (exact && normalizeForSearch(r.name) === exact ? 0 : 1);
+    return filtered.sort(
+      (a, b) =>
+        isExact(a) - isExact(b) ||
+        (sort === "name"
+          ? byName(a, b)
+          : sort === "prefs"
+            ? b.prefectureCount - a.prefectureCount || b.storeCount - a.storeCount || byName(a, b)
+            : b.storeCount - a.storeCount || b.prefectureCount - a.prefectureCount || byName(a, b)),
     );
-  }, [rows, q, pref, confidence, sort]);
+  }, [rows, q, pref, sort]);
 
   const reset = () => setLimit(PAGE_SIZE);
+  const preview = q.trim() ? PLACE_PREVIEW_SEARCH : PLACE_PREVIEW;
 
   return (
     <>
       <div className="search-panel">
         <label className="field">
-          <span className="field__label">部門名で絞り込み</span>
+          <span className="field__label">部門名で探す</span>
           <input
             type="search"
             value={q}
@@ -65,7 +81,7 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
               setQ(e.target.value);
               reset();
             }}
-            placeholder="例：コスプレ、美尻"
+            placeholder="例：おっぱい、コスプレ、人妻"
             autoComplete="off"
           />
         </label>
@@ -79,7 +95,7 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
                 reset();
               }}
             >
-              <option value="">すべて</option>
+              <option value="">全国</option>
               {prefOptions.map((p) => (
                 <option key={p.slug} value={p.slug}>
                   {p.label}
@@ -88,37 +104,32 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
             </select>
           </label>
           <label className="field">
-            <span className="field__label">確認状態</span>
-            <select
-              value={confidence}
-              onChange={(e) => {
-                const v = e.target.value;
-                setConfidence(v === "confirmed" || v === "probable" || v === "unverified" ? v : "");
-                reset();
-              }}
-            >
-              <option value="">すべて</option>
-              {CONFIDENCE_ORDER.map((c) => (
-                <option key={c} value={c}>
-                  {CONFIDENCE_LABEL[c]}あり
-                </option>
-              ))}
+            <span className="field__label">並び順</span>
+            <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
+              <option value="stores">店舗が多い順</option>
+              <option value="prefs">都道府県が多い順</option>
+              <option value="name">名前順</option>
             </select>
           </label>
         </div>
-        <label className="field">
-          <span className="field__label">並び順</span>
-          <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
-            <option value="stores">店舗数が多い順</option>
-            <option value="count">観測件数が多い順</option>
-            <option value="prefs">都道府県数が多い順</option>
-            <option value="name">名前順</option>
-          </select>
-        </label>
+        {(q || pref) && (
+          <button
+            type="button"
+            className="button button--ghost"
+            onClick={() => {
+              setQ("");
+              setPref("");
+              reset();
+            }}
+          >
+            すべての部門を見る
+          </button>
+        )}
       </div>
 
       <h2 className="section">
-        部門名<span className="count">{list.length}種類</span>
+        {q ? `「${q}」で探した部門` : "部門"}
+        <span className="count">{list.length}種類</span>
       </h2>
       {list.length === 0 ? (
         <p className="empty">条件に一致する部門名はありません。</p>
@@ -126,23 +137,26 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
         <ul className="category-list">
           {list.slice(0, limit).map((r) => (
             <li key={r.name} className="card category">
-              <div className="category__head">
-                <p className="category__name">{r.name}</p>
-                <ConfidenceBadge value={r.confidence} small />
-              </div>
+              <p className="category__name">{r.name}</p>
               <p className="category__meta">
-                店舗 {r.storeCount} ・ 観測 {r.recordCount}件 ・ {r.prefectures.map((p) => p.label).join("、")}
+                {r.storeCount > 0 ? `${r.storeCount}店` : "店舗はまだ見つかっていません"}
+                {r.prefectureCount > 0 && ` ・ ${r.prefectureCount}都道府県`}
               </p>
               <ul className="category__places">
-                {r.divisions.map((d) => (
-                  <li key={d.id}>
-                    <Link href={`/division/${d.id}`} className="place-link">
-                      <span>{d.label}</span>
-                      <ConfidenceBadge value={d.confidence} small />
-                    </Link>
-                  </li>
+                {r.divisions.slice(0, preview).map((d) => (
+                  <PlaceLink key={d.id} d={d} />
                 ))}
               </ul>
+              {r.divisions.length > preview && (
+                <details className="category__more">
+                  <summary>ほか {r.divisions.length - preview}地域を見る</summary>
+                  <ul className="category__places">
+                    {r.divisions.slice(preview).map((d) => (
+                      <PlaceLink key={d.id} d={d} />
+                    ))}
+                  </ul>
+                </details>
+              )}
               {r.variants.length > 0 && (
                 <p className="category__variant">表記が似ている部門名：{r.variants.join("、")}（同一とは確認していません）</p>
               )}
@@ -156,5 +170,16 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
         </button>
       )}
     </>
+  );
+}
+
+function PlaceLink({ d }: { d: CategoryRow["divisions"][number] }) {
+  return (
+    <li>
+      <Link href={`/division/${d.id}`} className="place-link">
+        <span>{d.label}</span>
+        <span className="place-link__count">{d.storeCount > 0 ? `${d.storeCount}店 ›` : "›"}</span>
+      </Link>
+    </li>
   );
 }

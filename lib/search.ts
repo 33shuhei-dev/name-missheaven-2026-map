@@ -147,7 +147,7 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       prefName: s.prefectureName,
       listingArea: s.listingAreas.join("・") || undefined,
       areaIds: s.listingAreas.length ? s.listingAreas.map((a) => areaIdOf(s.prefSlug, a)) : ["none"],
-      sub: s.categoryOriginals.length ? s.categoryOriginals.join("、") : "部門未確認",
+      sub: s.categoryOriginals.length ? s.categoryOriginals.join("、") : "部門名は未判明",
       confidence: s.confidence,
       ownKeys: N([s.name, ...s.nameOriginals]),
       contextKeys: N([s.prefectureName, ...s.listingAreas, ...s.categoryOriginals]),

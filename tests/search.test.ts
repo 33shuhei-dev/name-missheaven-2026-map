@@ -98,7 +98,7 @@ describe("フィルター", () => {
   it("店舗の掲載地域フィルター・部門未確認の店舗", () => {
     const area = items.find((i) => i.kind === "area" && i.name === "テスト温泉")!;
     expect(searchItems(items, { area: area.areaIds[0] }).map((h) => h.item.name).sort()).toEqual(["テスト新店舗", "テスト温泉"].sort());
-    expect(items.find((i) => i.kind === "store" && i.name === "テスト新店舗")!.sub).toBe("部門未確認");
+    expect(items.find((i) => i.kind === "store" && i.name === "テスト新店舗")!.sub).toBe("部門名は未判明");
   });
   it("検索インデックスに根拠URL・notes を入れない", () => {
     const json = JSON.stringify(items);

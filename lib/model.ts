@@ -174,6 +174,8 @@ export interface DivisionStore {
   name: string;
   /** 店舗×部門の関係の確認状態 */
   relationConfidence: Confidence;
+  /** 店舗の参加情報の確認状態（店舗ページと同じもの） */
+  storeConfidence: Confidence;
   hasPublicUrl: boolean;
 }
 
@@ -400,6 +402,7 @@ export function buildModel(
         id: storeId,
         name: storeById.get(storeId)!.name,
         relationConfidence: bestConfidence(rs),
+        storeConfidence: storeById.get(storeId)!.confidence,
         hasPublicUrl: !!storeById.get(storeId)!.storePublicUrl,
       }))
       .sort((a, b) => confidenceRank(a.relationConfidence) - confidenceRank(b.relationConfidence) || compareJa(a.name, b.name));

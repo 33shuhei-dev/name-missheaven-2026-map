@@ -34,7 +34,7 @@ export function StoreRow({
         {showArea && store.listingAreas && (
           <span>{store.listingAreas.length ? store.listingAreas.join("、") : UNKNOWN_AREA_LABEL}</span>
         )}
-        {cats && <span>{cats.length ? `部門 ${cats.length}` : "部門未確認"}</span>}
+        {cats && <span>{cats.length ? `部門 ${cats.length}` : "部門名は未判明"}</span>}
         <span className={hasPublic ? "pill pill--ok" : "pill"}>{hasPublic ? "公開ページあり" : "公開ページ未登録"}</span>
         {store.isNewSincePhase1 && <span className="pill pill--new">追加調査で判明</span>}
       </span>

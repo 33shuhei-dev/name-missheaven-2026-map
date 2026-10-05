@@ -70,29 +70,68 @@ export default async function StorePage({ params }: Params) {
           { label: s.name },
         ]}
       />
-      <p className="eyebrow">
-        参加関連店舗{s.origin === "update" ? "（Phase 3 以降の追加情報）" : s.origin === "phase3b" ? "（全国走査で発見）" : ""}
-      </p>
+      <p className="eyebrow">ミスヘブン総選挙2026 出場情報のある店舗</p>
       <div className="page-head">
         <h1>{s.name}</h1>
         <ConfidenceBadge value={s.confidence} subject="store" />
       </div>
+      <p className="store-place">
+        <Link href={`/pref/${s.prefSlug}`}>{s.prefectureName}</Link>
+        {s.listingAreas.map((a) => {
+          const href = areaHref(a);
+          return (
+            <span key={a}>
+              {" ・ "}
+              {href ? <Link href={href}>{a}</Link> : a}
+            </span>
+          );
+        })}
+      </p>
       {s.nameOriginals.length > 1 && (
         <p className="hint hint--tight">情報源での表記：{s.nameOriginals.join(" ／ ")}</p>
       )}
 
-      {/* 店舗公開ページ（利用者が店舗を見るためのURL） */}
-      <div className="store-links">
-        {publicUrl ? (
-          <a className="store-cta" href={publicUrl} target="_blank" rel="noopener noreferrer nofollow ugc">
-            <span>店舗の公開ページを見る</span>
-            <span className="store-cta__host">{displayHost(publicUrl)} ↗</span>
-          </a>
+      {/* 見つかった部門（部門名だけを見せる。確認状態は下の「参加情報の根拠」にまとめる） */}
+      <section className="section store-cats" aria-labelledby="cat-heading">
+        <h2 id="cat-heading">
+          見つかった部門<span className="count">{s.categoryOriginals.length ? `${s.categoryOriginals.length}種類` : ""}</span>
+        </h2>
+        {s.categories.length ? (
+          <>
+            <ul className="fun-cats__list">
+              {s.categories.map((c) => (
+                <li key={`${c.relationId}-${c.divisionId}`}>
+                  <Link href={`/division/${c.divisionId}`} className="fun-cat">
+                    <span className="fun-cat__name">{c.categoryOriginal}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <p className="hint hint--tight">確認できた情報に登場した部門名です。</p>
+          </>
         ) : (
-          <p className="store-cta store-cta--none">店舗公開ページのURLは未登録です</p>
+          <p className="hint hint--tight">この店舗の部門名はまだ見つかっていません。</p>
         )}
-        {publicUrl && publicNote && <p className="store-note">{publicNote}</p>}
-      </div>
+      </section>
+
+      {/* 店舗公開ページ（詳しい出場者情報はこちらで確認してもらう）。URLがない店舗にはリンクを作らない */}
+      <section className="section store-links" aria-labelledby="public-heading">
+        <h2 id="public-heading" className="visually-hidden">
+          店舗の公開ページ
+        </h2>
+        {publicUrl ? (
+          <>
+            <a className="store-cta" href={publicUrl} target="_blank" rel="noopener noreferrer nofollow ugc">
+              <span>店舗の公開ページで詳しく見る</span>
+              <span className="store-cta__sub">出場者の情報は店舗のページで確認できます</span>
+              <span className="store-cta__host">{displayHost(publicUrl)} ↗ 外部サイトが開きます</span>
+            </a>
+            {publicNote && <p className="store-note">{publicNote}</p>}
+          </>
+        ) : (
+          <p className="hint hint--tight">この店舗の公開ページはまだ登録されていません。</p>
+        )}
+      </section>
 
       <dl className="facts">
         <div>
@@ -126,44 +165,25 @@ export default async function StorePage({ params }: Params) {
           <dt>正式選挙エリア</dt>
           <dd>{s.formalElectionArea ?? <span className="muted">未確認（掲載地域とは別の情報です）</span>}</dd>
         </div>
-        <div>
-          <dt>参加情報</dt>
-          <dd>
-            <ConfidenceBadge value={s.confidence} subject="store" />
-            <span className="facts__desc">
+      </dl>
+
+      {/* 参加根拠（店舗と2026ミスヘブンの関係を確認するURL。公開ページとは別） */}
+      <section className="section" aria-labelledby="evidence-heading">
+        <h2 id="evidence-heading">参加情報の根拠</h2>
+        <div className="evidence">
+          <p className="evidence__status">
+            <ConfidenceBadge value={s.confidence} subject="store" small />
+            <span>
               {s.verificationMethod
                 ? STORE_CONFIDENCE_DESCRIPTION[s.confidence]
                 : `${PARTICIPATION_TYPE_LABEL[s.participationType] ?? "参加関連の根拠あり"}。${STORE_CONFIDENCE_DESCRIPTION[s.confidence]}`}
             </span>
-          </dd>
-        </div>
-      </dl>
-
-      <section className="section" aria-labelledby="cat-heading">
-        <h2 id="cat-heading">
-          関連する部門<span className="count">{s.categoryOriginals.length ? `${s.categoryOriginals.length}種類` : ""}</span>
-        </h2>
-        {s.categories.length ? (
-          <ul className="chip-links">
-            {s.categories.map((c) => (
-              <li key={`${c.relationId}-${c.divisionId}`}>
-                <Link href={`/division/${c.divisionId}`} className="place-link">
-                  <span>{c.categoryOriginal}</span>
-                  <ConfidenceBadge value={c.confidence} small subject="store" />
-                </Link>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <p className="empty">この店舗の部門はまだ確認できていません（部門未確認）。</p>
-        )}
-        <p className="hint hint--tight">部門名は情報源の原文です。店舗の全員がこの部門に出ているという意味ではありません。</p>
-      </section>
-
-      {/* 参加根拠（店舗と2026ミスヘブンの関係を確認するURL。公開ページとは別） */}
-      <section className="section" aria-labelledby="evidence-heading">
-        <h2 id="evidence-heading">参加の根拠</h2>
-        <div className="evidence">
+          </p>
+          {s.origin !== "phase3" && (
+            <p className="hint hint--tight">
+              {s.origin === "phase3b" ? "全国の検索結果の走査で見つかった店舗です。" : "Phase 3 以降に追加した情報です。"}
+            </p>
+          )}
           <p className="evidence__label">根拠の種類：{evidenceKind}</p>
           {s.verificationMethod && VERIFICATION_METHOD_LABEL[s.verificationMethod] && (
             <p className="hint hint--tight">

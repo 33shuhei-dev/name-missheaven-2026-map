@@ -52,6 +52,16 @@ export default async function PrefecturePage({ params }: Params) {
   const campaign = campaignStoresIn(isUnknown ? undefined : pref.name);
   const sweep = isUnknown ? null : phase3bCoverageOf(pref.name);
 
+  const sweepNote = sweep && (
+    <p className="hint hint--tight sweep-line">
+      全国走査（{phase3b.checkedAt}）：{sweep.researchStatus === "searched" ? "調査済み" : "未調査・一部未実行"}
+      {sweep.researchStatus === "searched" &&
+        (sweep.storesFound > 0
+          ? `。検索結果で参加の記載を確認できた店舗 ${sweep.storesFound}店（うち既存データと一致 ${sweep.matchedExisting}店）`
+          : "。検索結果から参加店舗を特定できる記載は見つかりませんでした（参加店舗がないという意味ではありません）")}
+    </p>
+  );
+
   return (
     <>
       <Breadcrumbs
@@ -65,19 +75,7 @@ export default async function PrefecturePage({ params }: Params) {
         <p className="notice">
           都道府県を確認できていない観測です。掲載地域名があっても、地名や店舗名から都道府県を推定していないため、地図には配置していません。
         </p>
-      ) : (
-        <p className="hint">{MAP_STATUS_DESCRIPTION[pref.status]}</p>
-      )}
-      {sweep && (
-        <p className="hint hint--tight sweep-line">
-          全国走査（{phase3b.checkedAt}）：{sweep.researchStatus === "searched" ? "調査済み" : "未調査・一部未実行"}
-          {sweep.researchStatus === "searched" &&
-            (sweep.storesFound > 0
-              ? `。検索結果で参加の記載を確認できた店舗 ${sweep.storesFound}店（うち既存データと一致 ${sweep.matchedExisting}店）`
-              : "。検索結果から参加店舗を特定できる記載は見つかりませんでした（参加店舗がないという意味ではありません）")}
-        </p>
-      )}
-
+      ) : null}
       {!hasData ? (
         <div className="empty empty--searched">
           <p>
@@ -85,6 +83,7 @@ export default async function PrefecturePage({ params }: Params) {
             について調査しましたが、現在公開情報から確認できた部門・参加店舗の情報はありません。
           </p>
           <p className="hint">部門や出場者が存在しないという意味ではありません。新しい公開情報が確認できれば追加します。</p>
+          {sweepNote}
           <p>
             <Link href="/">全国地図に戻る</Link>
           </p>
@@ -93,47 +92,36 @@ export default async function PrefecturePage({ params }: Params) {
         <>
           <dl className="stats stats--compact">
             <div>
-              <dt>掲載地域</dt>
-              <dd>{pref.listingAreaCount}</dd>
+              <dt>店舗</dt>
+              <dd>{pref.storeSummary.storeCount}</dd>
             </div>
             <div>
               <dt>部門</dt>
               <dd>{pref.categoryNameCount}</dd>
             </div>
             <div>
-              <dt>店舗</dt>
-              <dd>{pref.storeSummary.storeCount}</dd>
-            </div>
-            <div>
-              <dt>公開ページ</dt>
-              <dd>{pref.storeSummary.publicUrlCount}</dd>
-            </div>
-            <div>
-              <dt>観測</dt>
-              <dd>{s.recordCount}</dd>
-            </div>
-            <div>
-              <dt>出場者</dt>
-              <dd>{s.entrantCount}</dd>
+              <dt>掲載地域</dt>
+              <dd>{pref.listingAreaCount}</dd>
             </div>
           </dl>
-          <p className="hint">
-            店舗の参加情報：{STORE_CONFIDENCE_LABEL.confirmed} {pref.storeSummary.byConfidence.confirmed}・
-            {STORE_CONFIDENCE_LABEL.probable} {pref.storeSummary.byConfidence.probable}・{STORE_CONFIDENCE_LABEL.unverified}{" "}
-            {pref.storeSummary.byConfidence.unverified}。部門は部門名（原文）の種類数、出場者はこれまでの調査で記録した店舗名×人物名の数です。
-            {s.lastCheckedAt && ` 最終確認日：${s.lastCheckedAt}`}
-          </p>
-          {pref.status === "candidate" && !isUnknown && (
-            <p className="notice">
-              この県の情報は、検索結果・店舗の告知などで確認した<strong>参加情報</strong>です。本文での直接確認（参加確認済み）はまだありません。
+          <details className="research-status">
+            <summary>情報の確認状況</summary>
+            {!isUnknown && <p className="hint hint--tight">{MAP_STATUS_DESCRIPTION[pref.status]}</p>}
+            <p className="hint hint--tight">
+              店舗の参加情報：{STORE_CONFIDENCE_LABEL.confirmed} {pref.storeSummary.byConfidence.confirmed}・
+              {STORE_CONFIDENCE_LABEL.probable} {pref.storeSummary.byConfidence.probable}・{STORE_CONFIDENCE_LABEL.unverified}{" "}
+              {pref.storeSummary.byConfidence.unverified}。公開ページのある店舗 {pref.storeSummary.publicUrlCount}・観測 {s.recordCount}件・出場者（記録した範囲）{" "}
+              {s.entrantCount}。
+              {s.lastCheckedAt && ` 最終確認日：${s.lastCheckedAt}`}
             </p>
-          )}
+            {sweepNote}
+          </details>
 
           <SearchBox pref={pref.slug} placeholder={`${isUnknown ? "地域未判明" : pref.name}の中で検索`} />
 
           <section className="section" aria-labelledby="areas-heading">
-            <h2 id="areas-heading">掲載地域と部門</h2>
-            <p className="hint">掲載地域は情報源に書かれた掲載・営業地域で、正式な選挙エリアではありません。</p>
+            <h2 id="areas-heading">地域ごとの部門</h2>
+            <p className="hint">気になる部門をタップすると、その部門の店舗を見られます（地域は掲載・営業地域で、正式な選挙エリアではありません）。</p>
             {pref.areas.map((a) => (
               <section key={a.id} className="area-block">
                 <Link href={`/pref/${pref.slug}/area/${a.id}`} className="area-block__head">
@@ -153,7 +141,7 @@ export default async function PrefecturePage({ params }: Params) {
                 {a.stores.filter((st) => st.categories.length === 0).length > 0 && (
                   <p className="hint hint--tight">
                     <Link href={`/pref/${pref.slug}/area/${a.id}`}>
-                      部門未確認の店舗 {a.stores.filter((st) => st.categories.length === 0).length}店を見る
+                      部門名がまだ分からない店舗 {a.stores.filter((st) => st.categories.length === 0).length}店を見る
                     </Link>
                   </p>
                 )}
@@ -166,7 +154,7 @@ export default async function PrefecturePage({ params }: Params) {
               <h2 id="stores-heading">
                 店舗<span className="count">見つかった範囲 {pref.stores.length}店</span>
               </h2>
-              <p className="hint">公開情報から2026年の参加に関係する根拠を見つけた店舗です。全参加店舗の一覧ではありません。</p>
+              <p className="hint">2026年の出場情報が見つかった店舗です。全参加店舗の一覧ではありません。</p>
               <div className="list">
                 {pref.stores.slice(0, STORE_PAGE).map((st) => (
                   <StoreRow key={st.id} store={st} confidence={st.confidence} />

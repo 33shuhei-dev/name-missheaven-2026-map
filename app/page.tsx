@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { site } from "@/lib/data";
 import { UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
-import { ConfidenceBar } from "@/components/ConfidenceBar";
 import { JapanMap, type MapPrefecture } from "@/components/JapanMap";
 import { MapLegend } from "@/components/MapLegend";
 import { SearchBox } from "@/components/SearchBox";
 import { PrefecturePicker } from "@/components/PrefecturePicker";
+import { featuredCategories, summarizeCategories } from "@/lib/categories";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -19,122 +19,116 @@ export default function HomePage() {
     storeCount: p.stores.length,
   }));
 
+  const categories = summarizeCategories(site);
+  const featured = featuredCategories(categories);
+
   return (
     <div className="home">
-      {/* ファーストビューは短く。主役は地図 */}
+      {/* ファーストビュー：何のサイトか・何ができるか・次に押す場所 */}
       <section className="hero">
         <h1 className="hero__title">
           <span className="hero__unofficial">非公式</span>
           <span className="hero__event">ミスヘブン総選挙2026</span>
           <span className="hero__name">全国情報まとめ</span>
         </h1>
-        <p className="hero__lead">公開情報で確認できた部門・参加店舗を地図から探せます。</p>
+        <p className="hero__lead">
+          ミスヘブン総選挙2026の出場情報を、<strong>全国・地域・部門・店舗</strong>から探せる非公式まとめです。
+        </p>
+        <dl className="hero-stats">
+          <div>
+            <dt>掲載店舗</dt>
+            <dd>{stats.stores.storeCount}</dd>
+          </div>
+          <div>
+            <dt>部門</dt>
+            <dd>{categories.length}</dd>
+          </div>
+          <div>
+            <dt>都道府県</dt>
+            <dd>
+              {stats.prefecturesWithData}
+              <small>/{stats.prefectureTotal}</small>
+            </dd>
+          </div>
+        </dl>
+        <div className="hero-actions">
+          <a href="#categories" className="hero-action hero-action--primary">
+            部門から探す
+          </a>
+          <a href="#map" className="hero-action">
+            地図から探す
+          </a>
+        </div>
+        <ol className="flow" aria-label="探し方">
+          <li>部門・地図で探す</li>
+          <li>店舗を見つける</li>
+          <li>店舗の公開ページで出場者をチェック</li>
+        </ol>
       </section>
 
-      <div className="home-grid">
-        {/* ① 全国地図 */}
-        <section className="map-card" aria-labelledby="map-heading">
+      {/* 部門の面白さ：データに実在する部門名から */}
+      <section className="section fun-cats" id="categories" aria-labelledby="fun-heading">
+        <h2 id="fun-heading">こんな部門まである</h2>
+        <p className="hint hint--tight">ミスヘブン総選挙には、ユニークな部門がたくさん。気になる部門をタップしてみてください。</p>
+        <ul className="fun-cats__list">
+          {featured.map((c) => (
+            <li key={c.name}>
+              <Link href={c.href} className="fun-cat">
+                <span className="fun-cat__name">{c.name}</span>
+                <span className="fun-cat__meta">
+                  {c.storeCount}店{c.prefectureCount > 1 && ` ・ ${c.prefectureCount}都道府県`}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <Link href="/categories" className="cta">
+          <span className="cta__main">
+            <span className="cta__title">部門一覧を見る</span>
+            <span className="cta__sub">全国で見つかった{categories.length}種類の部門から探す</span>
+          </span>
+          <span aria-hidden="true" className="cta__arrow">›</span>
+        </Link>
+      </section>
+
+      <div className="home-grid section">
+        {/* 全国地図 */}
+        <section className="map-card" id="map" aria-labelledby="map-heading">
           <div className="map-card__head">
             <h2 id="map-heading">地図から探す</h2>
-            <span className="map-card__sub">{stats.prefectureTotal}都道府県</span>
+            <span className="map-card__sub">都道府県をタップ</span>
           </div>
           <JapanMap prefectures={mapPrefs} />
           <MapLegend counts={stats.statusCounts} />
         </section>
 
         <div className="home-side">
-          {/* ② 全国検索 */}
           <section className="side-block" aria-labelledby="search-heading">
-            <h2 id="search-heading">全国から検索</h2>
+            <h2 id="search-heading">キーワードで探す</h2>
             <SearchBox />
-            <p className="hint hint--tight">都道府県・掲載地域・部門・店舗・出場者を横断して探せます。</p>
+            <p className="hint hint--tight">部門名・店舗名・地域名などで全国から探せます。</p>
           </section>
 
-          {/* ③ 全国状況 */}
-          <section className="side-block" aria-labelledby="stats-heading">
-            <h2 id="stats-heading">全国の状況</h2>
-            <dl className="stats">
-              <div>
-                <dt>情報のある県</dt>
-                <dd>
-                  {stats.prefecturesWithData}
-                  <small>/{stats.prefectureTotal}</small>
-                </dd>
-              </div>
-              <div>
-                <dt>掲載地域</dt>
-                <dd>{stats.allListingAreaCount}</dd>
-              </div>
-              <div>
-                <dt>部門名（原文）</dt>
-                <dd>{stats.allCategoryNameCount}</dd>
-              </div>
-              <div>
-                <dt>参加関連店舗</dt>
-                <dd>{stats.stores.storeCount}</dd>
-              </div>
-              <div>
-                <dt>公開ページあり</dt>
-                <dd>{stats.stores.publicUrlCount}</dd>
-              </div>
-              <div>
-                <dt>観測レコード</dt>
-                <dd>{stats.recordCount}</dd>
-              </div>
-            </dl>
-
-            <ConfidenceBar
-              title="店舗の参加情報"
-              counts={stats.stores.byConfidence}
-              subject="store"
-              hrefFor={(c) => `/search?kind=store&confidence=${c}`}
-            />
-            <ConfidenceBar
-              title="部門の観測の確認状態"
-              counts={stats.byConfidence}
-              hrefFor={(c) => `/search?confidence=${c}&kind=division`}
-            />
-
-            {unknownPrefecture && (
-              <Link href={`/pref/${UNKNOWN_PREFECTURE_SLUG}`} className="row-link row-link--compact">
-                <span className="row-link__main">
-                  <span className="row-link__title">地域未判明の情報</span>
-                  <span className="row-link__sub">
-                    都道府県を確認できていない店舗 {unknownPrefecture.stores.length}店・観測 {unknownPrefecture.recordCount}件
-                  </span>
-                </span>
-                <span aria-hidden="true" className="row-link__arrow">›</span>
-              </Link>
-            )}
-            <p className="hint hint--tight">
-              件数はすべてデータからの自動集計です。店舗は候補を含み、全参加店舗の数ではありません。
-              {stats.lastCheckedAt && ` 最終確認日：${stats.lastCheckedAt}`}
-            </p>
-          </section>
-
-          {/* ④ 都道府県一覧（地図の補助。地方ごとに折りたたみ） */}
+          {/* 都道府県一覧（地図の補助。地方ごとに折りたたみ） */}
           <section className="side-block" aria-labelledby="list-heading">
-            <h2 id="list-heading">都道府県一覧</h2>
-            <p className="hint hint--tight">地方を開くと都道府県を選べます。色は地図と同じ、数字は参加関連店舗数です。</p>
+            <h2 id="list-heading">都道府県から探す</h2>
+            <p className="hint hint--tight">地方を開くと都道府県を選べます。数字は掲載店舗数です。</p>
             <PrefecturePicker model={site} />
+            {unknownPrefecture && (
+              <p className="hint hint--tight">
+                <Link href={`/pref/${UNKNOWN_PREFECTURE_SLUG}`}>
+                  都道府県が分かっていない情報（店舗 {unknownPrefecture.stores.length}店）
+                </Link>
+              </p>
+            )}
           </section>
         </div>
       </div>
 
-      {/* ⑤ 部門一覧への導線 */}
-      <section className="section">
-        <Link href="/categories" className="cta">
-          <span className="cta__main">
-            <span className="cta__title">部門一覧</span>
-            <span className="cta__sub">全国の部門名（原文）{stats.allCategoryNameCount}種類を、店舗数・都道府県・確認状態で探す</span>
-          </span>
-          <span aria-hidden="true" className="cta__arrow">›</span>
-        </Link>
-      </section>
-
       <p className="home-note">
-        本サイトは非公式です。公開情報から確認できた範囲だけを掲載しており、全出場者・全部門の網羅や正式な選挙エリアを示すものではありません。情報は更新される可能性があります。
-        <Link href="/about">このサイトについて</Link>
+        本サイトは非公式です。公開情報から確認できた範囲の情報で、公式情報ではありません。全出場者・全部門の網羅や正式な選挙エリアを示すものではないため、詳しい出場者情報は各店舗の公開ページでご確認ください。
+        {stats.lastCheckedAt && ` 最終確認日：${stats.lastCheckedAt}。`}
+        <Link href="/about">このサイトについて・データの内訳</Link>
       </p>
     </div>
   );
