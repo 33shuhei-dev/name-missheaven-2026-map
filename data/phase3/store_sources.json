@@ -1,0 +1,1710 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "sourceId": "p3-src-86f8d634747f559a",
+      "url": "https://fukuharaso-pu.com/thewhite/ribon/photodiary/date202608/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d6e8a6f247ef7af6"
+      ],
+      "relationIds": [
+        "p3-rel-32c10ec70c84d911"
+      ]
+    },
+    {
+      "sourceId": "p3-src-96176cfce477f2fd",
+      "url": "https://fukuharaso-pu.com/thewhite/map/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d6e8a6f247ef7af6"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-109acbdb729126ff",
+      "url": "https://fukuharaso-pu.com/kobegold/juri/photodiary/date202608/page2/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6cc383b11a99e38c"
+      ],
+      "relationIds": [
+        "p3-rel-a0fc1e8f1ef5a0b3"
+      ]
+    },
+    {
+      "sourceId": "p3-src-948a46c209e8e9af",
+      "url": "https://fukuharaso-pu.com/kobegold/map/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6cc383b11a99e38c"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-0d47f8bc0575ba40",
+      "url": "https://ranking-deli.jp/hyogo/area207/style5/48055/5224069/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6cc383b11a99e38c"
+      ],
+      "relationIds": [
+        "p3-rel-6212ffadef25ecfc"
+      ]
+    },
+    {
+      "sourceId": "p3-src-e1689e60fc238ec2",
+      "url": "https://fukuharaso-pu.com/koberb/rika/photodiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-faacbc3c4321993c"
+      ],
+      "relationIds": [
+        "p3-rel-16483a05214dd731",
+        "p3-rel-cd50fac8d90e0b18"
+      ]
+    },
+    {
+      "sourceId": "p3-src-9e4c5bd658845f73",
+      "url": "https://fukuharaso-pu.com/koberb/map/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-faacbc3c4321993c"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-fcac94c9eb2d8070",
+      "url": "https://e1ns.jp/column/archives/32219",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-01d71b753cdf9adf",
+        "mh26-store-0ac5feba492bab3e",
+        "mh26-store-3540f1a5620e93a7",
+        "mh26-store-355c0b49cae69d68",
+        "mh26-store-3a074ce4c5ee8c9b",
+        "mh26-store-657ee8ee6abf4b11",
+        "mh26-store-678799267033f76f",
+        "mh26-store-6ba46519366d11dd",
+        "mh26-store-6cda0d9bffc13851",
+        "mh26-store-80d93a854263f9fe",
+        "mh26-store-93b09dbb18b506df",
+        "mh26-store-d916977eab764f4d",
+        "mh26-store-e7716048c9521370",
+        "mh26-store-ed944e60f5cef8df",
+        "mh26-store-f9caeb559663859e"
+      ],
+      "relationIds": [
+        "p3-rel-133a0a026776bf0b",
+        "p3-rel-1daf0f641942b4eb",
+        "p3-rel-2cbd8a8ac8aea5f7",
+        "p3-rel-2dabec2f783cf932",
+        "p3-rel-2f369d2c5255ba8c",
+        "p3-rel-2f7e163ce3eb23d9",
+        "p3-rel-32038b103ce0d721",
+        "p3-rel-335717b8415ddd37",
+        "p3-rel-33c63a7eb51feddc",
+        "p3-rel-3a5fcd228e12db43",
+        "p3-rel-4029b457a617ae80",
+        "p3-rel-435178b627722876",
+        "p3-rel-49de3c841e8405c0",
+        "p3-rel-4a65520c3c256428",
+        "p3-rel-4ba5f71ae01bb38e",
+        "p3-rel-4ca1d3bc5a4db7c9",
+        "p3-rel-6083ff9361fd4263",
+        "p3-rel-67d0512d031173f8",
+        "p3-rel-6ff34799d136f17d",
+        "p3-rel-71dd782b02d52ad6",
+        "p3-rel-76be1b4811d7cf89",
+        "p3-rel-79b45957dc11740c",
+        "p3-rel-7a2f10b4d5a9a097",
+        "p3-rel-8462fd363ea82010",
+        "p3-rel-86ef90fb0377b7f4",
+        "p3-rel-88a037bf67f0b669",
+        "p3-rel-8d9fe130c909f1d6",
+        "p3-rel-92991258d3704913",
+        "p3-rel-a17a749c69161336",
+        "p3-rel-a46ddc1dbf1b4b62",
+        "p3-rel-a8a8531e2206223a",
+        "p3-rel-aa6af79dc3578148",
+        "p3-rel-abd62c88fb2acbac",
+        "p3-rel-b11ee3a1e40e8ad9",
+        "p3-rel-b58a733f3389de67",
+        "p3-rel-d55e2857f26c72b0",
+        "p3-rel-dbc7519afbaf136c",
+        "p3-rel-e1a72d050f981308",
+        "p3-rel-eed3a20241e532a6",
+        "p3-rel-ff4e32d3c06f2ce4"
+      ]
+    },
+    {
+      "sourceId": "p3-src-4ac256dd68fff11f",
+      "url": "https://amagasaki-blenda.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d916977eab764f4d"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-211fdcdb74aec9e4",
+      "url": "https://wew.twstalker.com/sp_aienka",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ed30c80779b7973f"
+      ],
+      "relationIds": [
+        "p3-rel-de482c48adcaba49"
+      ]
+    },
+    {
+      "sourceId": "p3-src-32d8bddb7cebd50d",
+      "url": "https://ranking-deli.jp/hokkaido/area1/style5/12197/2875266/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5fb62be563b1ee81"
+      ],
+      "relationIds": [
+        "p3-rel-fb5a30c993155c4a"
+      ]
+    },
+    {
+      "sourceId": "p3-src-4ff660c41babb462",
+      "url": "https://map.yahoo.co.jp/v3/place/Yvtp6tuCljE",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5fb62be563b1ee81"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5ea31b7f07b2ceb0",
+      "url": "https://ranking-deli.jp/hokkaido/area1/style5/12197/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5fb62be563b1ee81"
+      ],
+      "relationIds": [
+        "p3-rel-504e0189280b047b"
+      ]
+    },
+    {
+      "sourceId": "p3-src-25f26400d5c6e796",
+      "url": "https://tashinami-omiya.com/newslist/news/?nId=3313",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8d07d998347b09ed"
+      ],
+      "relationIds": [
+        "p3-rel-1f7c30f7e720ff1f",
+        "p3-rel-2ccb96c2f90fdd80",
+        "p3-rel-6f40a471d80e1e39",
+        "p3-rel-72e086dac2e6ab87",
+        "p3-rel-7dfcfeb7f97c518d"
+      ]
+    },
+    {
+      "sourceId": "p3-src-9234e79a6a0cd78f",
+      "url": "https://kanto.qzin.jp/tashinamiomiya/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8d07d998347b09ed"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-88b5437495f527ee",
+      "url": "https://nk-bbw.net/news.php?id=743",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-306f2ce19b35c1c4"
+      ],
+      "relationIds": [
+        "p3-rel-2c3cbaf83fbbafb6",
+        "p3-rel-c4426ec96968ece9"
+      ]
+    },
+    {
+      "sourceId": "p3-src-3bc929beb053f1ca",
+      "url": "https://q-pri.com/shop_detail/3531",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-306f2ce19b35c1c4"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5c37c7f4968b8593",
+      "url": "https://kita-blenda.info/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-0ac5feba492bab3e"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-b456da5ee776c351",
+      "url": "https://blenda.info/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-3a074ce4c5ee8c9b"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-4ee8dd3f4d82291b",
+      "url": "https://kansai.qzin.jp/seiekiumeda/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-678799267033f76f"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-49f886e22573fea9",
+      "url": "https://kirakira-girls.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-657ee8ee6abf4b11"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-1fc7a1e5f5737b99",
+      "url": "https://nobra-okusan.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-355c0b49cae69d68"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-dfdd32c2d3d30a11",
+      "url": "https://kampaku.info/",
+      "sourceType": "store",
+      "accessStatus": "linked_fetch_failed",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-3540f1a5620e93a7"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-bba8bb333179ebc4",
+      "url": "https://ranking-deli.jp/osaka/area126/style1/17301/5510554/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-3540f1a5620e93a7"
+      ],
+      "relationIds": [
+        "p3-rel-ce9427f0b4f2c113"
+      ]
+    },
+    {
+      "sourceId": "p3-src-614b771545e8c52c",
+      "url": "https://princess-nihonbashi.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-f9caeb559663859e"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-58c41f49d9777281",
+      "url": "https://n-kampaku.com/access",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e7716048c9521370"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5fae14241720563c",
+      "url": "https://e1ns.jp/shops?page=2",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6ba46519366d11dd",
+        "mh26-store-93b09dbb18b506df"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-a7e408de283c78ef",
+      "url": "https://hokusetsu-blenda.jp/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "business_evidence",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6cda0d9bffc13851"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-a013a72a81b69ad0",
+      "url": "https://e1ns.jp/shops/detail/40",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-01d71b753cdf9adf"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-f9d180432663554e",
+      "url": "https://www.kofu-angel.net/fuuzoku/shop/area/6201/staff/205971/12631882/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-1d1e8f3a479a8ecc"
+      ],
+      "relationIds": [
+        "p3-rel-15563a2d6857868a"
+      ]
+    },
+    {
+      "sourceId": "p3-src-ddfc13c84f0c3762",
+      "url": "https://kofu-barubora.net/access.php",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-1d1e8f3a479a8ecc"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-d361dd9d458d722c",
+      "url": "https://girls-spot.net/shop/hiroshima-palette/girl/26220/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-90522f3bdfdaa139"
+      ],
+      "relationIds": [
+        "p3-rel-e5ddb95e8515bb9c"
+      ]
+    },
+    {
+      "sourceId": "p3-src-71481039741b0dad",
+      "url": "https://fu-web.jp/tokushima/cast/diary/castCode/218670/diaryCode/12397971/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-109c083c06ba6538",
+        "mh26-store-6888b46bed6ceeef",
+        "mh26-store-68eb8a6b0eb1f9ca",
+        "mh26-store-ac167f10e397b664",
+        "mh26-store-e6206af17c46c133"
+      ],
+      "relationIds": [
+        "p3-rel-19994dfeec1bc403",
+        "p3-rel-1e899886a1b7bc67",
+        "p3-rel-229ce1fc5dae351c",
+        "p3-rel-30b17428ff78addb",
+        "p3-rel-3209616bc783ae03",
+        "p3-rel-4781a2482ee540ee",
+        "p3-rel-9f5e7d0cfbc40ad3",
+        "p3-rel-c136737f3e8a885b",
+        "p3-rel-cb596a594db1d0d5"
+      ]
+    },
+    {
+      "sourceId": "p3-src-2b30f99a0abce575",
+      "url": "https://star-gakuen.com/top.php",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6888b46bed6ceeef"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-6b5341b15a90acd1",
+      "url": "https://undernavi.work/shikoku/tokushima/tokushima/15198/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-109c083c06ba6538"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-3bb407f9306a8452",
+      "url": "https://ww.twstalker.com/himideo753",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-bcab3b3f53c0fa1e"
+      ],
+      "relationIds": [
+        "p3-rel-893842a7226f0d23"
+      ]
+    },
+    {
+      "sourceId": "p3-src-d7bb5deba12a2a29",
+      "url": "https://tokyo-blenda.info/home",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-80d93a854263f9fe"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-c24da8163a40b2dd",
+      "url": "https://e1ns.jp/shops",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ed944e60f5cef8df"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-43eef277c7aa93cd",
+      "url": "https://fu-web.jp/tochigi/cast/diary/castCode/454606/diaryCode/12387508/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-62fb3c8e8d7b02d7"
+      ],
+      "relationIds": [
+        "p3-rel-123571d3314dd4b5",
+        "p3-rel-420c5d1148739555",
+        "p3-rel-52fcadad5a839e26",
+        "p3-rel-8a197b5520dd621b",
+        "p3-rel-9c18f16fde3ffd63",
+        "p3-rel-a92c0de04eec8a6a",
+        "p3-rel-c39fdefa5acb0d7c",
+        "p3-rel-c5d8a89f4311d7cc",
+        "p3-rel-d03aa77f94ecbe2f"
+      ]
+    },
+    {
+      "sourceId": "p3-src-3f2513858527312d",
+      "url": "https://fu-web.jp/tochigi/merchant/get/merchantCode/500/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-62fb3c8e8d7b02d7"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-62582891b6b3b6f8",
+      "url": "https://ranking-deli.jp/shiga/area142/style5/11846/3170188/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8b5a048ed65adc3a"
+      ],
+      "relationIds": [
+        "p3-rel-bdfd5d6e5526f599"
+      ]
+    },
+    {
+      "sourceId": "p3-src-dbe6e4389e082ca0",
+      "url": "https://orenoonnawa.com/event_list.php",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8b5a048ed65adc3a"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-8c71519d35b883a1",
+      "url": "https://ranking-deli.jp/shiga/area142/style5/11846/4475186/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8b5a048ed65adc3a"
+      ],
+      "relationIds": [
+        "p3-rel-9a92da64b4505d62"
+      ]
+    },
+    {
+      "sourceId": "p3-src-5ec7ad01bf4e8f20",
+      "url": "https://www.bijinlab.net/top/event",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-a7403750a263dd98"
+      ],
+      "relationIds": [
+        "p3-rel-1397d7d158eec319",
+        "p3-rel-39d954b8d8f4830c",
+        "p3-rel-7aeb4f41fca2c7fe",
+        "p3-rel-c417358eddffd09a",
+        "p3-rel-c6e15963f2875117"
+      ]
+    },
+    {
+      "sourceId": "p3-src-5cfa8a3610ac0f0c",
+      "url": "https://young-akatombo.com/event.php",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5c65f10f579ffd51"
+      ],
+      "relationIds": [
+        "p3-rel-83aaac47979b190d"
+      ]
+    },
+    {
+      "sourceId": "p3-src-4d4b9c4e1f401463",
+      "url": "https://www.cityheaven.net/kanagawa/A1403/A140301/akatombo-k/girlid-53272942/?pcmode=sp",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5c65f10f579ffd51"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-7d0fc3c3b0ded52e",
+      "url": "https://fuzoku.jp/shizuokaonenight/girl/194/girlsdiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d1693cc78e0cc92c"
+      ],
+      "relationIds": [
+        "p3-rel-1c56cde8783754be",
+        "p3-rel-317edabfa04658cb",
+        "p3-rel-3a0071a756992809",
+        "p3-rel-3a17e69756366f47",
+        "p3-rel-6d5dcac0d3d09b61",
+        "p3-rel-a25a4e31e86fe119",
+        "p3-rel-a38b1db69e22d63b"
+      ]
+    },
+    {
+      "sourceId": "p3-src-23e94cca5ef58fd6",
+      "url": "https://mensheaven.jp/6/one_night",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d1693cc78e0cc92c"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-537b3b784e8848cf",
+      "url": "https://ww.twstalker.com/utadayo_00",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-34d8beb9b9f38b14"
+      ],
+      "relationIds": [
+        "p3-rel-e325363a5c2543be"
+      ]
+    },
+    {
+      "sourceId": "p3-src-820fb3c30864f35c",
+      "url": "https://www.girlsheaven-job.net/okayama/ma-183/sa-417/ecstasy_kurashiki/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-34d8beb9b9f38b14"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-7d1deb59600d1d14",
+      "url": "https://ranking-deli.jp/tokyo/area199/style5/23348/5432015/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d4b3af32c5187dcb"
+      ],
+      "relationIds": [
+        "p3-rel-7bf8656cb399d6ab"
+      ]
+    },
+    {
+      "sourceId": "p3-src-0fd456eea794feeb",
+      "url": "https://luxe-yoshiwara.jp/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-d4b3af32c5187dcb"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-7839bf0ba94aac00",
+      "url": "https://ranking-deli.jp/tokyo/area199/style5/40856/3820643/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-479beb781e279bce"
+      ],
+      "relationIds": [
+        "p3-rel-8fb8afd4f19d5ff7"
+      ]
+    },
+    {
+      "sourceId": "p3-src-21cafbe9b24dcd5a",
+      "url": "https://casanova-yoshiwara.com/access/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-479beb781e279bce"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-07c9a8ce1541eece",
+      "url": "https://ranking-deli.jp/hyogo/area133/style5/11208/5250266/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e7fa5579eaef052d"
+      ],
+      "relationIds": [
+        "p3-rel-4f984b6936347f4a"
+      ]
+    },
+    {
+      "sourceId": "p3-src-d1f142d02e079978",
+      "url": "https://new.s-hanshin.com/faq/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e7fa5579eaef052d"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-2c6aeb67276e1f5f",
+      "url": "https://ranking-deli.jp/kanagawa/area42/style5/34636/5028255/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-248d3d1f3170df17"
+      ],
+      "relationIds": [
+        "p3-rel-830fc738e462962f"
+      ]
+    },
+    {
+      "sourceId": "p3-src-968f83e5855eaaa1",
+      "url": "https://kawasaki-essence.com/map.html",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-248d3d1f3170df17"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-6a09b15e761e22bd",
+      "url": "https://ranking-deli.jp/kanagawa/area42/style5/48171/5198220/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-1b5a9b429e2001f4"
+      ],
+      "relationIds": [
+        "p3-rel-d6e0028642f8037c"
+      ]
+    },
+    {
+      "sourceId": "p3-src-f8657bf1011aa9ca",
+      "url": "https://www.oremichi.com/kantou/shop/862.html",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-1b5a9b429e2001f4"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-fc4d865ae19c6600",
+      "url": "https://premium2013.jp/blog_post?cc=6202",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-5fac8390973437d8"
+      ],
+      "relationIds": [
+        "p3-rel-f381045834769d6c"
+      ]
+    },
+    {
+      "sourceId": "p3-src-d72502e749b127ef",
+      "url": "https://www.sotwe.com/rin_kbb?lang=en",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-88c7930d1d35d4fd"
+      ],
+      "relationIds": [
+        "p3-rel-e0e4badba28f5975"
+      ]
+    },
+    {
+      "sourceId": "p3-src-580c34fdb5babb7f",
+      "url": "https://bsky.app/profile/chanel-111111.bsky.social",
+      "sourceType": "entrant_social",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-df9a5c2343841de5"
+      ],
+      "relationIds": [
+        "p3-rel-beaf8dff75080561"
+      ]
+    },
+    {
+      "sourceId": "p3-src-4a7e01ca6bce9cf9",
+      "url": "https://ranking-deli.jp/tokyo/area28/style3/14224/2696730/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-7f322341641dbb2d"
+      ],
+      "relationIds": [
+        "p3-rel-85b8b40617917488"
+      ]
+    },
+    {
+      "sourceId": "p3-src-a04a5a102fd0f4bb",
+      "url": "https://ranking-deli.jp/osaka/area124/style1/14445/5351407/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-12f3c194e8ed5b59"
+      ],
+      "relationIds": [
+        "p3-rel-817625249b08a814"
+      ]
+    },
+    {
+      "sourceId": "p3-src-3bc801e884737a47",
+      "url": "https://www.fuzoku-job109.com/kansai/shop/809",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-12f3c194e8ed5b59"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-9aecf82e264ead4a",
+      "url": "https://ranking-deli.jp/hokkaido/area1/style2/9153/5163100/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e4dde524cbfbb303"
+      ],
+      "relationIds": [
+        "p3-rel-135796889ee22e67"
+      ]
+    },
+    {
+      "sourceId": "p3-src-4809ddd0c46d87bd",
+      "url": "https://hokkaido-tohoku.qzin.jp/batsugun/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e4dde524cbfbb303"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-319b4b3e51be1d81",
+      "url": "https://ranking-deli.jp/ibaraki/area79/style5/29315/5584287/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e0a54603d901b5bc"
+      ],
+      "relationIds": [
+        "p3-rel-e0675eb642cdb6af"
+      ]
+    },
+    {
+      "sourceId": "p3-src-b142e059a3f5c419",
+      "url": "https://www.oremichi.com/kantou/shop/314.html",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e0a54603d901b5bc"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-020cb1c3eadecbd0",
+      "url": "https://ranking-deli.jp/hyogo/area207/style5/41016/5447836/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-4d23230523ac880f"
+      ],
+      "relationIds": [
+        "p3-rel-08e65f9abd457d4d"
+      ]
+    },
+    {
+      "sourceId": "p3-src-1eed3d04b400b585",
+      "url": "https://premium-hyogo.com/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-4d23230523ac880f"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-337ba54ebda6c1c5",
+      "url": "https://ranking-deli.jp/hyogo/area207/style5/41016/5397338/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-4d23230523ac880f"
+      ],
+      "relationIds": [
+        "p3-rel-9df3ee4dda062af3"
+      ]
+    },
+    {
+      "sourceId": "p3-src-fa57b92ea2241676",
+      "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=%23%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%99&rkf=1",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-63db1d0c06c4fcd8"
+      ],
+      "relationIds": [
+        "p3-rel-868f3e8f3814ee6c"
+      ]
+    },
+    {
+      "sourceId": "p3-src-149baf8a0d2b04b5",
+      "url": "https://karentakasaki.gunma.fun/top/system/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-63db1d0c06c4fcd8"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-60c3af022431d0c5",
+      "url": "https://ranking-deli.jp/gifu/area201/style5/12572/3147416/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-7e406f5a4b4f6a90"
+      ],
+      "relationIds": [
+        "p3-rel-08207300c48cf707"
+      ]
+    },
+    {
+      "sourceId": "p3-src-1ae03765dc81afad",
+      "url": "https://www.eddies.co.jp/top/index.html",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-7e406f5a4b4f6a90"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-e2363aecd4c5e69f",
+      "url": "https://deli-fuzoku.jp/aromaolive2/girl/170/girlsdiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ef1d70222d9acadc"
+      ],
+      "relationIds": [
+        "p3-rel-6fd9fcb920195646"
+      ]
+    },
+    {
+      "sourceId": "p3-src-0e5410679819a68c",
+      "url": "https://mens-qzin.jp/miyazaki/area_45001/detail/miyaolim/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ef1d70222d9acadc"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5c41ab8fcede0774",
+      "url": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&mtype=image&p=%E3%83%98%E3%83%96%E3%83%B3+%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84&rkf=1",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-3740d13267281738",
+        "mh26-store-6e0afe003f40d2be"
+      ],
+      "relationIds": [
+        "p3-rel-4b45cc655e5a9fc7",
+        "p3-rel-596f2b622910cd43"
+      ]
+    },
+    {
+      "sourceId": "p3-src-ec99405dfce81d8f",
+      "url": "https://fuzoku.jp/otomeyuuenchi/girl/84/girlsdiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-2a66002611d90fbe"
+      ],
+      "relationIds": [
+        "p3-rel-6f6a0b3f46e8ca54"
+      ]
+    },
+    {
+      "sourceId": "p3-src-2a2909ffd6f8c346",
+      "url": "https://search.yahoo.co.jp/realtime/search/%EF%BC%83TiAmo/?ei=UTF-8&mtype=image&p=%EF%BC%83TiAmo&rkf=1",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-62639208ed1bd3de"
+      ],
+      "relationIds": [
+        "p3-rel-b90ac1a3bfd230e9",
+        "p3-rel-f479818e5a90ce18"
+      ]
+    },
+    {
+      "sourceId": "p3-src-9c6479e5e5ed22fc",
+      "url": "https://ranking-deli.jp/ibaraki/area77/style5/15198/5397883/maildiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e44a56a769ae3fcd"
+      ],
+      "relationIds": [
+        "p3-rel-38576b5ee0f700ff"
+      ]
+    },
+    {
+      "sourceId": "p3-src-770dac32506dbc09",
+      "url": "https://fujoho.jp/index.php?id=39723&p=recruit",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e44a56a769ae3fcd"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-cd75b92207728068",
+      "url": "https://twstalker.com/hiropyon_0405",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ca5dd281aca4af94"
+      ],
+      "relationIds": [
+        "p3-rel-c1130a4a0b2e1524"
+      ]
+    },
+    {
+      "sourceId": "p3-src-5cfcb2956a0b3f09",
+      "url": "https://we.twstalker.com/_cure_emacha_",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ca5dd281aca4af94"
+      ],
+      "relationIds": [
+        "p3-rel-4ffbb274a47668d0"
+      ]
+    },
+    {
+      "sourceId": "p3-src-e0c35b0604f8e871",
+      "url": "https://fu-web.jp/kumamoto/cast/diary/castCode/531154/diaryCode/12346744/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-9d6a3d181768d418"
+      ],
+      "relationIds": [
+        "p3-rel-37bc3880b264e6c1"
+      ]
+    },
+    {
+      "sourceId": "p3-src-b883b1ba4eb01778",
+      "url": "https://www.oremichi.com/kyusyuokinawa/shop/1691.html",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-9d6a3d181768d418"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-01b0e78c7ef9bcbb",
+      "url": "https://mobile.twstalker.com/mitogen252519",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-7c7746b5dd8aa34d"
+      ],
+      "relationIds": [
+        "p3-rel-e05f32e8692b84e2"
+      ]
+    },
+    {
+      "sourceId": "p3-src-0e4ae8a6f17b5f75",
+      "url": "https://q-pri.com/shop_detail/6077",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-7c7746b5dd8aa34d"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-95019dc9f809bff3",
+      "url": "https://doublecrosswebzine.twstalker.com/hikari_hando",
+      "sourceType": "other",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-de4fade82311a609"
+      ],
+      "relationIds": [
+        "p3-rel-4e5d74be9e7dc828"
+      ]
+    },
+    {
+      "sourceId": "p3-src-470d494f6fc4d9d8",
+      "url": "https://kitakanto.qzin.jp/handatakasaki/interview/13128/",
+      "sourceType": "store",
+      "accessStatus": "inherited_not_rechecked",
+      "publisherRole": "business_evidence",
+      "checkedAt": null,
+      "notes": "",
+      "storeIds": [
+        "mh26-store-de4fade82311a609"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-82ac4f022fc70228",
+      "url": "https://tokyo-blenda.info/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-80d93a854263f9fe"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-a1e768bf1ad9ca1c",
+      "url": "https://shinjuku-blenda.info/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-ed944e60f5cef8df"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-fb859dafe61aef0a",
+      "url": "https://mariabelle-aroma.info/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6ba46519366d11dd"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-772c365fe7dc6acc",
+      "url": "https://n-kampaku.com/",
+      "sourceType": "store",
+      "accessStatus": "linked_fetch_failed",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-e7716048c9521370"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-082b0128d1238a70",
+      "url": "https://kita-blenda.info/home",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-0ac5feba492bab3e"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-c03f3968c5316328",
+      "url": "https://blenda-vip.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-93b09dbb18b506df"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-ea042274cded2b62",
+      "url": "https://seiekisaishu-umeda.com/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-678799267033f76f"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-218a0c47f62033ed",
+      "url": "https://nara-blenda.info/home",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-01d71b753cdf9adf"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-a1db04f9e2edfc61",
+      "url": "https://nk-bbw.net/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-306f2ce19b35c1c4"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-ab992730bc2bc3df",
+      "url": "https://www.annex-k.com/top/event/?cms_action=manage",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-931aedef40ef7167"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-554c1f4deb890d60",
+      "url": "https://www.yesgrp.com/matsuyama/line/news/page.html?page=2",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-55804b4ac4d676d3"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-7c6c496936b83985",
+      "url": "https://www.yesgrp.com/matsuyama/line/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-55804b4ac4d676d3"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-bbc6b4cec43424ea",
+      "url": "https://www.yesgrp.com/hukuoka/lesson1/news/page.html?page=6",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-34145e31a1c19c66"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-d934edcb42fd6ed1",
+      "url": "https://www.yesgrp.com/hukuoka/lesson1/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-34145e31a1c19c66"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-1844f2c077166978",
+      "url": "https://www.kyujin-yes.com/hukuoka/lesson/sitemap/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_geography",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-34145e31a1c19c66"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-c1efb15a5a3d5c3c",
+      "url": "https://www.kawasakisoaper.com/event/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-6402c6a1bf1f1dcf"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-58606acce3960a91",
+      "url": "https://www.cityheaven.net/saitama/A1102/A110201/hybridhealth/freespace-2/",
+      "sourceType": "official",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-9dd53dd1558220fa"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5e68f8e0a11b323c",
+      "url": "https://www.cityheaven.net/saitama/A1102/A110201/hybridhealth/",
+      "sourceType": "official",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_public_page",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-9dd53dd1558220fa"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-41bc48c538a5d5ad",
+      "url": "https://www.girlsheaven-job.net/kanagawa/ma-166/sa-126/onemorecoming/blog/",
+      "sourceType": "store",
+      "accessStatus": "indexed_only_fetch_failed",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-b33dc19606e7c823"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-444890c97f1cfbc6",
+      "url": "https://www.girlsheaven-job.net/gunma/ma-156/sa-385/ikenai-ota/blog/",
+      "sourceType": "store",
+      "accessStatus": "indexed_only_403",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-f2046dbd193a98e6"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-5d90366e6f0721b1",
+      "url": "https://fuzoku.jp/dogojyuyaku/girl/18/girlsdiary/",
+      "sourceType": "entrant_diary",
+      "accessStatus": "indexed_only_403",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-9a1a108902e295ec"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-ceb45c2ec9f60acf",
+      "url": "https://blog.hybridhealth-nishikawaguchi.jp/2026/09/23/%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026%E3%80%802%E5%BA%97%E8%88%97%E5%90%88%E5%90%8C%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [
+        "mh26-store-8c881582021a7043"
+      ],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-38f38ac9d7587874",
+      "url": "https://www.yesgrp.com/matsuyama/kanojo/eve/",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "campaign_support",
+      "checkedAt": "2026-10-05",
+      "notes": "",
+      "storeIds": [],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-64ad5234913cb051",
+      "url": "https://www.cityheaven.net/missheaven-about/",
+      "sourceType": "official",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "event_organizer",
+      "checkedAt": "2026-10-05",
+      "notes": "選出設計のみ。全店一覧ではない。",
+      "storeIds": [],
+      "relationIds": []
+    },
+    {
+      "sourceId": "p3-src-bde276e1e6ec3303",
+      "url": "https://link-f.biz/archives/25134",
+      "sourceType": "official",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "official_media_guide",
+      "checkedAt": "2026-10-05",
+      "notes": "全国ノミネート店舗ランキングの仕組み案内。実店舗一覧URLは確保できず。",
+      "storeIds": [],
+      "relationIds": []
+    }
+  ],
+  "note": "個人名は抽出していない。既存の日記根拠URLはPhase1から継承。アクセス履歴は本文取得・索引・継承を区別。"
+}

@@ -1,0 +1,36 @@
+{
+  "baselineFiles": [
+    {
+      "path": "final_phase1/output/nationwide_dataset_v1.json",
+      "sha256": "c4d173eab7292c836fa6fc4db858fd112b81b476c6135541c4ae8146e1880623"
+    },
+    {
+      "path": "final_phase1/output/map_47prefectures_v1.json",
+      "sha256": "c2be9b01c7fee80c4bbdd31070763bfbd8badf81bebc9da600e03fca8ff56e42"
+    },
+    {
+      "path": "phase2_participation/output/participation_structure_2026.json",
+      "sha256": "64e064f22c27deb568b9874e6deb807253cc8b70c0e380565044f0d2aa8bb59a"
+    }
+  ],
+  "phase1RecordCount": 147,
+  "phase2RecordCount": 147,
+  "phase1OriginalsUnchanged": true,
+  "identityMerges": [
+    {
+      "names": [
+        "KOBE GOLD",
+        "KOBE GOLD（神戸ゴールド）"
+      ],
+      "basis": "同じ県、既存店舗地図URL https://fukuharaso-pu.com/kobegold/map/"
+    },
+    {
+      "names": [
+        "亭主関白 谷九店",
+        "亭主関白谷九店"
+      ],
+      "basis": "同じ県、同じ店舗URL https://kampaku.info/"
+    }
+  ],
+  "warning": "同名TiAmoの県不明店と福岡県店は統合しない。旧部門調査Phase3とは別成果物。"
+}

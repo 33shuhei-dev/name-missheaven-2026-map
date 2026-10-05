@@ -1,0 +1,17 @@
+{
+  "stores": [
+    {
+      "storeId": "mh26-store-69c71b687abecf94",
+      "storeName": "華女（かのじょ）松山店",
+      "prefecture": "愛媛県",
+      "listingArea": "松山エリア",
+      "formalElectionArea": null,
+      "participationEvidenceUrl": "https://www.yesgrp.com/matsuyama/kanojo/eve/",
+      "storePublicUrl": "https://www.yesgrp.com/matsuyama/kanojo/eve/",
+      "confidence": "confirmed",
+      "participationType": "campaign_support",
+      "notes": "2026応援キャンペーンは確認。個別店の出場エントリーは未確認のため参加確認店舗集計から除外。"
+    }
+  ],
+  "excludedFromParticipantStoreCount": true
+}

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-10-05",
+  "stores": [
+    {
+      "storeId": "mh26-store-d6e8a6f247ef7af6",
+      "storeName": "The White（ザ ホワイト）",
+      "storeNameOriginals": [
+        "The White（ザ ホワイト）"
+      ],
+      "prefecture": "兵庫県",
+      "listingArea": "福原",
+      "listingAreas": [
+        "福原"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": "アイドル・ロリ部門",
+      "categoryOriginals": [
+        "アイドル・ロリ部門"
+      ],
+      "participationEvidenceUrl": "https://fukuharaso-pu.com/thewhite/ribon/photodiary/date202608/",
+      "storePublicUrl": "https://fukuharaso-pu.com/thewhite/map/",
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-08b21bfdcb99ed38"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-fa7cf34597909585"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-86f8d634747f559a",
+        "p3-src-96176cfce477f2fd"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-6cc383b11a99e38c",
+      "storeName": "KOBE GOLD（神戸ゴールド）",
+      "storeNameOriginals": [
+        "KOBE GOLD",
+        "KOBE GOLD（神戸ゴールド）"
+      ],
+      "prefecture": "兵庫県",
+      "listingArea": "福原",
+      "listingAreas": [
+        "福原"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "店長オススメ",
+        "癒し系部門"
+      ],
+      "participationEvidenceUrl": "https://fukuharaso-pu.com/kobegold/juri/photodiary/date202608/page2/",
+      "storePublicUrl": "https://fukuharaso-pu.com/kobegold/map/",
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-e7836c26bee1ae62",
+        "mh26-div-78371af6d5b711a0"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-4d444fa44ae13505",
+        "p2-structure-f7970f5bcdfff718"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-109acbdb729126ff",
+        "p3-src-948a46c209e8e9af",
+        "p3-src-0d47f8bc0575ba40"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-306f2ce19b35c1c4",
+      "storeName": "BBW西川口店",
+      "storeNameOriginals": [
+        "BBW西川口店"
+      ],
+      "prefecture": "埼玉県",
+      "listingArea": "西川口",
+      "listingAreas": [
+        "西川口"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "おっぱい部門",
+        "デリヘル部門"
+      ],
+      "participationEvidenceUrl": "https://nk-bbw.net/news.php?id=743",
+      "storePublicUrl": "https://nk-bbw.net/",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-27e21d370d3a26af",
+        "mh26-div-9d37c83ddfab6616"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-5f63475c0f5abc33",
+        "p2-structure-347f18d6eb6a4f9e"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-88b5437495f527ee",
+        "p3-src-3bc929beb053f1ca",
+        "p3-src-a1db04f9e2edfc61"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。 一次本文に2026出場3名。〇〇〇部門はプレースホルダーとして除外。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-1d1e8f3a479a8ecc",
+      "storeName": "BARUBORA",
+      "storeNameOriginals": [
+        "BARUBORA"
+      ],
+      "prefecture": "山梨県",
+      "listingArea": "甲府",
+      "listingAreas": [
+        "甲府"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": "自慢のお○ぱい部門",
+      "categoryOriginals": [
+        "自慢のお○ぱい部門"
+      ],
+      "participationEvidenceUrl": "https://www.kofu-angel.net/fuuzoku/shop/area/6201/staff/205971/12631882/",
+      "storePublicUrl": "https://kofu-barubora.net/access.php",
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-7d8840b49ede33ce"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-59de0d7a4f24ebe3"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-f9d180432663554e",
+        "p3-src-ddfc13c84f0c3762"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-90522f3bdfdaa139",
+      "storeName": "PaleTTe(パレット)",
+      "storeNameOriginals": [
+        "PaleTTe(パレット)"
+      ],
+      "prefecture": "広島県",
+      "listingArea": "広島市",
+      "listingAreas": [
+        "広島市"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": "うちは地元が好きじゃけぇ♪部門",
+      "categoryOriginals": [
+        "うちは地元が好きじゃけぇ♪部門"
+      ],
+      "participationEvidenceUrl": "https://girls-spot.net/shop/hiroshima-palette/girl/26220/",
+      "storePublicUrl": null,
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-2cda3a84cfd14474"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-d226502159675478"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-d361dd9d458d722c"
+      ],
+      "publicUrlAccessStatus": "unknown",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。 継承した地域根拠が個人ページまたは求人専用ページのため店舗公開導線へ採用しない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-6888b46bed6ceeef",
+      "storeName": "STAR学園",
+      "storeNameOriginals": [
+        "STAR学園"
+      ],
+      "prefecture": "徳島県",
+      "listingArea": "徳島市",
+      "listingAreas": [
+        "徳島市"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "お尻好きならココ部門",
+        "大好き♡おっぱい部門",
+        "極嬢部門"
+      ],
+      "participationEvidenceUrl": "https://fu-web.jp/tokushima/cast/diary/castCode/218670/diaryCode/12397971/",
+      "storePublicUrl": "https://star-gakuen.com/top.php",
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-982ff9c29cdee45f",
+        "mh26-div-e7417da8dc607180",
+        "mh26-div-819fc9e46c81348f"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-40e8bb953b56b7e7",
+        "p2-structure-647594c155333ec8",
+        "p2-structure-b86ec74f0e95f62d"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-71481039741b0dad",
+        "p3-src-2b30f99a0abce575"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-109c083c06ba6538",
+      "storeName": "妻の友人",
+      "storeNameOriginals": [
+        "妻の友人"
+      ],
+      "prefecture": "徳島県",
+      "listingArea": "徳島市,秋田町",
+      "listingAreas": [
+        "徳島市,秋田町"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "お尻好きならココ部門",
+        "大人の色気部門",
+        "大好き♡おっぱい部門"
+      ],
+      "participationEvidenceUrl": "https://fu-web.jp/tokushima/cast/diary/castCode/218670/diaryCode/12397971/",
+      "storePublicUrl": null,
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-363e5775b95318a9",
+        "mh26-div-160875d42107649d",
+        "mh26-div-6455b716171b40af"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-872798e602687bbc",
+        "p2-structure-7881ed13babe530f",
+        "p2-structure-b46d4efa5c2fc0cd"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-71481039741b0dad",
+        "p3-src-6b5341b15a90acd1"
+      ],
+      "publicUrlAccessStatus": "unknown",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。 継承した地域根拠が個人ページまたは求人専用ページのため店舗公開導線へ採用しない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "storeName": "MIKADO『ミカド』",
+      "storeNameOriginals": [
+        "MIKADO『ミカド』"
+      ],
+      "prefecture": "栃木県",
+      "listingArea": "宇都宮市",
+      "listingAreas": [
+        "宇都宮市"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "おっぱい自慢部門",
+        "お姉さん部門",
+        "ギャンブル大好き部門",
+        "スタイル自慢部門",
+        "ソープ部門",
+        "マッサージ得意部門",
+        "レア出勤部門",
+        "店長一押し部門",
+        "性格がドS部門"
+      ],
+      "participationEvidenceUrl": "https://fu-web.jp/tochigi/cast/diary/castCode/454606/diaryCode/12387508/",
+      "storePublicUrl": "https://fu-web.jp/tochigi/merchant/get/merchantCode/500/",
+      "sourceType": "entrant_diary",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-d6136718d6c63d3f",
+        "mh26-div-2fe65d02e3a2ccf1",
+        "mh26-div-6ab1936cf7830360",
+        "mh26-div-d0ce560bfdb5afc2",
+        "mh26-div-72ad0fd6bab615db",
+        "mh26-div-4be61355211ecbae",
+        "mh26-div-b56ea00a009792f0",
+        "mh26-div-a29230fb3494138b",
+        "mh26-div-eb2cc93b322e53fc"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-86e84b983bf3d5ec",
+        "p2-structure-3fd55ada243485ac",
+        "p2-structure-77b062d691d947d7",
+        "p2-structure-c049a5ee2f77779a",
+        "p2-structure-e4e2049836cdd366",
+        "p2-structure-eb17667ed12590fe",
+        "p2-structure-2f71ca20ec773075",
+        "p2-structure-a0dd9badc7bb5232",
+        "p2-structure-7ece3645676e1e1a"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd",
+        "p3-src-3f2513858527312d"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-a7403750a263dd98",
+      "storeName": "美人研究所",
+      "storeNameOriginals": [
+        "美人研究所"
+      ],
+      "prefecture": "神奈川県",
+      "listingArea": "川崎堀之内",
+      "listingAreas": [
+        "川崎堀之内"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [
+        "おっぱい部門",
+        "コスプレ部門",
+        "リピート確定部門",
+        "ルックス抜群部門",
+        "川崎部門"
+      ],
+      "participationEvidenceUrl": "https://www.bijinlab.net/top/event",
+      "storePublicUrl": "https://www.bijinlab.net/top/event",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "baseline_observation",
+      "checkedAt": "2026-10-05T02:20:25+00:00",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [
+        "mh26-div-7991445ae09b6df6",
+        "mh26-div-9f08eda688ab63ff",
+        "mh26-div-34ef0eff229094c0",
+        "mh26-div-45fe21b995107f39",
+        "mh26-div-9bc5c416ec621671"
+      ],
+      "phase2RecordIds": [
+        "p2-structure-f73dbef8e2133e63",
+        "p2-structure-e1bb794640ea6505",
+        "p2-structure-01afb9398af25ca4",
+        "p2-structure-2fc0942d92023a46",
+        "p2-structure-06919ece8aa5d9d4"
+      ],
+      "isNewSincePhase1": false,
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "publicUrlAccessStatus": "inherited_not_rechecked",
+      "notes": "Phase1の店舗関連観測を継承。個人名を抽出せず既存IDで追跡。formalElectionAreaは補完していない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-931aedef40ef7167",
+      "storeName": "I♥KASUKABE",
+      "storeNameOriginals": [
+        "I♥KASUKABE"
+      ],
+      "prefecture": "埼玉県",
+      "listingArea": "春日部",
+      "listingAreas": [
+        "春日部"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [],
+      "participationEvidenceUrl": "https://www.annex-k.com/top/event/?cms_action=manage",
+      "storePublicUrl": "https://www.annex-k.com/top/event/?cms_action=manage",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "entry_reported",
+      "checkedAt": "2026-10-05",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [],
+      "phase2RecordIds": [],
+      "isNewSincePhase1": true,
+      "sourceIds": [
+        "p3-src-ab992730bc2bc3df"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "店舗本文の2026出場決定告知、ヘッダー地域と埼玉県住所を確認。部門・人数は補完しない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-55804b4ac4d676d3",
+      "storeName": "ライン松山店",
+      "storeNameOriginals": [
+        "ライン松山店"
+      ],
+      "prefecture": "愛媛県",
+      "listingArea": "松山エリア",
+      "listingAreas": [
+        "松山エリア"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [],
+      "participationEvidenceUrl": "https://www.yesgrp.com/matsuyama/line/news/page.html?page=2",
+      "storePublicUrl": "https://www.yesgrp.com/matsuyama/line/",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "entry_reported",
+      "checkedAt": "2026-10-05",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [],
+      "phase2RecordIds": [],
+      "isNewSincePhase1": true,
+      "sourceIds": [
+        "p3-src-554c1f4deb890d60",
+        "p3-src-7c6c496936b83985"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "2026/9/6店ニュースにミスヘブン2026・今年も参加します。店舗トップで愛媛県住所を確認。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-34145e31a1c19c66",
+      "storeName": "Lesson.1福岡校",
+      "storeNameOriginals": [
+        "Lesson.1福岡校"
+      ],
+      "prefecture": "福岡県",
+      "listingArea": "中洲",
+      "listingAreas": [
+        "中洲"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [],
+      "participationEvidenceUrl": "https://www.yesgrp.com/hukuoka/lesson1/news/page.html?page=6",
+      "storePublicUrl": "https://www.yesgrp.com/hukuoka/lesson1/",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "entry_reported",
+      "checkedAt": "2026-10-05",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [],
+      "phase2RecordIds": [],
+      "isNewSincePhase1": true,
+      "sourceIds": [
+        "p3-src-bbc6b4cec43424ea",
+        "p3-src-d934edcb42fd6ed1",
+        "p3-src-1844f2c077166978"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "2026/9/16店ニュースに2026エントリー告知。掲載地域は店舗ヘッダー、県は同店公式求人サイトの明記住所。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    },
+    {
+      "storeId": "mh26-store-6402c6a1bf1f1dcf",
+      "storeName": "エデンR",
+      "storeNameOriginals": [
+        "エデンR"
+      ],
+      "prefecture": "神奈川県",
+      "listingArea": "川崎堀之内",
+      "listingAreas": [
+        "川崎堀之内"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [],
+      "participationEvidenceUrl": "https://www.kawasakisoaper.com/event/",
+      "storePublicUrl": "https://www.kawasakisoaper.com/event/",
+      "sourceType": "store",
+      "confidence": "confirmed",
+      "participationType": "entry_reported",
+      "checkedAt": "2026-10-05",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [],
+      "phase2RecordIds": [],
+      "isNewSincePhase1": true,
+      "sourceIds": [
+        "p3-src-c1efb15a5a3d5c3c"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "Phase2既発見店。本文2026エントリー10名、同ページ神奈川県住所。Phase3初出の店舗と誤算しない。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      },
+      "phase2Introduced": true
+    },
+    {
+      "storeId": "mh26-store-9dd53dd1558220fa",
+      "storeName": "ハイブリッドヘルス西川口",
+      "storeNameOriginals": [
+        "ハイブリッドヘルス西川口"
+      ],
+      "prefecture": "埼玉県",
+      "listingArea": "西川口",
+      "listingAreas": [
+        "西川口"
+      ],
+      "formalElectionArea": null,
+      "categoryOriginal": null,
+      "categoryOriginals": [],
+      "participationEvidenceUrl": "https://www.cityheaven.net/saitama/A1102/A110201/hybridhealth/freespace-2/",
+      "storePublicUrl": "https://www.cityheaven.net/saitama/A1102/A110201/hybridhealth/",
+      "sourceType": "official",
+      "confidence": "confirmed",
+      "participationType": "entry_reported",
+      "checkedAt": "2026-10-05",
+      "reviewedAt": "2026-10-05",
+      "phase1RecordIds": [],
+      "phase2RecordIds": [],
+      "isNewSincePhase1": true,
+      "sourceIds": [
+        "p3-src-58606acce3960a91",
+        "p3-src-5e68f8e0a11b323c"
+      ],
+      "publicUrlAccessStatus": "primary_body_checked",
+      "notes": "ヘブンネットの店舗運営告知本文に全国ミスヘブン総選挙2026・当店5名がエントリー。県・掲載地域は取得した店舗ページのパンくず。選挙運営の公式ノミネート一覧とは区別。",
+      "fieldConfidence": {
+        "participation": "confirmed",
+        "prefecture": "confirmed",
+        "listingArea": "confirmed",
+        "formalElectionArea": "unverified"
+      }
+    }
+  ],
+  "note": "Phase1の一次確認を継承した店舗を含む。運営側正式ノミネート全店リストではない。"
+}

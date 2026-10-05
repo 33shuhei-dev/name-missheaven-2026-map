@@ -1,0 +1,23 @@
+{
+  "phase1StoreNamePrefectureKeys": 63,
+  "phase1CanonicalStores": 61,
+  "finalStoresIncludingCandidates": 70,
+  "newSincePhase1": 9,
+  "newEntryConfirmedStores": 5,
+  "phase2PreviouslyFoundAmongNewSincePhase1": 2,
+  "confirmedStores": 14,
+  "probableStores": 19,
+  "unverifiedStores": 37,
+  "campaignSupportOnlyExcluded": 1,
+  "prefecturesWithStores": 22,
+  "prefecturesWithConfirmedStores": 9,
+  "listingAreaConnections": 48,
+  "categoryOriginalCount": 77,
+  "storeCategoryRelationCount": 121,
+  "publicUrlCount": 41,
+  "participationEvidenceUrlCount": 70,
+  "unknownPrefectureStoreCount": 15,
+  "organizerVerifiedNationalStoreListCount": 0,
+  "nationalExactParticipantCount": null,
+  "explorableUniquePeopleEstimate": null
+}

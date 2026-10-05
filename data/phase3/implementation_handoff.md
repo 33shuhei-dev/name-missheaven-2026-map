@@ -1,0 +1,21 @@
+# Next.js統合引き継ぎ
+
+既存Phase1/Phase2を変更せず、Phase3の追加レイヤーとして読み込む。今回UI・コードは変更していない。
+
+- participating_stores_2026.json: envelopeのstores配列。候補を含む全店舗。storeIdが主キー、phase1RecordIds/phase2RecordIdsが既存データとの参照。氏名をキーにしない。
+- participating_stores_confirmed_2026.json: 前期の一次確認を継承した店を含むconfirmedのみ。
+- store_category_relations.json: relationId/storeId/categoryOriginal。店舗対部門は多対多。categoryOriginalsはその投影。categoryOriginal単数は1種類のときだけ値が入る。
+- store_sources.json: sourceIdごとのURL・sourceType・アクセス状態・対象店/関係ID。
+- campaign_support_stores.json: 応援店のみ。出場確認店の件数に混ぜない。
+- coverage_47prefectures.json: 全47県をJIS文字列コード01〜47で保持。県不明は別枠。
+
+confidenceはその店の2026参加関連根拠の強さ。confirmedは一次性の高い本文または前期確認の継承、probableは強いが不足のある関係、unverifiedは索引/未確認候補。各fieldConfidenceとrelationのconfidenceを別に読む。organizer公式一覧で確認したと表示しない。sourceType=officialでもヘブン掲載の店舗自己告知の場合がある。
+
+prefectureは根拠付き県、listingArea/listingAreasは掲載地域。formalElectionAreaは正式な選挙エリアが未確認なのでnull。店の住所や掲載パスからformalElectionAreaを生成しない。nullは不明、空配列は記録済みの関係なしであり不存在の証明ではない。複数listingAreasから勝手に単数を決めない。
+
+全国地図→県→掲載地域→部門→店舗→storePublicUrl の導線。部門不明の参加店は「部門未確認」枠で表示できる。県不明は地図へ割り当てず検索の不明枠へ。店URLがnullなら移動ボタンなし。参加根拠はparticipationEvidenceUrlで別表示。publicUrlAccessStatusがlinked_fetch_failed/inherited_not_recheckedなら未再確認の注記。外部リンクはhttps/httpの検証済み形式のみ、rel=noopener noreferrer。候補の人数は表示しない。
+
+データは都道府県コード別にビルド時分割し未知県をunknown.jsonへ。軽量検索インデックスはstoreId/storeName/prefecture/listingAreas/categoryOriginalsのみ。根拠・長いnotesを検索初期読込へ入れない。店舗詳細は遅延読込、一覧は20〜50店ずつページネーション。数千店でも全店舗詳細をクライアントへ一括送らない。県・地域の静的ルートを生成し、既存URLはそのまま維持して新storeIdルートを追加する。名称をURLキーへ直結しない。
+
+集計はstoreIdのdistinct、部門集計はstoreId×原文部門。部門別・複数地域別の数を足して全国店舗数にしない。人数は在籍/申込/出場の別定義、全店舗の推定人数を作らない。build.pyは手動確認メタデータの再生成用で、Webを自動再取得するスクレイパーではない。
+

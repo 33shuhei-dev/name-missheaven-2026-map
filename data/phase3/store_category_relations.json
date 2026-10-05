@@ -1,0 +1,1704 @@
+{
+  "schemaVersion": "1.0.0",
+  "relations": [
+    {
+      "relationId": "p3-rel-32c10ec70c84d911",
+      "storeId": "mh26-store-d6e8a6f247ef7af6",
+      "categoryOriginal": "アイドル・ロリ部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-86f8d634747f559a"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-08b21bfdcb99ed38"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a0fc1e8f1ef5a0b3",
+      "storeId": "mh26-store-6cc383b11a99e38c",
+      "categoryOriginal": "店長オススメ",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-109acbdb729126ff"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-e7836c26bee1ae62"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6212ffadef25ecfc",
+      "storeId": "mh26-store-6cc383b11a99e38c",
+      "categoryOriginal": "癒し系部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-0d47f8bc0575ba40"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-78371af6d5b711a0"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-16483a05214dd731",
+      "storeId": "mh26-store-faacbc3c4321993c",
+      "categoryOriginal": "癒し系部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-e1689e60fc238ec2"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-fa8bbc1ed5caeafe"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-cd50fac8d90e0b18",
+      "storeId": "mh26-store-faacbc3c4321993c",
+      "categoryOriginal": "癒し部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-e1689e60fc238ec2"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7706b2c0a7e130b8"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4a65520c3c256428",
+      "storeId": "mh26-store-d916977eab764f4d",
+      "categoryOriginal": "神スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-1eb5a9fd35b77a35"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-de482c48adcaba49",
+      "storeId": "mh26-store-ed30c80779b7973f",
+      "categoryOriginal": "人妻部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-211fdcdb74aec9e4"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8e46d1cb01e1455a"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-fb5a30c993155c4a",
+      "storeId": "mh26-store-5fb62be563b1ee81",
+      "categoryOriginal": "ソープ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-32d8bddb7cebd50d"
+      ],
+      "phase1RecordIds": [
+        "mh26-rd-08214cf8df8ec9e1"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-504e0189280b047b",
+      "storeId": "mh26-store-5fb62be563b1ee81",
+      "categoryOriginal": "店長イチオシ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-5ea31b7f07b2ceb0"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2e47165e37a6a0c7"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-1f7c30f7e720ff1f",
+      "storeId": "mh26-store-8d07d998347b09ed",
+      "categoryOriginal": "おっぱい自慢部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-25f26400d5c6e796"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-d24509972ac60767"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。 部門はグループ代表告知。大宮個店所属関係を未確認として再評価。",
+      "baselineConfidence": "confirmed"
+    },
+    {
+      "relationId": "p3-rel-6f40a471d80e1e39",
+      "storeId": "mh26-store-8d07d998347b09ed",
+      "categoryOriginal": "ギャンブル大好き部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-25f26400d5c6e796"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-d14d33fbb6a7c77f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。 部門はグループ代表告知。大宮個店所属関係を未確認として再評価。",
+      "baselineConfidence": "confirmed"
+    },
+    {
+      "relationId": "p3-rel-72e086dac2e6ab87",
+      "storeId": "mh26-store-8d07d998347b09ed",
+      "categoryOriginal": "スタイル自慢部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-25f26400d5c6e796"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-184a52d81e387948"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。 部門はグループ代表告知。大宮個店所属関係を未確認として再評価。",
+      "baselineConfidence": "confirmed"
+    },
+    {
+      "relationId": "p3-rel-2ccb96c2f90fdd80",
+      "storeId": "mh26-store-8d07d998347b09ed",
+      "categoryOriginal": "前立腺達人部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-25f26400d5c6e796"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b7f178473f3280fb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。 部門はグループ代表告知。大宮個店所属関係を未確認として再評価。",
+      "baselineConfidence": "confirmed"
+    },
+    {
+      "relationId": "p3-rel-7dfcfeb7f97c518d",
+      "storeId": "mh26-store-8d07d998347b09ed",
+      "categoryOriginal": "店長一押し部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-25f26400d5c6e796"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-5ae9d67685ec2c69"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。 部門はグループ代表告知。大宮個店所属関係を未確認として再評価。",
+      "baselineConfidence": "confirmed"
+    },
+    {
+      "relationId": "p3-rel-c4426ec96968ece9",
+      "storeId": "mh26-store-306f2ce19b35c1c4",
+      "categoryOriginal": "おっぱい部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-88b5437495f527ee"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-27e21d370d3a26af"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-2c3cbaf83fbbafb6",
+      "storeId": "mh26-store-306f2ce19b35c1c4",
+      "categoryOriginal": "デリヘル部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-88b5437495f527ee"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9d37c83ddfab6616"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-b58a733f3389de67",
+      "storeId": "mh26-store-0ac5feba492bab3e",
+      "categoryOriginal": "100名店在籍部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-fb3a0ef16ea1eb51"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6ff34799d136f17d",
+      "storeId": "mh26-store-0ac5feba492bab3e",
+      "categoryOriginal": "アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-49dcfd5aa8d8cd38"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-79b45957dc11740c",
+      "storeId": "mh26-store-0ac5feba492bab3e",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7bbd4d52d753fabc"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4ba5f71ae01bb38e",
+      "storeId": "mh26-store-0ac5feba492bab3e",
+      "categoryOriginal": "尻フェチ部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-78419e076f7722ce"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-92991258d3704913",
+      "storeId": "mh26-store-0ac5feba492bab3e",
+      "categoryOriginal": "巨乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-1ed6c0f2b0b1dfeb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-2f7e163ce3eb23d9",
+      "storeId": "mh26-store-3a074ce4c5ee8c9b",
+      "categoryOriginal": "100名店在籍部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-95a763989e3121d7"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-abd62c88fb2acbac",
+      "storeId": "mh26-store-3a074ce4c5ee8c9b",
+      "categoryOriginal": "くじら(潮吹き)部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9b75dcc83a6cea48"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-2dabec2f783cf932",
+      "storeId": "mh26-store-3a074ce4c5ee8c9b",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-ed84187d424a7f22"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e1a72d050f981308",
+      "storeId": "mh26-store-3a074ce4c5ee8c9b",
+      "categoryOriginal": "ニューヒロイン部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-f2a7bcb0d7da85cd"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-49de3c841e8405c0",
+      "storeId": "mh26-store-3a074ce4c5ee8c9b",
+      "categoryOriginal": "ルックス部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-ce344d4a5fb867f0"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a46ddc1dbf1b4b62",
+      "storeId": "mh26-store-678799267033f76f",
+      "categoryOriginal": "SM・M性感部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-0794e06537e6af09"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-d55e2857f26c72b0",
+      "storeId": "mh26-store-678799267033f76f",
+      "categoryOriginal": "アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-25fc7e25717036fe"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-eed3a20241e532a6",
+      "storeId": "mh26-store-657ee8ee6abf4b11",
+      "categoryOriginal": "くじら(潮吹き)部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-67a41a60264935ba"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-71dd782b02d52ad6",
+      "storeId": "mh26-store-355c0b49cae69d68",
+      "categoryOriginal": "くじら(潮吹き)部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-67d8fda29188fb2f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-335717b8415ddd37",
+      "storeId": "mh26-store-355c0b49cae69d68",
+      "categoryOriginal": "アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b625df7f05fc4ccf"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-88a037bf67f0b669",
+      "storeId": "mh26-store-355c0b49cae69d68",
+      "categoryOriginal": "ニューヒロイン部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-f271a8bf16277f59"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-86ef90fb0377b7f4",
+      "storeId": "mh26-store-355c0b49cae69d68",
+      "categoryOriginal": "巨乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-56ef99fe8d5b0ed4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-2f369d2c5255ba8c",
+      "storeId": "mh26-store-355c0b49cae69d68",
+      "categoryOriginal": "隠れ美女部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7a48ef64c9409313"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-435178b627722876",
+      "storeId": "mh26-store-3540f1a5620e93a7",
+      "categoryOriginal": "くじら(潮吹き)部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-def26aef1806b563"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-ce9427f0b4f2c113",
+      "storeId": "mh26-store-3540f1a5620e93a7",
+      "categoryOriginal": "くじら部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-bba8bb333179ebc4"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8d3679cc73ba1acc"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4ca1d3bc5a4db7c9",
+      "storeId": "mh26-store-f9caeb559663859e",
+      "categoryOriginal": "アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2f909db55c7b9bc8"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a8a8531e2206223a",
+      "storeId": "mh26-store-e7716048c9521370",
+      "categoryOriginal": "アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7d085a96d46095c5"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-133a0a026776bf0b",
+      "storeId": "mh26-store-e7716048c9521370",
+      "categoryOriginal": "ニューヒロイン部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-fbcca0326f61e7fb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-32038b103ce0d721",
+      "storeId": "mh26-store-e7716048c9521370",
+      "categoryOriginal": "人妻・若妻・熟女部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-89939efdfb0ac1d3"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-b11ee3a1e40e8ad9",
+      "storeId": "mh26-store-e7716048c9521370",
+      "categoryOriginal": "尻フェチ部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8f6e245cf9e11cc4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6083ff9361fd4263",
+      "storeId": "mh26-store-e7716048c9521370",
+      "categoryOriginal": "巨乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-354d67952472ed48"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a17a749c69161336",
+      "storeId": "mh26-store-93b09dbb18b506df",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-1979881c52a80301"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-33c63a7eb51feddc",
+      "storeId": "mh26-store-6ba46519366d11dd",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-5e2d2cfb09d55b58"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-67d0512d031173f8",
+      "storeId": "mh26-store-6cda0d9bffc13851",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-4b48f50c0b17b6ce"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-8d9fe130c909f1d6",
+      "storeId": "mh26-store-01d71b753cdf9adf",
+      "categoryOriginal": "奈良部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-c433c9f703e369d3"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-15563a2d6857868a",
+      "storeId": "mh26-store-1d1e8f3a479a8ecc",
+      "categoryOriginal": "自慢のお○ぱい部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-f9d180432663554e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7d8840b49ede33ce"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e5ddb95e8515bb9c",
+      "storeId": "mh26-store-90522f3bdfdaa139",
+      "categoryOriginal": "うちは地元が好きじゃけぇ♪部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-d361dd9d458d722c"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2cda3a84cfd14474"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4781a2482ee540ee",
+      "storeId": "mh26-store-6888b46bed6ceeef",
+      "categoryOriginal": "お尻好きならココ部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-982ff9c29cdee45f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-1e899886a1b7bc67",
+      "storeId": "mh26-store-6888b46bed6ceeef",
+      "categoryOriginal": "大好き♡おっぱい部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-e7417da8dc607180"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-cb596a594db1d0d5",
+      "storeId": "mh26-store-6888b46bed6ceeef",
+      "categoryOriginal": "極嬢部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-819fc9e46c81348f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-229ce1fc5dae351c",
+      "storeId": "mh26-store-109c083c06ba6538",
+      "categoryOriginal": "お尻好きならココ部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-363e5775b95318a9"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-30b17428ff78addb",
+      "storeId": "mh26-store-109c083c06ba6538",
+      "categoryOriginal": "大人の色気部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-160875d42107649d"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-9f5e7d0cfbc40ad3",
+      "storeId": "mh26-store-109c083c06ba6538",
+      "categoryOriginal": "大好き♡おっぱい部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-6455b716171b40af"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-893842a7226f0d23",
+      "storeId": "mh26-store-bcab3b3f53c0fa1e",
+      "categoryOriginal": "100名店部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-3bb407f9306a8452"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2a36981df81f7aa0"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-2cbd8a8ac8aea5f7",
+      "storeId": "mh26-store-80d93a854263f9fe",
+      "categoryOriginal": "ギャル（白・黒）部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2b360c623e36d246"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4029b457a617ae80",
+      "storeId": "mh26-store-80d93a854263f9fe",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-fbfd6e8c0456f32d"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-8462fd363ea82010",
+      "storeId": "mh26-store-80d93a854263f9fe",
+      "categoryOriginal": "ルックス部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-45063a35c320edaa"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-aa6af79dc3578148",
+      "storeId": "mh26-store-80d93a854263f9fe",
+      "categoryOriginal": "巨乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-03546c19df3e0096"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-76be1b4811d7cf89",
+      "storeId": "mh26-store-80d93a854263f9fe",
+      "categoryOriginal": "高級部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-ed6bcc64f335086b"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-dbc7519afbaf136c",
+      "storeId": "mh26-store-ed944e60f5cef8df",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-541bd0ebc9f9e07c"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-ff4e32d3c06f2ce4",
+      "storeId": "mh26-store-ed944e60f5cef8df",
+      "categoryOriginal": "ルックス部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-69efaa1046930512"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-1daf0f641942b4eb",
+      "storeId": "mh26-store-ed944e60f5cef8df",
+      "categoryOriginal": "巨乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-a1f7f7129a0db05d"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-7a2f10b4d5a9a097",
+      "storeId": "mh26-store-ed944e60f5cef8df",
+      "categoryOriginal": "美乳部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-50a1a738d4fc92e2"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-3a5fcd228e12db43",
+      "storeId": "mh26-store-ed944e60f5cef8df",
+      "categoryOriginal": "顔出しNG部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-fcac94c9eb2d8070"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-12246243897660b4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-d03aa77f94ecbe2f",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "おっぱい自慢部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-d6136718d6c63d3f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-123571d3314dd4b5",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "お姉さん部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2fe65d02e3a2ccf1"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-52fcadad5a839e26",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "ギャンブル大好き部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-6ab1936cf7830360"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-9c18f16fde3ffd63",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "スタイル自慢部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-d0ce560bfdb5afc2"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c5d8a89f4311d7cc",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "ソープ部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-72ad0fd6bab615db"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-420c5d1148739555",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "マッサージ得意部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-4be61355211ecbae"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c39fdefa5acb0d7c",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "レア出勤部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b56ea00a009792f0"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a92c0de04eec8a6a",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "店長一押し部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-a29230fb3494138b"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-8a197b5520dd621b",
+      "storeId": "mh26-store-62fb3c8e8d7b02d7",
+      "categoryOriginal": "性格がドS部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-43eef277c7aa93cd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-eb2cc93b322e53fc"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-bdfd5d6e5526f599",
+      "storeId": "mh26-store-8b5a048ed65adc3a",
+      "categoryOriginal": "コスプレ部門🎀",
+      "categoryNormalized": "コスプレ部門",
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-62582891b6b3b6f8"
+      ],
+      "phase1RecordIds": [
+        "mh26-rd-fa42ca1c39d35cb6"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-9a92da64b4505d62",
+      "storeId": "mh26-store-8b5a048ed65adc3a",
+      "categoryOriginal": "シークレット部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-8c71519d35b883a1"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-cdadac9161cddec6"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c6e15963f2875117",
+      "storeId": "mh26-store-a7403750a263dd98",
+      "categoryOriginal": "おっぱい部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7991445ae09b6df6"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c417358eddffd09a",
+      "storeId": "mh26-store-a7403750a263dd98",
+      "categoryOriginal": "コスプレ部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9f08eda688ab63ff"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-7aeb4f41fca2c7fe",
+      "storeId": "mh26-store-a7403750a263dd98",
+      "categoryOriginal": "リピート確定部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-34ef0eff229094c0"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-1397d7d158eec319",
+      "storeId": "mh26-store-a7403750a263dd98",
+      "categoryOriginal": "ルックス抜群部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-45fe21b995107f39"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-39d954b8d8f4830c",
+      "storeId": "mh26-store-a7403750a263dd98",
+      "categoryOriginal": "川崎部門",
+      "categoryNormalized": null,
+      "confidence": "confirmed",
+      "sourceIds": [
+        "p3-src-5ec7ad01bf4e8f20"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9bc5c416ec621671"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-83aaac47979b190d",
+      "storeId": "mh26-store-5c65f10f579ffd51",
+      "categoryOriginal": "人妻・熟女部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-5cfa8a3610ac0f0c"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-a08fd78dcd831d0f"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a38b1db69e22d63b",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "コスプレ大好き部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9995e9dd481b6455"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-a25a4e31e86fe119",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "テクニシャン部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2682794769b827b7"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-3a0071a756992809",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "ドスケベ痴女部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-2acf9d57efc00dde"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-1c56cde8783754be",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "モデル･キレイ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-a4db037e75fdc382"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6d5dcac0d3d09b61",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "中部デリヘル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-aaad47e6e95f49bb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-317edabfa04658cb",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "次世代看板部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-e416ab697d8a9df8"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-3a17e69756366f47",
+      "storeId": "mh26-store-d1693cc78e0cc92c",
+      "categoryOriginal": "自慢の美尻部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d0fc3c3b0ded52e"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-ed9be7ffb81e63ec"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e325363a5c2543be",
+      "storeId": "mh26-store-34d8beb9b9f38b14",
+      "categoryOriginal": "桃女部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-537b3b784e8848cf"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-7eb716e6c271f000"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-7bf8656cb399d6ab",
+      "storeId": "mh26-store-d4b3af32c5187dcb",
+      "categoryOriginal": "スタイル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7d1deb59600d1d14"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-3b3156bf7763cf8e"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-8fb8afd4f19d5ff7",
+      "storeId": "mh26-store-479beb781e279bce",
+      "categoryOriginal": "ヌルヌル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-7839bf0ba94aac00"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-6d05ccf1dcd89b19"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4f984b6936347f4a",
+      "storeId": "mh26-store-e7fa5579eaef052d",
+      "categoryOriginal": "感度抜群",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-07c9a8ce1541eece"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b8992e5ebedc2dec"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-830fc738e462962f",
+      "storeId": "mh26-store-248d3d1f3170df17",
+      "categoryOriginal": "アイドル・可愛い部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-2c6aeb67276e1f5f"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-01e5721460418716"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-d6e0028642f8037c",
+      "storeId": "mh26-store-1b5a9b429e2001f4",
+      "categoryOriginal": "アイドル･可愛い部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-6a09b15e761e22bd"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-9a59f9cb7974ce7e"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-f381045834769d6c",
+      "storeId": "mh26-store-5fac8390973437d8",
+      "categoryOriginal": "おしり部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-fc4d865ae19c6600"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-76b5db7112f7ac1b"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e0e4badba28f5975",
+      "storeId": "mh26-store-88c7930d1d35d4fd",
+      "categoryOriginal": "かわいいアイドル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-d72502e749b127ef"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-373b1506e5313672"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-beaf8dff75080561",
+      "storeId": "mh26-store-df9a5c2343841de5",
+      "categoryOriginal": "お姉さん部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-580c34fdb5babb7f"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-fd287b4cb55404b4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-85b8b40617917488",
+      "storeId": "mh26-store-7f322341641dbb2d",
+      "categoryOriginal": "コスプレアイドル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-4a7e01ca6bce9cf9"
+      ],
+      "phase1RecordIds": [
+        "mh26-rd-0edc437ab6f643e6"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-817625249b08a814",
+      "storeId": "mh26-store-12f3c194e8ed5b59",
+      "categoryOriginal": "隠れ美女部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-a04a5a102fd0f4bb"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-18191f9b81a4f337"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-135796889ee22e67",
+      "storeId": "mh26-store-e4dde524cbfbb303",
+      "categoryOriginal": "デリヘル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-9aecf82e264ead4a"
+      ],
+      "phase1RecordIds": [
+        "mh26-rd-743e114c883968b7"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e0675eb642cdb6af",
+      "storeId": "mh26-store-e0a54603d901b5bc",
+      "categoryOriginal": "おっぱい自慢部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-319b4b3e51be1d81"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-d728e33376257ad4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-08e65f9abd457d4d",
+      "storeId": "mh26-store-4d23230523ac880f",
+      "categoryOriginal": "次世代スター部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-020cb1c3eadecbd0"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-e6bc83b2a610e447"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-9df3ee4dda062af3",
+      "storeId": "mh26-store-4d23230523ac880f",
+      "categoryOriginal": "隠れ美女部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-337ba54ebda6c1c5"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-ec26ca9589ae0d45"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-868f3e8f3814ee6c",
+      "storeId": "mh26-store-63db1d0c06c4fcd8",
+      "categoryOriginal": "スタイル自慢部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-fa57b92ea2241676"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-bd7ad21b95b3ba88"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-08207300c48cf707",
+      "storeId": "mh26-store-7e406f5a4b4f6a90",
+      "categoryOriginal": "コスプレ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-60c3af022431d0c5"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-81aa7d3c63abaec2"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6fd9fcb920195646",
+      "storeId": "mh26-store-ef1d70222d9acadc",
+      "categoryOriginal": "おっぱい部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-e2363aecd4c5e69f"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8a9080bd832f99b3"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-3209616bc783ae03",
+      "storeId": "mh26-store-e6206af17c46c133",
+      "categoryOriginal": "お尻好きならココ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-5cd271cbeeae1efb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-596f2b622910cd43",
+      "storeId": "mh26-store-6e0afe003f40d2be",
+      "categoryOriginal": "アイドルかわいい部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-5c41ab8fcede0774"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-4d3fe20e86f6dcb2"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4b45cc655e5a9fc7",
+      "storeId": "mh26-store-3740d13267281738",
+      "categoryOriginal": "アイドルかわいい部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-5c41ab8fcede0774"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-80b2579105b44ef6"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-6f6a0b3f46e8ca54",
+      "storeId": "mh26-store-2a66002611d90fbe",
+      "categoryOriginal": "コスプレ・アイドル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-ec99405dfce81d8f"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-0441c53cef5eb717"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-19994dfeec1bc403",
+      "storeId": "mh26-store-ac167f10e397b664",
+      "categoryOriginal": "デリヘル・エステ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b8b44024e54bfa9d"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-f479818e5a90ce18",
+      "storeId": "mh26-store-62639208ed1bd3de",
+      "categoryOriginal": "フリースタイル部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-2a2909ffd6f8c346"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-a4274980f7dcf510"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-b90ac1a3bfd230e9",
+      "storeId": "mh26-store-62639208ed1bd3de",
+      "categoryOriginal": "美尻美脚部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-2a2909ffd6f8c346"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8f1fb7d3113b9ca7"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-38576b5ee0f700ff",
+      "storeId": "mh26-store-e44a56a769ae3fcd",
+      "categoryOriginal": "レア出勤部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-9c6479e5e5ed22fc"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-40e2fbbe1e41bf03"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c136737f3e8a885b",
+      "storeId": "mh26-store-68eb8a6b0eb1f9ca",
+      "categoryOriginal": "ロリカワ最強部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-71481039741b0dad"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-c75d743104c4d976"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-c1130a4a0b2e1524",
+      "storeId": "mh26-store-ca5dd281aca4af94",
+      "categoryOriginal": "店長オススメ部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-cd75b92207728068"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-b06e21ae9a3f66f4"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4ffbb274a47668d0",
+      "storeId": "mh26-store-ca5dd281aca4af94",
+      "categoryOriginal": "有名店部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-5cfcb2956a0b3f09"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-8d8bb1fe1863aa5d"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-37bc3880b264e6c1",
+      "storeId": "mh26-store-9d6a3d181768d418",
+      "categoryOriginal": "福岡県エステ・アロマ部門",
+      "categoryNormalized": null,
+      "confidence": "probable",
+      "sourceIds": [
+        "p3-src-e0c35b0604f8e871"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-5ea00c832b22ede8"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-e05f32e8692b84e2",
+      "storeId": "mh26-store-7c7746b5dd8aa34d",
+      "categoryOriginal": "美尻・美脚",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-01b0e78c7ef9bcbb"
+      ],
+      "phase1RecordIds": [
+        "mh26-div-3ebc10776946ee4c"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    },
+    {
+      "relationId": "p3-rel-4e5d74be9e7dc828",
+      "storeId": "mh26-store-de4fade82311a609",
+      "categoryOriginal": "前橋・高崎部門",
+      "categoryNormalized": null,
+      "confidence": "unverified",
+      "sourceIds": [
+        "p3-src-95019dc9f809bff3"
+      ],
+      "phase1RecordIds": [
+        "mh26-final-906bcaf2e299f6cb"
+      ],
+      "notes": "原文維持。店舗全員の部門や正式選挙エリアを示さない。"
+    }
+  ]
+}
