@@ -1,0 +1,59 @@
+{
+  "candidates": [
+    {
+      "storeName": "プラチナ本館・別館",
+      "reason": "転載の2026告知から個別支店を特定できない。本館公開ページだけでは2026参加証明にならない。",
+      "sourceUrl": "https://www.platinum-fukui.com/"
+    },
+    {
+      "storeName": "福島スマイル",
+      "reason": "索引上の2026自己申告はあるが本文は空のシェル。デリバリーヘルスsmileとの同一性未確認。",
+      "sourceUrl": "https://promee.link/kf228"
+    },
+    {
+      "storeName": "ラブ♡チャンス♥那覇店♥",
+      "reason": "転載の2026告知から店舗公式原情報を確保できず。候補として別管理。",
+      "sourceUrl": null
+    },
+    {
+      "storeName": "ぽっちゃりバニー",
+      "reason": "2026投稿日だけではミスヘブン年度を確定できない。原本文取得不能。",
+      "sourceUrl": "https://kansai.qzin.jp/pochabani0801/"
+    },
+    {
+      "storeName": "Ares(アース)☆超恋人軍団☆広島最大級！！",
+      "reason": "2026投稿日の出場告知候補。原本文取得不能、イベント年度と県接続未確認。",
+      "sourceUrl": "https://www.girlsheaven-job.net/hiroshima/ma-184/sa-418/ares_hiroshima/blog/"
+    },
+    {
+      "storeName": "エターナル",
+      "reason": "投稿日2026のエントリー言及のみ。イベント年度未確認。",
+      "sourceUrl": "https://www.girlsheaven-job.net/aichi/ma-22/sa-164/eternal/blog/"
+    },
+    {
+      "storeName": "RUSH",
+      "reason": "過去の最多出場実績を2026参加とみなさない。",
+      "sourceUrl": "https://www.girlsheaven-job.net/hiroshima/ma-184/sa-418/rush/blog/"
+    },
+    {
+      "storeName": "白夜",
+      "reason": "店舗公開ページは取得できたが今回本文で2026出場関係を確認できず。",
+      "sourceUrl": "https://www.26style.net/shop/byaku/"
+    },
+    {
+      "storeName": "紳士の嗜み 立川",
+      "reason": "系列店舗公開ページ取得のみ。2026個別店出場未確認。",
+      "sourceUrl": "https://tashinami-tachikawa.com/"
+    },
+    {
+      "storeName": "YESグループ全60店舗",
+      "reason": "全店一覧は参加店舗一覧ではない。在籍約2786人はミスヘブン参加人数ではない。",
+      "sourceUrl": "https://new.yesgrp.com/"
+    },
+    {
+      "storeName": "Realグループ一覧",
+      "reason": "2026見出しと2019結果・2019/2020チケット期限が混在。年度を確定できない。",
+      "sourceUrl": "https://missheaven.real-group.love/result/"
+    }
+  ]
+}

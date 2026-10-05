@@ -17,6 +17,7 @@ export interface MapPrefecture {
   regionId: string;
   status: MapStatus;
   recordCount: number;
+  storeCount: number;
 }
 
 /** 地図の拡大範囲（小さな都府県をスマホでタップしやすくするため） */
@@ -100,7 +101,7 @@ export function JapanMap({ prefectures }: { prefectures: MapPrefecture[] }) {
 
         {/* 沖縄県の挿入枠（枠全体をタップ可能にする） */}
         {okinawa && (!zoomed || current.id === "kyushu") && (
-          <a href={`/pref/${okinawa.slug}`} aria-label={`${okinawa.name}：${MAP_STATUS_LABEL[okinawa.status]}（情報${okinawa.recordCount}件）`}>
+          <a href={`/pref/${okinawa.slug}`} aria-label={`${okinawa.name}：${MAP_STATUS_LABEL[okinawa.status]}（店舗${okinawa.storeCount}・観測${okinawa.recordCount}件）`}>
             <rect
               className="jmap__inset"
               x={OKINAWA_INSET[0]}
@@ -120,9 +121,9 @@ export function JapanMap({ prefectures }: { prefectures: MapPrefecture[] }) {
               key={p.code}
               href={`/pref/${p.slug}`}
               className={`jmap__pref jmap__pref--${p.status}`}
-              aria-label={`${p.name}：${MAP_STATUS_LABEL[p.status]}（情報${p.recordCount}件）`}
+              aria-label={`${p.name}：${MAP_STATUS_LABEL[p.status]}（店舗${p.storeCount}・観測${p.recordCount}件）`}
             >
-              <title>{`${p.name}：${MAP_STATUS_LABEL[p.status]}（情報${p.recordCount}件）`}</title>
+              <title>{`${p.name}：${MAP_STATUS_LABEL[p.status]}（店舗${p.storeCount}・観測${p.recordCount}件）`}</title>
               <path d={shape.d} vectorEffect="non-scaling-stroke" />
             </a>
           );

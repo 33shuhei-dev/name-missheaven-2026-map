@@ -1,4 +1,17 @@
-import type { Dataset, MapStatus, Phase1Dataset, Phase1Map, Phase1RawRecord } from "@/data/types";
+import type {
+  Confidence,
+  Dataset,
+  MapStatus,
+  Phase1Dataset,
+  Phase1Map,
+  Phase1RawRecord,
+  Phase3CampaignStore,
+  Phase3Coverage,
+  Phase3RawRelation,
+  Phase3RawSource,
+  Phase3RawStore,
+  Phase3StoresFile,
+} from "@/data/types";
 import { PREFECTURES, findPrefectureByName } from "@/data/geo";
 import { safeExternalUrl } from "./links";
 import { adaptAll } from "./phase1";
@@ -7,7 +20,7 @@ import { derivePrefectureCounts, deriveStatus, phase1SummaryOf } from "./model";
 export interface ValidationIssue {
   level: "error" | "warning";
   id: string;
-  dataset: Dataset | "map" | "summary";
+  dataset: Dataset | "map" | "summary" | "phase3";
   message: string;
 }
 
@@ -196,6 +209,165 @@ export function validateDatasetSummary(dataset: Phase1Dataset): ValidationIssue[
         message: `summary.${k} がレコードからの集計と一致しません（summary: ${String(dataset.summary?.[k])} / 集計: ${v}）`,
       });
     }
+  }
+  return issues;
+}
+
+/* ───────────── Phase 3（参加店舗）の検証 ───────────── */
+
+export interface Phase3Input {
+  storesFile: Phase3StoresFile;
+  relations: readonly Phase3RawRelation[];
+  sources: readonly Phase3RawSource[];
+  campaignStores: readonly Phase3CampaignStore[];
+  coverage: Phase3Coverage;
+  confirmedStores: readonly Phase3RawStore[];
+}
+
+/**
+ * Phase 3 の店舗・関係・情報源を検証し、Phase 1 レコードとの参照、
+ * summary・47都道府県カバレッジとの整合を確認する。
+ */
+export function validatePhase3(input: Phase3Input, phase1Records: readonly Phase1RawRecord[]): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "phase3", message });
+  const stores = Array.isArray(input.storesFile?.stores) ? input.storesFile.stores : [];
+  const p1ids = new Set(phase1Records.map((r) => r.id));
+  const p1cats = new Set(phase1Records.map((r) => r.categoryOriginal));
+  const storeIds = new Set<string>();
+  const recordOwner = new Map<string, string>();
+
+  for (const s of stores) {
+    const id = typeof s?.storeId === "string" ? s.storeId : "(storeIdなし)";
+    if (typeof s.storeId !== "string" || !ID_PATTERN.test(s.storeId)) err(id, "storeId が不正です");
+    else if (storeIds.has(s.storeId)) err(id, "storeId が重複しています");
+    storeIds.add(s.storeId);
+    if (typeof s.storeName !== "string" || !s.storeName.trim()) err(id, "storeName は必須です");
+    if (!Array.isArray(s.storeNameOriginals) || !s.storeNameOriginals.includes(s.storeName)) {
+      err(id, "storeNameOriginals に storeName が含まれていません");
+    }
+    if (!CONFIDENCES.includes(s.confidence)) err(id, `confidence が不正です: ${String(s.confidence)}`);
+    if (!SOURCE_TYPES.includes(s.sourceType)) err(id, `sourceType が不正です: ${String(s.sourceType)}`);
+    if (s.prefecture != null && !findPrefectureByName(s.prefecture)) err(id, `prefecture が不正です: ${s.prefecture}`);
+    if (!Array.isArray(s.listingAreas) || s.listingAreas.some((a) => typeof a !== "string" || !a.trim())) {
+      err(id, "listingAreas は空でない文字列の配列にしてください");
+    } else if (s.listingArea != null && !s.listingAreas.includes(s.listingArea)) {
+      err(id, "listingArea が listingAreas に含まれていません");
+    } else if (s.listingArea == null && s.listingAreas.length === 1) {
+      err(id, "listingAreas が1件なのに listingArea が null です");
+    }
+    for (const f of ["storePublicUrl", "participationEvidenceUrl"] as const) {
+      const v = s[f];
+      if (v != null && !safeExternalUrl(v)) err(id, `${f} は http(s) の正しいURLにしてください`);
+    }
+    if (s.confidence === "confirmed" && !s.participationEvidenceUrl) err(id, "confirmed には参加根拠URLが必須です");
+    for (const rid of s.phase1RecordIds ?? []) {
+      if (!p1ids.has(rid)) err(id, `phase1RecordIds に存在しない観測IDがあります: ${rid}`);
+      else if (recordOwner.has(rid)) err(id, `観測 ${rid} が複数の店舗に接続されています`);
+      else recordOwner.set(rid, s.storeId);
+    }
+  }
+
+  // 店舗名のある Phase 1 観測は、必ずいずれかの店舗に接続されていること（既存の店舗・人物表示を失わない）
+  for (const r of phase1Records) {
+    if (r.storeName && !recordOwner.has(r.id)) err(r.id, "店舗名のある Phase 1 観測が Phase 3 の店舗に接続されていません");
+  }
+
+  const relIds = new Set<string>();
+  const relPairs = new Set<string>();
+  for (const rel of input.relations) {
+    const id = rel?.relationId ?? "(relationIdなし)";
+    if (relIds.has(id)) err(id, "relationId が重複しています");
+    relIds.add(id);
+    if (!storeIds.has(rel.storeId)) err(id, `存在しない storeId を参照しています: ${rel.storeId}`);
+    if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
+    else if (!p1cats.has(rel.categoryOriginal)) err(id, `Phase 1 にない部門原文です: ${rel.categoryOriginal}`);
+    if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
+    const pair = `${rel.storeId}|${rel.categoryOriginal}`;
+    if (relPairs.has(pair)) err(id, "同じ店舗×部門の関係が重複しています");
+    relPairs.add(pair);
+    for (const rid of rel.phase1RecordIds ?? []) if (!p1ids.has(rid)) err(id, `存在しない観測IDです: ${rid}`);
+  }
+  for (const s of stores) {
+    const proj = [...new Set(input.relations.filter((r) => r.storeId === s.storeId).map((r) => r.categoryOriginal))].sort();
+    if (JSON.stringify(proj) !== JSON.stringify([...(s.categoryOriginals ?? [])].sort())) {
+      err(s.storeId, "categoryOriginals が店舗×部門関係と一致しません");
+    }
+  }
+
+  const srcIds = new Set<string>();
+  for (const src of input.sources) {
+    if (srcIds.has(src.sourceId)) err(src.sourceId, "sourceId が重複しています");
+    srcIds.add(src.sourceId);
+    if (!safeExternalUrl(src.url)) err(src.sourceId, "情報源URLは http(s) の正しいURLにしてください");
+    if (!SOURCE_TYPES.includes(src.sourceType)) err(src.sourceId, `sourceType が不正です: ${src.sourceType}`);
+  }
+  for (const s of stores) for (const sid of s.sourceIds ?? []) if (!srcIds.has(sid)) err(s.storeId, `存在しない sourceId: ${sid}`);
+
+  // 応援キャンペーンのみの店舗は参加店舗に混ぜない
+  for (const c of input.campaignStores) {
+    if (storeIds.has(c.storeId) || stores.some((s) => s.storeName === c.storeName && s.prefecture === c.prefecture)) {
+      err(c.storeId, "応援キャンペーンのみの店舗が参加店舗一覧に含まれています");
+    }
+  }
+
+  // confirmed 抽出ファイルとの一致
+  const confirmedIds = stores.filter((s) => s.confidence === "confirmed").map((s) => s.storeId).sort();
+  const fileIds = input.confirmedStores.map((s) => s.storeId).sort();
+  if (JSON.stringify(confirmedIds) !== JSON.stringify(fileIds)) err("confirmed", "confirmed 抽出ファイルと店舗一覧の confirmed が一致しません");
+
+  // summary との一致
+  const sm = input.storesFile.summary ?? {};
+  const expect: Record<string, number> = {
+    finalStoresIncludingCandidates: stores.length,
+    confirmedStores: stores.filter((s) => s.confidence === "confirmed").length,
+    probableStores: stores.filter((s) => s.confidence === "probable").length,
+    unverifiedStores: stores.filter((s) => s.confidence === "unverified").length,
+    newSincePhase1: stores.filter((s) => s.isNewSincePhase1).length,
+    storeCategoryRelationCount: input.relations.length,
+    categoryOriginalCount: new Set(input.relations.map((r) => r.categoryOriginal)).size,
+    publicUrlCount: stores.filter((s) => s.storePublicUrl).length,
+    participationEvidenceUrlCount: stores.filter((s) => s.participationEvidenceUrl).length,
+    unknownPrefectureStoreCount: stores.filter((s) => !s.prefecture).length,
+    prefecturesWithStores: new Set(stores.map((s) => s.prefecture).filter(Boolean)).size,
+    prefecturesWithConfirmedStores: new Set(stores.filter((s) => s.confidence === "confirmed").map((s) => s.prefecture).filter(Boolean)).size,
+    listingAreaConnections: new Set(stores.flatMap((s) => s.listingAreas.map((a) => `${s.prefecture ?? ""}|${a}`))).size,
+    campaignSupportOnlyExcluded: input.campaignStores.length,
+  };
+  for (const [k, v] of Object.entries(expect)) {
+    if (sm[k] !== v) err(`summary.${k}`, `Phase 3 summary.${k} が集計と一致しません（summary: ${String(sm[k])} / 集計: ${v}）`);
+  }
+
+  // 47都道府県カバレッジとの一致（状態は Phase 1 観測＋Phase 3 店舗から導出）
+  const cov = Array.isArray(input.coverage?.prefectures) ? input.coverage.prefectures : [];
+  if (cov.length !== PREFECTURES.length) err("coverage", `カバレッジの都道府県数が ${cov.length} です（47 必要）`);
+  const adaptedRecords = adaptAll({ phase1: phase1Records, update: [] });
+  for (const c of cov) {
+    const master = findPrefectureByName(c.prefecture);
+    if (!master) {
+      err(c.prefecture, "カバレッジの都道府県名が不正です");
+      continue;
+    }
+    if (c.prefectureCode !== String(master.code).padStart(2, "0")) err(c.prefecture, "カバレッジの県コードが JIS と一致しません");
+    const ps = stores.filter((s) => s.prefecture === c.prefecture);
+    const status = deriveStatus(
+      adaptedRecords.filter((r) => r.prefecture === c.prefecture),
+      ps.map((s) => ({ confidence: s.confidence as Confidence })),
+    );
+    const exp: Record<string, unknown> = {
+      status,
+      storeCount: ps.length,
+      confirmedCount: ps.filter((s) => s.confidence === "confirmed").length,
+      probableCount: ps.filter((s) => s.confidence === "probable").length,
+      unverifiedCount: ps.filter((s) => s.confidence === "unverified").length,
+      publicUrlCount: ps.filter((s) => s.storePublicUrl).length,
+    };
+    for (const [k, v] of Object.entries(exp)) {
+      if (c[k] !== v) err(c.prefecture, `カバレッジ ${k} が集計と一致しません（カバレッジ: ${String(c[k])} / 集計: ${String(v)}）`);
+    }
+  }
+  if (input.coverage.unassignedStoreCount !== stores.filter((s) => !s.prefecture).length) {
+    err("coverage", "カバレッジの県未判明店舗数が一致しません");
   }
   return issues;
 }

@@ -125,3 +125,169 @@ export interface SiteRecord {
   storeCity?: string;
   sourceAccessStatus?: string;
 }
+
+/* ───────────── Phase 3：参加店舗（追加レイヤー） ───────────── */
+
+/** participating_stores_2026.json の店舗（サイトで使うフィールドのみ型付け） */
+export interface Phase3RawStore {
+  storeId: string;
+  storeName: string;
+  storeNameOriginals: string[];
+  prefecture: string | null;
+  listingArea: string | null;
+  listingAreas: string[];
+  formalElectionArea: string | null;
+  categoryOriginal: string | null;
+  categoryOriginals: string[];
+  participationEvidenceUrl: string | null;
+  storePublicUrl: string | null;
+  sourceType: string;
+  confidence: string;
+  participationType: string;
+  checkedAt?: string | null;
+  phase1RecordIds: string[];
+  phase2RecordIds?: string[];
+  isNewSincePhase1: boolean;
+  sourceIds: string[];
+  publicUrlAccessStatus?: string | null;
+  notes?: string | null;
+  fieldConfidence?: Record<string, string>;
+  [key: string]: unknown;
+}
+
+export interface Phase3StoresFile {
+  schemaVersion: string;
+  summary: Record<string, number | null>;
+  stores: Phase3RawStore[];
+  [key: string]: unknown;
+}
+
+export interface Phase3RawRelation {
+  relationId: string;
+  storeId: string;
+  categoryOriginal: string;
+  categoryNormalized?: string | null;
+  confidence: string;
+  sourceIds: string[];
+  phase1RecordIds: string[];
+  notes?: string | null;
+  [key: string]: unknown;
+}
+
+export interface Phase3RawSource {
+  sourceId: string;
+  url: string;
+  sourceType: string;
+  accessStatus: string;
+  publisherRole: string;
+  storeIds: string[];
+  relationIds: string[];
+  checkedAt?: string | null;
+  notes?: string | null;
+}
+
+export interface Phase3CoveragePrefecture {
+  prefecture: string;
+  prefectureCode: string;
+  status: string;
+  storeCount: number;
+  confirmedCount: number;
+  probableCount: number;
+  unverifiedCount: number;
+  publicUrlCount: number;
+  listingAreas: string[];
+  divisionCount: number;
+  [key: string]: unknown;
+}
+
+export interface Phase3Coverage {
+  prefectures: Phase3CoveragePrefecture[];
+  unassignedStoreCount: number;
+}
+
+export interface Phase3CampaignStore {
+  storeId: string;
+  storeName: string;
+  prefecture: string | null;
+  listingArea: string | null;
+  participationEvidenceUrl: string | null;
+  storePublicUrl: string | null;
+  confidence: string;
+  participationType: string;
+  notes?: string | null;
+}
+
+/** Phase 2 の人数情報（countFacts） */
+export interface Phase2CountFact {
+  id: string;
+  scope: string;
+  participantCount: number | null;
+  countType: string;
+  sourceUrl?: string | null;
+  sourceType?: string | null;
+  confidence: string;
+  prefecture?: string | null;
+  groupName?: string | null;
+  storeName?: string | null;
+  notes?: string | null;
+  [key: string]: unknown;
+}
+
+/** 画面が扱う店舗（Phase 3 storeId が主キー） */
+export interface SiteStore {
+  id: string;
+  name: string;
+  nameOriginals: string[];
+  prefecture?: string;
+  listingAreas: string[];
+  formalElectionArea?: string;
+  categoryOriginals: string[];
+  /** 利用者が店舗を見るためのURL */
+  storePublicUrl?: string;
+  publicUrlAccessStatus?: string;
+  /** 店舗と2026ミスヘブンの関係を確認する根拠URL */
+  participationEvidenceUrl?: string;
+  sourceType: SourceType;
+  confidence: Confidence;
+  participationType: string;
+  isNewSincePhase1: boolean;
+  phase1RecordIds: string[];
+  sourceIds: string[];
+  checkedAt?: string;
+  notes?: string;
+}
+
+export interface SiteRelation {
+  id: string;
+  storeId: string;
+  categoryOriginal: string;
+  categoryNormalized?: string;
+  confidence: Confidence;
+  sourceIds: string[];
+  phase1RecordIds: string[];
+}
+
+export interface SiteSource {
+  id: string;
+  url: string;
+  sourceType: SourceType;
+  accessStatus: string;
+  publisherRole: string;
+}
+
+/** 店舗に結び付いた人数情報（Phase 2、確認済みで店舗名・県が完全一致したもののみ） */
+export interface StoreCountFact {
+  id: string;
+  storeId: string;
+  countType: string;
+  participantCount: number;
+  sourceUrl?: string;
+  notes?: string;
+}
+
+export interface StoreLayer {
+  stores: SiteStore[];
+  relations: SiteRelation[];
+  sources: SiteSource[];
+  countFacts: StoreCountFact[];
+}

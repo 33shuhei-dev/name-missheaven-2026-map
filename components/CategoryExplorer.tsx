@@ -13,12 +13,14 @@ export interface CategoryRow {
   variants: string[];
   keys: string[];
   recordCount: number;
+  /** この部門名に関係する店舗数（店舗×部門関係の店舗IDの重複なし） */
+  storeCount: number;
   prefectures: { slug: string; label: string }[];
   confidence: Confidence;
   divisions: { id: string; label: string; confidence: Confidence }[];
 }
 
-type Sort = "count" | "name" | "prefs";
+type Sort = "stores" | "count" | "name" | "prefs";
 
 const PAGE_SIZE = 40;
 
@@ -26,7 +28,7 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
   const [q, setQ] = useState("");
   const [pref, setPref] = useState("");
   const [confidence, setConfidence] = useState<Confidence | "">("");
-  const [sort, setSort] = useState<Sort>("count");
+  const [sort, setSort] = useState<Sort>("stores");
   const [limit, setLimit] = useState(PAGE_SIZE);
 
   const list = useMemo(() => {
@@ -43,7 +45,9 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
         ? byName(a, b)
         : sort === "prefs"
           ? b.prefectures.length - a.prefectures.length || b.recordCount - a.recordCount || byName(a, b)
-          : b.recordCount - a.recordCount || confidenceRank(a.confidence) - confidenceRank(b.confidence) || byName(a, b),
+          : sort === "stores"
+            ? b.storeCount - a.storeCount || b.recordCount - a.recordCount || byName(a, b)
+            : b.recordCount - a.recordCount || confidenceRank(a.confidence) - confidenceRank(b.confidence) || byName(a, b),
     );
   }, [rows, q, pref, confidence, sort]);
 
@@ -105,6 +109,7 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
         <label className="field">
           <span className="field__label">並び順</span>
           <select value={sort} onChange={(e) => setSort(e.target.value as Sort)}>
+            <option value="stores">店舗数が多い順</option>
             <option value="count">観測件数が多い順</option>
             <option value="prefs">都道府県数が多い順</option>
             <option value="name">名前順</option>
@@ -126,7 +131,7 @@ export function CategoryExplorer({ rows, prefOptions }: { rows: CategoryRow[]; p
                 <ConfidenceBadge value={r.confidence} small />
               </div>
               <p className="category__meta">
-                観測 {r.recordCount}件 ・ {r.prefectures.map((p) => p.label).join("、")}
+                店舗 {r.storeCount} ・ 観測 {r.recordCount}件 ・ {r.prefectures.map((p) => p.label).join("、")}
               </p>
               <ul className="category__places">
                 {r.divisions.map((d) => (

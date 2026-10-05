@@ -17,8 +17,9 @@ export default function CategoriesPage() {
         variants: g.names.filter((n) => n.name !== name).map((n) => n.name),
         keys: [...new Set([normalizeForSearch(name), ...records.map((r) => normalizeForSearch(r.categoryNormalized))])].filter(Boolean),
         recordCount: records.length,
+        storeCount: new Set(divisions.flatMap((d) => d.stores.map((st) => st.id))).size,
         prefectures: [...new Map(divisions.map((d) => [d.prefSlug, d.prefectureName])).entries()].map(([slug, label]) => ({ slug, label })),
-        confidence: bestConfidence(records),
+        confidence: bestConfidence([...records, ...divisions.map((d) => ({ confidence: d.confidence }))]),
         divisions: divisions.map((d) => ({
           id: d.id,
           label: `${d.prefectureName} / ${d.listingArea ?? UNKNOWN_AREA_LABEL}`,
@@ -38,7 +39,7 @@ export default function CategoriesPage() {
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "部門一覧" }]} />
       <h1>部門一覧</h1>
       <p className="summary-line">
-        部門名（原文） {stats.categoryNameCount}種類 ・ 観測 {stats.recordCount}件
+        部門名（原文） {stats.allCategoryNameCount}種類 ・ 店舗と結び付いた部門名 {stats.stores.storeCategoryCount}種類
       </p>
       <p className="hint">
         部門名は情報源の掲載原文のまま表示しています。記号・絵文字・語順が違う名前は統合していません（検索では表記の違いを吸収します）。

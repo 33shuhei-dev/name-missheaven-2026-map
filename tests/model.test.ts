@@ -12,7 +12,7 @@ import {
   variantDivisions,
 } from "@/lib/model";
 import { adaptRecord, dateOnly } from "@/lib/phase1";
-import { model, rawRecords, records } from "./fixtures";
+import { model, modelWithStores, rawRecords, records } from "./fixtures";
 
 describe("アダプター", () => {
   it("null を undefined にし、文字列は変更しない", () => {
@@ -108,12 +108,13 @@ describe("県別集計", () => {
 
 describe("部門・店舗・出場者", () => {
   it("都道府県×掲載地域×部門名で部門をまとめる", () => {
-    const d = model.divisions.find((x) => x.categoryOriginal === "美尻美脚部門")!;
+    const d = modelWithStores.divisions.find((x) => x.categoryOriginal === "美尻美脚部門")!;
     expect(d.records.map((r) => r.id)).toEqual(["t-1", "t-2"]);
     expect(d.entrantCount).toBe(3);
     expect(d.stores.map((s) => s.name)).toEqual(["テスト店舗X"]);
+    expect(d.stores[0].relationConfidence).toBe("confirmed");
     expect(d.confidence).toBe("confirmed");
-    expect(findDivision(model, d.id)).toBe(d);
+    expect(findDivision(modelWithStores, d.id)).toBe(d);
   });
   it("categoryOriginal を原文のまま保持し、似た名前を統合しない", () => {
     const names = model.divisions.map((d) => d.categoryOriginal);
@@ -127,14 +128,17 @@ describe("部門・店舗・出場者", () => {
     expect(variantDivisions(model, d).map((x) => x.categoryOriginal)).toEqual(["美尻・美脚部門"]);
   });
   it("店舗ページの単位", () => {
-    const s = model.stores.find((x) => x.name === "テスト店舗X")!;
-    expect(findStore(model, s.id)).toBe(s);
+    const s = modelWithStores.stores.find((x) => x.name === "テスト店舗X")!;
+    expect(s.id).toBe("t-store-x");
+    expect(findStore(modelWithStores, s.id)).toBe(s);
     expect(s.entrantNames.sort()).toEqual(["テスト出場者A", "テスト出場者B", "テスト出場者C"]);
     expect(s.divisions).toHaveLength(1);
   });
   it("出場者は店舗ページへ、店舗不明なら部門の観測へ遷移する", () => {
-    const a = model.entrants.find((e) => e.name === "テスト出場者A")!;
-    expect(entrantHref(a)).toMatch(/^\/store\/s[a-z0-9]+#e[a-z0-9]+$/);
+    const a = modelWithStores.entrants.find((e) => e.name === "テスト出場者A")!;
+    expect(entrantHref(a)).toMatch(/^\/store\/t-store-x#e[a-z0-9]+$/);
+    // 店舗レイヤーがなければ部門の観測へ
+    expect(entrantHref(model.entrants.find((e) => e.name === "テスト出場者A")!)).toMatch(/^\/division\/d[a-z0-9]+#t-1$/);
     const noStore = buildModel([
       { ...records[0], storeName: undefined },
     ]).entrants[0];

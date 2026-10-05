@@ -80,6 +80,9 @@ export default function AboutPage() {
           <li>
             「出場者」の数は店舗名×人物名の組み合わせの数です。実際の人数の重複排除ではなく、同姓同名の別人を統合することもしていません。
           </li>
+          <li>「店舗」の数は参加関連の根拠を見つけた店舗（候補を含む）の数で、全参加店舗の数ではありません。応援キャンペーンのみ確認された店舗は含めていません。</li>
+          <li>店舗の「公開ページ」は店舗を見るためのリンク、「参加の根拠」は2026年の参加との関係を確認したページで、別のものです。</li>
+          <li>人数は、WEB申込の掲載人数・店舗が告知したエントリー人数など、種類を明記できるものだけを店舗ページに表示しています。不明な人数は0人とせず表示しません。</li>
           <li>すべての件数はデータから自動で集計しています。</li>
         </ul>
       </section>
@@ -95,8 +98,28 @@ export default function AboutPage() {
           </div>
           <div>
             <dt>観測レコード</dt>
-            <dd>{site.stats.recordCount}件</dd>
+            <dd>{site.stats.recordCount}件（Phase 1：都道府県・掲載地域・部門・店舗・出場者の観測）</dd>
           </div>
+          <div>
+            <dt>参加関連店舗</dt>
+            <dd>
+              {site.stats.stores.storeCount}店（Phase 3：候補を含む。確認済み {site.stats.stores.byConfidence.confirmed}・有力情報{" "}
+              {site.stats.stores.byConfidence.probable}・未確認情報 {site.stats.stores.byConfidence.unverified}）
+              {datasetInfo.phase3CheckedAt && `、${datasetInfo.phase3CheckedAt} 時点`}
+            </dd>
+          </div>
+          <div>
+            <dt>店舗×部門</dt>
+            <dd>{site.stats.stores.relationCount}組（1店舗が複数の部門に関係することがあります）</dd>
+          </div>
+          {datasetInfo.nationalApproximateScale && (
+            <div>
+              <dt>参加規模</dt>
+              <dd>
+                公式媒体の案内では約{datasetInfo.nationalApproximateScale.toLocaleString("ja-JP")}人（概数。確定した参加者数ではありません。Phase 2）
+              </dd>
+            </div>
+          )}
           <div>
             <dt>範囲</dt>
             <dd>{datasetInfo.scope}</dd>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { site } from "@/lib/data";
 import { UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
-import { CONFIDENCE_DESCRIPTION, CONFIDENCE_LABEL, CONFIDENCE_ORDER } from "@/lib/labels";
+import { ConfidenceBar } from "@/components/ConfidenceBar";
 import { JapanMap, type MapPrefecture } from "@/components/JapanMap";
 import { MapLegend } from "@/components/MapLegend";
 import { SearchBox } from "@/components/SearchBox";
@@ -16,8 +16,8 @@ export default function HomePage() {
     regionId: p.regionId ?? "",
     status: p.status,
     recordCount: p.recordCount,
+    storeCount: p.stores.length,
   }));
-  const total = stats.recordCount || 1;
 
   return (
     <div className="home">
@@ -28,7 +28,7 @@ export default function HomePage() {
           <span className="hero__event">ミスヘブン総選挙2026</span>
           <span className="hero__name">全国情報まとめ</span>
         </h1>
-        <p className="hero__lead">公開情報で確認できた部門・店舗・出場者を地図から探せます。</p>
+        <p className="hero__lead">公開情報で確認できた部門・参加店舗を地図から探せます。</p>
       </section>
 
       <div className="home-grid">
@@ -55,68 +55,58 @@ export default function HomePage() {
             <h2 id="stats-heading">全国の状況</h2>
             <dl className="stats">
               <div>
-                <dt>観測レコード</dt>
-                <dd>{stats.recordCount}</dd>
-              </div>
-              <div>
-                <dt>部門情報あり</dt>
+                <dt>情報のある県</dt>
                 <dd>
                   {stats.prefecturesWithData}
-                  <small>県</small>
+                  <small>/{stats.prefectureTotal}</small>
                 </dd>
               </div>
               <div>
-                <dt>部門名（原文）</dt>
-                <dd>{stats.categoryNameCount}</dd>
-              </div>
-              <div>
                 <dt>掲載地域</dt>
-                <dd>{stats.listingAreaCount}</dd>
+                <dd>{stats.allListingAreaCount}</dd>
               </div>
               <div>
-                <dt>店舗</dt>
-                <dd>{stats.storeCount}</dd>
+                <dt>部門名（原文）</dt>
+                <dd>{stats.allCategoryNameCount}</dd>
               </div>
               <div>
-                <dt>出場者</dt>
-                <dd>{stats.entrantCount}</dd>
+                <dt>参加関連店舗</dt>
+                <dd>{stats.stores.storeCount}</dd>
+              </div>
+              <div>
+                <dt>公開ページあり</dt>
+                <dd>{stats.stores.publicUrlCount}</dd>
+              </div>
+              <div>
+                <dt>観測レコード</dt>
+                <dd>{stats.recordCount}</dd>
               </div>
             </dl>
 
-            <div className="conf-bar" aria-label="確認状態の内訳">
-              <div className="conf-bar__track" aria-hidden="true">
-                {CONFIDENCE_ORDER.map((c) => (
-                  <span
-                    key={c}
-                    className={`conf-bar__seg conf-bar__seg--${c}`}
-                    style={{ width: `${(stats.byConfidence[c] / total) * 100}%` }}
-                  />
-                ))}
-              </div>
-              <ul className="conf-bar__legend">
-                {CONFIDENCE_ORDER.map((c) => (
-                  <li key={c}>
-                    <Link href={`/search?confidence=${c}&kind=division`} title={CONFIDENCE_DESCRIPTION[c]}>
-                      <span className={`conf-bar__dot conf-bar__dot--${c}`} aria-hidden="true" />
-                      {CONFIDENCE_LABEL[c]}
-                      <strong>{stats.byConfidence[c]}</strong>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <ConfidenceBar
+              title="店舗の確認状態"
+              counts={stats.stores.byConfidence}
+              hrefFor={(c) => `/search?kind=store&confidence=${c}`}
+            />
+            <ConfidenceBar
+              title="部門の観測の確認状態"
+              counts={stats.byConfidence}
+              hrefFor={(c) => `/search?confidence=${c}&kind=division`}
+            />
 
             {unknownPrefecture && (
               <Link href={`/pref/${UNKNOWN_PREFECTURE_SLUG}`} className="row-link row-link--compact">
                 <span className="row-link__main">
                   <span className="row-link__title">地域未判明の情報</span>
-                  <span className="row-link__sub">都道府県を確認できていない観測 {unknownPrefecture.recordCount}件</span>
+                  <span className="row-link__sub">
+                    都道府県を確認できていない店舗 {unknownPrefecture.stores.length}店・観測 {unknownPrefecture.recordCount}件
+                  </span>
                 </span>
                 <span aria-hidden="true" className="row-link__arrow">›</span>
               </Link>
             )}
             <p className="hint hint--tight">
-              件数はすべて観測レコードからの自動集計です。出場者は店舗名×人物名の数で、全出場者数ではありません。
+              件数はすべてデータからの自動集計です。店舗は候補を含み、全参加店舗の数ではありません。
               {stats.lastCheckedAt && ` 最終確認日：${stats.lastCheckedAt}`}
             </p>
           </section>
@@ -124,7 +114,7 @@ export default function HomePage() {
           {/* ④ 都道府県一覧（地図の補助。地方ごとに折りたたみ） */}
           <section className="side-block" aria-labelledby="list-heading">
             <h2 id="list-heading">都道府県一覧</h2>
-            <p className="hint hint--tight">地方を開くと都道府県を選べます。色は地図と同じ、数字は観測レコード数です。</p>
+            <p className="hint hint--tight">地方を開くと都道府県を選べます。色は地図と同じ、数字は参加関連店舗数です。</p>
             <PrefecturePicker model={site} />
           </section>
         </div>
@@ -135,7 +125,7 @@ export default function HomePage() {
         <Link href="/categories" className="cta">
           <span className="cta__main">
             <span className="cta__title">部門一覧</span>
-            <span className="cta__sub">全国の部門名（原文）{stats.categoryNameCount}種類を、件数・都道府県・確認状態で探す</span>
+            <span className="cta__sub">全国の部門名（原文）{stats.allCategoryNameCount}種類を、店舗数・都道府県・確認状態で探す</span>
           </span>
           <span aria-hidden="true" className="cta__arrow">›</span>
         </Link>

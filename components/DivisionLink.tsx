@@ -18,7 +18,8 @@ export function DivisionLink({
   const place = [showPlace ? d.prefectureName : null, showPlace || showArea ? (d.listingArea ?? UNKNOWN_AREA_LABEL) : null]
     .filter(Boolean)
     .join(" / ");
-  const stores = d.stores.map((s) => s.name).join("、");
+  const names = d.stores.map((s) => s.name);
+  const stores = names.length > 2 ? `${names.slice(0, 2).join("、")} ほか${names.length - 2}店` : names.join("、");
   return (
     <Link href={`/division/${d.id}`} className={`div-card div-card--${d.confidence}`}>
       <span className="div-card__head">
@@ -30,7 +31,7 @@ export function DivisionLink({
         <span className={stores ? "div-card__store" : "div-card__store div-card__store--unknown"}>
           {stores || "店舗未判明"}
         </span>
-        <span className="div-card__count">{d.entrantCount > 0 ? `出場者 ${d.entrantCount}名` : "出場者未判明"}</span>
+        {d.entrantCount > 0 && <span className="div-card__count">出場者 {d.entrantCount}名</span>}
       </span>
     </Link>
   );

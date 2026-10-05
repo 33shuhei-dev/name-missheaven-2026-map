@@ -1617,3 +1617,112 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* ───────────── 店舗 ───────────── */
+.pill {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.6;
+  padding: 0 8px;
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+.pill--ok {
+  background: var(--navy-weak);
+  color: var(--navy-2);
+  border-color: #c9d4ec;
+}
+.pill--new {
+  background: var(--accent-weak);
+  color: var(--accent);
+  border-color: #ecd2e6;
+}
+.store-links {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0;
+}
+.store-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  min-height: 52px;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: var(--navy);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+}
+.store-cta__host {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  opacity: 0.85;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.store-cta--none {
+  background: var(--bg);
+  color: var(--muted);
+  border: 1px dashed #c9cfdc;
+  font-weight: 700;
+}
+.store-note {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: -2px 2px 0;
+}
+.evidence {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+}
+.evidence__label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+  margin: 0 0 4px;
+}
+.evidence .ext-link {
+  margin-top: 6px;
+}
+.chip-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 6px;
+}
+.campaign {
+  border: 1px dashed #c9cfdc;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: var(--surface);
+  font-size: 0.875rem;
+}
+.more-list summary {
+  min-height: var(--tap);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+.more-list .list {
+  margin-top: 8px;
+}
+.conf-bar__title {
+  margin: 0 0 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted);
+}

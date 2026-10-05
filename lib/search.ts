@@ -1,7 +1,7 @@
 import type { Confidence, MapStatus } from "@/data/types";
 import { PREFECTURES, REGIONS, UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
 import { confidenceRank } from "./labels";
-import { entrantHref, type SiteModel } from "./model";
+import { areaIdOf, entrantHref, type SiteModel } from "./model";
 import { normalizeForSearch, tokenizeQuery } from "./text";
 
 /**
@@ -30,7 +30,8 @@ export interface SearchItem {
   prefSlug: string;
   prefName: string;
   listingArea?: string;
-  areaId?: string;
+  /** 所属する掲載地域ID（掲載地域フィルター用。未判明は "none"） */
+  areaIds: string[];
   /** 補足表示（例: 部門の店舗、出場者の店舗・部門） */
   sub?: string;
   /** 都道府県以外の確認状態（含まれる観測の最も高いもの） */
@@ -83,8 +84,9 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       href: `/pref/${p.slug}`,
       prefSlug: p.slug,
       prefName: p.name,
+      areaIds: [],
       status: p.slug === UNKNOWN_PREFECTURE_SLUG ? undefined : p.status,
-      sub: `情報 ${p.recordCount}件`,
+      sub: `店舗 ${p.stores.length} ・ 観測 ${p.recordCount}件`,
       ownKeys: p.slug === UNKNOWN_PREFECTURE_SLUG ? N([p.name, "都道府県未判明"]) : [...N([p.name]), p.slug],
       contextKeys: [],
       regionKey: normalizeForSearch(regionName.get(p.regionId ?? "")),
@@ -99,9 +101,12 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
         prefSlug: p.slug,
         prefName: p.name,
         listingArea: a.name,
-        areaId: a.id,
-        sub: `部門 ${a.divisions.length} ・ 情報 ${a.recordCount}件`,
-        confidence: a.divisions.length ? bestOf(a.divisions.map((d) => d.confidence)) : undefined,
+        areaIds: [a.id],
+        sub: `部門 ${a.categoryNameCount} ・ 店舗 ${a.stores.length}`,
+        confidence:
+          a.divisions.length || a.stores.length
+            ? bestOf([...a.divisions.map((d) => d.confidence), ...a.stores.map((x) => x.confidence)])
+            : undefined,
         ownKeys: N([a.name]),
         contextKeys: N([p.name]),
       });
@@ -117,19 +122,21 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       prefSlug: d.prefSlug,
       prefName: d.prefectureName,
       listingArea: d.listingArea,
-      areaId: d.areaId,
-      sub: d.stores.length ? d.stores.map((s) => s.name).join("、") : undefined,
+      areaIds: [d.areaId],
+      sub: d.stores.length ? `店舗：${d.stores.map((s) => s.name).join("、")}` : undefined,
       confidence: d.confidence,
       ownKeys: N([d.categoryOriginal, ...d.records.map((r) => r.categoryNormalized)]),
       contextKeys: N([
         d.prefectureName,
         d.listingArea,
         ...d.stores.map((s) => s.name),
+        ...d.records.map((r) => r.storeName),
         ...d.records.flatMap((r) => r.entrantNames),
       ]),
     });
   }
 
+  // 店舗（Phase 3 storeId）。初期読込を軽くするため、根拠・notes は入れない
   for (const s of model.stores) {
     items.push({
       kind: "store",
@@ -139,11 +146,11 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       prefSlug: s.prefSlug,
       prefName: s.prefectureName,
       listingArea: s.listingAreas.join("・") || undefined,
-      areaId: undefined,
-      sub: s.divisions.map((d) => d.categoryOriginal).join("、"),
+      areaIds: s.listingAreas.length ? s.listingAreas.map((a) => areaIdOf(s.prefSlug, a)) : ["none"],
+      sub: s.categoryOriginals.length ? s.categoryOriginals.join("、") : "部門未確認",
       confidence: s.confidence,
-      ownKeys: N([s.name]),
-      contextKeys: N([s.prefectureName, ...s.listingAreas, ...s.divisions.map((d) => d.categoryOriginal), ...s.entrantNames]),
+      ownKeys: N([s.name, ...s.nameOriginals]),
+      contextKeys: N([s.prefectureName, ...s.listingAreas, ...s.categoryOriginals]),
     });
   }
 
@@ -156,6 +163,7 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       prefSlug: e.prefSlug,
       prefName: e.prefectureName,
       listingArea: e.listingAreas.join("・") || undefined,
+      areaIds: e.records.map((r) => areaIdOf(e.prefSlug, r.listingArea)).filter((v, i, a) => a.indexOf(v) === i),
       sub: [e.storeName, e.divisions.map((d) => d.categoryOriginal).join("、")].filter(Boolean).join(" ・ "),
       confidence: e.confidence,
       ownKeys: N([e.name]),
@@ -176,32 +184,19 @@ function scoreKey(key: string, token: string): number {
   return 0;
 }
 
-/** 掲載地域フィルター用: アイテムがその掲載地域に属するか */
-function inArea(item: SearchItem, areaId: string, areaName: string | undefined): boolean {
-  if (item.areaId) return item.areaId === areaId;
-  if (item.kind === "prefecture") return false;
-  // 店舗・出場者は複数の掲載地域にまたがることがあるため名前で判定
-  if (areaId === "none") return !item.listingArea;
-  return !!areaName && (item.listingArea ?? "").split("・").includes(areaName);
-}
-
 /**
  * 検索。
  * - 部分一致（正規化後）。空白区切りの複数語は AND
  * - 名称そのものの一致を、関連情報（所在地・関連部門など）の一致より上位にする
  * - 検索語が空なら絞り込みだけを適用する
  */
-export function searchItems(
-  items: readonly SearchItem[],
-  filters: SearchFilters,
-  areaNames: Record<string, string> = {},
-): SearchHit[] {
+export function searchItems(items: readonly SearchItem[], filters: SearchFilters): SearchHit[] {
   const tokens = tokenizeQuery(filters.q);
   const hits: SearchHit[] = [];
   for (const item of items) {
     if (filters.kind && item.kind !== filters.kind) continue;
     if (filters.pref && item.prefSlug !== filters.pref) continue;
-    if (filters.area && !inArea(item, filters.area, areaNames[filters.area])) continue;
+    if (filters.area && !item.areaIds.includes(filters.area)) continue;
     if (filters.confidence && item.confidence !== filters.confidence) continue;
 
     let score = 0;

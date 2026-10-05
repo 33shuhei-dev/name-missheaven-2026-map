@@ -34,11 +34,11 @@ export function PrefecturePicker({ model }: { model: SiteModel }) {
                   <Link
                     href={`/pref/${p.slug}`}
                     className={`pref-chip pref-chip--${p.status}`}
-                    aria-label={`${p.name}：${MAP_STATUS_LABEL[p.status]}（情報${p.recordCount}件）`}
+                    aria-label={`${p.name}：${MAP_STATUS_LABEL[p.status]}（店舗${p.stores.length}・観測${p.recordCount}件）`}
                   >
                     <span className={`legend__swatch legend__swatch--${p.status}`} aria-hidden="true" />
                     <span className="pref-chip__name">{p.name}</span>
-                    <span className="pref-chip__count">{p.recordCount}</span>
+                    <span className="pref-chip__count">{p.stores.length}</span>
                   </Link>
                 </li>
               ))}

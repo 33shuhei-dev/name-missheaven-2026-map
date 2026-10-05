@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ConfidenceBadge } from "@/components/Badges";
 import { RecordCard } from "@/components/RecordCard";
 import { DivisionLink } from "@/components/DivisionLink";
+import { StoreRow } from "@/components/StoreRow";
 
 export const dynamicParams = false;
 
@@ -70,22 +71,6 @@ export default async function DivisionPage({ params }: Params) {
           </dd>
         </div>
         <div>
-          <dt>店舗</dt>
-          <dd>
-            {d.stores.length > 0 ? (
-              <span className="inline-links">
-                {d.stores.map((s) => (
-                  <Link key={s.id} href={`/store/${s.id}`}>
-                    {s.name}
-                  </Link>
-                ))}
-              </span>
-            ) : (
-              <span className="muted">未判明</span>
-            )}
-          </dd>
-        </div>
-        <div>
           <dt>確認状態</dt>
           <dd>
             <ConfidenceBadge value={d.confidence} />
@@ -96,23 +81,46 @@ export default async function DivisionPage({ params }: Params) {
 
       {d.confidence !== "confirmed" && (
         <p className="notice notice--warn">
-          この部門の観測は<strong>候補情報</strong>のみです。部門名・地域・出場者の関係は確認しきれていません。各観測の根拠・留保をご確認ください。
+          この部門の情報は<strong>候補情報</strong>のみです。部門名・地域・店舗の関係は確認しきれていません。各情報の根拠・留保をご確認ください。
         </p>
       )}
 
+      <section className="section" aria-labelledby="store-heading">
+        <h2 id="store-heading">
+          店舗<span className="count">{d.stores.length ? `見つかった範囲 ${d.stores.length}店` : ""}</span>
+        </h2>
+        {d.stores.length ? (
+          <div className="list">
+            {d.stores.map((st) => (
+              <StoreRow
+                key={st.id}
+                store={{ id: st.id, name: st.name, hasPublicUrl: st.hasPublicUrl }}
+                confidence={st.relationConfidence}
+                showArea={false}
+              />
+            ))}
+          </div>
+        ) : (
+          <p className="empty">この部門に関係する店舗はまだ確認できていません。</p>
+        )}
+        <p className="hint hint--tight">確認状態は「店舗とこの部門の関係」の確認状態です。</p>
+      </section>
+
+      {d.records.length > 0 && (
       <section className="section" aria-labelledby="obs-heading">
         <h2 id="obs-heading">
-          観測と情報源<span className="count">{d.records.length}件</span>
+          部門の観測と情報源<span className="count">{d.records.length}件</span>
         </h2>
         <p className="hint">
           出場者 {d.entrantCount > 0 ? `${d.entrantCount}名` : "未判明"}（公開情報で見つかった範囲）。観測ごとに確認状態と情報源を表示しています。
         </p>
         <div className="list">
           {d.records.map((r) => (
-            <RecordCard key={r.id} record={r} showContext={false} />
+            <RecordCard key={r.id} record={r} storeId={site.storeIdByRecord[r.id]} showContext={false} />
           ))}
         </div>
       </section>
+      )}
 
       {sameName.length > 0 && (
         <section className="section" aria-labelledby="same-heading">

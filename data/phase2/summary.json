@@ -1,0 +1,16 @@
+{
+  "structureRecordCount": 147,
+  "countedStoreCategoryRelationships": 40,
+  "countedPrefecturesPartial": 5,
+  "countedPrefecturesComplete": 0,
+  "countedListingAreas": 14,
+  "countedCategories": 17,
+  "countedStores": 16,
+  "organizerOfficialListUrls": 0,
+  "storeGroupListUrls": 3,
+  "nationalExactTotal": null,
+  "nationalApproximateScale": 10000,
+  "nationalCoverageRatio": null,
+  "officialSourceRateDefinition": "人数・掲載件数があるcountFactsのうちsourceType officialである割合。地域構造確認率ではない。",
+  "officialCountSourceRate": 0.08
+}

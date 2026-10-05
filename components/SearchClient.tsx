@@ -53,10 +53,6 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
   };
 
   const prefOption = places.find((p) => p.slug === state.pref);
-  const areaNames = useMemo(
-    () => Object.fromEntries(places.flatMap((p) => p.areas.map((a) => [a.id, a.name ?? ""]))),
-    [places],
-  );
 
   const hits = useMemo(
     () =>
@@ -69,20 +65,18 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
           area: state.area || undefined,
           confidence: state.confidence || undefined,
         },
-        areaNames,
       ),
-    [items, state, areaNames],
+    [items, state],
   );
   const kindCounts = useMemo(() => {
     const all = searchItems(
       items,
       { q: state.q, pref: state.pref || undefined, area: state.area || undefined, confidence: state.confidence || undefined },
-      areaNames,
     );
     const c: Record<string, number> = {};
     for (const h of all) c[h.item.kind] = (c[h.item.kind] ?? 0) + 1;
     return { total: all.length, c };
-  }, [items, state.q, state.pref, state.area, state.confidence, areaNames]);
+  }, [items, state.q, state.pref, state.area, state.confidence]);
 
   const hasCondition = !!(state.q.trim() || state.kind || state.pref || state.area || state.confidence);
 

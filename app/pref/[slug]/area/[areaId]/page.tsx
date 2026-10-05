@@ -6,7 +6,7 @@ import { findPrefectureView } from "@/lib/model";
 import { REGIONS, UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DivisionLink } from "@/components/DivisionLink";
-import { ConfidenceBadge } from "@/components/Badges";
+import { StoreRow } from "@/components/StoreRow";
 
 export const dynamicParams = false;
 
@@ -50,7 +50,7 @@ export default async function AreaPage({ params }: Params) {
       <p className="eyebrow">掲載地域 ・ {pref.name}</p>
       <h1>{area.label}</h1>
       <p className="summary-line">
-        部門 {area.summary.categoryNameCount} ・ 店舗 {area.summary.storeCount} ・ 観測 {area.recordCount}件
+        部門 {area.categoryNameCount} ・ 店舗 {area.stores.length} ・ 観測 {area.recordCount}件
       </p>
       <p className="hint">
         掲載地域は情報源に書かれた掲載・営業地域です。正式な選挙エリアではありません。
@@ -59,29 +59,31 @@ export default async function AreaPage({ params }: Params) {
 
       <section className="section" aria-labelledby="div-heading">
         <h2 id="div-heading">部門</h2>
-        <div className="list">
-          {area.divisions.map((d) => (
-            <DivisionLink key={d.id} division={d} />
-          ))}
-        </div>
-      </section>
-
-      {area.stores.length > 0 && (
-        <section className="section" aria-labelledby="store-heading">
-          <h2 id="store-heading">店舗</h2>
+        {area.divisions.length > 0 ? (
           <div className="list">
-            {area.stores.map((s) => (
-              <Link key={s.id} href={`/store/${s.id}`} className="row-link">
-                <span className="row-link__main">
-                  <span className="row-link__title">{s.name}</span>
-                  <span className="row-link__sub">部門 {s.divisions.length} ・ 出場者 {s.entrantNames.length}名</span>
-                </span>
-                <ConfidenceBadge value={s.confidence} small />
-              </Link>
+            {area.divisions.map((d) => (
+              <DivisionLink key={d.id} division={d} />
             ))}
           </div>
-        </section>
-      )}
+        ) : (
+          <p className="empty">この掲載地域で確認できた部門はまだありません。</p>
+        )}
+      </section>
+
+      <section className="section" aria-labelledby="store-heading">
+        <h2 id="store-heading">
+          店舗<span className="count">{area.stores.length ? `見つかった範囲 ${area.stores.length}店` : ""}</span>
+        </h2>
+        {area.stores.length > 0 ? (
+          <div className="list">
+            {area.stores.map((st) => (
+              <StoreRow key={st.id} store={st} confidence={st.confidence} showArea={false} />
+            ))}
+          </div>
+        ) : (
+          <p className="empty">この掲載地域で確認できた店舗はまだありません。</p>
+        )}
+      </section>
 
       <p className="section">
         <Link href={`/pref/${pref.slug}`} className="button button--ghost">

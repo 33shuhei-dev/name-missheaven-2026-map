@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { buildModel } from "@/lib/model";
 import { buildSearchIndex, searchItems, type SearchFilters } from "@/lib/search";
-import { model } from "./fixtures";
+import { modelWithStores as model } from "./fixtures";
 
 const items = buildSearchIndex(model);
 const find = (f: SearchFilters) => searchItems(items, f).map((h) => `${h.item.kind}:${h.item.name}`);
@@ -10,9 +10,9 @@ describe("検索インデックス", () => {
   it("都道府県（47＋地域未判明）・掲載地域・部門・店舗・出場者を含む", () => {
     const count = (k: string) => items.filter((i) => i.kind === k).length;
     expect(count("prefecture")).toBe(48);
-    expect(count("area")).toBe(3);
+    expect(count("area")).toBe(4);
     expect(count("division")).toBe(model.divisions.length);
-    expect(count("store")).toBe(2);
+    expect(count("store")).toBe(4);
     expect(count("entrant")).toBe(4);
   });
   it("各項目に遷移先・都道府県・確認状態がある", () => {
@@ -42,7 +42,9 @@ describe("全国横断検索", () => {
       "division:アイドル・可愛い部門",
     ]);
   });
-  it("店舗名・出場者名で検索できる", () => {
+  it("店舗名（表記揺れの原文も）・出場者名で検索できる", () => {
+    expect(find({ q: "テスト店舗 X", kind: "store" })).toEqual(["store:テスト店舗X"]);
+    expect(find({ q: "テスト県不明", kind: "store" })).toEqual(["store:テスト県不明店"]);
     expect(find({ q: "テスト店舗Y", kind: "store" })).toEqual(["store:テスト店舗Y"]);
     expect(find({ q: "テスト出場者B", kind: "entrant" })).toEqual(["entrant:テスト出場者B"]);
   });
@@ -78,6 +80,7 @@ describe("フィルター", () => {
   it("都道府県", () => {
     expect(find({ pref: "kanagawa", kind: "division" })).toEqual(["division:美尻美脚部門"]);
     expect(find({ pref: "okinawa" })).toEqual(["prefecture:沖縄県"]);
+    expect(find({ pref: "ehime", kind: "store" })).toEqual(["store:テスト新店舗"]);
   });
   it("地域未判明", () => {
     expect(find({ pref: "unknown", kind: "division" }).sort()).toEqual([
@@ -87,10 +90,19 @@ describe("フィルター", () => {
   });
   it("掲載地域", () => {
     const area = items.find((i) => i.kind === "area" && i.name === "テスト市")!;
-    const r = searchItems(items, { area: area.areaId }, { [area.areaId!]: "テスト市" }).map((h) => `${h.item.kind}:${h.item.name}`);
+    const r = searchItems(items, { area: area.areaIds[0] }).map((h) => `${h.item.kind}:${h.item.name}`);
     expect(r.sort()).toEqual(
       ["area:テスト市", "division:美尻美脚部門", "entrant:テスト出場者A", "entrant:テスト出場者B", "entrant:テスト出場者C", "store:テスト店舗X"].sort(),
     );
+  });
+  it("店舗の掲載地域フィルター・部門未確認の店舗", () => {
+    const area = items.find((i) => i.kind === "area" && i.name === "テスト温泉")!;
+    expect(searchItems(items, { area: area.areaIds[0] }).map((h) => h.item.name).sort()).toEqual(["テスト新店舗", "テスト温泉"].sort());
+    expect(items.find((i) => i.kind === "store" && i.name === "テスト新店舗")!.sub).toBe("部門未確認");
+  });
+  it("検索インデックスに根拠URL・notes を入れない", () => {
+    const json = JSON.stringify(items);
+    expect(json).not.toContain("https://");
   });
   it("確認状態", () => {
     expect(find({ confidence: "confirmed", kind: "division" })).toEqual(["division:美尻美脚部門"]);

@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { site } from "@/lib/data";
+import { campaignStoresIn, site } from "@/lib/data";
 import { entrantHref, findPrefectureView } from "@/lib/model";
-import { MAP_STATUS_DESCRIPTION, UNKNOWN_AREA_LABEL } from "@/lib/labels";
+import { MAP_STATUS_DESCRIPTION } from "@/lib/labels";
 import { PREFECTURES, REGIONS, UNKNOWN_PREFECTURE_SLUG, prefecturesInRegion } from "@/data/geo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SearchBox } from "@/components/SearchBox";
 import { DivisionLink } from "@/components/DivisionLink";
 import { ConfidenceBadge, StatusBadge } from "@/components/Badges";
+import { StoreRow } from "@/components/StoreRow";
+import { ExternalLink } from "@/components/ExternalLink";
 
 export const dynamicParams = false;
+
+/** 店舗一覧で最初に表示する件数（それ以上は折りたたみ） */
+const STORE_PAGE = 30;
 
 export function generateStaticParams() {
   return [...PREFECTURES.map((p) => ({ slug: p.slug })), { slug: UNKNOWN_PREFECTURE_SLUG }];
@@ -43,7 +48,8 @@ export default async function PrefecturePage({ params }: Params) {
   const region = REGIONS.find((r) => r.id === pref.regionId);
   const neighbors = region ? prefecturesInRegion(region.id).filter((p) => p.slug !== pref.slug) : [];
   const s = pref.summary;
-  const hasData = pref.recordCount > 0;
+  const hasData = pref.recordCount > 0 || pref.stores.length > 0;
+  const campaign = campaignStoresIn(isUnknown ? undefined : pref.name);
 
   return (
     <>
@@ -66,7 +72,7 @@ export default async function PrefecturePage({ params }: Params) {
         <div className="empty empty--searched">
           <p>
             <strong>{pref.name}</strong>
-            について調査しましたが、現在公開情報から確認できた部門情報はありません。
+            について調査しましたが、現在公開情報から確認できた部門・参加店舗の情報はありません。
           </p>
           <p className="hint">部門や出場者が存在しないという意味ではありません。新しい公開情報が確認できれば追加します。</p>
           <p>
@@ -77,33 +83,33 @@ export default async function PrefecturePage({ params }: Params) {
         <>
           <dl className="stats stats--compact">
             <div>
-              <dt>観測</dt>
-              <dd>{s.recordCount}</dd>
+              <dt>掲載地域</dt>
+              <dd>{pref.listingAreaCount}</dd>
             </div>
             <div>
               <dt>部門</dt>
-              <dd>{s.categoryNameCount}</dd>
-            </div>
-            <div>
-              <dt>掲載地域</dt>
-              <dd>{s.listingAreaCount}</dd>
+              <dd>{pref.categoryNameCount}</dd>
             </div>
             <div>
               <dt>店舗</dt>
-              <dd>{s.storeCount}</dd>
+              <dd>{pref.storeSummary.storeCount}</dd>
+            </div>
+            <div>
+              <dt>公開ページ</dt>
+              <dd>{pref.storeSummary.publicUrlCount}</dd>
+            </div>
+            <div>
+              <dt>観測</dt>
+              <dd>{s.recordCount}</dd>
             </div>
             <div>
               <dt>出場者</dt>
               <dd>{s.entrantCount}</dd>
             </div>
-            <div>
-              <dt>確認済み</dt>
-              <dd>{s.byConfidence.confirmed}</dd>
-            </div>
           </dl>
           <p className="hint">
-            確認済み {s.byConfidence.confirmed}・有力情報 {s.byConfidence.probable}・未確認情報 {s.byConfidence.unverified}件。
-            部門は部門名（原文）の種類数、出場者は店舗名×人物名の数です。
+            店舗（候補を含む）の確認状態：確認済み {pref.storeSummary.byConfidence.confirmed}・有力情報 {pref.storeSummary.byConfidence.probable}・未確認情報{" "}
+            {pref.storeSummary.byConfidence.unverified}。部門は部門名（原文）の種類数、出場者はこれまでの調査で記録した店舗名×人物名の数です。
             {s.lastCheckedAt && ` 最終確認日：${s.lastCheckedAt}`}
           </p>
           {pref.status === "candidate" && !isUnknown && (
@@ -123,7 +129,7 @@ export default async function PrefecturePage({ params }: Params) {
                   <span>
                     <span className="area-block__name">{a.label}</span>
                     <span className="row-link__sub">
-                      部門 {a.summary.categoryNameCount} ・ 店舗 {a.summary.storeCount} ・ 観測 {a.recordCount}件
+                      部門 {a.categoryNameCount} ・ 店舗 {a.stores.length}
                     </span>
                   </span>
                   <span aria-hidden="true" className="row-link__arrow">›</span>
@@ -133,6 +139,13 @@ export default async function PrefecturePage({ params }: Params) {
                     <DivisionLink key={d.id} division={d} />
                   ))}
                 </div>
+                {a.stores.filter((st) => st.categories.length === 0).length > 0 && (
+                  <p className="hint hint--tight">
+                    <Link href={`/pref/${pref.slug}/area/${a.id}`}>
+                      部門未確認の店舗 {a.stores.filter((st) => st.categories.length === 0).length}店を見る
+                    </Link>
+                  </p>
+                )}
               </section>
             ))}
           </section>
@@ -140,21 +153,24 @@ export default async function PrefecturePage({ params }: Params) {
           {pref.stores.length > 0 && (
             <section className="section" aria-labelledby="stores-heading">
               <h2 id="stores-heading">
-                店舗<span className="count">見つかった範囲 {pref.stores.length}店</span>
+                店舗<span className="count">見つかった範囲 {pref.stores.length}店（候補を含む）</span>
               </h2>
+              <p className="hint">公開情報から2026年の参加に関係する根拠を見つけた店舗です。全参加店舗の一覧ではありません。</p>
               <div className="list">
-                {pref.stores.map((st) => (
-                  <Link key={st.id} href={`/store/${st.id}`} className="row-link">
-                    <span className="row-link__main">
-                      <span className="row-link__title">{st.name}</span>
-                      <span className="row-link__sub">
-                        {(st.listingAreas.join("・") || UNKNOWN_AREA_LABEL) + ` ・ 部門 ${st.divisions.length}`}
-                      </span>
-                    </span>
-                    <ConfidenceBadge value={st.confidence} small />
-                  </Link>
+                {pref.stores.slice(0, STORE_PAGE).map((st) => (
+                  <StoreRow key={st.id} store={st} confidence={st.confidence} />
                 ))}
               </div>
+              {pref.stores.length > STORE_PAGE && (
+                <details className="more-list">
+                  <summary>残りの店舗を表示（{pref.stores.length - STORE_PAGE}店）</summary>
+                  <div className="list">
+                    {pref.stores.slice(STORE_PAGE).map((st) => (
+                      <StoreRow key={st.id} store={st} confidence={st.confidence} />
+                    ))}
+                  </div>
+                </details>
+              )}
             </section>
           )}
 
@@ -186,6 +202,22 @@ export default async function PrefecturePage({ params }: Params) {
         </>
       )}
 
+      {campaign.length > 0 && (
+        <section className="section" aria-labelledby="campaign-heading">
+          <h2 id="campaign-heading">応援キャンペーンのみ確認された店舗</h2>
+          <p className="hint">2026年の応援キャンペーンは確認できましたが、出場エントリーは未確認のため、上の店舗数・地図の状態には含めていません。</p>
+          <ul className="plain-list">
+            {campaign.map((c) => (
+              <li key={c.storeId} className="campaign">
+                <strong>{c.storeName}</strong>
+                {c.listingArea && <span className="muted">（{c.listingArea}）</span>}
+                <ExternalLink href={c.storePublicUrl ?? undefined} label="店舗の公開ページ" />
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
       {neighbors.length > 0 && region && (
         <section className="section">
           <h2>{region.name}のほかの都道府県</h2>
@@ -197,7 +229,7 @@ export default async function PrefecturePage({ params }: Params) {
                   <Link href={`/pref/${p.slug}`} className={`pref-chip pref-chip--${v.status}`}>
                     <span className={`legend__swatch legend__swatch--${v.status}`} aria-hidden="true" />
                     <span className="pref-chip__name">{p.name}</span>
-                    <span className="pref-chip__count">{v.recordCount}</span>
+                    <span className="pref-chip__count">{v.stores.length}</span>
                   </Link>
                 </li>
               );

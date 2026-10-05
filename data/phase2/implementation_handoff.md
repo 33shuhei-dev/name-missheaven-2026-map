@@ -1,0 +1,14 @@
+# Next.js／Claude CodeへのPhase2統合仕様
+
+Phase1ファイル・ID・既存URLは変更しない。今回のrecordsは県×掲載地域×部門原文×店舗の匿名構造、countFactsは別階層の人数宣言。phase1RecordIdsで元構造と接続。個人名・個人URLの追加は不要。
+
+participantCount nullは未取得で、0人と表示しない。countTypeを必ず併記する。countConfidence=confirmedは値の記載や掲載枠数の確認を意味し、confidence=probableは申込と正式出場の照合留保を含む。store_declared_entry_countは店舗宣言値、public_application_listing_entriesは申込掲載カード数、official_approximate_participation_scaleは公式概数。申込人数を確定ノミネート人数と表示しない。
+
+formalElectionAreaは全てnull。listingAreaはPhase1掲載地域か新たな一次掲載表記。店舗住所から選挙区を生成しない。categoryOriginalを完全一致で保持し、検索用正規化は別インデックスにだけ適用。
+
+UI導線：県→掲載地域→原文部門→店舗→「申込掲載n件」「店舗告知n名」→店舗／系列の2026案内を見る。officialListUrlは運営公式の参加者一覧が確認できた場合のみ利用。本版は全てnull。groupListUrlは運営ではなく系列の一次一覧。公式イベント案内URLを参加者一覧URLとして代用しない。現時点で3つの店舗・系列入口があるが、全県・全部門にリンクを複製しない。
+
+countFactsはscope/groupName/storeNameとsourceUrlでフィルタ。全国概数、系列総数、県部分小計、店舗数、部門枠数は重複するため全行sum禁止。県別・部門別の総数がない場合は「全参加数は未確認」。構造行の件数と参加人数を同じ指標にしない。運営公式確認率と店舗一次確認率も分ける。
+
+数千〜1万人相当の集計情報を扱う場合は県コード別にJSONをビルド生成、一覧では軽量検索インデックスだけ読み込み、県選択後に詳細を動的ロードする。1ページ20〜50構造行、フィルタ後にページネーション。根拠説明は展開時の遅延読込。既存動的ルートを保持してPhase2属性を追加し、storeやdivisionのID変更はしない。nullと未確認バッジを含む回帰確認を実施する。今回はUI変更を行っていない。
+

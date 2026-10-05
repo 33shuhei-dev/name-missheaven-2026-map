@@ -7,13 +7,15 @@ import {
   SOURCE_TYPE_LABEL,
   UNKNOWN_AREA_LABEL,
 } from "@/lib/labels";
-import { areaIdOf, divisionIdOf, prefSlugOf, storeIdOf } from "@/lib/model";
+import { areaIdOf, divisionIdOf, prefSlugOf } from "@/lib/model";
 import { dateOnly } from "@/lib/phase1";
 import { ConfidenceBadge } from "./Badges";
 import { ExternalLink } from "./ExternalLink";
 
 interface Props {
   record: SiteRecord;
+  /** この観測が接続されている Phase 3 店舗ID（なければ店名はリンクにしない） */
+  storeId?: string;
   /** 部門名・所在地を表示するか（部門ページ内では不要） */
   showContext?: boolean;
 }
@@ -22,7 +24,7 @@ interface Props {
  * 1件の観測を表示するカード。欠けている項目は「未判明」と表示し、推測で埋めない。
  * 情報源の全文・画像は複製せず、リンクと必要最小限の事実だけを表示する。
  */
-export function RecordCard({ record: r, showContext = true }: Props) {
+export function RecordCard({ record: r, storeId, showContext = true }: Props) {
   const prefSlug = prefSlugOf(r);
   const divisionHref = `/division/${divisionIdOf(prefSlug, r.listingArea, r.categoryOriginal)}`;
   const placeHref = r.listingArea ? `/pref/${prefSlug}/area/${areaIdOf(prefSlug, r.listingArea)}` : `/pref/${prefSlug}`;
@@ -60,8 +62,10 @@ export function RecordCard({ record: r, showContext = true }: Props) {
         <div>
           <dt>店舗</dt>
           <dd>
-            {r.storeName ? (
-              <Link href={`/store/${storeIdOf(prefSlug, r.storeName)}`}>{r.storeName}</Link>
+            {r.storeName && storeId ? (
+              <Link href={`/store/${storeId}`}>{r.storeName}</Link>
+            ) : r.storeName ? (
+              r.storeName
             ) : (
               <span className="muted">未判明</span>
             )}
