@@ -1,191 +1,231 @@
-import type { Confidence, DataRecord, Dataset } from "@/data/types";
-import { PREFECTURES, REGIONS, findPrefectureByName } from "@/data/geo";
+import type { Confidence, MapStatus } from "@/data/types";
+import { PREFECTURES, REGIONS, UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
 import { confidenceRank } from "./labels";
-import { areaIdOf, prefSlugOf, type SiteModel } from "./model";
+import { entrantHref, type SiteModel } from "./model";
 import { normalizeForSearch, tokenizeQuery } from "./text";
 
+/**
+ * 全国横断検索。検索対象は「都道府県・掲載地域・部門・店舗・出場者」の各ページ単位。
+ * 索引（SearchItem[]）はビルド時にサーバーで作り、絞り込み・照合はクライアントで行う。
+ */
+
+export type SearchKind = "prefecture" | "area" | "division" | "store" | "entrant";
+
+export const SEARCH_KIND_ORDER: readonly SearchKind[] = ["prefecture", "area", "division", "store", "entrant"];
+
+export const SEARCH_KIND_LABEL: Record<SearchKind, string> = {
+  prefecture: "都道府県",
+  area: "掲載地域",
+  division: "部門",
+  store: "店舗",
+  entrant: "出場者",
+};
+
+export interface SearchItem {
+  kind: SearchKind;
+  id: string;
+  /** 表示名（原文） */
+  name: string;
+  href: string;
+  prefSlug: string;
+  prefName: string;
+  listingArea?: string;
+  areaId?: string;
+  /** 補足表示（例: 部門の店舗、出場者の店舗・部門） */
+  sub?: string;
+  /** 都道府県以外の確認状態（含まれる観測の最も高いもの） */
+  confidence?: Confidence;
+  /** 都道府県の地図状態 */
+  status?: MapStatus;
+  /** 名称そのものの検索キー（正規化済み） */
+  ownKeys: string[];
+  /** 関連情報の検索キー（所在地・関連する部門/店舗/出場者。正規化済み） */
+  contextKeys: string[];
+  /** 都道府県が属する地方名（正規化済み）。都道府県名に一致しない語でだけ使う */
+  regionKey?: string;
+}
+
 export interface SearchFilters {
-  /** 検索語（空白区切りでAND） */
   q?: string;
-  /** 都道府県スラッグ（"unknown" = 都道府県未判明） */
+  kind?: SearchKind;
+  /** 都道府県スラッグ（"unknown" = 地域未判明） */
   pref?: string;
-  /** エリアID（model.areaIdOf） */
+  /** 掲載地域ID */
   area?: string;
   confidence?: Confidence;
-  dataset?: Dataset;
 }
 
 export interface SearchHit {
-  record: DataRecord;
+  item: SearchItem;
   score: number;
-  /** 一致した項目 */
-  matched: SearchField[];
-}
-
-export type SearchField = "prefecture" | "area" | "category" | "entrant" | "store";
-
-export const SEARCH_FIELD_LABEL: Record<SearchField, string> = {
-  prefecture: "都道府県",
-  area: "エリア",
-  category: "部門",
-  entrant: "出場者",
-  store: "店舗",
-};
-
-interface IndexedRecord {
-  record: DataRecord;
-  prefSlug: string;
-  areaId: string;
-  prefCode: number;
-  regionKey: string;
-  fields: { field: SearchField; keys: string[] }[];
 }
 
 const regionName = new Map(REGIONS.map((r) => [r.id, r.name]));
 const prefectureKeys = PREFECTURES.flatMap((p) => [normalizeForSearch(p.name), p.slug]);
+const prefCode = new Map(PREFECTURES.map((p) => [p.slug, p.code]));
 
-/**
- * 地方名で探せるのは、検索語が都道府県名に一致しない場合だけ
- * （「沖縄」で「九州・沖縄」地方の他県まで出さないため）。
- */
+/** 語が都道府県名に一致するか（一致するときは地方名での一致を使わない。「沖縄」で九州の他県を出さない） */
 function matchesPrefectureName(token: string): boolean {
   return prefectureKeys.some((k) => k.includes(token));
 }
 
-function indexRecord(record: DataRecord): IndexedRecord {
-  const pref = findPrefectureByName(record.prefecture);
-  const prefSlug = prefSlugOf(record);
-  const prefKeys = pref ? [normalizeForSearch(pref.name), pref.slug] : [];
-  const regionKey = pref ? normalizeForSearch(regionName.get(pref.regionId)) : "";
-  return {
-    record,
-    prefSlug,
-    areaId: areaIdOf(prefSlug, record.area),
-    prefCode: pref?.code ?? 999,
-    regionKey,
-    fields: [
-      { field: "prefecture", keys: prefKeys },
-      { field: "area", keys: [normalizeForSearch(record.area)] },
-      {
-        field: "category",
-        keys: [
-          normalizeForSearch(record.categoryOriginal),
-          normalizeForSearch(record.categoryNormalized),
-        ],
-      },
-      { field: "entrant", keys: [normalizeForSearch(record.entrantName)] },
-      { field: "store", keys: [normalizeForSearch(record.storeName)] },
-    ],
-  };
+const N = (xs: (string | undefined)[]) => xs.map(normalizeForSearch).filter((k) => k.length > 0);
+
+export function buildSearchIndex(model: SiteModel): SearchItem[] {
+  const items: SearchItem[] = [];
+  const prefs = model.unknownPrefecture ? [...model.prefectures, model.unknownPrefecture] : model.prefectures;
+
+  for (const p of prefs) {
+    items.push({
+      kind: "prefecture",
+      id: p.slug,
+      name: p.name,
+      href: `/pref/${p.slug}`,
+      prefSlug: p.slug,
+      prefName: p.name,
+      status: p.slug === UNKNOWN_PREFECTURE_SLUG ? undefined : p.status,
+      sub: `情報 ${p.recordCount}件`,
+      ownKeys: p.slug === UNKNOWN_PREFECTURE_SLUG ? N([p.name, "都道府県未判明"]) : [...N([p.name]), p.slug],
+      contextKeys: [],
+      regionKey: normalizeForSearch(regionName.get(p.regionId ?? "")),
+    });
+    for (const a of p.areas) {
+      if (!a.name) continue;
+      items.push({
+        kind: "area",
+        id: a.id,
+        name: a.name,
+        href: `/pref/${p.slug}/area/${a.id}`,
+        prefSlug: p.slug,
+        prefName: p.name,
+        listingArea: a.name,
+        areaId: a.id,
+        sub: `部門 ${a.divisions.length} ・ 情報 ${a.recordCount}件`,
+        confidence: a.divisions.length ? bestOf(a.divisions.map((d) => d.confidence)) : undefined,
+        ownKeys: N([a.name]),
+        contextKeys: N([p.name]),
+      });
+    }
+  }
+
+  for (const d of model.divisions) {
+    items.push({
+      kind: "division",
+      id: d.id,
+      name: d.categoryOriginal,
+      href: `/division/${d.id}`,
+      prefSlug: d.prefSlug,
+      prefName: d.prefectureName,
+      listingArea: d.listingArea,
+      areaId: d.areaId,
+      sub: d.stores.length ? d.stores.map((s) => s.name).join("、") : undefined,
+      confidence: d.confidence,
+      ownKeys: N([d.categoryOriginal, ...d.records.map((r) => r.categoryNormalized)]),
+      contextKeys: N([
+        d.prefectureName,
+        d.listingArea,
+        ...d.stores.map((s) => s.name),
+        ...d.records.flatMap((r) => r.entrantNames),
+      ]),
+    });
+  }
+
+  for (const s of model.stores) {
+    items.push({
+      kind: "store",
+      id: s.id,
+      name: s.name,
+      href: `/store/${s.id}`,
+      prefSlug: s.prefSlug,
+      prefName: s.prefectureName,
+      listingArea: s.listingAreas.join("・") || undefined,
+      areaId: undefined,
+      sub: s.divisions.map((d) => d.categoryOriginal).join("、"),
+      confidence: s.confidence,
+      ownKeys: N([s.name]),
+      contextKeys: N([s.prefectureName, ...s.listingAreas, ...s.divisions.map((d) => d.categoryOriginal), ...s.entrantNames]),
+    });
+  }
+
+  for (const e of model.entrants) {
+    items.push({
+      kind: "entrant",
+      id: e.id,
+      name: e.name,
+      href: entrantHref(e),
+      prefSlug: e.prefSlug,
+      prefName: e.prefectureName,
+      listingArea: e.listingAreas.join("・") || undefined,
+      sub: [e.storeName, e.divisions.map((d) => d.categoryOriginal).join("、")].filter(Boolean).join(" ・ "),
+      confidence: e.confidence,
+      ownKeys: N([e.name]),
+      contextKeys: N([e.prefectureName, ...e.listingAreas, e.storeName, ...e.divisions.map((d) => d.categoryOriginal)]),
+    });
+  }
+  return items;
+}
+
+function bestOf(list: Confidence[]): Confidence {
+  return [...list].sort((a, b) => confidenceRank(a) - confidenceRank(b))[0];
 }
 
 function scoreKey(key: string, token: string): number {
-  if (!key) return 0;
   if (key === token) return 3;
   if (key.startsWith(token)) return 2;
   if (key.includes(token)) return 1;
   return 0;
 }
 
-/**
- * 全国横断検索。
- * - 部分一致（正規化後の文字列に対して）
- * - 空白区切りの複数語は AND（各語がいずれかの項目に一致）
- * - 絞り込み（都道府県・エリア・確認状態・区分）と組み合わせ可能
- * - 検索語が空なら、絞り込みだけを適用した全件を返す
- */
-export function searchRecords(records: readonly DataRecord[], filters: SearchFilters): SearchHit[] {
-  const tokens = tokenizeQuery(filters.q);
-  const hits: (SearchHit & { prefCode: number })[] = [];
+/** 掲載地域フィルター用: アイテムがその掲載地域に属するか */
+function inArea(item: SearchItem, areaId: string, areaName: string | undefined): boolean {
+  if (item.areaId) return item.areaId === areaId;
+  if (item.kind === "prefecture") return false;
+  // 店舗・出場者は複数の掲載地域にまたがることがあるため名前で判定
+  if (areaId === "none") return !item.listingArea;
+  return !!areaName && (item.listingArea ?? "").split("・").includes(areaName);
+}
 
-  for (const record of records) {
-    const ix = indexRecord(record);
-    if (filters.pref && ix.prefSlug !== filters.pref) continue;
-    if (filters.area && ix.areaId !== filters.area) continue;
-    if (filters.confidence && record.confidence !== filters.confidence) continue;
-    if (filters.dataset && record.dataset !== filters.dataset) continue;
+/**
+ * 検索。
+ * - 部分一致（正規化後）。空白区切りの複数語は AND
+ * - 名称そのものの一致を、関連情報（所在地・関連部門など）の一致より上位にする
+ * - 検索語が空なら絞り込みだけを適用する
+ */
+export function searchItems(
+  items: readonly SearchItem[],
+  filters: SearchFilters,
+  areaNames: Record<string, string> = {},
+): SearchHit[] {
+  const tokens = tokenizeQuery(filters.q);
+  const hits: SearchHit[] = [];
+  for (const item of items) {
+    if (filters.kind && item.kind !== filters.kind) continue;
+    if (filters.pref && item.prefSlug !== filters.pref) continue;
+    if (filters.area && !inArea(item, filters.area, areaNames[filters.area])) continue;
+    if (filters.confidence && item.confidence !== filters.confidence) continue;
 
     let score = 0;
-    const matched = new Set<SearchField>();
-    let all = true;
-    for (const token of tokens) {
+    let ok = true;
+    for (const t of tokens) {
       let best = 0;
-      for (const { field, keys } of ix.fields) {
-        const s = Math.max(...keys.map((k) => scoreKey(k, token)));
-        if (s > 0) matched.add(field);
-        best = Math.max(best, s);
-      }
-      if (best === 0 && ix.regionKey.includes(token) && !matchesPrefectureName(token)) {
-        matched.add("prefecture");
-        best = 1;
-      }
+      for (const k of item.ownKeys) best = Math.max(best, scoreKey(k, t) * 2);
+      if (best === 0 && item.contextKeys.some((k) => k.includes(t))) best = 1;
+      if (best === 0 && item.regionKey?.includes(t) && !matchesPrefectureName(t)) best = 1;
       if (best === 0) {
-        all = false;
+        ok = false;
         break;
       }
       score += best;
     }
-    if (!all) continue;
-    hits.push({ record, score, matched: [...matched], prefCode: ix.prefCode });
+    if (ok) hits.push({ item, score });
   }
-
-  hits.sort(
+  const kindRank = (k: SearchKind) => SEARCH_KIND_ORDER.indexOf(k);
+  return hits.sort(
     (a, b) =>
       b.score - a.score ||
-      confidenceRank(a.record.confidence) - confidenceRank(b.record.confidence) ||
-      a.prefCode - b.prefCode ||
-      a.record.id.localeCompare(b.record.id),
+      kindRank(a.item.kind) - kindRank(b.item.kind) ||
+      confidenceRank(a.item.confidence ?? "unverified") - confidenceRank(b.item.confidence ?? "unverified") ||
+      (prefCode.get(a.item.prefSlug) ?? 99) - (prefCode.get(b.item.prefSlug) ?? 99) ||
+      a.item.name.localeCompare(b.item.name, "ja"),
   );
-  return hits.map(({ record, score, matched }) => ({ record, score, matched }));
-}
-
-/** 場所検索用の軽量インデックス（クライアントへ渡す） */
-export interface PlaceIndex {
-  prefectures: { slug: string; name: string; regionName: string; recordCount: number }[];
-  areas: { id: string; name: string; prefSlug: string; prefName: string; recordCount: number }[];
-}
-
-export function buildPlaceIndex(model: SiteModel): PlaceIndex {
-  const prefs = model.unknownPrefecture
-    ? [...model.prefectures, model.unknownPrefecture]
-    : model.prefectures;
-  return {
-    prefectures: model.prefectures.map((p) => ({
-      slug: p.slug,
-      name: p.name,
-      regionName: regionName.get(p.regionId ?? "") ?? "",
-      recordCount: p.recordCount,
-    })),
-    areas: prefs.flatMap((p) =>
-      p.areas
-        .filter((a) => a.name)
-        .map((a) => ({
-          id: a.id,
-          name: a.name!,
-          prefSlug: p.slug,
-          prefName: p.name,
-          recordCount: a.recordCount,
-        })),
-    ),
-  };
-}
-
-/** 検索語に一致する都道府県・エリア（検索結果上部の「場所」候補用） */
-export function searchPlaces(index: PlaceIndex, q: string | undefined) {
-  const tokens = tokenizeQuery(q);
-  if (tokens.length === 0) return { prefectures: [], areas: [] };
-  const matchAll = (keys: string[]) =>
-    tokens.every((t) => keys.some((k) => k.length > 0 && k.includes(t)));
-
-  const prefectures = index.prefectures.filter((p) =>
-    matchAll(
-      [p.name, p.slug, ...(tokens.some(matchesPrefectureName) ? [] : [p.regionName])].map(
-        normalizeForSearch,
-      ),
-    ),
-  );
-  const areas = index.areas.filter((a) =>
-    matchAll([normalizeForSearch(a.name), normalizeForSearch(`${a.prefName}${a.name}`)]),
-  );
-  return { prefectures, areas };
 }

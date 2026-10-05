@@ -3,10 +3,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { site } from "@/lib/data";
 import { findPrefectureView } from "@/lib/model";
-import { REGIONS } from "@/data/geo";
+import { REGIONS, UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { DivisionLink } from "@/components/DivisionLink";
-import { RecordCard } from "@/components/RecordCard";
+import { ConfidenceBadge } from "@/components/Badges";
 
 export const dynamicParams = false;
 
@@ -26,7 +26,7 @@ function find(slug: string, areaId: string) {
 export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug, areaId } = await params;
   const found = find(slug, areaId);
-  return { title: found ? `${found.area.label}（${found.pref.name}）` : "エリア" };
+  return { title: found ? `${found.area.label}（${found.pref.name}）` : "掲載地域" };
 }
 
 export default async function AreaPage({ params }: Params) {
@@ -35,6 +35,7 @@ export default async function AreaPage({ params }: Params) {
   if (!found) notFound();
   const { pref, area } = found;
   const region = REGIONS.find((r) => r.id === pref.regionId);
+  const isUnknownPref = pref.slug === UNKNOWN_PREFECTURE_SLUG;
 
   return (
     <>
@@ -46,40 +47,45 @@ export default async function AreaPage({ params }: Params) {
           { label: area.label },
         ]}
       />
-      <p className="eyebrow">{pref.name}</p>
+      <p className="eyebrow">掲載地域 ・ {pref.name}</p>
       <h1>{area.label}</h1>
       <p className="summary-line">
-        部門 {area.divisions.length} ・ 情報 {area.recordCount}件
+        部門 {area.summary.categoryNameCount} ・ 店舗 {area.summary.storeCount} ・ 観測 {area.recordCount}件
+      </p>
+      <p className="hint">
+        掲載地域は情報源に書かれた掲載・営業地域です。正式な選挙エリアではありません。
+        {isUnknownPref && area.name && " 都道府県は確認できていないため、地名から推定していません。"}
       </p>
 
       <section className="section" aria-labelledby="div-heading">
         <h2 id="div-heading">部門</h2>
-        {area.divisions.length > 0 ? (
-          <div className="list">
-            {area.divisions.map((d) => (
-              <DivisionLink key={d.id} division={d} />
-            ))}
-          </div>
-        ) : (
-          <p className="empty">このエリアで判明している部門はまだありません。</p>
-        )}
+        <div className="list">
+          {area.divisions.map((d) => (
+            <DivisionLink key={d.id} division={d} />
+          ))}
+        </div>
       </section>
 
-      {area.uncategorized.length > 0 && (
-        <section className="section" aria-labelledby="uncat-heading">
-          <h2 id="uncat-heading">部門未判明の情報</h2>
-          <p className="hint">店舗や出場者は判明しているものの、部門が分かっていない情報です。</p>
+      {area.stores.length > 0 && (
+        <section className="section" aria-labelledby="store-heading">
+          <h2 id="store-heading">店舗</h2>
           <div className="list">
-            {area.uncategorized.map((r) => (
-              <RecordCard key={r.id} record={r} />
+            {area.stores.map((s) => (
+              <Link key={s.id} href={`/store/${s.id}`} className="row-link">
+                <span className="row-link__main">
+                  <span className="row-link__title">{s.name}</span>
+                  <span className="row-link__sub">部門 {s.divisions.length} ・ 出場者 {s.entrantNames.length}名</span>
+                </span>
+                <ConfidenceBadge value={s.confidence} small />
+              </Link>
             ))}
           </div>
         </section>
       )}
 
-      <p>
+      <p className="section">
         <Link href={`/pref/${pref.slug}`} className="button button--ghost">
-          ‹ {pref.name}のエリア一覧へ戻る
+          ‹ {pref.name}へ戻る
         </Link>
       </p>
     </>

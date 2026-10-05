@@ -3,7 +3,7 @@
  */
 export function SearchBox({
   pref,
-  placeholder = "部門・出場者・店舗・地域",
+  placeholder = "部門・店舗・出場者・地域",
   defaultValue,
 }: {
   pref?: string;
@@ -12,11 +12,11 @@ export function SearchBox({
 }) {
   return (
     <form className="search-box" action="/search" method="get" role="search">
-      <label className="visually-hidden" htmlFor="search-box-q">
+      <label className="visually-hidden" htmlFor={pref ? `search-box-q-${pref}` : "search-box-q"}>
         検索語
       </label>
       <input
-        id="search-box-q"
+        id={pref ? `search-box-q-${pref}` : "search-box-q"}
         type="search"
         name="q"
         placeholder={placeholder}

@@ -3,108 +3,99 @@
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
-import type { Confidence, DataRecord } from "@/data/types";
-import { UNKNOWN_PREFECTURE_LABEL, UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
-import { CONFIDENCE_LABEL, CONFIDENCE_ORDER, UNKNOWN_AREA_LABEL } from "@/lib/labels";
+import type { Confidence } from "@/data/types";
+import { CONFIDENCE_LABEL, CONFIDENCE_ORDER, MAP_STATUS_LABEL, UNKNOWN_AREA_LABEL } from "@/lib/labels";
 import {
-  SEARCH_FIELD_LABEL,
-  searchPlaces,
-  searchRecords,
-  type PlaceIndex,
-  type SearchFilters,
+  SEARCH_KIND_LABEL,
+  SEARCH_KIND_ORDER,
+  searchItems,
+  type SearchItem,
+  type SearchKind,
 } from "@/lib/search";
-import { RecordCard } from "./RecordCard";
+import { ConfidenceBadge } from "./Badges";
 
-const PAGE_SIZE = 30;
-
-function isConfidence(v: string | null): v is Confidence {
-  return v === "confirmed" || v === "probable" || v === "unverified";
+export interface PlaceOption {
+  slug: string;
+  name: string;
+  recordCount: number;
+  areas: { id: string; label: string; name?: string }[];
 }
 
-export function SearchClient({ records, places }: { records: DataRecord[]; places: PlaceIndex }) {
+const PAGE_SIZE = 40;
+
+const isConfidence = (v: string | null): v is Confidence =>
+  v === "confirmed" || v === "probable" || v === "unverified";
+const isKind = (v: string | null): v is SearchKind => !!v && (SEARCH_KIND_ORDER as string[]).includes(v);
+
+type State = { q: string; kind: SearchKind | ""; pref: string; area: string; confidence: Confidence | "" };
+
+export function SearchClient({ items, places }: { items: SearchItem[]; places: PlaceOption[] }) {
   const router = useRouter();
   const sp = useSearchParams();
-
-  const [q, setQ] = useState(() => sp.get("q") ?? "");
-  const [pref, setPref] = useState(() => sp.get("pref") ?? "");
-  const [area, setArea] = useState(() => sp.get("area") ?? "");
-  const [confidence, setConfidence] = useState<Confidence | "">(() => {
-    const c = sp.get("confidence");
-    return isConfidence(c) ? c : "";
-  });
+  const [state, setState] = useState<State>(() => ({
+    q: sp.get("q") ?? "",
+    kind: isKind(sp.get("kind")) ? (sp.get("kind") as SearchKind) : "",
+    pref: sp.get("pref") ?? "",
+    area: sp.get("area") ?? "",
+    confidence: isConfidence(sp.get("confidence")) ? (sp.get("confidence") as Confidence) : "",
+  }));
   const [limit, setLimit] = useState(PAGE_SIZE);
 
-  const syncUrl = (next: { q: string; pref: string; area: string; confidence: string }) => {
+  const update = (patch: Partial<State>) => {
+    const next = { ...state, ...patch };
+    if ("pref" in patch && patch.pref !== state.pref) next.area = "";
+    setState(next);
+    setLimit(PAGE_SIZE);
     const params = new URLSearchParams();
     for (const [k, v] of Object.entries(next)) if (v) params.set(k, v);
     const qs = params.toString();
     router.replace(qs ? `/search?${qs}` : "/search", { scroll: false });
-    setLimit(PAGE_SIZE);
   };
 
-  const update = (patch: Partial<{ q: string; pref: string; area: string; confidence: Confidence | "" }>) => {
-    const next = { q, pref, area, confidence, ...patch };
-    if ("pref" in patch && patch.pref !== pref) next.area = "";
-    setQ(next.q);
-    setPref(next.pref);
-    setArea(next.area);
-    setConfidence(next.confidence);
-    syncUrl(next);
-  };
+  const prefOption = places.find((p) => p.slug === state.pref);
+  const areaNames = useMemo(
+    () => Object.fromEntries(places.flatMap((p) => p.areas.map((a) => [a.id, a.name ?? ""]))),
+    [places],
+  );
 
-  const prefOptions = useMemo(() => {
-    const opts = places.prefectures.map((p) => ({ value: p.slug, label: p.name, count: p.recordCount }));
-    const unknownCount = records.filter((r) => !r.prefecture).length;
-    if (unknownCount > 0) {
-      opts.push({ value: UNKNOWN_PREFECTURE_SLUG, label: UNKNOWN_PREFECTURE_LABEL, count: unknownCount });
-    }
-    return opts;
-  }, [places, records]);
-
-  const areaOptions = useMemo(() => {
-    if (!pref) return [];
-    const named = places.areas
-      .filter((a) => a.prefSlug === pref)
-      .map((a) => ({ value: a.id, label: a.name }));
-    const hasUnknownArea = records.some(
-      (r) =>
-        !r.area &&
-        (pref === UNKNOWN_PREFECTURE_SLUG
-          ? !r.prefecture
-          : places.prefectures.find((p) => p.slug === pref)?.name === r.prefecture),
+  const hits = useMemo(
+    () =>
+      searchItems(
+        items,
+        {
+          q: state.q,
+          kind: state.kind || undefined,
+          pref: state.pref || undefined,
+          area: state.area || undefined,
+          confidence: state.confidence || undefined,
+        },
+        areaNames,
+      ),
+    [items, state, areaNames],
+  );
+  const kindCounts = useMemo(() => {
+    const all = searchItems(
+      items,
+      { q: state.q, pref: state.pref || undefined, area: state.area || undefined, confidence: state.confidence || undefined },
+      areaNames,
     );
-    return hasUnknownArea ? [...named, { value: "none", label: UNKNOWN_AREA_LABEL }] : named;
-  }, [pref, places, records]);
+    const c: Record<string, number> = {};
+    for (const h of all) c[h.item.kind] = (c[h.item.kind] ?? 0) + 1;
+    return { total: all.length, c };
+  }, [items, state.q, state.pref, state.area, state.confidence, areaNames]);
 
-  const hits = useMemo(() => {
-    const filters: SearchFilters = {
-      q,
-      pref: pref || undefined,
-      area: area || undefined,
-      confidence: confidence || undefined,
-    };
-    return searchRecords(records, filters);
-  }, [records, q, pref, area, confidence]);
-  const placeHits = useMemo(() => searchPlaces(places, q), [places, q]);
-  const hasCondition = !!(q.trim() || pref || area || confidence);
+  const hasCondition = !!(state.q.trim() || state.kind || state.pref || state.area || state.confidence);
 
   return (
     <div className="search">
-      <form
-        className="search-panel"
-        role="search"
-        onSubmit={(e) => {
-          e.preventDefault();
-          (document.activeElement as HTMLElement | null)?.blur();
-        }}
-      >
+      <form className="search-panel" role="search" onSubmit={(e) => e.preventDefault()}>
         <label className="field">
           <span className="field__label">キーワード</span>
           <input
             type="search"
-            value={q}
+            value={state.q}
             onChange={(e) => update({ q: e.target.value })}
-            placeholder="部門名・出場者・店舗・地域"
+            placeholder="部門・店舗・出場者・地域"
             autoComplete="off"
             enterKeyHint="search"
           />
@@ -112,26 +103,26 @@ export function SearchClient({ records, places }: { records: DataRecord[]; place
         <div className="field-row">
           <label className="field">
             <span className="field__label">都道府県</span>
-            <select value={pref} onChange={(e) => update({ pref: e.target.value })}>
+            <select value={state.pref} onChange={(e) => update({ pref: e.target.value })}>
               <option value="">すべて</option>
-              {prefOptions.map((o) => (
-                <option key={o.value} value={o.value}>
-                  {o.label}（{o.count}）
+              {places.map((p) => (
+                <option key={p.slug} value={p.slug}>
+                  {p.name}（{p.recordCount}）
                 </option>
               ))}
             </select>
           </label>
           <label className="field">
-            <span className="field__label">エリア</span>
+            <span className="field__label">掲載地域</span>
             <select
-              value={area}
+              value={state.area}
               onChange={(e) => update({ area: e.target.value })}
-              disabled={!pref || areaOptions.length === 0}
+              disabled={!prefOption || prefOption.areas.length === 0}
             >
-              <option value="">{pref ? "すべて" : "県を先に選択"}</option>
-              {areaOptions.map((o) => (
-                <option key={o.value} value={o.value}>
-                  {o.label}
+              <option value="">{state.pref ? "すべて" : "県を先に選択"}</option>
+              {prefOption?.areas.map((a) => (
+                <option key={a.id} value={a.id}>
+                  {a.label}
                 </option>
               ))}
             </select>
@@ -140,7 +131,7 @@ export function SearchClient({ records, places }: { records: DataRecord[]; place
         <label className="field">
           <span className="field__label">確認状態</span>
           <select
-            value={confidence}
+            value={state.confidence}
             onChange={(e) => update({ confidence: isConfidence(e.target.value) ? e.target.value : "" })}
           >
             <option value="">すべて</option>
@@ -155,59 +146,70 @@ export function SearchClient({ records, places }: { records: DataRecord[]; place
           <button
             type="button"
             className="button button--ghost"
-            onClick={() => update({ q: "", pref: "", area: "", confidence: "" })}
+            onClick={() => update({ q: "", kind: "", pref: "", area: "", confidence: "" })}
           >
             条件をクリア
           </button>
         )}
       </form>
 
-      {(placeHits.prefectures.length > 0 || placeHits.areas.length > 0) && (
-        <section className="section" aria-labelledby="place-heading">
-          <h2 id="place-heading">一致する地域</h2>
-          <ul className="chip-list">
-            {placeHits.prefectures.map((p) => (
-              <li key={p.slug}>
-                <Link href={`/pref/${p.slug}`} className="chip">
-                  {p.name}
-                  <span className="chip__count">{p.recordCount}</span>
-                </Link>
-              </li>
-            ))}
-            {placeHits.areas.map((a) => (
-              <li key={`${a.prefSlug}-${a.id}`}>
-                <Link href={`/pref/${a.prefSlug}/area/${a.id}`} className="chip">
-                  {a.name}（{a.prefName}）<span className="chip__count">{a.recordCount}</span>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <div className="kind-tabs" role="group" aria-label="種別で絞り込み">
+        <button type="button" className={`chip${state.kind === "" ? " is-active" : ""}`} aria-pressed={state.kind === ""} onClick={() => update({ kind: "" })}>
+          すべて<span className="chip__count">{kindCounts.total}</span>
+        </button>
+        {SEARCH_KIND_ORDER.map((k) => (
+          <button
+            key={k}
+            type="button"
+            className={`chip${state.kind === k ? " is-active" : ""}`}
+            aria-pressed={state.kind === k}
+            onClick={() => update({ kind: k })}
+          >
+            {SEARCH_KIND_LABEL[k]}
+            <span className="chip__count">{kindCounts.c[k] ?? 0}</span>
+          </button>
+        ))}
+      </div>
 
       <section className="section" aria-live="polite">
         <h2>
-          {hasCondition ? "検索結果" : "すべての情報"}
+          {hasCondition ? "検索結果" : "すべての項目"}
           <span className="count">{hits.length}件</span>
         </h2>
         {hits.length === 0 ? (
           <div className="empty">
-            <p>条件に一致する情報はありません。</p>
-            <p className="hint">表記を短くする、絞り込みを外すなどしてお試しください。</p>
+            <p>条件に一致する項目はありません。</p>
+            <p className="hint">語を短くする、絞り込みを外すなどしてお試しください。掲載していない情報は「存在しない」という意味ではありません。</p>
           </div>
         ) : (
-          <div className="list">
-            {hits.slice(0, limit).map((h) => (
-              <div key={h.record.id}>
-                {h.matched.length > 0 && (
-                  <p className="match-label">
-                    一致：{h.matched.map((m) => SEARCH_FIELD_LABEL[m]).join("・")}
-                  </p>
-                )}
-                <RecordCard record={h.record} />
-              </div>
+          <ul className="result-list">
+            {hits.slice(0, limit).map(({ item }) => (
+              <li key={`${item.kind}-${item.id}`}>
+                <Link href={item.href} className="result">
+                  <span className={`result__kind result__kind--${item.kind}`}>{SEARCH_KIND_LABEL[item.kind]}</span>
+                  <span className="result__main">
+                    <span className="result__name">{item.name}</span>
+                    <span className="result__place">
+                      {item.kind === "prefecture"
+                        ? item.sub
+                        : `${item.prefName} / ${item.kind === "area" ? item.name : (item.listingArea ?? UNKNOWN_AREA_LABEL)}`}
+                    </span>
+                    {item.kind !== "prefecture" && item.sub && <span className="result__sub">{item.sub}</span>}
+                  </span>
+                  <span className="result__badge">
+                    {item.status ? (
+                      <span className={`status status--${item.status} status--small`}>
+                        <span className={`legend__swatch legend__swatch--${item.status}`} aria-hidden="true" />
+                        {MAP_STATUS_LABEL[item.status]}
+                      </span>
+                    ) : item.confidence ? (
+                      <ConfidenceBadge value={item.confidence} small />
+                    ) : null}
+                  </span>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         )}
         {hits.length > limit && (
           <button type="button" className="button button--block" onClick={() => setLimit(limit + PAGE_SIZE)}>

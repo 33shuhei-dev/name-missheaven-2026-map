@@ -87,7 +87,7 @@ export const PREFECTURES: readonly Prefecture[] = [
 
 /** 都道府県が不明なデータをまとめるための疑似スラッグ */
 export const UNKNOWN_PREFECTURE_SLUG = "unknown";
-export const UNKNOWN_PREFECTURE_LABEL = "都道府県未判明";
+export const UNKNOWN_PREFECTURE_LABEL = "地域未判明";
 
 const byName = new Map(PREFECTURES.map((p) => [p.name, p]));
 const bySlug = new Map(PREFECTURES.map((p) => [p.slug, p]));

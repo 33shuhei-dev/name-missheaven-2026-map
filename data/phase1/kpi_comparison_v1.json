@@ -1,0 +1,51 @@
+{
+  "start": {
+    "recordCount": 146,
+    "uniqueCategoryOriginalCount": 98,
+    "prefectureUnknown": 50,
+    "listingAreaUnknown": 41,
+    "confirmedCount": 31,
+    "probableCount": 39,
+    "unverifiedCount": 76,
+    "prefecturesWithDivisionCandidates": 15,
+    "prefecturesWithConfirmed": 7,
+    "searchedNoEvidencePrefectures": 32,
+    "confirmedListingAreaCount": 27,
+    "weakDivisionSourceCount": 68,
+    "formalElectionConnections": 0
+  },
+  "end": {
+    "recordCount": 147,
+    "uniqueCategoryOriginalCount": 99,
+    "prefectureUnknown": 38,
+    "listingAreaUnknown": 37,
+    "confirmedCount": 31,
+    "probableCount": 42,
+    "unverifiedCount": 74,
+    "prefecturesWithDivisionCandidates": 21,
+    "prefecturesWithConfirmed": 7,
+    "searchedNoEvidencePrefectures": 26,
+    "confirmedListingAreaCount": 34,
+    "weakDivisionSourceCount": 69,
+    "formalElectionConnections": 0
+  },
+  "delta": {
+    "recordCount": 1,
+    "uniqueCategoryOriginalCount": 1,
+    "prefectureUnknown": -12,
+    "listingAreaUnknown": -4,
+    "confirmedCount": 0,
+    "probableCount": 3,
+    "unverifiedCount": -2,
+    "prefecturesWithDivisionCandidates": 6,
+    "prefecturesWithConfirmed": 0,
+    "searchedNoEvidencePrefectures": -6,
+    "confirmedListingAreaCount": 7,
+    "weakDivisionSourceCount": 1,
+    "formalElectionConnections": 0
+  },
+  "existingRecordsChanged": 14,
+  "probableToConfirmed": 0,
+  "categoryUpgradedToPrimary": 0,
+  "mapStatusDefinitionChanged": "0部門県は全てsearched_no_evidence。旧Phase1.5の参加告知のみ県を含む30県という集計と別定義。"
+}

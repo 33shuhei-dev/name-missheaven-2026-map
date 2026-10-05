@@ -1,0 +1,3 @@
+# ミスヘブン2026 非公式サイトv1 初期データ
+
+Phase1最終版。まずimplementation_handoff.md、phase1_final_report.mdを参照。JSONのrecords/prefecturesから投入する。候補状態と不明を表示し、正式全国選挙構造と誤認させない。original_phase15には基準ZIPと全元成果物を保存。

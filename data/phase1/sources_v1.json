@@ -1,0 +1,2344 @@
+{
+  "sources": [
+    {
+      "id": "src-4ac256dd68fff11f",
+      "sourceUrl": "https://amagasaki-blenda.com/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-1eb5a9fd35b77a35"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-b456da5ee776c351",
+      "sourceUrl": "https://blenda.info/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-95a763989e3121d7",
+        "mh26-div-9b75dcc83a6cea48",
+        "mh26-div-ce344d4a5fb867f0",
+        "mh26-div-ed84187d424a7f22",
+        "mh26-div-f2a7bcb0d7da85cd"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-580c34fdb5babb7f",
+      "sourceUrl": "https://bsky.app/profile/chanel-111111.bsky.social",
+      "sourceTypes": [
+        "entrant_social"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-fd287b4cb55404b4"
+      ],
+      "accessStatuses": [
+        "direct_social_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-21cafbe9b24dcd5a",
+      "sourceUrl": "https://casanova-yoshiwara.com/access/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-6d05ccf1dcd89b19"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-e2363aecd4c5e69f",
+      "sourceUrl": "https://deli-fuzoku.jp/aromaolive2/girl/170/girlsdiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-8a9080bd832f99b3"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-95019dc9f809bff3",
+      "sourceUrl": "https://doublecrosswebzine.twstalker.com/hikari_hando",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation",
+        "reported_2026_category"
+      ],
+      "recordIds": [
+        "mh26-final-906bcaf2e299f6cb"
+      ],
+      "accessStatuses": [
+        "baseline_evidence_not_retrieved_in_final",
+        "mirror_indexed"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-fcac94c9eb2d8070",
+      "sourceUrl": "https://e1ns.jp/column/archives/32219",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "2026_application_category",
+        "2026_application_category_store_prefecture",
+        "application_prefecture",
+        "application_store",
+        "category_or_observation",
+        "pending_official_nomination_caveat"
+      ],
+      "recordIds": [
+        "mh26-div-03546c19df3e0096",
+        "mh26-div-0794e06537e6af09",
+        "mh26-div-12246243897660b4",
+        "mh26-div-1979881c52a80301",
+        "mh26-div-1eb5a9fd35b77a35",
+        "mh26-div-1ed6c0f2b0b1dfeb",
+        "mh26-div-25fc7e25717036fe",
+        "mh26-div-2b360c623e36d246",
+        "mh26-div-2f909db55c7b9bc8",
+        "mh26-div-354d67952472ed48",
+        "mh26-div-45063a35c320edaa",
+        "mh26-div-49dcfd5aa8d8cd38",
+        "mh26-div-4b48f50c0b17b6ce",
+        "mh26-div-50a1a738d4fc92e2",
+        "mh26-div-541bd0ebc9f9e07c",
+        "mh26-div-56ef99fe8d5b0ed4",
+        "mh26-div-5e2d2cfb09d55b58",
+        "mh26-div-67a41a60264935ba",
+        "mh26-div-67d8fda29188fb2f",
+        "mh26-div-69efaa1046930512",
+        "mh26-div-78419e076f7722ce",
+        "mh26-div-7a48ef64c9409313",
+        "mh26-div-7bbd4d52d753fabc",
+        "mh26-div-7d085a96d46095c5",
+        "mh26-div-89939efdfb0ac1d3",
+        "mh26-div-8f6e245cf9e11cc4",
+        "mh26-div-95a763989e3121d7",
+        "mh26-div-9b75dcc83a6cea48",
+        "mh26-div-a1f7f7129a0db05d",
+        "mh26-div-b625df7f05fc4ccf",
+        "mh26-div-c433c9f703e369d3",
+        "mh26-div-ce344d4a5fb867f0",
+        "mh26-div-def26aef1806b563",
+        "mh26-div-ed6bcc64f335086b",
+        "mh26-div-ed84187d424a7f22",
+        "mh26-div-f271a8bf16277f59",
+        "mh26-div-f2a7bcb0d7da85cd",
+        "mh26-div-fb3a0ef16ea1eb51",
+        "mh26-div-fbcca0326f61e7fb",
+        "mh26-div-fbfd6e8c0456f32d"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened",
+        "body_checked"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-c24da8163a40b2dd",
+      "sourceUrl": "https://e1ns.jp/shops",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-12246243897660b4",
+        "mh26-div-50a1a738d4fc92e2",
+        "mh26-div-541bd0ebc9f9e07c",
+        "mh26-div-69efaa1046930512",
+        "mh26-div-a1f7f7129a0db05d"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-a013a72a81b69ad0",
+      "sourceUrl": "https://e1ns.jp/shops/detail/40",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-c433c9f703e369d3"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5fae14241720563c",
+      "sourceUrl": "https://e1ns.jp/shops?page=2",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-1979881c52a80301",
+        "mh26-div-5e2d2cfb09d55b58"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-e0c35b0604f8e871",
+      "sourceUrl": "https://fu-web.jp/kumamoto/cast/diary/castCode/531154/diaryCode/12346744/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "2026_category",
+        "category_or_observation",
+        "publication_area",
+        "store_name"
+      ],
+      "recordIds": [
+        "mh26-div-5ea00c832b22ede8"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-43eef277c7aa93cd",
+      "sourceUrl": "https://fu-web.jp/tochigi/cast/diary/castCode/454606/diaryCode/12387508/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-2fe65d02e3a2ccf1",
+        "mh26-div-4be61355211ecbae",
+        "mh26-div-6ab1936cf7830360",
+        "mh26-div-72ad0fd6bab615db",
+        "mh26-div-a29230fb3494138b",
+        "mh26-div-b56ea00a009792f0",
+        "mh26-div-d0ce560bfdb5afc2",
+        "mh26-div-d6136718d6c63d3f",
+        "mh26-div-eb2cc93b322e53fc"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-3f2513858527312d",
+      "sourceUrl": "https://fu-web.jp/tochigi/merchant/get/merchantCode/500/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2fe65d02e3a2ccf1",
+        "mh26-div-4be61355211ecbae",
+        "mh26-div-6ab1936cf7830360",
+        "mh26-div-72ad0fd6bab615db",
+        "mh26-div-a29230fb3494138b",
+        "mh26-div-b56ea00a009792f0",
+        "mh26-div-d0ce560bfdb5afc2",
+        "mh26-div-d6136718d6c63d3f",
+        "mh26-div-eb2cc93b322e53fc"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-71481039741b0dad",
+      "sourceUrl": "https://fu-web.jp/tokushima/cast/diary/castCode/218670/diaryCode/12397971/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-160875d42107649d",
+        "mh26-div-363e5775b95318a9",
+        "mh26-div-5cd271cbeeae1efb",
+        "mh26-div-6455b716171b40af",
+        "mh26-div-819fc9e46c81348f",
+        "mh26-div-982ff9c29cdee45f",
+        "mh26-div-b8b44024e54bfa9d",
+        "mh26-div-c75d743104c4d976",
+        "mh26-div-e7417da8dc607180"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4ed85b88f1e3e74f",
+      "sourceUrl": "https://fu-web.jp/tokushima/cast/diary/castCode/218670/y/2026/MM/09/dd/16/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "2026_category_only",
+        "store_abbreviation_only"
+      ],
+      "recordIds": [
+        "mh26-div-5cd271cbeeae1efb",
+        "mh26-div-b8b44024e54bfa9d",
+        "mh26-div-c75d743104c4d976"
+      ],
+      "accessStatuses": [
+        "body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-770dac32506dbc09",
+      "sourceUrl": "https://fujoho.jp/index.php?id=39723&p=recruit",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-40e2fbbe1e41bf03"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-109acbdb729126ff",
+      "sourceUrl": "https://fukuharaso-pu.com/kobegold/juri/photodiary/date202608/page2/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-e7836c26bee1ae62"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-948a46c209e8e9af",
+      "sourceUrl": "https://fukuharaso-pu.com/kobegold/map/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-78371af6d5b711a0",
+        "mh26-div-e7836c26bee1ae62"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9e4c5bd658845f73",
+      "sourceUrl": "https://fukuharaso-pu.com/koberb/map/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-7706b2c0a7e130b8",
+        "mh26-div-fa8bbc1ed5caeafe"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-e1689e60fc238ec2",
+      "sourceUrl": "https://fukuharaso-pu.com/koberb/rika/photodiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-7706b2c0a7e130b8",
+        "mh26-div-fa8bbc1ed5caeafe"
+      ],
+      "accessStatuses": [
+        "primary_body_checked",
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-96176cfce477f2fd",
+      "sourceUrl": "https://fukuharaso-pu.com/thewhite/map/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-08b21bfdcb99ed38"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-86f8d634747f559a",
+      "sourceUrl": "https://fukuharaso-pu.com/thewhite/ribon/photodiary/date202608/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-08b21bfdcb99ed38"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-ec99405dfce81d8f",
+      "sourceUrl": "https://fuzoku.jp/otomeyuuenchi/girl/84/girlsdiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-0441c53cef5eb717"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-7d0fc3c3b0ded52e",
+      "sourceUrl": "https://fuzoku.jp/shizuokaonenight/girl/194/girlsdiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-2682794769b827b7",
+        "mh26-div-2acf9d57efc00dde",
+        "mh26-div-9995e9dd481b6455",
+        "mh26-div-a4db037e75fdc382",
+        "mh26-div-aaad47e6e95f49bb",
+        "mh26-div-e416ab697d8a9df8",
+        "mh26-div-ed9be7ffb81e63ec"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-d361dd9d458d722c",
+      "sourceUrl": "https://girls-spot.net/shop/hiroshima-palette/girl/26220/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2cda3a84cfd14474"
+      ],
+      "accessStatuses": [
+        "primary_body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4809ddd0c46d87bd",
+      "sourceUrl": "https://hokkaido-tohoku.qzin.jp/batsugun/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-rd-743e114c883968b7"
+      ],
+      "accessStatuses": [
+        "indexed_primary_not_body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-a7e408de283c78ef",
+      "sourceUrl": "https://hokusetsu-blenda.jp/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-4b48f50c0b17b6ce"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-dfdd32c2d3d30a11",
+      "sourceUrl": "https://kampaku.info/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "group_domain_relationship",
+        "region",
+        "store_city",
+        "store_prefecture",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-03546c19df3e0096",
+        "mh26-div-0794e06537e6af09",
+        "mh26-div-12246243897660b4",
+        "mh26-div-1979881c52a80301",
+        "mh26-div-1eb5a9fd35b77a35",
+        "mh26-div-1ed6c0f2b0b1dfeb",
+        "mh26-div-25fc7e25717036fe",
+        "mh26-div-2b360c623e36d246",
+        "mh26-div-2f909db55c7b9bc8",
+        "mh26-div-354d67952472ed48",
+        "mh26-div-45063a35c320edaa",
+        "mh26-div-49dcfd5aa8d8cd38",
+        "mh26-div-4b48f50c0b17b6ce",
+        "mh26-div-50a1a738d4fc92e2",
+        "mh26-div-541bd0ebc9f9e07c",
+        "mh26-div-56ef99fe8d5b0ed4",
+        "mh26-div-5e2d2cfb09d55b58",
+        "mh26-div-67a41a60264935ba",
+        "mh26-div-67d8fda29188fb2f",
+        "mh26-div-69efaa1046930512",
+        "mh26-div-78419e076f7722ce",
+        "mh26-div-7a48ef64c9409313",
+        "mh26-div-7bbd4d52d753fabc",
+        "mh26-div-7d085a96d46095c5",
+        "mh26-div-89939efdfb0ac1d3",
+        "mh26-div-8d3679cc73ba1acc",
+        "mh26-div-8f6e245cf9e11cc4",
+        "mh26-div-95a763989e3121d7",
+        "mh26-div-9b75dcc83a6cea48",
+        "mh26-div-a1f7f7129a0db05d",
+        "mh26-div-b625df7f05fc4ccf",
+        "mh26-div-c433c9f703e369d3",
+        "mh26-div-ce344d4a5fb867f0",
+        "mh26-div-def26aef1806b563",
+        "mh26-div-ed6bcc64f335086b",
+        "mh26-div-ed84187d424a7f22",
+        "mh26-div-f271a8bf16277f59",
+        "mh26-div-f2a7bcb0d7da85cd",
+        "mh26-div-fb3a0ef16ea1eb51",
+        "mh26-div-fbcca0326f61e7fb",
+        "mh26-div-fbfd6e8c0456f32d"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4ee8dd3f4d82291b",
+      "sourceUrl": "https://kansai.qzin.jp/seiekiumeda/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-0794e06537e6af09",
+        "mh26-div-25fc7e25717036fe"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9234e79a6a0cd78f",
+      "sourceUrl": "https://kanto.qzin.jp/tashinamiomiya/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-184a52d81e387948",
+        "mh26-div-5ae9d67685ec2c69",
+        "mh26-div-b7f178473f3280fb",
+        "mh26-div-d14d33fbb6a7c77f",
+        "mh26-div-d24509972ac60767"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-149baf8a0d2b04b5",
+      "sourceUrl": "https://karentakasaki.gunma.fun/top/system/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_prefecture",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-bd7ad21b95b3ba88"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-968f83e5855eaaa1",
+      "sourceUrl": "https://kawasaki-essence.com/map.html",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_city",
+        "store_prefecture",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-01e5721460418716"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-49f886e22573fea9",
+      "sourceUrl": "https://kirakira-girls.com/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-67a41a60264935ba"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5c37c7f4968b8593",
+      "sourceUrl": "https://kita-blenda.info/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-1ed6c0f2b0b1dfeb",
+        "mh26-div-49dcfd5aa8d8cd38",
+        "mh26-div-78419e076f7722ce",
+        "mh26-div-7bbd4d52d753fabc",
+        "mh26-div-fb3a0ef16ea1eb51"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-470d494f6fc4d9d8",
+      "sourceUrl": "https://kitakanto.qzin.jp/handatakasaki/interview/13128/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "reported_store_prefecture"
+      ],
+      "recordIds": [
+        "mh26-final-906bcaf2e299f6cb"
+      ],
+      "accessStatuses": [
+        "indexed_body_403",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-ddfc13c84f0c3762",
+      "sourceUrl": "https://kofu-barubora.net/access.php",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-7d8840b49ede33ce"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-bde276e1e6ec3303",
+      "sourceUrl": "https://link-f.biz/archives/25134",
+      "sourceTypes": [
+        "official"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-d0ee189ba7e41c8b"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-0fd456eea794feeb",
+      "sourceUrl": "https://luxe-yoshiwara.jp/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_city",
+        "store_prefecture",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-3b3156bf7763cf8e"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4ff660c41babb462",
+      "sourceUrl": "https://map.yahoo.co.jp/v3/place/Yvtp6tuCljE",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2e47165e37a6a0c7",
+        "mh26-rd-08214cf8df8ec9e1"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-0e5410679819a68c",
+      "sourceUrl": "https://mens-qzin.jp/miyazaki/area_45001/detail/miyaolim/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-8a9080bd832f99b3"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-23e94cca5ef58fd6",
+      "sourceUrl": "https://mensheaven.jp/6/one_night",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2682794769b827b7",
+        "mh26-div-2acf9d57efc00dde",
+        "mh26-div-9995e9dd481b6455",
+        "mh26-div-a4db037e75fdc382",
+        "mh26-div-aaad47e6e95f49bb",
+        "mh26-div-e416ab697d8a9df8",
+        "mh26-div-ed9be7ffb81e63ec"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-2daf5a4afaa6769d",
+      "sourceUrl": "https://mobile.twstalker.com/kikkomantaro_04",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-ae8ff010d86062d8"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-01b0e78c7ef9bcbb",
+      "sourceUrl": "https://mobile.twstalker.com/mitogen252519",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-3ebc10776946ee4c"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-58c41f49d9777281",
+      "sourceUrl": "https://n-kampaku.com/access",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-354d67952472ed48",
+        "mh26-div-7d085a96d46095c5",
+        "mh26-div-89939efdfb0ac1d3",
+        "mh26-div-8f6e245cf9e11cc4",
+        "mh26-div-fbcca0326f61e7fb"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-d1f142d02e079978",
+      "sourceUrl": "https://new.s-hanshin.com/faq/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-b8992e5ebedc2dec"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-a7b341f45d7fa59c",
+      "sourceUrl": "https://ngntipkolamrenang.twstalker.com/clubpiaa_kuma",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-493a1f08bf7b98c3"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-88b5437495f527ee",
+      "sourceUrl": "https://nk-bbw.net/news.php?id=743",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-27e21d370d3a26af",
+        "mh26-div-9d37c83ddfab6616"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-1fc7a1e5f5737b99",
+      "sourceUrl": "https://nobra-okusan.com/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-56ef99fe8d5b0ed4",
+        "mh26-div-67d8fda29188fb2f",
+        "mh26-div-7a48ef64c9409313",
+        "mh26-div-b625df7f05fc4ccf",
+        "mh26-div-f271a8bf16277f59"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-dbe6e4389e082ca0",
+      "sourceUrl": "https://orenoonnawa.com/event_list.php",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-cdadac9161cddec6",
+        "mh26-rd-fa42ca1c39d35cb6"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-1eed3d04b400b585",
+      "sourceUrl": "https://premium-hyogo.com/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_city",
+        "store_prefecture",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-e6bc83b2a610e447",
+        "mh26-div-ec26ca9589ae0d45"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-fc4d865ae19c6600",
+      "sourceUrl": "https://premium2013.jp/blog_post?cc=6202",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-76b5db7112f7ac1b"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-614b771545e8c52c",
+      "sourceUrl": "https://princess-nihonbashi.com/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-2f909db55c7b9bc8"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-3bc929beb053f1ca",
+      "sourceUrl": "https://q-pri.com/shop_detail/3531",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-27e21d370d3a26af",
+        "mh26-div-9d37c83ddfab6616"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-0e4ae8a6f17b5f75",
+      "sourceUrl": "https://q-pri.com/shop_detail/6077",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_city",
+        "store_listing_area",
+        "store_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-3ebc10776946ee4c"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-60c3af022431d0c5",
+      "sourceUrl": "https://ranking-deli.jp/gifu/area201/style5/12572/3147416/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-81aa7d3c63abaec2"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9aecf82e264ead4a",
+      "sourceUrl": "https://ranking-deli.jp/hokkaido/area1/style2/9153/5163100/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-rd-743e114c883968b7"
+      ],
+      "accessStatuses": [
+        "baseline_evidence_not_retrieved_in_final"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-32d8bddb7cebd50d",
+      "sourceUrl": "https://ranking-deli.jp/hokkaido/area1/style5/12197/2875266/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-rd-08214cf8df8ec9e1"
+      ],
+      "accessStatuses": [
+        "baseline_evidence_not_retrieved_in_final"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5ea31b7f07b2ceb0",
+      "sourceUrl": "https://ranking-deli.jp/hokkaido/area1/style5/12197/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-2e47165e37a6a0c7"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-07c9a8ce1541eece",
+      "sourceUrl": "https://ranking-deli.jp/hyogo/area133/style5/11208/5250266/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-b8992e5ebedc2dec"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-337ba54ebda6c1c5",
+      "sourceUrl": "https://ranking-deli.jp/hyogo/area207/style5/41016/5397338/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-ec26ca9589ae0d45"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-020cb1c3eadecbd0",
+      "sourceUrl": "https://ranking-deli.jp/hyogo/area207/style5/41016/5447836/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-e6bc83b2a610e447"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-0d47f8bc0575ba40",
+      "sourceUrl": "https://ranking-deli.jp/hyogo/area207/style5/48055/5224069/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-78371af6d5b711a0"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9c6479e5e5ed22fc",
+      "sourceUrl": "https://ranking-deli.jp/ibaraki/area77/style5/15198/5397883/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-40e2fbbe1e41bf03"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-319b4b3e51be1d81",
+      "sourceUrl": "https://ranking-deli.jp/ibaraki/area79/style5/29315/5584287/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-d728e33376257ad4"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-2c6aeb67276e1f5f",
+      "sourceUrl": "https://ranking-deli.jp/kanagawa/area42/style5/34636/5028255/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-01e5721460418716"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-6a09b15e761e22bd",
+      "sourceUrl": "https://ranking-deli.jp/kanagawa/area42/style5/48171/5198220/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-9a59f9cb7974ce7e"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-a04a5a102fd0f4bb",
+      "sourceUrl": "https://ranking-deli.jp/osaka/area124/style1/14445/5351407/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-18191f9b81a4f337"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-bba8bb333179ebc4",
+      "sourceUrl": "https://ranking-deli.jp/osaka/area126/style1/17301/5510554/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-8d3679cc73ba1acc"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-62582891b6b3b6f8",
+      "sourceUrl": "https://ranking-deli.jp/shiga/area142/style5/11846/3170188/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-rd-fa42ca1c39d35cb6"
+      ],
+      "accessStatuses": [
+        "baseline_evidence_not_retrieved_in_final"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-8c71519d35b883a1",
+      "sourceUrl": "https://ranking-deli.jp/shiga/area142/style5/11846/4475186/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-cdadac9161cddec6"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-7d1deb59600d1d14",
+      "sourceUrl": "https://ranking-deli.jp/tokyo/area199/style5/23348/5432015/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-3b3156bf7763cf8e"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-7839bf0ba94aac00",
+      "sourceUrl": "https://ranking-deli.jp/tokyo/area199/style5/40856/3820643/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-6d05ccf1dcd89b19"
+      ],
+      "accessStatuses": [
+        "primary_search_only"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4a7e01ca6bce9cf9",
+      "sourceUrl": "https://ranking-deli.jp/tokyo/area28/style3/14224/2696730/maildiary/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-rd-0edc437ab6f643e6"
+      ],
+      "accessStatuses": [
+        "baseline_evidence_not_retrieved_in_final"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-ab44419c63cc53c0",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search/%E3%81%A1%E3%81%AF%E3%82%84/?ei=UTF-8&ifr=tl_unit&md=h&p=%E3%81%A1%E3%81%AF%E3%82%84%E3%81%B5%E3%82%8B+%E5%A4%AA%E4%B8%80&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-5a4ba697714817a7"
+      ],
+      "accessStatuses": [
+        "see_record_evidence",
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-2a2909ffd6f8c346",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search/%EF%BC%83TiAmo/?ei=UTF-8&mtype=image&p=%EF%BC%83TiAmo&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-8f1fb7d3113b9ca7",
+        "mh26-div-a4274980f7dcf510"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-8cc6ad09839dce4e",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?btid=MjA4NDk2NDMzOTc3MDA4NTY2NQ%3D%3D&ifr=tp_bz&p=%E7%A7%8B%E7%94%B0%E7%BE%8E%E4%BA%BA&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-51187cb13a6d2da5"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-c492cf9cc1218e64",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?btid=MjAzODg0OTc0OTMxMTUwODkzMg%3D%3D&ifr=tp_bz&p=%E3%82%A2%E3%82%A4%E3%83%89%E3%83%AB%E9%83%A8%E9%96%80&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-17996a03b05e4eb9"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-256093302979f441",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&fr=srch_prm&p=%EF%BC%83%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3&save=5&sv=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-58d36f3ad9b46a2c"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-fa57b92ea2241676",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&ifr=tl_unit&p=%23%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%99&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-bd7ad21b95b3ba88"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-6969e32fc6370c6b",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&md=t&p=%EF%BC%83%E9%AB%98%E7%B4%9A%E3%82%BD%E3%83%BC%E3%83%97&save=5&sv=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-bb65972ad4f3f023"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-f0a64b46b2f73daa",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&mtype=image&p=%23%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%992026&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-c0fc075a49b6b0c4"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5c41ab8fcede0774",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&mtype=image&p=%E3%83%98%E3%83%96%E3%83%B3+%E3%81%8B%E3%82%8F%E3%81%84%E3%81%84&rkf=1",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-12fce405fcba15a2",
+        "mh26-div-2061e1e60af5b3ca",
+        "mh26-div-4d3fe20e86f6dcb2",
+        "mh26-div-80b2579105b44ef6"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9887ab4e423a293e",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&p=%23%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%99&save=5",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-d0b4c3aba3ad8796"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-81d707e7c8f17f91",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?ei=UTF-8&p=%EF%BC%83%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3&save=5",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-4a1490aebf6f1be1"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-a17e4dd9acb032c3",
+      "sourceUrl": "https://search.yahoo.co.jp/realtime/search?p=%23%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%E7%B7%8F%E9%81%B8%E6%8C%99",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2eaf796435b77077",
+        "mh26-div-cbc7da1ad10cfba8"
+      ],
+      "accessStatuses": [
+        "see_record_evidence",
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-413f40635466b8e2",
+      "sourceUrl": "https://security.twstalker.com/asahi_eil",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-a7279b5ff130464d"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-2b30f99a0abce575",
+      "sourceUrl": "https://star-gakuen.com/top.php",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-819fc9e46c81348f",
+        "mh26-div-982ff9c29cdee45f",
+        "mh26-div-e7417da8dc607180"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-25f26400d5c6e796",
+      "sourceUrl": "https://tashinami-omiya.com/newslist/news/?nId=3313",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-184a52d81e387948",
+        "mh26-div-5ae9d67685ec2c69",
+        "mh26-div-b7f178473f3280fb",
+        "mh26-div-d14d33fbb6a7c77f",
+        "mh26-div-d24509972ac60767"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-93f8b9dc381cb84a",
+      "sourceUrl": "https://tiamo-myf.com/access/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "store_address_crosscheck"
+      ],
+      "recordIds": [
+        "mh26-div-3ebc10776946ee4c"
+      ],
+      "accessStatuses": [
+        "body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-ed9d28c72d2bbb06",
+      "sourceUrl": "https://tiamo-myf.com/cast/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "entrant_store_affiliation"
+      ],
+      "recordIds": [
+        "mh26-div-3ebc10776946ee4c"
+      ],
+      "accessStatuses": [
+        "body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-d7bb5deba12a2a29",
+      "sourceUrl": "https://tokyo-blenda.info/home",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_publication_area"
+      ],
+      "recordIds": [
+        "mh26-div-03546c19df3e0096",
+        "mh26-div-2b360c623e36d246",
+        "mh26-div-45063a35c320edaa",
+        "mh26-div-ed6bcc64f335086b",
+        "mh26-div-fbfd6e8c0456f32d"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-cd75b92207728068",
+      "sourceUrl": "https://twstalker.com/hiropyon_0405",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-a1489b9e92f5de98",
+        "mh26-div-b06e21ae9a3f66f4",
+        "mh26-div-d230d8268cfe4364",
+        "mh26-div-fef33cd1935eda5d"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened",
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-6b5341b15a90acd1",
+      "sourceUrl": "https://undernavi.work/shikoku/tokushima/tokushima/15198/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-160875d42107649d",
+        "mh26-div-363e5775b95318a9",
+        "mh26-div-6455b716171b40af"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-9bf7f161693cc4cd",
+      "sourceUrl": "https://urlebird.com/hash/%E5%A4%9C%E8%81%B7/",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-5b919db3cdcb0a67"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5cfcb2956a0b3f09",
+      "sourceUrl": "https://we.twstalker.com/_cure_emacha_",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-8d8bb1fe1863aa5d"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-211fdcdb74aec9e4",
+      "sourceUrl": "https://wew.twstalker.com/sp_aienka",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-8e46d1cb01e1455a"
+      ],
+      "accessStatuses": [
+        "see_record_evidence",
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-3bb407f9306a8452",
+      "sourceUrl": "https://ww.twstalker.com/himideo753",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-2a36981df81f7aa0"
+      ],
+      "accessStatuses": [
+        "see_record_evidence",
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-537b3b784e8848cf",
+      "sourceUrl": "https://ww.twstalker.com/utadayo_00",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-7eb716e6c271f000"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5ec7ad01bf4e8f20",
+      "sourceUrl": "https://www.bijinlab.net/top/event",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "category_or_observation",
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-34ef0eff229094c0",
+        "mh26-div-45fe21b995107f39",
+        "mh26-div-7991445ae09b6df6",
+        "mh26-div-9bc5c416ec621671",
+        "mh26-div-9f08eda688ab63ff"
+      ],
+      "accessStatuses": [
+        "primary_body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-4d4b9c4e1f401463",
+      "sourceUrl": "https://www.cityheaven.net/kanagawa/A1403/A140301/akatombo-k/girlid-53272942/?pcmode=sp",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region"
+      ],
+      "recordIds": [
+        "mh26-div-a08fd78dcd831d0f"
+      ],
+      "accessStatuses": [
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-1ae03765dc81afad",
+      "sourceUrl": "https://www.eddies.co.jp/top/index.html",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-81aa7d3c63abaec2"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-3bc801e884737a47",
+      "sourceUrl": "https://www.fuzoku-job109.com/kansai/shop/809",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-18191f9b81a4f337"
+      ],
+      "accessStatuses": [
+        "indexed_primary_not_body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-820fb3c30864f35c",
+      "sourceUrl": "https://www.girlsheaven-job.net/okayama/ma-183/sa-417/ecstasy_kurashiki/",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-7eb716e6c271f000"
+      ],
+      "accessStatuses": [
+        "indexed_primary_not_body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-f9d180432663554e",
+      "sourceUrl": "https://www.kofu-angel.net/fuuzoku/shop/area/6201/staff/205971/12631882/",
+      "sourceTypes": [
+        "entrant_diary"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-7d8840b49ede33ce"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-b142e059a3f5c419",
+      "sourceUrl": "https://www.oremichi.com/kantou/shop/314.html",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-d728e33376257ad4"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-f8657bf1011aa9ca",
+      "sourceUrl": "https://www.oremichi.com/kantou/shop/862.html",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-9a59f9cb7974ce7e"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-b883b1ba4eb01778",
+      "sourceUrl": "https://www.oremichi.com/kyusyuokinawa/shop/1691.html",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "publication_area",
+        "region",
+        "store_or_publication_prefecture"
+      ],
+      "recordIds": [
+        "mh26-div-5ea00c832b22ede8"
+      ],
+      "accessStatuses": [
+        "body_checked",
+        "see_record_evidence"
+      ],
+      "recheckedInFinal": true,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5f1bf5d8f64ac31d",
+      "sourceUrl": "https://www.sotwe.com/Snow_board_74",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-de3eae34144f5c14"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-680ceed3e0878b30",
+      "sourceUrl": "https://www.sotwe.com/himechan146love",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-95be97955e169846"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-91290a8d8f16132b",
+      "sourceUrl": "https://www.sotwe.com/hiropyon_0405",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-81fd871d4c796ea0",
+        "mh26-div-efc0e4e447e8f9c3"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-48a71c9db920e5cf",
+      "sourceUrl": "https://www.sotwe.com/ri_ri_risapo",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-b694dc91c81fbbae"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-d72502e749b127ef",
+      "sourceUrl": "https://www.sotwe.com/rin_kbb?lang=en",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-373b1506e5313672"
+      ],
+      "accessStatuses": [
+        "third_party_or_mirror"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-5cfa8a3610ac0f0c",
+      "sourceUrl": "https://young-akatombo.com/event.php",
+      "sourceTypes": [
+        "store"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-a08fd78dcd831d0f"
+      ],
+      "accessStatuses": [
+        "primary_body_checked"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    },
+    {
+      "id": "src-b7bd244bbce38ce4",
+      "sourceUrl": "https://zen5d8e08.twstalker.com/ririka__gohan",
+      "sourceTypes": [
+        "other"
+      ],
+      "roles": [
+        "category_or_observation"
+      ],
+      "recordIds": [
+        "mh26-div-70a562360af756d7"
+      ],
+      "accessStatuses": [
+        "baseline_not_reopened"
+      ],
+      "recheckedInFinal": false,
+      "independenceNote": "同一投稿の転載は独立根拠に数えない。URL数は根拠数ではない。"
+    }
+  ],
+  "sourceCount": 114,
+  "sourceTypeDefinition": "official=運営／選挙公式、store=店舗自身の告知・募集（掲載媒体が第三者でも自己掲載）、entrant_diary=本人日記、entrant_social=本人SNS、other=転載／第三者／検索入口"
+}
