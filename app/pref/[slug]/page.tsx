@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { campaignStoresIn, phase3b, phase3bCoverageOf, site } from "@/lib/data";
 import { entrantHref, findPrefectureView } from "@/lib/model";
-import { MAP_STATUS_DESCRIPTION } from "@/lib/labels";
+import { MAP_STATUS_DESCRIPTION, STORE_CONFIDENCE_LABEL } from "@/lib/labels";
 import { PREFECTURES, REGIONS, UNKNOWN_PREFECTURE_SLUG, prefecturesInRegion } from "@/data/geo";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { SearchBox } from "@/components/SearchBox";
@@ -118,13 +118,14 @@ export default async function PrefecturePage({ params }: Params) {
             </div>
           </dl>
           <p className="hint">
-            店舗（候補を含む）の確認状態：確認済み {pref.storeSummary.byConfidence.confirmed}・有力情報 {pref.storeSummary.byConfidence.probable}・未確認情報{" "}
+            店舗の参加情報：{STORE_CONFIDENCE_LABEL.confirmed} {pref.storeSummary.byConfidence.confirmed}・
+            {STORE_CONFIDENCE_LABEL.probable} {pref.storeSummary.byConfidence.probable}・{STORE_CONFIDENCE_LABEL.unverified}{" "}
             {pref.storeSummary.byConfidence.unverified}。部門は部門名（原文）の種類数、出場者はこれまでの調査で記録した店舗名×人物名の数です。
             {s.lastCheckedAt && ` 最終確認日：${s.lastCheckedAt}`}
           </p>
           {pref.status === "candidate" && !isUnknown && (
-            <p className="notice notice--warn">
-              この県の情報は<strong>候補（有力情報・未確認情報）のみ</strong>です。確認済みの情報はまだありません。
+            <p className="notice">
+              この県の情報は、検索結果・店舗の告知などで確認した<strong>参加情報</strong>です。本文での直接確認（参加確認済み）はまだありません。
             </p>
           )}
 
@@ -163,7 +164,7 @@ export default async function PrefecturePage({ params }: Params) {
           {pref.stores.length > 0 && (
             <section className="section" aria-labelledby="stores-heading">
               <h2 id="stores-heading">
-                店舗<span className="count">見つかった範囲 {pref.stores.length}店（候補を含む）</span>
+                店舗<span className="count">見つかった範囲 {pref.stores.length}店</span>
               </h2>
               <p className="hint">公開情報から2026年の参加に関係する根拠を見つけた店舗です。全参加店舗の一覧ではありません。</p>
               <div className="list">

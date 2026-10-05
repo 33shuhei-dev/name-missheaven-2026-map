@@ -333,19 +333,6 @@
    "notes": "店舗ページ（ヘブン掲載）の検索結果抜粋で2026年の参加の記載を確認。本文は調査環境から取得不可。"
   },
   {
-   "sourceId": "p3b-src-711dbf6ca89a13af",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/A2301/A230104/aitokkyu2006/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-2f65f848615a0828"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
    "sourceId": "p3b-src-72362b891e8d3130",
    "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/A2301/A230104/aitokkyu2006-annex/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
    "sourceType": "other",
@@ -589,32 +576,6 @@
    "publisherRole": "store_announcement",
    "storeIds": [
     "mh26-p3b-store-0d3cb5989efa782b"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗ページ（ヘブン掲載）の検索結果抜粋で2026年の参加の記載を確認。本文は調査環境から取得不可。"
-  },
-  {
-   "sourceId": "p3b-src-8417a6a514db7215",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/chiba/A1202/A120201/h-rin/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-b3dd52c9addd65e2"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-49c4822883f4f5a9",
-   "url": "https://www.cityheaven.net/chiba/A1202/A120201/h-rin/",
-   "sourceType": "store",
-   "accessStatus": "search_index_only",
-   "publisherRole": "store_announcement",
-   "storeIds": [
-    "mh26-p3b-store-b3dd52c9addd65e2"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-05",
@@ -1516,19 +1477,6 @@
    "publisherRole": "search_engine_result",
    "storeIds": [
     "mh26-p3b-store-404fcd1129c2c1e1"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-6e45c29d222d9a3c",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/A2101/A210102/okusama-t/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-bfa5d8ed24617102"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-05",
@@ -2768,32 +2716,6 @@
    "publisherRole": "store_announcement",
    "storeIds": [
     "mh26-p3b-store-c8d67ca5a7c552e1"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗ページ（ヘブン掲載）の検索結果抜粋で2026年の参加の記載を確認。本文は調査環境から取得不可。"
-  },
-  {
-   "sourceId": "p3b-src-f92adbfadc6f27a5",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/kagawa/A3701/A370101/love-chance/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-f1084e23c721a669"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-1bcddaac8b7dfe44",
-   "url": "https://www.cityheaven.net/kagawa/A3701/A370101/love-chance/",
-   "sourceType": "store",
-   "accessStatus": "search_index_only",
-   "publisherRole": "store_announcement",
-   "storeIds": [
-    "mh26-p3b-store-f1084e23c721a669"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-05",
@@ -5625,32 +5547,6 @@
    "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
   },
   {
-   "sourceId": "p3b-src-a04555926a95e508",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/A3601/A360101/beppinhouse/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-12dd0b85dcfff5df"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-6cc564cbfd9d4e6c",
-   "url": "https://www.cityheaven.net/tokushima/A3601/A360101/beppinhouse/",
-   "sourceType": "store",
-   "accessStatus": "search_index_only",
-   "publisherRole": "store_announcement",
-   "storeIds": [
-    "mh26-p3b-store-12dd0b85dcfff5df"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗ページ（ヘブン掲載）の検索結果抜粋で2026年の参加の記載を確認。本文は調査環境から取得不可。"
-  },
-  {
    "sourceId": "p3b-src-96f51ec03ed8a71d",
    "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokushima/A3601/A360101/dombunny_t/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
    "sourceType": "other",
@@ -5908,32 +5804,6 @@
    ],
    "checkedAt": "2026-10-05",
    "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-b3b061a1f59ef894",
-   "url": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/tokyo/A1305/A130505/ultraparadise/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "sourceType": "other",
-   "accessStatus": "search_index_only",
-   "publisherRole": "search_engine_result",
-   "storeIds": [
-    "mh26-p3b-store-df9300177cbda788"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗パス限定の検索。2026年の参加を示した店舗ページ 1件（人物ページを含む）。"
-  },
-  {
-   "sourceId": "p3b-src-c3606d4e727d139d",
-   "url": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/shopevent/",
-   "sourceType": "store",
-   "accessStatus": "search_index_only",
-   "publisherRole": "store_announcement",
-   "storeIds": [
-    "mh26-p3b-store-df9300177cbda788"
-   ],
-   "relationIds": [],
-   "checkedAt": "2026-10-05",
-   "notes": "店舗ページ（ヘブン掲載）の検索結果抜粋で2026年の参加の記載を確認。本文は調査環境から取得不可。"
   },
   {
    "sourceId": "p3b-src-d14f14cd32e6a295",

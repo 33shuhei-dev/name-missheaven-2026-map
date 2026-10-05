@@ -181,11 +181,11 @@
    "queryCount": 5,
    "pageCount": 19,
    "resultCount": 181,
-   "storesFound": 10,
-   "newStores": 10,
+   "storesFound": 9,
+   "newStores": 9,
    "matchedExisting": 0,
    "byConfidence": {
-    "unverified": 6,
+    "unverified": 5,
     "probable": 4
    },
    "dataStatus": "found"
@@ -197,11 +197,11 @@
    "queryCount": 5,
    "pageCount": 20,
    "resultCount": 192,
-   "storesFound": 43,
-   "newStores": 43,
+   "storesFound": 42,
+   "newStores": 42,
    "matchedExisting": 0,
    "byConfidence": {
-    "unverified": 28,
+    "unverified": 27,
     "probable": 15
    },
    "dataStatus": "found"
@@ -320,12 +320,12 @@
    "queryCount": 5,
    "pageCount": 12,
    "resultCount": 94,
-   "storesFound": 7,
-   "newStores": 7,
+   "storesFound": 6,
+   "newStores": 6,
    "matchedExisting": 0,
    "byConfidence": {
     "probable": 2,
-    "unverified": 5
+    "unverified": 4
    },
    "dataStatus": "found"
   },
@@ -352,11 +352,11 @@
    "queryCount": 5,
    "pageCount": 19,
    "resultCount": 172,
-   "storesFound": 24,
-   "newStores": 24,
+   "storesFound": 23,
+   "newStores": 23,
    "matchedExisting": 0,
    "byConfidence": {
-    "unverified": 17,
+    "unverified": 16,
     "probable": 7
    },
    "dataStatus": "found"
@@ -549,11 +549,11 @@
    "queryCount": 5,
    "pageCount": 15,
    "resultCount": 124,
-   "storesFound": 3,
-   "newStores": 3,
+   "storesFound": 2,
+   "newStores": 2,
    "matchedExisting": 0,
    "byConfidence": {
-    "unverified": 3
+    "unverified": 2
    },
    "dataStatus": "found"
   },
@@ -564,12 +564,12 @@
    "queryCount": 5,
    "pageCount": 17,
    "resultCount": 151,
-   "storesFound": 8,
-   "newStores": 8,
+   "storesFound": 7,
+   "newStores": 7,
    "matchedExisting": 0,
    "byConfidence": {
     "unverified": 4,
-    "probable": 4
+    "probable": 3
    },
    "dataStatus": "found"
   },

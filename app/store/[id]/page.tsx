@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { site } from "@/lib/data";
 import { findStore } from "@/lib/model";
 import {
-  CONFIDENCE_DESCRIPTION,
   COUNT_TYPE_LABEL,
   PARTICIPATION_TYPE_LABEL,
   PUBLIC_URL_STATUS_NOTE,
@@ -12,6 +11,7 @@ import {
   VERIFICATION_METHOD_LABEL,
   SOURCE_ACCESS_LABEL,
   SOURCE_TYPE_LABEL,
+  STORE_CONFIDENCE_DESCRIPTION,
   UNKNOWN_AREA_LABEL,
 } from "@/lib/labels";
 import { displayHost, safeExternalUrl } from "@/lib/links";
@@ -75,7 +75,7 @@ export default async function StorePage({ params }: Params) {
       </p>
       <div className="page-head">
         <h1>{s.name}</h1>
-        <ConfidenceBadge value={s.confidence} />
+        <ConfidenceBadge value={s.confidence} subject="store" />
       </div>
       {s.nameOriginals.length > 1 && (
         <p className="hint hint--tight">情報源での表記：{s.nameOriginals.join(" ／ ")}</p>
@@ -127,11 +127,13 @@ export default async function StorePage({ params }: Params) {
           <dd>{s.formalElectionArea ?? <span className="muted">未確認（掲載地域とは別の情報です）</span>}</dd>
         </div>
         <div>
-          <dt>確認状態</dt>
+          <dt>参加情報</dt>
           <dd>
-            <ConfidenceBadge value={s.confidence} />
+            <ConfidenceBadge value={s.confidence} subject="store" />
             <span className="facts__desc">
-              {PARTICIPATION_TYPE_LABEL[s.participationType] ?? "参加関連の根拠あり"}。{CONFIDENCE_DESCRIPTION[s.confidence]}
+              {s.verificationMethod
+                ? STORE_CONFIDENCE_DESCRIPTION[s.confidence]
+                : `${PARTICIPATION_TYPE_LABEL[s.participationType] ?? "参加関連の根拠あり"}。${STORE_CONFIDENCE_DESCRIPTION[s.confidence]}`}
             </span>
           </dd>
         </div>
@@ -147,7 +149,7 @@ export default async function StorePage({ params }: Params) {
               <li key={`${c.relationId}-${c.divisionId}`}>
                 <Link href={`/division/${c.divisionId}`} className="place-link">
                   <span>{c.categoryOriginal}</span>
-                  <ConfidenceBadge value={c.confidence} small />
+                  <ConfidenceBadge value={c.confidence} small subject="store" />
                 </Link>
               </li>
             ))}
