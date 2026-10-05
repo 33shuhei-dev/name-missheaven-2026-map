@@ -85,24 +85,10 @@ export function JapanMap({ prefectures }: { prefectures: MapPrefecture[] }) {
 
   return (
     <div className="jmap">
-      <div className="jmap__zoom" role="group" aria-label="地図の表示範囲">
-        {ZOOMS.map((z) => (
-          <button
-            key={z.id}
-            type="button"
-            className={`jmap__zoom-btn${z.id === zoom ? " is-active" : ""}`}
-            aria-pressed={z.id === zoom}
-            onClick={() => setZoom(z.id)}
-          >
-            {z.label}
-          </button>
-        ))}
-      </div>
-
       <svg
         className="jmap__svg"
         viewBox={`${vx} ${vy} ${vw} ${vh}`}
-        role="img"
+        role="group"
         aria-label="47都道府県の調査状態の地図。都道府県を選ぶとその都道府県のページを開きます。"
       >
         <defs>
@@ -146,8 +132,8 @@ export function JapanMap({ prefectures }: { prefectures: MapPrefecture[] }) {
           <text
             className="jmap__inset-label"
             x={OKINAWA_INSET[0] + 4}
-            y={OKINAWA_INSET[1] + OKINAWA_INSET[3] - 5}
-            fontSize={11}
+            y={OKINAWA_INSET[1] + OKINAWA_INSET[3] - 6}
+            fontSize={14}
           >
             沖縄県
           </text>
@@ -173,8 +159,22 @@ export function JapanMap({ prefectures }: { prefectures: MapPrefecture[] }) {
               );
             })}
       </svg>
+      <div className="jmap__zoom" role="group" aria-label="地図の表示範囲（地方を拡大）">
+        {ZOOMS.map((z) => (
+          <button
+            key={z.id}
+            type="button"
+            className={`jmap__zoom-btn${z.id === zoom ? " is-active" : ""}`}
+            aria-pressed={z.id === zoom}
+            onClick={() => setZoom(z.id)}
+          >
+            {z.label}
+          </button>
+        ))}
+      </div>
+
       <p className="jmap__hint">
-        {zoomed ? "都道府県をタップすると詳しいページを開きます。" : "小さな都府県は上の地方ボタンで拡大するとタップしやすくなります。"}
+        {zoomed ? "都道府県をタップすると詳しいページを開きます。" : "地方を選ぶと拡大して、小さな都府県もタップしやすくなります。"}
       </p>
     </div>
   );
