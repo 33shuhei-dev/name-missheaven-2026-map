@@ -17,17 +17,35 @@ export const CONFIDENCE_DESCRIPTION: Record<Confidence, string> = {
     "転載・検索結果のみなど、元の本文・年度・地域の関係を確認できていない候補情報です。",
 };
 
+/**
+ * 店舗の参加情報の表示名。内部の confidence はそのまま、利用者には「何を確認できているか」で伝える。
+ * （観測・部門の確認状態は CONFIDENCE_LABEL のまま）
+ */
+export const STORE_CONFIDENCE_LABEL: Record<Confidence, string> = {
+  confirmed: "参加確認済み",
+  probable: "参加情報あり",
+  unverified: "参加情報を1件確認",
+};
+
+export const STORE_CONFIDENCE_DESCRIPTION: Record<Confidence, string> = {
+  confirmed: "店舗の告知・本人の日記などの本文で、2026年の参加を直接確認した店舗です。",
+  probable:
+    "店舗ページの検索結果や店舗の告知などで、2026年の参加（エントリー・ノミネート・出場など）の記載を複数確認した店舗です。",
+  unverified:
+    "店舗ページの検索結果などで、2026年の参加（エントリー・ノミネート・出場など）の具体的な記載を1件確認した店舗です。",
+};
+
 export const MAP_STATUS_ORDER: readonly MapStatus[] = ["confirmed", "candidate", "searched_no_evidence"];
 
 export const MAP_STATUS_LABEL: Record<MapStatus, string> = {
   confirmed: "確認済み情報あり",
-  candidate: "候補情報あり",
+  candidate: "参加情報あり",
   searched_no_evidence: "現在確認できた情報なし",
 };
 
 export const MAP_STATUS_DESCRIPTION: Record<MapStatus, string> = {
   confirmed: "根拠の強い（確認済み）部門・参加店舗の情報がある都道府県",
-  candidate: "有力情報・未確認情報のみがある都道府県",
+  candidate: "検索結果・店舗の告知などで、2026年の参加情報を確認している都道府県（本文での直接確認はまだのもの）",
   searched_no_evidence:
     "調査済みですが、現在公開情報から部門・参加店舗の情報を確認できていない都道府県（部門や出場者がいないという意味ではありません）",
 };
@@ -124,8 +142,9 @@ export const COUNT_TYPE_LABEL: Record<string, { label: string; note: string }> =
 
 /** 店舗の確認方法（verificationMethod。Phase 3b 以降） */
 export const VERIFICATION_METHOD_LABEL: Record<string, string> = {
-  search_index_multiple: "検索結果で、この店舗の複数のページに2026年の参加の記載を確認（ページ本文は直接取得していない）",
-  search_index_single: "検索結果で、この店舗の1ページに2026年の参加の記載を確認（ページ本文は直接取得していない）",
+  search_index_multiple:
+    "検索結果で、この店舗の複数のページ（店舗トップ・在籍ページ・日記など）に2026年の参加（エントリー・ノミネート・出場など）の記載を確認",
+  search_index_single: "検索結果で、この店舗のページに2026年の参加（エントリー・ノミネート・出場など）の記載を1件確認",
   official_site_body: "店舗の公式サイトの本文で2026年の参加を確認",
   user_screenshot: "利用者提供のスクリーンショットで店舗の告知を確認",
 };

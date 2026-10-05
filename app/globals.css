@@ -388,6 +388,10 @@ p {
   background: var(--unverified-bg);
   border: 1px dashed #9aa4b5;
 }
+/* 店舗の「参加情報を1件確認」は参加の記載を確認済みの情報なので、不確かさを示す破線にしない */
+.badge--store.badge--unverified {
+  border-style: solid;
+}
 
 .status {
   display: inline-flex;
@@ -1511,6 +1515,9 @@ p {
 .div-card--unverified {
   border-left-style: dashed;
   border-left-color: #a8b1c1;
+}
+.div-card--store.div-card--unverified {
+  border-left-style: solid;
 }
 .div-card__head {
   display: flex;

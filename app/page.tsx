@@ -84,8 +84,9 @@ export default function HomePage() {
             </dl>
 
             <ConfidenceBar
-              title="店舗の確認状態"
+              title="店舗の参加情報"
               counts={stats.stores.byConfidence}
+              subject="store"
               hrefFor={(c) => `/search?kind=store&confidence=${c}`}
             />
             <ConfidenceBar

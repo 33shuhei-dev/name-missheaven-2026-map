@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { Confidence } from "@/data/types";
-import { CONFIDENCE_LABEL, CONFIDENCE_ORDER, MAP_STATUS_LABEL, UNKNOWN_AREA_LABEL } from "@/lib/labels";
+import { CONFIDENCE_LABEL, CONFIDENCE_ORDER, MAP_STATUS_LABEL, STORE_CONFIDENCE_LABEL, UNKNOWN_AREA_LABEL } from "@/lib/labels";
 import {
   SEARCH_KIND_LABEL,
   SEARCH_KIND_ORDER,
@@ -131,7 +131,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
             <option value="">すべて</option>
             {CONFIDENCE_ORDER.map((c) => (
               <option key={c} value={c}>
-                {CONFIDENCE_LABEL[c]}
+                {(state.kind === "store" ? STORE_CONFIDENCE_LABEL : CONFIDENCE_LABEL)[c]}
               </option>
             ))}
           </select>
@@ -197,7 +197,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
                         {MAP_STATUS_LABEL[item.status]}
                       </span>
                     ) : item.confidence ? (
-                      <ConfidenceBadge value={item.confidence} small />
+                      <ConfidenceBadge value={item.confidence} small subject={item.kind === "store" ? "store" : undefined} />
                     ) : null}
                   </span>
                 </Link>

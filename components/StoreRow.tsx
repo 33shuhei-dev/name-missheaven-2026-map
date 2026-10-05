@@ -25,10 +25,10 @@ export function StoreRow({
   const hasPublic = store.hasPublicUrl ?? !!store.storePublicUrl;
   const cats = store.categoryOriginals;
   return (
-    <Link href={`/store/${store.id}`} className={`div-card div-card--${confidence}`}>
+    <Link href={`/store/${store.id}`} className={`div-card div-card--store div-card--${confidence}`}>
       <span className="div-card__head">
         <span className="div-card__title">{store.name}</span>
-        <ConfidenceBadge value={confidence} small />
+        <ConfidenceBadge value={confidence} small subject="store" />
       </span>
       <span className="div-card__meta">
         {showArea && store.listingAreas && (

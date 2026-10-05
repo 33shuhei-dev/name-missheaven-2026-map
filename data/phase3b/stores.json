@@ -5,16 +5,16 @@
  "checkedAt": "2026-10-05",
  "scope": "検索エンジンの索引で、ヘブン掲載の店舗ページに2026年の参加の記載が確認できた店舗。全参加店舗の網羅ではない。個人名簿ではない。",
  "summary": {
-  "newStores": 340,
+  "newStores": 334,
   "matchedExistingStores": 17,
   "skipped": 19,
   "byConfidence": {
-   "unverified": 204,
-   "probable": 136
+   "unverified": 199,
+   "probable": 135
   },
   "byVerificationMethod": {
-   "search_index_single": 204,
-   "search_index_multiple": 136
+   "search_index_single": 199,
+   "search_index_multiple": 135
   },
   "relations": 128,
   "categoryOriginals": 48,
@@ -31,7 +31,12 @@
   ],
   "queriesExecuted": 263,
   "searchPagesFetched": 523,
-  "possibleSameStoreAsUnknownPrefecture": 1
+  "possibleSameStoreAsUnknownPrefecture": 1,
+  "recheck": {
+   "checkedAt": "2026-10-05",
+   "excluded": 6,
+   "confidenceChanged": 1
+  }
  },
  "stores": [
   {
@@ -644,46 +649,6 @@
    "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
   },
   {
-   "storeId": "mh26-p3b-store-2f65f848615a0828",
-   "storeName": "愛特急2006 東海本店",
-   "storeNameOriginals": [
-    "愛特急2006 東海本店"
-   ],
-   "prefecture": "愛知県",
-   "listingArea": "新栄・東新町",
-   "listingAreas": [
-    "新栄・東新町"
-   ],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/aichi/A2301/A230104/aitokkyu2006/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230104/aitokkyu2006/",
-   "sourceType": "entrant_diary",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-711dbf6ca89a13af"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "aichi/A2301/A230104/aitokkyu2006",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "probable",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
    "storeId": "mh26-p3b-store-c66a3994c3f132c9",
    "storeName": "愛特急2006 ANNEX",
    "storeNameOriginals": [
@@ -1172,45 +1137,6 @@
    },
    "possibleSameStoreAsUnknownPrefecture": [],
    "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ29件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
-   "storeId": "mh26-p3b-store-b3dd52c9addd65e2",
-   "storeName": "千葉県No,1デリヘル 秘密倶楽部 凛 船橋本店",
-   "storeNameOriginals": [
-    "千葉県No,1デリヘル 秘密倶楽部 凛 船橋本店"
-   ],
-   "prefecture": "千葉県",
-   "listingArea": null,
-   "listingAreas": [],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://www.cityheaven.net/chiba/A1202/A120201/h-rin/",
-   "storePublicUrl": "https://www.cityheaven.net/chiba/A1202/A120201/h-rin/",
-   "sourceType": "store",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-8417a6a514db7215",
-    "p3b-src-49c4822883f4f5a9"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "chiba/A1202/A120201/h-rin",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "unverified",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-p3b-store-25700eace2f5117c",
@@ -3052,46 +2978,6 @@
    "verificationMethod": "search_index_single",
    "evidencePageCount": 1,
    "cityheavenKey": "gifu/A2101/A210102/avance-g",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "probable",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
-   "storeId": "mh26-p3b-store-bfa5d8ed24617102",
-   "storeName": "奥様トゥナイトR",
-   "storeNameOriginals": [
-    "奥様トゥナイトR"
-   ],
-   "prefecture": "岐阜県",
-   "listingArea": "岐阜",
-   "listingAreas": [
-    "岐阜"
-   ],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://search.yahoo.co.jp/search?ei=UTF-8&p=site%3Awww.cityheaven.net/gifu/A2101/A210102/okusama-t/%20%E3%83%9F%E3%82%B9%E3%83%98%E3%83%96%E3%83%B3%202026",
-   "storePublicUrl": "https://www.cityheaven.net/gifu/A2101/A210102/okusama-t/",
-   "sourceType": "entrant_diary",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-6e45c29d222d9a3c"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "gifu/A2101/A210102/okusama-t",
    "fieldConfidence": {
     "participation": "unverified",
     "prefecture": "probable",
@@ -5759,47 +5645,6 @@
    "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ8件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
   },
   {
-   "storeId": "mh26-p3b-store-f1084e23c721a669",
-   "storeName": "ラブチャンス",
-   "storeNameOriginals": [
-    "ラブチャンス"
-   ],
-   "prefecture": "香川県",
-   "listingArea": "高松",
-   "listingAreas": [
-    "高松"
-   ],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://www.cityheaven.net/kagawa/A3701/A370101/love-chance/",
-   "storePublicUrl": "https://www.cityheaven.net/kagawa/A3701/A370101/love-chance/",
-   "sourceType": "store",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-f92adbfadc6f27a5",
-    "p3b-src-1bcddaac8b7dfe44"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "kagawa/A3701/A370101/love-chance",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "probable",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
    "storeId": "mh26-p3b-store-9b0a453f187e20db",
    "storeName": "萌えラブスクール",
    "storeNameOriginals": [
@@ -5819,7 +5664,7 @@
    "participationEvidenceUrl": "https://www.cityheaven.net/kagawa/A3701/A370101/moelove_school/shopevent/",
    "storePublicUrl": "https://www.cityheaven.net/kagawa/A3701/A370101/moelove_school/",
    "sourceType": "store",
-   "confidence": "probable",
+   "confidence": "unverified",
    "participationType": "search_index_reported",
    "checkedAt": "2026-10-05",
    "reviewedAt": "2026-10-05",
@@ -5831,11 +5676,11 @@
     "p3b-src-e8946141b13069ee"
    ],
    "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_multiple",
-   "evidencePageCount": 2,
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
    "cityheavenKey": "kagawa/A3701/A370101/moelove_school",
    "fieldConfidence": {
-    "participation": "probable",
+    "participation": "unverified",
     "prefecture": "probable",
     "listingArea": "probable",
     "formalElectionArea": "unverified"
@@ -11552,48 +11397,6 @@
    "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
   },
   {
-   "storeId": "mh26-p3b-store-12dd0b85dcfff5df",
-   "storeName": "Beppin house",
-   "storeNameOriginals": [
-    "Beppin house",
-    "Beppin house（ベッピンハウス）"
-   ],
-   "prefecture": "徳島県",
-   "listingArea": "徳島市・鷹匠町・秋田町",
-   "listingAreas": [
-    "徳島市・鷹匠町・秋田町"
-   ],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://www.cityheaven.net/tokushima/A3601/A360101/beppinhouse/",
-   "storePublicUrl": "https://www.cityheaven.net/tokushima/A3601/A360101/beppinhouse/",
-   "sourceType": "store",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-a04555926a95e508",
-    "p3b-src-6cc564cbfd9d4e6c"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "tokushima/A3601/A360101/beppinhouse",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "probable",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
    "storeId": "mh26-p3b-store-945e644e4e48a3c1",
    "storeName": "ドMなバニーちゃん 徳島店",
    "storeNameOriginals": [
@@ -12092,47 +11895,6 @@
     "participation": "unverified",
     "prefecture": "probable",
     "listingArea": "unverified",
-    "formalElectionArea": "unverified"
-   },
-   "possibleSameStoreAsUnknownPrefecture": [],
-   "notes": "Phase 3b 全国走査（2026-10-05）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページ1件に「ミスヘブン（総選挙）2026」と参加を示す記載を確認。ページ本文は調査環境から取得できない（403）ため、検索結果の抜粋による。都道府県はヘブンの掲載URL、掲載地域はページタイトルの表記による。正式選挙エリアは未確認。"
-  },
-  {
-   "storeId": "mh26-p3b-store-df9300177cbda788",
-   "storeName": "池袋パラダイス",
-   "storeNameOriginals": [
-    "池袋パラダイス"
-   ],
-   "prefecture": "東京都",
-   "listingArea": "池袋北口・西口",
-   "listingAreas": [
-    "池袋北口・西口"
-   ],
-   "formalElectionArea": null,
-   "categoryOriginal": null,
-   "categoryOriginals": [],
-   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/shopevent/",
-   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
-   "sourceType": "store",
-   "confidence": "unverified",
-   "participationType": "search_index_reported",
-   "checkedAt": "2026-10-05",
-   "reviewedAt": "2026-10-05",
-   "phase1RecordIds": [],
-   "phase2RecordIds": [],
-   "isNewSincePhase1": true,
-   "sourceIds": [
-    "p3b-src-b3b061a1f59ef894",
-    "p3b-src-c3606d4e727d139d"
-   ],
-   "publicUrlAccessStatus": "unknown",
-   "verificationMethod": "search_index_single",
-   "evidencePageCount": 1,
-   "cityheavenKey": "tokyo/A1305/A130505/ultraparadise",
-   "fieldConfidence": {
-    "participation": "unverified",
-    "prefecture": "probable",
-    "listingArea": "probable",
     "formalElectionArea": "unverified"
    },
    "possibleSameStoreAsUnknownPrefecture": [],

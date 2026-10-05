@@ -4,6 +4,8 @@ import { storeUpdates } from "@/data/store-updates";
 import { PREFECTURES } from "@/data/geo";
 import { safeExternalUrl } from "@/lib/links";
 import { normalizeForSearch } from "@/lib/text";
+import { STORE_CONFIDENCE_LABEL } from "@/lib/labels";
+import recheck from "@/data/phase3b/recheck.json";
 
 /**
  * Phase 3b（全国走査）成果物の検証。
@@ -87,5 +89,38 @@ describe("Phase 3b 全国走査", () => {
       expect(s.verificationMethod).toBeTruthy();
       expect(s.prefSlug).not.toBe("unknown");
     }
+  });
+
+  it("再チェックで除外した店舗はデータに残っていない", () => {
+    expect(recheck.excluded.length).toBeGreaterThan(0);
+    const ids = new Set(stores.map((s) => s.storeId));
+    const urls = new Set(stores.map((s) => s.storePublicUrl));
+    for (const x of recheck.excluded) {
+      expect(ids.has(x.storeId), x.storeName).toBe(false);
+      expect(urls.has(x.storePublicUrl), x.storeName).toBe(false);
+      expect(x.reason).toBeTruthy();
+    }
+    for (const src of phase3b.sources) for (const id of src.storeIds) expect(ids.has(id), src.sourceId).toBe(true);
+  });
+
+  it("参加情報のページ数と表示区分が一致し、集計が合う", () => {
+    for (const s of stores) {
+      expect(s.evidencePageCount, s.storeId).toBeGreaterThanOrEqual(1);
+      expect(s.confidence, s.storeId).toBe(Number(s.evidencePageCount) >= 2 ? "probable" : "unverified");
+    }
+    const count = (c: string) => stores.filter((s) => s.confidence === c).length;
+    expect(phase3b.summary.newStores).toBe(stores.length);
+    expect(phase3b.summary.byConfidence).toEqual({ probable: count("probable"), unverified: count("unverified") });
+    const covered = phase3b.coverage.reduce((n, c) => n + c.newStores, 0);
+    expect(covered).toBe(stores.length);
+  });
+
+  it("店舗の表示名は確認できている内容を表す（「未確認」と表示しない）", () => {
+    expect(STORE_CONFIDENCE_LABEL).toEqual({
+      confirmed: "参加確認済み",
+      probable: "参加情報あり",
+      unverified: "参加情報を1件確認",
+    });
+    for (const label of Object.values(STORE_CONFIDENCE_LABEL)) expect(label).not.toMatch(/未確認|候補/);
   });
 });

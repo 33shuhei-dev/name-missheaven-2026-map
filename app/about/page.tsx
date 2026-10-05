@@ -8,6 +8,8 @@ import {
   CONFIDENCE_ORDER,
   MAP_STATUS_DESCRIPTION,
   MAP_STATUS_ORDER,
+  STORE_CONFIDENCE_DESCRIPTION,
+  STORE_CONFIDENCE_LABEL,
 } from "@/lib/labels";
 
 export const metadata: Metadata = { title: "このサイトについて" };
@@ -49,7 +51,22 @@ export default function AboutPage() {
       </section>
 
       <section className="section card prose">
-        <h2>確認状態</h2>
+        <h2>店舗の参加情報</h2>
+        <p>
+          参加店舗は、2026年の参加をどこまで確認できているかで3つに分けて表示しています。店舗のページ（ヘブン掲載の店舗トップ・在籍ページ・日記など）の検索結果に「ミスヘブン」「2026」と、エントリー・ノミネート・出場・部門などの具体的な参加の記載があるものを参加情報として数えています。投票の案内や大会の一般告知だけのものは含めていません。
+        </p>
+        <ul className="plain-list">
+          {CONFIDENCE_ORDER.map((c) => (
+            <li key={c}>
+              <ConfidenceBadge value={c} subject="store" />
+              <span className="plain-list__desc">{STORE_CONFIDENCE_DESCRIPTION[c]}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="section card prose">
+        <h2>観測の確認状態</h2>
         <p>各観測（「この地域のこの部門に、この店舗・出場者が出ている」という1件の情報）ごとに、確認状態を表示しています。</p>
         <ul className="plain-list">
           {CONFIDENCE_ORDER.map((c) => (
@@ -80,7 +97,7 @@ export default function AboutPage() {
           <li>
             「出場者」の数は店舗名×人物名の組み合わせの数です。実際の人数の重複排除ではなく、同姓同名の別人を統合することもしていません。
           </li>
-          <li>「店舗」の数は参加関連の根拠を見つけた店舗（候補を含む）の数で、全参加店舗の数ではありません。応援キャンペーンのみ確認された店舗は含めていません。</li>
+          <li>「店舗」の数は2026年の参加情報（参加確認済み・参加情報あり・参加情報を1件確認）を見つけた店舗の数で、全参加店舗の数ではありません。応援キャンペーンのみ確認された店舗は含めていません。</li>
           <li>店舗の「公開ページ」は店舗を見るためのリンク、「参加の根拠」は2026年の参加との関係を確認したページで、別のものです。</li>
           <li>人数は、WEB申込の掲載人数・店舗が告知したエントリー人数など、種類を明記できるものだけを店舗ページに表示しています。不明な人数は0人とせず表示しません。</li>
           <li>すべての件数はデータから自動で集計しています。</li>
@@ -103,8 +120,9 @@ export default function AboutPage() {
           <div>
             <dt>参加関連店舗</dt>
             <dd>
-              {site.stats.stores.storeCount}店（Phase 3：候補を含む。確認済み {site.stats.stores.byConfidence.confirmed}・有力情報{" "}
-              {site.stats.stores.byConfidence.probable}・未確認情報 {site.stats.stores.byConfidence.unverified}）
+              {site.stats.stores.storeCount}店（{STORE_CONFIDENCE_LABEL.confirmed} {site.stats.stores.byConfidence.confirmed}・
+              {STORE_CONFIDENCE_LABEL.probable} {site.stats.stores.byConfidence.probable}・{STORE_CONFIDENCE_LABEL.unverified}{" "}
+              {site.stats.stores.byConfidence.unverified}）
               {datasetInfo.phase3CheckedAt && `、${datasetInfo.phase3CheckedAt} 時点`}
             </dd>
           </div>

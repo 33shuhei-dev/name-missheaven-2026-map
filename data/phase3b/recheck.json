@@ -1,0 +1,63 @@
+{
+ "checkedAt": "2026-10-05",
+ "method": "保存済みの検索結果の抜粋を再読。新たな検索・CityHeaven への直接アクセスはしていない。",
+ "criteria": "実用基準（2026-10-05 方針）\n- 1ページの検索結果に「ミスヘブン」と、その近く（80字以内）に具体的な参加の記載\n  （エントリー・ノミネート・出場・参戦・選出・挑戦・意気込み・○○部門・参加します 等）があれば「参加情報」1件として数える\n- 「エントリー受付」「エントリー募集」など大会の一般告知、投票・応援キャンペーンの案内だけのページは数えない\n- 参加情報のあるページが2件以上 → probable（表示：参加情報あり）、1件 → unverified（表示：参加情報を1件確認）\n- 0件の店舗と、下の EXCLUDE に挙げた明らかな誤検出は data/phase3b から外し、recheck.json に理由を残す",
+ "excluded": [
+  {
+   "storeId": "mh26-p3b-store-2f65f848615a0828",
+   "storeName": "愛特急2006 東海本店",
+   "prefecture": "愛知県",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230104/aitokkyu2006/",
+   "reason": "抜粋は全店共通の告知バナーと「年間最高傑作ノミネート確実視」という宣伝文のみで、2026年の参加の記載ではない"
+  },
+  {
+   "storeId": "mh26-p3b-store-b3dd52c9addd65e2",
+   "storeName": "千葉県No,1デリヘル 秘密倶楽部 凛 船橋本店",
+   "prefecture": "千葉県",
+   "storePublicUrl": "https://www.cityheaven.net/chiba/A1202/A120201/h-rin/",
+   "reason": "抜粋が大会の一般告知・応援キャンペーンの案内のみで、この店舗の参加の記載がない"
+  },
+  {
+   "storeId": "mh26-p3b-store-bfa5d8ed24617102",
+   "storeName": "奥様トゥナイトR",
+   "prefecture": "岐阜県",
+   "storePublicUrl": "https://www.cityheaven.net/gifu/A2101/A210102/okusama-t/",
+   "reason": "抜粋は入賞のお礼（結果報告）で、2026年（投票は10/28開始）の参加の記載として読めない"
+  },
+  {
+   "storeId": "mh26-p3b-store-f1084e23c721a669",
+   "storeName": "ラブチャンス",
+   "prefecture": "香川県",
+   "storePublicUrl": "https://www.cityheaven.net/kagawa/A3701/A370101/love-chance/",
+   "reason": "抜粋は別店舗（人妻KISS）からのエントリー告知で、この店舗の参加の記載ではない"
+  },
+  {
+   "storeId": "mh26-p3b-store-12dd0b85dcfff5df",
+   "storeName": "Beppin house",
+   "prefecture": "徳島県",
+   "storePublicUrl": "https://www.cityheaven.net/tokushima/A3601/A360101/beppinhouse/",
+   "reason": "抜粋が大会の一般告知・応援キャンペーンの案内のみで、この店舗の参加の記載がない"
+  },
+  {
+   "storeId": "mh26-p3b-store-df9300177cbda788",
+   "storeName": "池袋パラダイス",
+   "prefecture": "東京都",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1305/A130505/ultraparadise/",
+   "reason": "抜粋が大会の一般告知・応援キャンペーンの案内のみで、この店舗の参加の記載がない"
+  }
+ ],
+ "confidenceChanged": [
+  {
+   "storeId": "mh26-p3b-store-9b0a453f187e20db",
+   "storeName": "萌えラブスクール",
+   "from": [
+    "probable",
+    2
+   ],
+   "to": [
+    "unverified",
+    1
+   ]
+  }
+ ]
+}
