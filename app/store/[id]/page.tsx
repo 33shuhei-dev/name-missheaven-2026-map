@@ -69,7 +69,7 @@ export default async function StorePage({ params }: Params) {
           { label: s.name },
         ]}
       />
-      <p className="eyebrow">参加関連店舗</p>
+      <p className="eyebrow">参加関連店舗{s.origin === "update" ? "（Phase 3 以降の追加情報）" : ""}</p>
       <div className="page-head">
         <h1>{s.name}</h1>
         <ConfidenceBadge value={s.confidence} />

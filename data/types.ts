@@ -236,6 +236,8 @@ export interface Phase2CountFact {
 /** 画面が扱う店舗（Phase 3 storeId が主キー） */
 export interface SiteStore {
   id: string;
+  /** データの出どころ（Phase 3 成果物 / Phase 3 以降の差分更新 data/store-updates.ts） */
+  origin: "phase3" | "update";
   name: string;
   nameOriginals: string[];
   prefecture?: string;

@@ -75,6 +75,7 @@ export const PARTICIPATION_TYPE_LABEL: Record<string, string> = {
   entry_reported: "店舗の告知でエントリーを確認",
   group_entry_claim: "系列としての出場告知",
   candidate: "候補（未確認）",
+  store_banner_reported: "店舗ページの告知バナーで確認（利用者からの情報提供）",
 };
 
 /** 店舗公開ページのリンク状態（publicUrlAccessStatus） */
@@ -102,6 +103,7 @@ export const SOURCE_ACCESS_LABEL: Record<string, string> = {
   linked_fetch_failed: "取得に失敗",
   indexed_only_403: "検索結果のみ（本文は取得不可）",
   indexed_only_fetch_failed: "検索結果のみ（本文の取得に失敗）",
+  user_screenshot_only: "利用者提供のスクリーンショットで確認（調査側は本文を直接取得していない）",
 };
 
 /** Phase 2 の人数の種類（countType）。在籍・申込・出場・ノミネートを混同しない */

@@ -371,3 +371,79 @@ export function validatePhase3(input: Phase3Input, phase1Records: readonly Phase
   }
   return issues;
 }
+
+/**
+ * Phase 3 以降の店舗の差分更新（data/store-updates.ts）を検証する。
+ * Phase 3 の summary・カバレッジとの照合は Phase 3 成果物だけを対象にするため、ここでは形式と参照整合だけを見る。
+ */
+export function validateStoreUpdates(
+  updates: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
+  phase3: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
+  phase1Records: readonly Phase1RawRecord[],
+  campaignStores: readonly Phase3CampaignStore[] = [],
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const p1ids = new Set(phase1Records.map((r) => r.id));
+  const storeIds = new Set(phase3.stores.map((s) => s.storeId));
+  const relIds = new Set(phase3.relations.map((r) => r.relationId));
+  const srcIds = new Set(phase3.sources.map((s) => s.sourceId));
+  const ownedRecords = new Set(phase3.stores.flatMap((s) => s.phase1RecordIds));
+
+  for (const src of updates.sources) {
+    if (srcIds.has(src.sourceId)) err(src.sourceId, "sourceId が既存と重複しています");
+    srcIds.add(src.sourceId);
+    if (!safeExternalUrl(src.url)) err(src.sourceId, "情報源URLは http(s) の正しいURLにしてください");
+    if (!SOURCE_TYPES.includes(src.sourceType)) err(src.sourceId, `sourceType が不正です: ${src.sourceType}`);
+  }
+  for (const s of updates.stores) {
+    const id = s.storeId;
+    if (typeof id !== "string" || !ID_PATTERN.test(id)) err(String(id), "storeId が不正です");
+    else if (storeIds.has(id)) err(id, "storeId が既存の店舗と重複しています");
+    storeIds.add(id);
+    if (typeof s.storeName !== "string" || !s.storeName.trim()) err(id, "storeName は必須です");
+    if (!Array.isArray(s.storeNameOriginals) || !s.storeNameOriginals.includes(s.storeName)) {
+      err(id, "storeNameOriginals に storeName が含まれていません");
+    }
+    if (phase3.stores.some((x) => x.prefecture === s.prefecture && (x.storeName === s.storeName || x.storeNameOriginals.includes(s.storeName)))) {
+      err(id, "同じ県・同じ店名の店舗が Phase 3 にあります（重複追加しないでください）");
+    }
+    if (campaignStores.some((c) => c.storeName === s.storeName && c.prefecture === s.prefecture)) {
+      err(id, "応援キャンペーンのみの店舗を参加店舗として追加しようとしています");
+    }
+    if (!CONFIDENCES.includes(s.confidence)) err(id, `confidence が不正です: ${String(s.confidence)}`);
+    if (!SOURCE_TYPES.includes(s.sourceType)) err(id, `sourceType が不正です: ${String(s.sourceType)}`);
+    if (s.prefecture != null && !findPrefectureByName(s.prefecture)) err(id, `prefecture が不正です: ${s.prefecture}`);
+    if (!Array.isArray(s.listingAreas) || s.listingAreas.some((a) => typeof a !== "string" || !a.trim())) {
+      err(id, "listingAreas は空でない文字列の配列にしてください");
+    } else if (s.listingArea != null && !s.listingAreas.includes(s.listingArea)) {
+      err(id, "listingArea が listingAreas に含まれていません");
+    }
+    for (const f of ["storePublicUrl", "participationEvidenceUrl"] as const) {
+      const v = s[f];
+      if (v != null && !safeExternalUrl(v)) err(id, `${f} は http(s) の正しいURLにしてください`);
+    }
+    if (!s.participationEvidenceUrl) err(id, "追加する店舗には参加根拠URLが必須です");
+    if (s.isNewSincePhase1 !== true) err(id, "差分更新の店舗は isNewSincePhase1: true にしてください");
+    for (const rid of s.phase1RecordIds ?? []) {
+      if (!p1ids.has(rid)) err(id, `存在しない観測IDです: ${rid}`);
+      else if (ownedRecords.has(rid)) err(id, `観測 ${rid} はすでに別の店舗に接続されています`);
+    }
+    for (const sid of s.sourceIds ?? []) if (!srcIds.has(sid)) err(id, `存在しない sourceId: ${sid}`);
+  }
+  for (const rel of updates.relations) {
+    const id = rel.relationId;
+    if (relIds.has(id)) err(id, "relationId が既存と重複しています");
+    relIds.add(id);
+    if (!updates.stores.some((s) => s.storeId === rel.storeId)) err(id, "差分更新の関係は差分更新の店舗を参照してください");
+    if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
+    if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
+  }
+  for (const s of updates.stores) {
+    const proj = [...new Set(updates.relations.filter((r) => r.storeId === s.storeId).map((r) => r.categoryOriginal))].sort();
+    if (JSON.stringify(proj) !== JSON.stringify([...(s.categoryOriginals ?? [])].sort())) {
+      err(s.storeId, "categoryOriginals が店舗×部門関係と一致しません");
+    }
+  }
+  return issues;
+}

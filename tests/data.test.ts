@@ -9,7 +9,8 @@ import { JAPAN_MAP_SHAPES } from "@/data/japan-map.generated";
 import { updates } from "@/data/updates";
 import { safeExternalUrl } from "@/lib/links";
 import { buildSearchIndex, searchItems } from "@/lib/search";
-import { buildModel, findStore, phase1SummaryOf, prefSlugOf, storeIdOf } from "@/lib/model";
+import { buildModel, findStore, phase1SummaryOf, prefSlugOf, storeIdOf, summarizeStores } from "@/lib/model";
+import { relationUpdates, storeUpdates } from "@/data/store-updates";
 
 /**
  * 本番データ（Phase 1 最終データ）の検証。`npm run validate:data` でも実行できる。
@@ -197,22 +198,27 @@ describe("誤解を招く表現をしない", () => {
 
 describe("Phase 3 店舗の統合", () => {
   const sm = phase3Stores.summary as Record<string, number>;
-  it("店舗数・確認状態・公開URL・関係数が Phase 3 summary と一致する", () => {
-    const st = site.stats.stores;
+  const p3 = site.stores.filter((s) => s.origin === "phase3");
+  it("Phase 3 由来の店舗数・確認状態・公開URL・関係数が Phase 3 summary と一致する", () => {
+    const st = summarizeStores(p3);
     expect(st.storeCount).toBe(sm.finalStoresIncludingCandidates);
     expect(st.byConfidence).toEqual({ confirmed: sm.confirmedStores, probable: sm.probableStores, unverified: sm.unverifiedStores });
     expect(st.publicUrlCount).toBe(sm.publicUrlCount);
     expect(st.newSincePhase1).toBe(sm.newSincePhase1);
-    expect(st.relationCount).toBe(sm.storeCategoryRelationCount);
-    expect(st.storeCategoryCount).toBe(sm.categoryOriginalCount);
-    expect(st.unknownPrefectureStoreCount).toBe(sm.unknownPrefectureStoreCount);
+    expect(p3.reduce((n, s) => n + s.categories.length, 0)).toBe(sm.storeCategoryRelationCount);
+    expect(new Set(p3.flatMap((s) => s.categoryOriginals)).size).toBe(sm.categoryOriginalCount);
+    expect(p3.filter((s) => !s.prefecture).length).toBe(sm.unknownPrefectureStoreCount);
+  });
+  it("サイト全体の店舗数 = Phase 3 ＋ 差分更新", () => {
+    expect(site.stats.stores.storeCount).toBe(phase3Stores.stores.length + storeUpdates.length);
+    expect(site.stats.stores.relationCount).toBe(phase3Relations.length + relationUpdates.length);
   });
   it("店舗IDに重複がなく、県別店舗数がカバレッジと一致する", () => {
     expect(new Set(site.stores.map((s) => s.id)).size).toBe(site.stores.length);
     for (const c of phase3Coverage.prefectures) {
-      const p = site.prefectures.find((x) => x.name === c.prefecture)!;
-      expect(p.storeSummary.storeCount, c.prefecture).toBe(c.storeCount);
-      expect(p.storeSummary.publicUrlCount, c.prefecture).toBe(c.publicUrlCount);
+      const ps = summarizeStores(p3.filter((s) => s.prefecture === c.prefecture));
+      expect(ps.storeCount, c.prefecture).toBe(c.storeCount);
+      expect(ps.publicUrlCount, c.prefecture).toBe(c.publicUrlCount);
     }
   });
   it("店舗×部門の関係がすべて部門ページと店舗ページに反映されている", () => {
@@ -224,6 +230,25 @@ describe("Phase 3 店舗の統合", () => {
       expect(d.categoryOriginal).toBe(rel.categoryOriginal);
       expect(d.stores.map((s) => s.id)).toContain(rel.storeId);
     }
+  });
+  it("差分更新の店舗（abc＋）を、根拠の強さどおりの確認状態で反映する", () => {
+    const abc = site.stores.find((s) => s.id === "mh26-upd-store-0001")!;
+    expect(abc.origin).toBe("update");
+    expect(abc.name).toBe("abc＋");
+    expect(abc.prefectureName).toBe("神奈川県");
+    expect(abc.listingAreas).toEqual(["厚木"]);
+    expect(abc.formalElectionArea).toBeUndefined();
+    expect(abc.confidence).toBe("probable");
+    expect(abc.categories.map((c) => c.categoryOriginal)).toEqual(["デリヘル部門"]);
+    expect(abc.storePublicUrl).toMatch(/^https:\/\/www\.cityheaven\.net\//);
+    expect(abc.entrantNames).toEqual([]);
+    const d = site.divisions.find((x) => x.id === abc.categories[0].divisionId)!;
+    expect(d.prefectureName).toBe("神奈川県");
+    expect(d.listingArea).toBe("厚木");
+    expect(d.stores.map((s) => s.id)).toEqual(["mh26-upd-store-0001"]);
+    const kanagawa = site.prefectures.find((p) => p.slug === "kanagawa")!;
+    expect(kanagawa.areas.map((a) => a.name)).toContain("厚木");
+    expect(kanagawa.status).toBe("confirmed");
   });
   it("店舗の confidence は Phase 3 の値のまま", () => {
     for (const raw of phase3Stores.stores) {

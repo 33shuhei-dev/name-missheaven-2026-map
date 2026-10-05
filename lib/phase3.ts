@@ -23,9 +23,10 @@ import type {
 
 const opt = (v: unknown): string | undefined => (typeof v === "string" && v.length > 0 ? v : undefined);
 
-export function adaptStore(raw: Phase3RawStore): SiteStore {
+export function adaptStore(raw: Phase3RawStore, origin: SiteStore["origin"] = "phase3"): SiteStore {
   return {
     id: raw.storeId,
+    origin,
     name: raw.storeName,
     nameOriginals: [...raw.storeNameOriginals],
     prefecture: opt(raw.prefecture),
@@ -99,12 +100,21 @@ export function adaptStoreLayer(input: {
   relations: readonly Phase3RawRelation[];
   sources: readonly Phase3RawSource[];
   countFacts: readonly Phase2CountFact[];
+  /** Phase 3 以降の差分更新（data/store-updates.ts） */
+  updates?: {
+    stores: readonly Phase3RawStore[];
+    relations: readonly Phase3RawRelation[];
+    sources: readonly Phase3RawSource[];
+  };
 }): StoreLayer {
-  const stores = input.stores.map(adaptStore);
+  const stores = [
+    ...input.stores.map((s) => adaptStore(s, "phase3")),
+    ...(input.updates?.stores ?? []).map((s) => adaptStore(s, "update")),
+  ];
   return {
     stores,
-    relations: input.relations.map(adaptRelation),
-    sources: input.sources.map(adaptSource),
+    relations: [...input.relations, ...(input.updates?.relations ?? [])].map(adaptRelation),
+    sources: [...input.sources, ...(input.updates?.sources ?? [])].map(adaptSource),
     countFacts: linkCountFacts(input.countFacts, stores),
   };
 }

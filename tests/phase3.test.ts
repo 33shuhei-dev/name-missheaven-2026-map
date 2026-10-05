@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
 import type { Phase3Coverage, Phase3RawStore, Phase3StoresFile } from "@/data/types";
 import { buildModel, findPrefectureView, findStore } from "@/lib/model";
-import { adaptStore, linkCountFacts } from "@/lib/phase3";
-import { validatePhase3, type Phase3Input } from "@/lib/validate";
+import { adaptStore, adaptStoreLayer, linkCountFacts } from "@/lib/phase3";
+import { validatePhase3, validateStoreUpdates, type Phase3Input } from "@/lib/validate";
 import { PREFECTURES } from "@/data/geo";
 import { layer, model, modelWithStores as m, rawRecords, rawRelations, rawSources, rawStores } from "./fixtures";
 
@@ -213,5 +213,43 @@ describe("Phase 3 の検証", () => {
     const i = input();
     i.storesFile = { ...i.storesFile, summary: { ...summary, confirmedStores: 99 } };
     expect(errors(i).some((m) => m.includes("confirmedStores"))).toBe(true);
+  });
+});
+
+describe("店舗の差分更新の検証", () => {
+  const base = { stores: rawStores, relations: rawRelations, sources: rawSources };
+  const newStore: Phase3RawStore = {
+    ...rawStores[2],
+    storeId: "t-upd-1",
+    storeName: "テスト追加店",
+    storeNameOriginals: ["テスト追加店"],
+    categoryOriginal: "テスト新部門",
+    categoryOriginals: ["テスト新部門"],
+    sourceIds: ["t-upd-src"],
+    confidence: "probable",
+  };
+  const upd = {
+    stores: [newStore],
+    relations: [{ relationId: "t-upd-rel", storeId: "t-upd-1", categoryOriginal: "テスト新部門", confidence: "probable", sourceIds: [], phase1RecordIds: [] }],
+    sources: [{ sourceId: "t-upd-src", url: "https://example.com/upd", sourceType: "store", accessStatus: "user_screenshot_only", publisherRole: "store_announcement", storeIds: ["t-upd-1"], relationIds: ["t-upd-rel"] }],
+  };
+  const errors = (u: typeof upd) => validateStoreUpdates(u, base, rawRecords).filter((i) => i.level === "error").map((i) => i.message);
+  it("正しい追加はエラーなし（新しい部門原文も可）", () => {
+    expect(errors(upd)).toEqual([]);
+  });
+  it("既存と同じ storeId・同じ県の同名店舗は重複として検出", () => {
+    expect(errors({ ...upd, stores: [{ ...newStore, storeId: "t-store-x" }] }).some((m) => m.includes("重複"))).toBe(true);
+    expect(errors({ ...upd, stores: [{ ...newStore, storeName: "テスト店舗X", storeNameOriginals: ["テスト店舗X"], prefecture: "神奈川県" }] }).some((m) => m.includes("同じ県・同じ店名"))).toBe(true);
+  });
+  it("参加根拠URLのない追加・不正URLは検出", () => {
+    expect(errors({ ...upd, stores: [{ ...newStore, participationEvidenceUrl: null }] }).some((m) => m.includes("参加根拠URL"))).toBe(true);
+    expect(errors({ ...upd, stores: [{ ...newStore, storePublicUrl: "javascript:x" }] }).some((m) => m.includes("storePublicUrl"))).toBe(true);
+  });
+  it("差分の店舗はサイトに反映され、Phase 3 の店舗と区別できる", () => {
+    const l = adaptStoreLayer({ stores: rawStores, relations: rawRelations, sources: rawSources, countFacts: [], updates: upd });
+    const mm = buildModel(m.records, { layer: l });
+    expect(mm.stores.find((s) => s.id === "t-upd-1")!.origin).toBe("update");
+    expect(mm.stores.find((s) => s.id === "t-store-x")!.origin).toBe("phase3");
+    expect(mm.divisions.some((d) => d.categoryOriginal === "テスト新部門" && d.stores.some((s) => s.id === "t-upd-1"))).toBe(true);
   });
 });

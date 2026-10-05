@@ -8,6 +8,7 @@ import sourcesJson from "@/data/phase3/store_sources.json";
 import campaignJson from "@/data/phase3/campaign_support_stores.json";
 import coverageJson from "@/data/phase3/coverage_47prefectures.json";
 import { updates } from "@/data/updates";
+import { relationUpdates, sourceUpdates, storeUpdates } from "@/data/store-updates";
 import type {
   Phase1Dataset,
   Phase1Map,
@@ -22,13 +23,13 @@ import type {
 import { buildModel, type SiteModel } from "./model";
 import { adaptAll } from "./phase1";
 import { adaptStoreLayer } from "./phase3";
-import { validateDatasetSummary, validateMap, validatePhase3, validateRecords } from "./validate";
+import { validateDatasetSummary, validateMap, validatePhase3, validateRecords, validateStoreUpdates } from "./validate";
 
 /**
  * サイト全体が参照するデータの唯一の入口。
  *
  * 1. Phase 1 最終データ（観測）、Phase 3（参加店舗）、Phase 2（人数）の成果物を受け取ったまま読む
- *    （data/phase1・phase2・phase3。無変更）＋ 差分更新（data/updates.ts）
+ *    （data/phase1・phase2・phase3。無変更）＋ 差分更新（data/updates.ts・data/store-updates.ts）
  * 2. レコード・地図データ・summary・Phase 3 の店舗/関係/カバレッジを検証する（error があればビルド失敗）
  * 3. アダプターで変換し、画面用の構造を作る
  */
@@ -59,6 +60,12 @@ function load(): SiteModel {
       },
       phase1Dataset.records,
     ),
+    ...validateStoreUpdates(
+      { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
+      { stores: phase3Stores.stores, relations: phase3Relations, sources: phase3Sources },
+      phase1Dataset.records,
+      campaignSupportStores,
+    ),
   ].filter((i) => i.level === "error");
   if (errors.length > 0) {
     const detail = errors.map((e) => `[${e.dataset}] ${e.id}: ${e.message}`).join("\n");
@@ -69,6 +76,7 @@ function load(): SiteModel {
     relations: phase3Relations,
     sources: phase3Sources,
     countFacts: phase2.countFacts,
+    updates: { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
   });
   return buildModel(adaptAll(sets), { mapInfo: phase1Map.prefectures, layer });
 }
