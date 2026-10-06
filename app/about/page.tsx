@@ -15,6 +15,10 @@ import {
 
 export const metadata: Metadata = { title: "このサイトについて" };
 
+/** 掲載情報の修正・削除の問い合わせ窓口（このサイトを告知・運営している応援用Xアカウント） */
+const CONTACT_X_HANDLE = "@rego0701";
+const CONTACT_X_URL = "https://x.com/rego0701";
+
 export default function AboutPage() {
   return (
     <>
@@ -58,6 +62,20 @@ export default function AboutPage() {
           </li>
           <li>人物写真や公式の宣材画像は掲載していません。情報源の全文・画像は複製せず、リンクと必要最小限の事実のみを表示しています。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="contact">
+        <h2>掲載情報について</h2>
+        <p>
+          掲載内容に誤りがある場合や、掲載情報の修正・削除をご希望の場合は、運営者までご連絡ください。確認のうえ対応します。
+        </p>
+        <p>
+          連絡先：このサイトを告知・運営している応援用Xアカウント{" "}
+          <a href={CONTACT_X_URL} target="_blank" rel="noopener noreferrer">
+            {CONTACT_X_HANDLE}
+          </a>{" "}
+          のDMまでお願いします（外部サイトが開きます）。
+        </p>
       </section>
 
       <section className="section card prose">
