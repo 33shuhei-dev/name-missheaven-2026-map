@@ -12,6 +12,9 @@ export interface CategorySummary {
   href: string;
 }
 
+/** 「レア」：このサイトで見つかった店舗がこの数以下（1店以上）の部門。公式に珍しいという意味ではない */
+export const RARE_MAX_STORES = 2;
+
 export function categoryHref(name: string): string {
   return `/categories?q=${encodeURIComponent(name)}`;
 }

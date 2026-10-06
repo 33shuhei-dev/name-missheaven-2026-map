@@ -1738,59 +1738,6 @@ p {
 .hero__lead strong {
   color: var(--navy);
 }
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 6px;
-  margin: 12px 0 0;
-}
-.hero-stats div {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 8px 6px;
-  text-align: center;
-}
-.hero-stats dt {
-  font-size: 0.75rem;
-  color: var(--muted);
-  line-height: 1.3;
-}
-.hero-stats dd {
-  margin: 2px 0 0;
-  font-size: 1.375rem;
-  font-weight: 800;
-  color: var(--navy);
-  line-height: 1.2;
-}
-.hero-stats small {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--muted);
-}
-.hero-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
-  margin-top: 12px;
-}
-.hero-action {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 48px;
-  border-radius: 12px;
-  border: 1px solid #c9d4ec;
-  background: var(--surface);
-  color: var(--navy);
-  font-weight: 800;
-  text-decoration: none;
-}
-.hero-action--primary {
-  border-color: transparent;
-  color: #fff;
-  background: var(--gradient);
-}
 .flow {
   list-style: none;
   counter-reset: flow;
@@ -1870,9 +1817,6 @@ p {
   .fun-cat:hover {
     background: #f0e2f6;
   }
-  .hero-action:hover {
-    filter: brightness(1.05);
-  }
 }
 
 /* ───────────── 部門一覧：部門名が主役 ───────────── */
@@ -1894,18 +1838,6 @@ p {
   font-size: 0.8125rem;
   font-weight: 700;
   color: var(--navy-2);
-}
-.category__more summary {
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--navy-2);
-}
-.category__more[open] summary {
-  margin-bottom: 4px;
 }
 
 /* ───────────── 店舗ページ：部門・公開ページへの導線 ───────────── */
@@ -1970,9 +1902,172 @@ p {
   align-items: center;
   min-height: 40px;
 }
+
+/* ───────────── トップ：数字＝探索の入口 ───────────── */
+.hero-stats {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.hero-stat {
+  display: grid;
+  justify-items: center;
+  gap: 0;
+  height: 100%;
+  padding: 8px 4px 9px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--navy);
+  text-align: center;
+}
+.hero-stat__num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero-stat__num small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.hero-stat__label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.hero-stat__go {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+.hero-stat--primary {
+  border-color: transparent;
+  background: var(--gradient);
+  color: #fff;
+}
+.hero-stat--primary .hero-stat__label,
+.hero-stat--primary .hero-stat__go {
+  color: #fff;
+}
 @media (min-width: 600px) {
-  .hero-stats,
-  .hero-actions {
+  .hero-stats {
     max-width: 560px;
   }
+}
+
+/* ───────────── 部門カードのグリッド（縦スクロールで眺める） ───────────── */
+.cat-grid {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.cat-grid li {
+  min-width: 0;
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  height: 100%;
+  min-height: 76px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid #ecd2e6;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.cat-card__name {
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.cat-card__meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+@media (min-width: 600px) {
+  .cat-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 960px) {
+  .cat-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (hover: hover) {
+  .cat-card:hover {
+    background: var(--accent-weak);
+  }
+}
+
+/* ───────────── ランダム部門 ───────────── */
+.random-cat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 48px;
+  margin: 0 0 10px;
+  border-radius: 12px;
+  border: 1px dashed var(--accent-2);
+  background: var(--surface);
+  color: var(--accent-2);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ───────────── 部門一覧：切替・指定した部門 ───────────── */
+.view-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin: 12px 0 4px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--navy-weak);
+}
+.view-tab {
+  min-height: 40px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--navy-2);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.view-tab--active {
+  background: var(--surface);
+  color: var(--navy);
+  box-shadow: 0 1px 3px rgba(20, 30, 60, 0.12);
+}
+.search-panel--compact {
+  margin-top: 8px;
+}
+.category-focus {
+  margin: 12px 0 8px;
+  border-color: #ecd2e6;
+}
+.category-focus__name {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--accent);
+  overflow-wrap: anywhere;
 }

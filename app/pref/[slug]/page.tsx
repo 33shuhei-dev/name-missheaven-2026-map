@@ -176,9 +176,9 @@ export default async function PrefecturePage({ params }: Params) {
           {pref.entrants.length > 0 && (
             <section className="section" aria-labelledby="entrants-heading">
               <h2 id="entrants-heading">
-                出場者<span className="count">見つかった範囲 {pref.entrants.length}名</span>
+                記録した出場者（一部）<span className="count">{pref.entrants.length}名</span>
               </h2>
-              <p className="hint">公開情報から確認できた範囲のみです。全出場者の一覧ではありません。</p>
+              <p className="hint">このサイトで記録できた一部の方だけです。各店舗の出場者は、店舗の公開ページでご確認ください。</p>
               <ul className="entrant-list">
                 {pref.entrants.map((e) => (
                   <li key={e.id}>

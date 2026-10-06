@@ -30,7 +30,7 @@ export function DivisionLink({
         <span className={stores ? "div-card__store" : "div-card__store div-card__store--unknown"}>
           {stores || "店舗未判明"}
         </span>
-        {d.entrantCount > 0 && <span className="div-card__count">出場者 {d.entrantCount}名</span>}
+        {d.entrantCount > 0 && <span className="div-card__count">出場者の記録 {d.entrantCount}名</span>}
       </span>
     </Link>
   );

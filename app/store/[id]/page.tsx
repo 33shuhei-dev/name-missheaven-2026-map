@@ -228,8 +228,8 @@ export default async function StorePage({ params }: Params) {
 
       {entrants.length > 0 && (
         <section className="section" aria-labelledby="ent-heading">
-          <h2 id="ent-heading">出場者</h2>
-          <p className="hint">これまでの調査で記録した範囲です。この店舗の全出場者ではありません。</p>
+          <h2 id="ent-heading">記録した出場者（一部）</h2>
+          <p className="hint">このサイトで記録できた一部の方だけです。この店舗の出場者は、店舗の公開ページでご確認ください。</p>
           <ul className="entrant-list">
             {entrants.map((e) => (
               <li key={e.id} id={e.id} className="entrant-row entrant-row--static">

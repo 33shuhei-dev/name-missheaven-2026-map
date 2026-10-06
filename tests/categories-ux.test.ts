@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { site } from "@/lib/data";
-import { featuredCategories, summarizeCategories } from "@/lib/categories";
+import { featuredCategories, RARE_MAX_STORES, summarizeCategories } from "@/lib/categories";
 
 /** トップの「こんな部門まである」・部門一覧の集計。実データの部門名だけを使い、数字を合算で作らない */
 describe("部門の探索用の集計", () => {
@@ -30,5 +30,21 @@ describe("部門の探索用の集計", () => {
       expect(c.storeCount).toBe(new Set(divisions.flatMap((d) => d.stores.map((s) => s.id))).size);
       expect(c.prefectureCount).toBe(new Set(divisions.map((d) => d.prefSlug).filter((s) => s !== "unknown")).size);
     }
+  });
+
+  it("ランダム部門の候補（全部門のリンク先）はすべて存在するページ", () => {
+    const divisionIds = new Set(site.divisions.map((d) => d.id));
+    const names = new Set(all.map((c) => c.name));
+    for (const c of all) {
+      if (c.href.startsWith("/division/")) expect(divisionIds.has(c.href.slice("/division/".length)), c.href).toBe(true);
+      else expect(names.has(decodeURIComponent(c.href.split("?q=")[1])), c.href).toBe(true);
+    }
+  });
+
+  it("「レア」は掲載店舗が1〜2店の部門（データから判定でき、全部門の一部）", () => {
+    const rare = all.filter((c) => c.storeCount >= 1 && c.storeCount <= RARE_MAX_STORES);
+    expect(RARE_MAX_STORES).toBe(2);
+    expect(rare.length).toBeGreaterThan(0);
+    expect(rare.length).toBeLessThan(all.length);
   });
 });

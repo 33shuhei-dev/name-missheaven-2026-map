@@ -6,6 +6,8 @@ import { MapLegend } from "@/components/MapLegend";
 import { SearchBox } from "@/components/SearchBox";
 import { PrefecturePicker } from "@/components/PrefecturePicker";
 import { featuredCategories, summarizeCategories } from "@/lib/categories";
+import { CategoryCard } from "@/components/CategoryCard";
+import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -20,7 +22,7 @@ export default function HomePage() {
   }));
 
   const categories = summarizeCategories(site);
-  const featured = featuredCategories(categories);
+  const featured = featuredCategories(categories, 12);
 
   return (
     <div className="home">
@@ -34,31 +36,33 @@ export default function HomePage() {
         <p className="hero__lead">
           ミスヘブン総選挙2026の出場情報を、<strong>全国・地域・部門・店舗</strong>から探せる非公式まとめです。
         </p>
-        <dl className="hero-stats">
-          <div>
-            <dt>掲載店舗</dt>
-            <dd>{stats.stores.storeCount}</dd>
-          </div>
-          <div>
-            <dt>部門</dt>
-            <dd>{categories.length}</dd>
-          </div>
-          <div>
-            <dt>都道府県</dt>
-            <dd>
-              {stats.prefecturesWithData}
-              <small>/{stats.prefectureTotal}</small>
-            </dd>
-          </div>
-        </dl>
-        <div className="hero-actions">
-          <a href="#categories" className="hero-action hero-action--primary">
-            部門から探す
-          </a>
-          <a href="#map" className="hero-action">
-            地図から探す
-          </a>
-        </div>
+        {/* 数字はそのまま探索の入口 */}
+        <ul className="hero-stats">
+          <li>
+            <a href="#categories" className="hero-stat hero-stat--primary">
+              <span className="hero-stat__num">{categories.length}</span>
+              <span className="hero-stat__label">部門</span>
+              <span className="hero-stat__go">部門から探す ›</span>
+            </a>
+          </li>
+          <li>
+            <Link href="/search?kind=store" className="hero-stat">
+              <span className="hero-stat__num">{stats.stores.storeCount}</span>
+              <span className="hero-stat__label">掲載店舗</span>
+              <span className="hero-stat__go">店舗を探す ›</span>
+            </Link>
+          </li>
+          <li>
+            <a href="#map" className="hero-stat">
+              <span className="hero-stat__num">
+                {stats.prefecturesWithData}
+                <small>/{stats.prefectureTotal}</small>
+              </span>
+              <span className="hero-stat__label">都道府県</span>
+              <span className="hero-stat__go">地図から探す ›</span>
+            </a>
+          </li>
+        </ul>
         <ol className="flow" aria-label="探し方">
           <li>部門・地図で探す</li>
           <li>店舗を見つける</li>
@@ -69,23 +73,19 @@ export default function HomePage() {
       {/* 部門の面白さ：データに実在する部門名から */}
       <section className="section fun-cats" id="categories" aria-labelledby="fun-heading">
         <h2 id="fun-heading">こんな部門まである</h2>
-        <p className="hint hint--tight">ミスヘブン総選挙には、ユニークな部門がたくさん。気になる部門をタップしてみてください。</p>
-        <ul className="fun-cats__list">
+        <p className="hint hint--tight">ミスヘブン総選挙2026には、全国で{categories.length}種類もの部門が見つかっています。気になる部門をタップしてみてください。</p>
+        <ul className="cat-grid">
           {featured.map((c) => (
             <li key={c.name}>
-              <Link href={c.href} className="fun-cat">
-                <span className="fun-cat__name">{c.name}</span>
-                <span className="fun-cat__meta">
-                  {c.storeCount}店{c.prefectureCount > 1 && ` ・ ${c.prefectureCount}都道府県`}
-                </span>
-              </Link>
+              <CategoryCard row={c} />
             </li>
           ))}
         </ul>
+        <RandomCategoryButton hrefs={categories.map((c) => c.href)} />
         <Link href="/categories" className="cta">
           <span className="cta__main">
             <span className="cta__title">部門一覧を見る</span>
-            <span className="cta__sub">全国で見つかった{categories.length}種類の部門から探す</span>
+            <span className="cta__sub">{categories.length}種類をスクロールして眺める</span>
           </span>
           <span aria-hidden="true" className="cta__arrow">›</span>
         </Link>
