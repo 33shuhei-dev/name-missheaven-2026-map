@@ -71,3 +71,15 @@ describe("全国展開：出場者", () => {
     }
   });
 });
+
+describe("追加した情報源URL", () => {
+  it("ヘブンの情報源URLに、セッションID・表示モードなどの不要なクエリを含めない（ページを特定する girlId は残す）", () => {
+    // 手で入れた初期の情報源（利用者提供のabc＋のURLなど）は対象外。調査で追加した分（パイロット・全国展開・仕上げ）を確認する
+    const urls = [...sourceUpdates, ...entrantSources]
+      .filter((s) => !/^(upd-src-|ent-src-00)/.test(s.sourceId))
+      .map((s) => s.url)
+      .filter((u) => u.includes("cityheaven.net"));
+    expect(urls.length).toBeGreaterThan(0);
+    for (const u of urls) expect(u, u).not.toMatch(/[?&](spmode|pcmode|lo|of|rk|PHPSESSID)=|#!/);
+  });
+});
