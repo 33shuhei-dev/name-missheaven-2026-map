@@ -53,6 +53,12 @@ const nationalBatch = national as unknown as {
  *
  * 都道府県・掲載地域は店舗から表示する（ここには書かない・推測しない）。
  * 個人の写真・プロフィール本文は保存しない。詳しくは店舗の公開ページで確認してもらう。
+ *
+ * 本人申請ルート（本人または店舗から掲載希望があった場合の個別追加。例：mh26-ent-0025）
+ * 1. 本人・店舗による2026年の出場表明（本人のSNS投稿・店舗の告知など）を確認する
+ * 2. 既存データとの重複を確認する（人物名・店舗の表記違い・部門の原文）
+ * 3. 必要最小限（名前・店舗・部門・根拠）だけを追加し、根拠の情報源の notes と記録の notes に「本人申請を起点に追加」と書く
+ * 4. 検索・店舗・部門・地域から辿れることを確認する（Web全体の再調査はしない。店舗の公開ページURL・掲載地域は提供されたものだけ）
  */
 const manualEntrants: EntrantRawRecord[] = [
   {
@@ -368,6 +374,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-06",
     notes: null,
   },
+  // ── 本人申請を起点に追加（2026-10-06）。本人から掲載希望があり、本人Xの出場表明を確認して追加。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0025",
+    name: "恋仲めい",
+    storeId: "mh26-upd-store-0002",
+    sourceIds: ["ent-src-0023"],
+    evidence:
+      "本人のX（@princess1224mei）の2026年10月6日の投稿で、本人が「福岡県で『福岡県フリースタイル部門』で出場します」と出場を表明（本人からの掲載希望と合わせて確認。調査側は投稿本文を直接取得していない）",
+    evidenceDate: null,
+    categoryOriginal: "福岡県フリースタイル部門",
+    personalUrl: "https://x.com/princess1224mei",
+    confidence: "probable",
+    checkedAt: "2026-10-06",
+    notes: "本人申請を起点に追加（2026-10-06）。掲載希望：本人から。出場表明：本人Xの投稿。本人のプロフィール等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -614,6 +635,18 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-10-05",
     notes: "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。Phase 3b の保存済み検索結果から再解析",
   },
+  {
+    sourceId: "ent-src-0023",
+    url: "https://x.com/princess1224mei",
+    sourceType: "entrant_social",
+    accessStatus: "user_reported_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0002"],
+    relationIds: ["ent-rel-0012"],
+    checkedAt: "2026-10-06",
+    notes:
+      "本人のXアカウント。2026年10月6日の本人の投稿（出場表明）を、本人申請の内容として確認。投稿個別のURLは提供されていないため、アカウントのURLを記録。本人申請を起点に追加",
+  },
 ];
 
 /**
@@ -730,6 +763,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0018"],
     phase1RecordIds: [],
     notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0012",
+    storeId: "mh26-upd-store-0002",
+    categoryOriginal: "福岡県フリースタイル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0023"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（本人申請）",
   },
 ];
 

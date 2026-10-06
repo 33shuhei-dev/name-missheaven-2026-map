@@ -96,6 +96,7 @@ export const PARTICIPATION_TYPE_LABEL: Record<string, string> = {
   store_banner_reported: "店舗ページの告知バナーで確認（利用者からの情報提供）",
   search_index_reported: "店舗ページ（ヘブン掲載）の検索結果で参加の記載を確認",
   official_site_reported: "店舗の公式サイトで参加を確認",
+  entrant_self_reported: "出場者本人のSNS投稿で出場表明を確認（本人からの掲載希望）",
 };
 
 /** 店舗公開ページのリンク状態（publicUrlAccessStatus） */
@@ -127,6 +128,7 @@ export const SOURCE_ACCESS_LABEL: Record<string, string> = {
   indexed_only_403: "検索結果のみ（本文は取得不可）",
   indexed_only_fetch_failed: "検索結果のみ（本文の取得に失敗）",
   user_screenshot_only: "利用者提供のスクリーンショットで確認（調査側は本文を直接取得していない）",
+  user_reported_only: "本人からの申請内容として確認（調査側は投稿本文を直接取得していない）",
   search_index_only: "検索結果の抜粋で確認（本文は直接取得していない）",
 };
 
