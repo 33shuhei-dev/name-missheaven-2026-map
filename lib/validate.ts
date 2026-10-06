@@ -12,6 +12,7 @@ import type {
   Phase3RawSource,
   Phase3RawStore,
   Phase3StoresFile,
+  StoreListingAreaUpdate,
   StorePublicUrlUpdate,
 } from "@/data/types";
 import { PREFECTURES, findPrefectureByName } from "@/data/geo";
@@ -550,6 +551,33 @@ export function validateStorePublicUrlUpdates(
     if (seen.has(u.storeId)) err(u.storeId, "同じ店舗のURL補完が重複しています");
     seen.add(u.storeId);
     if (!safeExternalUrl(u.storePublicUrl)) err(u.storeId, "storePublicUrl が不正です");
+    if ((u.sourceIds ?? []).length === 0) err(u.storeId, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of u.sourceIds ?? []) {
+      const src = sources.get(sid);
+      if (!src) err(u.storeId, `存在しない sourceId です: ${sid}`);
+      else if (!(src.storeIds ?? []).includes(u.storeId)) err(u.storeId, `情報源 ${sid} はこの店舗の情報源ではありません`);
+    }
+  }
+  return issues;
+}
+
+/** 既存店舗の掲載地域の補完：元データに掲載地域がない店舗だけ。根拠の情報源が必要 */
+export function validateStoreListingAreaUpdates(
+  updates: readonly StoreListingAreaUpdate[],
+  layer: { stores: readonly Phase3RawStore[]; sources: readonly Phase3RawSource[] },
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeById = new Map(layer.stores.map((s) => [s.storeId, s]));
+  const sources = new Map(layer.sources.map((s) => [s.sourceId, s]));
+  const seen = new Set<string>();
+  for (const u of updates) {
+    const store = storeById.get(u.storeId);
+    if (!store) err(u.storeId, "存在しない storeId です");
+    else if (store.listingAreas.length > 0 || store.listingArea) err(u.storeId, "この店舗にはすでに掲載地域があります（上書きしない）");
+    if (seen.has(u.storeId)) err(u.storeId, "同じ店舗の掲載地域補完が重複しています");
+    seen.add(u.storeId);
+    if (typeof u.listingArea !== "string" || !u.listingArea.trim()) err(u.storeId, "listingArea は空でない文字列にしてください");
     if ((u.sourceIds ?? []).length === 0) err(u.storeId, "根拠の情報源（sourceIds）は必須です");
     for (const sid of u.sourceIds ?? []) {
       const src = sources.get(sid);

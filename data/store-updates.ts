@@ -1,4 +1,13 @@
-import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore, StorePublicUrlUpdate } from "./types";
+import pilot3 from "./stores/pilot3-2026-10-06.json";
+import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore, StoreListingAreaUpdate, StorePublicUrlUpdate } from "./types";
+
+/** 3都道府県パイロット（大阪府・宮城県・青森県、2026-10-06）の追加分 */
+const pilot3Batch = pilot3 as unknown as {
+  stores: Phase3RawStore[];
+  relations: Phase3RawRelation[];
+  sources: Phase3RawSource[];
+  listingAreaUpdates: StoreListingAreaUpdate[];
+};
 
 /**
  * Phase 3 以降に追加する参加関連店舗（差分更新）。
@@ -14,7 +23,7 @@ import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore, StorePublicUrl
  * - 画像（宣材・告知バナー）は保存しない。リンクと必要最小限の事実だけを書く
  */
 
-export const storeUpdates: Phase3RawStore[] = [
+const manualStores: Phase3RawStore[] = [
   {
     storeId: "mh26-upd-store-0001",
     storeName: "abc＋",
@@ -41,7 +50,7 @@ export const storeUpdates: Phase3RawStore[] = [
   },
 ];
 
-export const relationUpdates: Phase3RawRelation[] = [
+const manualRelations: Phase3RawRelation[] = [
   {
     relationId: "upd-rel-0001",
     storeId: "mh26-upd-store-0001",
@@ -54,7 +63,7 @@ export const relationUpdates: Phase3RawRelation[] = [
   },
 ];
 
-export const sourceUpdates: Phase3RawSource[] = [
+const manualSources: Phase3RawSource[] = [
   {
     sourceId: "upd-src-0001",
     url: "https://www.cityheaven.net/kanagawa/A1406/A140602/abc/?lo=1",
@@ -80,6 +89,10 @@ export const sourceUpdates: Phase3RawSource[] = [
   },
 ];
 
+export const storeUpdates: Phase3RawStore[] = [...manualStores, ...pilot3Batch.stores];
+export const relationUpdates: Phase3RawRelation[] = [...manualRelations, ...pilot3Batch.relations];
+export const sourceUpdates: Phase3RawSource[] = [...manualSources, ...pilot3Batch.sources];
+
 /**
  * 既存店舗の店舗公開ページURLの補完。元の店舗データ（Phase 3 など）にURLがなく、
  * 保存済みの証拠から確実に特定できた場合だけ追加する（推測したURLは入れない）。
@@ -92,3 +105,9 @@ export const storePublicUrlUpdates: StorePublicUrlUpdate[] = [
     notes: "One More 奥様 横浜関内店。Phase 3b の照合記録による。",
   },
 ];
+
+/**
+ * 既存店舗の掲載地域の補完。元の店舗データに掲載地域がなく、店舗キー・店名が一致するページの
+ * 掲載地域表記から確実に特定できた場合だけ追加する（推測しない。正式選挙エリアとは別）。
+ */
+export const storeListingAreaUpdates: StoreListingAreaUpdate[] = [...pilot3Batch.listingAreaUpdates];

@@ -346,6 +346,15 @@ export interface StorePublicUrlUpdate {
   notes?: string | null;
 }
 
+/** 既存店舗に、確実に特定できた掲載地域を補う（元の店舗データに掲載地域がない場合だけ。正式選挙エリアではない） */
+export interface StoreListingAreaUpdate {
+  storeId: string;
+  listingArea: string;
+  /** 掲載地域を特定した根拠（sourceUpdates の sourceId） */
+  sourceIds: string[];
+  notes?: string | null;
+}
+
 export interface SiteEntrantRecord {
   id: string;
   name: string;

@@ -12,6 +12,7 @@ import type {
   SourceType,
   StoreCountFact,
   StoreLayer,
+  StoreListingAreaUpdate,
   StorePublicUrlUpdate,
 } from "@/data/types";
 
@@ -121,8 +122,11 @@ export function adaptStoreLayer(input: {
   entrantRelations?: readonly Phase3RawRelation[];
   /** 既存店舗の店舗公開ページURLの補完（data/store-updates.ts） */
   publicUrlUpdates?: readonly StorePublicUrlUpdate[];
+  /** 既存店舗の掲載地域の補完（data/store-updates.ts） */
+  listingAreaUpdates?: readonly StoreListingAreaUpdate[];
 }): StoreLayer {
   const urlPatch = new Map((input.publicUrlUpdates ?? []).map((u) => [u.storeId, u]));
+  const areaPatch = new Map((input.listingAreaUpdates ?? []).map((u) => [u.storeId, u]));
   const extraCats = new Map<string, string[]>();
   for (const r of input.entrantRelations ?? []) extraCats.set(r.storeId, [...(extraCats.get(r.storeId) ?? []), r.categoryOriginal]);
   const stores = [
@@ -132,10 +136,12 @@ export function adaptStoreLayer(input: {
   ].map((s) => {
     const patch = urlPatch.get(s.id);
     const cats = extraCats.get(s.id);
-    if (!patch && !cats) return s;
+    const area = areaPatch.get(s.id);
+    if (!patch && !cats && !area) return s;
     return {
       ...s,
       ...(patch && !s.storePublicUrl ? { storePublicUrl: patch.storePublicUrl, publicUrlAccessStatus: "unknown" } : {}),
+      ...(area && s.listingAreas.length === 0 ? { listingAreas: [area.listingArea] } : {}),
       ...(cats ? { categoryOriginals: [...new Set([...s.categoryOriginals, ...cats])] } : {}),
     };
   });
