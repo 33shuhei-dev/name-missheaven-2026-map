@@ -1733,3 +1733,386 @@ p {
   font-weight: 700;
   color: var(--muted);
 }
+
+/* ───────────── トップ：ファーストビューの数字・入口・探し方 ───────────── */
+.hero__lead strong {
+  color: var(--navy);
+}
+.flow {
+  list-style: none;
+  counter-reset: flow;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 6px;
+  margin: 10px 0 0;
+  padding: 0;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.flow li {
+  counter-increment: flow;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.flow li::before {
+  content: counter(flow);
+  display: inline-grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--navy-weak);
+  color: var(--navy-2);
+  font-weight: 700;
+  font-size: 0.6875rem;
+}
+.flow li:not(:last-child)::after {
+  content: "›";
+  margin-left: 2px;
+  color: #a8b1c1;
+}
+
+/* ───────────── トップ：こんな部門まである ───────────── */
+.fun-cats h2 {
+  font-size: 1.25rem;
+  margin-bottom: 2px;
+}
+.fun-cats__list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fun-cats__list li {
+  max-width: 100%;
+}
+.fun-cat {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  min-height: var(--tap);
+  padding: 6px 12px;
+  border-radius: 14px;
+  background: var(--accent-weak);
+  border: 1px solid #ecd2e6;
+  text-decoration: none;
+  color: var(--accent);
+}
+.fun-cat__name {
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.fun-cat__meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+@media (hover: hover) {
+  .fun-cat:hover {
+    background: #f0e2f6;
+  }
+}
+
+/* ───────────── 部門一覧：部門名が主役 ───────────── */
+.lead {
+  font-size: 0.9375rem;
+  margin: 4px 0 6px;
+}
+.lead strong {
+  color: var(--accent);
+}
+.category .category__name {
+  font-size: 1.1875rem;
+  font-weight: 800;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.place-link__count {
+  flex: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+
+/* ───────────── 店舗ページ：部門・公開ページへの導線 ───────────── */
+.store-place {
+  margin: 2px 0 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+.store-cats .fun-cats__list {
+  margin: 8px 0 6px;
+}
+.store-cta {
+  background: var(--gradient);
+  box-shadow: 0 6px 18px rgba(118, 80, 204, 0.22);
+  min-height: 64px;
+  font-size: 1.0625rem;
+}
+.store-cta__sub {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  opacity: 0.95;
+}
+.evidence__status {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 8px;
+  font-size: 0.875rem;
+}
+.evidence__status .badge {
+  flex: none;
+}
+.section--first {
+  margin-top: 14px;
+}
+.section--first + .facts {
+  margin-top: 20px;
+}
+.research-status {
+  margin: 6px 0 10px;
+}
+.research-status summary {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+.stats--compact {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media (min-width: 600px) {
+  .stats--compact {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    max-width: 480px;
+  }
+}
+.store-place a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+}
+
+/* ───────────── トップ：数字＝探索の入口 ───────────── */
+.hero-stats {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.hero-stat {
+  display: grid;
+  justify-items: center;
+  gap: 0;
+  height: 100%;
+  padding: 8px 4px 9px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--navy);
+  text-align: center;
+}
+.hero-stat__num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.hero-stat__num small {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+.hero-stat__label {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+.hero-stat__go {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--navy-2);
+}
+.hero-stat--primary {
+  border-color: transparent;
+  background: var(--gradient);
+  color: #fff;
+}
+.hero-stat--primary .hero-stat__label,
+.hero-stat--primary .hero-stat__go {
+  color: #fff;
+}
+@media (min-width: 600px) {
+  .hero-stats {
+    max-width: 560px;
+  }
+}
+
+/* ───────────── 部門カードのグリッド（縦スクロールで眺める） ───────────── */
+.cat-grid {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+.cat-grid li {
+  min-width: 0;
+}
+.cat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 6px;
+  height: 100%;
+  min-height: 76px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid #ecd2e6;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.cat-card__name {
+  font-weight: 800;
+  font-size: 0.9375rem;
+  line-height: 1.35;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+.cat-card__meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+@media (min-width: 600px) {
+  .cat-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (min-width: 960px) {
+  .cat-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media (hover: hover) {
+  .cat-card:hover {
+    background: var(--accent-weak);
+  }
+}
+
+/* ───────────── ランダム部門 ───────────── */
+.random-cat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  min-height: 48px;
+  margin: 0 0 10px;
+  border-radius: 12px;
+  border: 1px dashed var(--accent-2);
+  background: var(--surface);
+  color: var(--accent-2);
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+/* ───────────── 部門一覧：切替・指定した部門 ───────────── */
+.view-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin: 12px 0 4px;
+  padding: 4px;
+  border-radius: 12px;
+  background: var(--navy-weak);
+}
+.view-tab {
+  min-height: 40px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: var(--navy-2);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.view-tab--active {
+  background: var(--surface);
+  color: var(--navy);
+  box-shadow: 0 1px 3px rgba(20, 30, 60, 0.12);
+}
+.search-panel--compact {
+  margin-top: 8px;
+}
+.category-focus {
+  margin: 12px 0 8px;
+  border-color: #ecd2e6;
+}
+.category-focus__name {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 800;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+/* ───────────── 出場者：本人のページ（任意） ───────────── */
+.entrant-row:has(.entrant-row__link) {
+  grid-template-areas: "name badge" "sub sub" "link link";
+}
+.entrant-row__link {
+  grid-area: link;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* ───────────── トップ：推しから探す（検索） ───────────── */
+.hero-search {
+  margin-top: 12px;
+}
+.hero-search__label {
+  margin: 0 0 4px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+.hero-search .search-box {
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .hero-search {
+    max-width: 560px;
+  }
+}
+
+/* 出場者の検索結果から来たとき：その人の行を見せつつ、上の「店舗の公開ページ」ボタンも画面に入るようにする */
+.entrant-row {
+  scroll-margin-top: min(380px, 48vh);
+}
+.entrant-row:target {
+  box-shadow: 0 0 0 3px rgba(118, 80, 204, 0.35);
+}
+.store-cta--compact {
+  min-height: 52px;
+  margin-top: 10px;
+  font-size: 0.9375rem;
+}

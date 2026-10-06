@@ -12,7 +12,8 @@ import phase3bRelationsJson from "@/data/phase3b/store_category_relations.json";
 import phase3bSourcesJson from "@/data/phase3b/store_sources.json";
 import phase3bCoverageJson from "@/data/phase3b/coverage_47prefectures.json";
 import { updates } from "@/data/updates";
-import { relationUpdates, sourceUpdates, storeUpdates } from "@/data/store-updates";
+import { relationUpdates, sourceUpdates, storeListingAreaUpdates, storePublicUrlUpdates, storeUpdates } from "@/data/store-updates";
+import { entrantRelations, entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import type {
   Phase1Dataset,
   Phase1Map,
@@ -28,7 +29,16 @@ import type {
 import { buildModel, type SiteModel } from "./model";
 import { adaptAll } from "./phase1";
 import { adaptStoreLayer } from "./phase3";
-import { validateDatasetSummary, validateMap, validatePhase3, validateRecords, validateStoreUpdates } from "./validate";
+import {
+  validateDatasetSummary,
+  validateEntrantRecords,
+  validateMap,
+  validatePhase3,
+  validateRecords,
+  validateStoreListingAreaUpdates,
+  validateStorePublicUrlUpdates,
+  validateStoreUpdates,
+} from "./validate";
 
 /**
  * サイト全体が参照するデータの唯一の入口。
@@ -92,6 +102,20 @@ function load(): SiteModel {
       phase1Dataset.records,
       campaignSupportStores,
     ),
+    // 出場者の記録は、すべての店舗・店舗×部門関係・情報源に対して検証する
+    ...validateEntrantRecords(entrantUpdates, {
+      stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
+      relations: [...phase3Relations, ...phase3b.relations, ...relationUpdates],
+      sources: [...phase3Sources, ...phase3b.sources, ...sourceUpdates],
+    }, entrantSources, entrantRelations),
+    ...validateStorePublicUrlUpdates(storePublicUrlUpdates, {
+      stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
+      sources: sourceUpdates,
+    }),
+    ...validateStoreListingAreaUpdates(storeListingAreaUpdates, {
+      stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
+      sources: sourceUpdates,
+    }),
   ].filter((i) => i.level === "error");
   if (errors.length > 0) {
     const detail = errors.map((e) => `[${e.dataset}] ${e.id}: ${e.message}`).join("\n");
@@ -104,6 +128,11 @@ function load(): SiteModel {
     countFacts: phase2.countFacts,
     phase3b,
     updates: { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
+    entrants: entrantUpdates,
+    entrantSources,
+    entrantRelations,
+    publicUrlUpdates: storePublicUrlUpdates,
+    listingAreaUpdates: storeListingAreaUpdates,
   });
   return buildModel(adaptAll(sets), { mapInfo: phase1Map.prefectures, layer });
 }

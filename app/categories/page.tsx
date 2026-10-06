@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { site } from "@/lib/data";
-import { bestConfidence, UNKNOWN_AREA_LABEL } from "@/lib/labels";
+import { Suspense } from "react";
+import { UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
+import { UNKNOWN_AREA_LABEL } from "@/lib/labels";
 import { normalizeForSearch } from "@/lib/text";
+import { categoryHref } from "@/lib/categories";
+import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { CategoryExplorer, type CategoryRow } from "@/components/CategoryExplorer";
+import { CategoryExplorer, CategoryExplorerWithParams, type CategoryRow } from "@/components/CategoryExplorer";
 
 export const metadata: Metadata = { title: "部門一覧" };
 
@@ -16,14 +20,14 @@ export default function CategoriesPage() {
         name,
         variants: g.names.filter((n) => n.name !== name).map((n) => n.name),
         keys: [...new Set([normalizeForSearch(name), ...records.map((r) => normalizeForSearch(r.categoryNormalized))])].filter(Boolean),
-        recordCount: records.length,
         storeCount: new Set(divisions.flatMap((d) => d.stores.map((st) => st.id))).size,
         prefectures: [...new Map(divisions.map((d) => [d.prefSlug, d.prefectureName])).entries()].map(([slug, label]) => ({ slug, label })),
-        confidence: bestConfidence([...records, ...divisions.map((d) => ({ confidence: d.confidence }))]),
+        prefectureCount: new Set(divisions.map((d) => d.prefSlug).filter((x) => x !== UNKNOWN_PREFECTURE_SLUG)).size,
+        href: divisions.length === 1 ? `/division/${divisions[0].id}` : categoryHref(name),
         divisions: divisions.map((d) => ({
           id: d.id,
           label: `${d.prefectureName} / ${d.listingArea ?? UNKNOWN_AREA_LABEL}`,
-          confidence: d.confidence,
+          storeCount: d.stores.length,
         })),
       };
     }),
@@ -38,13 +42,14 @@ export default function CategoriesPage() {
     <>
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "部門一覧" }]} />
       <h1>部門一覧</h1>
-      <p className="summary-line">
-        部門名（原文） {stats.allCategoryNameCount}種類 ・ 店舗と結び付いた部門名 {stats.stores.storeCategoryCount}種類
+      <p className="lead">
+        ミスヘブン総選挙2026で見つかった部門は<strong>{stats.allCategoryNameCount}種類</strong>。スクロールして眺めて、気になる部門をタップすると地域と店舗を見られます。
       </p>
-      <p className="hint">
-        部門名は情報源の掲載原文のまま表示しています。記号・絵文字・語順が違う名前は統合していません（検索では表記の違いを吸収します）。
-      </p>
-      <CategoryExplorer rows={rows} prefOptions={prefOptions} />
+      <RandomCategoryButton hrefs={rows.map((r) => r.href)} />
+      <p className="hint hint--tight">部門名は掲載された表記のままです（記号や言い回しの違う似た名前は、別の部門として並べています）。</p>
+      <Suspense fallback={<CategoryExplorer rows={rows} prefOptions={prefOptions} />}>
+        <CategoryExplorerWithParams rows={rows} prefOptions={prefOptions} />
+      </Suspense>
     </>
   );
 }

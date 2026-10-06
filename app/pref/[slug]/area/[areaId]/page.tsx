@@ -50,7 +50,7 @@ export default async function AreaPage({ params }: Params) {
       <p className="eyebrow">掲載地域 ・ {pref.name}</p>
       <h1>{area.label}</h1>
       <p className="summary-line">
-        部門 {area.categoryNameCount} ・ 店舗 {area.stores.length} ・ 観測 {area.recordCount}件
+        部門 {area.categoryNameCount} ・ 店舗 {area.stores.length}
       </p>
       <p className="hint">
         掲載地域は情報源に書かれた掲載・営業地域です。正式な選挙エリアではありません。

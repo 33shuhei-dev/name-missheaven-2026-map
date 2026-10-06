@@ -26,6 +26,7 @@ import { safeExternalUrl } from "@/lib/links";
 import { buildSearchIndex, searchItems } from "@/lib/search";
 import { buildModel, findStore, phase1SummaryOf, prefSlugOf, storeIdOf, summarizeStores } from "@/lib/model";
 import { relationUpdates, storeUpdates } from "@/data/store-updates";
+import { entrantRelations, entrantUpdates } from "@/data/entrant-updates";
 
 /**
  * 本番データ（Phase 1 最終データ）の検証。`npm run validate:data` でも実行できる。
@@ -220,7 +221,17 @@ describe("誤解を招く表現をしない", () => {
 
 describe("Phase 3 店舗の統合", () => {
   const sm = phase3Stores.summary as Record<string, number>;
-  const p3 = site.stores.filter((s) => s.origin === "phase3");
+  // Phase 3 の成果物どおりの姿（後から補った公開URL・出場者の根拠からの店舗×部門関係を除く）と summary を照合する
+  const rawP3 = new Map(phase3Stores.stores.map((s) => [s.storeId, s]));
+  const p3RelIds = new Set(phase3Relations.map((r) => r.relationId));
+  const p3 = site.stores
+    .filter((s) => s.origin === "phase3")
+    .map((s) => ({
+      ...s,
+      storePublicUrl: rawP3.get(s.id)!.storePublicUrl ?? undefined,
+      categories: s.categories.filter((c) => p3RelIds.has(c.relationId)),
+      categoryOriginals: [...rawP3.get(s.id)!.categoryOriginals],
+    }));
   it("Phase 3 由来の店舗数・確認状態・公開URL・関係数が Phase 3 summary と一致する", () => {
     const st = summarizeStores(p3);
     expect(st.storeCount).toBe(sm.finalStoresIncludingCandidates);
@@ -233,7 +244,9 @@ describe("Phase 3 店舗の統合", () => {
   });
   it("サイト全体の店舗数 = Phase 3 ＋ Phase 3b ＋ 個別追加", () => {
     expect(site.stats.stores.storeCount).toBe(phase3Stores.stores.length + phase3b.stores.length + storeUpdates.length);
-    expect(site.stats.stores.relationCount).toBe(phase3Relations.length + phase3b.relations.length + relationUpdates.length);
+    expect(site.stats.stores.relationCount).toBe(
+      phase3Relations.length + phase3b.relations.length + relationUpdates.length + entrantRelations.length,
+    );
   });
   it("店舗IDに重複がなく、県別店舗数がカバレッジと一致する", () => {
     expect(new Set(site.stores.map((s) => s.id)).size).toBe(site.stores.length);
@@ -297,10 +310,17 @@ describe("Phase 3 店舗の統合", () => {
     const legacy = new Set(phase1Records.filter((r) => r.storeName).map((r) => storeIdOf(prefSlugOf(r), r.storeName!)));
     for (const id of legacy) expect(findStore(site, id), id).not.toBeNull();
   });
-  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDによるもののみ", () => {
-    const names = new Set(phase1Records.flatMap((r) => r.entrantNames));
-    expect(new Set(site.entrants.map((e) => e.name))).toEqual(names);
+  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDか、出場者の記録の所属店舗によるもののみ", () => {
+    const phase1Names = new Set(phase1Records.flatMap((r) => r.entrantNames));
+    const recordNames = new Set(entrantUpdates.map((e) => e.name));
+    expect(new Set(site.entrants.map((e) => e.name))).toEqual(new Set([...phase1Names, ...recordNames]));
     for (const e of site.entrants) {
+      if (e.records.length === 0) {
+        // 観測のない出場者は、出場者の記録（所属店舗・名前が一致）から作られたものだけ
+        expect(e.entrantRecord, e.name).toBeTruthy();
+        expect(entrantUpdates.some((r) => r.storeId === e.storeId && r.name === e.name), e.name).toBe(true);
+        continue;
+      }
       if (!e.storeId) continue;
       const store = site.stores.find((s) => s.id === e.storeId)!;
       expect(e.records.every((r) => store.phase1RecordIds.includes(r.id)), e.name).toBe(true);

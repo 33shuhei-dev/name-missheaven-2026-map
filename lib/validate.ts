@@ -1,6 +1,7 @@
 import type {
   Confidence,
   Dataset,
+  EntrantRawRecord,
   MapStatus,
   Phase1Dataset,
   Phase1Map,
@@ -11,6 +12,8 @@ import type {
   Phase3RawSource,
   Phase3RawStore,
   Phase3StoresFile,
+  StoreListingAreaUpdate,
+  StorePublicUrlUpdate,
 } from "@/data/types";
 import { PREFECTURES, findPrefectureByName } from "@/data/geo";
 import { safeExternalUrl } from "./links";
@@ -443,6 +446,143 @@ export function validateStoreUpdates(
     const proj = [...new Set(updates.relations.filter((r) => r.storeId === s.storeId).map((r) => r.categoryOriginal))].sort();
     if (JSON.stringify(proj) !== JSON.stringify([...(s.categoryOriginals ?? [])].sort())) {
       err(s.storeId, "categoryOriginals が店舗×部門関係と一致しません");
+    }
+  }
+  return issues;
+}
+
+/**
+ * 出場者の記録（data/entrant-updates.ts）の検証。
+ * 必須：人物名・所属店舗（存在する storeId）・2026年の出場を示す根拠（情報源と記載内容）。
+ * 任意：部門（その店舗の部門に限る）・個人のページURL。
+ */
+export function validateEntrantRecords(
+  entrants: readonly EntrantRawRecord[],
+  layer: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
+  entrantSources: readonly Phase3RawSource[] = [],
+  entrantRelations: readonly Phase3RawRelation[] = [],
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeIds = new Set(layer.stores.map((s) => s.storeId));
+  const sourceIds = new Set(layer.sources.map((s) => s.sourceId));
+  // 出場者の根拠の情報源（data/entrant-updates.ts の entrantSources）
+  for (const src of entrantSources) {
+    const id = src?.sourceId ?? "(sourceIdなし)";
+    if (sourceIds.has(id)) err(id, "sourceId が既存と重複しています");
+    sourceIds.add(id);
+    if (!safeExternalUrl(src.url)) err(id, `url が不正です: ${String(src.url)}`);
+    if (!SOURCE_TYPES.includes(src.sourceType)) err(id, `sourceType が不正です: ${String(src.sourceType)}`);
+    for (const sid of src.storeIds ?? []) if (!storeIds.has(sid)) err(id, `存在しない storeId を参照しています: ${sid}`);
+  }
+  const entrantSourceStores = new Map(entrantSources.map((s) => [s.sourceId, new Set(s.storeIds ?? [])]));
+  // 出場者の根拠から確認できた店舗×部門関係（entrantRelations）：同じ根拠に 店舗＋人物＋部門 が揃っていること
+  const relIds = new Set(layer.relations.map((r) => r.relationId));
+  const relPairs = new Set(layer.relations.map((r) => `${r.storeId}|${r.categoryOriginal}`));
+  for (const rel of entrantRelations) {
+    const id = rel?.relationId ?? "(relationIdなし)";
+    if (relIds.has(id)) err(id, "relationId が既存と重複しています");
+    relIds.add(id);
+    if (!storeIds.has(rel.storeId)) err(id, `存在しない storeId を参照しています: ${rel.storeId}`);
+    if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
+    if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
+    const pair = `${rel.storeId}|${rel.categoryOriginal}`;
+    if (relPairs.has(pair)) err(id, "同じ店舗×部門の関係がすでにあります");
+    relPairs.add(pair);
+    if ((rel.sourceIds ?? []).length === 0) err(id, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of rel.sourceIds ?? []) {
+      if (!entrantSourceStores.get(sid)?.has(rel.storeId)) err(id, `情報源 ${sid} はこの店舗の出場者の情報源ではありません`);
+    }
+    const backed = entrants.some(
+      (e) => e.storeId === rel.storeId && e.categoryOriginal === rel.categoryOriginal && (e.sourceIds ?? []).some((sid) => (rel.sourceIds ?? []).includes(sid)),
+    );
+    if (!backed) err(id, "同じ根拠で、この店舗・部門の出場者が記録されていません（店舗＋人物＋部門の対応が必要）");
+  }
+  const ids = new Set<string>();
+  const pairs = new Set<string>();
+  for (const e of entrants) {
+    const id = e?.entrantId ?? "(entrantIdなし)";
+    if (typeof e.entrantId !== "string" || !ID_PATTERN.test(e.entrantId)) err(id, "entrantId は英数字・-・_ で指定してください");
+    if (ids.has(id)) err(id, "entrantId が重複しています");
+    ids.add(id);
+    if (typeof e.name !== "string" || !e.name.trim()) err(id, "人物名（name）は必須です");
+    if (!storeIds.has(e.storeId)) err(id, `所属店舗が見つかりません（storeId: ${String(e.storeId)}）。店舗を先に追加してください`);
+    if (!Array.isArray(e.sourceIds) || e.sourceIds.length === 0) err(id, "2026年の出場を示す情報源（sourceIds）は必須です");
+    for (const sid of e.sourceIds ?? []) if (!sourceIds.has(sid)) err(id, `存在しない sourceId です: ${sid}`);
+    for (const sid of e.sourceIds ?? []) {
+      const owners = entrantSourceStores.get(sid);
+      if (owners && !owners.has(e.storeId)) err(id, `情報源 ${sid} はこの店舗の情報源として登録されていません`);
+    }
+    // 2026年の出場であること：evidence に「2026」があるか、なければ根拠の記載の日付（2026年）を evidenceDate に書く
+    if (typeof e.evidence !== "string" || !e.evidence.trim()) err(id, "情報源に書かれていた内容（evidence）は必須です");
+    else if (!/2026/.test(e.evidence.normalize("NFKC"))) {
+      if (!e.evidenceDate) err(id, "evidence に「2026」がありません。2026年の記載であることが日付で分かる場合だけ evidenceDate（2026-MM-DD）を書いてください（2025年以前・在籍情報のみは記録しない）");
+      else if (!/^2026-\d{2}-\d{2}$/.test(e.evidenceDate)) err(id, "evidenceDate は 2026 年の日付（2026-MM-DD）にしてください");
+      else if (typeof e.checkedAt === "string" && e.evidenceDate > e.checkedAt.slice(0, 10)) err(id, "evidenceDate が確認日より後です");
+    }
+    if (!CONFIDENCES.includes(e.confidence)) err(id, `confidence が不正です: ${String(e.confidence)}`);
+    if (typeof e.checkedAt !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(e.checkedAt)) err(id, "checkedAt（確認日）は YYYY-MM-DD で指定してください");
+    if (e.categoryOriginal !== undefined && e.categoryOriginal !== null) {
+      const cats = new Set([...layer.relations, ...entrantRelations].filter((r) => r.storeId === e.storeId).map((r) => r.categoryOriginal));
+      if (!cats.has(e.categoryOriginal)) err(id, `部門「${e.categoryOriginal}」はこの店舗の部門にありません（先に店舗×部門関係を追加してください）`);
+    }
+    if (e.personalUrl !== undefined && e.personalUrl !== null && !safeExternalUrl(e.personalUrl)) err(id, "personalUrl が不正です");
+    const pair = `${e.storeId}|${String(e.name ?? "").normalize("NFKC").replace(/\s/g, "")}`;
+    if (pairs.has(pair)) err(id, "同じ店舗・同じ名前の出場者が重複しています");
+    pairs.add(pair);
+  }
+  return issues;
+}
+
+/** 既存店舗の店舗公開ページURLの補完：元データにURLがない店舗だけ。根拠の情報源が必要 */
+export function validateStorePublicUrlUpdates(
+  updates: readonly StorePublicUrlUpdate[],
+  layer: { stores: readonly Phase3RawStore[]; sources: readonly Phase3RawSource[] },
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeById = new Map(layer.stores.map((s) => [s.storeId, s]));
+  const sources = new Map(layer.sources.map((s) => [s.sourceId, s]));
+  const seen = new Set<string>();
+  for (const u of updates) {
+    const store = storeById.get(u.storeId);
+    if (!store) err(u.storeId, "存在しない storeId です");
+    else if (store.storePublicUrl) err(u.storeId, "この店舗にはすでに公開ページURLがあります（上書きしない）");
+    if (seen.has(u.storeId)) err(u.storeId, "同じ店舗のURL補完が重複しています");
+    seen.add(u.storeId);
+    if (!safeExternalUrl(u.storePublicUrl)) err(u.storeId, "storePublicUrl が不正です");
+    if ((u.sourceIds ?? []).length === 0) err(u.storeId, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of u.sourceIds ?? []) {
+      const src = sources.get(sid);
+      if (!src) err(u.storeId, `存在しない sourceId です: ${sid}`);
+      else if (!(src.storeIds ?? []).includes(u.storeId)) err(u.storeId, `情報源 ${sid} はこの店舗の情報源ではありません`);
+    }
+  }
+  return issues;
+}
+
+/** 既存店舗の掲載地域の補完：元データに掲載地域がない店舗だけ。根拠の情報源が必要 */
+export function validateStoreListingAreaUpdates(
+  updates: readonly StoreListingAreaUpdate[],
+  layer: { stores: readonly Phase3RawStore[]; sources: readonly Phase3RawSource[] },
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeById = new Map(layer.stores.map((s) => [s.storeId, s]));
+  const sources = new Map(layer.sources.map((s) => [s.sourceId, s]));
+  const seen = new Set<string>();
+  for (const u of updates) {
+    const store = storeById.get(u.storeId);
+    if (!store) err(u.storeId, "存在しない storeId です");
+    else if (store.listingAreas.length > 0 || store.listingArea) err(u.storeId, "この店舗にはすでに掲載地域があります（上書きしない）");
+    if (seen.has(u.storeId)) err(u.storeId, "同じ店舗の掲載地域補完が重複しています");
+    seen.add(u.storeId);
+    if (typeof u.listingArea !== "string" || !u.listingArea.trim()) err(u.storeId, "listingArea は空でない文字列にしてください");
+    if ((u.sourceIds ?? []).length === 0) err(u.storeId, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of u.sourceIds ?? []) {
+      const src = sources.get(sid);
+      if (!src) err(u.storeId, `存在しない sourceId です: ${sid}`);
+      else if (!(src.storeIds ?? []).includes(u.storeId)) err(u.storeId, `情報源 ${sid} はこの店舗の情報源ではありません`);
     }
   }
   return issues;

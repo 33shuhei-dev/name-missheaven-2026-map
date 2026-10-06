@@ -301,6 +301,72 @@ export interface StoreLayer {
   relations: SiteRelation[];
   sources: SiteSource[];
   countFacts: StoreCountFact[];
+  /** 出場者の記録（data/entrant-updates.ts）。Phase 1 の観測とは別に追加したもの */
+  entrants?: SiteEntrantRecord[];
+}
+
+/**
+ * 出場者の記録（入力形式。data/entrant-updates.ts）。
+ *
+ * 必須：人物名・所属店舗・2026年の出場を示す根拠（情報源と、そこに書かれていた内容）。
+ * 任意：部門（その店舗の部門に限る）・個人のページURL。
+ * 都道府県・掲載地域は店舗から表示する（ここには書かない・推測しない）。
+ */
+export interface EntrantRawRecord {
+  /** 例: "mh26-ent-0001" */
+  entrantId: string;
+  /** 情報源の表記どおりの名前 */
+  name: string;
+  /** 所属店舗の storeId（Phase 3・Phase 3b・差分更新のいずれか） */
+  storeId: string;
+  /** 2026年の出場を示す情報源（store_sources / sourceUpdates の sourceId）。1件以上 */
+  sourceIds: string[];
+  /** 情報源に何が書かれていたか（2026年の出場を示す記載を短く。人物写真・全文は書かない） */
+  evidence: string;
+  /**
+   * 根拠の記載の日付（YYYY-MM-DD）。evidence に「2026」の文字がない場合だけ必須。
+   * 例：本人の「ミスヘブンへの意気込み」の投稿（10/2）で「今年出場します」とあり、年の表記がないもの
+   */
+  evidenceDate?: string | null;
+  /** 部門（原文）。情報源で確認できた場合のみ。その店舗の部門（店舗×部門関係）にあるものに限る */
+  categoryOriginal?: string | null;
+  /** 本人のページURL（任意） */
+  personalUrl?: string | null;
+  confidence: string;
+  checkedAt: string;
+  notes?: string | null;
+}
+
+/** 既存店舗に、確実に特定できた店舗公開ページURLを補う（元の店舗データにURLがない場合だけ） */
+export interface StorePublicUrlUpdate {
+  storeId: string;
+  storePublicUrl: string;
+  /** URLを特定した根拠（sourceUpdates の sourceId） */
+  sourceIds: string[];
+  notes?: string | null;
+}
+
+/** 既存店舗に、確実に特定できた掲載地域を補う（元の店舗データに掲載地域がない場合だけ。正式選挙エリアではない） */
+export interface StoreListingAreaUpdate {
+  storeId: string;
+  listingArea: string;
+  /** 掲載地域を特定した根拠（sourceUpdates の sourceId） */
+  sourceIds: string[];
+  notes?: string | null;
+}
+
+export interface SiteEntrantRecord {
+  id: string;
+  name: string;
+  storeId: string;
+  sourceIds: string[];
+  evidence: string;
+  evidenceDate?: string;
+  categoryOriginal?: string;
+  personalUrl?: string;
+  confidence: Confidence;
+  checkedAt: string;
+  notes?: string;
 }
 
 /** Phase 3b 全国走査の都道府県別カバレッジ */

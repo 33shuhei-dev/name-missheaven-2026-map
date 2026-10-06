@@ -4,6 +4,7 @@ import type {
   MapStatus,
   Phase1MapPrefecture,
   SiteRecord,
+  SiteEntrantRecord,
   SiteRelation,
   SiteSource,
   SiteStore,
@@ -174,6 +175,8 @@ export interface DivisionStore {
   name: string;
   /** 店舗×部門の関係の確認状態 */
   relationConfidence: Confidence;
+  /** 店舗の参加情報の確認状態（店舗ページと同じもの） */
+  storeConfidence: Confidence;
   hasPublicUrl: boolean;
 }
 
@@ -201,7 +204,10 @@ export interface StoreView extends SiteStore {
   countFacts: StoreCountFact[];
 }
 
-/** 出場者 = 都道府県 × 店舗名 × 人物名（Phase 1 の既存人物情報。同姓同名の別人を自動統合しない） */
+/**
+ * 出場者 = 都道府県 × 店舗名 × 人物名（同姓同名の別人を自動統合しない）。
+ * Phase 1 の観測にある人物と、出場者の記録（data/entrant-updates.ts）の人物が、同じ形で検索・表示される
+ */
 export interface EntrantView {
   id: string;
   name: string;
@@ -214,6 +220,8 @@ export interface EntrantView {
   records: SiteRecord[];
   divisions: Division[];
   confidence: Confidence;
+  /** 出場者の記録（data/entrant-updates.ts）から作った場合の元の記録（根拠・個人URL） */
+  entrantRecord?: SiteEntrantRecord;
 }
 
 export interface AreaView {
@@ -400,6 +408,7 @@ export function buildModel(
         id: storeId,
         name: storeById.get(storeId)!.name,
         relationConfidence: bestConfidence(rs),
+        storeConfidence: storeById.get(storeId)!.confidence,
         hasPublicUrl: !!storeById.get(storeId)!.storePublicUrl,
       }))
       .sort((a, b) => confidenceRank(a.relationConfidence) - confidenceRank(b.relationConfidence) || compareJa(a.name, b.name));
@@ -465,9 +474,9 @@ export function buildModel(
         compareJa(a.name, b.name),
     );
 
-  // 3) 出場者（Phase 1 の既存人物情報）
+  // 3) 出場者（Phase 1 の既存人物情報 ＋ 店舗×部門関係の根拠に書かれた出場者名）
   const entrantRows = records.flatMap((r) => r.entrantNames.map((name) => ({ r, name })));
-  const entrants: EntrantView[] = [
+  const phase1Entrants: EntrantView[] = [
     ...groupBy(entrantRows, ({ r, name }) => `${prefSlugOf(r)}|${r.storeName ?? ""}|${name}`).entries(),
   ]
     .map(([key, rows]) => {
@@ -494,6 +503,42 @@ export function buildModel(
         compareJa(a.storeName ?? "\uffff", b.storeName ?? "\uffff") ||
         compareJa(a.name, b.name),
     );
+
+  // 出場者の記録（data/entrant-updates.ts）。所属店舗に必ず接続し、都道府県・掲載地域は店舗から表示する。
+  // 部門は記録にある場合だけ（その店舗の部門）。同じ都道府県・店舗名・名前の出場者が Phase 1 にあれば、そちらを優先して重複させない
+  const entrantKey = (prefSlug: string, storeName: string | undefined, name: string) =>
+    `${prefSlug}|${normalizeForSearch(storeName)}|${normalizeForSearch(name)}`;
+  const knownEntrants = new Set(phase1Entrants.map((e) => entrantKey(e.prefSlug, e.storeName, e.name)));
+  // 店舗に接続済みの Phase 1 の出場者とは、店舗IDと名前でも照合する（店名の表記が観測と店舗データで違う場合）
+  const knownByStore = new Set(phase1Entrants.filter((e) => e.storeId).map((e) => `${e.storeId}|${normalizeForSearch(e.name)}`));
+  const recordEntrants: EntrantView[] = (layer.entrants ?? []).flatMap((rec) => {
+    const st = storeById.get(rec.storeId);
+    if (!st || knownEntrants.has(entrantKey(prefSlugOf(st), st.name, rec.name)) || knownByStore.has(`${st.id}|${normalizeForSearch(rec.name)}`)) return [];
+    const divIds = rec.categoryOriginal
+      ? new Set(storeAreas(st).map((area) => divisionIdOf(prefSlugOf(st), area, rec.categoryOriginal!)))
+      : new Set<string>();
+    return [
+      {
+        id: `e${stableHash(`rec|${rec.id}`)}`,
+        name: rec.name,
+        prefSlug: prefSlugOf(st),
+        prefectureName: st.prefecture ?? UNKNOWN_PREFECTURE_LABEL,
+        storeName: st.name,
+        storeId: st.id,
+        listingAreas: [...st.listingAreas].sort(compareJa),
+        records: [],
+        divisions: divisions.filter((d) => divIds.has(d.id)),
+        confidence: rec.confidence,
+        entrantRecord: rec,
+      },
+    ];
+  });
+  const entrants: EntrantView[] = [...phase1Entrants, ...recordEntrants].sort(
+    (a, b) =>
+      prefOrder(a.prefSlug) - prefOrder(b.prefSlug) ||
+      compareJa(a.storeName ?? "\uffff", b.storeName ?? "\uffff") ||
+      compareJa(a.name, b.name),
+  );
 
   // 4) 都道府県 → 掲載地域
   const buildPref = (slug: string, name: string, code: number | null, regionId: string | null): PrefectureView => {

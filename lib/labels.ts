@@ -111,6 +111,8 @@ export const PUBLISHER_ROLE_LABEL: Record<string, string> = {
   event_organizer: "大会運営の公式案内",
   official_media_guide: "公式媒体の案内",
   store_announcement: "店舗の告知",
+  entrant_page: "出場者本人のページ（日記・意気込み）",
+  third_party_mirror: "転載サイト（本人の日記の転載）",
   search_engine_result: "検索結果（店舗ページの抜粋）",
   store_public_page: "店舗の公開ページ",
   store_geography: "店舗の所在地情報",

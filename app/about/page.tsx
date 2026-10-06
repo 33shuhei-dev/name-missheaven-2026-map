@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ConfidenceBadge, StatusBadge } from "@/components/Badges";
+import { ConfidenceBar } from "@/components/ConfidenceBar";
 import { datasetInfo, site } from "@/lib/data";
 import { dateOnly } from "@/lib/phase1";
 import {
@@ -19,6 +20,28 @@ export default function AboutPage() {
     <>
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "このサイトについて" }]} />
       <h1>このサイトについて</h1>
+
+      <section className="section card prose">
+        <h2>このサイトでできること</h2>
+        <p>ミスヘブン総選挙2026の出場情報を、3つの方法で探せます。</p>
+        <ul>
+          <li>
+            <strong>推しから探す</strong>：出場者の名前・店舗名で検索できます（「厚木 ゆず」のように地域や部門と組み合わせても探せます）。
+          </li>
+          <li>
+            <strong>部門から探す</strong>：全国で見つかった部門を眺めて、知らなかった部門に出会えます。
+          </li>
+          <li>
+            <strong>地域から探す</strong>：全国地図から都道府県・掲載地域へ進めます。
+          </li>
+        </ul>
+        <p>
+          気になる店舗が見つかったら、店舗ページから<strong>店舗の公開ページ</strong>へ進み、詳しい出場者情報をご確認ください。出場者の詳しいプロフィールを集めるサイトではなく、出場情報のある店舗まで案内するためのサイトです。
+        </p>
+        <p>
+          出場者の名前は、店舗の2026年の告知・公開された告知画像・検索結果の具体的な出場の記述など、2026年の出場と所属店舗が分かる情報で確認できたものだけを載せています（個人のページURLがなくても載せることがあります）。全出場者の一覧ではありません。
+        </p>
+      </section>
 
       <section className="section card prose">
         <h2>非公式の情報まとめです</h2>
@@ -105,7 +128,7 @@ export default function AboutPage() {
       </section>
 
       <section className="section card prose">
-        <h2>データ</h2>
+        <h2>データの内訳</h2>
         <dl className="facts facts--plain">
           <div>
             <dt>基準データ</dt>
@@ -118,12 +141,22 @@ export default function AboutPage() {
             <dd>{site.stats.recordCount}件（Phase 1：都道府県・掲載地域・部門・店舗・出場者の観測）</dd>
           </div>
           <div>
-            <dt>参加関連店舗</dt>
+            <dt>掲載店舗</dt>
             <dd>
               {site.stats.stores.storeCount}店（{STORE_CONFIDENCE_LABEL.confirmed} {site.stats.stores.byConfidence.confirmed}・
               {STORE_CONFIDENCE_LABEL.probable} {site.stats.stores.byConfidence.probable}・{STORE_CONFIDENCE_LABEL.unverified}{" "}
               {site.stats.stores.byConfidence.unverified}）
               {datasetInfo.phase3CheckedAt && `、${datasetInfo.phase3CheckedAt} 時点`}
+            </dd>
+          </div>
+          <div>
+            <dt>公開ページ</dt>
+            <dd>店舗の公開ページのURLがある店舗 {site.stats.stores.publicUrlCount}店</dd>
+          </div>
+          <div>
+            <dt>掲載地域・部門</dt>
+            <dd>
+              掲載地域 {site.stats.allListingAreaCount}・部門名（原文） {site.stats.allCategoryNameCount}種類
             </dd>
           </div>
           <div>
@@ -143,6 +176,17 @@ export default function AboutPage() {
             <dd>{datasetInfo.scope}</dd>
           </div>
         </dl>
+        <ConfidenceBar
+          title="店舗の参加情報"
+          counts={site.stats.stores.byConfidence}
+          subject="store"
+          hrefFor={(c) => `/search?kind=store&confidence=${c}`}
+        />
+        <ConfidenceBar
+          title="部門の観測の確認状態"
+          counts={site.stats.byConfidence}
+          hrefFor={(c) => `/search?confidence=${c}&kind=division`}
+        />
         <p className="hint">地図は国土地理院「地球地図日本」をもとにした jpn-atlas（BSD-3-Clause）を加工して作成しています。離島の一部は省略し、沖縄県は位置・縮尺を変えて左上に表示しています。</p>
       </section>
     </>

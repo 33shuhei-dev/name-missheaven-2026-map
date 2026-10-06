@@ -1,15 +1,19 @@
 import type {
   Confidence,
+  EntrantRawRecord,
   Phase2CountFact,
   Phase3RawRelation,
   Phase3RawSource,
   Phase3RawStore,
+  SiteEntrantRecord,
   SiteRelation,
   SiteSource,
   SiteStore,
   SourceType,
   StoreCountFact,
   StoreLayer,
+  StoreListingAreaUpdate,
+  StorePublicUrlUpdate,
 } from "@/data/types";
 
 /**
@@ -112,16 +116,67 @@ export function adaptStoreLayer(input: {
   updates?: StoreLayerInput;
   /** Phase 3b 全国走査（data/phase3b） */
   phase3b?: StoreLayerInput;
+  /** 出場者の記録と、その根拠の情報源・根拠から確認できた店舗×部門関係（data/entrant-updates.ts） */
+  entrants?: readonly EntrantRawRecord[];
+  entrantSources?: readonly Phase3RawSource[];
+  entrantRelations?: readonly Phase3RawRelation[];
+  /** 既存店舗の店舗公開ページURLの補完（data/store-updates.ts） */
+  publicUrlUpdates?: readonly StorePublicUrlUpdate[];
+  /** 既存店舗の掲載地域の補完（data/store-updates.ts） */
+  listingAreaUpdates?: readonly StoreListingAreaUpdate[];
 }): StoreLayer {
+  const urlPatch = new Map((input.publicUrlUpdates ?? []).map((u) => [u.storeId, u]));
+  const areaPatch = new Map((input.listingAreaUpdates ?? []).map((u) => [u.storeId, u]));
+  const extraCats = new Map<string, string[]>();
+  for (const r of input.entrantRelations ?? []) extraCats.set(r.storeId, [...(extraCats.get(r.storeId) ?? []), r.categoryOriginal]);
   const stores = [
     ...input.stores.map((s) => adaptStore(s, "phase3")),
     ...(input.phase3b?.stores ?? []).map((s) => adaptStore(s, "phase3b")),
     ...(input.updates?.stores ?? []).map((s) => adaptStore(s, "update")),
-  ];
+  ].map((s) => {
+    const patch = urlPatch.get(s.id);
+    const cats = extraCats.get(s.id);
+    const area = areaPatch.get(s.id);
+    if (!patch && !cats && !area) return s;
+    return {
+      ...s,
+      ...(patch && !s.storePublicUrl ? { storePublicUrl: patch.storePublicUrl, publicUrlAccessStatus: "unknown" } : {}),
+      ...(area && s.listingAreas.length === 0 ? { listingAreas: [area.listingArea] } : {}),
+      ...(cats ? { categoryOriginals: [...new Set([...s.categoryOriginals, ...cats])] } : {}),
+    };
+  });
   return {
     stores,
-    relations: [...input.relations, ...(input.phase3b?.relations ?? []), ...(input.updates?.relations ?? [])].map(adaptRelation),
-    sources: [...input.sources, ...(input.phase3b?.sources ?? []), ...(input.updates?.sources ?? [])].map(adaptSource),
+    relations: [
+      ...input.relations,
+      ...(input.phase3b?.relations ?? []),
+      ...(input.updates?.relations ?? []),
+      ...(input.entrantRelations ?? []),
+    ].map(adaptRelation),
+    sources: [
+      ...input.sources,
+      ...(input.phase3b?.sources ?? []),
+      ...(input.updates?.sources ?? []),
+      ...(input.entrantSources ?? []),
+    ].map(adaptSource),
     countFacts: linkCountFacts(input.countFacts, stores),
+    entrants: (input.entrants ?? []).map(adaptEntrantRecord),
+  };
+}
+
+/** 出場者の記録。名前・部門は原文のまま。都道府県・掲載地域は店舗から表示する（ここでは持たない） */
+export function adaptEntrantRecord(raw: EntrantRawRecord): SiteEntrantRecord {
+  return {
+    id: raw.entrantId,
+    name: raw.name.trim(),
+    storeId: raw.storeId,
+    sourceIds: [...raw.sourceIds],
+    evidence: raw.evidence,
+    evidenceDate: opt(raw.evidenceDate),
+    categoryOriginal: opt(raw.categoryOriginal),
+    personalUrl: opt(raw.personalUrl),
+    confidence: raw.confidence as Confidence,
+    checkedAt: raw.checkedAt,
+    notes: opt(raw.notes),
   };
 }
