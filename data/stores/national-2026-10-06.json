@@ -316,6 +316,100 @@
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-nat-store-de7cae8f4666edd2",
+   "storeName": "Akita Premium",
+   "storeNameOriginals": [
+    "Akita Premium"
+   ],
+   "prefecture": "秋田県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/akita/A0503/A050301/akitapremium/girlid-60128556/",
+   "storePublicUrl": "https://www.cityheaven.net/akita/A0503/A050301/akitapremium/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-3eaaddfc39f34bcf"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "akita/A0503/A050301/akitapremium",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-9cad1db2e5611828",
+   "storeName": "バニーコレクション秋田店",
+   "storeNameOriginals": [
+    "バニーコレクション秋田店"
+   ],
+   "prefecture": "秋田県",
+   "listingArea": "秋田市・川反",
+   "listingAreas": [
+    "秋田市・川反"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/akita/A0503/A050301/bunnycollection_akita/girlid-64067197/",
+   "storePublicUrl": "https://www.cityheaven.net/akita/A0503/A050301/bunnycollection_akita/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-b1aee7b6a0f7a59b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "akita/A0503/A050301/bunnycollection_akita",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-df8ab23abb67f804",
+   "storeName": "ラブ・アンド・ラブ",
+   "storeNameOriginals": [
+    "ラブ・アンド・ラブ"
+   ],
+   "prefecture": "秋田県",
+   "listingArea": "秋田市・川反",
+   "listingAreas": [
+    "秋田市・川反"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/akita/A0503/A050301/loveandlove/girlid-46551784/",
+   "storePublicUrl": "https://www.cityheaven.net/akita/A0503/A050301/loveandlove/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-de27e913d8370e5b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "akita/A0503/A050301/loveandlove",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-nat-store-c937f9e4937eea29",
    "storeName": "千葉人妻花壇",
    "storeNameOriginals": [
@@ -633,6 +727,36 @@
    "verificationMethod": "search_index_single",
    "evidencePageCount": 1,
    "cityheavenKey": "fukuoka/A4001/A400101/bakunyuoh",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-12cab058f201695b",
+   "storeName": "人妻デリヘル",
+   "storeNameOriginals": [
+    "人妻デリヘル"
+   ],
+   "prefecture": "福岡県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/fukuoka/A4001/A400101/mosiduma_deli/girlid-59918932/",
+   "storePublicUrl": "https://www.cityheaven.net/fukuoka/A4001/A400101/mosiduma_deli/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-a8df3c5911c5f51f"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "fukuoka/A4001/A400101/mosiduma_deli",
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
@@ -1523,8 +1647,10 @@
     "マリリン"
    ],
    "prefecture": "兵庫県",
-   "listingArea": null,
-   "listingAreas": [],
+   "listingArea": "福原柳筋",
+   "listingAreas": [
+    "福原柳筋"
+   ],
    "formalElectionArea": null,
    "categoryOriginal": null,
    "categoryOriginals": [],
@@ -1836,6 +1962,70 @@
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-nat-store-19deb7e9b080be9c",
+   "storeName": "Juicy kiss 盛岡",
+   "storeNameOriginals": [
+    "Juicy kiss 盛岡"
+   ],
+   "prefecture": "岩手県",
+   "listingArea": "盛岡",
+   "listingAreas": [
+    "盛岡"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/iwate/A0302/A030201/juicykiss/girlid-59019840/",
+   "storePublicUrl": "https://www.cityheaven.net/iwate/A0302/A030201/juicykiss/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-afe2c2e5d16ec8cf"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "iwate/A0302/A030201/juicykiss",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-25c35771178095ff",
+   "storeName": "岩手浮気妻 盛岡店",
+   "storeNameOriginals": [
+    "岩手浮気妻 盛岡店"
+   ],
+   "prefecture": "岩手県",
+   "listingArea": "盛岡",
+   "listingAreas": [
+    "盛岡"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/iwate/A0302/A030201/uwakiduma_k/girlid-55472850/",
+   "storePublicUrl": "https://www.cityheaven.net/iwate/A0302/A030201/uwakiduma_k/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-ef6b697444f7db35"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "iwate/A0302/A030201/uwakiduma_k",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-nat-store-8b0cdd5f449995a3",
    "storeName": "いたずら女学園",
    "storeNameOriginals": [
@@ -1930,6 +2120,98 @@
    "evidencePageCount": 3,
    "cityheavenKey": "kagawa/A3701/A370101/one_and_only",
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（3ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-34718e3a3b161e1d",
+   "storeName": "Newビビアン＆ガールズコレクション",
+   "storeNameOriginals": [
+    "Newビビアン＆ガールズコレクション"
+   ],
+   "prefecture": "鹿児島県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/kagoshima/A4601/A460102/new-bibian/girlid-44841373/",
+   "storePublicUrl": "https://www.cityheaven.net/kagoshima/A4601/A460102/new-bibian/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-8551833f6b77f12e"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "kagoshima/A4601/A460102/new-bibian",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-25f4f4e1670ef009",
+   "storeName": "フォルトゥナーFortunaー",
+   "storeNameOriginals": [
+    "フォルトゥナーFortunaー"
+   ],
+   "prefecture": "高知県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/kochi/A3901/A390101/fortuna/girlid-67722457/",
+   "storePublicUrl": "https://www.cityheaven.net/kochi/A3901/A390101/fortuna/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-c52fe0ae8c5068c7"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "kochi/A3901/A390101/fortuna",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-0aab7e7dbb321564",
+   "storeName": "アラビアンナイト",
+   "storeNameOriginals": [
+    "アラビアンナイト"
+   ],
+   "prefecture": "高知県",
+   "listingArea": "高知市・堺町・はりまや",
+   "listingAreas": [
+    "高知市・堺町・はりまや"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/kochi/A3901/A390101/kochi-arabian-night/girlid-58978004/",
+   "storePublicUrl": "https://www.cityheaven.net/kochi/A3901/A390101/kochi-arabian-night/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-43c6d5cd5b1e0102"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "kochi/A3901/A390101/kochi-arabian-night",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-nat-store-0f24a591feeadb9c",
@@ -2111,6 +2393,36 @@
    "verificationMethod": "search_index_single",
    "evidencePageCount": 1,
    "cityheavenKey": "kyoto/A2601/A260102/gakuenstyle",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-e3cf710abb63acba",
+   "storeName": "愛のしずく 四日市店",
+   "storeNameOriginals": [
+    "愛のしずく 四日市店"
+   ],
+   "prefecture": "三重県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/mie/A2402/A240201/ainoshizuku-yokkaichi/girlid-65730907/",
+   "storePublicUrl": "https://www.cityheaven.net/mie/A2402/A240201/ainoshizuku-yokkaichi/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-0d7a1c90ed470351"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "mie/A2402/A240201/ainoshizuku-yokkaichi",
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
@@ -2437,6 +2749,100 @@
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-nat-store-621ba711b7cd76e6",
+   "storeName": "沖縄人妻白書",
+   "storeNameOriginals": [
+    "沖縄人妻白書"
+   ],
+   "prefecture": "沖縄県",
+   "listingArea": "沖縄県庁周辺",
+   "listingAreas": [
+    "沖縄県庁周辺"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/okinawa/A4701/A470101/woman-white/girlid-63531971/",
+   "storePublicUrl": "https://www.cityheaven.net/okinawa/A4701/A470101/woman-white/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-e2a7285d9ab28a3d"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "okinawa/A4701/A470101/woman-white",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-50446293d35b92a9",
+   "storeName": "桃色奥様",
+   "storeNameOriginals": [
+    "桃色奥様"
+   ],
+   "prefecture": "佐賀県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/saga/A4101/A410101/momoiro_saga/girlid-64158392/",
+   "storePublicUrl": "https://www.cityheaven.net/saga/A4101/A410101/momoiro_saga/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-6af2c82585765e60"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "saga/A4101/A410101/momoiro_saga",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-2bedb644020df4c4",
+   "storeName": "風俗王 嬉野店",
+   "storeNameOriginals": [
+    "風俗王 嬉野店"
+   ],
+   "prefecture": "佐賀県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/saga/A4103/A410303/fuuzokuoh_ureshino/girlid-67262368/",
+   "storePublicUrl": "https://www.cityheaven.net/saga/A4103/A410303/fuuzokuoh_ureshino/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-23bb866a57cf1cc6",
+    "nat-src-27cbd6bac2a94e1b",
+    "nat-src-4dab6e713a225eb6"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 3,
+   "cityheavenKey": "saga/A4103/A410303/fuuzokuoh_ureshino",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（3ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-nat-store-8368c2f1006eb2f6",
    "storeName": "ニュー不夜城",
    "storeNameOriginals": [
@@ -2751,6 +3157,36 @@
    "verificationMethod": "search_index_single",
    "evidencePageCount": 1,
    "cityheavenKey": "tochigi/A0901/A090101/select",
+   "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-nat-store-1a3a78e4c9d8def8",
+   "storeName": "SCREEN スクリィーン",
+   "storeNameOriginals": [
+    "SCREEN スクリィーン"
+   ],
+   "prefecture": "徳島県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokushima/A3601/A360101/screen-t/girlid-40924739/",
+   "storePublicUrl": "https://www.cityheaven.net/tokushima/A3601/A360101/screen-t/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "nat-src-f9dd0bf582d3ba4e"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokushima/A3601/A360101/screen-t",
    "notes": "全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
   },
   {
@@ -3425,6 +3861,45 @@
    "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
   },
   {
+   "sourceId": "nat-src-3eaaddfc39f34bcf",
+   "url": "https://www.cityheaven.net/akita/A0503/A050301/akitapremium/girlid-60128556/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-de7cae8f4666edd2"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-b1aee7b6a0f7a59b",
+   "url": "https://www.cityheaven.net/akita/A0503/A050301/bunnycollection_akita/girlid-64067197/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-9cad1db2e5611828"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-de27e913d8370e5b",
+   "url": "https://www.cityheaven.net/akita/A0503/A050301/loveandlove/girlid-46551784/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-df8ab23abb67f804"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
    "sourceId": "nat-src-6b9b5053be25374b",
    "url": "https://www.cityheaven.net/chiba/A1201/A120101/h-kadan-cb/shopevent/",
    "sourceType": "store",
@@ -3679,6 +4154,19 @@
    "publisherRole": "entrant_page",
    "storeIds": [
     "mh26-nat-store-4d09e834899dac53"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-a8df3c5911c5f51f",
+   "url": "https://www.cityheaven.net/fukuoka/A4001/A400101/mosiduma_deli/girlid-59918932/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-12cab058f201695b"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-06",
@@ -4257,6 +4745,32 @@
    "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
   },
   {
+   "sourceId": "nat-src-afe2c2e5d16ec8cf",
+   "url": "https://www.cityheaven.net/iwate/A0302/A030201/juicykiss/girlid-59019840/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-19deb7e9b080be9c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-ef6b697444f7db35",
+   "url": "https://www.cityheaven.net/iwate/A0302/A030201/uwakiduma_k/girlid-55472850/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-25c35771178095ff"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
    "sourceId": "nat-src-61409314a2f3eb35",
    "url": "https://www.cityheaven.net/kagawa/A3701/A370101/itazurazyogakuen/girlid-65944869/",
    "sourceType": "entrant_diary",
@@ -4316,6 +4830,45 @@
    "publisherRole": "entrant_page",
    "storeIds": [
     "mh26-nat-store-af0f86a61c1bec48"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-8551833f6b77f12e",
+   "url": "https://www.cityheaven.net/kagoshima/A4601/A460102/new-bibian/girlid-44841373/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-34718e3a3b161e1d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-c52fe0ae8c5068c7",
+   "url": "https://www.cityheaven.net/kochi/A3901/A390101/fortuna/girlid-67722457/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-25f4f4e1670ef009"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-43c6d5cd5b1e0102",
+   "url": "https://www.cityheaven.net/kochi/A3901/A390101/kochi-arabian-night/girlid-58978004/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-0aab7e7dbb321564"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-06",
@@ -4394,6 +4947,19 @@
    "publisherRole": "entrant_page",
    "storeIds": [
     "mh26-nat-store-f2f241b2063b39e0"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-0d7a1c90ed470351",
+   "url": "https://www.cityheaven.net/mie/A2402/A240201/ainoshizuku-yokkaichi/girlid-65730907/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-e3cf710abb63acba"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-06",
@@ -4595,6 +5161,71 @@
    "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
   },
   {
+   "sourceId": "nat-src-e2a7285d9ab28a3d",
+   "url": "https://www.cityheaven.net/okinawa/A4701/A470101/woman-white/girlid-63531971/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-621ba711b7cd76e6"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-6af2c82585765e60",
+   "url": "https://www.cityheaven.net/saga/A4101/A410101/momoiro_saga/girlid-64158392/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-50446293d35b92a9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-23bb866a57cf1cc6",
+   "url": "https://www.cityheaven.net/saga/A4103/A410303/fuuzokuoh_ureshino/girlid-67262368/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-2bedb644020df4c4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-27cbd6bac2a94e1b",
+   "url": "https://www.cityheaven.net/saga/A4103/A410303/fuuzokuoh_ureshino/girlid-65171511/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-2bedb644020df4c4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-4dab6e713a225eb6",
+   "url": "https://www.cityheaven.net/saga/A4103/A410303/fuuzokuoh_ureshino/girlid-52992665/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-2bedb644020df4c4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
    "sourceId": "nat-src-fcc7e3ad53673ae3",
    "url": "https://www.cityheaven.net/saitama/A1101/A110101/fuyajyou/girlid-65000842/",
    "sourceType": "entrant_diary",
@@ -4758,6 +5389,19 @@
    "publisherRole": "entrant_page",
    "storeIds": [
     "mh26-nat-store-79cc4df25fd7b4d9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "nat-src-f9dd0bf582d3ba4e",
+   "url": "https://www.cityheaven.net/tokushima/A3601/A360101/screen-t/girlid-40924739/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-1a3a78e4c9d8def8"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-06",
@@ -5204,6 +5848,19 @@
    "relationIds": [],
    "checkedAt": "2026-10-06",
    "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。ページタイトルの掲載地域「周南」（店舗キーと店名が既存の店舗と一致）。"
+  },
+  {
+   "sourceId": "nat-src-29649a9959887028",
+   "url": "https://www.cityheaven.net/nagasaki/A4201/A420103/shikimonogatari/girlid-60328362/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-27b9945e537c51ec"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "全国展開（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。ページタイトルの掲載地域「諫早市・島原方面」（店舗キーと店名が既存の店舗と一致）。"
   }
  ],
  "listingAreaUpdates": [
@@ -5253,6 +5910,14 @@
    "listingArea": "周南",
    "sourceIds": [
     "nat-src-aa53e61121a97a1b"
+   ],
+   "notes": "ページタイトルの掲載地域表記による（正式選挙エリアではない）。"
+  },
+  {
+   "storeId": "mh26-p3b-store-27b9945e537c51ec",
+   "listingArea": "諫早市・島原方面",
+   "sourceIds": [
+    "nat-src-29649a9959887028"
    ],
    "notes": "ページタイトルの掲載地域表記による（正式選挙エリアではない）。"
   }
