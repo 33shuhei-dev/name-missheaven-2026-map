@@ -640,7 +640,7 @@ const manualEntrantSources: Phase3RawSource[] = [
     url: "https://x.com/princess1224mei",
     sourceType: "entrant_social",
     accessStatus: "user_reported_only",
-    publisherRole: "entrant_page",
+    publisherRole: "entrant_social_post",
     storeIds: ["mh26-upd-store-0002"],
     relationIds: ["ent-rel-0012"],
     checkedAt: "2026-10-06",

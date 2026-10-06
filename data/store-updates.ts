@@ -137,7 +137,7 @@ const manualSources: Phase3RawSource[] = [
     url: "https://x.com/princess1224mei",
     sourceType: "entrant_social",
     accessStatus: "user_reported_only",
-    publisherRole: "entrant_page",
+    publisherRole: "entrant_social_post",
     storeIds: ["mh26-upd-store-0002"],
     relationIds: [],
     checkedAt: "2026-10-06",
