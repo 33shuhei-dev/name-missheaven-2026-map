@@ -49,7 +49,7 @@ for d in dec:
         frs = [f for f in re.split(r"[.。·・…|｜!！\s]+", q) if len(f) >= 8]
         if not any(f in rest or f in n(it["title"]) for f in frs): bad("store_wide_header_only"); continue
     cat = OV["categoryFix"].get(d["cid"] + "|" + d["name"], d.get("category"))
-    if cat and (not cat.endswith("部門") or key(cat) not in key(text)): cat = None
+    if cat and (not cat.endswith("部門") or n(cat) not in n(text)): cat = None  # 部門名は原文どおり（本文にそのまま現れるものだけ）
     date = d.get("evidenceDate")
     if "2026" not in text and not (date and re.match(r"^2026-(08|09|10)-\d\d$", date)): bad("year_not_2026"); continue
     persons.append(dict(cid=d["cid"], name=d["name"].strip(), key=it["key"], storeId=it.get("storeId"), category=cat, quote=d["evidenceQuote"],
