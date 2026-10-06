@@ -54,7 +54,8 @@ const nationalBatch = national as unknown as {
  * 都道府県・掲載地域は店舗から表示する（ここには書かない・推測しない）。
  * 個人の写真・プロフィール本文は保存しない。詳しくは店舗の公開ページで確認してもらう。
  *
- * 本人申請ルート（本人または店舗から掲載希望があった場合の個別追加。例：mh26-ent-0025）
+ * 本人申請・掲載依頼ルート（本人・店舗・第三者から掲載希望・依頼があった場合の個別追加。例：mh26-ent-0025、mh26-ent-0026）
+ * 掲載依頼が第三者でも、記録する根拠は本人・店舗による2026年の出場表明（本人のSNS投稿・店舗の告知など）であること
  * 1. 本人・店舗による2026年の出場表明（本人のSNS投稿・店舗の告知など）を確認する
  * 2. 既存データとの重複を確認する（人物名・店舗の表記違い・部門の原文）
  * 3. 必要最小限（名前・店舗・部門・根拠）だけを追加し、根拠の情報源の notes と記録の notes に「本人申請を起点に追加」と書く
@@ -389,6 +390,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-06",
     notes: "本人申請を起点に追加（2026-10-06）。掲載希望：本人から。出場表明：本人Xの投稿。本人のプロフィール等は保存していない",
   },
+  // ── 第三者からの掲載依頼を起点に追加（2026-10-06）。本人Xの固定投稿で出場表明を確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0026",
+    name: "とあまる",
+    storeId: "mh26-store-e44a56a769ae3fcd",
+    sourceIds: ["ent-src-0024"],
+    evidence:
+      "本人のX（@toamaru23）の固定投稿で、本人が2026年のミスヘブン総選挙に「ピュアコス学園からソープ部門で出場します」と出場を表明（第三者からの掲載依頼と合わせて確認。調査側は投稿本文を直接取得していない）",
+    evidenceDate: null,
+    categoryOriginal: "ソープ部門",
+    personalUrl: "https://x.com/toamaru23",
+    confidence: "probable",
+    checkedAt: "2026-10-06",
+    notes: "掲載依頼（第三者）を起点に追加（2026-10-06）。出場表明：本人Xの固定投稿。本人のプロフィール・写真等は保存していない。部門名は、依頼画像で一部が伏字だったが依頼どおり「ソープ部門」とし、既存の「土浦ソ♡プ部門」とは統合していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -647,6 +663,18 @@ const manualEntrantSources: Phase3RawSource[] = [
     notes:
       "本人のXアカウント。2026年10月6日の本人の投稿（出場表明）を、本人申請の内容として確認。投稿個別のURLは提供されていないため、アカウントのURLを記録。本人申請を起点に追加",
   },
+  {
+    sourceId: "ent-src-0024",
+    url: "https://x.com/toamaru23",
+    sourceType: "entrant_social",
+    accessStatus: "user_reported_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-store-e44a56a769ae3fcd"],
+    relationIds: ["ent-rel-0013"],
+    checkedAt: "2026-10-06",
+    notes:
+      "本人のXアカウント。固定投稿での本人の出場表明（2026年のミスヘブン総選挙・ピュアコス学園からソープ部門）を、第三者からの掲載依頼の内容として確認。投稿個別のURLは提供されていないため、アカウントのURLを記録。掲載依頼を起点に追加",
+  },
 ];
 
 /**
@@ -773,6 +801,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0023"],
     phase1RecordIds: [],
     notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（本人申請）",
+  },
+  {
+    relationId: "ent-rel-0013",
+    storeId: "mh26-store-e44a56a769ae3fcd",
+    categoryOriginal: "ソープ部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0024"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（掲載依頼）",
   },
 ];
 
