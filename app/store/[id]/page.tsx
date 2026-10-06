@@ -5,13 +5,12 @@ import { site } from "@/lib/data";
 import { findStore } from "@/lib/model";
 import {
   COUNT_TYPE_LABEL,
-  PARTICIPATION_TYPE_LABEL,
+  participationStatusText,
   PUBLIC_URL_STATUS_NOTE,
   PUBLISHER_ROLE_LABEL,
   VERIFICATION_METHOD_LABEL,
   SOURCE_ACCESS_LABEL,
   SOURCE_TYPE_LABEL,
-  STORE_CONFIDENCE_DESCRIPTION,
   UNKNOWN_AREA_LABEL,
 } from "@/lib/labels";
 import { displayHost, safeExternalUrl } from "@/lib/links";
@@ -216,9 +215,7 @@ export default async function StorePage({ params }: Params) {
           <p className="evidence__status">
             <ConfidenceBadge value={s.confidence} subject="store" small />
             <span>
-              {s.verificationMethod
-                ? STORE_CONFIDENCE_DESCRIPTION[s.confidence]
-                : `${PARTICIPATION_TYPE_LABEL[s.participationType] ?? "参加関連の根拠あり"}。${STORE_CONFIDENCE_DESCRIPTION[s.confidence]}`}
+              {participationStatusText(s)}
             </span>
           </p>
           {s.origin !== "phase3" && (

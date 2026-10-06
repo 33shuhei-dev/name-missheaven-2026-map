@@ -68,6 +68,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "利用者からの情報提供（2026-10-05）。ヘブン掲載の店舗ページ上部の告知バナーに「全国ミスヘブン総選挙2026」「デリヘル部門」「ゆず」「NOMINATION」「地方予選 投票開始 10.28(水) 12:00〜」の表記があることを、利用者提供のスクリーンショットで確認。店舗ページの表記は「デリヘル(スタンダード/厚木)」。調査環境からは当該サイトにアクセスできず、本文の直接確認はしていないため probable。大会運営による一覧での確認ではない。正式選挙エリアは未確認。",
   },
+  // ── 本人申請を起点に追加（2026-10-06）。店舗の公開ページURL・掲載地域は提供されておらず、推測していないため空欄 ──
+  {
+    storeId: "mh26-upd-store-0002",
+    storeName: "AMOR-アモル-",
+    storeNameOriginals: ["AMOR-アモル-"],
+    prefecture: "福岡県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://x.com/princess1224mei",
+    storePublicUrl: null,
+    sourceType: "entrant_social",
+    confidence: "unverified",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-10-06",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0003"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "本人申請を起点に追加（2026-10-06）。所属する出場者（恋仲めい）本人から掲載希望があり、本人Xの2026年10月6日の投稿で出場表明を確認。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -106,6 +131,17 @@ const manualSources: Phase3RawSource[] = [
     checkedAt: "2026-10-05",
     notes:
       "Phase 3b 全国走査で、ヘブンの店舗ページ（店舗キー kanagawa/A1401/A140103/onemorecoming、店名「One More 奥様 横浜関内店」）が既存の店舗と同一と照合済み（data/phase3b/research_log.json の matchedExisting）。ページ本文は調査環境から取得していない。",
+  },
+  {
+    sourceId: "upd-src-0003",
+    url: "https://x.com/princess1224mei",
+    sourceType: "entrant_social",
+    accessStatus: "user_reported_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0002"],
+    relationIds: [],
+    checkedAt: "2026-10-06",
+    notes: "所属する出場者本人のXアカウント。2026年10月6日の本人の出場表明（本人申請の内容）による。本人申請を起点に追加",
   },
 ];
 

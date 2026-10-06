@@ -96,7 +96,21 @@ export const PARTICIPATION_TYPE_LABEL: Record<string, string> = {
   store_banner_reported: "店舗ページの告知バナーで確認（利用者からの情報提供）",
   search_index_reported: "店舗ページ（ヘブン掲載）の検索結果で参加の記載を確認",
   official_site_reported: "店舗の公式サイトで参加を確認",
+  entrant_self_reported: "出場者本人のSNS投稿で出場表明を確認（本人からの掲載希望）",
 };
+
+/**
+ * 店舗ページ「参加情報の根拠」の説明文。
+ * 本人申請・本人SNSで確認した店舗（participationType = entrant_self_reported）だけ、実際の確認方法に合わせた文にする。
+ * それ以外の店舗は従来どおり（確認方法がある店舗は信頼度の説明のみ、ない店舗は根拠の種類＋信頼度の説明）。
+ */
+const SELF_REPORTED_STATUS_NOTE = "本人からの掲載申請があり、本人のSNS投稿で2026年の出場表明を確認した店舗です。";
+export function participationStatusText(store: { participationType: string; confidence: Confidence; verificationMethod?: string }): string {
+  if (store.participationType === "entrant_self_reported") return SELF_REPORTED_STATUS_NOTE;
+  return store.verificationMethod
+    ? STORE_CONFIDENCE_DESCRIPTION[store.confidence]
+    : `${PARTICIPATION_TYPE_LABEL[store.participationType] ?? "参加関連の根拠あり"}。${STORE_CONFIDENCE_DESCRIPTION[store.confidence]}`;
+}
 
 /** 店舗公開ページのリンク状態（publicUrlAccessStatus） */
 export const PUBLIC_URL_STATUS_NOTE: Record<string, string | null> = {
@@ -112,6 +126,7 @@ export const PUBLISHER_ROLE_LABEL: Record<string, string> = {
   official_media_guide: "公式媒体の案内",
   store_announcement: "店舗の告知",
   entrant_page: "出場者本人のページ（日記・意気込み）",
+  entrant_social_post: "出場者本人のSNS投稿（本人申請）",
   third_party_mirror: "転載サイト（本人の日記の転載）",
   search_engine_result: "検索結果（店舗ページの抜粋）",
   store_public_page: "店舗の公開ページ",
@@ -127,6 +142,7 @@ export const SOURCE_ACCESS_LABEL: Record<string, string> = {
   indexed_only_403: "検索結果のみ（本文は取得不可）",
   indexed_only_fetch_failed: "検索結果のみ（本文の取得に失敗）",
   user_screenshot_only: "利用者提供のスクリーンショットで確認（調査側は本文を直接取得していない）",
+  user_reported_only: "本人からの申請内容として確認（調査側は投稿本文を直接取得していない）",
   search_index_only: "検索結果の抜粋で確認（本文は直接取得していない）",
 };
 
