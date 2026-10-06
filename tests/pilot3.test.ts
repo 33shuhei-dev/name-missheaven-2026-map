@@ -49,7 +49,7 @@ describe("3都道府県パイロット：店舗", () => {
     const empty = { ...store, listingArea: null, listingAreas: [] } as unknown as Phase3RawStore;
     expect(validateStoreListingAreaUpdates([{ storeId: "x", listingArea: "B", sourceIds: [] }], { stores: [empty], sources: [src] })).toHaveLength(1);
     expect(validateStoreListingAreaUpdates([{ storeId: "x", listingArea: "B", sourceIds: ["s"] }], { stores: [empty], sources: [src] })).toHaveLength(0);
-    expect(storeListingAreaUpdates).toHaveLength(1);
+    expect(storeListingAreaUpdates.some((u) => u.storeId === "mh26-p3b-store-3ae81f8f4a771fab")).toBe(true);
   });
 });
 

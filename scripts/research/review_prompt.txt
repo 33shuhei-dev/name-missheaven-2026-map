@@ -1,0 +1,20 @@
+You are reviewing Japanese search-result snippets about the "ミスヘブン総選挙2026" (Miss Heaven 2026 election). Work only from the data in the file; do NOT search the web or fetch any URL.
+
+Input: __IN__
+Each item: cid, pref, key (cityheaven store key), kind (cast = staff page, diary, shop_top, shop_event, shop_other), url, title, snippet, textWithoutStoreWideHeaders (snippet minus text repeated on several pages of the same store), storeId (existing store, or null if the store is not in our data), storeName, titleStoreName, titleArea.
+
+Write output to: __OUT__ — a JSON array. For EVERY cid output exactly one "store" object, plus zero or more "person" objects.
+
+1) STORE object (one per cid): {"cid", "type":"store", "storeParticipation": "explicit"|"none", "storeQuote": verbatim substring (20-150 chars) of title/snippet showing that THIS store or one of its staff takes part in ミスヘブン総選挙2026 (store banners/notices like 『ミスヘブン総選挙2026』ノミネート! or "当店から5名エントリー" COUNT here, since this is store-level evidence) or null, "reason": short code if none (no_mh2026 | ticket_or_vote_only | general_announcement | past_year | other_store | not_store_page)}.
+   Vote/ticket campaigns ("投票チケット獲得方法") alone are ticket_or_vote_only, NOT explicit. Cityheaven site-wide notices (エントリーページ公開, 開催決定) are general_announcement. Year must be 2026 (or a dated 意気込み post 8–10月 stating entry).
+
+2) PERSON objects — ACCEPT a person only if ALL are true from that single item:
+- Full name readable (not cut off).
+- The text says THAT person is entering/nominated in ミスヘブン総選挙 2026: first-person statement on her own page/diary, a store notice listing entrant names under a 2026 heading, or an entrant naming store-mates with divisions.
+- The person belongs to the item's store (page under that store key).
+- 2026 is explicit in the statement, OR it is a dated post in "ミスヘブンへの意気込み" (date like 10/2, no year) that clearly says she is entering this year → set evidenceDate "2026-MM-DD" (months 8,9,10 only). Otherwise exclude.
+- NOT evidence: store-wide header/banner text that appears on every staff page (compare with textWithoutStoreWideHeaders), a bare "ミスヘブンへの意気込み" heading with unrelated text, headcount only, customer reviews, ticket/vote info, 2025 or earlier, name match only.
+Person object: {"cid", "type":"person", "name", "key", "category": "…部門" exactly as written (drop only surrounding 「」『』【】"") or null, "evidenceQuote": verbatim substring 30-150 chars, "evidenceDate": "2026-MM-DD"|null, "sourceKind": "own_page"|"own_diary"|"store_notice"|"other_entrant", "notes": short Japanese or null}
+Name rules: as written; drop catchphrase after the name in titles like 「りおな エリア絶対的な看板嬢」→りおな; keep real spaces (双葉 りこ) and forms like 姫華(ひめか); strip decoration at ends only.
+
+Be strict; when in doubt, exclude (no person object). Never invent names, divisions or dates. Before finishing, run a script that checks every cid has one store object and every quote is a verbatim substring of title+" "+snippet or of title or snippet. Reply with counts only: store objects explicit/none, persons accepted, persons by sourceKind, and accepted persons whose storeId is null (new store keys). Do not list names in your reply.
