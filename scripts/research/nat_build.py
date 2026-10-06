@@ -58,6 +58,9 @@ for d in dec:
 # 新規店舗
 by_key = defaultdict(list)
 for it in items.values(): by_key[it["key"]].append(it)
+clean_area = lambda a: (re.sub(r"^[\s\-‐－–―]+|[\s\-‐－–―]+$", "", a) or None) if a else None  # タイトル区切りの残り（先頭・末尾の記号）だけを除く
+for o in items.values():
+    o["titleArea"] = clean_area(o.get("titleArea"))
 # 同じ店舗キーの、これまでの検索結果のタイトル（店名・掲載地域の補助。推測ではなく実際のページのタイトル）
 from analyze import page_kind, title_name_area
 prior_titles = defaultdict(list)
@@ -67,6 +70,7 @@ for f in ["log_pref.json", "log_queue.json", "log_groupA.json", "log_kanagawa_fo
             m = SHOP_RE.match(r["url"])
             if m:
                 nm_, ar_ = title_name_area(n(r["title"]), page_kind(m.groups()[4]))
+                ar_ = clean_area(ar_)
                 if nm_: prior_titles["/".join(m.groups()[:4])].append((nm_, ar_))
 snapnames = defaultdict(set)
 for s in snap:
