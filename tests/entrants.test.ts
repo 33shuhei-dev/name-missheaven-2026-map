@@ -6,7 +6,7 @@ import { validateEntrantRecords } from "@/lib/validate";
 import { adaptEntrantRecord } from "@/lib/phase3";
 import { entrantRelations, entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import { phase1Dataset } from "@/lib/data";
-import { relationUpdates } from "@/data/store-updates";
+import { relationUpdates, storePublicUrlUpdates } from "@/data/store-updates";
 import { phase3Relations, phase3Stores, phase3b } from "@/lib/data";
 import type { EntrantRawRecord, Phase3RawRelation, Phase3RawSource, Phase3RawStore, SiteRelation, SiteStore } from "@/data/types";
 
@@ -216,7 +216,8 @@ describe("全国再解析の出場者と店舗の補完", () => {
     const s = site.stores.find((x) => x.id === "mh26-store-b33dc19606e7c823")!;
     expect(s.storePublicUrl).toBe("https://www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/");
     expect(site.stores.filter((x) => x.origin === "phase3" && x.storePublicUrl).length).toBe(
-      phase3Stores.stores.filter((x) => x.storePublicUrl).length + 1,
+      phase3Stores.stores.filter((x) => x.storePublicUrl).length +
+        storePublicUrlUpdates.filter((u) => phase3Stores.stores.some((x) => x.storeId === u.storeId)).length,
     );
   });
 });

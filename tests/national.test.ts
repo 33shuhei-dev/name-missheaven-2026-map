@@ -17,7 +17,8 @@ describe("全国展開：店舗", () => {
       for (const sid of s.sourceIds) {
         const src = sourceUpdates.find((x) => x.sourceId === sid)!;
         expect(src.storeIds).toContain(s.storeId);
-        expect(src.url).toContain(`/${s.cityheavenKey}/`);
+        expect(`${src.url}/`).toContain(`/${s.cityheavenKey}/`);
+        expect(src.url).not.toContain("?");
       }
     }
   });

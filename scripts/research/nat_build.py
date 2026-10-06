@@ -9,6 +9,7 @@ ROUNDS = sys.argv[1:]
 n = lambda s: unicodedata.normalize("NFKC", s or "")
 key = lambda s: re.sub(r"[\s・･/／、，,.。:：;；!！?？~～〜♡♥❤♪☆★◆◇■□●○※'\"`’”「」『』（）()［］\[\]【】〔〕{}｛｝<>＜＞\-‐－_＿|｜+＋&＆#＃*＊]", "", n(s).lower())
 nm = lambda s: re.sub(r"[\s・･☆★♡♥❤()（）~～〜♪]", "", n(s)).lower()
+cu = lambda u: u.split("#")[0].split("?")[0]  # 情報源URLはクエリ（セッションID等）を除いて保存する
 H = lambda s: hashlib.sha256(s.encode()).hexdigest()[:16]
 OV = json.load(open("nat/overrides.json"))
 snap = json.load(open("nat/snap_base.json")); snapE = json.load(open("nat/snap_base_entrants.json"))
@@ -38,7 +39,7 @@ for d in dec:
             else: problems.append((d["cid"], "store quote"))
         continue
     def bad(reason): excl[reason] += 1; exclP[pref][reason] += 1
-    if d["cid"] + "|" + d.get("name", "") in OV["excludePersons"]: bad("manual_review_exclude"); continue
+    if d["cid"] + "|" + d.get("name", "") in OV["excludePersons"]: bad("weak_statement_not_explicit"); continue
     q = n(d.get("evidenceQuote"))
     if d.get("key") not in (None, it["key"]): bad("key_mismatch"); continue
     if not q or q not in n(text): bad("quote_not_verbatim"); continue
@@ -98,7 +99,7 @@ ROLE = {"own_page": ("本人のページ", "entrant_diary", "entrant_page"), "ow
 # 店舗データ
 stores, ssrc = [], {}
 def store_src(cid, sid, why):
-    it = items[cid]; u = it["url"]
+    it = items[cid]; u = cu(it["url"])
     if u not in ssrc:
         kind = next((p["kind"] for p in persons if p["cid"] == cid), None)
         stype, role = (ROLE[kind][1], ROLE[kind][2]) if kind in ROLE else (("entrant_diary", "entrant_page") if it["kind"] in ("cast", "diary") else ("store", "store_public_page"))
@@ -110,8 +111,8 @@ for k, v in sorted(newstores.items()):
     sids = list(dict.fromkeys(store_src(c, v["storeId"], "2026年の参加・出場を示す記載。") for c in v["pages"]))
     nP = len(sids)
     stores.append(dict(storeId=v["storeId"], storeName=v["name"], storeNameOriginals=[v["name"]], prefecture=v["pref"], listingArea=v["area"], listingAreas=[v["area"]] if v["area"] else [],
-        formalElectionArea=None, categoryOriginal=None, categoryOriginals=[], participationEvidenceUrl=items[v["pages"][0]]["url"], storePublicUrl=f"https://www.cityheaven.net/{k}/",
-        sourceType=ssrc[items[v["pages"][0]]["url"]]["sourceType"], confidence="probable" if nP >= 2 else "unverified", participationType="search_index_reported", checkedAt="2026-10-06",
+        formalElectionArea=None, categoryOriginal=None, categoryOriginals=[], participationEvidenceUrl=cu(items[v["pages"][0]]["url"]), storePublicUrl=f"https://www.cityheaven.net/{k}/",
+        sourceType=ssrc[cu(items[v["pages"][0]]["url"])]["sourceType"], confidence="probable" if nP >= 2 else "unverified", participationType="search_index_reported", checkedAt="2026-10-06",
         phase1RecordIds=[], phase2RecordIds=[], isNewSincePhase1=True, sourceIds=sids, publicUrlAccessStatus="unknown",
         verificationMethod="search_index_multiple" if nP >= 2 else "search_index_single", evidencePageCount=nP, cityheavenKey=k,
         notes=f"全国展開（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（{nP}ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"))
@@ -153,6 +154,7 @@ for (sid, k), ps in sorted(groups.items(), key=lambda kv: (storeinfo[kv[0][0]], 
     if (n(P), nm(sname), k) in p1: excl["duplicate_phase1"] += 1; exclP[pref]["duplicate_phase1"] += 1; continue
     sids = []
     for p in ps:
+        p["url"] = cu(p["url"])
         if p["url"] not in esrc:
             esrc[p["url"]] = dict(sourceId="ent-src-n-" + H(p["url"]), url=p["url"], sourceType=ROLE[p["kind"]][1], accessStatus="search_index_only", publisherRole=ROLE[p["kind"]][2],
                                   storeIds=[], relationIds=[], checkedAt="2026-10-06", notes="Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）")
