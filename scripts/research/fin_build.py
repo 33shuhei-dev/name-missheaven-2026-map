@@ -82,6 +82,24 @@ for f in ["log_pref.json", "log_queue.json", "log_groupA.json", "log_kanagawa_fo
                 nm_, ar_ = title_name_area(n(r["title"]), page_kind(m.groups()[4]))
                 ar_ = clean_area(ar_)
                 if nm_: prior_titles["/".join(m.groups()[:4])].append((nm_, ar_))
+# 救済する店舗キーの店名：そのキーの店舗ページ（口コミ・地図・料金システム・イベント・店舗トップ）のタイトルで、2ページ以上が同じ表記で一致したものだけ。
+# タイトルが「...」で切れているもの、人物名しか出ていないものは含めない（推測しない）。値は (店名, 掲載地域または None)
+VERIFIED = {
+    "aichi/A2301/A230103/club_moereen": ("貧乳・微乳専門店 プリンセスバスト", None),      # 「口コミ - 店名」2ページ
+    "aichi/A2301/A230105/studio-k": ("スタジオK", None),                                 # 店舗ページ5ページ
+    "aichi/A2301/A230104/g-opera": ("グランドオペラ名古屋", "新栄・東新町"),              # 「店名＋地域の口コミ体験談」2ページ＝人物ページの「グランドオペラ名古屋」と一致
+    "fukuoka/A4001/A400102/hp_villa": ("HOT POINT GROUP ホットポイント ヴィラ", None),   # 「口コミ - 店名」2ページ
+    "fukuoka/A4004/A400402/tiffany_doll": ("ティファニードール 久留米本店", None),        # 口コミ2ページ＋人物ページ
+    "hokkaido/A0108/A010801/hana": ("帯広シークレットサービス", None),                   # 口コミ＋人物ページ2ページ
+    "hiroshima/A3401/A340101/blue_moon": ("ブルームーン（Blue Moon）", None),             # 店舗ページ多数
+    "hiroshima/A3401/A340101/eight": ("EIGHT（エイト） ～8つのお約束と無限の可能性～", "中区"),  # 店舗トップのタイトル（ほかのページは末尾が切れた表記）
+    "niigata/A1501/A150101/n-soapland": ("新潟ソープランド", None),                       # 店舗ページ5ページ
+    "tochigi/A0901/A090101/kanojyokan": ("素人系イメージSOAP彼女感 宇都宮本館", None),     # 店舗ページ4ページ
+    "tochigi/A0904/A090401/sbc": ("足利ソープ SBC", None),                               # 店舗ページ5ページ
+    "tokyo/A1310/A131001/a_maid": ("秋葉原コスプレ学園", None),                           # 店舗ページ＋人物ページ
+    "osaka/A2702/A270203/kitty_osaka": ("プラチナムレジェンド", None),                    # 店舗ページ7ページ
+    "kanagawa/A1403/A140301/rush": ("川崎ソープ G-STAGE", None),                         # 店舗ページ4ページ
+}
 snapnames = defaultdict(set)
 for s in snap:
     for x in [s["name"]] + (s.get("names") or []): snapnames[s["pref"]].add(key(x))
@@ -91,6 +109,9 @@ for k, lst in by_key.items():
     pages = list(dict.fromkeys(c for c, _ in store_ev.get(k, [])))
     has_person = any(p["key"] == k for p in persons)
     titles = [(it["titleStoreName"], it.get("titleArea")) for it in lst if it.get("titleStoreName")] + prior_titles.get(k, [])
+    if k in RESOLVE:   # 旧ラウンドの店名未確認キー：検証済みの店名だけを使う
+        if k not in VERIFIED: newkey_status[k] = dict(status="no_store_name", pref=k.split("/")[0], pages=len(pages)); continue
+        vn, va = VERIFIED[k]; titles = [(vn, a) for t, a in titles if t == vn and a] + ([(vn, va)] if va else []) + [(vn, None)]
     names = Counter(t[0] for t in titles)
     pref = k.split("/")[0]; P = PREF_NAME[pref]
     if not pages: st = "none"

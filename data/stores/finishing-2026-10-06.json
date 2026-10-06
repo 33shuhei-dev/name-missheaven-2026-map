@@ -1,1 +1,992 @@
-{"description": "", "stores": [], "relations": [], "sources": [], "listingAreaUpdates": [], "publicUrlUpdates": []}
+{
+ "description": "仕上げPhase（2026-10-06）で新たに確認した参加関連店舗と、既存店舗の掲載地域・公開ページURLの補完。人物名はここに書かない。",
+ "stores": [
+  {
+   "storeId": "mh26-fin-store-1ae1c5ac69d87f80",
+   "storeName": "貧乳・微乳専門店 プリンセスバスト",
+   "storeNameOriginals": [
+    "貧乳・微乳専門店 プリンセスバスト"
+   ],
+   "prefecture": "愛知県",
+   "listingArea": "錦・栄・矢場町",
+   "listingAreas": [
+    "錦・栄・矢場町"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/aichi/A2301/A230103/club_moereen/girlid-62298184/",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230103/club_moereen/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-1fadf45209ced9b1"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "aichi/A2301/A230103/club_moereen",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-e629ea0fc05e13fe",
+   "storeName": "グランドオペラ名古屋",
+   "storeNameOriginals": [
+    "グランドオペラ名古屋"
+   ],
+   "prefecture": "愛知県",
+   "listingArea": "新栄・東新町",
+   "listingAreas": [
+    "新栄・東新町"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/girlid-11319463/",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-cb428b9ff26a6c0f"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "aichi/A2301/A230104/g-opera",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-4fb086bfdffbe742",
+   "storeName": "スタジオK",
+   "storeNameOriginals": [
+    "スタジオK"
+   ],
+   "prefecture": "愛知県",
+   "listingArea": "大須・金山・鶴舞",
+   "listingAreas": [
+    "大須・金山・鶴舞"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/aichi/A2301/A230105/studio-k/girlid-43753449/",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230105/studio-k/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-be4a7b3cc9c70d0d"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "aichi/A2301/A230105/studio-k",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-528cfa6388740ad8",
+   "storeName": "HOT POINT GROUP ホットポイント ヴィラ",
+   "storeNameOriginals": [
+    "HOT POINT GROUP ホットポイント ヴィラ"
+   ],
+   "prefecture": "福岡県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/fukuoka/A4001/A400102/hp_villa/girlid-53519546/",
+   "storePublicUrl": "https://www.cityheaven.net/fukuoka/A4001/A400102/hp_villa/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-7bd446b7532fe455"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "fukuoka/A4001/A400102/hp_villa",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-dff434fc5ac1a668",
+   "storeName": "ティファニードール 久留米本店",
+   "storeNameOriginals": [
+    "ティファニードール 久留米本店"
+   ],
+   "prefecture": "福岡県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/fukuoka/A4004/A400402/tiffany_doll/girlid-28222531/",
+   "storePublicUrl": "https://www.cityheaven.net/fukuoka/A4004/A400402/tiffany_doll/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-f0826fe9e16753db"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "fukuoka/A4004/A400402/tiffany_doll",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-f305992b0c426fd2",
+   "storeName": "ブルームーン（Blue Moon）",
+   "storeNameOriginals": [
+    "ブルームーン（Blue Moon）"
+   ],
+   "prefecture": "広島県",
+   "listingArea": "中区",
+   "listingAreas": [
+    "中区"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/hiroshima/A3401/A340101/blue_moon/girlid-68000376/",
+   "storePublicUrl": "https://www.cityheaven.net/hiroshima/A3401/A340101/blue_moon/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-5c2512c33a6c8613",
+    "fin-src-7d6fd1ad57d70a41"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 2,
+   "cityheavenKey": "hiroshima/A3401/A340101/blue_moon",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（2ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-0795a32500414bbf",
+   "storeName": "EIGHT（エイト） ～8つのお約束と無限の可能性～",
+   "storeNameOriginals": [
+    "EIGHT（エイト） ～8つのお約束と無限の可能性～"
+   ],
+   "prefecture": "広島県",
+   "listingArea": "中区",
+   "listingAreas": [
+    "中区"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/girlid-65712465/",
+   "storePublicUrl": "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-ceb7d3b723a76a62",
+    "fin-src-5d05b9881ebd8e35"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 2,
+   "cityheavenKey": "hiroshima/A3401/A340101/eight",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（2ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-30983e10bb2bab2c",
+   "storeName": "帯広シークレットサービス",
+   "storeNameOriginals": [
+    "帯広シークレットサービス"
+   ],
+   "prefecture": "北海道",
+   "listingArea": "帯広",
+   "listingAreas": [
+    "帯広"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/hokkaido/A0108/A010801/hana/girlid-62959136/",
+   "storePublicUrl": "https://www.cityheaven.net/hokkaido/A0108/A010801/hana/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-0fae4042ed7fff87",
+    "fin-src-9786ca8ce6597e6b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 2,
+   "cityheavenKey": "hokkaido/A0108/A010801/hana",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（2ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-3348890594fab434",
+   "storeName": "川崎ソープ G-STAGE",
+   "storeNameOriginals": [
+    "川崎ソープ G-STAGE"
+   ],
+   "prefecture": "神奈川県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/kanagawa/A1403/A140301/rush/girlid-59809507/",
+   "storePublicUrl": "https://www.cityheaven.net/kanagawa/A1403/A140301/rush/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-74c59b4ad22f9797"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "kanagawa/A1403/A140301/rush",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-2300456259ef52be",
+   "storeName": "新潟ソープランド",
+   "storeNameOriginals": [
+    "新潟ソープランド"
+   ],
+   "prefecture": "新潟県",
+   "listingArea": "新潟市",
+   "listingAreas": [
+    "新潟市"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/niigata/A1501/A150101/n-soapland/A6GirlDetailProfile/",
+   "storePublicUrl": "https://www.cityheaven.net/niigata/A1501/A150101/n-soapland/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-c667161593ac3c86",
+    "fin-src-3ee3a951058bf699"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 2,
+   "cityheavenKey": "niigata/A1501/A150101/n-soapland",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（2ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-8e0ede037d5a27a2",
+   "storeName": "プラチナムレジェンド",
+   "storeNameOriginals": [
+    "プラチナムレジェンド"
+   ],
+   "prefecture": "大阪府",
+   "listingArea": "谷九・上本町",
+   "listingAreas": [
+    "谷九・上本町"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/",
+   "storePublicUrl": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-aa043e49a9cca8b1"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "osaka/A2702/A270203/kitty_osaka",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-607b0d9fed802f90",
+   "storeName": "素人系イメージSOAP彼女感 宇都宮本館",
+   "storeNameOriginals": [
+    "素人系イメージSOAP彼女感 宇都宮本館"
+   ],
+   "prefecture": "栃木県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tochigi/A0901/A090101/kanojyokan/girlid-56908198/",
+   "storePublicUrl": "https://www.cityheaven.net/tochigi/A0901/A090101/kanojyokan/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-f18895e6b0f5c7e1"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tochigi/A0901/A090101/kanojyokan",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-e0fa0e908422a0b8",
+   "storeName": "足利ソープ SBC",
+   "storeNameOriginals": [
+    "足利ソープ SBC"
+   ],
+   "prefecture": "栃木県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tochigi/A0904/A090401/sbc/girlid-34374410/",
+   "storePublicUrl": "https://www.cityheaven.net/tochigi/A0904/A090401/sbc/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-2a4924f30e85fdad",
+    "fin-src-9317158cba966a0b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 2,
+   "cityheavenKey": "tochigi/A0904/A090401/sbc",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（2ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-8edda786d80068cd",
+   "storeName": "電マナイザーイラマチオン",
+   "storeNameOriginals": [
+    "電マナイザーイラマチオン"
+   ],
+   "prefecture": "東京都",
+   "listingArea": "池袋北口・西口",
+   "listingAreas": [
+    "池袋北口・西口"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1305/A130505/iramachion/girlid-60084383/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1305/A130505/iramachion/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-d9a905bde6dcf48b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1305/A130505/iramachion",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-28af74e9d4e4e373",
+   "storeName": "秋葉原コスプレ学園",
+   "storeNameOriginals": [
+    "秋葉原コスプレ学園"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1310/A131001/a_maid/girlid-51880509/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1310/A131001/a_maid/",
+   "sourceType": "entrant_diary",
+   "confidence": "probable",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-541dccf46441adf3",
+    "fin-src-4699676a5737aed3",
+    "fin-src-4751af3595e4ae4a"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_multiple",
+   "evidencePageCount": 3,
+   "cityheavenKey": "tokyo/A1310/A131001/a_maid",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（3ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-fe1e8561e68d2ee1",
+   "storeName": "ロケットワイフ",
+   "storeNameOriginals": [
+    "ロケットワイフ"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/girlid-59417583/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-c9feaa6417e1347a"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1311/A131101/rocketwife",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-dbe0d96431426118",
+   "storeName": "ウルトラギャラクシー",
+   "storeNameOriginals": [
+    "ウルトラギャラクシー"
+   ],
+   "prefecture": "東京都",
+   "listingArea": "蒲田",
+   "listingAreas": [
+    "蒲田"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1316/A131603/ultra-galaxy/girlid-53636767/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1316/A131603/ultra-galaxy/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-168e979de11e839a"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1316/A131603/ultra-galaxy",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-ef8d3826a06d9032",
+   "storeName": "TALL",
+   "storeNameOriginals": [
+    "TALL"
+   ],
+   "prefecture": "東京都",
+   "listingArea": "五反田",
+   "listingAreas": [
+    "五反田"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1317/A131703/tall-tokyo-shinagawa/girlid-62296436/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1317/A131703/tall-tokyo-shinagawa/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-353a14af2b347212"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1317/A131703/tall-tokyo-shinagawa",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-999ba56330424b13",
+   "storeName": "ウルトラホワイト",
+   "storeNameOriginals": [
+    "ウルトラホワイト"
+   ],
+   "prefecture": "東京都",
+   "listingArea": "五反田",
+   "listingAreas": [
+    "五反田"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1317/A131703/ultrawhite/girlid-66423282/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1317/A131703/ultrawhite/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-8d2a392753042388"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1317/A131703/ultrawhite",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-fin-store-6d2391768ddd9bfe",
+   "storeName": "すぐ舐めたくて学園立川校～舐めたくてグループ",
+   "storeNameOriginals": [
+    "すぐ舐めたくて学園立川校～舐めたくてグループ"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://www.cityheaven.net/tokyo/A1330/A133001/s-nametakute/girlid-65787898/",
+   "storePublicUrl": "https://www.cityheaven.net/tokyo/A1330/A133001/s-nametakute/",
+   "sourceType": "entrant_diary",
+   "confidence": "unverified",
+   "participationType": "search_index_reported",
+   "checkedAt": "2026-10-06",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "fin-src-880b6a30bb463fde"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "verificationMethod": "search_index_single",
+   "evidencePageCount": 1,
+   "cityheavenKey": "tokyo/A1330/A133001/s-nametakute",
+   "notes": "仕上げPhase（2026-10-06）。Yahoo!検索の結果で、ヘブン掲載のこの店舗のページに2026年の参加・出場を示す記載を確認（1ページ）。ページ本文は取得していないため検索結果の抜粋による。都道府県・公開ページURLはヘブンの掲載URL（店舗キー）、掲載地域はページタイトルの表記による（タイトルにない場合は未判明のまま）。正式選挙エリアは未確認。"
+  }
+ ],
+ "relations": [],
+ "sources": [
+  {
+   "sourceId": "fin-src-1fadf45209ced9b1",
+   "url": "https://www.cityheaven.net/aichi/A2301/A230103/club_moereen/girlid-62298184/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-1ae1c5ac69d87f80"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-cb428b9ff26a6c0f",
+   "url": "https://www.cityheaven.net/aichi/A2301/A230104/g-opera/girlid-11319463/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-e629ea0fc05e13fe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-be4a7b3cc9c70d0d",
+   "url": "https://www.cityheaven.net/aichi/A2301/A230105/studio-k/girlid-43753449/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-4fb086bfdffbe742"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-7bd446b7532fe455",
+   "url": "https://www.cityheaven.net/fukuoka/A4001/A400102/hp_villa/girlid-53519546/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-528cfa6388740ad8"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-f0826fe9e16753db",
+   "url": "https://www.cityheaven.net/fukuoka/A4004/A400402/tiffany_doll/girlid-28222531/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-dff434fc5ac1a668"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-5c2512c33a6c8613",
+   "url": "https://www.cityheaven.net/hiroshima/A3401/A340101/blue_moon/girlid-68000376/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-f305992b0c426fd2"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-7d6fd1ad57d70a41",
+   "url": "https://www.cityheaven.net/hiroshima/A3401/A340101/blue_moon/girlid-67305627/diary/panel/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-f305992b0c426fd2"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-ceb7d3b723a76a62",
+   "url": "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/girlid-65712465/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-0795a32500414bbf"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-5d05b9881ebd8e35",
+   "url": "https://www.cityheaven.net/hiroshima/A3401/A340101/eight/girlid-64208810/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-0795a32500414bbf"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-0fae4042ed7fff87",
+   "url": "https://www.cityheaven.net/hokkaido/A0108/A010801/hana/girlid-62959136/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-30983e10bb2bab2c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-9786ca8ce6597e6b",
+   "url": "https://www.cityheaven.net/hokkaido/A0108/A010801/hana/girlid-26662075/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-30983e10bb2bab2c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-74c59b4ad22f9797",
+   "url": "https://www.cityheaven.net/kanagawa/A1403/A140301/rush/girlid-59809507/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-3348890594fab434"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-c667161593ac3c86",
+   "url": "https://www.cityheaven.net/niigata/A1501/A150101/n-soapland/A6GirlDetailProfile/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-2300456259ef52be"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-3ee3a951058bf699",
+   "url": "https://www.cityheaven.net/niigata/A1501/A150101/n-soapland/girlid-63744090/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-2300456259ef52be"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-aa043e49a9cca8b1",
+   "url": "https://www.cityheaven.net/osaka/A2702/A270203/kitty_osaka/girlid-64725086/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-8e0ede037d5a27a2"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-f18895e6b0f5c7e1",
+   "url": "https://www.cityheaven.net/tochigi/A0901/A090101/kanojyokan/girlid-56908198/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-607b0d9fed802f90"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-2a4924f30e85fdad",
+   "url": "https://www.cityheaven.net/tochigi/A0904/A090401/sbc/girlid-34374410/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-e0fa0e908422a0b8"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-9317158cba966a0b",
+   "url": "https://www.cityheaven.net/tochigi/A0904/A090401/sbc/girlid-26263493/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-e0fa0e908422a0b8"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-d9a905bde6dcf48b",
+   "url": "https://www.cityheaven.net/tokyo/A1305/A130505/iramachion/girlid-60084383/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-8edda786d80068cd"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-541dccf46441adf3",
+   "url": "https://www.cityheaven.net/tokyo/A1310/A131001/a_maid/girlid-51880509/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-28af74e9d4e4e373"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-4699676a5737aed3",
+   "url": "https://www.cityheaven.net/tokyo/A1310/A131001/a_maid/girlid-43027412/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-28af74e9d4e4e373"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-4751af3595e4ae4a",
+   "url": "https://www.cityheaven.net/tokyo/A1310/A131001/a_maid/girlid-58663916/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-28af74e9d4e4e373"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-c9feaa6417e1347a",
+   "url": "https://www.cityheaven.net/tokyo/A1311/A131101/rocketwife/girlid-59417583/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-fe1e8561e68d2ee1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-168e979de11e839a",
+   "url": "https://www.cityheaven.net/tokyo/A1316/A131603/ultra-galaxy/girlid-53636767/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-dbe0d96431426118"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-353a14af2b347212",
+   "url": "https://www.cityheaven.net/tokyo/A1317/A131703/tall-tokyo-shinagawa/girlid-62296436/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-ef8d3826a06d9032"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-8d2a392753042388",
+   "url": "https://www.cityheaven.net/tokyo/A1317/A131703/ultrawhite/girlid-66423282/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-999ba56330424b13"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  },
+  {
+   "sourceId": "fin-src-880b6a30bb463fde",
+   "url": "https://www.cityheaven.net/tokyo/A1330/A133001/s-nametakute/girlid-65787898/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-fin-store-6d2391768ddd9bfe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "仕上げPhase（2026-10-06）のYahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。2026年の参加・出場を示す記載。"
+  }
+ ],
+ "listingAreaUpdates": [],
+ "publicUrlUpdates": []
+}
