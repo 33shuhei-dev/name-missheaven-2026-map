@@ -170,11 +170,6 @@ export interface Phase3RawRelation {
   confidence: string;
   sourceIds: string[];
   phase1RecordIds: string[];
-  /**
-   * この関係の根拠（sourceIds）に、店舗・部門と一緒に書かれている出場者名（原文）。
-   * 情報源で確認できたものだけ。全国の人物名簿として集めるためのものではない
-   */
-  entrantNames?: string[] | null;
   notes?: string | null;
   [key: string]: unknown;
 }
@@ -281,8 +276,6 @@ export interface SiteRelation {
   confidence: Confidence;
   sourceIds: string[];
   phase1RecordIds: string[];
-  /** 根拠に書かれた出場者名（原文）。Phase 1 の観測を持たない店舗×部門関係の出場者を検索・表示するため */
-  entrantNames?: string[];
 }
 
 export interface SiteSource {
@@ -308,6 +301,48 @@ export interface StoreLayer {
   relations: SiteRelation[];
   sources: SiteSource[];
   countFacts: StoreCountFact[];
+  /** 出場者の記録（data/entrant-updates.ts）。Phase 1 の観測とは別に追加したもの */
+  entrants?: SiteEntrantRecord[];
+}
+
+/**
+ * 出場者の記録（入力形式。data/entrant-updates.ts）。
+ *
+ * 必須：人物名・所属店舗・2026年の出場を示す根拠（情報源と、そこに書かれていた内容）。
+ * 任意：部門（その店舗の部門に限る）・個人のページURL。
+ * 都道府県・掲載地域は店舗から表示する（ここには書かない・推測しない）。
+ */
+export interface EntrantRawRecord {
+  /** 例: "mh26-ent-0001" */
+  entrantId: string;
+  /** 情報源の表記どおりの名前 */
+  name: string;
+  /** 所属店舗の storeId（Phase 3・Phase 3b・差分更新のいずれか） */
+  storeId: string;
+  /** 2026年の出場を示す情報源（store_sources / sourceUpdates の sourceId）。1件以上 */
+  sourceIds: string[];
+  /** 情報源に何が書かれていたか（2026年の出場を示す記載を短く。人物写真・全文は書かない） */
+  evidence: string;
+  /** 部門（原文）。情報源で確認できた場合のみ。その店舗の部門（店舗×部門関係）にあるものに限る */
+  categoryOriginal?: string | null;
+  /** 本人のページURL（任意） */
+  personalUrl?: string | null;
+  confidence: string;
+  checkedAt: string;
+  notes?: string | null;
+}
+
+export interface SiteEntrantRecord {
+  id: string;
+  name: string;
+  storeId: string;
+  sourceIds: string[];
+  evidence: string;
+  categoryOriginal?: string;
+  personalUrl?: string;
+  confidence: Confidence;
+  checkedAt: string;
+  notes?: string;
 }
 
 /** Phase 3b 全国走査の都道府県別カバレッジ */

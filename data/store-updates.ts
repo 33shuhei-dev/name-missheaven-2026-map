@@ -10,8 +10,7 @@ import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore } from "./types
  * - 店名・部門名は情報源の表記どおり。不明な項目は null（推測で埋めない）
  * - formalElectionArea は正式に確認できた場合のみ。店舗所在地から作らない
  * - confidence は根拠の強さに応じて決める。URL があるだけで confirmed にしない
- * - 人物名は原則として追加しない。根拠（sourceIds の情報源）に店舗・部門と一緒に書かれている場合だけ、
- *   その店舗×部門関係の entrantNames に原文で記録する（全国の人物名簿として集めない）
+ * - 人物名はここには書かない。出場者は data/entrant-updates.ts に記録する
  * - 画像（宣材・告知バナー）は保存しない。リンクと必要最小限の事実だけを書く
  */
 
@@ -51,9 +50,7 @@ export const relationUpdates: Phase3RawRelation[] = [
     confidence: "probable",
     sourceIds: ["upd-src-0001"],
     phase1RecordIds: [],
-    // 同じ告知バナー（upd-src-0001）に「デリヘル部門」「ゆず」「NOMINATION」と並んで書かれている
-    entrantNames: ["ゆず"],
-    notes: "告知バナーの部門表記と、その部門のノミネートとして書かれた名前（ゆず）。店舗の全員がこの部門という意味ではない。",
+    notes: "告知バナーの部門表記。店舗の全員がこの部門という意味ではない（バナーの出場者は data/entrant-updates.ts）。",
   },
 ];
 

@@ -89,7 +89,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
             type="search"
             value={state.q}
             onChange={(e) => update({ q: e.target.value })}
-            placeholder="部門・店舗・出場者・地域"
+            placeholder="推しの名前・店舗・部門・地域"
             autoComplete="off"
             enterKeyHint="search"
           />

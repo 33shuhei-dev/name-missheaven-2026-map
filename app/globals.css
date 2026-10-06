@@ -2071,3 +2071,48 @@ p {
   color: var(--accent);
   overflow-wrap: anywhere;
 }
+
+/* ───────────── 出場者：本人のページ（任意） ───────────── */
+.entrant-row:has(.entrant-row__link) {
+  grid-template-areas: "name badge" "sub sub" "link link";
+}
+.entrant-row__link {
+  grid-area: link;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+}
+
+/* ───────────── トップ：推しから探す（検索） ───────────── */
+.hero-search {
+  margin-top: 12px;
+}
+.hero-search__label {
+  margin: 0 0 4px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+.hero-search .search-box {
+  margin: 0;
+}
+@media (min-width: 600px) {
+  .hero-search {
+    max-width: 560px;
+  }
+}
+
+/* 出場者の検索結果から来たとき：その人の行を見せつつ、上の「店舗の公開ページ」ボタンも画面に入るようにする */
+.entrant-row {
+  scroll-margin-top: min(380px, 48vh);
+}
+.entrant-row:target {
+  box-shadow: 0 0 0 3px rgba(118, 80, 204, 0.35);
+}
+.store-cta--compact {
+  min-height: 52px;
+  margin-top: 10px;
+  font-size: 0.9375rem;
+}

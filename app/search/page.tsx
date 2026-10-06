@@ -20,6 +20,9 @@ export default function SearchPage() {
     <>
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "全国横断検索" }]} />
       <h1>全国横断検索</h1>
+      <p className="hint hint--tight">
+        推しの名前・店舗・部門・都道府県・掲載地域をまとめて探せます（例：「厚木 ゆず」のように空白で区切ると絞り込めます）。出場者の名前は、このサイトで確認できた一部です。
+      </p>
       <Suspense fallback={<p className="hint">読み込み中…</p>}>
         <SearchClient items={items} places={places} />
       </Suspense>

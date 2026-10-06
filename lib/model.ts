@@ -4,6 +4,7 @@ import type {
   MapStatus,
   Phase1MapPrefecture,
   SiteRecord,
+  SiteEntrantRecord,
   SiteRelation,
   SiteSource,
   SiteStore,
@@ -203,7 +204,10 @@ export interface StoreView extends SiteStore {
   countFacts: StoreCountFact[];
 }
 
-/** 出場者 = 都道府県 × 店舗名 × 人物名（Phase 1 の既存人物情報。同姓同名の別人を自動統合しない） */
+/**
+ * 出場者 = 都道府県 × 店舗名 × 人物名（同姓同名の別人を自動統合しない）。
+ * Phase 1 の観測にある人物と、出場者の記録（data/entrant-updates.ts）の人物が、同じ形で検索・表示される
+ */
 export interface EntrantView {
   id: string;
   name: string;
@@ -216,6 +220,8 @@ export interface EntrantView {
   records: SiteRecord[];
   divisions: Division[];
   confidence: Confidence;
+  /** 出場者の記録（data/entrant-updates.ts）から作った場合の元の記録（根拠・個人URL） */
+  entrantRecord?: SiteEntrantRecord;
 }
 
 export interface AreaView {
@@ -498,28 +504,21 @@ export function buildModel(
         compareJa(a.name, b.name),
     );
 
-  // 店舗×部門関係（差分更新など Phase 1 の観測を持たない店舗）の根拠に書かれた出場者名。
-  // 同じ都道府県・店舗名・名前の出場者が Phase 1 にあれば、そちらを優先して重複させない
+  // 出場者の記録（data/entrant-updates.ts）。所属店舗に必ず接続し、都道府県・掲載地域は店舗から表示する。
+  // 部門は記録にある場合だけ（その店舗の部門）。同じ都道府県・店舗名・名前の出場者が Phase 1 にあれば、そちらを優先して重複させない
   const entrantKey = (prefSlug: string, storeName: string | undefined, name: string) =>
     `${prefSlug}|${normalizeForSearch(storeName)}|${normalizeForSearch(name)}`;
   const knownEntrants = new Set(phase1Entrants.map((e) => entrantKey(e.prefSlug, e.storeName, e.name)));
-  const relationEntrantRows = layer.relations.flatMap((rel) => {
-    const st = storeById.get(rel.storeId);
-    return st ? (rel.entrantNames ?? []).map((name) => ({ rel, st, name })) : [];
-  });
-  const relationEntrants: EntrantView[] = [
-    ...groupBy(relationEntrantRows, ({ st, name }) => `${prefSlugOf(st)}|${st.id}|${name}`).entries(),
-  ]
-    .filter(([, rows]) => !knownEntrants.has(entrantKey(prefSlugOf(rows[0].st), rows[0].st.name, rows[0].name)))
-    .map(([key, rows]) => {
-      const st = rows[0].st;
-      const rels = rows.map((x) => x.rel);
-      const divIds = new Set(
-        rels.flatMap((rel) => storeAreas(st).map((area) => divisionIdOf(prefSlugOf(st), area, rel.categoryOriginal))),
-      );
-      return {
-        id: `e${stableHash(`rel|${key}`)}`,
-        name: rows[0].name,
+  const recordEntrants: EntrantView[] = (layer.entrants ?? []).flatMap((rec) => {
+    const st = storeById.get(rec.storeId);
+    if (!st || knownEntrants.has(entrantKey(prefSlugOf(st), st.name, rec.name))) return [];
+    const divIds = rec.categoryOriginal
+      ? new Set(storeAreas(st).map((area) => divisionIdOf(prefSlugOf(st), area, rec.categoryOriginal!)))
+      : new Set<string>();
+    return [
+      {
+        id: `e${stableHash(`rec|${rec.id}`)}`,
+        name: rec.name,
         prefSlug: prefSlugOf(st),
         prefectureName: st.prefecture ?? UNKNOWN_PREFECTURE_LABEL,
         storeName: st.name,
@@ -527,10 +526,12 @@ export function buildModel(
         listingAreas: [...st.listingAreas].sort(compareJa),
         records: [],
         divisions: divisions.filter((d) => divIds.has(d.id)),
-        confidence: bestConfidence(rels),
-      };
-    });
-  const entrants: EntrantView[] = [...phase1Entrants, ...relationEntrants].sort(
+        confidence: rec.confidence,
+        entrantRecord: rec,
+      },
+    ];
+  });
+  const entrants: EntrantView[] = [...phase1Entrants, ...recordEntrants].sort(
     (a, b) =>
       prefOrder(a.prefSlug) - prefOrder(b.prefSlug) ||
       compareJa(a.storeName ?? "\uffff", b.storeName ?? "\uffff") ||

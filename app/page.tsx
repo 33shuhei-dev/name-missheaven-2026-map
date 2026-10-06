@@ -34,8 +34,16 @@ export default function HomePage() {
           <span className="hero__name">全国情報まとめ</span>
         </h1>
         <p className="hero__lead">
-          ミスヘブン総選挙2026の出場情報を、<strong>全国・地域・部門・店舗</strong>から探せる非公式まとめです。
+          ミスヘブン総選挙2026の出場情報を、<strong>推しの名前・部門・地域</strong>から探せる非公式まとめです。
         </p>
+        {/* 推しから探す（目的を持って来た人の入口） */}
+        <div className="hero-search">
+          <p className="hero-search__label">
+            推しの名前・店舗・部門・地域から検索
+          </p>
+          <SearchBox placeholder="例：ゆず、abc＋、厚木" />
+          <p className="hint hint--tight">出場者の名前は、このサイトで確認できた一部です。見つからないときは店舗名や地域でも探せます。</p>
+        </div>
         {/* 数字はそのまま探索の入口 */}
         <ul className="hero-stats">
           <li>
@@ -59,14 +67,14 @@ export default function HomePage() {
                 <small>/{stats.prefectureTotal}</small>
               </span>
               <span className="hero-stat__label">都道府県</span>
-              <span className="hero-stat__go">地図から探す ›</span>
+              <span className="hero-stat__go">地域から探す ›</span>
             </a>
           </li>
         </ul>
         <ol className="flow" aria-label="探し方">
-          <li>部門・地図で探す</li>
+          <li>推し・部門・地域で探す</li>
           <li>店舗を見つける</li>
-          <li>店舗の公開ページで出場者をチェック</li>
+          <li>店舗の公開ページで詳しく見る</li>
         </ol>
       </section>
 
@@ -95,7 +103,7 @@ export default function HomePage() {
         {/* 全国地図 */}
         <section className="map-card" id="map" aria-labelledby="map-heading">
           <div className="map-card__head">
-            <h2 id="map-heading">地図から探す</h2>
+            <h2 id="map-heading">地域から探す</h2>
             <span className="map-card__sub">都道府県をタップ</span>
           </div>
           <JapanMap prefectures={mapPrefs} />
@@ -103,11 +111,6 @@ export default function HomePage() {
         </section>
 
         <div className="home-side">
-          <section className="side-block" aria-labelledby="search-heading">
-            <h2 id="search-heading">キーワードで探す</h2>
-            <SearchBox />
-            <p className="hint hint--tight">部門名・店舗名・地域名などで全国から探せます。</p>
-          </section>
 
           {/* 都道府県一覧（地図の補助。地方ごとに折りたたみ） */}
           <section className="side-block" aria-labelledby="list-heading">

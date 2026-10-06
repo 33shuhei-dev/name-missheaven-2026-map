@@ -1,6 +1,7 @@
 import type {
   Confidence,
   Dataset,
+  EntrantRawRecord,
   MapStatus,
   Phase1Dataset,
   Phase1Map,
@@ -438,19 +439,52 @@ export function validateStoreUpdates(
     if (!updates.stores.some((s) => s.storeId === rel.storeId)) err(id, "差分更新の関係は差分更新の店舗を参照してください");
     if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
     if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
-    if (rel.entrantNames !== undefined && rel.entrantNames !== null) {
-      if (!Array.isArray(rel.entrantNames) || rel.entrantNames.some((n) => typeof n !== "string" || n.trim() === "")) {
-        err(id, "entrantNames は空でない文字列の配列にしてください");
-      } else if (rel.entrantNames.length > 0 && (rel.sourceIds ?? []).length === 0) {
-        err(id, "出場者名を記録する関係には、その名前が書かれた情報源（sourceIds）が必要です");
-      }
-    }
   }
   for (const s of updates.stores) {
     const proj = [...new Set(updates.relations.filter((r) => r.storeId === s.storeId).map((r) => r.categoryOriginal))].sort();
     if (JSON.stringify(proj) !== JSON.stringify([...(s.categoryOriginals ?? [])].sort())) {
       err(s.storeId, "categoryOriginals が店舗×部門関係と一致しません");
     }
+  }
+  return issues;
+}
+
+/**
+ * 出場者の記録（data/entrant-updates.ts）の検証。
+ * 必須：人物名・所属店舗（存在する storeId）・2026年の出場を示す根拠（情報源と記載内容）。
+ * 任意：部門（その店舗の部門に限る）・個人のページURL。
+ */
+export function validateEntrantRecords(
+  entrants: readonly EntrantRawRecord[],
+  layer: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeIds = new Set(layer.stores.map((s) => s.storeId));
+  const sourceIds = new Set(layer.sources.map((s) => s.sourceId));
+  const ids = new Set<string>();
+  const pairs = new Set<string>();
+  for (const e of entrants) {
+    const id = e?.entrantId ?? "(entrantIdなし)";
+    if (typeof e.entrantId !== "string" || !ID_PATTERN.test(e.entrantId)) err(id, "entrantId は英数字・-・_ で指定してください");
+    if (ids.has(id)) err(id, "entrantId が重複しています");
+    ids.add(id);
+    if (typeof e.name !== "string" || !e.name.trim()) err(id, "人物名（name）は必須です");
+    if (!storeIds.has(e.storeId)) err(id, `所属店舗が見つかりません（storeId: ${String(e.storeId)}）。店舗を先に追加してください`);
+    if (!Array.isArray(e.sourceIds) || e.sourceIds.length === 0) err(id, "2026年の出場を示す情報源（sourceIds）は必須です");
+    for (const sid of e.sourceIds ?? []) if (!sourceIds.has(sid)) err(id, `存在しない sourceId です: ${sid}`);
+    if (typeof e.evidence !== "string" || !e.evidence.trim()) err(id, "情報源に書かれていた内容（evidence）は必須です");
+    else if (!/2026/.test(e.evidence.normalize("NFKC"))) err(id, "evidence に2026年の出場を示す記載がありません（2025年以前・在籍情報のみは記録しない）");
+    if (!CONFIDENCES.includes(e.confidence)) err(id, `confidence が不正です: ${String(e.confidence)}`);
+    if (typeof e.checkedAt !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(e.checkedAt)) err(id, "checkedAt（確認日）は YYYY-MM-DD で指定してください");
+    if (e.categoryOriginal !== undefined && e.categoryOriginal !== null) {
+      const cats = new Set(layer.relations.filter((r) => r.storeId === e.storeId).map((r) => r.categoryOriginal));
+      if (!cats.has(e.categoryOriginal)) err(id, `部門「${e.categoryOriginal}」はこの店舗の部門にありません（先に店舗×部門関係を追加してください）`);
+    }
+    if (e.personalUrl !== undefined && e.personalUrl !== null && !safeExternalUrl(e.personalUrl)) err(id, "personalUrl が不正です");
+    const pair = `${e.storeId}|${String(e.name ?? "").normalize("NFKC").replace(/\s/g, "")}`;
+    if (pairs.has(pair)) err(id, "同じ店舗・同じ名前の出場者が重複しています");
+    pairs.add(pair);
   }
   return issues;
 }

@@ -26,6 +26,7 @@ import { safeExternalUrl } from "@/lib/links";
 import { buildSearchIndex, searchItems } from "@/lib/search";
 import { buildModel, findStore, phase1SummaryOf, prefSlugOf, storeIdOf, summarizeStores } from "@/lib/model";
 import { relationUpdates, storeUpdates } from "@/data/store-updates";
+import { entrantUpdates } from "@/data/entrant-updates";
 
 /**
  * 本番データ（Phase 1 最終データ）の検証。`npm run validate:data` でも実行できる。
@@ -297,14 +298,15 @@ describe("Phase 3 店舗の統合", () => {
     const legacy = new Set(phase1Records.filter((r) => r.storeName).map((r) => storeIdOf(prefSlugOf(r), r.storeName!)));
     for (const id of legacy) expect(findStore(site, id), id).not.toBeNull();
   });
-  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDか、店舗×部門関係の根拠に書かれた名前によるもののみ", () => {
+  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDか、出場者の記録の所属店舗によるもののみ", () => {
     const phase1Names = new Set(phase1Records.flatMap((r) => r.entrantNames));
-    const relationNames = new Set(relationUpdates.flatMap((r) => r.entrantNames ?? []));
-    expect(new Set(site.entrants.map((e) => e.name))).toEqual(new Set([...phase1Names, ...relationNames]));
+    const recordNames = new Set(entrantUpdates.map((e) => e.name));
+    expect(new Set(site.entrants.map((e) => e.name))).toEqual(new Set([...phase1Names, ...recordNames]));
     for (const e of site.entrants) {
       if (e.records.length === 0) {
-        // 観測のない出場者は、その店舗の関係の entrantNames にある名前だけ
-        expect(relationUpdates.some((r) => r.storeId === e.storeId && (r.entrantNames ?? []).includes(e.name)), e.name).toBe(true);
+        // 観測のない出場者は、出場者の記録（所属店舗・名前が一致）から作られたものだけ
+        expect(e.entrantRecord, e.name).toBeTruthy();
+        expect(entrantUpdates.some((r) => r.storeId === e.storeId && r.name === e.name), e.name).toBe(true);
         continue;
       }
       if (!e.storeId) continue;

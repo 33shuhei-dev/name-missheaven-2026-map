@@ -133,6 +133,48 @@ export default async function StorePage({ params }: Params) {
         )}
       </section>
 
+      {entrants.length > 0 && (
+        <section className="section" aria-labelledby="ent-heading">
+          <h2 id="ent-heading">記録した出場者（一部）</h2>
+          <p className="hint">
+            このサイトで記録できた一部の方だけです。
+            {publicUrl ? "詳しい出場者情報は、上の「店舗の公開ページで詳しく見る」からご確認ください。" : "この店舗の出場者は、店舗の公開ページでご確認ください。"}
+          </p>
+          <ul className="entrant-list">
+            {entrants.map((e) => (
+              <li key={e.id} id={e.id} className="entrant-row entrant-row--static">
+                <span className="entrant-row__name">{e.name}</span>
+                <span className="entrant-row__sub inline-links">
+                  {e.divisions.map((d) => (
+                    <Link key={d.id} href={`/division/${d.id}`}>
+                      {d.categoryOriginal}
+                    </Link>
+                  ))}
+                </span>
+                <ConfidenceBadge value={e.confidence} small />
+                {e.entrantRecord?.personalUrl && safeExternalUrl(e.entrantRecord.personalUrl) && (
+                  <a
+                    className="entrant-row__link"
+                    href={safeExternalUrl(e.entrantRecord.personalUrl)!}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow ugc"
+                  >
+                    本人のページ ↗
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+          {/* 一覧が長いときは、下にもう一度だけ公開ページへのボタンを置く */}
+          {publicUrl && entrants.length >= 3 && (
+            <a className="store-cta store-cta--compact" href={publicUrl} target="_blank" rel="noopener noreferrer nofollow ugc">
+              <span>店舗の公開ページで詳しく見る</span>
+              <span className="store-cta__host">{displayHost(publicUrl)} ↗ 外部サイトが開きます</span>
+            </a>
+          )}
+        </section>
+      )}
+
       <dl className="facts">
         <div>
           <dt>都道府県</dt>
@@ -226,27 +268,6 @@ export default async function StorePage({ params }: Params) {
         </section>
       )}
 
-      {entrants.length > 0 && (
-        <section className="section" aria-labelledby="ent-heading">
-          <h2 id="ent-heading">記録した出場者（一部）</h2>
-          <p className="hint">このサイトで記録できた一部の方だけです。この店舗の出場者は、店舗の公開ページでご確認ください。</p>
-          <ul className="entrant-list">
-            {entrants.map((e) => (
-              <li key={e.id} id={e.id} className="entrant-row entrant-row--static">
-                <span className="entrant-row__name">{e.name}</span>
-                <span className="entrant-row__sub inline-links">
-                  {e.divisions.map((d) => (
-                    <Link key={d.id} href={`/division/${d.id}`}>
-                      {d.categoryOriginal}
-                    </Link>
-                  ))}
-                </span>
-                <ConfidenceBadge value={e.confidence} small />
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       {s.records.length > 0 && (
         <details className="section more-list">

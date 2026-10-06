@@ -3,7 +3,7 @@
  */
 export function SearchBox({
   pref,
-  placeholder = "部門・店舗・出場者・地域",
+  placeholder = "推しの名前・店舗・部門・地域",
   defaultValue,
 }: {
   pref?: string;

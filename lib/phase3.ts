@@ -1,9 +1,11 @@
 import type {
   Confidence,
+  EntrantRawRecord,
   Phase2CountFact,
   Phase3RawRelation,
   Phase3RawSource,
   Phase3RawStore,
+  SiteEntrantRecord,
   SiteRelation,
   SiteSource,
   SiteStore,
@@ -58,7 +60,6 @@ export function adaptRelation(raw: Phase3RawRelation): SiteRelation {
     confidence: raw.confidence as Confidence,
     sourceIds: [...raw.sourceIds],
     phase1RecordIds: [...raw.phase1RecordIds],
-    entrantNames: Array.isArray(raw.entrantNames) ? raw.entrantNames.filter((n) => typeof n === "string" && n.trim() !== "") : [],
   };
 }
 
@@ -113,6 +114,8 @@ export function adaptStoreLayer(input: {
   updates?: StoreLayerInput;
   /** Phase 3b 全国走査（data/phase3b） */
   phase3b?: StoreLayerInput;
+  /** 出場者の記録（data/entrant-updates.ts） */
+  entrants?: readonly EntrantRawRecord[];
 }): StoreLayer {
   const stores = [
     ...input.stores.map((s) => adaptStore(s, "phase3")),
@@ -124,5 +127,22 @@ export function adaptStoreLayer(input: {
     relations: [...input.relations, ...(input.phase3b?.relations ?? []), ...(input.updates?.relations ?? [])].map(adaptRelation),
     sources: [...input.sources, ...(input.phase3b?.sources ?? []), ...(input.updates?.sources ?? [])].map(adaptSource),
     countFacts: linkCountFacts(input.countFacts, stores),
+    entrants: (input.entrants ?? []).map(adaptEntrantRecord),
+  };
+}
+
+/** 出場者の記録。名前・部門は原文のまま。都道府県・掲載地域は店舗から表示する（ここでは持たない） */
+export function adaptEntrantRecord(raw: EntrantRawRecord): SiteEntrantRecord {
+  return {
+    id: raw.entrantId,
+    name: raw.name.trim(),
+    storeId: raw.storeId,
+    sourceIds: [...raw.sourceIds],
+    evidence: raw.evidence,
+    categoryOriginal: opt(raw.categoryOriginal),
+    personalUrl: opt(raw.personalUrl),
+    confidence: raw.confidence as Confidence,
+    checkedAt: raw.checkedAt,
+    notes: opt(raw.notes),
   };
 }
