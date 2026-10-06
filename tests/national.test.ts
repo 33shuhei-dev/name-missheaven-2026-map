@@ -3,9 +3,9 @@ import { site } from "@/lib/data";
 import { sourceUpdates, storeListingAreaUpdates, storePublicUrlUpdates, storeUpdates } from "@/data/store-updates";
 import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
 
-/** 全国展開（2026-10-06）で追加した店舗・地域/URLの補完・出場者 */
+/** 全国展開・仕上げPhase（2026-10-06）で追加した店舗・地域/URLの補完・出場者 */
 describe("全国展開：店舗", () => {
-  const added = storeUpdates.filter((s) => s.storeId.startsWith("mh26-nat-store-"));
+  const added = storeUpdates.filter((s) => /^mh26-(nat|fin)-store-/.test(s.storeId));
   const norm = (s: string) => s.normalize("NFKC").replace(/\s/g, "").toLowerCase();
 
   it("追加店舗は、ヘブンの店舗キーと一致する公開ページURL・同じ店舗キーの情報源を持ち、正式選挙エリアを持たない", () => {
@@ -37,7 +37,7 @@ describe("全国展開：店舗", () => {
         expect(src.storeIds).toContain(u.storeId);
       }
     }
-    for (const u of storePublicUrlUpdates.filter((x) => x.sourceIds.some((s) => s.startsWith("nat-src-")))) {
+    for (const u of storePublicUrlUpdates.filter((x) => x.sourceIds.some((s) => /^(nat|fin)-src-/.test(s)))) {
       const src = sourceUpdates.find((x) => x.sourceId === u.sourceIds[0])!;
       expect(src.url.replace("smart.cityheaven", "www.cityheaven").startsWith(u.storePublicUrl)).toBe(true);
     }
@@ -45,7 +45,7 @@ describe("全国展開：店舗", () => {
 });
 
 describe("全国展開：出場者", () => {
-  const added = entrantUpdates.filter((e) => e.entrantId.startsWith("mh26-ent-n-"));
+  const added = entrantUpdates.filter((e) => /^mh26-ent-[nf]-/.test(e.entrantId));
 
   it("根拠に2026年（または2026年の日付）があり、情報源はその店舗のもの・個人URLは入れない", () => {
     for (const e of added) {
@@ -69,5 +69,17 @@ describe("全国展開：出場者", () => {
       expect(seen.has(k), e.entrantId).toBe(false);
       seen.add(k);
     }
+  });
+});
+
+describe("追加した情報源URL", () => {
+  it("ヘブンの情報源URLに、セッションID・表示モードなどの不要なクエリを含めない（ページを特定する girlId は残す）", () => {
+    // 手で入れた初期の情報源（利用者提供のabc＋のURLなど）は対象外。調査で追加した分（パイロット・全国展開・仕上げ）を確認する
+    const urls = [...sourceUpdates, ...entrantSources]
+      .filter((s) => !/^(upd-src-|ent-src-00)/.test(s.sourceId))
+      .map((s) => s.url)
+      .filter((u) => u.includes("cityheaven.net"));
+    expect(urls.length).toBeGreaterThan(0);
+    for (const u of urls) expect(u, u).not.toMatch(/[?&](spmode|pcmode|lo|of|rk|PHPSESSID)=|#!/);
   });
 });
