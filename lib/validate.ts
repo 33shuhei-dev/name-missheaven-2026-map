@@ -438,6 +438,13 @@ export function validateStoreUpdates(
     if (!updates.stores.some((s) => s.storeId === rel.storeId)) err(id, "差分更新の関係は差分更新の店舗を参照してください");
     if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
     if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
+    if (rel.entrantNames !== undefined && rel.entrantNames !== null) {
+      if (!Array.isArray(rel.entrantNames) || rel.entrantNames.some((n) => typeof n !== "string" || n.trim() === "")) {
+        err(id, "entrantNames は空でない文字列の配列にしてください");
+      } else if (rel.entrantNames.length > 0 && (rel.sourceIds ?? []).length === 0) {
+        err(id, "出場者名を記録する関係には、その名前が書かれた情報源（sourceIds）が必要です");
+      }
+    }
   }
   for (const s of updates.stores) {
     const proj = [...new Set(updates.relations.filter((r) => r.storeId === s.storeId).map((r) => r.categoryOriginal))].sort();

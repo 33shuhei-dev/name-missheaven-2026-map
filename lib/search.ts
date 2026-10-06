@@ -163,8 +163,14 @@ export function buildSearchIndex(model: SiteModel): SearchItem[] {
       prefSlug: e.prefSlug,
       prefName: e.prefectureName,
       listingArea: e.listingAreas.join("・") || undefined,
-      areaIds: e.records.map((r) => areaIdOf(e.prefSlug, r.listingArea)).filter((v, i, a) => a.indexOf(v) === i),
-      sub: [e.storeName, e.divisions.map((d) => d.categoryOriginal).join("、")].filter(Boolean).join(" ・ "),
+      // 観測のない出場者（店舗×部門関係の根拠に書かれた名前）は店舗の掲載地域で絞り込む
+      areaIds: (e.records.length
+        ? e.records.map((r) => areaIdOf(e.prefSlug, r.listingArea))
+        : e.listingAreas.length
+          ? e.listingAreas.map((a) => areaIdOf(e.prefSlug, a))
+          : ["none"]
+      ).filter((v, i, a) => a.indexOf(v) === i),
+      sub: [e.storeName && `店舗：${e.storeName}`, e.divisions.map((d) => d.categoryOriginal).join("、")].filter(Boolean).join(" ・ "),
       confidence: e.confidence,
       ownKeys: N([e.name]),
       contextKeys: N([e.prefectureName, ...e.listingAreas, e.storeName, ...e.divisions.map((d) => d.categoryOriginal)]),

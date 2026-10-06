@@ -170,6 +170,11 @@ export interface Phase3RawRelation {
   confidence: string;
   sourceIds: string[];
   phase1RecordIds: string[];
+  /**
+   * この関係の根拠（sourceIds）に、店舗・部門と一緒に書かれている出場者名（原文）。
+   * 情報源で確認できたものだけ。全国の人物名簿として集めるためのものではない
+   */
+  entrantNames?: string[] | null;
   notes?: string | null;
   [key: string]: unknown;
 }
@@ -276,6 +281,8 @@ export interface SiteRelation {
   confidence: Confidence;
   sourceIds: string[];
   phase1RecordIds: string[];
+  /** 根拠に書かれた出場者名（原文）。Phase 1 の観測を持たない店舗×部門関係の出場者を検索・表示するため */
+  entrantNames?: string[];
 }
 
 export interface SiteSource {

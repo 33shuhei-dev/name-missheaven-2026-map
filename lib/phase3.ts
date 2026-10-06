@@ -58,6 +58,7 @@ export function adaptRelation(raw: Phase3RawRelation): SiteRelation {
     confidence: raw.confidence as Confidence,
     sourceIds: [...raw.sourceIds],
     phase1RecordIds: [...raw.phase1RecordIds],
+    entrantNames: Array.isArray(raw.entrantNames) ? raw.entrantNames.filter((n) => typeof n === "string" && n.trim() !== "") : [],
   };
 }
 

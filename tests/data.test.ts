@@ -297,10 +297,16 @@ describe("Phase 3 店舗の統合", () => {
     const legacy = new Set(phase1Records.filter((r) => r.storeName).map((r) => storeIdOf(prefSlugOf(r), r.storeName!)));
     for (const id of legacy) expect(findStore(site, id), id).not.toBeNull();
   });
-  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDによるもののみ", () => {
-    const names = new Set(phase1Records.flatMap((r) => r.entrantNames));
-    expect(new Set(site.entrants.map((e) => e.name))).toEqual(names);
+  it("Phase 1 の人物情報を維持し、店舗への接続は観測IDか、店舗×部門関係の根拠に書かれた名前によるもののみ", () => {
+    const phase1Names = new Set(phase1Records.flatMap((r) => r.entrantNames));
+    const relationNames = new Set(relationUpdates.flatMap((r) => r.entrantNames ?? []));
+    expect(new Set(site.entrants.map((e) => e.name))).toEqual(new Set([...phase1Names, ...relationNames]));
     for (const e of site.entrants) {
+      if (e.records.length === 0) {
+        // 観測のない出場者は、その店舗の関係の entrantNames にある名前だけ
+        expect(relationUpdates.some((r) => r.storeId === e.storeId && (r.entrantNames ?? []).includes(e.name)), e.name).toBe(true);
+        continue;
+      }
       if (!e.storeId) continue;
       const store = site.stores.find((s) => s.id === e.storeId)!;
       expect(e.records.every((r) => store.phase1RecordIds.includes(r.id)), e.name).toBe(true);

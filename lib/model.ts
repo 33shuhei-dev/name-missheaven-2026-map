@@ -468,9 +468,9 @@ export function buildModel(
         compareJa(a.name, b.name),
     );
 
-  // 3) 出場者（Phase 1 の既存人物情報）
+  // 3) 出場者（Phase 1 の既存人物情報 ＋ 店舗×部門関係の根拠に書かれた出場者名）
   const entrantRows = records.flatMap((r) => r.entrantNames.map((name) => ({ r, name })));
-  const entrants: EntrantView[] = [
+  const phase1Entrants: EntrantView[] = [
     ...groupBy(entrantRows, ({ r, name }) => `${prefSlugOf(r)}|${r.storeName ?? ""}|${name}`).entries(),
   ]
     .map(([key, rows]) => {
@@ -497,6 +497,45 @@ export function buildModel(
         compareJa(a.storeName ?? "\uffff", b.storeName ?? "\uffff") ||
         compareJa(a.name, b.name),
     );
+
+  // 店舗×部門関係（差分更新など Phase 1 の観測を持たない店舗）の根拠に書かれた出場者名。
+  // 同じ都道府県・店舗名・名前の出場者が Phase 1 にあれば、そちらを優先して重複させない
+  const entrantKey = (prefSlug: string, storeName: string | undefined, name: string) =>
+    `${prefSlug}|${normalizeForSearch(storeName)}|${normalizeForSearch(name)}`;
+  const knownEntrants = new Set(phase1Entrants.map((e) => entrantKey(e.prefSlug, e.storeName, e.name)));
+  const relationEntrantRows = layer.relations.flatMap((rel) => {
+    const st = storeById.get(rel.storeId);
+    return st ? (rel.entrantNames ?? []).map((name) => ({ rel, st, name })) : [];
+  });
+  const relationEntrants: EntrantView[] = [
+    ...groupBy(relationEntrantRows, ({ st, name }) => `${prefSlugOf(st)}|${st.id}|${name}`).entries(),
+  ]
+    .filter(([, rows]) => !knownEntrants.has(entrantKey(prefSlugOf(rows[0].st), rows[0].st.name, rows[0].name)))
+    .map(([key, rows]) => {
+      const st = rows[0].st;
+      const rels = rows.map((x) => x.rel);
+      const divIds = new Set(
+        rels.flatMap((rel) => storeAreas(st).map((area) => divisionIdOf(prefSlugOf(st), area, rel.categoryOriginal))),
+      );
+      return {
+        id: `e${stableHash(`rel|${key}`)}`,
+        name: rows[0].name,
+        prefSlug: prefSlugOf(st),
+        prefectureName: st.prefecture ?? UNKNOWN_PREFECTURE_LABEL,
+        storeName: st.name,
+        storeId: st.id,
+        listingAreas: [...st.listingAreas].sort(compareJa),
+        records: [],
+        divisions: divisions.filter((d) => divIds.has(d.id)),
+        confidence: bestConfidence(rels),
+      };
+    });
+  const entrants: EntrantView[] = [...phase1Entrants, ...relationEntrants].sort(
+    (a, b) =>
+      prefOrder(a.prefSlug) - prefOrder(b.prefSlug) ||
+      compareJa(a.storeName ?? "\uffff", b.storeName ?? "\uffff") ||
+      compareJa(a.name, b.name),
+  );
 
   // 4) 都道府県 → 掲載地域
   const buildPref = (slug: string, name: string, code: number | null, regionId: string | null): PrefectureView => {
