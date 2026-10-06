@@ -482,6 +482,246 @@
    "notes": null
   },
   {
+   "entrantId": "mh26-ent-n-b7a4bcb1e15f5462",
+   "name": "かんな",
+   "storeId": "mh26-nat-store-e3098da332fe336c",
+   "sourceIds": [
+    "ent-src-n-d44c889bceb17f0d"
+   ],
+   "evidence": "本人の写メ日記に「10/2 21:06. ミスヘブン2026おっぱい部門に出場します エロ写を楽しみにして下さってる」",
+   "evidenceDate": null,
+   "categoryOriginal": "おっぱい部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-37092348b39bb61d",
+   "name": "美々(みみ)",
+   "storeId": "mh26-p3b-store-6e7350f052e6826d",
+   "sourceIds": [
+    "ent-src-n-ef206b97ef07b22c"
+   ],
+   "evidence": "本人のページに「ミスヘブン2026年総選挙去年に引き続き出場させてもらいありがとうございます去年は沢山のお客様に」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-049ed101ba82f298",
+   "name": "るな",
+   "storeId": "mh26-nat-store-ddb35c24e4ca0fdc",
+   "sourceIds": [
+    "ent-src-n-f660c1025c63c669"
+   ],
+   "evidence": "本人のページに「10/1 23:11. 今年も出場させて頂くことになりました 去年に引き続き「注目の女の子」部門」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "注目の女の子部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-e10642b5d16157dd",
+   "name": "莉久/Riku",
+   "storeId": "mh26-nat-store-b809a99a2018f37c",
+   "sourceIds": [
+    "ent-src-n-cde93eab364a3192"
+   ],
+   "evidence": "本人のページに「ミスヘブン2026 ✨キレイ・かわいい部門✨にジュリエットからはりくが出場させて頂いております」",
+   "evidenceDate": null,
+   "categoryOriginal": "キレイ・かわいい部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-b47fbc0ec3ae1349",
+   "name": "彩見 かのん",
+   "storeId": "mh26-nat-store-a5466431ce5a5756",
+   "sourceIds": [
+    "ent-src-n-4ab0109df58f523c"
+   ],
+   "evidence": "本人のページに「10/1 17:25. ⚠️音なりますいつも日記見てくれてありがとうございます♡♡かのんです!今年もミスヘブン総選挙に出場」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-ce1ef860b3cbff82",
+   "name": "なつほ",
+   "storeId": "mh26-nat-store-ac93e434fd8afb01",
+   "sourceIds": [
+    "ent-src-n-689212cea7489db0"
+   ],
+   "evidence": "本人のページに「はじめまして♡なつほです 2026年ミスヘブン総選挙に参加しますので応援よろしくお願いします」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-d78d675d476dc544",
+   "name": "スズナ",
+   "storeId": "mh26-nat-store-4f35e9e9eb3f0796",
+   "sourceIds": [
+    "ent-src-n-c9eafbfe5ff2e0e2"
+   ],
+   "evidence": "本人のページに「10/3 14:58. こっそり応援してね こんにちは ミスヘブン総選挙、顔出しNG部門にエントリーしてい」",
+   "evidenceDate": "2026-10-03",
+   "categoryOriginal": "顔出しNG部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-9cf0f3b55328beed",
+   "name": "らい",
+   "storeId": "mh26-nat-store-c1c52c1b81c1f377",
+   "sourceIds": [
+    "ent-src-n-4f2443e344b00cc1"
+   ],
+   "evidence": "本人の写メ日記に「10/1 22:41. WhiteClubのらいです。初めての試みで右も左もわかりませんが出たからには頑張りたいと思います」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-bc3896355a739872",
+   "name": "せりな",
+   "storeId": "mh26-store-34d8beb9b9f38b14",
+   "sourceIds": [
+    "ent-src-n-40693863893ea02f"
+   ],
+   "evidence": "本人の写メ日記に「今年は2回目の参戦 『ミスヘブン総選挙2026』『推しといえば私でしょ?』部門にて出場させていただきます」",
+   "evidenceDate": null,
+   "categoryOriginal": "推しといえば私でしょ?部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-8dc617a6c59ce89e",
+   "name": "まりん",
+   "storeId": "mh26-nat-store-66c04912c904ff97",
+   "sourceIds": [
+    "ent-src-n-ce67ff330f29f353"
+   ],
+   "evidence": "本人の写メ日記に「SUGAR岡山のまりんです この度、ミスヘブン総選挙の「推しといえばわたしでしょ?♡」部門に出場します」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": "推しといえばわたしでしょ?♡部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-96c2fdc510607654",
+   "name": "平林 るり子",
+   "storeId": "mh26-nat-store-5621fea904914bb1",
+   "sourceIds": [
+    "ent-src-n-e681fda89e7c0c9f"
+   ],
+   "evidence": "本人のページに「攻め好きご奉仕方Sのるり子です 今年もミスヘブン総選挙2026出場決定❗️」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-3f2b29fabdda698d",
+   "name": "そあ",
+   "storeId": "mh26-nat-store-5fd17e3fcc9fae15",
+   "sourceIds": [
+    "ent-src-n-7415d477b98ec75d"
+   ],
+   "evidence": "本人のページに「ミスヘブン総選挙2026 「巨乳部門」に出場します✨ 最初で最後の出場になるのでたくさんの応援お待ちしてます」",
+   "evidenceDate": null,
+   "categoryOriginal": "巨乳部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-d134f23d0f816931",
+   "name": "望月あかり",
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "sourceIds": [
+    "ent-src-n-aee16ba27415b566"
+   ],
+   "evidence": "本人の写メ日記に「10/1 12:50. (˶ᐢωᐢ˶) ⋆┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈⋆望月あかりです今年もミスヘブン総選挙に出場します」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-1da52c80d20399cc",
+   "name": "深瀬さよ",
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "sourceIds": [
+    "ent-src-n-409dafc60bb01d20"
+   ],
+   "evidence": "本人の写メ日記に「こんにちは ྀི可愛すぎて滅!部門で参加させていただきます .⋆深瀬さよです」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "可愛すぎて滅!部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-f5d94afac79dea15",
+   "name": "野原れんげ",
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "sourceIds": [
+    "ent-src-n-960d3411e0dabcfa"
+   ],
+   "evidence": "本人の写メ日記に「こんにちは☘️ ミスヘブン総選挙2026~巨乳部門 ~ 出場する 野原れんげ☘️です」",
+   "evidenceDate": null,
+   "categoryOriginal": "巨乳部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-284d304f016f8576",
+   "name": "橋本ねる",
+   "storeId": "mh26-nat-store-c764b6a27c38048d",
+   "sourceIds": [
+    "ent-src-n-f95766ebe7c4ef77"
+   ],
+   "evidence": "本人のページに「ミスヘブン総選挙2026、桃女部門に出場させていただきます ♡♡ たくさんのお兄様にあえますように」",
+   "evidenceDate": null,
+   "categoryOriginal": "桃女部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
    "entrantId": "mh26-ent-n-224da62ad892db5d",
    "name": "ちえり",
    "storeId": "mh26-store-90522f3bdfdaa139",
@@ -540,6 +780,51 @@
    "confidence": "unverified",
    "checkedAt": "2026-10-06",
    "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-bb0a1001365787f2",
+   "name": "かんな",
+   "storeId": "mh26-nat-store-de5ba805a8bfbc34",
+   "sourceIds": [
+    "ent-src-n-7ceb4788ba324236"
+   ],
+   "evidence": "本人のページに「10/1 20:16. 改めて、かんなから先生へご報告です︎ 今年もありがたいことに、ミスヘブン総選挙に出場することになりまし」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-e9534f92e9114b0b",
+   "name": "飛鳥れい",
+   "storeId": "mh26-nat-store-320f88718dc380ee",
+   "sourceIds": [
+    "ent-src-n-127a5494874d3088"
+   ],
+   "evidence": "本人のページに「10/1 16:40. 今年の「ミスヘブン 」に荒井美保ちゃんとふたりで ノミネートさせていただくことになりました」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-78b4cca4e1e10983",
+   "name": "まいこ",
+   "storeId": "mh26-nat-store-49b8e423310cdc54",
+   "sourceIds": [
+    "ent-src-n-a4f9c9875f036b33"
+   ],
+   "evidence": "本人のページに「10/1 12:09. 去年に続き今年もミスヘブンに出場する事になりました」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
   },
   {
    "entrantId": "mh26-ent-n-1e5ba73217e8b3ec",
@@ -735,6 +1020,51 @@
    "confidence": "unverified",
    "checkedAt": "2026-10-06",
    "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-845d376d9e33c00b",
+   "name": "朝日奈 うみ",
+   "storeId": "mh26-p3b-store-902e92d7e5500393",
+   "sourceIds": [
+    "ent-src-n-403dc75354594067"
+   ],
+   "evidence": "本人のページに「10/1 23:09. うみ今年総選挙初参加します こういう大きなイベントに参加するのは」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-115cb9e92562916c",
+   "name": "ひな",
+   "storeId": "mh26-nat-store-4460b78172c3998a",
+   "sourceIds": [
+    "ent-src-n-3475618413eeb574"
+   ],
+   "evidence": "本人のページに「10/2 15:49. こんにちは✨️今年もミスヘブンに出ることになったのでぜひお力を貸していただきたきたい」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-cfead6713132172f",
+   "name": "いぶき",
+   "storeId": "mh26-p3b-store-b829dfeb98267e2a",
+   "sourceIds": [
+    "ent-src-n-3a66b7167b1d3055"
+   ],
+   "evidence": "本人のページに「みなさまこんにちは ミスヘブン2026ソープ部門出場のシャトー本陣のいぶきです!」",
+   "evidenceDate": null,
+   "categoryOriginal": "ソープ部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
    "entrantId": "mh26-ent-n-8fcdb205bf9a35ed",
@@ -1232,6 +1562,231 @@
    "notes": null
   },
   {
+   "entrantId": "mh26-ent-n-ef56819bd6b3c043",
+   "name": "め ぐ",
+   "storeId": "mh26-nat-store-79cc4df25fd7b4d9",
+   "sourceIds": [
+    "ent-src-n-b88b68f981c75819"
+   ],
+   "evidence": "本人の写メ日記に「10/5 09:53. この度、なんと「ミスヘブン」に出場させていただくことになりました」",
+   "evidenceDate": "2026-10-05",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-85646ebc36cecfef",
+   "name": "ヒヨリ",
+   "storeId": "mh26-nat-store-8ec15ee288b2d376",
+   "sourceIds": [
+    "ent-src-n-3e178da37df33dbd"
+   ],
+   "evidence": "本人のページに「CLUBバニーのひよりです この度ミスヘブンに出場することになりました✨」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-9e01549308a909de",
+   "name": "りの",
+   "storeId": "mh26-p3b-store-67e56058d34bd675",
+   "sourceIds": [
+    "ent-src-n-7785bb50a418bbc8"
+   ],
+   "evidence": "本人のページに「ミスヘブン2026『ニューヒロイン部門』で初出場することになりました」",
+   "evidenceDate": null,
+   "categoryOriginal": "ニューヒロイン部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-fa61939a781f216d",
+   "name": "なみだ",
+   "storeId": "mh26-nat-store-9516e22fe143f0ce",
+   "sourceIds": [
+    "ent-src-n-2a94e5b3c9c745de"
+   ],
+   "evidence": "本人のページに「10/2 19:07. 隣の奥様滋賀店なみだですミスヘブン総選挙エントリーしてます」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-1259b57ccb09f109",
+   "name": "真鍋りおん",
+   "storeId": "mh26-p3b-store-ae95a4082b2b3ba9",
+   "sourceIds": [
+    "ent-src-n-be0a0155ce463732"
+   ],
+   "evidence": "本人のページに「10/2 19:57. ♡ミスヘブンに初めて出ることになりました♡今回、初めてミスヘブンに参加させていただくことになりまし」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-a5c2b789a399e0ed",
+   "name": "れいな",
+   "storeId": "mh26-nat-store-0f24a591feeadb9c",
+   "sourceIds": [
+    "ent-src-n-3a6dd33e9aa8f323"
+   ],
+   "evidence": "本人のページに「ミスヘブン総選挙 今年も出場することになりました 部門は「スタイル部門」です!」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "スタイル部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-fd9763c5a1a6a920",
+   "name": "咲(さき)",
+   "storeId": "mh26-p3b-store-21df4ad5af10c32d",
+   "sourceIds": [
+    "ent-src-n-446cffe992af957b"
+   ],
+   "evidence": "本人のページに「10/2 02:24. ミスヘブン総選挙 私も参加させていただくことになりました」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-fa66cf71cc37930a",
+   "name": "水月(みづき)",
+   "storeId": "mh26-p3b-store-21df4ad5af10c32d",
+   "sourceIds": [
+    "ent-src-n-3154eb0872c3c845"
+   ],
+   "evidence": "本人のページに「10/4 23:03. 最初で最後のミスヘブンへ出場することになりました。」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-7c52e5efe47cd6a3",
+   "name": "しおん",
+   "storeId": "mh26-nat-store-74a2236f0b12f16d",
+   "sourceIds": [
+    "ent-src-n-62071fb1f927e27e"
+   ],
+   "evidence": "本人のページに「10/2 01:35. 今年のミスヘブン しおんはデリヘル部門で出場します」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": "デリヘル部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-2a2279b66425bee6",
+   "name": "藤咲ゆあ",
+   "storeId": "mh26-nat-store-a2c4f760478d027b",
+   "sourceIds": [
+    "ent-src-n-d44a061a6552884c"
+   ],
+   "evidence": "本人のページに「10/5 21:32. 大変告知が遅くなりましたm(__)m今年も出場させていただくことになりました」",
+   "evidenceDate": "2026-10-05",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-7391e0d514a7523e",
+   "name": "うな",
+   "storeId": "mh26-p3b-store-25e02fb6cca292f5",
+   "sourceIds": [
+    "ent-src-n-42267b29fc74beab"
+   ],
+   "evidence": "本人のページに「うなです!初めてミスヘブンに出場する事になりました 部門は『おっぱい部門』で出場します!」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "おっぱい部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-ba8d5c393512b104",
+   "name": "まどか",
+   "storeId": "mh26-p3b-store-25e02fb6cca292f5",
+   "sourceIds": [
+    "ent-src-n-a65a0bc1cb70b896"
+   ],
+   "evidence": "本人のページに「ミスヘブン2026おっぱい部門に出場させていただきます♡まどかです」",
+   "evidenceDate": null,
+   "categoryOriginal": "おっぱい部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-92d63e3b0ba2bfdd",
+   "name": "藍花(あいか)",
+   "storeId": "mh26-nat-store-8270befe3c1a4539",
+   "sourceIds": [
+    "ent-src-n-f51b71ca624d4fd9"
+   ],
+   "evidence": "本人のページに「10/2 20:17. 今回ミスヘブンに参加させて頂くことになりました」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-62a59dec3852b399",
+   "name": "なゆ",
+   "storeId": "mh26-nat-store-0fa522df97ac5161",
+   "sourceIds": [
+    "ent-src-n-06b3c5b568a18014"
+   ],
+   "evidence": "本人のページに「ミスヘブン総選挙2026の『初ノミネート部門』で出場します チケット獲得期間は10/16(金)まで」",
+   "evidenceDate": null,
+   "categoryOriginal": "初ノミネート部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-aa3d4e9b23609239",
+   "name": "りな",
+   "storeId": "mh26-nat-store-1e445cf6d53a0bd5",
+   "sourceIds": [
+    "ent-src-n-01c22d3345412f0a"
+   ],
+   "evidence": "本人のページに「10/1 19:03. やっとやっとー!!!!!! ミスヘブン総選挙♡﻿出場部門が発表されました りなちゃんは『愛され女子部門」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "愛され女子部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
    "entrantId": "mh26-ent-n-97450edc3d403946",
    "name": "柊ろぜ",
    "storeId": "mh26-nat-store-fc86a1294fd1e8d7",
@@ -1532,6 +2087,306 @@
    "notes": null
   },
   {
+   "entrantId": "mh26-ent-n-a4e73e834f88d806",
+   "name": "瑠美-ルミ-",
+   "storeId": "mh26-nat-store-21a785621f970205",
+   "sourceIds": [
+    "ent-src-n-706cdd9d4e67db71"
+   ],
+   "evidence": "本人のページに「2026年ミスヘブン総選挙【福島娘部門】に出場することになりました」",
+   "evidenceDate": null,
+   "categoryOriginal": "福島娘部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-e04136ead40262cd",
+   "name": "美香-ミカー",
+   "storeId": "mh26-nat-store-21a785621f970205",
+   "sourceIds": [
+    "ent-src-n-d5d9186041be4eb9"
+   ],
+   "evidence": "本人のページに「【2026年ミスヘブン総選挙 出場します✨️】 部門は、「人妻部門」です」",
+   "evidenceDate": null,
+   "categoryOriginal": "人妻部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-fd4a7fee399e5595",
+   "name": "星街える",
+   "storeId": "mh26-nat-store-fabceabd4213cb4a",
+   "sourceIds": [
+    "ent-src-n-32dd436181f75bf5"
+   ],
+   "evidence": "本人のページに「10/1 13:04. 人生初ミスヘブン2026参加させていただきます」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-619480ee2d780b79",
+   "name": "とも",
+   "storeId": "mh26-nat-store-90365782cd8be1ce",
+   "sourceIds": [
+    "ent-src-n-ec484bf78d671a00"
+   ],
+   "evidence": "本人のページに「10/5 17:47. ミスヘブン総選挙 私は福島娘部門で参加しています」",
+   "evidenceDate": "2026-10-05",
+   "categoryOriginal": "福島娘部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-cb89ef125a319c8f",
+   "name": "如月",
+   "storeId": "mh26-nat-store-07317b273d96046d",
+   "sourceIds": [
+    "ent-src-n-425a71c12f875d70"
+   ],
+   "evidence": "本人のページに「10/1 14:05. たくさんのお兄様のおかげでこの度初めてミスヘブン出ることができました」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-e89faedc39271ea9",
+   "name": "もか",
+   "storeId": "mh26-nat-store-fcf6d2802e950d3a",
+   "sourceIds": [
+    "ent-src-n-3ea4390b626ad3b3"
+   ],
+   "evidence": "本人のページに「10/1 12:28. 今年もミスヘブン『デリヘル部門』に参加します❤️‍ 毎年お兄様にお力添えいただいて」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "デリヘル部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-645657bd7e5c8cf7",
+   "name": "るあ",
+   "storeId": "mh26-p3b-store-0a1bdecf32f4a204",
+   "sourceIds": [
+    "ent-src-n-3758f91ed62929e9"
+   ],
+   "evidence": "本人のページに「10/2 00:14. あらためて!!️ミスヘブン「福島娘」部門に出ます!!️ るあ ちゃんです」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": "「福島娘」部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-dbe5625da9c8be02",
+   "name": "むらさき",
+   "storeId": "mh26-nat-store-3686e59bedfb291e",
+   "sourceIds": [
+    "ent-src-n-fc6ae509bdf4ad76"
+   ],
+   "evidence": "本人のページに「10/1 16:59. ⬆️自分で作成しました ‍♀️フフッ この度店長とオーナーに推薦して頂いてミスヘブンに初挑戦する」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-f12b070093706343",
+   "name": "奏美(かなみ)",
+   "storeId": "mh26-p3b-store-db9b7988d79b2d98",
+   "sourceIds": [
+    "ent-src-n-400e6ad894332770"
+   ],
+   "evidence": "本人のページに「10/3 08:48. 今年もお店の推薦で人妻部門ミスヘブン2026にエントリーさせて頂くと事になりました」",
+   "evidenceDate": null,
+   "categoryOriginal": "人妻部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-3aede551cdc4859b",
+   "name": "小百合(さゆり)",
+   "storeId": "mh26-p3b-store-db9b7988d79b2d98",
+   "sourceIds": [
+    "ent-src-n-a1ccb700ec558560"
+   ],
+   "evidence": "本人のページに「2026年 ミスヘブン総選挙 〚人妻部門〛 出場します☺️ 応援よろしくお願いします♡」",
+   "evidenceDate": null,
+   "categoryOriginal": "人妻部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-73076decdc98b97b",
+   "name": "森沢あやな",
+   "storeId": "mh26-p3b-store-64966488dea28116",
+   "sourceIds": [
+    "ent-src-n-4fb4b7b08c8fbccf"
+   ],
+   "evidence": "本人のページに「2026 ミスヘブン総選挙出場します❣️ 初めまして! 森沢あやなです♡」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-d3720f6a7e378010",
+   "name": "ゆう",
+   "storeId": "mh26-nat-store-718a47ab34a087be",
+   "sourceIds": [
+    "ent-src-n-49d14e27b1f773ed"
+   ],
+   "evidence": "本人のページに「ゆうです!ミスヘブン2026に出ます❣️部門が公開されたよ✨️前橋・高崎部門です」",
+   "evidenceDate": null,
+   "categoryOriginal": "前橋・高崎部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-fe9c687f43c9356b",
+   "name": "浜風 うるな",
+   "storeId": "mh26-nat-store-fa38ba86d5b2cc24",
+   "sourceIds": [
+    "ent-src-n-5a1c1c9b29a6ad37"
+   ],
+   "evidence": "本人のページに「10/1 19:46. なんか出ることになったみたいです〜!!こういうの初めて」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-2e74a6d99f5cc02d",
+   "name": "希星",
+   "storeId": "mh26-nat-store-c578931d7e5ad177",
+   "sourceIds": [
+    "ent-src-n-c6c22763a37fb16b"
+   ],
+   "evidence": "本人のページに「【ミスへブン2026総選挙 『スタイル自慢部門』出場】 -PremiumCast- G-SPOT史上最高の神BODY!」",
+   "evidenceDate": null,
+   "categoryOriginal": "スタイル自慢部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-3adba59d0a83e9e6",
+   "name": "ソア",
+   "storeId": "mh26-nat-store-8864d38a09a1f978",
+   "sourceIds": [
+    "ent-src-n-f7e83d4ac2e078d8"
+   ],
+   "evidence": "本人のページに「10/2 18:55. 今回のミスヘヴンにノミネートして頂きました 応援よろしくお願いします」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-f88b81385d3bf734",
+   "name": "ユカリ",
+   "storeId": "mh26-nat-store-8864d38a09a1f978",
+   "sourceIds": [
+    "ent-src-n-64b927458ef3dc7e"
+   ],
+   "evidence": "本人のページに「10/2 09:15. こんにちは☺️今年もミスヘブンに出場します❣️ギャンブル部門です」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": "ギャンブル部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-e1b279808e6a02fe",
+   "name": "ひまり",
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "sourceIds": [
+    "ent-src-n-d44ea52800be0a44"
+   ],
+   "evidence": "本人のページに「10/4 13:12. ギャンブル大好き部門から出場です!すでにみたよ、マイガール登録」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": "ギャンブル大好き部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-f5944688c4f8d27f",
+   "name": "アスナ",
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "sourceIds": [
+    "ent-src-n-fabb2bb230f33675"
+   ],
+   "evidence": "本人のページに「10/1 18:51. アスナです ‍⬛この度ミスヘブン土浦ソ♡プ部門に出場することになりました」",
+   "evidenceDate": "2026-10-01",
+   "categoryOriginal": "土浦ソ♡プ部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-99cd891af9c57800",
+   "name": "ゆいな",
+   "storeId": "mh26-nat-store-038556133163fde5",
+   "sourceIds": [
+    "ent-src-n-b0082a5f885bf259"
+   ],
+   "evidence": "本人のページに「この度ロイヤルフラッシュ「店長イチオシ部門」で出場させていただくことになりました」",
+   "evidenceDate": "2026-10-05",
+   "categoryOriginal": "店長イチオシ部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-08266ca7beeaf6ca",
+   "name": "ももな",
+   "storeId": "mh26-nat-store-3cad880b7e0a3b5c",
+   "sourceIds": [
+    "ent-src-n-4cc15ef0e40c05d3"
+   ],
+   "evidence": "本人のページに「ミスヘブン2026【店長イチ押し部門】に出場します! 今年が初めてのミスヘブン 最初で最後の挑戦」",
+   "evidenceDate": null,
+   "categoryOriginal": "店長イチ押し部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
    "entrantId": "mh26-ent-n-3999829aab42fce8",
    "name": "りりな",
    "storeId": "mh26-nat-store-9bab0e77658398f2",
@@ -1585,6 +2440,97 @@
    ],
    "evidence": "本人のページに「10/2 21:25. もえです!♡ この度、ミスヘブン総選挙に出場させて頂くことになりました」",
    "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-02a409e428ab78d4",
+   "name": "フウカ",
+   "storeId": "mh26-nat-store-01dbcfe32a840d3a",
+   "sourceIds": [
+    "ent-src-n-ce99cd940c49f299"
+   ],
+   "evidence": "本人のページに「ミス・ヘブン2026出場姫 . フウカ. T163・92(F cup)・57・86 30歳」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-781b47b73c23c9cc",
+   "name": "アミル",
+   "storeId": "mh26-nat-store-af0f86a61c1bec48",
+   "sourceIds": [
+    "ent-src-n-303c974a67756441"
+   ],
+   "evidence": "本人のページに「10/4 19:01. 今年のミスヘブン あみるはわんおり で【極嬢部門】から出場します」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": "極嬢部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": "店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-n-f4cdd213e22af007",
+   "name": "フウカ",
+   "storeId": "mh26-nat-store-af0f86a61c1bec48",
+   "sourceIds": [
+    "ent-src-n-bd386c1fecefe9a9",
+    "ent-src-n-b754890928ad2cdb"
+   ],
+   "evidence": "本人の写メ日記に「⚠️息抜きも大事!! · フウカ_R30. ミスヘブン2026出場します」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-9f917af0c59754f6",
+   "name": "伊東なな",
+   "storeId": "mh26-nat-store-8b0cdd5f449995a3",
+   "sourceIds": [
+    "ent-src-n-61409314a2f3eb35"
+   ],
+   "evidence": "本人のページに「10/4 14:01. こんにちは いたずら女学園の伊東ななです 今年も出場することになりました」",
+   "evidenceDate": "2026-10-04",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-372b2ed99c0384c1",
+   "name": "ちえ",
+   "storeId": "mh26-p3b-store-43ce56cadee98b94",
+   "sourceIds": [
+    "ent-src-n-306b2a15ade4b276"
+   ],
+   "evidence": "本人のページに「【初参加】ミスヘブンへの意気込み♥️✨️. 10/2 12:16. お兄さま、おじさま、『ミスヘブン』の出場を応援いただきまして」",
+   "evidenceDate": "2026-10-02",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-06",
+   "notes": null
+  },
+  {
+   "entrantId": "mh26-ent-n-237372916cdc0c30",
+   "name": "西野 みき",
+   "storeId": "mh26-p3b-store-3d0ece61b4de02d1",
+   "sourceIds": [
+    "ent-src-n-5996a876db58d71a"
+   ],
+   "evidence": "本人のページに「俺のシンデレラ西野みきです♡ 2026ミスヘブン総選挙に出場します」",
+   "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": null,
    "confidence": "unverified",
@@ -2042,6 +2988,234 @@
    "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
   },
   {
+   "sourceId": "ent-src-n-d44c889bceb17f0d",
+   "url": "https://www.cityheaven.net/oita/A4404/A440401/la_rouge/girlid-37361328/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-e3098da332fe336c"
+   ],
+   "relationIds": [
+    "ent-rel-n-bfd46aab637d644f"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-ef206b97ef07b22c",
+   "url": "https://www.cityheaven.net/oita/A4401/A440101/manin_onrei/girlid-32446374/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-6e7350f052e6826d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-f660c1025c63c669",
+   "url": "https://www.cityheaven.net/gifu/A2101/A210101/hime/girlid-60095844/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-ddb35c24e4ca0fdc"
+   ],
+   "relationIds": [
+    "ent-rel-n-2efcfcff13324f70"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-cde93eab364a3192",
+   "url": "https://www.cityheaven.net/gifu/A2101/A210101/juliet/girlid-51097662/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-b809a99a2018f37c"
+   ],
+   "relationIds": [
+    "ent-rel-n-ff6ae07815241638"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-4ab0109df58f523c",
+   "url": "https://www.cityheaven.net/gifu/A2101/A210101/area/girlid-60703591/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-a5466431ce5a5756"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-689212cea7489db0",
+   "url": "https://www.cityheaven.net/gifu/A2104/A210401/t_okusama_tg/girlid-54505669/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-ac93e434fd8afb01"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-c9eafbfe5ff2e0e2",
+   "url": "https://www.cityheaven.net/gifu/A2101/A210101/aoiringo/girlid-47767006/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-4f35e9e9eb3f0796"
+   ],
+   "relationIds": [
+    "ent-rel-n-3e5c8cd5da9692d2"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-4f2443e344b00cc1",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/jyukusenmadam/girlid-65299755/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-c1c52c1b81c1f377"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-40693863893ea02f",
+   "url": "https://www.cityheaven.net/okayama/A3302/A330201/ecstasy_kurashiki/girlid-45388161/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-store-34d8beb9b9f38b14"
+   ],
+   "relationIds": [
+    "ent-rel-n-1752fc97eb48e1ac"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-ce67ff330f29f353",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/sugar_okayama/girlid-65730275/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-66c04912c904ff97"
+   ],
+   "relationIds": [
+    "ent-rel-n-fac8c65af530352d"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-e681fda89e7c0c9f",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/peach-labo/A6GirlDetailProfile/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-5621fea904914bb1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-7415d477b98ec75d",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/kamisama_okayama/girlid-64911903/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-5fd17e3fcc9fae15"
+   ],
+   "relationIds": [
+    "ent-rel-n-ddee569f5731925b"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-aee16ba27415b566",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/okayama-gift/girlid-59313026/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-9465c8234ceadf51"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-409dafc60bb01d20",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/okayama-gift/girlid-66002323/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-9465c8234ceadf51"
+   ],
+   "relationIds": [
+    "ent-rel-n-cc88e0d4fd7ab1a1"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-960d3411e0dabcfa",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/okayama-gift/girlid-58518912/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-9465c8234ceadf51"
+   ],
+   "relationIds": [
+    "ent-rel-n-bc7408d067bbe53c"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-f95766ebe7c4ef77",
+   "url": "https://www.cityheaven.net/okayama/A3301/A330101/kirakira/girlid-65753308/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-c764b6a27c38048d"
+   ],
+   "relationIds": [
+    "ent-rel-n-329a7e0896fa6ad6"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
    "sourceId": "ent-src-n-0f22599f2f3e2858",
    "url": "https://www.cityheaven.net/hiroshima/A3401/A340101/palette_hiroshima/girlid-68114666/",
    "sourceType": "entrant_diary",
@@ -2096,6 +3270,45 @@
    "relationIds": [
     "ent-rel-n-8726ce57a1a1f41d"
    ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-7ceb4788ba324236",
+   "url": "https://www.cityheaven.net/ehime/A3801/A380101/hisyositu_m/girlid-59213537/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-de5ba805a8bfbc34"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-127a5494874d3088",
+   "url": "https://www.cityheaven.net/ehime/A3801/A380101/50s-madam_m/girlid-62305790/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-320f88718dc380ee"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-a4f9c9875f036b33",
+   "url": "https://www.cityheaven.net/ehime/A3801/A380101/matuyama_madonna/girlid-59121773/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-49b8e423310cdc54"
+   ],
+   "relationIds": [],
    "checkedAt": "2026-10-06",
    "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
   },
@@ -2273,6 +3486,47 @@
     "mh26-nat-store-a060b578b578f863"
    ],
    "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-403dc75354594067",
+   "url": "https://www.cityheaven.net/niigata/A1505/A150501/bianca-nagaoka/girlid-58796785/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-902e92d7e5500393"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3475618413eeb574",
+   "url": "https://www.cityheaven.net/niigata/A1505/A150501/mimi/girlid-49943498/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-4460b78172c3998a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3a66b7167b1d3055",
+   "url": "https://www.cityheaven.net/niigata/A1501/A150101/honjin/girlid-60244174/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-b829dfeb98267e2a"
+   ],
+   "relationIds": [
+    "ent-rel-n-b808734290dd1f2d"
+   ],
    "checkedAt": "2026-10-06",
    "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
   },
@@ -2738,6 +3992,215 @@
    "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
   },
   {
+   "sourceId": "ent-src-n-b88b68f981c75819",
+   "url": "https://www.cityheaven.net/tochigi/A0901/A090101/select/girlid-42360963/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-79cc4df25fd7b4d9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3e178da37df33dbd",
+   "url": "https://www.cityheaven.net/shiga/A2501/A250101/dm_gyakubunny/girlid-64302016/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-8ec15ee288b2d376"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-7785bb50a418bbc8",
+   "url": "https://www.cityheaven.net/shiga/A2501/A250101/lovecollection/girlid-63847319/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-67e56058d34bd675"
+   ],
+   "relationIds": [
+    "ent-rel-n-226a0559c1878bec"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-2a94e5b3c9c745de",
+   "url": "https://www.cityheaven.net/shiga/A2502/A250202/t_okusama/girlid-62477195/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-9516e22fe143f0ce"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-be0a0155ce463732",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430101/km_neo/girlid-61441295/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-ae95a4082b2b3ba9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3a6dd33e9aa8f323",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430101/bunny_plas_kumamoto/girlid-51402172/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-0f24a591feeadb9c"
+   ],
+   "relationIds": [
+    "ent-rel-n-70cf0d00cbdb4d5d"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-446cffe992af957b",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/km_ff/girlid-55986489/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-21df4ad5af10c32d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3154eb0872c3c845",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/km_ff/girlid-25039446/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-21df4ad5af10c32d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-62071fb1f927e27e",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/club-galaxy/girlid-62613763/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-74a2236f0b12f16d"
+   ],
+   "relationIds": [
+    "ent-rel-n-939fc7b854faef02"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-d44a061a6552884c",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430101/hotpoint/girlid-48600993/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-a2c4f760478d027b"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-42267b29fc74beab",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/idolcollection/girlid-65702027/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-25e02fb6cca292f5"
+   ],
+   "relationIds": [
+    "ent-rel-n-c8fbe756af68b344"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-a65a0bc1cb70b896",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/idolcollection/girlid-62724204/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-25e02fb6cca292f5"
+   ],
+   "relationIds": [
+    "ent-rel-n-c8fbe756af68b344"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-f51b71ca624d4fd9",
+   "url": "https://www.cityheaven.net/kumamoto/A4301/A430102/jyun/girlid-63273430/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-8270befe3c1a4539"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-06b3c5b568a18014",
+   "url": "https://www.cityheaven.net/ishikawa/A1701/A170101/potya_lover/girlid-66020298/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-0fa522df97ac5161"
+   ],
+   "relationIds": [
+    "ent-rel-n-b855340cf96a19d7"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-01c22d3345412f0a",
+   "url": "https://www.cityheaven.net/ishikawa/A1701/A170101/ruf-kanazawa/girlid-50616040/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-1e445cf6d53a0bd5"
+   ],
+   "relationIds": [
+    "ent-rel-n-200842121527518a"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
    "sourceId": "ent-src-n-b598b4ab354e9a71",
    "url": "https://www.cityheaven.net/fukuoka/A4001/A400102/aroma_face_nakasu/girlid-58016127/",
    "sourceType": "entrant_diary",
@@ -3012,6 +4475,290 @@
    "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
   },
   {
+   "sourceId": "ent-src-n-706cdd9d4e67db71",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/aqua-k/girlid-10514750/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-21a785621f970205"
+   ],
+   "relationIds": [
+    "ent-rel-n-ec8573c88ef09a54"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-d5d9186041be4eb9",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/aqua-k/girlid-18445422/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-21a785621f970205"
+   ],
+   "relationIds": [
+    "ent-rel-n-c5fd5fdf54146670"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-32dd436181f75bf5",
+   "url": "https://www.cityheaven.net/fukushima/A0701/A070101/peroperocandyfukushima/girlid-54075214/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-fabceabd4213cb4a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-ec484bf78d671a00",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/catgirl/girlid-44667651/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-90365782cd8be1ce"
+   ],
+   "relationIds": [
+    "ent-rel-n-8062e67fedafaa3d"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-425a71c12f875d70",
+   "url": "https://www.cityheaven.net/fukushima/A0701/A070101/smile/girlid-57579002/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-07317b273d96046d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3ea4390b626ad3b3",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/tonewrap/girlid-48829161/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-fcf6d2802e950d3a"
+   ],
+   "relationIds": [
+    "ent-rel-n-5bf7e4ab6bfb7b77"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-3758f91ed62929e9",
+   "url": "https://www.cityheaven.net/fukushima/A0701/A070101/playgirl-f/girlid-65307311/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-0a1bdecf32f4a204"
+   ],
+   "relationIds": [
+    "ent-rel-n-4e78fdf75518e34e"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-fc6ae509bdf4ad76",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/koriyamaseikanfetish/girlid-56642032/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-3686e59bedfb291e"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-400e6ad894332770",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/jukujonosono/girlid-55058033/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-db9b7988d79b2d98"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-a1ccb700ec558560",
+   "url": "https://www.cityheaven.net/fukushima/A0702/A070201/jukujonosono/girlid-35704838/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-db9b7988d79b2d98"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-4fb4b7b08c8fbccf",
+   "url": "https://www.cityheaven.net/gunma/A1001/A100102/icha2office/girlid-56108520/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-64966488dea28116"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-49d14e27b1f773ed",
+   "url": "https://www.cityheaven.net/gunma/A1001/A100102/himecollectiontakasaki/girlid-66755939/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-718a47ab34a087be"
+   ],
+   "relationIds": [
+    "ent-rel-n-d71141f4ae0e952d"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-5a1c1c9b29a6ad37",
+   "url": "https://www.cityheaven.net/gunma/A1001/A100102/gunma-deliheal/girlid-61467249/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-fa38ba86d5b2cc24"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-c6c22763a37fb16b",
+   "url": "https://www.cityheaven.net/ibaraki/A0802/A080202/g-spot_t/girlid-56898615/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-c578931d7e5ad177"
+   ],
+   "relationIds": [
+    "ent-rel-n-61a14f525ca4eaba"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-f7e83d4ac2e078d8",
+   "url": "https://www.cityheaven.net/ibaraki/A0801/A080101/bunny-mito/girlid-55021039/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-8864d38a09a1f978"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-64b927458ef3dc7e",
+   "url": "https://www.cityheaven.net/ibaraki/A0801/A080101/bunny-mito/girlid-35847918/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-8864d38a09a1f978"
+   ],
+   "relationIds": [
+    "ent-rel-n-e26ce7680c69c261"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-d44ea52800be0a44",
+   "url": "https://www.cityheaven.net/ibaraki/A0802/A080202/purecos/girlid-32116431/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-store-e44a56a769ae3fcd"
+   ],
+   "relationIds": [
+    "ent-rel-n-4c2bd83735bbd711"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-fabb2bb230f33675",
+   "url": "https://www.cityheaven.net/ibaraki/A0802/A080202/purecos/girlid-64265439/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-store-e44a56a769ae3fcd"
+   ],
+   "relationIds": [
+    "ent-rel-n-dffd245aed225520"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-b0082a5f885bf259",
+   "url": "https://www.cityheaven.net/ibaraki/A0802/A080202/royal-flash/girlid-64220662/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-038556133163fde5"
+   ],
+   "relationIds": [
+    "ent-rel-n-7aaa6a1d53e10f65"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-4cc15ef0e40c05d3",
+   "url": "https://www.cityheaven.net/ibaraki/A0802/A080202/tv-hand/girlid-52999888/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-3cad880b7e0a3b5c"
+   ],
+   "relationIds": [
+    "ent-rel-n-0bcaca28ca250f1b"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
    "sourceId": "ent-src-n-68d16c98fe5c7989",
    "url": "https://www.cityheaven.net/shizuoka/A2202/A220201/lala_h/girlid-63362681/",
    "sourceType": "entrant_diary",
@@ -3060,6 +4807,99 @@
    "publisherRole": "entrant_page",
    "storeIds": [
     "mh26-nat-store-db9a281744247fc0"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-ce99cd940c49f299",
+   "url": "https://www.cityheaven.net/kagawa/A3701/A370101/la_madame/girlid-68315648/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-01dbcfe32a840d3a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-303c974a67756441",
+   "url": "https://www.cityheaven.net/kagawa/A3701/A370101/one_and_only/girlid-63411436/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-af0f86a61c1bec48"
+   ],
+   "relationIds": [
+    "ent-rel-n-eb6e19a41a8bfadd"
+   ],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-bd386c1fecefe9a9",
+   "url": "https://smart.cityheaven.net/kagawa/A3701/A370101/one_and_only/diarylist/panel/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-af0f86a61c1bec48"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-b754890928ad2cdb",
+   "url": "https://smart.cityheaven.net/kagawa/A3701/A370101/one_and_only/girlid-60159199/diary/panel/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-af0f86a61c1bec48"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-61409314a2f3eb35",
+   "url": "https://www.cityheaven.net/kagawa/A3701/A370101/itazurazyogakuen/girlid-65944869/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-nat-store-8b0cdd5f449995a3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-306b2a15ade4b276",
+   "url": "https://www.cityheaven.net/kagawa/A3701/A370101/oyukko_plus/girlid-62030691/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-43ce56cadee98b94"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-06",
+   "notes": "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。全国展開（2026-10-06）"
+  },
+  {
+   "sourceId": "ent-src-n-5996a876db58d71a",
+   "url": "https://www.cityheaven.net/kagawa/A3702/A370205/jackandbean/girlid-65757128/",
+   "sourceType": "entrant_diary",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_page",
+   "storeIds": [
+    "mh26-p3b-store-3d0ece61b4de02d1"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-06",
@@ -3260,6 +5100,126 @@
    "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
   },
   {
+   "relationId": "ent-rel-n-bfd46aab637d644f",
+   "storeId": "mh26-nat-store-e3098da332fe336c",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-d44c889bceb17f0d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-2efcfcff13324f70",
+   "storeId": "mh26-nat-store-ddb35c24e4ca0fdc",
+   "categoryOriginal": "注目の女の子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-f660c1025c63c669"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-ff6ae07815241638",
+   "storeId": "mh26-nat-store-b809a99a2018f37c",
+   "categoryOriginal": "キレイ・かわいい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-cde93eab364a3192"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-3e5c8cd5da9692d2",
+   "storeId": "mh26-nat-store-4f35e9e9eb3f0796",
+   "categoryOriginal": "顔出しNG部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-c9eafbfe5ff2e0e2"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-1752fc97eb48e1ac",
+   "storeId": "mh26-store-34d8beb9b9f38b14",
+   "categoryOriginal": "推しといえば私でしょ?部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-40693863893ea02f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-fac8c65af530352d",
+   "storeId": "mh26-nat-store-66c04912c904ff97",
+   "categoryOriginal": "推しといえばわたしでしょ?♡部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-ce67ff330f29f353"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-ddee569f5731925b",
+   "storeId": "mh26-nat-store-5fd17e3fcc9fae15",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-7415d477b98ec75d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-cc88e0d4fd7ab1a1",
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "categoryOriginal": "可愛すぎて滅!部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-409dafc60bb01d20"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-bc7408d067bbe53c",
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "categoryOriginal": "巨乳部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-960d3411e0dabcfa"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-329a7e0896fa6ad6",
+   "storeId": "mh26-nat-store-c764b6a27c38048d",
+   "categoryOriginal": "桃女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-f95766ebe7c4ef77"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
    "relationId": "ent-rel-n-5bafef6bcbaebf70",
    "storeId": "mh26-store-90522f3bdfdaa139",
    "categoryOriginal": "巨乳部門",
@@ -3339,6 +5299,18 @@
    "confidence": "unverified",
    "sourceIds": [
     "ent-src-n-6c390a01e4d34382"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-b808734290dd1f2d",
+   "storeId": "mh26-p3b-store-b829dfeb98267e2a",
+   "categoryOriginal": "ソープ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-3a66b7167b1d3055"
    ],
    "phase1RecordIds": [],
    "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
@@ -3514,6 +5486,79 @@
    "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
   },
   {
+   "relationId": "ent-rel-n-226a0559c1878bec",
+   "storeId": "mh26-p3b-store-67e56058d34bd675",
+   "categoryOriginal": "ニューヒロイン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-7785bb50a418bbc8"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-70cf0d00cbdb4d5d",
+   "storeId": "mh26-nat-store-0f24a591feeadb9c",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-3a6dd33e9aa8f323"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-939fc7b854faef02",
+   "storeId": "mh26-nat-store-74a2236f0b12f16d",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-62071fb1f927e27e"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-c8fbe756af68b344",
+   "storeId": "mh26-p3b-store-25e02fb6cca292f5",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-42267b29fc74beab",
+    "ent-src-n-a65a0bc1cb70b896"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-b855340cf96a19d7",
+   "storeId": "mh26-nat-store-0fa522df97ac5161",
+   "categoryOriginal": "初ノミネート部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-06b3c5b568a18014"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-200842121527518a",
+   "storeId": "mh26-nat-store-1e445cf6d53a0bd5",
+   "categoryOriginal": "愛され女子部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-01c22d3345412f0a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
    "relationId": "ent-rel-n-4fd2ce87e3c2ad04",
    "storeId": "mh26-nat-store-fc86a1294fd1e8d7",
    "categoryOriginal": "中洲ソープ部門",
@@ -3598,6 +5643,150 @@
    "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
   },
   {
+   "relationId": "ent-rel-n-ec8573c88ef09a54",
+   "storeId": "mh26-nat-store-21a785621f970205",
+   "categoryOriginal": "福島娘部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-706cdd9d4e67db71"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-c5fd5fdf54146670",
+   "storeId": "mh26-nat-store-21a785621f970205",
+   "categoryOriginal": "人妻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-d5d9186041be4eb9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-8062e67fedafaa3d",
+   "storeId": "mh26-nat-store-90365782cd8be1ce",
+   "categoryOriginal": "福島娘部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-ec484bf78d671a00"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-5bf7e4ab6bfb7b77",
+   "storeId": "mh26-nat-store-fcf6d2802e950d3a",
+   "categoryOriginal": "デリヘル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-3ea4390b626ad3b3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-4e78fdf75518e34e",
+   "storeId": "mh26-p3b-store-0a1bdecf32f4a204",
+   "categoryOriginal": "「福島娘」部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-3758f91ed62929e9"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-d71141f4ae0e952d",
+   "storeId": "mh26-nat-store-718a47ab34a087be",
+   "categoryOriginal": "前橋・高崎部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-49d14e27b1f773ed"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-61a14f525ca4eaba",
+   "storeId": "mh26-nat-store-c578931d7e5ad177",
+   "categoryOriginal": "スタイル自慢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-c6c22763a37fb16b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-e26ce7680c69c261",
+   "storeId": "mh26-nat-store-8864d38a09a1f978",
+   "categoryOriginal": "ギャンブル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-64b927458ef3dc7e"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-4c2bd83735bbd711",
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "categoryOriginal": "ギャンブル大好き部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-d44ea52800be0a44"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-dffd245aed225520",
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "categoryOriginal": "土浦ソ♡プ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-fabb2bb230f33675"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-7aaa6a1d53e10f65",
+   "storeId": "mh26-nat-store-038556133163fde5",
+   "categoryOriginal": "店長イチオシ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-b0082a5f885bf259"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-0bcaca28ca250f1b",
+   "storeId": "mh26-nat-store-3cad880b7e0a3b5c",
+   "categoryOriginal": "店長イチ押し部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-4cc15ef0e40c05d3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
    "relationId": "ent-rel-n-ffb4aeffdcc50b5e",
    "storeId": "mh26-nat-store-242b29f9cc7a4d2d",
    "categoryOriginal": "自慢の美尻部門",
@@ -3605,6 +5794,18 @@
    "confidence": "unverified",
    "sourceIds": [
     "ent-src-n-a39cecc32b7dc593"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"
+  },
+  {
+   "relationId": "ent-rel-n-eb6e19a41a8bfadd",
+   "storeId": "mh26-nat-store-af0f86a61c1bec48",
+   "categoryOriginal": "極嬢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-n-303c974a67756441"
    ],
    "phase1RecordIds": [],
    "notes": "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（全国展開）"

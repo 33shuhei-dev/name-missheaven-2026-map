@@ -14,6 +14,7 @@ Write output to: __OUT__ — a JSON array. For EVERY cid output exactly one "sto
 - The person belongs to the item's store (page under that store key).
 - 2026 is explicit in the statement, OR it is a dated post in "ミスヘブンへの意気込み" (date like 10/2, no year) that clearly says she is entering this year → set evidenceDate "2026-MM-DD" (months 8,9,10 only). Otherwise exclude.
 - NOT evidence: store-wide header/banner text that appears on every staff page (compare with textWithoutStoreWideHeaders), a bare "ミスヘブンへの意気込み" heading with unrelated text, headcount only, customer reviews, ticket/vote info, 2025 or earlier, name match only.
+- Also NOT evidence: posts that only imply entry (thanks for support "ミスヘブンに向けて", "意気込み動画アップしました", "応援よろしく" alone) without saying she enters/is nominated/participates/challenges.
 Person object: {"cid", "type":"person", "name", "key", "category": "…部門" exactly as written (drop only surrounding 「」『』【】"") or null, "evidenceQuote": verbatim substring 30-150 chars, "evidenceDate": "2026-MM-DD"|null, "sourceKind": "own_page"|"own_diary"|"store_notice"|"other_entrant", "notes": short Japanese or null}
 Name rules: as written; drop catchphrase after the name in titles like 「りおな エリア絶対的な看板嬢」→りおな; keep real spaces (双葉 りこ) and forms like 姫華(ひめか); strip decoration at ends only.
 
