@@ -4,10 +4,10 @@ import { buildSearchIndex, searchItems } from "@/lib/search";
 import { buildModel } from "@/lib/model";
 import { validateEntrantRecords } from "@/lib/validate";
 import { adaptEntrantRecord } from "@/lib/phase3";
-import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
+import { entrantRelations, entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import { phase1Dataset } from "@/lib/data";
 import { relationUpdates } from "@/data/store-updates";
-import { phase3Relations, phase3b } from "@/lib/data";
+import { phase3Relations, phase3Stores, phase3b } from "@/lib/data";
 import type { EntrantRawRecord, Phase3RawRelation, Phase3RawSource, Phase3RawStore, SiteRelation, SiteStore } from "@/data/types";
 
 /**
@@ -148,7 +148,7 @@ describe("evidence の年の確認（evidenceDate）と出場者の情報源", (
 });
 
 describe("出場者の記録（実データ）", () => {
-  const allRelations = [...phase3Relations, ...phase3b.relations, ...relationUpdates];
+  const allRelations = [...phase3Relations, ...phase3b.relations, ...relationUpdates, ...entrantRelations];
   const sourceIds = new Set(entrantSources.map((s) => s.sourceId));
 
   it("すべて店舗に接続され、部門は店舗の部門にあるときだけ結び付けている（推測しない）", () => {
@@ -187,5 +187,33 @@ describe("出場者の記録（実データ）", () => {
       expect([top.kind, top.prefName], q).toEqual(["entrant", "神奈川県"]);
       expect(top.href, q).toMatch(/^\/store\//);
     }
+  });
+});
+
+describe("全国再解析の出場者と店舗の補完", () => {
+  it("すべての出場者の記録が名前検索で見つかり、所属店舗のページへ進める", () => {
+    const items = buildSearchIndex(site);
+    for (const r of entrantUpdates) {
+      const hits = searchItems(items, { q: r.name, kind: "entrant" });
+      expect(hits.some((h) => h.item.href.startsWith(`/store/${r.storeId}#`)), r.entrantId).toBe(true);
+    }
+  });
+
+  it("出場者の記録は、同じ店舗・同じ名前（表記揺れも含む）の出場者と重複しない", () => {
+    // Phase 1 の観測どうしの表記揺れ（既存データ）は対象外。記録した出場者が既存・他の記録と重ならないことを確認する
+    const norm = (x: string) => x.normalize("NFKC").replace(/[\s☆★♡()（）・]/g, "").toLowerCase();
+    const count = new Map<string, number>();
+    for (const e of site.entrants) if (e.storeId) count.set(`${e.storeId}|${norm(e.name)}`, (count.get(`${e.storeId}|${norm(e.name)}`) ?? 0) + 1);
+    for (const e of site.entrants.filter((x) => x.entrantRecord)) {
+      expect(count.get(`${e.storeId}|${norm(e.name)}`), e.entrantRecord!.id).toBe(1);
+    }
+  });
+
+  it("One More 奥様 横浜関内店の公開ページURLを、照合済みの店舗キーから補っている（他の店舗の値は変えない）", () => {
+    const s = site.stores.find((x) => x.id === "mh26-store-b33dc19606e7c823")!;
+    expect(s.storePublicUrl).toBe("https://www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/");
+    expect(site.stores.filter((x) => x.origin === "phase3" && x.storePublicUrl).length).toBe(
+      phase3Stores.stores.filter((x) => x.storePublicUrl).length + 1,
+    );
   });
 });

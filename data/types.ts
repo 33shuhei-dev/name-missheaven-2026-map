@@ -337,6 +337,15 @@ export interface EntrantRawRecord {
   notes?: string | null;
 }
 
+/** 既存店舗に、確実に特定できた店舗公開ページURLを補う（元の店舗データにURLがない場合だけ） */
+export interface StorePublicUrlUpdate {
+  storeId: string;
+  storePublicUrl: string;
+  /** URLを特定した根拠（sourceUpdates の sourceId） */
+  sourceIds: string[];
+  notes?: string | null;
+}
+
 export interface SiteEntrantRecord {
   id: string;
   name: string;

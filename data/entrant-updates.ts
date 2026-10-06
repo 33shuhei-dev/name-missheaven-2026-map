@@ -1,4 +1,12 @@
-import type { EntrantRawRecord, Phase3RawSource } from "./types";
+import type { EntrantRawRecord, Phase3RawRelation, Phase3RawSource } from "./types";
+import nationwide from "./entrants/nationwide-reanalysis-2026-10-06.json";
+
+/** Phase 3b の保存済み検索結果の全国再解析（2026-10-06。新たな検索なし。神奈川県は下の実証分） */
+const nationwideReanalysis = nationwide as unknown as {
+  entrants: EntrantRawRecord[];
+  sources: Phase3RawSource[];
+  relations: Phase3RawRelation[];
+};
 
 /**
  * 出場者の記録（Phase 1 の観測とは別に追加する出場者）。
@@ -22,7 +30,7 @@ import type { EntrantRawRecord, Phase3RawSource } from "./types";
  * 都道府県・掲載地域は店舗から表示する（ここには書かない・推測しない）。
  * 個人の写真・プロフィール本文は保存しない。詳しくは店舗の公開ページで確認してもらう。
  */
-export const entrantUpdates: EntrantRawRecord[] = [
+const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0001",
     name: "ゆず",
@@ -44,11 +52,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0001"],
     evidence: "本人のページの「ミスヘブンへの意気込み」（10/3）に「この度、横浜人妻花壇本店よりミスヘブン総選挙2026に人妻熟女部門で出場する事になりました」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "人妻熟女部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「人妻熟女部門」は根拠にあるが、この店舗の店舗×部門関係が未登録のため部門には結び付けていない",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0003",
@@ -57,11 +65,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0002"],
     evidence: "本人のページに「ミスヘブン総選挙2026 【ヘルス・ホテヘル部門】にてエントリーさせて…」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "ヘルス・ホテヘル部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「ヘルス・ホテヘル部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0004",
@@ -70,11 +78,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0003"],
     evidence: "本人のページに「ミスヘブン総選挙2026に横浜部門に出場させていただくことになりました」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "横浜部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「横浜部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0005",
@@ -83,11 +91,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0004"],
     evidence: "本人のページに「ミスヘブン2026 「人妻・熟女」部門ノミネート☆ 応援して下さい」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "「人妻・熟女」部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「人妻・熟女」部門は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0006",
@@ -96,11 +104,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0005"],
     evidence: "「One More 奥様 横浜関内店りえる」の写メ日記（転載サイト）に「今回の全国ミスヘブン総選挙2026 神奈川県ルックス抜群部門にノミネートして頂きました」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "ルックス抜群部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「ルックス抜群部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0007",
@@ -122,11 +130,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0007"],
     evidence: "本人のページに「☆全国ミスヘブン総選挙2026☆ 神奈川ブロック、アイドル・かわいい部門エントリー決定!!!!」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "アイドル・かわいい部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「アイドル・かわいい部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0009",
@@ -135,11 +143,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0008"],
     evidence: "「横山まいのヒメ日記 - 響-HIBIKI-」に「今年も、ミスヘブン総選挙2026 \"ソープ部門\" で出場しますッ」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "ソープ部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「ソープ部門」は根拠にあるが、この店舗の店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0010",
@@ -161,11 +169,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0009"],
     evidence: "同じ店舗の「ゆあ」のページに「ミスヘブン総選挙2026 … 東京妻からは みやこさん人妻・熟女部門 はなさんルックス部門 …」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "人妻・熟女部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「人妻・熟女部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0012",
@@ -174,11 +182,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0009"],
     evidence: "同じ店舗の「ゆあ」のページに「ミスヘブン総選挙2026 … 東京妻からは みやこさん人妻・熟女部門 はなさんルックス部門 …」",
     evidenceDate: null,
-    categoryOriginal: null,
+    categoryOriginal: "ルックス部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-05",
-    notes: "部門「ルックス部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0013",
@@ -278,11 +286,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0017"],
     evidence: "本人のページの「ミスヘブンへの意気込み」（10/2 01:02）に「ミスヘブン総選挙に出場することになりました 部門は、「リピート確定部門」です 初めての参加なので…」",
     evidenceDate: "2026-10-02",
-    categoryOriginal: null,
+    categoryOriginal: "リピート確定部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-06",
-    notes: "根拠の文に年の表記はない（投稿日 10/2、ノミネート公開以降）。部門「リピート確定部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0021",
@@ -291,11 +299,11 @@ export const entrantUpdates: EntrantRawRecord[] = [
     sourceIds: ["ent-src-0018"],
     evidence: "本人のページの「ミスヘブンへの意気込み」（10/5 13:33）に「今年もミスヘブンに出場させていただくことになりました✨ 今年は【かわいい・アイドル部門】に…」",
     evidenceDate: "2026-10-05",
-    categoryOriginal: null,
+    categoryOriginal: "かわいい・アイドル部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-10-06",
-    notes: "根拠の文に年の表記はない（投稿日 10/5、ノミネート公開以降）。部門「かわいい・アイドル部門」は根拠にあるが、店舗×部門関係が未登録のため未接続",
+    notes: "店舗×部門関係は同じ根拠から追加（entrantRelations）",
   },
   {
     entrantId: "mh26-ent-0022",
@@ -339,7 +347,7 @@ export const entrantUpdates: EntrantRawRecord[] = [
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
-export const entrantSources: Phase3RawSource[] = [
+const manualEntrantSources: Phase3RawSource[] = [
   {
     sourceId: "ent-src-0001",
     url: "https://www.cityheaven.net/kanagawa/A1401/A140101/h-kadan/girlid-64248295/",
@@ -583,3 +591,124 @@ export const entrantSources: Phase3RawSource[] = [
     notes: "Yahoo!検索の結果の抜粋で確認（ページ本文は調査環境から取得していない）。Phase 3b の保存済み検索結果から再解析",
   },
 ];
+
+/**
+ * 出場者の根拠から確認できた店舗×部門関係。
+ * 同じ根拠（sourceIds）に 店舗＋人物＋部門 が揃っている場合だけ追加する。部門名は根拠の表記どおり（正規化・統合しない）。
+ */
+const manualEntrantRelations: Phase3RawRelation[] = [
+  {
+    relationId: "ent-rel-0001",
+    storeId: "mh26-p3b-store-b709194a33a81fcc",
+    categoryOriginal: "人妻熟女部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0001"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0002",
+    storeId: "mh26-p3b-store-fe42f0d1af48d515",
+    categoryOriginal: "ヘルス・ホテヘル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0002"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0003",
+    storeId: "mh26-store-b33dc19606e7c823",
+    categoryOriginal: "横浜部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0003"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0004",
+    storeId: "mh26-store-b33dc19606e7c823",
+    categoryOriginal: "「人妻・熟女」部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0004"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0005",
+    storeId: "mh26-store-b33dc19606e7c823",
+    categoryOriginal: "ルックス抜群部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0005"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0006",
+    storeId: "mh26-p3b-store-877faf8606afb5f0",
+    categoryOriginal: "アイドル・かわいい部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0007"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0007",
+    storeId: "mh26-p3b-store-511ef6eee892673b",
+    categoryOriginal: "ソープ部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0008"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0008",
+    storeId: "mh26-p3b-store-4507b6d98f247018",
+    categoryOriginal: "人妻・熟女部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0009"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0009",
+    storeId: "mh26-p3b-store-4507b6d98f247018",
+    categoryOriginal: "ルックス部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0009"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0010",
+    storeId: "mh26-store-b33dc19606e7c823",
+    categoryOriginal: "リピート確定部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0017"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+  {
+    relationId: "ent-rel-0011",
+    storeId: "mh26-store-b33dc19606e7c823",
+    categoryOriginal: "かわいい・アイドル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0018"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている",
+  },
+];
+
+export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants];
+export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources];
+export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations];

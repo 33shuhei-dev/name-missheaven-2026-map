@@ -12,6 +12,7 @@ import type {
   Phase3RawSource,
   Phase3RawStore,
   Phase3StoresFile,
+  StorePublicUrlUpdate,
 } from "@/data/types";
 import { PREFECTURES, findPrefectureByName } from "@/data/geo";
 import { safeExternalUrl } from "./links";
@@ -458,6 +459,7 @@ export function validateEntrantRecords(
   entrants: readonly EntrantRawRecord[],
   layer: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
   entrantSources: readonly Phase3RawSource[] = [],
+  entrantRelations: readonly Phase3RawRelation[] = [],
 ): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
@@ -473,6 +475,28 @@ export function validateEntrantRecords(
     for (const sid of src.storeIds ?? []) if (!storeIds.has(sid)) err(id, `存在しない storeId を参照しています: ${sid}`);
   }
   const entrantSourceStores = new Map(entrantSources.map((s) => [s.sourceId, new Set(s.storeIds ?? [])]));
+  // 出場者の根拠から確認できた店舗×部門関係（entrantRelations）：同じ根拠に 店舗＋人物＋部門 が揃っていること
+  const relIds = new Set(layer.relations.map((r) => r.relationId));
+  const relPairs = new Set(layer.relations.map((r) => `${r.storeId}|${r.categoryOriginal}`));
+  for (const rel of entrantRelations) {
+    const id = rel?.relationId ?? "(relationIdなし)";
+    if (relIds.has(id)) err(id, "relationId が既存と重複しています");
+    relIds.add(id);
+    if (!storeIds.has(rel.storeId)) err(id, `存在しない storeId を参照しています: ${rel.storeId}`);
+    if (typeof rel.categoryOriginal !== "string" || !rel.categoryOriginal.trim()) err(id, "categoryOriginal は必須です");
+    if (!CONFIDENCES.includes(rel.confidence)) err(id, `confidence が不正です: ${String(rel.confidence)}`);
+    const pair = `${rel.storeId}|${rel.categoryOriginal}`;
+    if (relPairs.has(pair)) err(id, "同じ店舗×部門の関係がすでにあります");
+    relPairs.add(pair);
+    if ((rel.sourceIds ?? []).length === 0) err(id, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of rel.sourceIds ?? []) {
+      if (!entrantSourceStores.get(sid)?.has(rel.storeId)) err(id, `情報源 ${sid} はこの店舗の出場者の情報源ではありません`);
+    }
+    const backed = entrants.some(
+      (e) => e.storeId === rel.storeId && e.categoryOriginal === rel.categoryOriginal && (e.sourceIds ?? []).some((sid) => (rel.sourceIds ?? []).includes(sid)),
+    );
+    if (!backed) err(id, "同じ根拠で、この店舗・部門の出場者が記録されていません（店舗＋人物＋部門の対応が必要）");
+  }
   const ids = new Set<string>();
   const pairs = new Set<string>();
   for (const e of entrants) {
@@ -498,13 +522,40 @@ export function validateEntrantRecords(
     if (!CONFIDENCES.includes(e.confidence)) err(id, `confidence が不正です: ${String(e.confidence)}`);
     if (typeof e.checkedAt !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(e.checkedAt)) err(id, "checkedAt（確認日）は YYYY-MM-DD で指定してください");
     if (e.categoryOriginal !== undefined && e.categoryOriginal !== null) {
-      const cats = new Set(layer.relations.filter((r) => r.storeId === e.storeId).map((r) => r.categoryOriginal));
+      const cats = new Set([...layer.relations, ...entrantRelations].filter((r) => r.storeId === e.storeId).map((r) => r.categoryOriginal));
       if (!cats.has(e.categoryOriginal)) err(id, `部門「${e.categoryOriginal}」はこの店舗の部門にありません（先に店舗×部門関係を追加してください）`);
     }
     if (e.personalUrl !== undefined && e.personalUrl !== null && !safeExternalUrl(e.personalUrl)) err(id, "personalUrl が不正です");
     const pair = `${e.storeId}|${String(e.name ?? "").normalize("NFKC").replace(/\s/g, "")}`;
     if (pairs.has(pair)) err(id, "同じ店舗・同じ名前の出場者が重複しています");
     pairs.add(pair);
+  }
+  return issues;
+}
+
+/** 既存店舗の店舗公開ページURLの補完：元データにURLがない店舗だけ。根拠の情報源が必要 */
+export function validateStorePublicUrlUpdates(
+  updates: readonly StorePublicUrlUpdate[],
+  layer: { stores: readonly Phase3RawStore[]; sources: readonly Phase3RawSource[] },
+): ValidationIssue[] {
+  const issues: ValidationIssue[] = [];
+  const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
+  const storeById = new Map(layer.stores.map((s) => [s.storeId, s]));
+  const sources = new Map(layer.sources.map((s) => [s.sourceId, s]));
+  const seen = new Set<string>();
+  for (const u of updates) {
+    const store = storeById.get(u.storeId);
+    if (!store) err(u.storeId, "存在しない storeId です");
+    else if (store.storePublicUrl) err(u.storeId, "この店舗にはすでに公開ページURLがあります（上書きしない）");
+    if (seen.has(u.storeId)) err(u.storeId, "同じ店舗のURL補完が重複しています");
+    seen.add(u.storeId);
+    if (!safeExternalUrl(u.storePublicUrl)) err(u.storeId, "storePublicUrl が不正です");
+    if ((u.sourceIds ?? []).length === 0) err(u.storeId, "根拠の情報源（sourceIds）は必須です");
+    for (const sid of u.sourceIds ?? []) {
+      const src = sources.get(sid);
+      if (!src) err(u.storeId, `存在しない sourceId です: ${sid}`);
+      else if (!(src.storeIds ?? []).includes(u.storeId)) err(u.storeId, `情報源 ${sid} はこの店舗の情報源ではありません`);
+    }
   }
   return issues;
 }

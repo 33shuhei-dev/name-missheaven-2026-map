@@ -1,4 +1,4 @@
-import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore } from "./types";
+import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore, StorePublicUrlUpdate } from "./types";
 
 /**
  * Phase 3 以降に追加する参加関連店舗（差分更新）。
@@ -65,5 +65,30 @@ export const sourceUpdates: Phase3RawSource[] = [
     relationIds: ["upd-rel-0001"],
     checkedAt: "2026-10-05",
     notes: "利用者提供のスクリーンショットで店舗告知バナーを確認。画像は保存していない。",
+  },
+  {
+    sourceId: "upd-src-0002",
+    url: "https://www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/",
+    sourceType: "store",
+    accessStatus: "search_index_only",
+    publisherRole: "store_public_page",
+    storeIds: ["mh26-store-b33dc19606e7c823"],
+    relationIds: [],
+    checkedAt: "2026-10-05",
+    notes:
+      "Phase 3b 全国走査で、ヘブンの店舗ページ（店舗キー kanagawa/A1401/A140103/onemorecoming、店名「One More 奥様 横浜関内店」）が既存の店舗と同一と照合済み（data/phase3b/research_log.json の matchedExisting）。ページ本文は調査環境から取得していない。",
+  },
+];
+
+/**
+ * 既存店舗の店舗公開ページURLの補完。元の店舗データ（Phase 3 など）にURLがなく、
+ * 保存済みの証拠から確実に特定できた場合だけ追加する（推測したURLは入れない）。
+ */
+export const storePublicUrlUpdates: StorePublicUrlUpdate[] = [
+  {
+    storeId: "mh26-store-b33dc19606e7c823",
+    storePublicUrl: "https://www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/",
+    sourceIds: ["upd-src-0002"],
+    notes: "One More 奥様 横浜関内店。Phase 3b の照合記録による。",
   },
 ];

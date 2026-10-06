@@ -509,9 +509,11 @@ export function buildModel(
   const entrantKey = (prefSlug: string, storeName: string | undefined, name: string) =>
     `${prefSlug}|${normalizeForSearch(storeName)}|${normalizeForSearch(name)}`;
   const knownEntrants = new Set(phase1Entrants.map((e) => entrantKey(e.prefSlug, e.storeName, e.name)));
+  // 店舗に接続済みの Phase 1 の出場者とは、店舗IDと名前でも照合する（店名の表記が観測と店舗データで違う場合）
+  const knownByStore = new Set(phase1Entrants.filter((e) => e.storeId).map((e) => `${e.storeId}|${normalizeForSearch(e.name)}`));
   const recordEntrants: EntrantView[] = (layer.entrants ?? []).flatMap((rec) => {
     const st = storeById.get(rec.storeId);
-    if (!st || knownEntrants.has(entrantKey(prefSlugOf(st), st.name, rec.name))) return [];
+    if (!st || knownEntrants.has(entrantKey(prefSlugOf(st), st.name, rec.name)) || knownByStore.has(`${st.id}|${normalizeForSearch(rec.name)}`)) return [];
     const divIds = rec.categoryOriginal
       ? new Set(storeAreas(st).map((area) => divisionIdOf(prefSlugOf(st), area, rec.categoryOriginal!)))
       : new Set<string>();

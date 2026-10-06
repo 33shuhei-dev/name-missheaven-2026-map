@@ -12,8 +12,8 @@ import phase3bRelationsJson from "@/data/phase3b/store_category_relations.json";
 import phase3bSourcesJson from "@/data/phase3b/store_sources.json";
 import phase3bCoverageJson from "@/data/phase3b/coverage_47prefectures.json";
 import { updates } from "@/data/updates";
-import { relationUpdates, sourceUpdates, storeUpdates } from "@/data/store-updates";
-import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
+import { relationUpdates, sourceUpdates, storePublicUrlUpdates, storeUpdates } from "@/data/store-updates";
+import { entrantRelations, entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import type {
   Phase1Dataset,
   Phase1Map,
@@ -35,6 +35,7 @@ import {
   validateMap,
   validatePhase3,
   validateRecords,
+  validateStorePublicUrlUpdates,
   validateStoreUpdates,
 } from "./validate";
 
@@ -105,7 +106,11 @@ function load(): SiteModel {
       stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
       relations: [...phase3Relations, ...phase3b.relations, ...relationUpdates],
       sources: [...phase3Sources, ...phase3b.sources, ...sourceUpdates],
-    }, entrantSources),
+    }, entrantSources, entrantRelations),
+    ...validateStorePublicUrlUpdates(storePublicUrlUpdates, {
+      stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
+      sources: sourceUpdates,
+    }),
   ].filter((i) => i.level === "error");
   if (errors.length > 0) {
     const detail = errors.map((e) => `[${e.dataset}] ${e.id}: ${e.message}`).join("\n");
@@ -120,6 +125,8 @@ function load(): SiteModel {
     updates: { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
     entrants: entrantUpdates,
     entrantSources,
+    entrantRelations,
+    publicUrlUpdates: storePublicUrlUpdates,
   });
   return buildModel(adaptAll(sets), { mapInfo: phase1Map.prefectures, layer });
 }
