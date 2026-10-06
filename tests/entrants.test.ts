@@ -183,9 +183,12 @@ describe("出場者の記録（実データ）", () => {
   it("神奈川県の実証で追加した出場者は、名前検索で先頭に出て店舗ページへ進める", () => {
     const items = buildSearchIndex(site);
     for (const q of ["らな", "雫石ここね", "横山まい", "東京妻 ゆあ", "SAPPHIRE あやせ", "衣都"]) {
-      const top = searchItems(items, { q })[0].item;
-      expect([top.kind, top.prefName], q).toEqual(["entrant", "神奈川県"]);
-      expect(top.href, q).toMatch(/^\/store\//);
+      // 同じ名前の出場者が他県にもいることがあるので、先頭の一致グループ（出場者）に神奈川県の人物がいることを確認する
+      const hits = searchItems(items, { q });
+      expect(hits[0].item.kind, q).toBe("entrant");
+      const top = hits.find((h) => h.score === hits[0].score && h.item.prefName === "神奈川県")?.item;
+      expect(top?.kind, q).toBe("entrant");
+      expect(top?.href, q).toMatch(/^\/store\//);
     }
   });
 });

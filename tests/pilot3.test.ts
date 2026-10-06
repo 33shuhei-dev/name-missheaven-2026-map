@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { site, phase3b } from "@/lib/data";
 import { storeListingAreaUpdates, storeUpdates, sourceUpdates } from "@/data/store-updates";
+import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import { validateStoreListingAreaUpdates } from "@/lib/validate";
 import type { Phase3RawSource, Phase3RawStore } from "@/data/types";
 
@@ -49,5 +50,27 @@ describe("3都道府県パイロット：店舗", () => {
     expect(validateStoreListingAreaUpdates([{ storeId: "x", listingArea: "B", sourceIds: [] }], { stores: [empty], sources: [src] })).toHaveLength(1);
     expect(validateStoreListingAreaUpdates([{ storeId: "x", listingArea: "B", sourceIds: ["s"] }], { stores: [empty], sources: [src] })).toHaveLength(0);
     expect(storeListingAreaUpdates).toHaveLength(1);
+  });
+});
+
+describe("3都道府県パイロット：出場者", () => {
+  const pilot = entrantUpdates.filter((e) => e.entrantId >= "mh26-ent-2001" && e.entrantId < "mh26-ent-3000");
+
+  it("大阪府・宮城県の店舗に所属し、根拠に2026年（または2026年の日付）と人物名がある", () => {
+    expect(pilot.length).toBeGreaterThan(0);
+    for (const e of pilot) {
+      const store = site.stores.find((s) => s.id === e.storeId)!;
+      expect(["大阪府", "宮城県"], e.entrantId).toContain(store.prefectureName);
+      expect(e.evidence.includes("2026") || /^2026-/.test(e.evidenceDate ?? ""), e.entrantId).toBe(true);
+      expect(e.personalUrl ?? null).toBeNull();
+      for (const sid of e.sourceIds) expect(entrantSources.find((s) => s.sourceId === sid)!.storeIds).toContain(e.storeId);
+    }
+  });
+
+  it("部門は原文どおりで、その店舗の部門として表示される", () => {
+    for (const e of pilot.filter((x) => x.categoryOriginal)) {
+      const store = site.stores.find((s) => s.id === e.storeId)!;
+      expect(store.categoryOriginals, e.entrantId).toContain(e.categoryOriginal);
+    }
   });
 });

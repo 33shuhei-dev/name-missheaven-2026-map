@@ -1,8 +1,16 @@
 import type { EntrantRawRecord, Phase3RawRelation, Phase3RawSource } from "./types";
 import nationwide from "./entrants/nationwide-reanalysis-2026-10-06.json";
+import pilot3 from "./entrants/pilot3-2026-10-06.json";
 
 /** Phase 3b の保存済み検索結果の全国再解析（2026-10-06。新たな検索なし。神奈川県は下の実証分） */
 const nationwideReanalysis = nationwide as unknown as {
+  entrants: EntrantRawRecord[];
+  sources: Phase3RawSource[];
+  relations: Phase3RawRelation[];
+};
+
+/** 3都道府県パイロット（大阪府・宮城県・青森県、2026-10-06。新しい検索の結果から） */
+const pilot3Batch = pilot3 as unknown as {
   entrants: EntrantRawRecord[];
   sources: Phase3RawSource[];
   relations: Phase3RawRelation[];
@@ -709,6 +717,6 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
 ];
 
-export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants];
-export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources];
-export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations];
+export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants];
+export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources];
+export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations];
