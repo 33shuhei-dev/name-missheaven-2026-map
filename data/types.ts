@@ -323,6 +323,11 @@ export interface EntrantRawRecord {
   sourceIds: string[];
   /** 情報源に何が書かれていたか（2026年の出場を示す記載を短く。人物写真・全文は書かない） */
   evidence: string;
+  /**
+   * 根拠の記載の日付（YYYY-MM-DD）。evidence に「2026」の文字がない場合だけ必須。
+   * 例：本人の「ミスヘブンへの意気込み」の投稿（10/2）で「今年出場します」とあり、年の表記がないもの
+   */
+  evidenceDate?: string | null;
   /** 部門（原文）。情報源で確認できた場合のみ。その店舗の部門（店舗×部門関係）にあるものに限る */
   categoryOriginal?: string | null;
   /** 本人のページURL（任意） */
@@ -338,6 +343,7 @@ export interface SiteEntrantRecord {
   storeId: string;
   sourceIds: string[];
   evidence: string;
+  evidenceDate?: string;
   categoryOriginal?: string;
   personalUrl?: string;
   confidence: Confidence;

@@ -457,11 +457,22 @@ export function validateStoreUpdates(
 export function validateEntrantRecords(
   entrants: readonly EntrantRawRecord[],
   layer: { stores: readonly Phase3RawStore[]; relations: readonly Phase3RawRelation[]; sources: readonly Phase3RawSource[] },
+  entrantSources: readonly Phase3RawSource[] = [],
 ): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const err = (id: string, message: string) => issues.push({ level: "error", id, dataset: "update", message });
   const storeIds = new Set(layer.stores.map((s) => s.storeId));
   const sourceIds = new Set(layer.sources.map((s) => s.sourceId));
+  // 出場者の根拠の情報源（data/entrant-updates.ts の entrantSources）
+  for (const src of entrantSources) {
+    const id = src?.sourceId ?? "(sourceIdなし)";
+    if (sourceIds.has(id)) err(id, "sourceId が既存と重複しています");
+    sourceIds.add(id);
+    if (!safeExternalUrl(src.url)) err(id, `url が不正です: ${String(src.url)}`);
+    if (!SOURCE_TYPES.includes(src.sourceType)) err(id, `sourceType が不正です: ${String(src.sourceType)}`);
+    for (const sid of src.storeIds ?? []) if (!storeIds.has(sid)) err(id, `存在しない storeId を参照しています: ${sid}`);
+  }
+  const entrantSourceStores = new Map(entrantSources.map((s) => [s.sourceId, new Set(s.storeIds ?? [])]));
   const ids = new Set<string>();
   const pairs = new Set<string>();
   for (const e of entrants) {
@@ -473,8 +484,17 @@ export function validateEntrantRecords(
     if (!storeIds.has(e.storeId)) err(id, `所属店舗が見つかりません（storeId: ${String(e.storeId)}）。店舗を先に追加してください`);
     if (!Array.isArray(e.sourceIds) || e.sourceIds.length === 0) err(id, "2026年の出場を示す情報源（sourceIds）は必須です");
     for (const sid of e.sourceIds ?? []) if (!sourceIds.has(sid)) err(id, `存在しない sourceId です: ${sid}`);
+    for (const sid of e.sourceIds ?? []) {
+      const owners = entrantSourceStores.get(sid);
+      if (owners && !owners.has(e.storeId)) err(id, `情報源 ${sid} はこの店舗の情報源として登録されていません`);
+    }
+    // 2026年の出場であること：evidence に「2026」があるか、なければ根拠の記載の日付（2026年）を evidenceDate に書く
     if (typeof e.evidence !== "string" || !e.evidence.trim()) err(id, "情報源に書かれていた内容（evidence）は必須です");
-    else if (!/2026/.test(e.evidence.normalize("NFKC"))) err(id, "evidence に2026年の出場を示す記載がありません（2025年以前・在籍情報のみは記録しない）");
+    else if (!/2026/.test(e.evidence.normalize("NFKC"))) {
+      if (!e.evidenceDate) err(id, "evidence に「2026」がありません。2026年の記載であることが日付で分かる場合だけ evidenceDate（2026-MM-DD）を書いてください（2025年以前・在籍情報のみは記録しない）");
+      else if (!/^2026-\d{2}-\d{2}$/.test(e.evidenceDate)) err(id, "evidenceDate は 2026 年の日付（2026-MM-DD）にしてください");
+      else if (typeof e.checkedAt === "string" && e.evidenceDate > e.checkedAt.slice(0, 10)) err(id, "evidenceDate が確認日より後です");
+    }
     if (!CONFIDENCES.includes(e.confidence)) err(id, `confidence が不正です: ${String(e.confidence)}`);
     if (typeof e.checkedAt !== "string" || !/^\d{4}-\d{2}-\d{2}/.test(e.checkedAt)) err(id, "checkedAt（確認日）は YYYY-MM-DD で指定してください");
     if (e.categoryOriginal !== undefined && e.categoryOriginal !== null) {

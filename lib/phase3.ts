@@ -114,8 +114,9 @@ export function adaptStoreLayer(input: {
   updates?: StoreLayerInput;
   /** Phase 3b 全国走査（data/phase3b） */
   phase3b?: StoreLayerInput;
-  /** 出場者の記録（data/entrant-updates.ts） */
+  /** 出場者の記録と、その根拠の情報源（data/entrant-updates.ts） */
   entrants?: readonly EntrantRawRecord[];
+  entrantSources?: readonly Phase3RawSource[];
 }): StoreLayer {
   const stores = [
     ...input.stores.map((s) => adaptStore(s, "phase3")),
@@ -125,7 +126,12 @@ export function adaptStoreLayer(input: {
   return {
     stores,
     relations: [...input.relations, ...(input.phase3b?.relations ?? []), ...(input.updates?.relations ?? [])].map(adaptRelation),
-    sources: [...input.sources, ...(input.phase3b?.sources ?? []), ...(input.updates?.sources ?? [])].map(adaptSource),
+    sources: [
+      ...input.sources,
+      ...(input.phase3b?.sources ?? []),
+      ...(input.updates?.sources ?? []),
+      ...(input.entrantSources ?? []),
+    ].map(adaptSource),
     countFacts: linkCountFacts(input.countFacts, stores),
     entrants: (input.entrants ?? []).map(adaptEntrantRecord),
   };
@@ -139,6 +145,7 @@ export function adaptEntrantRecord(raw: EntrantRawRecord): SiteEntrantRecord {
     storeId: raw.storeId,
     sourceIds: [...raw.sourceIds],
     evidence: raw.evidence,
+    evidenceDate: opt(raw.evidenceDate),
     categoryOriginal: opt(raw.categoryOriginal),
     personalUrl: opt(raw.personalUrl),
     confidence: raw.confidence as Confidence,

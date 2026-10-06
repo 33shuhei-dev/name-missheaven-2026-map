@@ -4,7 +4,10 @@ import { buildSearchIndex, searchItems } from "@/lib/search";
 import { buildModel } from "@/lib/model";
 import { validateEntrantRecords } from "@/lib/validate";
 import { adaptEntrantRecord } from "@/lib/phase3";
-import { entrantUpdates } from "@/data/entrant-updates";
+import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
+import { phase1Dataset } from "@/lib/data";
+import { relationUpdates } from "@/data/store-updates";
+import { phase3Relations, phase3b } from "@/lib/data";
 import type { EntrantRawRecord, Phase3RawRelation, Phase3RawSource, Phase3RawStore, SiteRelation, SiteStore } from "@/data/types";
 
 /**
@@ -115,5 +118,74 @@ describe("出場者の記録（汎用の仕組み）", () => {
     const items = buildSearchIndex(model);
     const top = searchItems(items, { q: "松山 みお" })[0].item;
     expect([top.kind, top.sub]).toEqual(["entrant", "店舗：店B"]);
+  });
+});
+
+describe("evidence の年の確認（evidenceDate）と出場者の情報源", () => {
+  const rawStore = { storeId: "a", storeName: "店A", storeNameOriginals: ["店A"], prefecture: "愛媛県", listingAreas: [], categoryOriginals: [] } as unknown as Phase3RawStore;
+  const src = { sourceId: "s1", url: "https://example.com/", sourceType: "store", accessStatus: "x", publisherRole: "store_announcement", storeIds: ["a"], relationIds: [] } as Phase3RawSource;
+  const layer = { stores: [rawStore], relations: [], sources: [src] };
+  const rec = (over: Partial<EntrantRawRecord> = {}): EntrantRawRecord => ({
+    entrantId: "t-1", name: "はな", storeId: "a", sourceIds: ["s1"], evidence: "意気込み（10/2）に「今年出場します」", confidence: "unverified", checkedAt: "2026-10-06", ...over,
+  });
+  const errorsOf = (r: EntrantRawRecord, extra: Phase3RawSource[] = []) => validateEntrantRecords([r], layer, extra).map((i) => i.message).join();
+
+  it("evidence に2026がなければ evidenceDate（2026年・確認日以前）が必要", () => {
+    expect(errorsOf(rec())).toMatch(/evidenceDate/);
+    expect(errorsOf(rec({ evidenceDate: "2026-10-02" }))).toBe("");
+    expect(errorsOf(rec({ evidenceDate: "2025-10-02" }))).toMatch(/2026 年の日付/);
+    expect(errorsOf(rec({ evidenceDate: "2026-10-09" }))).toMatch(/確認日より後/);
+    expect(errorsOf(rec({ evidence: "ミスヘブン総選挙2026にエントリー" }))).toBe("");
+  });
+
+  it("出場者の情報源は、その店舗の情報源として登録したものだけ使える", () => {
+    const own = { ...src, sourceId: "e1", storeIds: ["a"] };
+    expect(errorsOf(rec({ sourceIds: ["e1"], evidence: "2026出場" }), [own])).toBe("");
+    const other = { ...src, sourceId: "e2", storeIds: [] };
+    expect(errorsOf(rec({ sourceIds: ["e2"], evidence: "2026出場" }), [other])).toMatch(/この店舗の情報源/);
+    expect(errorsOf(rec({ evidence: "2026出場" }), [{ ...src }])).toMatch(/既存と重複/);
+  });
+});
+
+describe("出場者の記録（実データ）", () => {
+  const allRelations = [...phase3Relations, ...phase3b.relations, ...relationUpdates];
+  const sourceIds = new Set(entrantSources.map((s) => s.sourceId));
+
+  it("すべて店舗に接続され、部門は店舗の部門にあるときだけ結び付けている（推測しない）", () => {
+    for (const r of entrantUpdates) {
+      const store = site.stores.find((s) => s.id === r.storeId);
+      expect(store, r.entrantId).toBeTruthy();
+      if (r.categoryOriginal) expect(allRelations.some((x) => x.storeId === r.storeId && x.categoryOriginal === r.categoryOriginal), r.entrantId).toBe(true);
+      const view = site.entrants.find((e) => e.entrantRecord?.id === r.entrantId);
+      expect(view, r.entrantId).toBeTruthy();
+      expect(view!.divisions.length > 0, r.entrantId).toBe(!!r.categoryOriginal);
+    }
+  });
+
+  it("Phase 1 の出場者と重複しない（同じ都道府県・店舗名・名前）", () => {
+    const norm = (x?: string | null) => (x ?? "").normalize("NFKC").replace(/\s/g, "");
+    const phase1 = new Set(phase1Dataset.records.flatMap((r) => (r.entrantNames ?? []).map((n) => `${r.prefecture}|${norm(r.storeName)}|${norm(n)}`)));
+    for (const r of entrantUpdates) {
+      const store = site.stores.find((s) => s.id === r.storeId)!;
+      expect(phase1.has(`${store.prefecture}|${norm(store.name)}|${norm(r.name)}`), r.name).toBe(false);
+    }
+  });
+
+  it("出場者の情報源はすべて参照され、人物の根拠に「2026」か2026年の日付がある", () => {
+    const used = new Set(entrantUpdates.flatMap((r) => r.sourceIds));
+    for (const s of entrantSources) expect(used.has(s.sourceId), s.sourceId).toBe(true);
+    for (const r of entrantUpdates) {
+      expect(/2026/.test(r.evidence) || /^2026-/.test(r.evidenceDate ?? ""), r.entrantId).toBe(true);
+      for (const sid of r.sourceIds) expect(sourceIds.has(sid) || sid.startsWith("upd-src-"), sid).toBe(true);
+    }
+  });
+
+  it("神奈川県の実証で追加した出場者は、名前検索で先頭に出て店舗ページへ進める", () => {
+    const items = buildSearchIndex(site);
+    for (const q of ["らな", "雫石ここね", "横山まい", "東京妻 ゆあ", "SAPPHIRE あやせ", "衣都"]) {
+      const top = searchItems(items, { q })[0].item;
+      expect([top.kind, top.prefName], q).toEqual(["entrant", "神奈川県"]);
+      expect(top.href, q).toMatch(/^\/store\//);
+    }
   });
 });

@@ -13,7 +13,7 @@ import phase3bSourcesJson from "@/data/phase3b/store_sources.json";
 import phase3bCoverageJson from "@/data/phase3b/coverage_47prefectures.json";
 import { updates } from "@/data/updates";
 import { relationUpdates, sourceUpdates, storeUpdates } from "@/data/store-updates";
-import { entrantUpdates } from "@/data/entrant-updates";
+import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
 import type {
   Phase1Dataset,
   Phase1Map,
@@ -105,7 +105,7 @@ function load(): SiteModel {
       stores: [...phase3Stores.stores, ...phase3b.stores, ...storeUpdates],
       relations: [...phase3Relations, ...phase3b.relations, ...relationUpdates],
       sources: [...phase3Sources, ...phase3b.sources, ...sourceUpdates],
-    }),
+    }, entrantSources),
   ].filter((i) => i.level === "error");
   if (errors.length > 0) {
     const detail = errors.map((e) => `[${e.dataset}] ${e.id}: ${e.message}`).join("\n");
@@ -119,6 +119,7 @@ function load(): SiteModel {
     phase3b,
     updates: { stores: storeUpdates, relations: relationUpdates, sources: sourceUpdates },
     entrants: entrantUpdates,
+    entrantSources,
   });
   return buildModel(adaptAll(sets), { mapInfo: phase1Map.prefectures, layer });
 }
