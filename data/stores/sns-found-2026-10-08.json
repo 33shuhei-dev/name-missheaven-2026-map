@@ -1,1 +1,208 @@
-{"description": "", "stores": [], "relations": [], "sources": [], "listingAreaUpdates": [], "publicUrlUpdates": []}
+{
+ "description": "本人SNSの出場表明を検索で見つけて確認し、追加した店舗（2026-10-08）。本人からの掲載申請ではない。人物名はここに書かない。",
+ "stores": [
+  {
+   "storeId": "mh26-sns-store-09f6677041ad90d5",
+   "storeName": "Lovin金沢",
+   "storeNameOriginals": [
+    "Lovin金沢"
+   ],
+   "prefecture": "石川県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/lovinkokoro/reposts",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-c15e6acf436bac5b",
+    "sns-src-d060988a0ee35be4"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-7a29c3a919ccb6d4",
+   "storeName": "でりどす",
+   "storeNameOriginals": [
+    "でりどす"
+   ],
+   "prefecture": "愛知県",
+   "listingArea": "錦・栄・矢場町",
+   "listingAreas": [
+    "錦・栄・矢場町"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/deridos_satoeri",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230103/deridos/",
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-41814337eb5ab17a"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": "aichi/A2301/A230103/deridos",
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。公開ページURLと掲載地域は、ヘブンの店舗ページのタイトルで店名が一致した店舗キーによる。都道府県はヘブンの店舗キーによる。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-b4c90455a871ccb9",
+   "storeName": "F＆J",
+   "storeNameOriginals": [
+    "F＆J"
+   ],
+   "prefecture": "愛知県",
+   "listingArea": "黒川・大曽根・矢田",
+   "listingAreas": [
+    "黒川・大曽根・矢田"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/charm_fj",
+   "storePublicUrl": "https://www.cityheaven.net/aichi/A2301/A230110/f-j/",
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-46852aace962e1cd"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": "aichi/A2301/A230110/f-j",
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。公開ページURLと掲載地域は、ヘブンの店舗ページのタイトルで店名が一致した店舗キーによる。都道府県はヘブンの店舗キーによる。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-cc5f21ad4b1dc72c",
+   "storeName": "ニューティアラ",
+   "storeNameOriginals": [
+    "ニューティアラ"
+   ],
+   "prefecture": "茨城県",
+   "listingArea": "土浦市",
+   "listingAreas": [
+    "土浦市"
+   ],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/0mirumilu/status/2093876336763019320",
+   "storePublicUrl": "https://www.cityheaven.net/ibaraki/A0802/A080202/newtiara/",
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-7f6929df52b241be",
+    "sns-src-eb0b4ecd38fb513b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": "ibaraki/A0802/A080202/newtiara",
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。公開ページURLと掲載地域は、ヘブンの店舗ページのタイトルで店名が一致した店舗キーによる。都道府県はヘブンの店舗キーによる。正式選挙エリアは未確認。"
+  }
+ ],
+ "relations": [],
+ "sources": [
+  {
+   "sourceId": "sns-src-c15e6acf436bac5b",
+   "url": "https://x.com/lovinkokoro/reposts",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-09f6677041ad90d5"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-d060988a0ee35be4",
+   "url": "https://x.com/lovinkokoro/status/2083437379659170090",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-09f6677041ad90d5"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-41814337eb5ab17a",
+   "url": "https://x.com/deridos_satoeri",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-7a29c3a919ccb6d4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-46852aace962e1cd",
+   "url": "https://x.com/charm_fj",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-b4c90455a871ccb9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-7f6929df52b241be",
+   "url": "https://x.com/0mirumilu/status/2093876336763019320",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-cc5f21ad4b1dc72c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-eb0b4ecd38fb513b",
+   "url": "https://x.com/0mirumilu",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-cc5f21ad4b1dc72c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  }
+ ],
+ "listingAreaUpdates": [],
+ "publicUrlUpdates": []
+}
