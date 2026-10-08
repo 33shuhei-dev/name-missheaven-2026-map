@@ -5,7 +5,7 @@ import { entrantSources, entrantUpdates } from "@/data/entrant-updates";
 
 /** 全国展開・仕上げPhase（2026-10-06）で追加した店舗・地域/URLの補完・出場者 */
 describe("全国展開：店舗", () => {
-  const added = storeUpdates.filter((s) => /^mh26-(nat|fin)-store-/.test(s.storeId));
+  const added = storeUpdates.filter((s) => /^mh26-(nat|fin|disc)-store-/.test(s.storeId));
   const norm = (s: string) => s.normalize("NFKC").replace(/\s/g, "").toLowerCase();
 
   it("追加店舗は、ヘブンの店舗キーと一致する公開ページURL・同じ店舗キーの情報源を持ち、正式選挙エリアを持たない", () => {
@@ -37,7 +37,7 @@ describe("全国展開：店舗", () => {
         expect(src.storeIds).toContain(u.storeId);
       }
     }
-    for (const u of storePublicUrlUpdates.filter((x) => x.sourceIds.some((s) => /^(nat|fin)-src-/.test(s)))) {
+    for (const u of storePublicUrlUpdates.filter((x) => x.sourceIds.some((s) => /^(nat|fin|disc)-src-/.test(s)))) {
       const src = sourceUpdates.find((x) => x.sourceId === u.sourceIds[0])!;
       expect(src.url.replace("smart.cityheaven", "www.cityheaven").startsWith(u.storePublicUrl)).toBe(true);
     }
@@ -45,7 +45,7 @@ describe("全国展開：店舗", () => {
 });
 
 describe("全国展開：出場者", () => {
-  const added = entrantUpdates.filter((e) => /^mh26-ent-[nf]-/.test(e.entrantId));
+  const added = entrantUpdates.filter((e) => /^mh26-ent-[nfd]-/.test(e.entrantId));
 
   it("根拠に2026年（または2026年の日付）があり、情報源はその店舗のもの・個人URLは入れない", () => {
     for (const e of added) {
