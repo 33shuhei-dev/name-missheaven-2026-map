@@ -45,7 +45,7 @@ describe("全国展開：店舗", () => {
 });
 
 describe("全国展開：出場者", () => {
-  const added = entrantUpdates.filter((e) => /^mh26-ent-[nfd]-/.test(e.entrantId));
+  const added = entrantUpdates.filter((e) => /^mh26-ent-[nf]-/.test(e.entrantId));
 
   it("根拠に2026年（または2026年の日付）があり、情報源はその店舗のもの・個人URLは入れない", () => {
     for (const e of added) {

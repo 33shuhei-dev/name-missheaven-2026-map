@@ -1,1 +1,64 @@
-{"description": "", "entrants": [], "sources": [], "relations": []}
+{
+ "description": "本人SNSの出場表明を、検索の結果の抜粋で確認して追加した出場者（2026-10-08）。本人からの掲載申請ではない。部門は原文のまま。",
+ "entrants": [
+  {
+   "entrantId": "mh26-ent-d-4bd8ab3623fa5959",
+   "name": "かすみ",
+   "storeId": "mh26-fin-store-30983e10bb2bab2c",
+   "sourceIds": [
+    "ent-src-d-690a94856fcf9319"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「帯広シークレットサービスで #ミスヘブン総選挙2026  出場決まりました」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/_kasumi_moon",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-d-d8dda740a5d1f4fe",
+   "name": "enn",
+   "storeId": "mh26-store-ca5dd281aca4af94",
+   "sourceIds": [
+    "ent-src-d-a4b9847ea33ac890"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026💎 有名店部門に出場させて頂きます」",
+   "evidenceDate": null,
+   "categoryOriginal": "有名店部門",
+   "personalUrl": "https://x.com/goodnoenn",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  }
+ ],
+ "sources": [
+  {
+   "sourceId": "ent-src-d-690a94856fcf9319",
+   "url": "https://x.com/_kasumi_moon/status/2096128879585100044",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-fin-store-30983e10bb2bab2c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-a4b9847ea33ac890",
+   "url": "https://x.com/goodnoenn/status/2098752570630324489",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-store-ca5dd281aca4af94"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  }
+ ],
+ "relations": []
+}

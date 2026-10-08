@@ -7,7 +7,7 @@ import { PUBLISHER_ROLE_LABEL, participationStatusText } from "@/lib/labels";
 
 /** 本人SNSの出場表明を検索で見つけて追加した出場者・店舗（本人からの掲載申請ではない） */
 describe("本人SNSで出場確認（検索で発見）", () => {
-  const ents = entrantUpdates.filter((e) => e.entrantId.startsWith("mh26-ent-s-"));
+  const ents = entrantUpdates.filter((e) => /^mh26-ent-[sd]-/.test(e.entrantId));
   const stores = storeUpdates.filter((s) => s.storeId.startsWith("mh26-sns-store-"));
 
   it("追加されている", () => {
