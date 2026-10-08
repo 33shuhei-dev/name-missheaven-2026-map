@@ -17,6 +17,21 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
+   "entrantId": "mh26-ent-d-2c9e4ed5e3e879c3",
+   "name": "ゆうこ",
+   "storeId": "mh26-p3b-store-d17b62d20ccb9842",
+   "sourceIds": [
+    "ent-src-d-f5ba9e7969c664df"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「名古屋「かべや」のゆうこです☺️   ミスヘブン2026に出ます」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/yuko_days_",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
    "entrantId": "mh26-ent-d-0cc605221a01fb97",
    "name": "真矢",
    "storeId": "mh26-sns-store-034e09ab9841ec08",
@@ -131,6 +146,19 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-fin-store-30983e10bb2bab2c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-f5ba9e7969c664df",
+   "url": "https://x.com/yuko_days_/status/2105529066959041012",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-d17b62d20ccb9842"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-08",
