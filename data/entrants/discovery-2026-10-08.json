@@ -17,6 +17,96 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
+   "entrantId": "mh26-ent-d-0cc605221a01fb97",
+   "name": "真矢",
+   "storeId": "mh26-sns-store-034e09ab9841ec08",
+   "sourceIds": [
+    "ent-src-d-36b69fd3e0eda89a"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026 出場する事になりました」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/yumemirumaya",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-d-65126aa6e129f61d",
+   "name": "めいな",
+   "storeId": "mh26-sns-store-0e7dc277a56a65f0",
+   "sourceIds": [
+    "ent-src-d-95047dd089e9111a"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「この度、ミスヘブン総選挙2026に出場させていただくことになりました」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/meina_ilove",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-d-d7af0bd5d78351c8",
+   "name": "さくら",
+   "storeId": "mh26-sns-store-2d7c2b50a9e2d454",
+   "sourceIds": [
+    "ent-src-d-9dffc82d73c6e688"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ニシャンです。   #ミスヘブン総選挙  #ミスヘブン総選挙2026 https://t.co/p6rZdhI … さくら🌸ぽちゃぶらんか甲府👑総選挙出ます」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/sakurasaaannn",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-d-7b749100a6becf6b",
+   "name": "さな",
+   "storeId": "mh26-sns-store-913b94f3a78e30a7",
+   "sourceIds": [
+    "ent-src-d-449564de4a190f3f"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026👑  日記でも載せましたが...  この度、スタイル部門で出場させていただくことになりました」",
+   "evidenceDate": null,
+   "categoryOriginal": "スタイル部門",
+   "personalUrl": "https://x.com/sana_esp37",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-d-ceb05b83ac27b6b2",
+   "name": "りな",
+   "storeId": "mh26-sns-store-a13728ed80115d14",
+   "sourceIds": [
+    "ent-src-d-82ea85c3a764097f"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026 ニューヒロイン部門に挑戦します」",
+   "evidenceDate": null,
+   "categoryOriginal": "ニューヒロイン部門",
+   "personalUrl": "https://x.com/rina_namba",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-d-32e4f0f7ccae90b5",
+   "name": "桃菜🍑藤咲らぶ",
+   "storeId": "mh26-sns-store-a38f659d81dbfcd3",
+   "sourceIds": [
+    "ent-src-d-d9320ec6ed394ec9"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026👑💖  今年は神栖レッドダイヤから 出場させていただきます」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/lovechandamon3",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
    "entrantId": "mh26-ent-d-d8dda740a5d1f4fe",
    "name": "enn",
    "storeId": "mh26-store-ca5dd281aca4af94",
@@ -47,6 +137,88 @@
    "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
   },
   {
+   "sourceId": "ent-src-d-36b69fd3e0eda89a",
+   "url": "https://x.com/yumemirumaya/status/2101612638254047438",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-034e09ab9841ec08"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-95047dd089e9111a",
+   "url": "https://x.com/meina_ilove/status/2088511835456885072",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-0e7dc277a56a65f0"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-9dffc82d73c6e688",
+   "url": "https://x.com/sakurasaaannn/status/2107042840371241365",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-2d7c2b50a9e2d454"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-449564de4a190f3f",
+   "url": "https://x.com/sana_esp37/status/2094369225364410691",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-913b94f3a78e30a7"
+   ],
+   "relationIds": [
+    "ent-rel-d-63c6a0fc7d4ffd63"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-82ea85c3a764097f",
+   "url": "https://x.com/rina_namba/status/2101859079715254309",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-a13728ed80115d14"
+   ],
+   "relationIds": [
+    "ent-rel-d-9e83544235cefe8c"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-d-d9320ec6ed394ec9",
+   "url": "https://x.com/lovechandamon3/status/2087884283713319270",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-a38f659d81dbfcd3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
    "sourceId": "ent-src-d-a4b9847ea33ac890",
    "url": "https://x.com/goodnoenn/status/2098752570630324489",
    "sourceType": "entrant_social",
@@ -60,5 +232,30 @@
    "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
   }
  ],
- "relations": []
+ "relations": [
+  {
+   "relationId": "ent-rel-d-63c6a0fc7d4ffd63",
+   "storeId": "mh26-sns-store-913b94f3a78e30a7",
+   "categoryOriginal": "スタイル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-d-449564de4a190f3f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-d-9e83544235cefe8c",
+   "storeId": "mh26-sns-store-a13728ed80115d14",
+   "categoryOriginal": "ニューヒロイン部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-d-82ea85c3a764097f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  }
+ ]
 }

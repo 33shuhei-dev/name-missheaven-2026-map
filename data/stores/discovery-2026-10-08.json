@@ -1,8 +1,312 @@
 {
  "description": "本人SNSの出場表明を検索で見つけて確認し、追加した店舗（2026-10-08）。本人からの掲載申請ではない。人物名はここに書かない。",
- "stores": [],
+ "stores": [
+  {
+   "storeId": "mh26-sns-store-034e09ab9841ec08",
+   "storeName": "VELVET広島",
+   "storeNameOriginals": [
+    "VELVET広島"
+   ],
+   "prefecture": "広島県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/yumemirumaya/status/2101612638254047438",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-36b69fd3e0eda89a"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：本人の投稿に「#広島」とあり、店名にも広島が含まれる。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-0e7dc277a56a65f0",
+   "storeName": "アイラブ奥様",
+   "storeNameOriginals": [
+    "アイラブ奥様"
+   ],
+   "prefecture": "長野県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/meina_ilove/status/2088511835456885072",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-95047dd089e9111a",
+    "sns-src-e3074cc98330bb37"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：第三者のX投稿に「長野市 I LOVE 奥様」とある（別の第三者投稿にも「長野 I LOVE奥様」）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-2d7c2b50a9e2d454",
+   "storeName": "ぽちゃぶらんか甲府",
+   "storeNameOriginals": [
+    "ぽちゃぶらんか甲府"
+   ],
+   "prefecture": "山梨県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/sakurasaaannn/status/2107042840371241365",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-9dffc82d73c6e688",
+    "sns-src-c9e0e93b193bc0ea"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：第三者（ファン）のX投稿が、大会のノミネートページ（北陸甲信越・山梨・テクニシャン部門）を転記している。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-913b94f3a78e30a7",
+   "storeName": "エスペランサ熊本",
+   "storeNameOriginals": [
+    "エスペランサ熊本"
+   ],
+   "prefecture": "熊本県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/sana_esp37/status/2094369225364410691",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-449564de4a190f3f",
+    "sns-src-d8a5c1be3d405777"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：第三者（ファン）のX投稿が、大会のノミネートページ（南九州・沖縄・熊本）を転記している。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-a13728ed80115d14",
+   "storeName": "大奥なんば",
+   "storeNameOriginals": [
+    "大奥なんば"
+   ],
+   "prefecture": "大阪府",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/rina_namba/status/2101859079715254309",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-82ea85c3a764097f"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：本人のプロフィールに「大阪・なんばにいます」と書かれている。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-a38f659d81dbfcd3",
+   "storeName": "神栖レッドダイヤ",
+   "storeNameOriginals": [
+    "神栖レッドダイヤ"
+   ],
+   "prefecture": "茨城県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/lovechandamon3/status/2087884283713319270",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-08",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "sns-src-d9320ec6ed394ec9",
+    "sns-src-e046523d53125a78"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-08。検索で発見。本人からの掲載申請ではない）。都道府県の根拠：第三者（ファン）のX投稿が、大会のノミネートページ（北関東・茨城・デリヘル部門）を転記している。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  }
+ ],
  "relations": [],
- "sources": [],
+ "sources": [
+  {
+   "sourceId": "sns-src-36b69fd3e0eda89a",
+   "url": "https://x.com/yumemirumaya/status/2101612638254047438",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-034e09ab9841ec08"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-95047dd089e9111a",
+   "url": "https://x.com/meina_ilove/status/2088511835456885072",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-0e7dc277a56a65f0"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-e3074cc98330bb37",
+   "url": "https://x.com/Meina5535/status/2090409712722551195",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-0e7dc277a56a65f0"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "都道府県の確認用。第三者のX投稿（Yahoo!リアルタイム検索で確認）。出場の根拠ではなく、所在地の確認のみ"
+  },
+  {
+   "sourceId": "sns-src-9dffc82d73c6e688",
+   "url": "https://x.com/sakurasaaannn/status/2107042840371241365",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-2d7c2b50a9e2d454"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-c9e0e93b193bc0ea",
+   "url": "https://x.com/mamo_tako/status/2106576793629249613",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-2d7c2b50a9e2d454"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "都道府県の確認用。第三者のX投稿（Yahoo!リアルタイム検索で確認）。出場の根拠ではなく、所在地の確認のみ"
+  },
+  {
+   "sourceId": "sns-src-449564de4a190f3f",
+   "url": "https://x.com/sana_esp37/status/2094369225364410691",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-913b94f3a78e30a7"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-d8a5c1be3d405777",
+   "url": "https://x.com/mamo_tako/status/2106560939139170574",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-913b94f3a78e30a7"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "都道府県の確認用。第三者のX投稿（Yahoo!リアルタイム検索で確認）。出場の根拠ではなく、所在地の確認のみ"
+  },
+  {
+   "sourceId": "sns-src-82ea85c3a764097f",
+   "url": "https://x.com/rina_namba/status/2101859079715254309",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-a13728ed80115d14"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-d9320ec6ed394ec9",
+   "url": "https://x.com/lovechandamon3/status/2087884283713319270",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-a38f659d81dbfcd3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "所属する出場者本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "sns-src-e046523d53125a78",
+   "url": "https://x.com/mamo_tako/status/2106534445297856673",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-a38f659d81dbfcd3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "都道府県の確認用。第三者のX投稿（Yahoo!リアルタイム検索で確認）。出場の根拠ではなく、所在地の確認のみ"
+  }
+ ],
  "listingAreaUpdates": [],
  "publicUrlUpdates": []
 }
