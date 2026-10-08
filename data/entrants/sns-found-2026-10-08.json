@@ -1,0 +1,323 @@
+{
+ "description": "本人SNSの出場表明を、検索の結果の抜粋で確認して追加した出場者（2026-10-08）。本人からの掲載申請ではない。部門は原文のまま。",
+ "entrants": [
+  {
+   "entrantId": "mh26-ent-s-2bb7d68c1abd2629",
+   "name": "かのん",
+   "storeId": "mh26-nat-store-1b735a5d3de49894",
+   "sourceIds": [
+    "ent-src-s-d19620025fcfc6a3"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ご報告 今年も、ミスへブン2026に出る事になりました!!!」",
+   "evidenceDate": null,
+   "categoryOriginal": "ヘルス部門",
+   "personalUrl": "https://x.com/select__Kanon",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-s-5e4d07e7a65fb4f6",
+   "name": "ななみ",
+   "storeId": "mh26-nat-store-621ba711b7cd76e6",
+   "sourceIds": [
+    "ent-src-s-434b12f7f32ea611"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ななみ ミスヘブン総選挙2026出場 (@nanami_okizuma) / X」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/nanami_okizuma",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-s-ce1e2281eac066da",
+   "name": "青葉 ちなつ",
+   "storeId": "mh26-pl3-store-5bdd38cc2ad06b04",
+   "sourceIds": [
+    "ent-src-s-bad26adbef054ab0",
+    "ent-src-s-1bfc9bee11e117a8"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「大阪 「イケない女教師」の青葉 ちなつです🕊️ 🌬️ x.gd/dl72d この度ミスヘブン総選挙2026 『隠れ美女部門』にて出場」",
+   "evidenceDate": null,
+   "categoryOriginal": "隠れ美女部門",
+   "personalUrl": "https://x.com/aoba_ikj",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-s-e7ef0cb9f9899b18",
+   "name": "こころ",
+   "storeId": "mh26-sns-store-09f6677041ad90d5",
+   "sourceIds": [
+    "ent-src-s-c15e6acf436bac5b",
+    "ent-src-s-d060988a0ee35be4"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ご報告 👑️#ミスヘブン総選挙 2026年出場決定しました〜!!」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/lovinkokoro",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-s-6e894765f3e10d8a",
+   "name": "さとえり",
+   "storeId": "mh26-sns-store-7a29c3a919ccb6d4",
+   "sourceIds": [
+    "ent-src-s-41814337eb5ab17a"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「さとえり ミスヘブン2026出場. @deridos_satoeri. でりどす(名古屋)で会えます」",
+   "evidenceDate": null,
+   "categoryOriginal": "100名店在籍部門",
+   "personalUrl": "https://x.com/deridos_satoeri",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-s-507d5f901e39a221",
+   "name": "ちゃむ",
+   "storeId": "mh26-sns-store-b4c90455a871ccb9",
+   "sourceIds": [
+    "ent-src-s-46852aace962e1cd"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン2026出場決定 F&J ちゃむ おっぱい部門に出場します」",
+   "evidenceDate": null,
+   "categoryOriginal": "おっぱい部門",
+   "personalUrl": "https://x.com/charm_fj",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-s-0946bc77f6af6ad2",
+   "name": "ミルちゃん",
+   "storeId": "mh26-sns-store-cc5f21ad4b1dc72c",
+   "sourceIds": [
+    "ent-src-s-7f6929df52b241be",
+    "ent-src-s-eb0b4ecd38fb513b"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「茨城 ニューティアラ ミスヘブン2026 【店長一押し部門】 今年も応援していただけたら嬉しいです!」",
+   "evidenceDate": null,
+   "categoryOriginal": "店長一押し部門",
+   "personalUrl": "https://x.com/0mirumilu",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  }
+ ],
+ "sources": [
+  {
+   "sourceId": "ent-src-s-d19620025fcfc6a3",
+   "url": "https://x.com/select__Kanon",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-1b735a5d3de49894"
+   ],
+   "relationIds": [
+    "ent-rel-s-923f5390eeb42883"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-434b12f7f32ea611",
+   "url": "https://x.com/nanami_okizuma",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-621ba711b7cd76e6"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-bad26adbef054ab0",
+   "url": "https://x.com/aoba_ikj",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-pl3-store-5bdd38cc2ad06b04"
+   ],
+   "relationIds": [
+    "ent-rel-s-d96ae1b7eace06be"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-1bfc9bee11e117a8",
+   "url": "https://x.com/aoba_ikj/reposts",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-pl3-store-5bdd38cc2ad06b04"
+   ],
+   "relationIds": [
+    "ent-rel-s-d96ae1b7eace06be"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-c15e6acf436bac5b",
+   "url": "https://x.com/lovinkokoro/reposts",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-09f6677041ad90d5"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-d060988a0ee35be4",
+   "url": "https://x.com/lovinkokoro/status/2083437379659170090",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-09f6677041ad90d5"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-41814337eb5ab17a",
+   "url": "https://x.com/deridos_satoeri",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-7a29c3a919ccb6d4"
+   ],
+   "relationIds": [
+    "ent-rel-s-88a9257c1d30a8ba"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-46852aace962e1cd",
+   "url": "https://x.com/charm_fj",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-b4c90455a871ccb9"
+   ],
+   "relationIds": [
+    "ent-rel-s-a515173043cdd13e"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-7f6929df52b241be",
+   "url": "https://x.com/0mirumilu/status/2093876336763019320",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-cc5f21ad4b1dc72c"
+   ],
+   "relationIds": [
+    "ent-rel-s-92faf0f1e9dd43c5"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-eb0b4ecd38fb513b",
+   "url": "https://x.com/0mirumilu",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-cc5f21ad4b1dc72c"
+   ],
+   "relationIds": [
+    "ent-rel-s-92faf0f1e9dd43c5"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  }
+ ],
+ "relations": [
+  {
+   "relationId": "ent-rel-s-923f5390eeb42883",
+   "storeId": "mh26-nat-store-1b735a5d3de49894",
+   "categoryOriginal": "ヘルス部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-s-d19620025fcfc6a3"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-s-d96ae1b7eace06be",
+   "storeId": "mh26-pl3-store-5bdd38cc2ad06b04",
+   "categoryOriginal": "隠れ美女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-s-bad26adbef054ab0",
+    "ent-src-s-1bfc9bee11e117a8"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-s-88a9257c1d30a8ba",
+   "storeId": "mh26-sns-store-7a29c3a919ccb6d4",
+   "categoryOriginal": "100名店在籍部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-s-41814337eb5ab17a"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-s-a515173043cdd13e",
+   "storeId": "mh26-sns-store-b4c90455a871ccb9",
+   "categoryOriginal": "おっぱい部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-s-46852aace962e1cd"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-s-92faf0f1e9dd43c5",
+   "storeId": "mh26-sns-store-cc5f21ad4b1dc72c",
+   "categoryOriginal": "店長一押し部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-s-7f6929df52b241be",
+    "ent-src-s-eb0b4ecd38fb513b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  }
+ ]
+}
