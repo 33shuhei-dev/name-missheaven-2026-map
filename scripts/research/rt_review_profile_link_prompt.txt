@@ -1,0 +1,19 @@
+You are reviewing public X (Twitter) posts about "ミスヘブン総選挙2026" (an annual contest; entrants are sex-industry cast who enter by division/部門). Work ONLY from the data in the input file; do NOT search the web or fetch any URL.
+
+Input: /tmp/claude-0/-home-user-name-missheaven-2026-map/cbe369d5-cbd4-5bce-a524-59d42713a538/scratchpad/research/sns/review_cy_0.json
+Each item = one X account (handle, display title) with its posts (tweets[].text/url) in this dataset and `links`: the cityheaven.net cast-profile links that appear in its posts. A link has `key` (store path, whose first segment is the prefecture slug), `prefecture` (derived from the slug), and `siteStoreName` (store name from our existing data if that store key is already known, else null).
+
+Decide per ACCOUNT (one object per cid) and write a JSON array to /tmp/claude-0/-home-user-name-missheaven-2026-map/cbe369d5-cbd4-5bce-a524-59d42713a538/scratchpad/research/sns/decisions_cy_0.json:
+{"cid","accept":true|false,"name","storeName","storeKey","prefecture","category","evidenceQuote","reason"}
+
+ACCEPT only if ALL are true:
+1. The account is the ENTRANT HERSELF (her own cast account), not a fan, support/"親衛隊", store/staff, aggregator or media account. Her own account typically posts about her own work/diary and links her own profile.
+2. At least one of her posts (or her display name) states that SHE is entering/nominated in 2026 (出場/エントリー/ノミネート/出ます/参戦 + 2026 or ミスヘブン総選挙2026). evidenceQuote must be a verbatim substring (20–150 chars) of one of her tweets' text or of the title that contains this statement (the 2026 statement may be in the hashtag/display name).
+3. A readable person name: the display name as written, with decorations/emoji/contest labels removed at the ends (e.g. "野原れんげ☘️ミスヘブン総選挙2026出場" -> "野原れんげ").
+4. Exactly ONE cityheaven store key applies to her (her profile link). If she has links to several stores, reject (reason "multi_store").
+5. Store name: if siteStoreName is not null, use it exactly as storeName. If null, the store name must be readable in her text/display name (copy as written); otherwise reject with reason "no_store_name" (do not guess a name from the key).
+6. prefecture = the link's `prefecture` value (copy as is).
+category: the division written in her text, copied EXACTLY with its brackets (e.g. 【人妻部門】, 『巨乳』部門, ソープ部門); null if none. Never normalize or guess.
+When in doubt -> accept=false (reasons: not_entrant_self | no_2026_entry | multi_store | no_store_name | no_name | other).
+
+Before finishing, run a script verifying: every cid has exactly one object; every accepted evidenceQuote is a verbatim substring of an included tweet text or the title. Reply with counts only (accepted, rejected by reason, how many accepted have siteStoreName, how many have a category). Do NOT list names.
