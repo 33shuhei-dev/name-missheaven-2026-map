@@ -131,6 +131,7 @@ export const PUBLISHER_ROLE_LABEL: Record<string, string> = {
   entrant_page: "出場者本人のページ（日記・意気込み）",
   entrant_social_post: "出場者本人のSNS投稿（本人申請）",
   entrant_social_found: "出場者本人のSNS（検索結果の抜粋で確認。本人からの申請ではない）",
+  third_party_social_found: "第三者のSNS投稿（所在地の確認用。出場の根拠ではない）",
   third_party_mirror: "転載サイト（本人の日記の転載）",
   search_engine_result: "検索結果（店舗ページの抜粋）",
   store_public_page: "店舗の公開ページ",

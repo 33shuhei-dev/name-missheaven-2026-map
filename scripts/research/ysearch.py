@@ -1,3 +1,4 @@
+raise SystemExit("使用禁止: search.yahoo.co.jp/search? は robots.txt で Disallow。許可された公開経路のみを使うこと（scripts/research/discovery_results.md）。")
 """Yahoo! JAPAN 検索の結果（タイトル・URL・抜粋）を取得してキャッシュする調査用ツール。"""
 import hashlib, html, json, os, re, sys, time, urllib.parse, urllib.request
 
