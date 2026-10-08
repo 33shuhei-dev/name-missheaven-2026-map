@@ -17,6 +17,21 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
+   "entrantId": "mh26-ent-s-5e4d07e7a65fb4f6",
+   "name": "ななみ",
+   "storeId": "mh26-nat-store-621ba711b7cd76e6",
+   "sourceIds": [
+    "ent-src-s-434b12f7f32ea611"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ななみ ミスヘブン総選挙2026出場 (@nanami_okizuma) / X」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/nanami_okizuma",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
    "entrantId": "mh26-ent-s-ce1e2281eac066da",
    "name": "青葉 ちなつ",
    "storeId": "mh26-pl3-store-5bdd38cc2ad06b04",
@@ -108,6 +123,19 @@
    "relationIds": [
     "ent-rel-s-923f5390eeb42883"
    ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-s-434b12f7f32ea611",
+   "url": "https://x.com/nanami_okizuma",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-621ba711b7cd76e6"
+   ],
+   "relationIds": [],
    "checkedAt": "2026-10-08",
    "notes": "本人のX（プロフィール・投稿）の抜粋を、Yahoo!検索の結果で確認（本文は直接取得していない）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
   },
