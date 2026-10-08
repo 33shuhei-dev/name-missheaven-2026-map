@@ -1,0 +1,20 @@
+You are reviewing Japanese search-result items (X/Twitter profile pages and posts, as returned by a search engine: title + snippet) about the "ミスヘブン総選挙2026" (Miss Heaven 2026 election; entrants are sex-industry cast who enter by division/部門). Work only from the data in the file; do NOT search the web or fetch any URL.
+
+Input: __IN__
+Each item: cid, method, url, handle, title, snippet.
+
+Write output to: __OUT__ — a JSON array with EXACTLY one object per cid:
+{"cid", "accept": true|false, "name", "storeName", "prefecture", "category", "evidenceQuote", "ownerKind", "reason"}
+
+ACCEPT (accept=true) only if ALL are true from that single item:
+- The page/post is the entrant's OWN account content (profile name/bio, pinned post, or her own post). Posts by official accounts (シティヘブンネット, ヘブンTV), fan/support/RT/aggregator accounts, store managers/staff accounts, media, or other people are NOT accepted (ownerKind: "own" | "official" | "fan" | "store_staff" | "other").
+- It states that SHE is entering/nominated in the contest of 2026: the text contains 2026 (e.g. ミスヘブン2026 / ミスヘブン総選挙2026 / 2026年) together with an explicit entry statement (出場 / エントリー / ノミネート / 参加 …). A display name such as "◯◯ ミスヘブン総選挙2026出場" counts as her own statement. Results/past editions (2025 or earlier, 神15 of a past year, グランプリ結果) do NOT count. A statement only about the 2025 contest is NOT enough.
+- A person name is readable: the account display name/nickname exactly as written, with decorations/emoji/contest labels removed from the ends (e.g. "ひめちゃん🐰︎🍼ミスヘブン総選挙2026出場" -> "ひめちゃん"). Put it in "name".
+- The STORE she belongs to is written in the same text (店名 as written; e.g. "ピュアコス学園から…出場します", "茨城 ニューティアラ …"). If no store name is in the text -> accept=false (reason "no_store"). Do not guess a store from the handle or hashtags.
+- prefecture: only if written in the text (e.g. 茨城, 福岡県) -> copy as written; else null (the store may still be matched later against our data).
+- category: the division written in the text, copied EXACTLY with its quotation brackets/symbols (e.g. 【店長一押し部門】, 『巨乳』部門, ソープ部門); null if none. Never normalize or guess.
+- evidenceQuote: a verbatim substring (20–150 chars) of the title or snippet that contains the 2026 entry statement (and the store name if possible).
+
+When in doubt -> accept=false. Never invent names, stores, divisions. For accept=false give a short reason code (official | fan | store_staff | past_year | no_2026 | no_entry_statement | no_store | no_name | other).
+
+Before finishing, run a script that checks: every cid has exactly one object, and every evidenceQuote of an accepted item is a verbatim substring of title+" "+snippet (or of title / snippet). Reply with counts only: accepted, rejected by reason, and how many accepted have a category, and how many state a prefecture. Do NOT list names in your reply.
