@@ -17,6 +17,21 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
+   "entrantId": "mh26-ent-d-fa20fa527d2562d5",
+   "name": "きゃんでぃ",
+   "storeId": "mh26-nat-store-3befad3e746a1de5",
+   "sourceIds": [
+    "ent-src-d-e2911d9fa6960f28"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「👑ミスヘブン総選挙2026👑  今年も出場させて頂くことになりました！」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは tokyo/A1317/A131703/nametemint-ike）",
+   "evidenceDate": null,
+   "categoryOriginal": "ヌルヌル部門",
+   "personalUrl": "https://x.com/candy_villain",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-08",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
    "entrantId": "mh26-ent-d-2c9e4ed5e3e879c3",
    "name": "ゆうこ",
    "storeId": "mh26-p3b-store-d17b62d20ccb9842",
@@ -152,6 +167,21 @@
    "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
   },
   {
+   "sourceId": "ent-src-d-e2911d9fa6960f28",
+   "url": "https://x.com/candy_villain/status/2098714337837986289",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-3befad3e746a1de5"
+   ],
+   "relationIds": [
+    "ent-rel-d-26c1974564c37a9f"
+   ],
+   "checkedAt": "2026-10-08",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
    "sourceId": "ent-src-d-f5ba9e7969c664df",
    "url": "https://x.com/yuko_days_/status/2105529066959041012",
    "sourceType": "entrant_social",
@@ -261,6 +291,18 @@
   }
  ],
  "relations": [
+  {
+   "relationId": "ent-rel-d-26c1974564c37a9f",
+   "storeId": "mh26-nat-store-3befad3e746a1de5",
+   "categoryOriginal": "ヌルヌル部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-d-e2911d9fa6960f28"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
   {
    "relationId": "ent-rel-d-63c6a0fc7d4ffd63",
    "storeId": "mh26-sns-store-913b94f3a78e30a7",

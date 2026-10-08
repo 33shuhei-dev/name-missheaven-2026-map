@@ -1,0 +1,50 @@
+{
+ "note": "635人のYahoo依存データの置き換え候補（調査中に、許可経路で直接根拠を見つけた既存人物）。人物名なし。表示・信頼度は変更していない。",
+ "candidates": [
+  {
+   "storeId": "mh26-nat-store-3befad3e746a1de5",
+   "evidenceUrl": "https://x.com/chocodayo_mint/status/2098950944201511281",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿（プロフィールリンクの店舗パスで店舗を特定）"
+  },
+  {
+   "storeId": "mh26-nat-store-9465c8234ceadf51",
+   "evidenceUrl": "https://x.com/renge_s2s2/status/2102325805091365168",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿（プロフィールリンクの店舗パスで店舗を特定）"
+  },
+  {
+   "storeId": "mh26-p3b-store-2206a1e54950c8c9",
+   "evidenceUrl": "https://x.com/sususu0956/status/2107312976139284789",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿"
+  },
+  {
+   "storeId": "mh26-p3b-store-9498fa54e446342a",
+   "evidenceUrl": "https://x.com/yuna_fuwamero_/status/2105807366851821769",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿"
+  },
+  {
+   "storeId": "mh26-p3b-store-ddf9887143de1fec",
+   "evidenceUrl": "https://x.com/Yuikdefisyndrme/status/2105196371305431409",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿"
+  },
+  {
+   "storeId": "mh26-pl3-store-1220c62d9c9985b7",
+   "evidenceUrl": "https://x.com/iroha__usacha/status/2082093150718542098",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿"
+  },
+  {
+   "storeId": "mh26-pl3-store-5bdd38cc2ad06b04",
+   "evidenceUrl": "https://x.com/aoba_ikj/status/2090739777066979605",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿"
+  },
+  {
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "evidenceUrl": "https://x.com/himachan_pure/status/2105497050729361803",
+   "route": "Yahoo!リアルタイム検索で確認した本人のX投稿（プロフィールリンクの店舗パスで店舗を特定）"
+  },
+  {
+   "storeId": "mh26-pl3-store-26111562f25e6221",
+   "evidenceUrl": "https://missheaven.real-group.love/",
+   "route": "店舗グループ公式の「ミスヘブン2026特設ページ」（出場女性一覧）。リンク先の店舗パスが一致"
+  }
+ ]
+}
