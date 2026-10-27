@@ -13,11 +13,9 @@ export function ListingRequestCta({ compact = false }: { compact?: boolean }) {
         </a>{" "}
         のDMへ。
       </p>
-      {!compact && (
-        <Link href="/about#listing" className="listing-cta__more">
-          送ってほしい内容を見る ›
-        </Link>
-      )}
+      <Link href="/about#listing" className="listing-cta__more">
+        依頼文を作る ›
+      </Link>
     </aside>
   );
 }

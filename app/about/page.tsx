@@ -17,6 +17,7 @@ export const metadata: Metadata = { title: "このサイトについて" };
 
 /** 掲載情報の修正・削除の問い合わせ窓口（このサイトを告知・運営している応援用Xアカウント） */
 import { CONTACT_X_HANDLE, CONTACT_X_URL } from "@/lib/contact";
+import { ListingRequestForm } from "@/components/ListingRequestForm";
 
 export default function AboutPage() {
   return (
@@ -70,8 +71,9 @@ export default function AboutPage() {
           <a href={CONTACT_X_URL} target="_blank" rel="noopener noreferrer">
             {CONTACT_X_HANDLE}
           </a>{" "}
-          のDMに、次の内容を送ってください（外部サイトが開きます）。
+          のDMに、次の内容を送ってください（外部サイトが開きます）。下の欄に入力すると、DMに貼る依頼文を作れます。
         </p>
+        <ListingRequestForm />
         <ul>
           <li>出場者の名前（お店での表記）</li>
           <li>店舗名と都道府県</li>
