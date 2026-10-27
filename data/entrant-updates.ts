@@ -474,6 +474,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-28",
     notes: "掲載依頼（第三者）を起点に追加（2026-10-28）。名前は依頼文の「のあ」（在籍名は「のあ~ゴールド~」で、「~ゴールド~」は在籍ページ上の表記）。部門名は依頼文の「ソープ部門」で、スクリーンショットには部門の表記がない。ノミネートのバッジは未確認。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-10-28）。出場表明の投稿・ノミネートのバッジは未確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0030",
+    name: "こゆき",
+    storeId: "mh26-upd-store-0006",
+    sourceIds: ["ent-src-0027"],
+    evidence:
+      "出場者本人からの掲載依頼（DM、2026年10月27日）に、2026年のミスヘブン総選挙への出場として、名前・店舗名・ヘルス部門が書かれている（本人提供の在籍ページURLあり。出場表明の投稿やノミネートのバッジは未確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-10-27",
+    categoryOriginal: "ヘルス部門",
+    personalUrl: null,
+    confidence: "unverified",
+    checkedAt: "2026-10-28",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-10-28）。運営者の判断で、本人の依頼を根拠として掲載。部門名は依頼文のとおり（バッジの表記は未確認）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -767,6 +782,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-10-28",
     notes: "依頼者提供の在籍ページのURLとスクリーンショット（「ミスヘブン出場決定」の表示）。2026年10月23日撮影。掲載依頼を起点に追加",
   },
+  {
+    sourceId: "ent-src-0027",
+    url: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
+    sourceType: "entrant_social",
+    accessStatus: "user_reported_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0006"],
+    relationIds: ["ent-rel-0016"],
+    checkedAt: "2026-10-28",
+    notes: "出場者本人から提供された在籍ページのURL（本人からの掲載依頼、2026年10月27日）。出場者本人の依頼を起点に追加",
+  },
 ];
 
 /**
@@ -923,6 +949,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0026"],
     phase1RecordIds: [],
     notes: "掲載依頼の内容（依頼文の部門名）。スクリーンショットには部門の表記がなく、ノミネートのバッジは未確認",
+  },
+  {
+    relationId: "ent-rel-0016",
+    storeId: "mh26-upd-store-0006",
+    categoryOriginal: "ヘルス部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0027"],
+    phase1RecordIds: [],
+    notes: "出場者本人の掲載依頼の内容（依頼文の部門名）。ノミネートのバッジは未確認",
   },
 ];
 
