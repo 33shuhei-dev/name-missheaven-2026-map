@@ -211,9 +211,9 @@ const manualStores: Phase3RawStore[] = [
     categoryOriginals: [],
     participationEvidenceUrl: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
     storePublicUrl: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/",
-    sourceType: "entrant_social",
-    confidence: "unverified",
-    participationType: "entrant_request_reported",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
     checkedAt: "2026-10-28",
     phase1RecordIds: [],
     phase2RecordIds: [],
@@ -221,7 +221,7 @@ const manualStores: Phase3RawStore[] = [
     sourceIds: ["upd-src-0007"],
     publicUrlAccessStatus: "unknown",
     notes:
-      "出場者本人からの掲載依頼（DM、2026-10-27）を起点に追加。依頼文に、名前・店舗名（秋葉原コスプレ学園IN西川口）・部門（ヘルス部門）・都道府県（埼玉県）があり、本人が提供した在籍ページのURL（saitama/A1102/A110201/akikosu）で都道府県と店舗ページを確認。出場表明の投稿・ノミネートのバッジは確認できていない（運営者の判断で、本人の依頼を根拠として掲載）。東京都の「秋葉原コスプレ学園」（店舗キー a_maid）とは別の店舗。掲載地域・正式選挙エリアは未確認。",
+      "出場者本人からの掲載依頼（DM、2026-10-27）を起点に追加。依頼文に名前・店舗名（秋葉原コスプレ学園IN西川口）・部門（ヘルス部門）・都道府県（埼玉県）があり、本人が提供した在籍ページのURL（saitama/A1102/A110201/akikosu）で都道府県と店舗ページを確認。その後（2026-10-28）、本人提供の在籍ページのスクリーンショットで、画像に「全国ミスヘブン総選挙2026」「埼玉県」「ヘルス部門 ノミネート」のバッジを確認した。調査環境からは本文を直接確認していないため probable。東京都の「秋葉原コスプレ学園」（店舗キー a_maid）とは別の店舗。掲載地域・正式選挙エリアは未確認。",
   },
 ];
 
@@ -319,13 +319,13 @@ const manualSources: Phase3RawSource[] = [
   {
     sourceId: "upd-src-0007",
     url: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
-    sourceType: "entrant_social",
-    accessStatus: "user_reported_only",
-    publisherRole: "entrant_page",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
     storeIds: ["mh26-upd-store-0006"],
     relationIds: [],
     checkedAt: "2026-10-28",
-    notes: "出場者本人から提供された在籍ページのURL（本人からの掲載依頼）。調査側は本文を直接取得していない。出場者本人の依頼を起点に追加",
+    notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（本人からの掲載依頼）で、ノミネートのバッジ（全国ミスヘブン総選挙2026・埼玉県・ヘルス部門）を確認。画像は保存していない。出場者本人の依頼を起点に追加",
   },
 ];
 
