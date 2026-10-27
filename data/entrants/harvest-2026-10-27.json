@@ -1,0 +1,51 @@
+{
+ "description": "本人SNSの出場表明を、検索の結果の抜粋で確認して追加した出場者（2026-10-27、投票期間の定期収集）。本人からの掲載申請ではない。部門は原文のまま。",
+ "entrants": [
+  {
+   "entrantId": "mh26-ent-h-11e3f041c0407137",
+   "name": "誘-いざな-リョウ",
+   "storeId": "mh26-store-6cc383b11a99e38c",
+   "sourceIds": [
+    "ent-src-h-685de172faf4b29d"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「応援よろしくお願いします🦋˚✧₊⁎⁎⁺˳✧༚ #ミスヘブン総選挙2026」",
+   "evidenceDate": null,
+   "categoryOriginal": "極嬢部門",
+   "personalUrl": "https://x.com/GOLDzanachi",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  }
+ ],
+ "sources": [
+  {
+   "sourceId": "ent-src-h-685de172faf4b29d",
+   "url": "https://x.com/GOLDzanachi/status/2109801246819496314",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-store-6cc383b11a99e38c"
+   ],
+   "relationIds": [
+    "ent-rel-h-1e988513fd33a1a2"
+   ],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  }
+ ],
+ "relations": [
+  {
+   "relationId": "ent-rel-h-1e988513fd33a1a2",
+   "storeId": "mh26-store-6cc383b11a99e38c",
+   "categoryOriginal": "極嬢部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-685de172faf4b29d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  }
+ ]
+}

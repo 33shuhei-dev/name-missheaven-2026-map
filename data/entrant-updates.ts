@@ -5,6 +5,7 @@ import national from "./entrants/national-2026-10-06.json";
 import finishing from "./entrants/finishing-2026-10-06.json";
 import snsFound from "./entrants/sns-found-2026-10-08.json";
 import discovery from "./entrants/discovery-2026-10-08.json";
+import harvest from "./entrants/harvest-2026-10-27.json";
 
 /** Phase 3b の保存済み検索結果の全国再解析（2026-10-06。新たな検索なし。神奈川県は下の実証分） */
 const nationwideReanalysis = nationwide as unknown as {
@@ -22,6 +23,13 @@ const pilot3Batch = pilot3 as unknown as {
 
 /** 探索仮説の検証（2026-10-08） */
 const discoveryBatch = discovery as unknown as {
+  entrants: EntrantRawRecord[];
+  sources: Phase3RawSource[];
+  relations: Phase3RawRelation[];
+};
+
+/** 投票期間の定期収集（Yahoo!リアルタイム検索）で、本人の出場表明を確認して追加した分（2026-10-27〜） */
+const harvestBatch = harvest as unknown as {
   entrants: EntrantRawRecord[];
   sources: Phase3RawSource[];
   relations: Phase3RawRelation[];
@@ -867,6 +875,6 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
 ];
 
-export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants];
-export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources];
-export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations];
+export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants, ...harvestBatch.entrants];
+export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources];
+export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations];
