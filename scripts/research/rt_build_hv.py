@@ -3,6 +3,7 @@
 import json, re, sys, glob, hashlib, unicodedata
 from collections import Counter, defaultdict
 sys.path.insert(0, ".")
+from place_pref import pref_from_store_name
 from analyze import SHOP_RE, page_kind, title_name_area, PREF_NAME
 REPO = "/home/user/name-missheaven-2026-map"
 a = sys.argv[1:]; ROUNDS = a[:a.index("--")]; FU = a[a.index("--") + 1:]
@@ -11,7 +12,7 @@ key = lambda s: re.sub(r"[\s・･/／、，,.。:：;；!！?？~～〜♡♥�
 nm = lambda s: re.sub(r"(ちゃん|さん|たん)$", "", re.sub(r"[\s・･☆★♡♥❤()（）~～〜♪]", "", n(s)).lower())
 H = lambda s: hashlib.sha256(s.encode()).hexdigest()[:16]
 cu = lambda u: u.split("#")[0].split("?")[0]
-S = json.load(open("nat/snap_now.json")); E = json.load(open("nat/snap_now_entrants.json")); CATS = set(json.load(open("nat/snap_now_cats.json")))
+S = json.load(open("nat/snap_hvbase.json")); E = json.load(open("nat/snap_hvbase_entrants.json")); CATS = set(json.load(open("nat/snap_hvbase_cats.json")))
 byname = defaultdict(dict)
 for s in S:
     for x in [s["name"]] + (s.get("names") or []): byname[key(x)][s["id"]] = s
@@ -86,8 +87,12 @@ for c in cand:
         k = find_key(d["storeName"]); pref = PREF_NAME.get(k.split("/")[0]) if k else None
         pt = pref_full(d.get("prefecture"))
         if pref and pt and pref != pt: excl["pref_conflict"] += 1; continue
-        if not pt: excl["new_store_pref_unconfirmed"] += 1; continue
-        po = dict(note="本人の投稿に都道府県の記載（" + d["prefecture"] + "）")
+        if pt:
+            po = dict(note="本人の投稿に都道府県の記載（" + d["prefecture"] + "）")
+        else:
+            pp = pref_from_store_name(d["storeName"])
+            if not pp: excl["new_store_pref_unconfirmed"] += 1; continue
+            pt = pp[0]; po = dict(note=f"店名中の地名「{pp[1]}」（{pp[0]}にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）")
         pref = pt
         sid = "mh26-sns-store-" + H(k or (key(d["storeName"]) + "|" + pref))
         nmx = next((nmx for nmx, ar in fu[k]["names"] if key(nmx) == key(d["storeName"])), d["storeName"]) if k else d["storeName"]

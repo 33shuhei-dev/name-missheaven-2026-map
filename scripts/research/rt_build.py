@@ -3,6 +3,7 @@
 import json, re, sys, glob, hashlib, unicodedata
 from collections import Counter, defaultdict
 sys.path.insert(0, ".")
+from place_pref import pref_from_store_name
 from analyze import SHOP_RE, page_kind, title_name_area, PREF_NAME
 REPO = "/home/user/name-missheaven-2026-map"
 a = sys.argv[1:]; ROUNDS = a[:a.index("--")]; FU = a[a.index("--") + 1:]
@@ -73,6 +74,9 @@ for c in cand:
         pt = pref_full(d.get("prefecture"))
         if pref and pt and pref != pt: excl["pref_conflict"] += 1; continue
         po = PO.get(d["cid"])
+        if not po and not pt:
+            pp = pref_from_store_name(d["storeName"])
+            if pp: po = dict(pref=pp[0], note=f"店名中の地名「{pp[1]}」（{pp[0]}にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）")
         if not po: excl["new_store_pref_unconfirmed"] += 1; continue
         pref = po["pref"]
         sid = "mh26-sns-store-" + H(k or (key(d["storeName"]) + "|" + pref))
