@@ -16,8 +16,7 @@ import {
 export const metadata: Metadata = { title: "このサイトについて" };
 
 /** 掲載情報の修正・削除の問い合わせ窓口（このサイトを告知・運営している応援用Xアカウント） */
-const CONTACT_X_HANDLE = "@rego0701";
-const CONTACT_X_URL = "https://x.com/rego0701";
+import { CONTACT_X_HANDLE, CONTACT_X_URL } from "@/lib/contact";
 
 export default function AboutPage() {
   return (
@@ -62,6 +61,26 @@ export default function AboutPage() {
           </li>
           <li>人物写真や公式の宣材画像は掲載していません。情報源の全文・画像は複製せず、リンクと必要最小限の事実のみを表示しています。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="listing">
+        <h2>掲載依頼（推しを追加してほしいとき）</h2>
+        <p>
+          このサイトに載っていない出場者は、本人・ファン・お店のどなたからでも掲載依頼を受け付けています。{" "}
+          <a href={CONTACT_X_URL} target="_blank" rel="noopener noreferrer">
+            {CONTACT_X_HANDLE}
+          </a>{" "}
+          のDMに、次の内容を送ってください（外部サイトが開きます）。
+        </p>
+        <ul>
+          <li>出場者の名前（お店での表記）</li>
+          <li>店舗名と都道府県</li>
+          <li>部門名（分かれば。表記どおり）</li>
+          <li>2026年の出場が分かるもの：本人やお店のXの投稿、ヘブンの在籍ページのURLやスクリーンショットなど</li>
+        </ul>
+        <p>
+          内容を確認できたものだけ追加します（本人・お店の発信で2026年の出場が確認できない場合は追加できません）。写真やプロフィールは掲載しません。掲載をやめたいときも同じ連絡先へどうぞ。
+        </p>
       </section>
 
       <section className="section card prose" id="contact">

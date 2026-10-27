@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { ListingRequestCta } from "@/components/ListingRequestCta";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useMemo, useState } from "react";
 import type { Confidence } from "@/data/types";
@@ -174,6 +175,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
           <div className="empty">
             <p>条件に一致する項目はありません。</p>
             <p className="hint">語を短くする、絞り込みを外すなどしてお試しください。掲載していない情報は「存在しない」という意味ではありません。</p>
+            <ListingRequestCta />
           </div>
         ) : (
           <ul className="result-list">

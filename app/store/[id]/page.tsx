@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { ListingRequestCta } from "@/components/ListingRequestCta";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { site } from "@/lib/data";
@@ -276,6 +277,10 @@ export default async function StorePage({ params }: Params) {
           </div>
         </details>
       )}
+
+      <div className="section">
+        <ListingRequestCta compact />
+      </div>
     </>
   );
 }

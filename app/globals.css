@@ -2174,3 +2174,34 @@ p {
     max-width: 560px;
   }
 }
+
+/* 掲載依頼の案内 */
+.listing-cta {
+  margin-top: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--accent-weak);
+  border: 1px solid var(--border);
+  font-size: 0.875rem;
+}
+.listing-cta--compact {
+  padding: 8px 10px;
+}
+.listing-cta__title {
+  margin: 0 0 2px;
+  font-weight: 800;
+  color: var(--accent);
+}
+.listing-cta__body {
+  margin: 0;
+}
+.listing-cta__more {
+  display: inline-block;
+  margin-top: 4px;
+  font-weight: 700;
+}
+@media (min-width: 600px) {
+  .hero-search .listing-cta {
+    max-width: 560px;
+  }
+}

@@ -9,6 +9,7 @@ import { featuredCategories, summarizeCategories } from "@/lib/categories";
 import { CategoryCard } from "@/components/CategoryCard";
 import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 import { SchedulePanel } from "@/components/SchedulePanel";
+import { ListingRequestCta } from "@/components/ListingRequestCta";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -44,6 +45,7 @@ export default function HomePage() {
           </p>
           <SearchBox placeholder="例：ゆず、abc＋、厚木" />
           <p className="hint hint--tight">出場者の名前は、このサイトで確認できた一部です。見つからないときは店舗名や地域でも探せます。</p>
+          <ListingRequestCta compact />
         </div>
         {/* 大会の日程と、いまどの期間か */}
         <SchedulePanel />
