@@ -481,13 +481,13 @@ const manualEntrants: EntrantRawRecord[] = [
     storeId: "mh26-upd-store-0006",
     sourceIds: ["ent-src-0027"],
     evidence:
-      "出場者本人からの掲載依頼（DM、2026年10月27日）に、2026年のミスヘブン総選挙への出場として、名前・店舗名・ヘルス部門が書かれている（本人提供の在籍ページURLあり。出場表明の投稿やノミネートのバッジは未確認。調査側は本文を直接取得していない）",
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「埼玉県」「ヘルス部門 ノミネート」のバッジ（本人提供のスクリーンショットで確認。出場者本人からの掲載依頼（DM）と合わせて確認。調査側は本文を直接取得していない）",
     evidenceDate: "2026-10-27",
     categoryOriginal: "ヘルス部門",
     personalUrl: null,
-    confidence: "unverified",
+    confidence: "probable",
     checkedAt: "2026-10-28",
-    notes: "出場者本人からの掲載依頼を起点に追加（2026-10-28）。運営者の判断で、本人の依頼を根拠として掲載。部門名は依頼文のとおり（バッジの表記は未確認）。プロフィール・写真等は保存していない",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-10-28）。当初はバッジ未確認で掲載し、同日、本人提供のスクリーンショットでノミネートのバッジを確認して信頼度を上げた。部門名はバッジの表記（ヘルス部門）。プロフィール・写真等は保存していない",
   },
 ];
 
@@ -785,13 +785,13 @@ const manualEntrantSources: Phase3RawSource[] = [
   {
     sourceId: "ent-src-0027",
     url: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
-    sourceType: "entrant_social",
-    accessStatus: "user_reported_only",
-    publisherRole: "entrant_page",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
     storeIds: ["mh26-upd-store-0006"],
     relationIds: ["ent-rel-0016"],
     checkedAt: "2026-10-28",
-    notes: "出場者本人から提供された在籍ページのURL（本人からの掲載依頼、2026年10月27日）。出場者本人の依頼を起点に追加",
+    notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（本人からの掲載依頼）で、ノミネートのバッジ（全国ミスヘブン総選挙2026・埼玉県・ヘルス部門）を確認。画像は保存していない。出場者本人の依頼を起点に追加",
   },
 ];
 
@@ -958,7 +958,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     confidence: "unverified",
     sourceIds: ["ent-src-0027"],
     phase1RecordIds: [],
-    notes: "出場者本人の掲載依頼の内容（依頼文の部門名）。ノミネートのバッジは未確認",
+    notes: "在籍ページの画像のバッジの部門表記（出場者本人の掲載依頼のスクリーンショット）",
   },
 ];
 
