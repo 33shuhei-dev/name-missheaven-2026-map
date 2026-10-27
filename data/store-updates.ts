@@ -3,6 +3,7 @@ import national from "./stores/national-2026-10-06.json";
 import finishing from "./stores/finishing-2026-10-06.json";
 import snsFound from "./stores/sns-found-2026-10-08.json";
 import discovery from "./stores/discovery-2026-10-08.json";
+import harvest from "./stores/harvest-2026-10-27.json";
 import type { Phase3RawRelation, Phase3RawSource, Phase3RawStore, StoreListingAreaUpdate, StorePublicUrlUpdate } from "./types";
 
 /** 3都道府県パイロット（大阪府・宮城県・青森県、2026-10-06）の追加分 */
@@ -15,6 +16,15 @@ const pilot3Batch = pilot3 as unknown as {
 
 /** 探索仮説の検証（店舗内の深掘りなど。2026-10-08）の追加分。形は仕上げPhaseと同じ */
 const discoveryBatch = discovery as unknown as {
+  stores: Phase3RawStore[];
+  relations: Phase3RawRelation[];
+  sources: Phase3RawSource[];
+  listingAreaUpdates: StoreListingAreaUpdate[];
+  publicUrlUpdates: StorePublicUrlUpdate[];
+};
+
+/** 投票期間の定期収集（Yahoo!リアルタイム検索）で、本人の出場表明を確認して追加した分（2026-10-27〜） */
+const harvestBatch = harvest as unknown as {
   stores: Phase3RawStore[];
   relations: Phase3RawRelation[];
   sources: Phase3RawSource[];
@@ -201,9 +211,9 @@ const manualSources: Phase3RawSource[] = [
   },
 ];
 
-export const storeUpdates: Phase3RawStore[] = [...manualStores, ...pilot3Batch.stores, ...nationalBatch.stores, ...finishingBatch.stores, ...snsFoundBatch.stores, ...discoveryBatch.stores];
-export const relationUpdates: Phase3RawRelation[] = [...manualRelations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations];
-export const sourceUpdates: Phase3RawSource[] = [...manualSources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources];
+export const storeUpdates: Phase3RawStore[] = [...manualStores, ...pilot3Batch.stores, ...nationalBatch.stores, ...finishingBatch.stores, ...snsFoundBatch.stores, ...discoveryBatch.stores, ...harvestBatch.stores];
+export const relationUpdates: Phase3RawRelation[] = [...manualRelations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations];
+export const sourceUpdates: Phase3RawSource[] = [...manualSources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources];
 
 /**
  * 既存店舗の店舗公開ページURLの補完。元の店舗データ（Phase 3 など）にURLがなく、
@@ -218,10 +228,10 @@ const manualPublicUrlUpdates: StorePublicUrlUpdate[] = [
   },
 ];
 
-export const storePublicUrlUpdates: StorePublicUrlUpdate[] = [...manualPublicUrlUpdates, ...nationalBatch.publicUrlUpdates, ...finishingBatch.publicUrlUpdates, ...snsFoundBatch.publicUrlUpdates, ...discoveryBatch.publicUrlUpdates];
+export const storePublicUrlUpdates: StorePublicUrlUpdate[] = [...manualPublicUrlUpdates, ...nationalBatch.publicUrlUpdates, ...finishingBatch.publicUrlUpdates, ...snsFoundBatch.publicUrlUpdates, ...discoveryBatch.publicUrlUpdates, ...harvestBatch.publicUrlUpdates];
 
 /**
  * 既存店舗の掲載地域の補完。元の店舗データに掲載地域がなく、店舗キー・店名が一致するページの
  * 掲載地域表記から確実に特定できた場合だけ追加する（推測しない。正式選挙エリアとは別）。
  */
-export const storeListingAreaUpdates: StoreListingAreaUpdate[] = [...pilot3Batch.listingAreaUpdates, ...nationalBatch.listingAreaUpdates, ...finishingBatch.listingAreaUpdates, ...snsFoundBatch.listingAreaUpdates, ...discoveryBatch.listingAreaUpdates];
+export const storeListingAreaUpdates: StoreListingAreaUpdate[] = [...pilot3Batch.listingAreaUpdates, ...nationalBatch.listingAreaUpdates, ...finishingBatch.listingAreaUpdates, ...snsFoundBatch.listingAreaUpdates, ...discoveryBatch.listingAreaUpdates, ...harvestBatch.listingAreaUpdates];
