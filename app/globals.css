@@ -2205,3 +2205,67 @@ p {
     max-width: 560px;
   }
 }
+
+/* 掲載依頼の文面づくり（About） */
+.req-form {
+  display: grid;
+  gap: 8px;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.req-form label {
+  display: grid;
+  gap: 2px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.req-form input {
+  width: 100%;
+  min-width: 0;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.req-form__preview {
+  margin: 4px 0 0;
+  padding: 8px 10px;
+  white-space: pre-wrap;
+  word-break: break-all;
+  font-family: inherit;
+  font-size: 0.8125rem;
+  background: var(--navy-weak);
+  border-radius: 8px;
+}
+.req-form__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.req-form__copy,
+.req-form__open {
+  flex: 1 1 200px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+.req-form__copy {
+  border: 0;
+  color: #fff;
+  background: var(--gradient);
+}
+.req-form__open {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  background: var(--surface);
+}

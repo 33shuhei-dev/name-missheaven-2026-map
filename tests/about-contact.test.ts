@@ -24,4 +24,11 @@ describe("このサイトについて：修正・削除の問い合わせ窓口"
     expect(src).toContain("掲載依頼");
     for (const f of ["app/page.tsx", "components/SearchClient.tsx", "app/store/[id]/page.tsx"]) expect(readFileSync(f, "utf8")).toContain("<ListingRequestCta");
   });
+
+  it("掲載依頼の文面づくりは、入力をどこにも送信しない（コピーしてDMに貼る）", () => {
+    const form = readFileSync("components/ListingRequestForm.tsx", "utf8");
+    expect(src).toContain("<ListingRequestForm />");
+    expect(form).toContain("navigator.clipboard.writeText");
+    expect(form).not.toMatch(/fetch\(|XMLHttpRequest|localStorage|sendBeacon/);
+  });
 });
