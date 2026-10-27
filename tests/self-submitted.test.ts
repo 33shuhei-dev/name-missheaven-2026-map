@@ -83,7 +83,9 @@ describe("店舗ページの参加情報の説明文", () => {
 
   it("本人申請で追加した店舗以外のすべての店舗で、説明文は従来と同じ", () => {
     const others = site.stores.filter((s) => s.participationType !== "entrant_self_reported" && s.participationType !== "entrant_sns_reported");
-    expect(others.length).toBe(site.stores.length - site.stores.filter((s) => s.participationType === "entrant_sns_reported").length - 1);
+    const self = site.stores.filter((s) => s.participationType === "entrant_self_reported").length;
+    expect(self).toBeGreaterThanOrEqual(1);
+    expect(others.length).toBe(site.stores.length - site.stores.filter((s) => s.participationType === "entrant_sns_reported").length - self);
     for (const s of others) expect(participationStatusText(s), s.id).toBe(legacy(s));
   });
 

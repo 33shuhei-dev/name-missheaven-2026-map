@@ -421,6 +421,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-06",
     notes: "掲載依頼（第三者）を起点に追加（2026-10-06）。出場表明：本人Xの固定投稿。本人のプロフィール・写真等は保存していない。部門名は、依頼画像で一部が伏字だったが依頼どおり「ソープ部門」とし、既存の「土浦ソ♡プ部門」とは統合していない",
   },
+  // ── 本人申請を起点に追加（2026-10-27）。本人から掲載希望があり、本人Xの固定投稿（スクリーンショット）で出場表明を確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0027",
+    name: "いろは",
+    storeId: "mh26-upd-store-0003",
+    sourceIds: ["ent-src-0025"],
+    evidence:
+      "本人のX（表示名「ゆずいろは」）の2026年9月11日の固定投稿に「《ビジュアル部門》で今年は挑戦します」、添付画像に「全国ミスヘブン総選挙2026」「ビジュアル部門」「いろは」「NOMINATION」（本人提供のスクリーンショットで確認。調査側は投稿本文を直接取得していない）",
+    evidenceDate: "2026-09-11",
+    categoryOriginal: "ビジュアル部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-10-27",
+    notes: "本人申請を起点に追加（2026-10-27）。掲載希望：本人から。出場表明：本人Xの固定投稿。Xのアカウント名はスクリーンショットで途切れていたため記録していない。本人のプロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -691,6 +706,18 @@ const manualEntrantSources: Phase3RawSource[] = [
     notes:
       "本人のXアカウント。固定投稿での本人の出場表明（2026年のミスヘブン総選挙・ピュアコス学園からソープ部門）を、第三者からの掲載依頼の内容として確認。投稿個別のURLは提供されていないため、アカウントのURLを記録。掲載依頼を起点に追加",
   },
+  {
+    sourceId: "ent-src-0025",
+    url: "https://www.cityheaven.net/kumamoto/A4301/A430102/theobroma/girlid-53272511/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0003"],
+    relationIds: ["ent-rel-0014"],
+    checkedAt: "2026-10-27",
+    notes:
+      "本人から提供された在籍ページのURLと、本人Xの固定投稿のスクリーンショット（2026年9月11日、ビジュアル部門で出場表明）。Xのアカウント名は途切れていたため、在籍ページのURLを記録。本人申請を起点に追加",
+  },
 ];
 
 /**
@@ -827,6 +854,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0024"],
     phase1RecordIds: [],
     notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（掲載依頼）",
+  },
+  {
+    relationId: "ent-rel-0014",
+    storeId: "mh26-upd-store-0003",
+    categoryOriginal: "ビジュアル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0025"],
+    phase1RecordIds: [],
+    notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（本人申請）",
   },
 ];
 
