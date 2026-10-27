@@ -173,6 +173,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（第三者）を起点に追加（2026-10-27）。依頼者提供のヘブン在籍ページのURLとスクリーンショットで、在籍ページの画像に「全国ミスヘブン総選挙2026」「岩手県」「岩手デリヘル部門 ノミネート」のバッジを確認。店名は依頼文の「ラブローズ 岩手」と在籍ページのタイトルの「LoveRose」（途中で途切れている）。都道府県・公開ページURLは在籍ページURL（iwate/A0302/A030201/loverose）の表記どおり。部門名は依頼文では「デリヘル部門」だが、バッジの表記「岩手デリヘル部門」を採用。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（第三者）を起点に追加（2026-10-28）。依頼者提供の在籍ページのURLとスクリーンショット（「ミスヘブン出場決定」の表示）で確認 ──
+  {
+    storeId: "mh26-upd-store-0005",
+    storeName: "カナーズ 岐阜本店",
+    storeNameOriginals: ["カナーズ 岐阜本店", "カナーズ", "KANAAAAZ", "ガナーズ"],
+    prefecture: "岐阜県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/gifu/A2101/A210101/yakata/girlid-48942563/",
+    storePublicUrl: "https://www.cityheaven.net/gifu/A2101/A210101/yakata/",
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-10-28",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0006"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（第三者）を起点に追加（2026-10-28）。依頼者提供のヘブン在籍ページのURLとスクリーンショットで、在籍ページに「ミスヘブン出場決定」の表示を確認（年の表記はなく、スクリーンショットは2026年10月23日（金）に撮影されたもの）。店名は在籍ページのロゴの表記「カナーズ KANAAAAZ 岐阜本店」（依頼文では「ガナーズ」。同一の店と判断し、両方を別表記として記録）。都道府県・公開ページURLは在籍ページURL（gifu/A2101/A210101/yakata）の表記どおり。店舗自身の告知・ノミネートのバッジは確認していないため unverified。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -254,6 +279,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: ["upd-rel-0002"],
     checkedAt: "2026-10-27",
     notes: "掲載依頼（第三者）を起点に追加。依頼者提供の在籍ページのURLとスクリーンショットで、ノミネートのバッジ（全国ミスヘブン総選挙2026・岩手県・岩手デリヘル部門）を確認。画像は保存していない。",
+  },
+  {
+    sourceId: "upd-src-0006",
+    url: "https://www.cityheaven.net/gifu/A2101/A210101/yakata/girlid-48942563/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0005"],
+    relationIds: [],
+    checkedAt: "2026-10-28",
+    notes: "掲載依頼（第三者）を起点に追加。依頼者提供の在籍ページのURLと、在籍ページのスクリーンショット（「ミスヘブン出場決定」の表示、店舗ロゴ）。画像は保存していない。",
   },
 ];
 

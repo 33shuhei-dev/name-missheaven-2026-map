@@ -459,6 +459,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-27",
     notes: "掲載依頼（第三者）を起点に追加（2026-10-27）。名前は在籍ページのタイトルの表記「恋羽(こはね」（閉じ括弧が途切れている）と依頼文の「恋羽」による。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（第三者）を起点に追加（2026-10-28）。在籍ページの「ミスヘブン出場決定」の表示（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0029",
+    name: "のあ",
+    storeId: "mh26-upd-store-0005",
+    sourceIds: ["ent-src-0026"],
+    evidence:
+      "ヘブンの在籍ページ（在籍名「のあ~ゴールド~」）に「ミスヘブン出場決定」の表示（掲載依頼のスクリーンショットで確認。年の表記はなく、撮影は2026年10月23日。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-10-23",
+    categoryOriginal: "ソープ部門",
+    personalUrl: null,
+    confidence: "unverified",
+    checkedAt: "2026-10-28",
+    notes: "掲載依頼（第三者）を起点に追加（2026-10-28）。名前は依頼文の「のあ」（在籍名は「のあ~ゴールド~」で、「~ゴールド~」は在籍ページ上の表記）。部門名は依頼文の「ソープ部門」で、スクリーンショットには部門の表記がない。ノミネートのバッジは未確認。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -741,6 +756,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     notes:
       "本人から提供された在籍ページのURLと、本人Xの固定投稿のスクリーンショット（2026年9月11日、ビジュアル部門で出場表明）。Xのアカウント名は途切れていたため、在籍ページのURLを記録。本人申請を起点に追加",
   },
+  {
+    sourceId: "ent-src-0026",
+    url: "https://www.cityheaven.net/gifu/A2101/A210101/yakata/girlid-48942563/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0005"],
+    relationIds: ["ent-rel-0015"],
+    checkedAt: "2026-10-28",
+    notes: "依頼者提供の在籍ページのURLとスクリーンショット（「ミスヘブン出場決定」の表示）。2026年10月23日撮影。掲載依頼を起点に追加",
+  },
 ];
 
 /**
@@ -887,6 +913,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0025"],
     phase1RecordIds: [],
     notes: "出場者の根拠（同じ情報源）に店舗・人物・部門が書かれている（本人申請）",
+  },
+  {
+    relationId: "ent-rel-0015",
+    storeId: "mh26-upd-store-0005",
+    categoryOriginal: "ソープ部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0026"],
+    phase1RecordIds: [],
+    notes: "掲載依頼の内容（依頼文の部門名）。スクリーンショットには部門の表記がなく、ノミネートのバッジは未確認",
   },
 ];
 
