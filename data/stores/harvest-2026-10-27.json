@@ -1,8 +1,174 @@
 {
  "description": "本人SNSの出場表明を検索で見つけて確認し、追加した店舗（2026-10-27、投票期間の定期収集）。本人からの掲載申請ではない。人物名はここに書かない。",
- "stores": [],
+ "stores": [
+  {
+   "storeId": "mh26-sns-store-0fd47827ed6501f3",
+   "storeName": "新宿カルテ",
+   "storeNameOriginals": [
+    "新宿カルテ"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/REN_H_cup/status/2112008758167810053",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-224891f217860658"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「新宿」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-1c56fd08a909717f",
+   "storeName": "福原PREMIUM",
+   "storeNameOriginals": [
+    "福原PREMIUM"
+   ],
+   "prefecture": "兵庫県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/premium_shake/status/2108757536392482850",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-b692678a99274512"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「福原」（兵庫県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-9b31f4e526d61b0c",
+   "storeName": "札幌ぷよぷよ",
+   "storeNameOriginals": [
+    "札幌ぷよぷよ"
+   ],
+   "prefecture": "北海道",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/chichi_huuri/status/2109289376899596439",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-e15948a5d6b229b6"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「札幌」（北海道にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-fe03ca2683c99cdb",
+   "storeName": "雄琴ACE",
+   "storeNameOriginals": [
+    "雄琴ACE"
+   ],
+   "prefecture": "滋賀県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/rM2nyPXvhB2967/status/2109582864543252516",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-a5d17c15883c22f3"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「雄琴」（滋賀県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  }
+ ],
  "relations": [],
- "sources": [],
+ "sources": [
+  {
+   "sourceId": "hv-src-224891f217860658",
+   "url": "https://x.com/REN_H_cup/status/2112008758167810053",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-0fd47827ed6501f3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-b692678a99274512",
+   "url": "https://x.com/premium_shake/status/2108757536392482850",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-1c56fd08a909717f"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-e15948a5d6b229b6",
+   "url": "https://x.com/chichi_huuri/status/2109289376899596439",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-9b31f4e526d61b0c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-a5d17c15883c22f3",
+   "url": "https://x.com/rM2nyPXvhB2967/status/2109582864543252516",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-fe03ca2683c99cdb"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  }
+ ],
  "listingAreaUpdates": [],
  "publicUrlUpdates": []
 }
