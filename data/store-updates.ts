@@ -198,6 +198,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（第三者）を起点に追加（2026-10-28）。依頼者提供のヘブン在籍ページのURLとスクリーンショットで、在籍ページに「ミスヘブン出場決定」の表示を確認（年の表記はなく、スクリーンショットは2026年10月23日（金）に撮影されたもの）。店名は在籍ページのロゴの表記「カナーズ KANAAAAZ 岐阜本店」（依頼文では「ガナーズ」。同一の店と判断し、両方を別表記として記録）。都道府県・公開ページURLは在籍ページURL（gifu/A2101/A210101/yakata）の表記どおり。店舗自身の告知・ノミネートのバッジは確認していないため unverified。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-10-28）。出場表明の投稿・ノミネートのバッジは未確認 ──
+  {
+    storeId: "mh26-upd-store-0006",
+    storeName: "秋葉原コスプレ学園IN西川口",
+    storeNameOriginals: ["秋葉原コスプレ学園IN西川口"],
+    prefecture: "埼玉県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
+    storePublicUrl: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/",
+    sourceType: "entrant_social",
+    confidence: "unverified",
+    participationType: "entrant_request_reported",
+    checkedAt: "2026-10-28",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0007"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者本人からの掲載依頼（DM、2026-10-27）を起点に追加。依頼文に、名前・店舗名（秋葉原コスプレ学園IN西川口）・部門（ヘルス部門）・都道府県（埼玉県）があり、本人が提供した在籍ページのURL（saitama/A1102/A110201/akikosu）で都道府県と店舗ページを確認。出場表明の投稿・ノミネートのバッジは確認できていない（運営者の判断で、本人の依頼を根拠として掲載）。東京都の「秋葉原コスプレ学園」（店舗キー a_maid）とは別の店舗。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -290,6 +315,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-28",
     notes: "掲載依頼（第三者）を起点に追加。依頼者提供の在籍ページのURLと、在籍ページのスクリーンショット（「ミスヘブン出場決定」の表示、店舗ロゴ）。画像は保存していない。",
+  },
+  {
+    sourceId: "upd-src-0007",
+    url: "https://www.cityheaven.net/saitama/A1102/A110201/akikosu/girlid-58859583/",
+    sourceType: "entrant_social",
+    accessStatus: "user_reported_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0006"],
+    relationIds: [],
+    checkedAt: "2026-10-28",
+    notes: "出場者本人から提供された在籍ページのURL（本人からの掲載依頼）。調査側は本文を直接取得していない。出場者本人の依頼を起点に追加",
   },
 ];
 
