@@ -1,7 +1,7 @@
 """投票期間の定期収集：Yahoo!リアルタイム検索（/realtime/。robots.txt で許可）の最新投稿を、キャッシュを使わずに取得して保存する。
 リアルタイム検索は1クエリあたり最新の約600件しか返さないため、投票期間中に数時間おきに実行して、新しい投稿を積み上げる。
 使い方: python3 rt_harvest.py OUT_DIR   （OUT_DIR/harvest_YYYYmmddTHHMM.json に保存。人物名を含むためリポジトリには入れない）
-禁止: search.yahoo.co.jp/search?（通常のWeb検索）は使わない。"""
+禁止: Yahoo!通常のWeb検索（robots.txt で Disallow）は使わない。"""
 import json, os, re, subprocess, sys, time, urllib.parse
 from datetime import datetime, timezone
 
