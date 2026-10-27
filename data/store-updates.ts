@@ -113,6 +113,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "本人申請を起点に追加（2026-10-06）。所属する出場者（恋仲めい）本人から掲載希望があり、本人Xの2026年10月6日の投稿で出場表明を確認。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。正式選挙エリアは未確認。",
   },
+  // ── 本人申請を起点に追加（2026-10-27）。本人から掲載希望があり、本人Xの固定投稿と店舗の在籍ページ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0003",
+    storeName: "THEOBROMA",
+    storeNameOriginals: ["THEOBROMA"],
+    prefecture: "熊本県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/kumamoto/A4301/A430102/theobroma/girlid-53272511/",
+    storePublicUrl: "https://www.cityheaven.net/kumamoto/A4301/A430102/theobroma/",
+    sourceType: "entrant_social",
+    confidence: "unverified",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-10-27",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0004"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "本人申請を起点に追加（2026-10-27）。所属する出場者（いろは）本人から掲載希望があり、本人提供のスクリーンショット（本人Xの固定投稿・ヘブンの在籍ページ）で確認。都道府県・公開ページURLは、本人が提供した在籍ページのURL（kumamoto/A4301/A430102/theobroma）の表記どおり。店名は在籍ページの画像の店舗ロゴの表記「THEOBROMA」（正式な表記が異なる場合は修正する）。店舗自身の告知は確認していないため unverified。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -162,6 +187,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-06",
     notes: "所属する出場者本人のXアカウント。2026年10月6日の本人の出場表明（本人申請の内容）による。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0004",
+    url: "https://www.cityheaven.net/kumamoto/A4301/A430102/theobroma/girlid-53272511/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0003"],
+    relationIds: [],
+    checkedAt: "2026-10-27",
+    notes: "所属する出場者本人から提供された在籍ページのURLとスクリーンショット（本人Xの固定投稿を含む）。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
