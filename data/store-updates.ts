@@ -148,6 +148,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "本人申請を起点に追加（2026-10-27）。所属する出場者（いろは）本人から掲載希望があり、本人提供のスクリーンショット（本人Xの固定投稿・ヘブンの在籍ページ）で確認。都道府県・公開ページURLは、本人が提供した在籍ページのURL（kumamoto/A4301/A430102/theobroma）の表記どおり。店名は在籍ページの画像の店舗ロゴの表記「THEOBROMA」（正式な表記が異なる場合は修正する）。店舗自身の告知は確認していないため unverified。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（第三者）を起点に追加（2026-10-27）。依頼者提供の在籍ページURLとスクリーンショット（ノミネートのバッジ）で確認 ──
+  {
+    storeId: "mh26-upd-store-0004",
+    storeName: "ラブローズ 岩手",
+    storeNameOriginals: ["ラブローズ 岩手", "LoveRose"],
+    prefecture: "岩手県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: "岩手デリヘル部門",
+    categoryOriginals: ["岩手デリヘル部門"],
+    participationEvidenceUrl: "https://www.cityheaven.net/iwate/A0302/A030201/loverose/girlid-66164536/",
+    storePublicUrl: "https://www.cityheaven.net/iwate/A0302/A030201/loverose/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-10-27",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0005"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（第三者）を起点に追加（2026-10-27）。依頼者提供のヘブン在籍ページのURLとスクリーンショットで、在籍ページの画像に「全国ミスヘブン総選挙2026」「岩手県」「岩手デリヘル部門 ノミネート」のバッジを確認。店名は依頼文の「ラブローズ 岩手」と在籍ページのタイトルの「LoveRose」（途中で途切れている）。都道府県・公開ページURLは在籍ページURL（iwate/A0302/A030201/loverose）の表記どおり。部門名は依頼文では「デリヘル部門」だが、バッジの表記「岩手デリヘル部門」を採用。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -160,6 +185,16 @@ const manualRelations: Phase3RawRelation[] = [
     sourceIds: ["upd-src-0001"],
     phase1RecordIds: [],
     notes: "告知バナーの部門表記。店舗の全員がこの部門という意味ではない（バナーの出場者は data/entrant-updates.ts）。",
+  },
+  {
+    relationId: "upd-rel-0002",
+    storeId: "mh26-upd-store-0004",
+    categoryOriginal: "岩手デリヘル部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["upd-src-0005"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）。店舗の全員がこの部門という意味ではない。",
   },
 ];
 
@@ -208,6 +243,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-27",
     notes: "所属する出場者本人から提供された在籍ページのURLとスクリーンショット（本人Xの固定投稿を含む）。画像は保存していない。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0005",
+    url: "https://www.cityheaven.net/iwate/A0302/A030201/loverose/girlid-66164536/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0004"],
+    relationIds: ["upd-rel-0002"],
+    checkedAt: "2026-10-27",
+    notes: "掲載依頼（第三者）を起点に追加。依頼者提供の在籍ページのURLとスクリーンショットで、ノミネートのバッジ（全国ミスヘブン総選挙2026・岩手県・岩手デリヘル部門）を確認。画像は保存していない。",
   },
 ];
 
