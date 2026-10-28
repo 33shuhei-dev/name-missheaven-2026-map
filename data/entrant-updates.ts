@@ -489,6 +489,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-28",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-10-28）。当初はバッジ未確認で掲載し、同日、本人提供のスクリーンショットでノミネートのバッジを確認して信頼度を上げた。部門名はバッジの表記（ヘルス部門）。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-10-28）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0031",
+    name: "さくらこ",
+    storeId: "mh26-sns-store-a38f659d81dbfcd3",
+    sourceIds: ["ent-src-0028"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「茨城県」「デリヘル部門 ノミネート」のバッジ（出場者本人の掲載依頼のスクリーンショットで確認。店舗は「神栖レッドダイヤ」。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-10-28",
+    categoryOriginal: "デリヘル部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-10-28",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-10-28）。部門名はバッジの表記。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -793,6 +808,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-10-28",
     notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（本人からの掲載依頼）で、ノミネートのバッジ（全国ミスヘブン総選挙2026・埼玉県・ヘルス部門）を確認。画像は保存していない。出場者本人の依頼を起点に追加",
   },
+  {
+    sourceId: "ent-src-0028",
+    url: "https://www.cityheaven.net/ibaraki/A0804/A080401/reddiamond/girlid-56904611/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-sns-store-a38f659d81dbfcd3"],
+    relationIds: ["ent-rel-0017"],
+    checkedAt: "2026-10-28",
+    notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（本人からの掲載依頼）で、ノミネートのバッジ（全国ミスヘブン総選挙2026・茨城県・デリヘル部門）を確認。画像は保存していない。出場者本人の依頼を起点に追加",
+  },
 ];
 
 /**
@@ -957,6 +983,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     categoryNormalized: null,
     confidence: "unverified",
     sourceIds: ["ent-src-0027"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（出場者本人の掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0017",
+    storeId: "mh26-sns-store-a38f659d81dbfcd3",
+    categoryOriginal: "デリヘル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0028"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記（出場者本人の掲載依頼のスクリーンショット）",
   },

@@ -327,6 +327,17 @@ const manualSources: Phase3RawSource[] = [
     checkedAt: "2026-10-28",
     notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（本人からの掲載依頼）で、ノミネートのバッジ（全国ミスヘブン総選挙2026・埼玉県・ヘルス部門）を確認。画像は保存していない。出場者本人の依頼を起点に追加",
   },
+  {
+    sourceId: "upd-src-0008",
+    url: "https://www.cityheaven.net/ibaraki/A0804/A080401/reddiamond/girlid-56904611/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-sns-store-a38f659d81dbfcd3"],
+    relationIds: [],
+    checkedAt: "2026-10-28",
+    notes: "出場者（さくらこ）本人から提供された在籍ページのURLとスクリーンショット。店舗名「神栖レッドダイヤ」（デリヘル／神栖市）の在籍ページで、店舗の公開ページのURLを確認。画像は保存していない。",
+  },
 ];
 
 export const storeUpdates: Phase3RawStore[] = [...manualStores, ...pilot3Batch.stores, ...nationalBatch.stores, ...finishingBatch.stores, ...snsFoundBatch.stores, ...discoveryBatch.stores, ...harvestBatch.stores];
@@ -343,6 +354,12 @@ const manualPublicUrlUpdates: StorePublicUrlUpdate[] = [
     storePublicUrl: "https://www.cityheaven.net/kanagawa/A1401/A140103/onemorecoming/",
     sourceIds: ["upd-src-0002"],
     notes: "One More 奥様 横浜関内店。Phase 3b の照合記録による。",
+  },
+  {
+    storeId: "mh26-sns-store-a38f659d81dbfcd3",
+    storePublicUrl: "https://www.cityheaven.net/ibaraki/A0804/A080401/reddiamond/",
+    sourceIds: ["upd-src-0008"],
+    notes: "神栖レッドダイヤ。出場者本人から提供された在籍ページのURL（ibaraki/A0804/A080401/reddiamond）の店舗部分。",
   },
 ];
 
