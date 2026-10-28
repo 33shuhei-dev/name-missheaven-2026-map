@@ -58,6 +58,62 @@
    "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「福原」（兵庫県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-sns-store-32675c68d491d1e6",
+   "storeName": "ぐっどがーる浜松",
+   "storeNameOriginals": [
+    "ぐっどがーる浜松"
+   ],
+   "prefecture": "静岡県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/gg_myuu_/status/2115265159820419270",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-bfc2b77a5eaa2303"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「浜松」（静岡県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-4a224fec51b891e2",
+   "storeName": "丸妻錦糸町店",
+   "storeNameOriginals": [
+    "丸妻錦糸町店"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/oomomo0823/status/2115287853060235493",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-27",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-aaa249454265dcbd"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（2026-10-27。投票期間の定期収集で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「錦糸町」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。所属する出場者本人のSNSに2026年の出場表明があり、その中に店名が書かれていた。店舗自身の告知は確認していないため unverified。店舗の公開ページURL・掲載地域は未確認（推測しない）。都道府県は本人の投稿の記載による。正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-sns-store-9b31f4e526d61b0c",
    "storeName": "札幌ぷよぷよ",
    "storeNameOriginals": [
@@ -137,6 +193,32 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-sns-store-1c56fd08a909717f"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-bfc2b77a5eaa2303",
+   "url": "https://x.com/gg_myuu_/status/2115265159820419270",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-32675c68d491d1e6"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "所属する出場者本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-aaa249454265dcbd",
+   "url": "https://x.com/oomomo0823/status/2115287853060235493",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-4a224fec51b891e2"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-27",

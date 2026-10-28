@@ -2,6 +2,52 @@
  "description": "本人SNSの出場表明を、検索の結果の抜粋で確認して追加した出場者（2026-10-27、投票期間の定期収集）。本人からの掲載申請ではない。部門は原文のまま。",
  "entrants": [
   {
+   "entrantId": "mh26-ent-h-a281a027fa625385",
+   "name": "椿りお",
+   "storeId": "mh26-nat-store-78a977705e2e7afc",
+   "sourceIds": [
+    "ent-src-h-8e5811bc5f96b2db",
+    "ent-src-h-553486c104fb99de"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「レッドベリル🩷椿りお2026ミスヘブン出場💓」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは tokyo/A1317/A131703/redberyl）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/r1o_tsubaki",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-54f073013a74e1df",
+   "name": "愛佳 - あいか",
+   "storeId": "mh26-p3b-store-17e0e0bfd7bcc994",
+   "sourceIds": [
+    "ent-src-h-90658846d45cc0bb"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026 エステ部門　初出場👑」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは hiroshima/A3401/A340101/aroma_ace_hiroshima）",
+   "evidenceDate": null,
+   "categoryOriginal": "エステ部門",
+   "personalUrl": "https://x.com/aromaace_aika",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-h-8b51f67906326109",
+   "name": "ゆあ",
+   "storeId": "mh26-p3b-store-5057d2f09cf8a95c",
+   "sourceIds": [
+    "ent-src-h-19daf3891f330d87"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン投票始まりました！！是非投票お願いします🥹💗  #ミスヘブン総選挙 #ミスヘブン総選挙2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/embrace）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/ED_yua",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
    "entrantId": "mh26-ent-h-a6048ba0f1e0d218",
    "name": "れん",
    "storeId": "mh26-sns-store-0fd47827ed6501f3",
@@ -27,6 +73,36 @@
    "evidenceDate": null,
    "categoryOriginal": "尻フェチ天国部門",
    "personalUrl": "https://x.com/premium_shake",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-h-c1d41c483e30ba6c",
+   "name": "みゅう",
+   "storeId": "mh26-sns-store-32675c68d491d1e6",
+   "sourceIds": [
+    "ent-src-h-bfc2b77a5eaa2303"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン2026 地区予選の投票がスタートです‼️  みゅうはお兄様方からたくさん褒めていただいた自慢のお尻部門でエントリーしてます」",
+   "evidenceDate": null,
+   "categoryOriginal": "お尻部門",
+   "personalUrl": "https://x.com/gg_myuu_",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-27",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-h-de6059611da0a0ae",
+   "name": "大桃",
+   "storeId": "mh26-sns-store-4a224fec51b891e2",
+   "sourceIds": [
+    "ent-src-h-aaa249454265dcbd"
+   ],
+   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026✨  ぽっちゃり部門で参加中の大桃です」",
+   "evidenceDate": null,
+   "categoryOriginal": "ぽっちゃり部門",
+   "personalUrl": "https://x.com/oomomo0823",
    "confidence": "unverified",
    "checkedAt": "2026-10-27",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
@@ -79,6 +155,60 @@
  ],
  "sources": [
   {
+   "sourceId": "ent-src-h-8e5811bc5f96b2db",
+   "url": "https://x.com/r1o_tsubaki/status/2115283323362963893",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-78a977705e2e7afc"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-h-553486c104fb99de",
+   "url": "https://x.com/r1o_tsubaki/status/2115085703705239718",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-78a977705e2e7afc"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-h-90658846d45cc0bb",
+   "url": "https://x.com/aromaace_aika/status/2115284964510204131",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-17e0e0bfd7bcc994"
+   ],
+   "relationIds": [
+    "ent-rel-h-f1a96385f0896985"
+   ],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-h-19daf3891f330d87",
+   "url": "https://x.com/ED_yua/status/2115281740428394764",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-5057d2f09cf8a95c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
    "sourceId": "ent-src-h-224891f217860658",
    "url": "https://x.com/REN_H_cup/status/2112008758167810053",
    "sourceType": "entrant_social",
@@ -102,6 +232,36 @@
    ],
    "relationIds": [
     "ent-rel-h-445938dd57b373d3"
+   ],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-h-bfc2b77a5eaa2303",
+   "url": "https://x.com/gg_myuu_/status/2115265159820419270",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-32675c68d491d1e6"
+   ],
+   "relationIds": [
+    "ent-rel-h-de781c520862b6da"
+   ],
+   "checkedAt": "2026-10-27",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+  },
+  {
+   "sourceId": "ent-src-h-aaa249454265dcbd",
+   "url": "https://x.com/oomomo0823/status/2115287853060235493",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-4a224fec51b891e2"
+   ],
+   "relationIds": [
+    "ent-rel-h-f5582ac4acef2548"
    ],
    "checkedAt": "2026-10-27",
    "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
@@ -154,6 +314,18 @@
  ],
  "relations": [
   {
+   "relationId": "ent-rel-h-f1a96385f0896985",
+   "storeId": "mh26-p3b-store-17e0e0bfd7bcc994",
+   "categoryOriginal": "エステ部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-90658846d45cc0bb"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
    "relationId": "ent-rel-h-445938dd57b373d3",
    "storeId": "mh26-sns-store-1c56fd08a909717f",
    "categoryOriginal": "尻フェチ天国部門",
@@ -161,6 +333,30 @@
    "confidence": "unverified",
    "sourceIds": [
     "ent-src-h-b692678a99274512"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-h-de781c520862b6da",
+   "storeId": "mh26-sns-store-32675c68d491d1e6",
+   "categoryOriginal": "お尻部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-bfc2b77a5eaa2303"
+   ],
+   "phase1RecordIds": [],
+   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+  },
+  {
+   "relationId": "ent-rel-h-f5582ac4acef2548",
+   "storeId": "mh26-sns-store-4a224fec51b891e2",
+   "categoryOriginal": "ぽっちゃり部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-aaa249454265dcbd"
    ],
    "phase1RecordIds": [],
    "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
