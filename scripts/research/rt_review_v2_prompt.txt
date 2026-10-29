@@ -1,0 +1,26 @@
+You are reviewing public X (Twitter) posts about "ミスヘブン総選挙2026" (an annual contest; entrants are sex-industry cast who enter by division/部門). Work ONLY from the data in the input file; do NOT search the web or fetch any URL.
+
+Input: __IN__
+Each item: cid, url, handle, title ("display name (@handle)"), snippet (the post text), postedDate (YYYY-MM-DD), prevReason (why an earlier stricter review rejected it), links (cityheaven.net cast-profile links in the post: key = store path whose first segment is the prefecture slug, prefecture, siteStoreName = our existing store name for that key or null).
+
+CONTEXT: the site is an unofficial fan-made list. The owner has decided to accept weaker (but still explicit) evidence, labelled as such on the site. Accuracy still matters: never guess a name, store or division; never attach a person to a store that is not written in the post.
+
+Write a JSON array to __OUT__ with EXACTLY one object per cid:
+{"cid","accept":true|false,"tier":"own"|"store"|"third","name","storeName","prefecture","category","evidenceQuote","ownerKind","viaKey","linkKey","windowOk","others","reason"}
+
+ACCEPT when ALL are true:
+1. WHO posts (tier):
+   - "own": the entrant herself (her own cast account). ownerKind "own".
+   - "store": a store / group / staff account announcing its own entrant(s) by name. ownerKind "store_staff".
+   - "third": a fan / support / other account that names the entrant AND her store. ownerKind "fan".
+   Official operator accounts (シティヘブンネット, ヘブンTV, ヘブンnavi), media, accounts about a DIFFERENT contest (ミス天国 etc.), and posts that only give generic campaign info with no named entrant -> reject (reason official | other_contest | no_named_entrant).
+2. The post links the named person to the 2026 contest: it says she is entering / nominated / campaigning for votes in ミスヘブン総選挙2026. The text should contain 2026; if it does NOT, set windowOk=true only when postedDate >= 2026-08-01 and the post (or display name) clearly refers to ミスヘブン/the contest for her. Otherwise reject (no_2026_entry).
+3. name: the person's name as written in the text/display name (decorations/emoji/contest labels removed at the ends). A handle alone is not a name. No readable name -> reject (no_name).
+4. Store: the store name must be written in the text/display name (copy as written), OR use a profile link: exactly one link whose siteStoreName is not null -> storeName = siteStoreName, viaKey=true, linkKey=key (own/third tier only when the post is clearly about her). If the store is not stated -> reject (no_store). Never guess from handle or key.
+5. prefecture: link's prefecture if a link was used; else only if written in the text (copy as written); else null (null is allowed: the site shows 地域未判明).
+6. category: division written in the text, copied EXACTLY with its brackets (e.g. 【人妻部門】); null if none.
+7. evidenceQuote: verbatim substring (20–150 chars) of title + " " + snippet containing the entry/vote statement (and the name if possible).
+8. MULTI-PERSON posts (typically store tier): if the post names several entrants of the same store, fill the first as the main object and put the others in "others": [{"name": "...", "category": "..." or null}] (each name must appear verbatim in the text). Otherwise others = [].
+When in doubt about WHO or WHICH STORE -> reject. Reason codes: official | other_contest | no_named_entrant | no_2026_entry | no_name | no_store | multi_store | other.
+
+Before finishing, run a script verifying one object per cid and that each accepted evidenceQuote is a verbatim substring of title+" "+snippet. Reply with counts only (accepted by tier, rejected by reason, with category, viaKey, with others). Do NOT list names.

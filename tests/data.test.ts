@@ -296,7 +296,7 @@ describe("Phase 3 店舗の統合", () => {
     }
   });
   it("県不明の店舗は地図に割り当てない", () => {
-    const unknown = phase3Stores.stores.filter((s) => !s.prefecture).map((s) => s.storeId).sort();
+    const unknown = [...phase3Stores.stores, ...storeUpdates].filter((s) => !s.prefecture).map((s) => s.storeId).sort();
     expect(site.unknownPrefecture!.stores.map((s) => s.id).sort()).toEqual(unknown);
     for (const p of site.prefectures) for (const s of p.stores) expect(s.prefecture).toBe(p.name);
   });
