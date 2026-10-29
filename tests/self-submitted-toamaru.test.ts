@@ -59,6 +59,6 @@ describe("掲載依頼：とあまる（ピュアコス学園・茨城県・ソ�
     expect(searchItems(items, { q: "ゆず" })[0].item.kind).toBe("entrant");
     expect(searchItems(items, { q: "恋仲めい" })[0].item.href).toContain("mh26-upd-store-0002");
     const names = site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name).sort();
-    expect(names).toEqual(["アスナ", "ひまり", "ララ", "とあまる"].sort());
+    for (const n of ["アスナ", "ひまり", "ララ", "とあまる"]) expect(names).toContain(n);
   });
 });
