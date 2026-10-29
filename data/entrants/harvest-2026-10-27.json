@@ -1,5 +1,5 @@
 {
- "description": "本人SNSの出場表明を、検索の結果の抜粋で確認して追加した出場者（2026-10-27、投票期間の定期収集）。本人からの掲載申請ではない。部門は原文のまま。",
+ "description": "投票期間の定期収集で確認して追加した出場者（2026-10-27〜）。部門は原文のまま。",
  "entrants": [
   {
    "entrantId": "mh26-ent-h-b0ab8c521a68be1b",
@@ -8,12 +8,27 @@
    "sourceIds": [
     "ent-src-h-9989294f8745f326"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「今年ありがたいことに「ミスヘブン総選挙2026」にエントリーさせて頂いてます」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは aichi/A2301/A230103/club_moereen）",
+   "evidence": "本人のXに「今年ありがたいことに「ミスヘブン総選挙2026」にエントリーさせて頂いてます」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは aichi/A2301/A230103/club_moereen）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/Dreeeeeeam7",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-500b58cf599ea1f6",
+   "name": "ライ",
+   "storeId": "mh26-fin-store-4fb086bfdffbe742",
+   "sourceIds": [
+    "ent-src-h-4147c57049e844e2"
+   ],
+   "evidence": "本人のXに「ミスヘブン総選挙投票開始です！ 投票ボタンをポチッとお願いします」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは aichi/A2301/A230105/studio-k）（年の表記はないが、投稿日 2026-10-28。投票期間中の投稿）",
+   "evidenceDate": "2026-10-28",
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/rai_mistress",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -23,12 +38,298 @@
    "sourceIds": [
     "ent-src-h-f69955303ee646cf"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「50人の目標に力を貸してください😢 投票よろしくお願いします🙇🏼‍♀️  #ミスヘブン総選挙  #ミスヘブン総選挙2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは tochigi/A0901/A090101/kanojyokan）",
+   "evidence": "本人のXに「50人の目標に力を貸してください😢 投票よろしくお願いします🙇🏼‍♀️  #ミスヘブン総選挙  #ミスヘブン総選挙2026」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは tochigi/A0901/A090101/kanojyokan）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/a_sahi_25",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-13b709442b59675c",
+   "name": "おしおひめみお",
+   "storeId": "mh26-hv-store-05a5bce4470d9b2c",
+   "sourceIds": [
+    "ent-src-h-43fd601f3c4ba4cb"
+   ],
+   "evidence": "本人のXに「#ミスヘブン総選挙2026  今年もエントリーいたします💖」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/Oshiohime_sub",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-62f1059f7156e7ab",
+   "name": "えむ",
+   "storeId": "mh26-hv-store-07c023ff6ec22107",
+   "sourceIds": [
+    "ent-src-h-e1239dc036e634ef"
+   ],
+   "evidence": "本人のXに「むを輝かせてください✨ えいえいおー👾  #ミスヘブン総選挙2026 #ミスヘブン総選挙 https://t … 初めての出場、悔いの残らない結果にしたいので ご主人様方、えむを輝かせてください✨」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/NTR_Mchan",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-e7aeea513acd24f8",
+   "name": "きら",
+   "storeId": "mh26-hv-store-2a249c4b08783383",
+   "sourceIds": [
+    "ent-src-h-d6f94235a6981dc3"
+   ],
+   "evidence": "本人のXに「ニューデリーきらで検索お願いします🤲  #ミスヘブン2026」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/pompoasii",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-8be39461ad63a5a9",
+   "name": "くるみ",
+   "storeId": "mh26-hv-store-5103e860af539548",
+   "sourceIds": [
+    "ent-src-h-f8f3a1f8ce8320a9"
+   ],
+   "evidence": "本人のXに「投票よろしくお願いいたします！  ミスヘブン総選挙2026」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/kurumi_AFG",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-f5ac526219006d68",
+   "name": "れもん",
+   "storeId": "mh26-hv-store-5294468153980533",
+   "sourceIds": [
+    "ent-src-h-ace5632e01c738f1"
+   ],
+   "evidence": "本人のXに「プリンセスエステ👑2026ミスヘブン出場⭐️」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/Puriesu_Lemon",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-c2533d399cfe5938",
+   "name": "kaho",
+   "storeId": "mh26-hv-store-78d157e8030cb1f7",
+   "sourceIds": [
+    "ent-src-h-657a8ab202a4f81e"
+   ],
+   "evidence": "本人のXに「kaho🌱ｱﾈｽﾃ谷9（ﾐｽﾍﾌﾞﾝ2026👑） (@9Anekahooo) いよいよ今日12時から ミスヘブンの投票が始まります」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/9Anekahooo",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-t-e8110ae54ef3d8cd",
+   "name": "半生塩とまと",
+   "storeId": "mh26-hv-store-a61aecc3d058a0b4",
+   "sourceIds": [
+    "ent-src-h-f160a23980c3e3fa"
+   ],
+   "evidence": "第三者（ファンなど）のX投稿に「半生塩とまとが自バズ中らしいです。 そんな彼女を温かく尊い応援よろしくお願いします❕️ 投票開始は10月28日。 #ミスヘブン総選挙2026」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "第三者のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-h-b3136a865d8e20ff",
+   "name": "えみ",
+   "storeId": "mh26-hv-store-ab583dd03b95084e",
+   "sourceIds": [
+    "ent-src-h-1ec1099cb0ec5933"
+   ],
+   "evidence": "本人のXに「ミスヘブン総選挙2026に出場中のマダムの品格のえみと申します」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/emi_madamu",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-2fd59dc3079042ab",
+   "name": "きあら",
+   "storeId": "mh26-hv-store-b4670091adc3014d",
+   "sourceIds": [
+    "ent-src-h-1445f5341adfff9f"
+   ],
+   "evidence": "本人のXに「きあら🌸🎀ミスヘ♡ン2026出場💗 (@ccrkar)」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/ccrkar",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-6c66a16577ccb94c",
+   "name": "愛神",
+   "storeId": "mh26-hv-store-bd12e667872d963a",
+   "sourceIds": [
+    "ent-src-h-b74ba733e6d75ee2"
+   ],
+   "evidence": "本人のXに「愛神🌈ミスヘブン総選挙2026初出場🌈ディアレスト」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/aika_loveminami",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-caced83d9959640e",
+   "name": "神威みさき",
+   "storeId": "mh26-hv-store-bd12e667872d963a",
+   "sourceIds": [
+    "ent-src-h-fa0356401227b259"
+   ],
+   "evidence": "本人のXに「ミスヘブン2026出場します！  私が出る事によってお店の女の子達が」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/toro_kamui",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-77bbc80aa0cac035",
+   "name": "石川あい",
+   "storeId": "mh26-hv-store-be747f4072264689",
+   "sourceIds": [
+    "ent-src-h-55a42e3f9253123d",
+    "ent-src-h-e1e4ad2237f01d38"
+   ],
+   "evidence": "本人のXに「ラピンク 石川あい🫧 ミスヘブン2026出場🫧」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/oir_dobadoba",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-t-53f0b87e9d55d850",
+   "name": "すずはちゃん",
+   "storeId": "mh26-hv-store-c45106816e8270da",
+   "sourceIds": [
+    "ent-src-h-b008e19ac7b015ca"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ピュアコスからもとーぜん 出場してますよ」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-t-830922b1b988cef5",
+   "name": "もあちゃん",
+   "storeId": "mh26-hv-store-c45106816e8270da",
+   "sourceIds": [
+    "ent-src-h-b008e19ac7b015ca"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ピュアコスからもとーぜん 出場してますよ」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-t-19055b4f757b8ed1",
+   "name": "りりあちゃん",
+   "storeId": "mh26-hv-store-c45106816e8270da",
+   "sourceIds": [
+    "ent-src-h-b008e19ac7b015ca"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ピュアコスからもとーぜん 出場してますよ」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-h-d833cb2088fd2da8",
+   "name": "るる",
+   "storeId": "mh26-hv-store-cff91860bf7eba30",
+   "sourceIds": [
+    "ent-src-h-258aa3132784e1a0"
+   ],
+   "evidence": "本人のXに「本日10月28日12:00より、「ミスヘブン総選挙2026」の予選が開始いたしました」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/ruru_goi",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-2ccc4e30b7666930",
+   "name": "ゆ り",
+   "storeId": "mh26-hv-store-d8362294c588909a",
+   "sourceIds": [
+    "ent-src-h-d631f55ecf1071d2"
+   ],
+   "evidence": "本人のXに「@gifu_idol_lab ミスヘブン2026に出場します🫶🏻🌟」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/y__2rll56",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-a62e5b40c1af44ff",
+   "name": "れん",
+   "storeId": "mh26-hv-store-e916245b214d8fe4",
+   "sourceIds": [
+    "ent-src-h-7507b79ab537a9c6"
+   ],
+   "evidence": "本人のXに「本日12:00から投票開始✨ #ミスヘブン総選挙2026  ご協力お願いいたします」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/REN_H_cup",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-a31b7ef981cc413a",
+   "name": "ななせ",
+   "storeId": "mh26-nat-store-14b15ab3b60f6098",
+   "sourceIds": [
+    "ent-src-h-fad57eca2a7c6ef7"
+   ],
+   "evidence": "本人のXに「ミスヘブン投票始まりました🗳️🩵  ⇩の【投票する】ボタンからポチッとしてくれたらとっっっても嬉しいです」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは tokyo/A1317/A131703/gohoubispa-g）（年の表記はないが、投稿日 2026-10-28。投票期間中の投稿）",
+   "evidenceDate": "2026-10-28",
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/gohoubi__nanase",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -40,12 +341,12 @@
     "ent-src-h-553486c104fb99de",
     "ent-src-h-2e591cd8b479289a"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「レッドベリル🩷椿りお2026ミスヘブン出場💓」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは tokyo/A1317/A131703/redberyl）",
+   "evidence": "本人のXに「レッドベリル🩷椿りお2026ミスヘブン出場💓」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは tokyo/A1317/A131703/redberyl）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/r1o_tsubaki",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -55,12 +356,12 @@
    "sourceIds": [
     "ent-src-h-37bf1221bb892842"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026 投票始まってます🗳️🩷✊🏻 みんな投票よろしくお願いします‼︎」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは saitama/A1101/A110101/fuyajyou）",
+   "evidence": "本人のXに「ミスヘブン総選挙2026 投票始まってます🗳️🩷✊🏻 みんな投票よろしくお願いします‼︎」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは saitama/A1101/A110101/fuyajyou）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/rurutanne_",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -70,12 +371,12 @@
    "sourceIds": [
     "ent-src-h-a535e1c0dd63e1e0"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「秘密のななしちゃん👼🏻🦋/ミスヘブン2026エントリー」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは ibaraki/A0801/A080101/bunny-mito）",
+   "evidence": "本人のXに「秘密のななしちゃん👼🏻🦋/ミスヘブン2026エントリー」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは ibaraki/A0801/A080101/bunny-mito）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/osaka_nanashi01",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -85,12 +386,12 @@
    "sourceIds": [
     "ent-src-h-f334ccafee941c47"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「本日〜投票スタート！📣💗  応援よろしくお願いします🙌🏻🙌🏻  #ミスヘブン総選挙2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは shiga/A2501/A250101/dm_gyakubunny）",
+   "evidence": "本人のXに「本日〜投票スタート！📣💗  応援よろしくお願いします🙌🏻🙌🏻  #ミスヘブン総選挙2026」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは shiga/A2501/A250101/dm_gyakubunny）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/NANOHA_chann",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -100,12 +401,12 @@
    "sourceIds": [
     "ent-src-h-7a59c8cac33ef2ed"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「今年初めてエントリーしたのでドキドキ💓  応援してもらうからには1位めざしますꉂꉂ📣  🍑白桃🍑   #ミスヘブン総選挙2026」",
+   "evidence": "本人のXに「今年初めてエントリーしたのでドキドキ💓  応援してもらうからには1位めざしますꉂꉂ📣  🍑白桃🍑   #ミスヘブン総選挙2026」",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/8dmWH2ABVYdjaTU",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -115,12 +416,12 @@
    "sourceIds": [
     "ent-src-h-decddadafd9dce41"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「TjVW0xC   #ミスヘブン総選挙  #ミスヘブン総選挙2026  #ミスヘブン https://t.co … ミスヘブンセクキャバ部門です🎀 投票よろしくお願いします💗」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/forest_memory）",
+   "evidence": "本人のXに「TjVW0xC   #ミスヘブン総選挙  #ミスヘブン総選挙2026  #ミスヘブン https://t.co … ミスヘブンセクキャバ部門です🎀 投票よろしくお願いします💗」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/forest_memory）",
    "evidenceDate": null,
    "categoryOriginal": "セクキャバ部門",
    "personalUrl": "https://x.com/mo7_ciii",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -130,12 +431,12 @@
    "sourceIds": [
     "ent-src-h-90658846d45cc0bb"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026 エステ部門　初出場👑」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは hiroshima/A3401/A340101/aroma_ace_hiroshima）",
+   "evidence": "本人のXに「ミスヘブン総選挙2026 エステ部門　初出場👑」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは hiroshima/A3401/A340101/aroma_ace_hiroshima）",
    "evidenceDate": null,
    "categoryOriginal": "エステ部門",
    "personalUrl": "https://x.com/aromaace_aika",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -145,12 +446,52 @@
    "sourceIds": [
     "ent-src-h-83d04d487dddabcf"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「投票してくださると嬉しいです💖 #ミスヘブン2026」",
+   "evidence": "本人のXに「投票してくださると嬉しいです💖 #ミスヘブン2026」",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/emiri07__",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-1a766cc18f5c0fa6",
+   "name": "彩姫一花",
+   "storeId": "mh26-p3b-store-222284db1628c098",
+   "sourceIds": [
+    "ent-src-h-760e5cc5f142cfa2",
+    "ent-src-h-0a3e73e9b8df3f19",
+    "ent-src-h-4675de55328e7682",
+    "ent-src-h-ca0e0dff8dff8471",
+    "ent-src-h-2d1d1582f4aa75c1",
+    "ent-src-h-97010ab900dc6f46",
+    "ent-src-h-c0f42d2234144318",
+    "ent-src-h-f9a78b70c7bbf7bd",
+    "ent-src-h-4b9b210b321e1336",
+    "ent-src-h-d59067a577835e2c",
+    "ent-src-h-18f96e78220d9f7b"
+   ],
+   "evidence": "本人のXに「#ミスヘブン総選挙2026 #ミスヘブン総選挙2026お姉さん部門 #鶯谷デリヘル」",
+   "evidenceDate": null,
+   "categoryOriginal": "お姉さん部門",
+   "personalUrl": "https://x.com/ayaki1018ichika",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-h-d97b5e3474aaf71f",
+   "name": "さえ",
+   "storeId": "mh26-p3b-store-25e02fb6cca292f5",
+   "sourceIds": [
+    "ent-src-h-97a6d1708100b7db"
+   ],
+   "evidence": "本人のXに「熊本 アイコレクション女学院 さえです🖤  ぜひ投票お願いします」（年の表記はないが、投稿日 2026-10-28。投票期間中の投稿）",
+   "evidenceDate": "2026-10-28",
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/saeicjogakuin",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -160,12 +501,12 @@
    "sourceIds": [
     "ent-src-h-19daf3891f330d87"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン投票始まりました！！是非投票お願いします🥹💗  #ミスヘブン総選挙 #ミスヘブン総選挙2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/embrace）",
+   "evidence": "本人のXに「ミスヘブン投票始まりました！！是非投票お願いします🥹💗  #ミスヘブン総選挙 #ミスヘブン総選挙2026」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/embrace）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/ED_yua",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -175,12 +516,12 @@
    "sourceIds": [
     "ent-src-h-1e33517ef3db0ceb"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026年 店長イチオシ部門出場してます」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは hokkaido/A0109/A010901/platinumclub-k）",
+   "evidence": "本人のXに「ミスヘブン総選挙2026年 店長イチオシ部門出場してます」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは hokkaido/A0109/A010901/platinumclub-k）",
    "evidenceDate": null,
    "categoryOriginal": "店長イチオシ部門",
    "personalUrl": "https://x.com/nya___0oo",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -190,12 +531,12 @@
    "sourceIds": [
     "ent-src-h-b9effc0c9d4c2bfd"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン投票よろしくお願いいたします🙇‍♀️  #ミスヘブン2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは saitama/A1102/A110201/supercrystal）",
+   "evidence": "本人のXに「ミスヘブン投票よろしくお願いいたします🙇‍♀️  #ミスヘブン2026」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは saitama/A1102/A110201/supercrystal）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/yn_723_kt",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -205,12 +546,27 @@
    "sourceIds": [
     "ent-src-h-c7d06db2fe420e4a"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「まなみ♡ミスヘブン総選挙2026 (@opwpw_zZ) ミスヘブン地方予選の投票が始まりました」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは osaka/A2702/A270202/level1）",
+   "evidence": "本人のXに「まなみ♡ミスヘブン総選挙2026 (@opwpw_zZ) ミスヘブン地方予選の投票が始まりました」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは osaka/A2702/A270202/level1）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/opwpw_zZ",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-h-c7442519b27445a8",
+   "name": "あい",
+   "storeId": "mh26-sns-store-0056c7b8e23dc7c1",
+   "sourceIds": [
+    "ent-src-h-83b2d57164772da6"
+   ],
+   "evidence": "本人のXに「ミスヘブン総選挙 投票開始しました✨ お手持ちのチケットはここに挿れてください♡ 応援よろしくお願いします😘   #ミスヘブン2026   #クラブバニー雄琴  #あい」",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/aiai____bunny",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -220,12 +576,12 @@
    "sourceIds": [
     "ent-src-h-469bc1f214aed04e"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「アマブー見守り係🍀ミスヘブン総選挙2026大阪🩷巨乳部門」",
+   "evidence": "本人のXに「アマブー見守り係🍀ミスヘブン総選挙2026大阪🩷巨乳部門」",
    "evidenceDate": null,
    "categoryOriginal": "巨乳部門",
    "personalUrl": "https://x.com/momokasannonaka",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -235,12 +591,12 @@
    "sourceIds": [
     "ent-src-h-224891f217860658"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「/28-です  よろしくおねがいします  #ミスヘブン総選挙2026 https://t.co/ac2SmXz … 【ミスヘブン総選挙🏆】 本年新宿カルテより　出場㊗️」",
+   "evidence": "本人のXに「/28-です  よろしくおねがいします  #ミスヘブン総選挙2026 https://t.co/ac2SmXz … 【ミスヘブン総選挙🏆】 本年新宿カルテより　出場㊗️」",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/REN_H_cup",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -250,12 +606,12 @@
    "sourceIds": [
     "ent-src-h-b692678a99274512"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「しゃけ@ミス天国総選挙2026 (@premium_shake) はじめ … 福原PREMIUMから【尻フェチ天国部門】として出場させていただきます」",
+   "evidence": "本人のXに「しゃけ@ミス天国総選挙2026 (@premium_shake) はじめ … 福原PREMIUMから【尻フェチ天国部門】として出場させていただきます」",
    "evidenceDate": null,
    "categoryOriginal": "尻フェチ天国部門",
    "personalUrl": "https://x.com/premium_shake",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -265,12 +621,12 @@
    "sourceIds": [
     "ent-src-h-bfc2b77a5eaa2303"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン2026 地区予選の投票がスタートです‼️  みゅうはお兄様方からたくさん褒めていただいた自慢のお尻部門でエントリーしてます」",
+   "evidence": "本人のXに「ミスヘブン2026 地区予選の投票がスタートです‼️  みゅうはお兄様方からたくさん褒めていただいた自慢のお尻部門でエントリーしてます」",
    "evidenceDate": null,
    "categoryOriginal": "お尻部門",
    "personalUrl": "https://x.com/gg_myuu_",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -280,13 +636,185 @@
    "sourceIds": [
     "ent-src-h-aaa249454265dcbd"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026✨  ぽっちゃり部門で参加中の大桃です」",
+   "evidence": "本人のXに「ミスヘブン総選挙2026✨  ぽっちゃり部門で参加中の大桃です」",
    "evidenceDate": null,
    "categoryOriginal": "ぽっちゃり部門",
    "personalUrl": "https://x.com/oomomo0823",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-0f261444480db40e",
+   "name": "かのん",
+   "storeId": "mh26-sns-store-544c4e15afcffa63",
+   "sourceIds": [
+    "ent-src-h-068acb549821345d"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ティアモから【美尻美脚部門】にエントリーの4名！」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "美尻美脚部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-ce5534d963c9ac02",
+   "name": "こはる",
+   "storeId": "mh26-sns-store-544c4e15afcffa63",
+   "sourceIds": [
+    "ent-src-h-068acb549821345d"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ティアモから【美尻美脚部門】にエントリーの4名！」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "美尻美脚部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-9236ca2f93d67d52",
+   "name": "ひなの",
+   "storeId": "mh26-sns-store-544c4e15afcffa63",
+   "sourceIds": [
+    "ent-src-h-068acb549821345d"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ティアモから【美尻美脚部門】にエントリーの4名！」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "美尻美脚部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-74ab2d8e38efdc23",
+   "name": "れい",
+   "storeId": "mh26-sns-store-544c4e15afcffa63",
+   "sourceIds": [
+    "ent-src-h-068acb549821345d"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「ミスヘブン2026 ティアモから【美尻美脚部門】にエントリーの4名！」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "美尻美脚部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-91db0da884205f85",
+   "name": "音羽ゆゆ",
+   "storeId": "mh26-sns-store-5cbf3322db45d51a",
+   "sourceIds": [
+    "ent-src-h-7c7d12b8a243a3f4",
+    "ent-src-h-d9ee72e61fa4453f",
+    "ent-src-h-c0e9afadc949d7c3"
+   ],
+   "evidence": "第三者（ファンなど）のX投稿に「#小林るる  #池袋ファインモーション #ミスヘブン総選挙2026 #池袋 https://t.co/Fco … 音羽ゆゆちゃん 総選挙初参戦で狙うは神15👑 応援📣よろしくお願いします」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "第三者のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-t-807e951803dfc20f",
+   "name": "夢色あやか",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "sourceIds": [
+    "ent-src-h-1641331726783070",
+    "ent-src-h-cd8030e1c02d1fa8"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「#ミスヘブン総選挙2026 #発掘隠れ美女部門 夢色あやかさん」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "発掘隠れ美女部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-66fc4d0908960285",
+   "name": "天使ひなり",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "sourceIds": [
+    "ent-src-h-7cdb8b44a1fc5449",
+    "ent-src-h-cd8030e1c02d1fa8"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「#ミスヘブン総選挙2026 #大分出張型部門  天使ひなりさん」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "大分出張型部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-75e81f8a0ef9073c",
+   "name": "愛咲みずほ",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "sourceIds": [
+    "ent-src-h-93aea33d9c04e70f",
+    "ent-src-h-cd8030e1c02d1fa8"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「#ミスヘブン総選挙2026 #発掘隠れ美女部門  愛咲みずほさん」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "発掘隠れ美女部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-ce202c0cfaf82974",
+   "name": "星咲クロエ",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "sourceIds": [
+    "ent-src-h-47e1f2006beaa729",
+    "ent-src-h-cd8030e1c02d1fa8"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「#ミスヘブン総選挙2026 #大分出張型部門  星咲クロエさん」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "大分出張型部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-f5214adbd38c8935",
+   "name": "松井あいな",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "sourceIds": [
+    "ent-src-h-dfd909dc81d23193",
+    "ent-src-h-cd8030e1c02d1fa8"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「#ミスヘブン総選挙2026 #大分出張型部門  松井あいなさん」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": "大分出張型部門",
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-bb0349e4d50be157",
+   "name": "緋色",
+   "storeId": "mh26-sns-store-6384b03f765df596",
+   "sourceIds": [
+    "ent-src-h-6a2f40ae47c4b0c1"
+   ],
+   "evidence": "第三者（ファンなど）のX投稿に「っしゃいましたら 投票お願い致します🙌  #ミスヘブン総選挙2026  #ミスヘブン総選挙 https://t … 千葉　お姉さん人妻部門 西船橋　丸妻　緋色さん 投票しても良いよと言う方」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "第三者のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
   },
   {
    "entrantId": "mh26-ent-h-5ceb740239481273",
@@ -296,12 +824,12 @@
     "ent-src-h-cb3da81a70170ecd",
     "ent-src-h-9e8862c94f56d480"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「傾奇通すのでお付き合いください🙏  #ミスヘブン総選挙2026」",
+   "evidence": "本人のXに「傾奇通すのでお付き合いください🙏  #ミスヘブン総選挙2026」",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/55ma1ma1",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -311,13 +839,28 @@
    "sourceIds": [
     "ent-src-h-e059f61a9121fa54"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン2026  投票スタートしてます🤝🏻❤️‍🔥 少しでも投票して下さると嬉しいです」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/n_clover）",
+   "evidence": "本人のXに「ミスヘブン2026  投票スタートしてます🤝🏻❤️‍🔥 少しでも投票して下さると嬉しいです」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは fukuoka/A4001/A400102/n_clover）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/cclover_azusa",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-t-c8156dc04f42fb30",
+   "name": "南星聖来",
+   "storeId": "mh26-sns-store-85cc144495a63b3b",
+   "sourceIds": [
+    "ent-src-h-4557c754fc55b7c2"
+   ],
+   "evidence": "第三者（ファンなど）のX投稿に「https://t.co/mqFWAHGrzp #ミスヘブン2026 #ミスヘブン総選挙2026 #南星聖来 … 大阪・ブレンダ難波🐙 【難波のおてんば姫　南星聖来】  去年悔しい思いをしてこの1年間走り続けてる姿を見てると応援しなくちゃと…🥹 投票🗳️お願いします」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "第三者のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
   },
   {
    "entrantId": "mh26-ent-h-1b384d7afe12250e",
@@ -326,27 +869,61 @@
    "sourceIds": [
     "ent-src-h-e15948a5d6b229b6"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「🎐ふうり🍎ミスヘブン2026出場 (@chichi_huuri) 👑✨ … ぽっちゃり部門に『ふうり（札幌ぷよぷよ）』が出場します！」",
+   "evidence": "本人のXに「🎐ふうり🍎ミスヘブン2026出場 (@chichi_huuri) 👑✨ … ぽっちゃり部門に『ふうり（札幌ぷよぷよ）』が出場します！」",
    "evidenceDate": null,
    "categoryOriginal": "ぽっちゃり部門",
    "personalUrl": "https://x.com/chichi_huuri",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-h-9ad4a2a11b94e712",
+   "name": "まき",
+   "storeId": "mh26-sns-store-a2c77b5549b09725",
+   "sourceIds": [
+    "ent-src-h-4a640b6ee986dd7b"
+   ],
+   "evidence": "本人のXに「今日からミスヘブン投票スタート🗳️京都のジュエルから出てるよ」（年の表記はないが、投稿日 2026-10-28。投票期間中の投稿）",
+   "evidenceDate": "2026-10-28",
+   "categoryOriginal": null,
+   "personalUrl": "https://x.com/a0e4nx",
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
+  },
+  {
+   "entrantId": "mh26-ent-t-870f52a477f44496",
+   "name": "水嶋ねね",
+   "storeId": "mh26-sns-store-b24b1643d7707599",
+   "sourceIds": [
+    "ent-src-h-a446727b7517d48c",
+    "ent-src-h-9f6904d510b98067",
+    "ent-src-h-b78f42e3c425f9ac"
+   ],
+   "evidence": "第三者（ファンなど）のX投稿に「貴重な1票をぜひお願いします🙏 #ミスヘブン総選挙2026 #ミスヘブン #水嶋ねね」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "第三者のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
   },
   {
    "entrantId": "mh26-ent-h-298853fb6eac9264",
    "name": "ももか",
    "storeId": "mh26-sns-store-dd52b692de4bcd19",
    "sourceIds": [
-    "ent-src-h-87976e5bd3041e6b"
+    "ent-src-h-87976e5bd3041e6b",
+    "ent-src-h-4b3edf00460371c5",
+    "ent-src-h-bc172b2356cf7823"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「50人投票してもらえたら次のステップに進めるので、是非投票お願いします✨ #福原ソープ #ミスヘブン総選挙2026」（同じ投稿群に、本人のプロフィールページへのリンクがあり、店舗パスは hyogo/A2801/A280101/zone_kobe）",
+   "evidence": "本人のXに「50人投票してもらえたら次のステップに進めるので、是非投票お願いします✨ #福原ソープ #ミスヘブン総選挙2026」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは hyogo/A2801/A280101/zone_kobe）",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/momoca_ZONE",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -357,12 +934,12 @@
     "ent-src-h-1ebce0a13c961295",
     "ent-src-h-77d2152d68aacbb6"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブンエントリーしたからには精一杯頑張りたいので投票してくれたら嬉しいです😌🫶応援よろしくお願いします🙇🏻‍♀️ #ミスヘブン#ミスヘブン総選挙2026」",
+   "evidence": "本人のXに「ミスヘブンエントリーしたからには精一杯頑張りたいので投票してくれたら嬉しいです😌🫶応援よろしくお願いします🙇🏻‍♀️ #ミスヘブン#ミスヘブン総選挙2026」",
    "evidenceDate": null,
    "categoryOriginal": null,
    "personalUrl": "https://x.com/heijyominami",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）"
   },
   {
@@ -372,12 +949,12 @@
    "sourceIds": [
     "ent-src-h-a5d17c15883c22f3"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「ミスヘブン総選挙2026💖  🐹雄琴ACE もな🐹  【ソープ部門】」",
+   "evidence": "本人のXに「ミスヘブン総選挙2026💖  🐹雄琴ACE もな🐹  【ソープ部門】」",
    "evidenceDate": null,
    "categoryOriginal": "ソープ部門",
    "personalUrl": "https://x.com/rM2nyPXvhB2967",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -388,12 +965,12 @@
     "ent-src-h-fdf165b646b68f8c",
     "ent-src-h-3042d5c88feaa444"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「🦋全国ミスヘブン総選挙2026  🦋地方予選  🦋極嬢部門  🦋KOBE GOLD」",
+   "evidence": "本人のXに「🦋全国ミスヘブン総選挙2026  🦋地方予選  🦋極嬢部門  🦋KOBE GOLD」",
    "evidenceDate": null,
    "categoryOriginal": "極嬢部門",
    "personalUrl": "https://x.com/__RYO__chan",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   },
   {
@@ -403,13 +980,58 @@
    "sourceIds": [
     "ent-src-h-685de172faf4b29d"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「応援よろしくお願いします🦋˚✧₊⁎⁎⁺˳✧༚ #ミスヘブン総選挙2026」",
+   "evidence": "本人のXに「応援よろしくお願いします🦋˚✧₊⁎⁎⁺˳✧༚ #ミスヘブン総選挙2026」",
    "evidenceDate": null,
    "categoryOriginal": "極嬢部門",
    "personalUrl": "https://x.com/GOLDzanachi",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
+  },
+  {
+   "entrantId": "mh26-ent-t-64d8304b8c33282a",
+   "name": "ともちん",
+   "storeId": "mh26-store-a7403750a263dd98",
+   "sourceIds": [
+    "ent-src-h-07f602a4579b3cd1"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「店長早崎 (@bijinlab_226) 【ミスヘブン総選挙2026👑】 🔥最大41000ポイント配布🔥  ✨ … 当店からは屈指の人気を誇る5名がエントリー✨   『ゆらのパリジェンヌさん』」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-t-bffa66d55d6012f6",
+   "name": "四代目いくら総長",
+   "storeId": "mh26-store-a7403750a263dd98",
+   "sourceIds": [
+    "ent-src-h-07f602a4579b3cd1"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「店長早崎 (@bijinlab_226) 【ミスヘブン総選挙2026👑】 🔥最大41000ポイント配布🔥  ✨ … 当店からは屈指の人気を誇る5名がエントリー✨   『ゆらのパリジェンヌさん』」（出場者本人の投稿ではない）",
+   "evidenceDate": null,
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
+  },
+  {
+   "entrantId": "mh26-ent-t-0dabfb1b281311fe",
+   "name": "あかりちゃん",
+   "storeId": "mh26-store-e44a56a769ae3fcd",
+   "sourceIds": [
+    "ent-src-h-29b8d0799f4554f5"
+   ],
+   "evidence": "店舗（または所属グループ）のX投稿に「皆様応援宜しくお願い致します🥺🤲 ＃ピュアコス #ミスヘブン」（同じ投稿に、プロフィールページへのリンクがあり、店舗パスは ibaraki/A0802/A080202/purecos）（年の表記はないが、投稿日 2026-10-28。投票期間中の投稿）（出場者本人の投稿ではない）",
+   "evidenceDate": "2026-10-28",
+   "categoryOriginal": null,
+   "personalUrl": null,
+   "confidence": "unverified",
+   "checkedAt": "2026-10-29",
+   "notes": "店舗のXの投稿で出場を確認（出場者本人の投稿ではない。未確認）"
   },
   {
    "entrantId": "mh26-ent-h-83f2b627294e70f3",
@@ -418,12 +1040,12 @@
    "sourceIds": [
     "ent-src-h-59ffdd6561fe7736"
    ],
-   "evidence": "本人のX（プロフィール・投稿）に「夜民すずは ミス2026 (@__yoruminn) ミスヘブン投票お願いします」",
+   "evidence": "本人のXに「夜民すずは ミス2026 (@__yoruminn) ミスヘブン投票お願いします」",
    "evidenceDate": null,
    "categoryOriginal": "店長イチオシ部門",
    "personalUrl": "https://x.com/__yoruminn",
    "confidence": "unverified",
-   "checkedAt": "2026-10-27",
+   "checkedAt": "2026-10-29",
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。店舗×部門関係は同じ根拠から追加（entrantRelations）"
   }
  ],
@@ -438,8 +1060,21 @@
     "mh26-fin-store-1ae1c5ac69d87f80"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4147c57049e844e2",
+   "url": "https://x.com/rai_mistress/status/2115300298126438682",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-fin-store-4fb086bfdffbe742"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-f69955303ee646cf",
@@ -451,8 +1086,242 @@
     "mh26-fin-store-607b0d9fed802f90"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-43fd601f3c4ba4cb",
+   "url": "https://x.com/Oshiohime_sub/status/2093922748628410467",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-05a5bce4470d9b2c"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-e1239dc036e634ef",
+   "url": "https://x.com/NTR_Mchan/status/2115218967925264728",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-07c023ff6ec22107"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-d6f94235a6981dc3",
+   "url": "https://x.com/pompoasii/status/2115295495359008870",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-2a249c4b08783383"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-f8f3a1f8ce8320a9",
+   "url": "https://x.com/kurumi_AFG/status/2115436131634586044",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-5103e860af539548"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-ace5632e01c738f1",
+   "url": "https://x.com/Puriesu_Lemon/status/2115396022352617665",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-5294468153980533"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-657a8ab202a4f81e",
+   "url": "https://x.com/9Anekahooo/status/2115217244016021752",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-78d157e8030cb1f7"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-f160a23980c3e3fa",
+   "url": "https://x.com/sp_aienka/status/2110368937779376460",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-hv-store-a61aecc3d058a0b4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-1ec1099cb0ec5933",
+   "url": "https://x.com/emi_madamu/status/2115531956540887534",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-ab583dd03b95084e"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-1445f5341adfff9f",
+   "url": "https://x.com/ccrkar/status/2112868380504125891",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-b4670091adc3014d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-b74ba733e6d75ee2",
+   "url": "https://x.com/aika_loveminami/status/2115446819589369973",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-bd12e667872d963a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-fa0356401227b259",
+   "url": "https://x.com/toro_kamui/status/2090096711188578622",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-bd12e667872d963a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-55a42e3f9253123d",
+   "url": "https://x.com/oir_dobadoba/status/2113633469087760800",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-be747f4072264689"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-e1e4ad2237f01d38",
+   "url": "https://x.com/oir_dobadoba/status/2111029647437967869",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-be747f4072264689"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-b008e19ac7b015ca",
+   "url": "https://x.com/h3LfoFUDp44ewcy/status/2115440906769981649",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-hv-store-c45106816e8270da"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-258aa3132784e1a0",
+   "url": "https://x.com/ruru_goi/status/2115322600511709628",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-cff91860bf7eba30"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-d631f55ecf1071d2",
+   "url": "https://x.com/y__2rll56/status/2087114216805417340",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-d8362294c588909a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-7507b79ab537a9c6",
+   "url": "https://x.com/REN_H_cup/status/2115276304098722299",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-e916245b214d8fe4"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-fad57eca2a7c6ef7",
+   "url": "https://x.com/gohoubi__nanase/status/2115375748072763514",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-nat-store-14b15ab3b60f6098"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-8e5811bc5f96b2db",
@@ -464,8 +1333,8 @@
     "mh26-nat-store-78a977705e2e7afc"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-553486c104fb99de",
@@ -477,8 +1346,8 @@
     "mh26-nat-store-78a977705e2e7afc"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-2e591cd8b479289a",
@@ -490,8 +1359,8 @@
     "mh26-nat-store-78a977705e2e7afc"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-37bf1221bb892842",
@@ -503,8 +1372,8 @@
     "mh26-nat-store-8368c2f1006eb2f6"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-a535e1c0dd63e1e0",
@@ -516,8 +1385,8 @@
     "mh26-nat-store-8864d38a09a1f978"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-f334ccafee941c47",
@@ -529,8 +1398,8 @@
     "mh26-nat-store-8ec15ee288b2d376"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-7a59c8cac33ef2ed",
@@ -542,8 +1411,8 @@
     "mh26-nat-store-ace23a5b0e30e722"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-decddadafd9dce41",
@@ -557,8 +1426,8 @@
    "relationIds": [
     "ent-rel-h-b23ea756ea51a2a2"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-90658846d45cc0bb",
@@ -572,8 +1441,8 @@
    "relationIds": [
     "ent-rel-h-f1a96385f0896985"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-83d04d487dddabcf",
@@ -585,8 +1454,178 @@
     "mh26-p3b-store-1a05461f46c00e0e"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-760e5cc5f142cfa2",
+   "url": "https://x.com/ayaki1018ichika/status/2114304453004451850",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-0a3e73e9b8df3f19",
+   "url": "https://x.com/ayaki1018ichika/status/2113251253304365233",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4675de55328e7682",
+   "url": "https://x.com/ayaki1018ichika/status/2113185231306142038",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-ca0e0dff8dff8471",
+   "url": "https://x.com/ayaki1018ichika/status/2112753662384800127",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-2d1d1582f4aa75c1",
+   "url": "https://x.com/ayaki1018ichika/status/2111212476054536611",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-97010ab900dc6f46",
+   "url": "https://x.com/ayaki1018ichika/status/2110688047260135658",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-c0f42d2234144318",
+   "url": "https://x.com/ayaki1018ichika/status/2109036089252225127",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-f9a78b70c7bbf7bd",
+   "url": "https://x.com/ayaki1018ichika/status/2108747809549844614",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4b9b210b321e1336",
+   "url": "https://x.com/ayaki1018ichika/status/2108726909710594070",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-d59067a577835e2c",
+   "url": "https://x.com/ayaki1018ichika/status/2108412824490008826",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-18f96e78220d9f7b",
+   "url": "https://x.com/ayaki1018ichika/status/2115477495596412981",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-222284db1628c098"
+   ],
+   "relationIds": [
+    "ent-rel-h-a957ddfff2e277d4"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-97a6d1708100b7db",
+   "url": "https://x.com/saeicjogakuin/status/2115458359583527034",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-p3b-store-25e02fb6cca292f5"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-19daf3891f330d87",
@@ -598,8 +1637,8 @@
     "mh26-p3b-store-5057d2f09cf8a95c"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-1e33517ef3db0ceb",
@@ -613,8 +1652,8 @@
    "relationIds": [
     "ent-rel-h-633e9618d4674952"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-b9effc0c9d4c2bfd",
@@ -626,8 +1665,8 @@
     "mh26-p3b-store-f03cc27e2c8f1a07"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-c7d06db2fe420e4a",
@@ -639,8 +1678,21 @@
     "mh26-pl3-store-b2e2342782a1c564"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-83b2d57164772da6",
+   "url": "https://x.com/aiai____bunny/status/2115278760559943768",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-0056c7b8e23dc7c1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-469bc1f214aed04e",
@@ -654,8 +1706,8 @@
    "relationIds": [
     "ent-rel-h-0e504e35f4891ee9"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-224891f217860658",
@@ -667,8 +1719,8 @@
     "mh26-sns-store-0fd47827ed6501f3"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-b692678a99274512",
@@ -682,8 +1734,8 @@
    "relationIds": [
     "ent-rel-h-445938dd57b373d3"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-bfc2b77a5eaa2303",
@@ -697,8 +1749,8 @@
    "relationIds": [
     "ent-rel-h-de781c520862b6da"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-aaa249454265dcbd",
@@ -712,8 +1764,165 @@
    "relationIds": [
     "ent-rel-h-f5582ac4acef2548"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-068acb549821345d",
+   "url": "https://x.com/3110_tiamo/status/2113062403340689693",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-544c4e15afcffa63"
+   ],
+   "relationIds": [
+    "ent-rel-h-3bd3a07b0e7b03f9"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-7c7d12b8a243a3f4",
+   "url": "https://x.com/tarachan104/status/2114233500127932830",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-5cbf3322db45d51a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-d9ee72e61fa4453f",
+   "url": "https://x.com/tarachan104/status/2112010969673298033",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-5cbf3322db45d51a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-c0e9afadc949d7c3",
+   "url": "https://x.com/tarachan104/status/2115312347187425533",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-5cbf3322db45d51a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-1641331726783070",
+   "url": "https://x.com/FirstClass_0901/status/2111741093897465946",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-f3126d3223623bd3"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-cd8030e1c02d1fa8",
+   "url": "https://x.com/FirstClass_0901/status/2111741506449281494",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-79adab4b0ca06191"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-7cdb8b44a1fc5449",
+   "url": "https://x.com/FirstClass_0901/status/2111740453519593964",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-79adab4b0ca06191"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-93aea33d9c04e70f",
+   "url": "https://x.com/FirstClass_0901/status/2111740803576201692",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-f3126d3223623bd3"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-47e1f2006beaa729",
+   "url": "https://x.com/FirstClass_0901/status/2111739959531233342",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-79adab4b0ca06191"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-dfd909dc81d23193",
+   "url": "https://x.com/FirstClass_0901/status/2111739566675968465",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [
+    "ent-rel-h-79adab4b0ca06191"
+   ],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-6a2f40ae47c4b0c1",
+   "url": "https://x.com/SPA03729741/status/2115623873542783386",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-6384b03f765df596"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
   },
   {
    "sourceId": "ent-src-h-cb3da81a70170ecd",
@@ -725,8 +1934,8 @@
     "mh26-sns-store-639b5fc4c6cf08f6"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-9e8862c94f56d480",
@@ -738,8 +1947,8 @@
     "mh26-sns-store-639b5fc4c6cf08f6"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-e059f61a9121fa54",
@@ -751,8 +1960,21 @@
     "mh26-sns-store-75a0c9aaf8db4dc9"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4557c754fc55b7c2",
+   "url": "https://x.com/hama_kazu25/status/2115371766038347871",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-85cc144495a63b3b"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
   },
   {
    "sourceId": "ent-src-h-e15948a5d6b229b6",
@@ -766,8 +1988,60 @@
    "relationIds": [
     "ent-rel-h-a273a5d2aa0ea12d"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4a640b6ee986dd7b",
+   "url": "https://x.com/a0e4nx/status/2115289273390035033",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-a2c77b5549b09725"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-a446727b7517d48c",
+   "url": "https://x.com/Wonderful6104/status/2110340538469609720",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-b24b1643d7707599"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-9f6904d510b98067",
+   "url": "https://x.com/Wonderful6104/status/2109434127283798258",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-b24b1643d7707599"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-b78f42e3c425f9ac",
+   "url": "https://x.com/Wonderful6104/status/2115413838254276834",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-b24b1643d7707599"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
   },
   {
    "sourceId": "ent-src-h-87976e5bd3041e6b",
@@ -779,8 +2053,34 @@
     "mh26-sns-store-dd52b692de4bcd19"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-4b3edf00460371c5",
+   "url": "https://x.com/momoca_ZONE/status/2115439185981251889",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-dd52b692de4bcd19"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-bc172b2356cf7823",
+   "url": "https://x.com/momoca_ZONE/status/2115477399764898021",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-dd52b692de4bcd19"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-1ebce0a13c961295",
@@ -792,8 +2092,8 @@
     "mh26-sns-store-f46458389164ed8a"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-77d2152d68aacbb6",
@@ -805,8 +2105,8 @@
     "mh26-sns-store-f46458389164ed8a"
    ],
    "relationIds": [],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-a5d17c15883c22f3",
@@ -820,8 +2120,8 @@
    "relationIds": [
     "ent-rel-h-4e76dc11f6324688"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-fdf165b646b68f8c",
@@ -835,8 +2135,8 @@
    "relationIds": [
     "ent-rel-h-1e988513fd33a1a2"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-3042d5c88feaa444",
@@ -850,8 +2150,8 @@
    "relationIds": [
     "ent-rel-h-1e988513fd33a1a2"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
    "sourceId": "ent-src-h-685de172faf4b29d",
@@ -865,8 +2165,34 @@
    "relationIds": [
     "ent-rel-h-1e988513fd33a1a2"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "ent-src-h-07f602a4579b3cd1",
+   "url": "https://x.com/bijinlab_226/status/2115395186889302342",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-store-a7403750a263dd98"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "ent-src-h-29b8d0799f4554f5",
+   "url": "https://x.com/h3LfoFUDp44ewcy/status/2115449845444214804",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-store-e44a56a769ae3fcd"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。出場者本人の投稿ではなく、未確認の情報"
   },
   {
    "sourceId": "ent-src-h-59ffdd6561fe7736",
@@ -880,8 +2206,8 @@
    "relationIds": [
     "ent-rel-h-709ad9d6d3d00f58"
    ],
-   "checkedAt": "2026-10-27",
-   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明（本人SNSで出場確認）"
+   "checkedAt": "2026-10-29",
+   "notes": "本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可されたXの公開投稿の検索）の結果で確認（投票期間の定期収集）。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   }
  ],
  "relations": [
@@ -895,7 +2221,7 @@
     "ent-src-h-decddadafd9dce41"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-f1a96385f0896985",
@@ -907,7 +2233,25 @@
     "ent-src-h-90658846d45cc0bb"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
+  },
+  {
+   "relationId": "ent-rel-h-a957ddfff2e277d4",
+   "storeId": "mh26-p3b-store-222284db1628c098",
+   "categoryOriginal": "お姉さん部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-760e5cc5f142cfa2",
+    "ent-src-h-0a3e73e9b8df3f19",
+    "ent-src-h-4675de55328e7682",
+    "ent-src-h-ca0e0dff8dff8471",
+    "ent-src-h-2d1d1582f4aa75c1",
+    "ent-src-h-97010ab900dc6f46",
+    "ent-src-h-18f96e78220d9f7b"
+   ],
+   "phase1RecordIds": [],
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-633e9618d4674952",
@@ -919,7 +2263,7 @@
     "ent-src-h-1e33517ef3db0ceb"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-0e504e35f4891ee9",
@@ -931,7 +2275,7 @@
     "ent-src-h-469bc1f214aed04e"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-445938dd57b373d3",
@@ -943,7 +2287,7 @@
     "ent-src-h-b692678a99274512"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-de781c520862b6da",
@@ -955,7 +2299,7 @@
     "ent-src-h-bfc2b77a5eaa2303"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-f5582ac4acef2548",
@@ -967,7 +2311,47 @@
     "ent-src-h-aaa249454265dcbd"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
+  },
+  {
+   "relationId": "ent-rel-h-3bd3a07b0e7b03f9",
+   "storeId": "mh26-sns-store-544c4e15afcffa63",
+   "categoryOriginal": "美尻美脚部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-068acb549821345d"
+   ],
+   "phase1RecordIds": [],
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿ではない・未確認）"
+  },
+  {
+   "relationId": "ent-rel-h-f3126d3223623bd3",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "categoryOriginal": "発掘隠れ美女部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-1641331726783070",
+    "ent-src-h-93aea33d9c04e70f"
+   ],
+   "phase1RecordIds": [],
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿ではない・未確認）"
+  },
+  {
+   "relationId": "ent-rel-h-79adab4b0ca06191",
+   "storeId": "mh26-sns-store-615bff80641320e3",
+   "categoryOriginal": "大分出張型部門",
+   "categoryNormalized": null,
+   "confidence": "unverified",
+   "sourceIds": [
+    "ent-src-h-7cdb8b44a1fc5449",
+    "ent-src-h-cd8030e1c02d1fa8",
+    "ent-src-h-47e1f2006beaa729",
+    "ent-src-h-dfd909dc81d23193"
+   ],
+   "phase1RecordIds": [],
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿ではない・未確認）"
   },
   {
    "relationId": "ent-rel-h-a273a5d2aa0ea12d",
@@ -979,7 +2363,7 @@
     "ent-src-h-e15948a5d6b229b6"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-4e76dc11f6324688",
@@ -991,7 +2375,7 @@
     "ent-src-h-a5d17c15883c22f3"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-1e988513fd33a1a2",
@@ -1005,7 +2389,7 @@
     "ent-src-h-685de172faf4b29d"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   },
   {
    "relationId": "ent-rel-h-709ad9d6d3d00f58",
@@ -1017,7 +2401,7 @@
     "ent-src-h-59ffdd6561fe7736"
    ],
    "phase1RecordIds": [],
-   "notes": "出場者本人のSNS（同じ情報源）に店舗・人物・部門が書かれている（検索で見つけた本人の出場表明）"
+   "notes": "同じ情報源に店舗・人物・部門が書かれている（出場者本人の投稿）"
   }
  ]
 }
