@@ -51,3 +51,14 @@ describe("米澤ちひろ：本人のページのリンク", () => {
     expect(rec.personalUrl).toBe("https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/girlid-63884920/?lo=1");
   });
 });
+
+describe("掲載依頼：ななみ（風神会館・東京都・ギャル（白・黒）部門）", () => {
+  it("1店舗1名。バッジ確認（probable）、既存の部門表記に合わせる", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0008")!;
+    expect(store.name).toBe("風神会館");
+    expect(store.prefectureName).toBe("東京都");
+    expect(store.categoryOriginals).toContain("ギャル（白・黒）部門");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ななみ"]);
+    expect(entrantUpdates.find((e) => e.entrantId === "mh26-ent-0036")!.confidence).toBe("probable");
+  });
+});

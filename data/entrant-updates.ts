@@ -562,6 +562,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-30",
     notes: "掲載依頼を起点に追加。名前・店名は共有リンクのタイトルの表記。部門名はバッジにも依頼にもないため空欄（「ニューヒロイン」を部門名とは断定しない）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-10-30）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0036",
+    name: "ななみ",
+    storeId: "mh26-upd-store-0008",
+    sourceIds: ["ent-src-0032"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「ギャル(白・黒)部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-10-30",
+    categoryOriginal: "ギャル（白・黒）部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼を起点に追加（2026-10-30）。名前は在籍ページのタイトル「ななみ蛇舌神業AV女優」の先頭の名前部分「ななみ」（続く「蛇舌神業AV女優」はキャッチフレーズと判断。タイトルの原文は上記のとおり）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -910,6 +925,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-10-30",
     notes: "掲載依頼者から提供されたGoogle共有リンク（リンク先は未確認）。掲載依頼を起点に追加",
   },
+  {
+    sourceId: "ent-src-0032",
+    url: "https://share.google/sG9b7GOn9lCllDOyg",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0008"],
+    relationIds: ["ent-rel-0022"],
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ）とGoogle共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1126,6 +1152,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0030"],
     phase1RecordIds: [],
     notes: "掲載依頼の内容（依頼文の部門名）。ノミネートのバッジは未確認",
+  },
+  {
+    relationId: "ent-rel-0022",
+    storeId: "mh26-upd-store-0008",
+    categoryOriginal: "ギャル（白・黒）部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0032"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
