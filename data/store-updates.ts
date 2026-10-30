@@ -248,6 +248,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（DM、2026-10-30）を起点に追加。依頼者提供の「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」のGoogle共有リンクのタイトルによる（リンク先の店舗ページは未確認）。都道府県は、掲載地域の表記「梅田・北新地」が大阪府にしかない地名であることから判断（店名には都道府県の記載なし）。その後、依頼者提供のスクリーンショットで在籍ページの画像に「全国ミスヘブン総選挙2026」「ニューヒロイン エントリー中」のバッジを確認したため probable（部門名の表記はなく、部門は未確認）。店舗ページのURLは推測しない。正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-10-30）。在籍ページの画像のノミネートのバッジ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0008",
+    storeName: "風神会館",
+    storeNameOriginals: ["風神会館"],
+    prefecture: "東京都",
+    listingArea: "新宿・歌舞伎町",
+    listingAreas: ["新宿・歌舞伎町"],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://share.google/sG9b7GOn9lCllDOyg",
+    storePublicUrl: null,
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-10-30",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0010"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（DM、2026-10-30）を起点に追加。依頼者提供のスクリーンショット（在籍ページのタイトル「「ななみ蛇舌神業AV女優」風神会館 - 新宿・歌舞伎町/デリヘル｜シティヘブンネット」）で店名・掲載地域・業態を確認し、在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「ギャル(白・黒)部門 ノミネート」のバッジを確認。部門名は既存の「ギャル（白・黒）部門」の表記に合わせた。依頼者提供のリンクはGoogleの共有リンクで、店舗ページのURL自体は未確認（推測しない）。調査環境からは本文を直接確認していないため probable。正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -373,6 +398,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-30",
     notes: "掲載依頼者から提供されたGoogle共有リンク（タイトル「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」）。リンク先は未確認。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0010",
+    url: "https://share.google/sG9b7GOn9lCllDOyg",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0008"],
+    relationIds: [],
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・東京都・ギャル(白・黒)部門）とGoogle共有リンク。リンク先は未確認。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
