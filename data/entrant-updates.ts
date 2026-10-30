@@ -577,6 +577,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-30",
     notes: "掲載依頼を起点に追加（2026-10-30）。名前は在籍ページのタイトル「ななみ蛇舌神業AV女優」の先頭の名前部分「ななみ」（続く「蛇舌神業AV女優」はキャッチフレーズと判断。タイトルの原文は上記のとおり）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-10-30）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0037",
+    name: "Otone",
+    storeId: "mh26-upd-store-0009",
+    sourceIds: ["ent-src-0033"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「神奈川県」「高級嬢」のバッジ（掲載依頼のスクリーンショットで確認。部門の文字は一部しか写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-10-30",
+    categoryOriginal: "高級嬢部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼を起点に追加（2026-10-30）。名前は依頼文と在籍ページのタイトルの表記。部門名は依頼文の「高級嬢」とバッジの表記に「部門」を付けたもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -936,6 +951,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-10-30",
     notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ）とGoogle共有リンク（リンク先は未確認）。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0033",
+    url: "https://share.google/pw0YHU4m3qgtsOucI",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0009"],
+    relationIds: ["ent-rel-0023"],
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ）とGoogle共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1162,6 +1188,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0032"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0023",
+    storeId: "mh26-upd-store-0009",
+    categoryOriginal: "高級嬢部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0033"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記と依頼文（掲載依頼のスクリーンショット）",
   },
 ];
 
