@@ -47,10 +47,11 @@ describe("全国展開：店舗", () => {
 describe("全国展開：出場者", () => {
   const added = entrantUpdates.filter((e) => /^mh26-ent-[nf]-/.test(e.entrantId));
 
-  it("根拠に2026年（または2026年の日付）があり、情報源はその店舗のもの・個人URLは入れない", () => {
+  it("根拠に2026年（または2026年の日付）があり、情報源はその店舗のもの・個人URLは原則なし（本人の更新依頼で入れたものだけ）", () => {
     for (const e of added) {
       expect(e.evidence.includes("2026") || /^2026-(08|09|10)-/.test(e.evidenceDate ?? ""), e.entrantId).toBe(true);
-      expect(e.personalUrl ?? null).toBeNull();
+      // 個人URLは原則なし。本人からの更新依頼で、本人のページ（自分の情報源と同じURL）を入れたものだけ許す
+      if (e.personalUrl) expect(e.sourceIds.map((sid) => entrantSources.find((s) => s.sourceId === sid)?.url), e.entrantId).toContain(e.personalUrl);
       for (const sid of e.sourceIds) expect(entrantSources.find((s) => s.sourceId === sid)!.storeIds).toContain(e.storeId);
     }
   });
