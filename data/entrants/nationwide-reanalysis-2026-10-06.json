@@ -3226,15 +3226,16 @@
    "name": "なな",
    "storeId": "mh26-p3b-store-0f4795227312effb",
    "sourceIds": [
-    "ent-src-1216"
+    "ent-src-1216",
+    "ent-src-0030"
    ],
    "evidence": "本人のページに「ミスヘブン2026にエントリーします👑 ... 続きを見る 2026/9/10」",
    "evidenceDate": null,
-   "categoryOriginal": null,
+   "categoryOriginal": "もてなし癒し女子部門",
    "personalUrl": null,
    "confidence": "unverified",
    "checkedAt": "2026-10-05",
-   "notes": null
+   "notes": "部門名は店舗の担当者からの掲載依頼（2026-10-30、依頼文の表記）で補完。ノミネートのバッジは未確認"
   },
   {
    "entrantId": "mh26-ent-1216",
