@@ -514,7 +514,7 @@ const manualEntrants: EntrantRawRecord[] = [
       "掲載依頼（DM）の依頼文に、名前・店舗（華椿・東京都）・部門（お姉さん部門）の記載。依頼者提供の在籍ページのURL（tokyo/A1324/A132401/87tsubaki）で店舗と都道府県を確認（出場の表示・ノミネートのバッジは未確認。調査側は本文を直接取得していない）",
     evidenceDate: "2026-10-30",
     categoryOriginal: "お姉さん部門",
-    personalUrl: null,
+    personalUrl: "https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/girlid-63884920/?lo=1",
     confidence: "unverified",
     checkedAt: "2026-10-30",
     notes: "掲載依頼（2026-10-30）を起点に追加。名前は依頼文と在籍ページのタイトルの表記「米澤ちひろ」。部門名は依頼文の表記。店舗は既存の「華椿」（東京都・同じ店舗キー）。プロフィール・写真等は保存していない",
@@ -879,7 +879,7 @@ const manualEntrantSources: Phase3RawSource[] = [
   },
   {
     sourceId: "ent-src-0029",
-    url: "https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/girlid-63884920/",
+    url: "https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/girlid-63884920/?lo=1",
     sourceType: "store",
     accessStatus: "user_screenshot_only",
     publisherRole: "store_announcement",

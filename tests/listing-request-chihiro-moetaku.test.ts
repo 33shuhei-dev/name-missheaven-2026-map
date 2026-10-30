@@ -44,3 +44,10 @@ describe("掲載依頼：はな（エコ梅田店・大阪府）", () => {
     expect(rec.categoryOriginal).toBeNull();
   });
 });
+
+describe("米澤ちひろ：本人のページのリンク", () => {
+  it("依頼者指定のURL（?lo=1付き）を本人のページとして設定", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0032")!;
+    expect(rec.personalUrl).toBe("https://www.cityheaven.net/tokyo/A1324/A132401/87tsubaki/girlid-63884920/?lo=1");
+  });
+});
