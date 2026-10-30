@@ -547,6 +547,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-10-30",
     notes: "店舗の担当者からの掲載依頼（2026-10-30）を起点に追加。名前・部門名は依頼文の表記どおり。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-10-30）。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0035",
+    name: "はな",
+    storeId: "mh26-upd-store-0007",
+    sourceIds: ["ent-src-0031"],
+    evidence:
+      "掲載依頼（DM、2026-10-30）で提供されたヘブンの在籍ページのタイトル「「はな」エコ梅田店 - 梅田・北新地/ホテヘル」（Google共有リンク）。出場の表示・ノミネートのバッジ・部門は未確認。調査側は本文を直接取得していない",
+    evidenceDate: "2026-10-30",
+    categoryOriginal: null,
+    personalUrl: null,
+    confidence: "unverified",
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼を起点に追加。名前・店名は共有リンクのタイトルの表記。部門は依頼からは不明。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -883,6 +898,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0019", "ent-rel-0020", "ent-rel-0021"],
     checkedAt: "2026-10-30",
     notes: "店舗の担当者から提供された掲載依頼（DM）のスクリーンショット。リンクはGoogleの共有リンク（店舗ページ未確認）。画像は保存していない",
+  },
+  {
+    sourceId: "ent-src-0031",
+    url: "https://share.google/yWqPfsdcaakuZPXVH",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0007"],
+    relationIds: [],
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼者から提供されたGoogle共有リンク（リンク先は未確認）。掲載依頼を起点に追加",
   },
 ];
 

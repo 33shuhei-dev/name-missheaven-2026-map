@@ -223,6 +223,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者本人からの掲載依頼（DM、2026-10-27）を起点に追加。依頼文に名前・店舗名（秋葉原コスプレ学園IN西川口）・部門（ヘルス部門）・都道府県（埼玉県）があり、本人が提供した在籍ページのURL（saitama/A1102/A110201/akikosu）で都道府県と店舗ページを確認。その後（2026-10-28）、本人提供の在籍ページのスクリーンショットで、画像に「全国ミスヘブン総選挙2026」「埼玉県」「ヘルス部門 ノミネート」のバッジを確認した。調査環境からは本文を直接確認していないため probable。東京都の「秋葉原コスプレ学園」（店舗キー a_maid）とは別の店舗。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-10-30）。出場の表示・部門は未確認 ──
+  {
+    storeId: "mh26-upd-store-0007",
+    storeName: "エコ梅田店",
+    storeNameOriginals: ["エコ梅田店"],
+    prefecture: "大阪府",
+    listingArea: "梅田・北新地",
+    listingAreas: ["梅田・北新地"],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://share.google/yWqPfsdcaakuZPXVH",
+    storePublicUrl: null,
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-10-30",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0009"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（DM、2026-10-30）を起点に追加。依頼者提供の「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」のGoogle共有リンクのタイトルによる（リンク先の店舗ページは未確認）。都道府県は、掲載地域の表記「梅田・北新地」が大阪府にしかない地名であることから判断（店名には都道府県の記載なし）。出場の表示・ノミネートのバッジ・部門は未確認のため unverified。店舗ページのURLは推測しない。正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -337,6 +362,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-28",
     notes: "出場者（さくらこ）本人から提供された在籍ページのURLとスクリーンショット。店舗名「神栖レッドダイヤ」（デリヘル／神栖市）の在籍ページで、店舗の公開ページのURLを確認。画像は保存していない。",
+  },
+  {
+    sourceId: "upd-src-0009",
+    url: "https://share.google/yWqPfsdcaakuZPXVH",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0007"],
+    relationIds: [],
+    checkedAt: "2026-10-30",
+    notes: "掲載依頼者から提供されたGoogle共有リンク（タイトル「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」）。リンク先は未確認。掲載依頼を起点に追加",
   },
 ];
 
