@@ -62,3 +62,16 @@ describe("掲載依頼：ななみ（風神会館・東京都・ギャル（白�
     expect(entrantUpdates.find((e) => e.entrantId === "mh26-ent-0036")!.confidence).toBe("probable");
   });
 });
+
+describe("掲載依頼：Otone（THE PREMIUM・神奈川県・高級嬢部門）", () => {
+  it("1店舗1名。バッジ確認（probable）。店舗ページURLは推測しない", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0009")!;
+    expect(store.name).toBe("THE PREMIUM");
+    expect(store.prefectureName).toBe("神奈川県");
+    expect(store.storePublicUrl ?? null).toBeNull();
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["Otone"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0037")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("高級嬢部門");
+  });
+});
