@@ -30,6 +30,62 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-hv-store-068887a7804ba0f1",
+   "storeName": "SEKUHARA GROUP",
+   "storeNameOriginals": [
+    "SEKUHARA GROUP"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/PO_yutaeru/status/2115971953211183309",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-d46d386986311c8f"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-074243dc7e44baa1",
+   "storeName": "ビッグバード",
+   "storeNameOriginals": [
+    "ビッグバード"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/Chihiro_big/status/2115719192116916263",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-1158746db1251d1e"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-hv-store-07c023ff6ec22107",
    "storeName": "ドキドキNTR生電話",
    "storeNameOriginals": [
@@ -52,6 +108,90 @@
    "isNewSincePhase1": true,
    "sourceIds": [
     "hv-src-e1239dc036e634ef"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-18930cd6e6908564",
+   "storeName": "広島シャーベット別館",
+   "storeNameOriginals": [
+    "広島シャーベット別館"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/nozomiko1021/status/2115813046912450883",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-46f39124d43b4615"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-1da59cbb086d6dfd",
+   "storeName": "都城ちゃんこ",
+   "storeNameOriginals": [
+    "都城ちゃんこ"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/Miya5Chanko/status/2115720217515241940",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-936f3502f0b69039"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-261e7b5438a85ab5",
+   "storeName": "マリンスノウ",
+   "storeNameOriginals": [
+    "マリンスノウ"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/sg8lz/status/2115753593441816973",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-57ca24d720bd7ad0"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -86,6 +226,37 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-hv-store-4b11ec0421df6782",
+   "storeName": "ベガス",
+   "storeNameOriginals": [
+    "ベガス"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/airi_awaawa/status/2115654609922634097",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-4f040177fcb176ca",
+    "hv-src-1528564db1843c33",
+    "hv-src-5bca54d72b61e65c",
+    "hv-src-710a47fcac23fe9d"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-hv-store-5103e860af539548",
    "storeName": "あふたーすくーる本店",
    "storeNameOriginals": [
@@ -114,6 +285,34 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-hv-store-51fe583443dffd37",
+   "storeName": "学園天国",
+   "storeNameOriginals": [
+    "学園天国"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/Erena_Gakuen510/status/2115848359546413370",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-4e066199d49f3936"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-hv-store-5294468153980533",
    "storeName": "プリンセスエステ",
    "storeNameOriginals": [
@@ -135,7 +334,93 @@
    "phase2RecordIds": [],
    "isNewSincePhase1": true,
    "sourceIds": [
-    "hv-src-ace5632e01c738f1"
+    "hv-src-ace5632e01c738f1",
+    "hv-src-3d6f329de4ebc945"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-5e98eb859c8f9629",
+   "storeName": "オキニ東京",
+   "storeNameOriginals": [
+    "オキニ東京"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/alice_okini/status/2115744937027498193",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-0b27c89b474d744f",
+    "hv-src-fe93674709ad79c3"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-60b676634945b277",
+   "storeName": "搾精研究所",
+   "storeNameOriginals": [
+    "搾精研究所"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/am__sakusei/status/2115698753541967981",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-21292839e20b19d2"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-67b3b5d565cda4fb",
+   "storeName": "町田Ring4C",
+   "storeNameOriginals": [
+    "町田Ring4C"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/ring_kou/status/2115987546278867388",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-78f4b1645b7cc0c9"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -163,7 +448,8 @@
    "phase2RecordIds": [],
    "isNewSincePhase1": true,
    "sourceIds": [
-    "hv-src-657a8ab202a4f81e"
+    "hv-src-657a8ab202a4f81e",
+    "hv-src-ab67a36b0a4f8bbb"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -396,6 +682,34 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-hv-store-e570f75d5ad96a07",
+   "storeName": "シルクハット栄町",
+   "storeNameOriginals": [
+    "シルクハット栄町"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/risarisa_9rk/status/2115720183210000674",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-1c2b22261c8fe37b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-hv-store-e916245b214d8fe4",
    "storeName": "おっぱい屋",
    "storeNameOriginals": [
@@ -418,6 +732,54 @@
    "isNewSincePhase1": true,
    "sourceIds": [
     "hv-src-7507b79ab537a9c6"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-hv-store-fca3695eeb571cbe",
+   "storeName": "IRIS一宮店",
+   "storeNameOriginals": [
+    "IRIS一宮店"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/rabe225/status/2115684054326792661",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-baec47fae39823a4",
+    "hv-src-c59c5466a5fdb9c3",
+    "hv-src-562f49e9d4db727a",
+    "hv-src-79915080085ad57a",
+    "hv-src-cf32f7a6d253f09e",
+    "hv-src-3ada0fe007cbfbc2",
+    "hv-src-9ea4b88c544cbf24",
+    "hv-src-bc1b81c93450cded",
+    "hv-src-f34af0226a725b7e",
+    "hv-src-7fa4a9f6ef0698f9",
+    "hv-src-65530cd0ddb00090",
+    "hv-src-8476a1b03903d59a",
+    "hv-src-978320c8b7dffd9b",
+    "hv-src-8e0d92dc7070777f",
+    "hv-src-1773b03e58d83958",
+    "hv-src-a5eb9b5bf5408ff7",
+    "hv-src-2e8bebc4d9314bf7",
+    "hv-src-306c4f97e6884fd6",
+    "hv-src-336076d64d1b3ba2",
+    "hv-src-45c99dd03908dd59",
+    "hv-src-dc589714ac5da9f8"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -450,6 +812,62 @@
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「雄琴」（滋賀県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-051862470d0c694e",
+   "storeName": "クラブビューティー",
+   "storeNameOriginals": [
+    "クラブビューティー"
+   ],
+   "prefecture": "福岡県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/eiru_potato/status/2115885260907196564",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-e58700823416daec"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載（福岡）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-052c25bd7363b9c9",
+   "storeName": "宇都宮彼女感",
+   "storeNameOriginals": [
+    "宇都宮彼女感"
+   ],
+   "prefecture": "栃木県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/a_sahi_25/status/2115835643544944691",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-8c1cdfc131d8179b"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「宇都宮」（栃木県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-sns-store-07ac9d1304cbfd1f",
@@ -536,6 +954,34 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「福原」（兵庫県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-sns-store-2aad05b463e41ec8",
+   "storeName": "G-スポット土浦店",
+   "storeNameOriginals": [
+    "G-スポット土浦店"
+   ],
+   "prefecture": "茨城県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/Kitamivwif/status/2115671335682883707",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-f8ebb4b4c702d73f"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：店名中の地名「土浦」（茨城県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-sns-store-32675c68d491d1e6",
    "storeName": "ぐっどがーる浜松",
    "storeNameOriginals": [
@@ -564,6 +1010,90 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「浜松」（静岡県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-sns-store-3977abd5c02a9939",
+   "storeName": "蒲田ウルトラヘブン",
+   "storeNameOriginals": [
+    "蒲田ウルトラヘブン"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/jun1imai69/status/2115685704949002695",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-732a77d08b0a46ca"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：店名中の地名「蒲田」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-4735d591c4a3d1e9",
+   "storeName": "ろいやるくらぶ仙台",
+   "storeNameOriginals": [
+    "ろいやるくらぶ仙台"
+   ],
+   "prefecture": "宮城県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/ponyan_2/status/2115706694181544140",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-3d82906f6126f96e"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「仙台」（宮城県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-496e1c642157dc98",
+   "storeName": "札幌SOPHIA",
+   "storeNameOriginals": [
+    "札幌SOPHIA"
+   ],
+   "prefecture": "北海道",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/yayoi_fujishiro/status/2115829799222657282",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-57f7d4f89aa9f977"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「札幌」（北海道にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-sns-store-4a224fec51b891e2",
    "storeName": "丸妻錦糸町店",
    "storeNameOriginals": [
@@ -590,6 +1120,34 @@
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「錦糸町」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-5191340c58b4e245",
+   "storeName": "横浜ジャパンクラブバニーラウンジ",
+   "storeNameOriginals": [
+    "横浜ジャパンクラブバニーラウンジ"
+   ],
+   "prefecture": "神奈川県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/miyumiyu__o0/status/2115746297798095180",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-fabcb303bf3d7d96"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「横浜」（神奈川県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-sns-store-544c4e15afcffa63",
@@ -704,7 +1262,8 @@
    "phase2RecordIds": [],
    "isNewSincePhase1": true,
    "sourceIds": [
-    "hv-src-6a2f40ae47c4b0c1"
+    "hv-src-6a2f40ae47c4b0c1",
+    "hv-src-ef4d1c10afd070ae"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -738,6 +1297,35 @@
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「厚木」（神奈川県にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-71d8bebe328577cb",
+   "storeName": "okini東京立川本店",
+   "storeNameOriginals": [
+    "okini東京立川本店"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/OkiniTokyoCEO/status/2115985558631792800",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-167663738e34403d",
+    "hv-src-05ad4408c77583a7"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：店名中の地名「立川」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-sns-store-75a0c9aaf8db4dc9",
@@ -794,6 +1382,34 @@
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
    "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載（大阪）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-89ae52e3c6eb37da",
+   "storeName": "西船橋　丸妻",
+   "storeNameOriginals": [
+    "西船橋　丸妻"
+   ],
+   "prefecture": "千葉県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/SPA03729741/status/2115719667746783442",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-f96b0fd613aecb44"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載（千葉）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
    "storeId": "mh26-sns-store-9b31f4e526d61b0c",
@@ -882,6 +1498,62 @@
    "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載（大阪）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-sns-store-b6328123149965d7",
+   "storeName": "ワンモア新宿",
+   "storeNameOriginals": [
+    "ワンモア新宿"
+   ],
+   "prefecture": "東京都",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/OnemoreMio/status/2115827062212857988",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-cbdb555651814cbf"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「新宿」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
+   "storeId": "mh26-sns-store-c0443598ec764423",
+   "storeName": "京都jewel",
+   "storeNameOriginals": [
+    "京都jewel"
+   ],
+   "prefecture": "京都府",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/a0e4nx/status/2115702567024119878",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-8bea1e3636642d78"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載（京都）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-sns-store-dd52b692de4bcd19",
    "storeName": "＆ZONE",
    "storeNameOriginals": [
@@ -941,6 +1613,34 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：店名中の地名「新宿」（東京都にしかない地名。2026-10-27 の運営判断で、一つの都道府県にしかない地名に限り根拠とする）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-sns-store-f9222609d3d11a1c",
+   "storeName": "シークレットサービス",
+   "storeNameOriginals": [
+    "シークレットサービス"
+   ],
+   "prefecture": "長野県",
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/yunoa_1/status/2115865436718047489",
+   "storePublicUrl": null,
+   "sourceType": "entrant_social",
+   "confidence": "unverified",
+   "participationType": "entrant_sns_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-265814dcf128f000"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載（長野県）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-sns-store-fe03ca2683c99cdb",
    "storeName": "雄琴ACE",
    "storeNameOriginals": [
@@ -985,6 +1685,32 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-d46d386986311c8f",
+   "url": "https://x.com/PO_yutaeru/status/2115971953211183309",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-hv-store-068887a7804ba0f1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-1158746db1251d1e",
+   "url": "https://x.com/Chihiro_big/status/2115719192116916263",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-hv-store-074243dc7e44baa1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-e1239dc036e634ef",
    "url": "https://x.com/NTR_Mchan/status/2115218967925264728",
    "sourceType": "entrant_social",
@@ -992,6 +1718,45 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-hv-store-07c023ff6ec22107"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-46f39124d43b4615",
+   "url": "https://x.com/nozomiko1021/status/2115813046912450883",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-hv-store-18930cd6e6908564"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-936f3502f0b69039",
+   "url": "https://x.com/Miya5Chanko/status/2115720217515241940",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-hv-store-1da59cbb086d6dfd"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-57ca24d720bd7ad0",
+   "url": "https://x.com/sg8lz/status/2115753593441816973",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-261e7b5438a85ab5"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
@@ -1011,6 +1776,58 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-4f040177fcb176ca",
+   "url": "https://x.com/airi_awaawa/status/2115654609922634097",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-4b11ec0421df6782"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-1528564db1843c33",
+   "url": "https://x.com/airi_awaawa/status/2115654483900543368",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-4b11ec0421df6782"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-5bca54d72b61e65c",
+   "url": "https://x.com/airi_awaawa/status/2115650836546404544",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-4b11ec0421df6782"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-710a47fcac23fe9d",
+   "url": "https://x.com/airi_awaawa/status/2115743522544591353",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-4b11ec0421df6782"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-f8f3a1f8ce8320a9",
    "url": "https://x.com/kurumi_AFG/status/2115436131634586044",
    "sourceType": "entrant_social",
@@ -1018,6 +1835,19 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-hv-store-5103e860af539548"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-4e066199d49f3936",
+   "url": "https://x.com/Erena_Gakuen510/status/2115848359546413370",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-51fe583443dffd37"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
@@ -1037,8 +1867,86 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-3d6f329de4ebc945",
+   "url": "https://x.com/Puriesu_Lemon/status/2115686600139301226",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-5294468153980533"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-0b27c89b474d744f",
+   "url": "https://x.com/alice_okini/status/2115744937027498193",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-5e98eb859c8f9629"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-fe93674709ad79c3",
+   "url": "https://x.com/mioka_okini_/status/2115732464580895062",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-5e98eb859c8f9629"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-21292839e20b19d2",
+   "url": "https://x.com/am__sakusei/status/2115698753541967981",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-60b676634945b277"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-78f4b1645b7cc0c9",
+   "url": "https://x.com/ring_kou/status/2115987546278867388",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-67b3b5d565cda4fb"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-657a8ab202a4f81e",
    "url": "https://x.com/9Anekahooo/status/2115217244016021752",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-78d157e8030cb1f7"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-ab67a36b0a4f8bbb",
+   "url": "https://x.com/9Anekahooo/status/2115815780952817810",
    "sourceType": "entrant_social",
    "accessStatus": "search_index_only",
    "publisherRole": "entrant_social_found",
@@ -1180,6 +2088,19 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-1c2b22261c8fe37b",
+   "url": "https://x.com/risarisa_9rk/status/2115720183210000674",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-e570f75d5ad96a07"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-7507b79ab537a9c6",
    "url": "https://x.com/REN_H_cup/status/2115276304098722299",
    "sourceType": "entrant_social",
@@ -1193,6 +2114,279 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-baec47fae39823a4",
+   "url": "https://x.com/rabe225/status/2115684054326792661",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-c59c5466a5fdb9c3",
+   "url": "https://x.com/rabe225/status/2115683680991752295",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-562f49e9d4db727a",
+   "url": "https://x.com/rabe225/status/2115683579841986980",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-79915080085ad57a",
+   "url": "https://x.com/rabe225/status/2115666058870771818",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-cf32f7a6d253f09e",
+   "url": "https://x.com/rabe225/status/2115665673561235644",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-3ada0fe007cbfbc2",
+   "url": "https://x.com/rabe225/status/2115665451783238065",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-9ea4b88c544cbf24",
+   "url": "https://x.com/rabe225/status/2115665371298730250",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-bc1b81c93450cded",
+   "url": "https://x.com/rabe225/status/2115665338419576987",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-f34af0226a725b7e",
+   "url": "https://x.com/rabe1116/status/2115665305662029952",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-7fa4a9f6ef0698f9",
+   "url": "https://x.com/rabe1116/status/2115664646703321356",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-65530cd0ddb00090",
+   "url": "https://x.com/rabe225/status/2115661431563858176",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-8476a1b03903d59a",
+   "url": "https://x.com/rabe225/status/2115661360130593061",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-978320c8b7dffd9b",
+   "url": "https://x.com/rabe225/status/2115661046065299922",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-8e0d92dc7070777f",
+   "url": "https://x.com/rabe225/status/2115762903806837143",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-1773b03e58d83958",
+   "url": "https://x.com/rabe225/status/2115762536696172857",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-a5eb9b5bf5408ff7",
+   "url": "https://x.com/rabe225/status/2115761941021143089",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-2e8bebc4d9314bf7",
+   "url": "https://x.com/rabe225/status/2115761768605888884",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-306c4f97e6884fd6",
+   "url": "https://x.com/rabe225/status/2115798395566862828",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-336076d64d1b3ba2",
+   "url": "https://x.com/rabe225/status/2115797779671040208",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-45c99dd03908dd59",
+   "url": "https://x.com/rabe225/status/2115845733878517884",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-dc589714ac5da9f8",
+   "url": "https://x.com/rabe225/status/2115993640187404484",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-hv-store-fca3695eeb571cbe"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-83b2d57164772da6",
    "url": "https://x.com/aiai____bunny/status/2115278760559943768",
    "sourceType": "entrant_social",
@@ -1200,6 +2394,32 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-sns-store-0056c7b8e23dc7c1"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-e58700823416daec",
+   "url": "https://x.com/eiru_potato/status/2115885260907196564",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-051862470d0c694e"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-8c1cdfc131d8179b",
+   "url": "https://x.com/a_sahi_25/status/2115835643544944691",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-052c25bd7363b9c9"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
@@ -1245,6 +2465,19 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-f8ebb4b4c702d73f",
+   "url": "https://x.com/Kitamivwif/status/2115671335682883707",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-2aad05b463e41ec8"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-bfc2b77a5eaa2303",
    "url": "https://x.com/gg_myuu_/status/2115265159820419270",
    "sourceType": "entrant_social",
@@ -1258,6 +2491,45 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-732a77d08b0a46ca",
+   "url": "https://x.com/jun1imai69/status/2115685704949002695",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-3977abd5c02a9939"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-3d82906f6126f96e",
+   "url": "https://x.com/ponyan_2/status/2115706694181544140",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-4735d591c4a3d1e9"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-57f7d4f89aa9f977",
+   "url": "https://x.com/yayoi_fujishiro/status/2115829799222657282",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-496e1c642157dc98"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-aaa249454265dcbd",
    "url": "https://x.com/oomomo0823/status/2115287853060235493",
    "sourceType": "entrant_social",
@@ -1265,6 +2537,19 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-sns-store-4a224fec51b891e2"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-fabcb303bf3d7d96",
+   "url": "https://x.com/miyumiyu__o0/status/2115746297798095180",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-5191340c58b4e245"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
@@ -1414,6 +2699,19 @@
    "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
   },
   {
+   "sourceId": "hv-src-ef4d1c10afd070ae",
+   "url": "https://x.com/SPA03729741/status/2115823919223783533",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-6384b03f765df596"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-cb3da81a70170ecd",
    "url": "https://x.com/55ma1ma1/status/2115450347732996598",
    "sourceType": "entrant_social",
@@ -1440,6 +2738,32 @@
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
   },
   {
+   "sourceId": "hv-src-167663738e34403d",
+   "url": "https://x.com/OkiniTokyoCEO/status/2115985558631792800",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-71d8bebe328577cb"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-05ad4408c77583a7",
+   "url": "https://x.com/CEOokini/status/2115985341442371585",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-71d8bebe328577cb"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-e059f61a9121fa54",
    "url": "https://x.com/cclover_azusa/status/2115624263856304136",
    "sourceType": "entrant_social",
@@ -1460,6 +2784,19 @@
    "publisherRole": "third_party_social_found",
    "storeIds": [
     "mh26-sns-store-85cc144495a63b3b"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-f96b0fd613aecb44",
+   "url": "https://x.com/SPA03729741/status/2115719667746783442",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-89ae52e3c6eb37da"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
@@ -1531,6 +2868,32 @@
    "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
   },
   {
+   "sourceId": "hv-src-cbdb555651814cbf",
+   "url": "https://x.com/OnemoreMio/status/2115827062212857988",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-b6328123149965d7"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-8bea1e3636642d78",
+   "url": "https://x.com/a0e4nx/status/2115702567024119878",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-c0443598ec764423"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
    "sourceId": "hv-src-87976e5bd3041e6b",
    "url": "https://x.com/momoca_ZONE/status/2115310145387520067",
    "sourceType": "entrant_social",
@@ -1590,6 +2953,19 @@
    "publisherRole": "entrant_social_found",
    "storeIds": [
     "mh26-sns-store-f46458389164ed8a"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-265814dcf128f000",
+   "url": "https://x.com/yunoa_1/status/2115865436718047489",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-f9222609d3d11a1c"
    ],
    "relationIds": [],
    "checkedAt": "2026-10-29",
