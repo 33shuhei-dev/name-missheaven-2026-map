@@ -32,12 +32,15 @@ describe("掲載依頼（店舗担当者）：もえたく（石川県・3名）
 });
 
 describe("掲載依頼：はな（エコ梅田店・大阪府）", () => {
-  it("1店舗1名。大阪府、未確認、公開ページURLは推測しない", () => {
+  it("1店舗1名。大阪府、バッジ確認（probable）、部門は空欄、公開ページURLは推測しない", () => {
     const store = site.stores.find((s) => s.id === "mh26-upd-store-0007")!;
     expect(store.name).toBe("エコ梅田店");
     expect(store.prefectureName).toBe("大阪府");
     expect(store.storePublicUrl ?? null).toBeNull();
     expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["はな"]);
-    expect(entrantUpdates.find((e) => e.entrantId === "mh26-ent-0035")!.confidence).toBe("unverified");
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0035")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.evidence).toContain("ニューヒロイン");
+    expect(rec.categoryOriginal).toBeNull();
   });
 });

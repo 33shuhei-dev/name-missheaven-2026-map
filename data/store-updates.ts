@@ -237,7 +237,7 @@ const manualStores: Phase3RawStore[] = [
     participationEvidenceUrl: "https://share.google/yWqPfsdcaakuZPXVH",
     storePublicUrl: null,
     sourceType: "store",
-    confidence: "unverified",
+    confidence: "probable",
     participationType: "store_banner_reported",
     checkedAt: "2026-10-30",
     phase1RecordIds: [],
@@ -246,7 +246,7 @@ const manualStores: Phase3RawStore[] = [
     sourceIds: ["upd-src-0009"],
     publicUrlAccessStatus: "unknown",
     notes:
-      "掲載依頼（DM、2026-10-30）を起点に追加。依頼者提供の「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」のGoogle共有リンクのタイトルによる（リンク先の店舗ページは未確認）。都道府県は、掲載地域の表記「梅田・北新地」が大阪府にしかない地名であることから判断（店名には都道府県の記載なし）。出場の表示・ノミネートのバッジ・部門は未確認のため unverified。店舗ページのURLは推測しない。正式選挙エリアは未確認。",
+      "掲載依頼（DM、2026-10-30）を起点に追加。依頼者提供の「「はな」エコ梅田店 - 梅田・北新地/ホテヘル｜シティヘブンネット」のGoogle共有リンクのタイトルによる（リンク先の店舗ページは未確認）。都道府県は、掲載地域の表記「梅田・北新地」が大阪府にしかない地名であることから判断（店名には都道府県の記載なし）。その後、依頼者提供のスクリーンショットで在籍ページの画像に「全国ミスヘブン総選挙2026」「ニューヒロイン エントリー中」のバッジを確認したため probable（部門名の表記はなく、部門は未確認）。店舗ページのURLは推測しない。正式選挙エリアは未確認。",
   },
 ];
 
