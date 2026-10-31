@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { CONTACT_X_HANDLE, CONTACT_X_URL } from "@/lib/contact";
+import { prefectureFromHeavenUrl } from "@/lib/cityheaven-url";
 
 /**
  * 掲載依頼の文面を作ってコピーする。入力内容はどこにも送信・保存しない（コピーしてXのDMに貼ってもらう）。
@@ -10,7 +11,10 @@ export function ListingRequestForm() {
   const [f, setF] = useState({ name: "", store: "", pref: "", division: "", evidence: "" });
   const [copied, setCopied] = useState(false);
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement>) => {
-    setF({ ...f, [k]: e.target.value });
+    const value = e.target.value;
+    // 在籍ページのURLを貼ったら、URLの文字列から都道府県を自動で入れる（未入力のときだけ）
+    const pref = k === "evidence" && !f.pref ? (prefectureFromHeavenUrl(value) ?? "") : f.pref;
+    setF({ ...f, [k]: value, pref });
     setCopied(false);
   };
   const text = [
@@ -54,7 +58,7 @@ export function ListingRequestForm() {
         <input value={f.division} onChange={set("division")} placeholder="例：ビジュアル部門" autoComplete="off" />
       </label>
       <label>
-        <span>④ヘブンの在籍ページのURL・出場が分かる投稿</span>
+        <span>④ヘブンの在籍ページのURL・出場が分かる投稿（URLを貼ると都道府県が自動で入ります）</span>
         <input value={f.evidence} onChange={set("evidence")} placeholder="https://… （スクショならDMに添付）" autoComplete="off" inputMode="url" />
       </label>
       <pre className="req-form__preview" aria-label="DMに貼る文面">{text}</pre>

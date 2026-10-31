@@ -279,7 +279,7 @@ export default async function StorePage({ params }: Params) {
       )}
 
       <div className="section">
-        <ListingRequestCta compact />
+        <ListingRequestCta compact forStore />
       </div>
     </>
   );
