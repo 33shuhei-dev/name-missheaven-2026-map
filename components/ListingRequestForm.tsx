@@ -18,7 +18,7 @@ export function ListingRequestForm() {
     `①名前：${f.name}`,
     `②お店・都道府県：${f.store}${f.pref ? `（${f.pref}）` : ""}`,
     `③部門：${f.division || "（分かれば）"}`,
-    `④出場が分かるもの：${f.evidence || "（投稿のURL・ヘブンのURL、またはスクリーンショットを添付）"}`,
+    `④出場が分かるもの：${f.evidence || "（在籍ページのURL、またはスクリーンショットを添付）"}`,
   ].join("\n");
 
   async function copy() {
@@ -54,7 +54,7 @@ export function ListingRequestForm() {
         <input value={f.division} onChange={set("division")} placeholder="例：ビジュアル部門" autoComplete="off" />
       </label>
       <label>
-        <span>④出場が分かる投稿・ヘブンのURL</span>
+        <span>④ヘブンの在籍ページのURL・出場が分かる投稿</span>
         <input value={f.evidence} onChange={set("evidence")} placeholder="https://… （スクショならDMに添付）" autoComplete="off" inputMode="url" />
       </label>
       <pre className="req-form__preview" aria-label="DMに貼る文面">{text}</pre>
@@ -66,7 +66,7 @@ export function ListingRequestForm() {
           2. {CONTACT_X_HANDLE} を開いてDMに貼る ↗
         </a>
       </div>
-      <p className="hint hint--tight">入力した内容はこのサイトには送信・保存されません。コピーした文面をXのDMに貼って送ってください。</p>
+      <p className="hint hint--tight">DMには、<strong>在籍ページのURLかスクリーンショット</strong>（「全国ミスヘブン総選挙2026」のバッジが写っているもの）も一緒に送っていただけると、店舗・都道府県・部門を確実に登録できます。入力した内容はこのサイトには送信・保存されません。コピーした文面をXのDMに貼って送ってください。</p>
     </div>
   );
 }
