@@ -17,6 +17,7 @@ export const metadata: Metadata = { title: "このサイトについて" };
 
 /** 掲載情報の修正・削除の問い合わせ窓口（このサイトを告知・運営している応援用Xアカウント） */
 import { CONTACT_X_HANDLE, CONTACT_X_URL } from "@/lib/contact";
+import { ExternalLink } from "@/components/ExternalLink";
 import { ListingRequestForm } from "@/components/ListingRequestForm";
 
 export default function AboutPage() {
@@ -96,6 +97,19 @@ export default function AboutPage() {
             {CONTACT_X_HANDLE}
           </a>{" "}
           のDMまでお願いします（外部サイトが開きます）。
+        </p>
+      </section>
+
+      <section className="section card prose" id="related">
+        <h2>運営者の別企画</h2>
+        <p>
+          このまとめサイトとは別に、運営者が出場者・応援者をキャラクターにした、イメージソングと音ゲーの企画を進めています。実在の方を使うものは、ご本人の了承をいただいた方だけです。
+        </p>
+        <p>
+          <ExternalLink href="https://x.com/rego0701/status/2116119283491291540" label="企画の紹介（運営者のX）" />
+        </p>
+        <p className="hint hint--tight">
+          この企画は非公式で、ミスヘブン総選挙の運営とは関係がありません。このまとめサイトの掲載内容（出場者・店舗の情報）とも別のものです。
         </p>
       </section>
 

@@ -40,3 +40,13 @@ describe("掲載依頼の案内：URLかスクショのお願い", () => {
     }
   });
 });
+
+describe("このサイトについて：運営者の別企画", () => {
+  const about = readFileSync("app/about/page.tsx", "utf8");
+  it("別企画の紹介があり、非公式・運営とは無関係と明記。トップや出場者のページには入れない", () => {
+    expect(about).toContain("運営者の別企画");
+    expect(about).toContain("関係がありません");
+    expect(about).toContain("https://x.com/rego0701/status/2116119283491291540");
+    for (const f of ["app/page.tsx", "app/store/[id]/page.tsx", "components/SearchClient.tsx"]) expect(readFileSync(f, "utf8"), f).not.toContain("運営者の別企画");
+  });
+});
