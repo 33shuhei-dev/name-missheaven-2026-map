@@ -24,10 +24,12 @@ describe("本人SNSで出場確認（検索で発見）", () => {
         const src = entrantSources.find((s) => s.sourceId === sid)!;
         expect(src.url).toMatch(/^https:\/\/x\.com\//);
         expect(src.url).not.toContain("?");
-        expect(src.publisherRole).toBe("entrant_social_found");
-        expect(src.notes).toContain("本人からの掲載申請ではなく");
+        // 本人の投稿に加えて、店舗・第三者の投稿が補強として付く人物がいる（本人の投稿は必ず1件以上）
+        expect(["entrant_social_found", "third_party_social_found"], e.entrantId).toContain(src.publisherRole);
+        if (src.publisherRole === "entrant_social_found") expect(src.notes).toContain("本人からの掲載申請ではなく");
         expect(src.storeIds).toContain(e.storeId);
       }
+      expect(e.sourceIds.some((sid) => entrantSources.find((s) => s.sourceId === sid)!.publisherRole === "entrant_social_found"), e.entrantId).toBe(true);
     }
   });
 
