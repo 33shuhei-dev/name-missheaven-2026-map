@@ -32,3 +32,11 @@ describe("このサイトについて：修正・削除の問い合わせ窓口"
     expect(form).not.toMatch(/fetch\(|XMLHttpRequest|localStorage|sendBeacon/);
   });
 });
+
+describe("掲載依頼の案内：URLかスクショのお願い", () => {
+  it("フォーム・案内に「在籍ページのURLかスクリーンショット」の記載がある", () => {
+    for (const f of ["components/ListingRequestCta.tsx", "components/ListingRequestForm.tsx", "app/about/page.tsx"]) {
+      expect(readFileSync(f, "utf8"), f).toMatch(/URL(か|・|、)?(または)?スク(リーン)?ショット|URLかスクショ|スクリーンショット/);
+    }
+  });
+});
