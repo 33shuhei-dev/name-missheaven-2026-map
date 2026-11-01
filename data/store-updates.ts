@@ -298,6 +298,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（DM、2026-10-30）を起点に追加。依頼文に名前（Otone）・店舗（THE PREMIUM）・業態（ソープ）・部門（高級嬢）があり、依頼者提供のスクリーンショット（在籍ページのタイトル「「Otone」THE PREMIUM - 川崎堀之内南町・川崎駅周辺/ソープ｜シティヘブンネット」）で店名・掲載地域を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「神奈川県」「高級嬢」（部門の文字は一部しか写っていない）のバッジを確認。リンクはGoogleの共有リンクで、店舗ページのURL自体は未確認（推測しない）。調査環境からは本文を直接確認していないため probable。同名の「The Premium（プレミアム）」（都道府県なし）とは、同じ店と確認できていないため別の記録として扱う。正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-01）。在籍ページの画像のノミネートのバッジ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0010",
+    storeName: "東京シャトールージュ",
+    storeNameOriginals: ["東京シャトールージュ"],
+    prefecture: "愛知県",
+    listingArea: "名駅",
+    listingAreas: ["名駅"],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/aichi/A2301/A230101/chateau/girlid-47477287/?lo=1",
+    storePublicUrl: "https://www.cityheaven.net/aichi/A2301/A230101/chateau/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-01",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0012"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（DM、2026-11-01）を起点に追加。依頼文に名前（ゆら）・店舗（東京シャトールージュ・愛知県）・部門（かわいい部門）・在籍ページのURLがあり、依頼者提供のスクリーンショット（店名と「名駅/マットヘルス」の表記）で店名・掲載地域・業態を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「愛知県」「かわいい部門 ノミネート」のバッジを確認（同じ画像に過去の年度の順位の表示もあるが、2026年の根拠としては使っていない）。都道府県・公開ページURLは在籍ページのURL（aichi/A2301/A230101/chateau）の表記どおり。店名に「東京」とあるが、所在は愛知県（名古屋・名駅）。調査環境からは本文を直接確認していないため probable。正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -445,6 +470,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-10-30",
     notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・神奈川県・高級嬢）とGoogle共有リンク。リンク先は未確認。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0012",
+    url: "https://www.cityheaven.net/aichi/A2301/A230101/chateau/girlid-47477287/?lo=1",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0010"],
+    relationIds: [],
+    checkedAt: "2026-11-01",
+    notes: "掲載依頼者から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・愛知県・かわいい部門）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 

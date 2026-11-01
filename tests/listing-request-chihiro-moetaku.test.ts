@@ -75,3 +75,17 @@ describe("掲載依頼：Otone（THE PREMIUM・神奈川県・高級嬢部門）
     expect(rec.categoryOriginal).toBe("高級嬢部門");
   });
 });
+
+describe("掲載依頼：ゆら（東京シャトールージュ・愛知県・かわいい部門）", () => {
+  it("愛知県の1店舗1名。店名に「東京」があっても愛知県。バッジ確認（probable）", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0010")!;
+    expect(store.name).toBe("東京シャトールージュ");
+    expect(store.prefectureName).toBe("愛知県");
+    expect(store.storePublicUrl).toBe("https://www.cityheaven.net/aichi/A2301/A230101/chateau/");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ゆら"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0038")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("かわいい部門");
+    expect(rec.personalUrl).not.toContain("mygirl");
+  });
+});
