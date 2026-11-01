@@ -100,3 +100,13 @@ describe("掲載依頼（本人）：藤咲 ルミナ（性竜門・北海道・
     expect(site.stores.filter((s) => s.name.startsWith("性竜門") && s.prefectureName === "北海道")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼：ふゆの（アラカルト・千葉県・ソープ部門）", () => {
+  it("既存のアラカルト（千葉県）に1名追加。バッジ確認（probable）", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0040")!;
+    expect(rec.storeId).toBe("mh26-p3b-store-432f65b4d8d4f179");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("ソープ部門");
+    expect(site.entrants.filter((e) => e.name === "ふゆの")).toHaveLength(1);
+  });
+});
