@@ -50,3 +50,10 @@ describe("このサイトについて：運営者の別企画", () => {
     for (const f of ["app/page.tsx", "app/store/[id]/page.tsx", "components/SearchClient.tsx"]) expect(readFileSync(f, "utf8"), f).not.toContain("運営者の別企画");
   });
 });
+
+describe("掲載依頼の案内：出場者ご本人からのDMも歓迎", () => {
+  it("案内と「このサイトについて」に、ご本人からのDM歓迎の文がある", () => {
+    expect(readFileSync("components/ListingRequestCta.tsx", "utf8")).toContain("出場者ご本人</strong>からのDMも待っています");
+    expect(readFileSync("app/about/page.tsx", "utf8")).toContain("出場者ご本人からのDMも歓迎です");
+  });
+});

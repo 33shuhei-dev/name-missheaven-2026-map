@@ -68,7 +68,7 @@ export default function AboutPage() {
       <section className="section card prose" id="listing">
         <h2>掲載依頼（推しを追加してほしいとき）</h2>
         <p>
-          このサイトに載っていない出場者は、本人・ファン・お店のどなたからでも掲載依頼を受け付けています。{" "}
+          このサイトに載っていない出場者は、本人・ファン・お店のどなたからでも掲載依頼を受け付けています。「私がいない！」という出場者ご本人からのDMも歓迎です。{" "}
           <a href={CONTACT_X_URL} target="_blank" rel="noopener noreferrer">
             {CONTACT_X_HANDLE}
           </a>{" "}
