@@ -622,6 +622,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-01",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-01）。名前は在籍ページのタイトル「藤咲　ルミナ」の表記（空白は半角にした）。店舗は既存の「性竜門（セイリュウモン）」（北海道・すすきの周辺/ヘルス）。部門名はバッジの表記（ヘルス＋部門）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-01）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0040",
+    name: "ふゆの",
+    storeId: "mh26-p3b-store-432f65b4d8d4f179",
+    sourceIds: ["ent-src-0036"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「千葉県」「ソープ 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-01",
+    categoryOriginal: "ソープ部門",
+    personalUrl: "https://www.cityheaven.net/chiba/A1201/A120101/alacarte/girlid-59801951/",
+    confidence: "probable",
+    checkedAt: "2026-11-01",
+    notes: "掲載依頼を起点に追加（2026-11-01）。名前は在籍ページのタイトル「ふゆの」の表記。店舗は既存の「アラカルト Alacarte」（千葉県・栄町）。部門名はバッジの表記（ソープ＋部門）。本人のページのURLは依頼者提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1014,6 +1029,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-01",
     notes: "出場者本人から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・北海道・ヘルス部門）とGoogle共有リンク（リンク先は未確認）。画像は保存していない。出場者本人の依頼を起点に追加",
   },
+  {
+    sourceId: "ent-src-0036",
+    url: "https://www.cityheaven.net/chiba/A1201/A120101/alacarte/girlid-59801951/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-p3b-store-432f65b4d8d4f179"],
+    relationIds: ["ent-rel-0026"],
+    checkedAt: "2026-11-01",
+    notes: "掲載依頼者から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・千葉県・ソープ部門）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1270,6 +1296,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0035"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記（出場者本人の掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0026",
+    storeId: "mh26-p3b-store-432f65b4d8d4f179",
+    categoryOriginal: "ソープ部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0036"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
