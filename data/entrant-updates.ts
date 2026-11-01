@@ -607,6 +607,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-01",
     notes: "掲載依頼を起点に追加（2026-11-01）。名前は依頼文の表記「ゆら」（在籍ページのタイトルは「ゆら【ヘルス・マ…」と途中まで）。本人のページのURLは依頼者提供のもの（個人用の ?mygirl パラメータは除いた）。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-01）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0039",
+    name: "藤咲 ルミナ",
+    storeId: "mh26-p3b-store-ef3a6c99651fd772",
+    sourceIds: ["ent-src-0035"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「北海道」「ヘルス 部門 ノミネート」のバッジ（出場者本人からの掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-01",
+    categoryOriginal: "ヘルス部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-01",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-01）。名前は在籍ページのタイトル「藤咲　ルミナ」の表記（空白は半角にした）。店舗は既存の「性竜門（セイリュウモン）」（北海道・すすきの周辺/ヘルス）。部門名はバッジの表記（ヘルス＋部門）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -988,6 +1003,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-01",
     notes: "掲載依頼者から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ）。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0035",
+    url: "https://share.google/WBaX00xVzNNN4leqH",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-p3b-store-ef3a6c99651fd772"],
+    relationIds: ["ent-rel-0025"],
+    checkedAt: "2026-11-01",
+    notes: "出場者本人から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・北海道・ヘルス部門）とGoogle共有リンク（リンク先は未確認）。画像は保存していない。出場者本人の依頼を起点に追加",
+  },
 ];
 
 /**
@@ -1234,6 +1260,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0034"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記と依頼文（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0025",
+    storeId: "mh26-p3b-store-ef3a6c99651fd772",
+    categoryOriginal: "ヘルス部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0035"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（出場者本人の掲載依頼のスクリーンショット）",
   },
 ];
 
