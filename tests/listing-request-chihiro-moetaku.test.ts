@@ -89,3 +89,14 @@ describe("掲載依頼：ゆら（東京シャトールージュ・愛知県・�
     expect(rec.personalUrl).not.toContain("mygirl");
   });
 });
+
+describe("掲載依頼（本人）：藤咲 ルミナ（性竜門・北海道・ヘルス部門）", () => {
+  it("既存の性竜門（北海道）に1名追加。バッジ確認（probable）", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0039")!;
+    expect(rec.storeId).toBe("mh26-p3b-store-ef3a6c99651fd772");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("ヘルス部門");
+    expect(site.entrants.filter((e) => e.name === "藤咲 ルミナ")).toHaveLength(1);
+    expect(site.stores.filter((s) => s.name.startsWith("性竜門") && s.prefectureName === "北海道")).toHaveLength(1);
+  });
+});
