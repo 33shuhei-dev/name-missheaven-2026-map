@@ -837,6 +837,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。本人のページのURLは本人提供のもの。岐阜県の「スチュアーデス」にいる同名の「このは」とは別の人物（店舗・都道府県が異なる）。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-02）。ノミネートのバッジの都道府県・部門の表記は画像に写っておらず、依頼文の部門名を採用。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0055",
+    name: "じゅな",
+    storeId: "mh26-nat-store-9bab0e77658398f2",
+    sourceIds: ["ent-src-0041"],
+    evidence:
+      "出場者本人からの掲載依頼（DM）の依頼文に、名前（じゅな）・店舗（静岡県浜松 LALA-人妻health-）・部門（次世代看板娘部門）の記載。在籍ページの画像に「全国ミスヘブン総選挙」の表示（都道府県・部門のバッジ部分は画面に写っていない）。調査側は本文を直接取得していない",
+    evidenceDate: "2026-11-02",
+    categoryOriginal: "次世代看板娘部門",
+    personalUrl: "https://www.cityheaven.net/shizuoka/A2202/A220201/lala_h/girlid-65121578/?lo=1",
+    confidence: "unverified",
+    checkedAt: "2026-11-02",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。部門名は依頼文の表記「次世代看板娘部門」（サイトにある「次世代看板部門」とは表記が異なるため、統合せず原文のまま記録）。バッジの部門表記は未確認のため unverified。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1284,6 +1299,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ）。その後（2026-11-02）、本人から在籍ページのURLの提供があり、情報源のURLに設定した。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0041",
+    url: "https://www.cityheaven.net/shizuoka/A2202/A220201/lala_h/girlid-65121578/?lo=1",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-nat-store-9bab0e77658398f2"],
+    relationIds: ["ent-rel-0035"],
+    checkedAt: "2026-11-02",
+    notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（「全国ミスヘブン総選挙」の表示）、およびDMの依頼文。部門名は依頼文の表記。画像は保存していない",
+  },
 ];
 
 /**
@@ -1620,6 +1646,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0040"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
+  },
+  {
+    relationId: "ent-rel-0035",
+    storeId: "mh26-nat-store-9bab0e77658398f2",
+    categoryOriginal: "次世代看板娘部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0041"],
+    phase1RecordIds: [],
+    notes: "依頼文の部門名（出場者本人の掲載依頼）。バッジの部門表記は未確認",
   },
 ];
 

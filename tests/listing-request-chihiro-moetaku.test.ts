@@ -173,3 +173,13 @@ describe("掲載依頼（本人）：このは（スチュワーデス・新潟�
     expect(rec.categoryOriginal).toBe("おっぱい部門");
   });
 });
+
+describe("掲載依頼（本人）：じゅな（LALA・静岡県・次世代看板娘部門）", () => {
+  it("既存のLALA（静岡県）に1名追加。部門は依頼文の原文のまま（統合しない）。unverified", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0055")!;
+    expect(rec.storeId).toBe("mh26-nat-store-9bab0e77658398f2");
+    expect(rec.confidence).toBe("unverified");
+    expect(rec.categoryOriginal).toBe("次世代看板娘部門");
+    expect(site.entrants.filter((e) => e.name === "じゅな")).toHaveLength(1);
+  });
+});
