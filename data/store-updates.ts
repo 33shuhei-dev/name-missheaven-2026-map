@@ -373,6 +373,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（お店の方からのDM、2026-11-02）を起点に追加。依頼者提供の在籍ページのURL（tokyo/A1304/A130401/gohoubispa-sj）と、スクリーンショット（店舗ロゴ「新宿ごほうびSPA」、タイトル「「ひなた」ごほうび…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「巨乳 部門 ノミネート」のバッジを確認。五反田店（gohoubispa-g、別の店舗）とは別の記録。都道府県・公開ページURLは在籍ページURLの表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-02）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。店舗・在籍ページのURLは未提供 ──
+  {
+    storeId: "mh26-upd-store-0013",
+    storeName: "スチュワーデス",
+    storeNameOriginals: ["スチュワーデス", "NIIGATA SOAPLAND STEWARDESS"],
+    prefecture: "新潟県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://name-missheaven-2026-map.vercel.app/about#listing",
+    storePublicUrl: null,
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-11-02",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0015"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者（このは）本人からの掲載依頼（DM、2026-11-02）を起点に追加。依頼文に名前・店舗（スチュワーデス・新潟県）・部門（おっぱい部門）があり、本人提供のスクリーンショット（店舗ロゴ「スチュワーデス NIIGATA SOAPLAND STEWARDESS」、タイトル「「このは」スチュワ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「新潟県」「おっぱい 部門 ノミネート」のバッジを確認。在籍ページ・店舗ページのURLは未提供のため、公開ページのURLは入れていない（推測しない）。情報源のURLは、依頼を受け付けているこのサイトの案内ページ。岐阜県の「スチュアーデス」とは別の店舗（表記も所在も異なる）。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -553,6 +578,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-02",
     notes: "お店の方から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・東京都・巨乳部門）。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0015",
+    url: "https://name-missheaven-2026-map.vercel.app/about#listing",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0013"],
+    relationIds: [],
+    checkedAt: "2026-11-02",
+    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・新潟県・おっぱい部門）。外部の公開ページのURLは未提供のため、依頼の窓口であるこのサイトの案内ページを記録した。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
