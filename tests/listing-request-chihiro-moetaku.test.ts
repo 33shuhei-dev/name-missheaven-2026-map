@@ -122,3 +122,16 @@ describe("掲載依頼：ことり（イチャカワクラブ・香川県・極�
     expect(rec.categoryOriginal).toBe("極嬢部門");
   });
 });
+
+describe("掲載依頼（お店）：ひなた（新宿ごほうびSPA・東京都・巨乳部門）", () => {
+  it("東京都の1店舗1名。五反田店とは別の店舗。バッジ確認（probable）", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0012")!;
+    expect(store.name).toBe("新宿ごほうびSPA");
+    expect(store.prefectureName).toBe("東京都");
+    expect(store.storePublicUrl).toBe("https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ひなた"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0042")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("巨乳部門");
+  });
+});

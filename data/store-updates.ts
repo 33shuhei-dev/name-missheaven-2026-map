@@ -348,6 +348,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（友人からのDM、2026-11-02）を起点に追加。依頼者提供の在籍ページのURL（kagawa/A3701/A370101/icyakawaclub）と、スクリーンショット（店舗ロゴ「イチャカワクラブ」、タイトル「「ことり」イチャカ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「香川県」「極嬢 部門 ノミネート」のバッジを確認。都道府県・公開ページURLは在籍ページURLの表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（お店の方からのDM）を起点に追加（2026-11-02）。在籍ページのノミネートのバッジ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0012",
+    storeName: "新宿ごほうびSPA",
+    storeNameOriginals: ["新宿ごほうびSPA", "ごほうびSPA"],
+    prefecture: "東京都",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/girlid-62751967/",
+    storePublicUrl: "https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-02",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0014"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（お店の方からのDM、2026-11-02）を起点に追加。依頼者提供の在籍ページのURL（tokyo/A1304/A130401/gohoubispa-sj）と、スクリーンショット（店舗ロゴ「新宿ごほうびSPA」、タイトル「「ひなた」ごほうび…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「巨乳 部門 ノミネート」のバッジを確認。五反田店（gohoubispa-g、別の店舗）とは別の記録。都道府県・公開ページURLは在籍ページURLの表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -517,6 +542,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-02",
     notes: "掲載依頼者（友人）から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・香川県・極嬢部門）。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0014",
+    url: "https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/girlid-62751967/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0012"],
+    relationIds: [],
+    checkedAt: "2026-11-02",
+    notes: "お店の方から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・東京都・巨乳部門）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
