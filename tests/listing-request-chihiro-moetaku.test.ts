@@ -129,9 +129,23 @@ describe("掲載依頼（お店）：ひなた（新宿ごほうびSPA・東京�
     expect(store.name).toBe("新宿ごほうびSPA");
     expect(store.prefectureName).toBe("東京都");
     expect(store.storePublicUrl).toBe("https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/");
-    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ひなた"]);
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toContain("ひなた");
     const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0042")!;
     expect(rec.confidence).toBe("probable");
     expect(rec.categoryOriginal).toBe("巨乳部門");
+  });
+});
+
+describe("掲載依頼（お店）：新宿ごほうびSPA の在籍者（東京都・11人）", () => {
+  it("ひなたと合わせて12人。部門はバッジの表記。probable。五反田店とは別", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0012")!;
+    const names = site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name).sort();
+    expect(names).toEqual(["あお", "えま", "かおり", "ことは", "けいか", "ちゆ", "つばき", "ひなた", "みい", "みお", "みく", "らん"].sort());
+    for (const c of ["巨乳部門", "テクニシャン部門", "ロリっ子部門", "NG顔出し部門", "ヌルヌル部門"]) expect(store.categoryOriginals).toContain(c);
+    for (const id of ["0043", "0044", "0045", "0046", "0047", "0048", "0049", "0050", "0051", "0052", "0053"]) {
+      const rec = entrantUpdates.find((e) => e.entrantId === `mh26-ent-${id}`)!;
+      expect(rec.confidence).toBe("probable");
+      expect(rec.evidence).toContain("全国ミスヘブン総選挙2026");
+    }
   });
 });
