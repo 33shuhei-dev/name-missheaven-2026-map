@@ -8,7 +8,7 @@ export function ListingRequestCta({ compact = false, forStore = false }: { compa
       <p className="listing-cta__title">{forStore ? "お店の方へ：在籍キャストをまとめて載せられます" : "推しが載っていない？ 私がいない？"}</p>
       <p className="listing-cta__body">
         {forStore ? <>このお店のキャストの名前・部門をまとめてお知らせいただければ、1件ずつ確認して載せます。</> : null}
-        「私がいない！」という<strong>出場者ご本人</strong>からのDMも待っています。ファン・お店からの<strong>掲載依頼</strong>も受け付けています。名前・店舗・部門と、<strong>在籍ページのURLかスクショ</strong>（または出場が分かる投稿）を{" "}
+        「私がいない！」という<strong>出場者ご本人</strong>からのDMも待っています。ファン・お店からの<strong>掲載依頼</strong>も受け付けています。名前・店舗・部門と、<strong>在籍ページのスクショ</strong>（アカウント凍結を避けるため、<strong>リンクは貼らず</strong>スクショをお願いします）を{" "}
         <a href={CONTACT_X_URL} target="_blank" rel="noopener noreferrer">
           {CONTACT_X_HANDLE}
         </a>{" "}
