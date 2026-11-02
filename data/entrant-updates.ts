@@ -652,6 +652,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-02",
     notes: "掲載依頼（友人から）を起点に追加（2026-11-02）。名前は在籍ページのタイトル「ことり」の表記。部門名はバッジの表記（極嬢＋部門）。本人のページのURLは依頼者提供のもの。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（お店の方からのDM）を起点に追加（2026-11-02）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0042",
+    name: "ひなた",
+    storeId: "mh26-upd-store-0012",
+    sourceIds: ["ent-src-0038"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「巨乳 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-02",
+    categoryOriginal: "巨乳部門",
+    personalUrl: "https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/girlid-62751967/",
+    confidence: "probable",
+    checkedAt: "2026-11-02",
+    notes: "掲載依頼（お店の方から）を起点に追加（2026-11-02）。名前は在籍ページのタイトル「ひなた」の表記。部門名はバッジの表記（巨乳＋部門）。本人のページのURLは依頼者提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1066,6 +1081,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-02",
     notes: "掲載依頼者（友人）から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ）。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0038",
+    url: "https://www.cityheaven.net/tokyo/A1304/A130401/gohoubispa-sj/girlid-62751967/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0012"],
+    relationIds: ["ent-rel-0028"],
+    checkedAt: "2026-11-02",
+    notes: "お店の方から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1340,6 +1366,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     categoryNormalized: null,
     confidence: "probable",
     sourceIds: ["ent-src-0037"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0028",
+    storeId: "mh26-upd-store-0012",
+    categoryOriginal: "巨乳部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0038"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
   },
