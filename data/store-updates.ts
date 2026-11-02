@@ -384,8 +384,8 @@ const manualStores: Phase3RawStore[] = [
     formalElectionArea: null,
     categoryOriginal: null,
     categoryOriginals: [],
-    participationEvidenceUrl: "https://name-missheaven-2026-map.vercel.app/about#listing",
-    storePublicUrl: null,
+    participationEvidenceUrl: "https://www.cityheaven.net/niigata/A1501/A150101/stw/girlid-59847823/?lo=1",
+    storePublicUrl: "https://www.cityheaven.net/niigata/A1501/A150101/stw/",
     sourceType: "store",
     confidence: "probable",
     participationType: "entrant_self_reported",
@@ -396,7 +396,7 @@ const manualStores: Phase3RawStore[] = [
     sourceIds: ["upd-src-0015"],
     publicUrlAccessStatus: "unknown",
     notes:
-      "出場者（このは）本人からの掲載依頼（DM、2026-11-02）を起点に追加。依頼文に名前・店舗（スチュワーデス・新潟県）・部門（おっぱい部門）があり、本人提供のスクリーンショット（店舗ロゴ「スチュワーデス NIIGATA SOAPLAND STEWARDESS」、タイトル「「このは」スチュワ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「新潟県」「おっぱい 部門 ノミネート」のバッジを確認。在籍ページ・店舗ページのURLは未提供のため、公開ページのURLは入れていない（推測しない）。情報源のURLは、依頼を受け付けているこのサイトの案内ページ。岐阜県の「スチュアーデス」とは別の店舗（表記も所在も異なる）。掲載地域・正式選挙エリアは未確認。",
+      "出場者（このは）本人からの掲載依頼（DM、2026-11-02）を起点に追加。依頼文に名前・店舗（スチュワーデス・新潟県）・部門（おっぱい部門）があり、本人提供のスクリーンショット（店舗ロゴ「スチュワーデス NIIGATA SOAPLAND STEWARDESS」、タイトル「「このは」スチュワ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「新潟県」「おっぱい 部門 ノミネート」のバッジを確認。その後（2026-11-02）、本人から在籍ページのURL（niigata/A1501/A150101/stw）の提供があり、店舗ページのURLと情報源のURLを設定した。岐阜県の「スチュアーデス」とは別の店舗（表記も所在も異なる）。掲載地域・正式選挙エリアは未確認。",
   },
 ];
 
@@ -581,14 +581,14 @@ const manualSources: Phase3RawSource[] = [
   },
   {
     sourceId: "upd-src-0015",
-    url: "https://name-missheaven-2026-map.vercel.app/about#listing",
+    url: "https://www.cityheaven.net/niigata/A1501/A150101/stw/girlid-59847823/?lo=1",
     sourceType: "entrant_social",
     accessStatus: "user_screenshot_only",
     publisherRole: "entrant_social_post",
     storeIds: ["mh26-upd-store-0013"],
     relationIds: [],
     checkedAt: "2026-11-02",
-    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・新潟県・おっぱい部門）。外部の公開ページのURLは未提供のため、依頼の窓口であるこのサイトの案内ページを記録した。画像は保存していない。本人申請を起点に追加",
+    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・新潟県・おっぱい部門）。その後（2026-11-02）、本人から在籍ページのURLの提供があり、情報源のURLに設定した。画像は保存していない。本人申請を起点に追加",
   },
 ];
 

@@ -161,11 +161,11 @@ describe("本人のDMで部門を補う：まこと（宇都宮select・ギャ�
 });
 
 describe("掲載依頼（本人）：このは（スチュワーデス・新潟県・おっぱい部門）", () => {
-  it("新潟県の1店舗1名。岐阜県のスチュアーデスとは別。URLは推測しない。バッジ確認（probable）", () => {
+  it("新潟県の1店舗1名。岐阜県のスチュアーデスとは別。URLは本人提供のもの。バッジ確認（probable）", () => {
     const store = site.stores.find((s) => s.id === "mh26-upd-store-0013")!;
     expect(store.name).toBe("スチュワーデス");
     expect(store.prefectureName).toBe("新潟県");
-    expect(store.storePublicUrl ?? null).toBeNull();
+    expect(store.storePublicUrl).toBe("https://www.cityheaven.net/niigata/A1501/A150101/stw/");
     expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["このは"]);
     expect(site.stores.filter((s) => s.name === "スチュアーデス").every((s) => s.prefectureName === "岐阜県")).toBe(true);
     const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0054")!;

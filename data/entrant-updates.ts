@@ -832,10 +832,10 @@ const manualEntrants: EntrantRawRecord[] = [
       "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「新潟県」「おっぱい 部門 ノミネート」のバッジ（出場者本人の掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
     evidenceDate: "2026-11-02",
     categoryOriginal: "おっぱい部門",
-    personalUrl: null,
+    personalUrl: "https://www.cityheaven.net/niigata/A1501/A150101/stw/girlid-59847823/?lo=1",
     confidence: "probable",
     checkedAt: "2026-11-02",
-    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。岐阜県の「スチュアーデス」にいる同名の「このは」とは別の人物（店舗・都道府県が異なる）。プロフィール・写真等は保存していない",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。本人のページのURLは本人提供のもの。岐阜県の「スチュアーデス」にいる同名の「このは」とは別の人物（店舗・都道府県が異なる）。プロフィール・写真等は保存していない",
   },
 ];
 
@@ -1275,14 +1275,14 @@ const manualEntrantSources: Phase3RawSource[] = [
   },
   {
     sourceId: "ent-src-0040",
-    url: "https://name-missheaven-2026-map.vercel.app/about#listing",
+    url: "https://www.cityheaven.net/niigata/A1501/A150101/stw/girlid-59847823/?lo=1",
     sourceType: "entrant_social",
     accessStatus: "user_screenshot_only",
     publisherRole: "entrant_social_post",
     storeIds: ["mh26-upd-store-0013"],
     relationIds: ["ent-rel-0034"],
     checkedAt: "2026-11-02",
-    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ）。外部の公開ページのURLは未提供のため、依頼の窓口であるこのサイトの案内ページを記録した。画像は保存していない",
+    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ）。その後（2026-11-02）、本人から在籍ページのURLの提供があり、情報源のURLに設定した。画像は保存していない",
   },
 ];
 
