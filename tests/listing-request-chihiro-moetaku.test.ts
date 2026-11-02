@@ -110,3 +110,15 @@ describe("掲載依頼：ふゆの（アラカルト・千葉県・ソープ部�
     expect(site.entrants.filter((e) => e.name === "ふゆの")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼：ことり（イチャカワクラブ・香川県・極嬢部門）", () => {
+  it("香川県の1店舗1名。バッジ確認（probable）。部門は既存の「極嬢部門」と同じ表記", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0011")!;
+    expect(store.name).toBe("イチャカワクラブ");
+    expect(store.prefectureName).toBe("香川県");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ことり"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0041")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("極嬢部門");
+  });
+});

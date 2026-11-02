@@ -323,6 +323,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（DM、2026-11-01）を起点に追加。依頼文に名前（ゆら）・店舗（東京シャトールージュ・愛知県）・部門（かわいい部門）・在籍ページのURLがあり、依頼者提供のスクリーンショット（店名と「名駅/マットヘルス」の表記）で店名・掲載地域・業態を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「愛知県」「かわいい部門 ノミネート」のバッジを確認（同じ画像に過去の年度の順位の表示もあるが、2026年の根拠としては使っていない）。都道府県・公開ページURLは在籍ページのURL（aichi/A2301/A230101/chateau）の表記どおり。店名に「東京」とあるが、所在は愛知県（名古屋・名駅）。調査環境からは本文を直接確認していないため probable。正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（友人からのDM）を起点に追加（2026-11-02）。在籍ページのノミネートのバッジ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0011",
+    storeName: "イチャカワクラブ",
+    storeNameOriginals: ["イチャカワクラブ"],
+    prefecture: "香川県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/kagawa/A3701/A370101/icyakawaclub/girlid-60511451/?lo=1",
+    storePublicUrl: "https://www.cityheaven.net/kagawa/A3701/A370101/icyakawaclub/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-02",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0013"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（友人からのDM、2026-11-02）を起点に追加。依頼者提供の在籍ページのURL（kagawa/A3701/A370101/icyakawaclub）と、スクリーンショット（店舗ロゴ「イチャカワクラブ」、タイトル「「ことり」イチャカ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「香川県」「極嬢 部門 ノミネート」のバッジを確認。都道府県・公開ページURLは在籍ページURLの表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -481,6 +506,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-01",
     notes: "掲載依頼者から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・愛知県・かわいい部門）。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0013",
+    url: "https://www.cityheaven.net/kagawa/A3701/A370101/icyakawaclub/girlid-60511451/?lo=1",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0011"],
+    relationIds: [],
+    checkedAt: "2026-11-02",
+    notes: "掲載依頼者（友人）から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・香川県・極嬢部門）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
