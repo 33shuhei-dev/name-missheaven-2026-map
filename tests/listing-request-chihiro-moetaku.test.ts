@@ -149,3 +149,13 @@ describe("掲載依頼（お店）：新宿ごほうびSPA の在籍者（東京
     }
   });
 });
+
+describe("本人のDMで部門を補う：まこと（宇都宮select・ギャンブル大好き部門）", () => {
+  it("同じ人のまま部門が付く。人数は増えない", () => {
+    const store = site.stores.find((s) => s.id === "mh26-sns-store-e591353da9c4c1cb")!;
+    expect(site.entrants.filter((e) => e.storeId === store.id && e.name === "まこと")).toHaveLength(1);
+    expect(store.categoryOriginals).toContain("ギャンブル大好き部門");
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-h-4f71f759e6b34725")!;
+    expect(rec.categoryOriginal).toBe("ギャンブル大好き部門");
+  });
+});
