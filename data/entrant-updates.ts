@@ -1587,6 +1587,35 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
 ];
 
-export const entrantUpdates: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants, ...harvestBatch.entrants];
-export const entrantSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources];
-export const entrantRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations];
+const generatedEntrants: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants, ...harvestBatch.entrants];
+const generatedSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources];
+const generatedRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations];
+
+/**
+ * 自動生成した出場者（収集バッチ）に、あとから分かった部門を補う（バッチは毎日作り直すため、補いはここ＝手動の層に置く）。
+ * 根拠は既存の情報源（本人の投稿）のまま。部門名は投稿の表記どおり。
+ */
+const categorySupplements = [
+  {
+    entrantId: "mh26-ent-h-4f71f759e6b34725",
+    categoryOriginal: "ギャンブル大好き部門",
+    relationId: "ent-rel-0033",
+    note: "部門名は本人の投稿に「〖ギャンブル大好き部門〗 宇都宮selectからエントリーしてます」とある。同じアカウントからのDM（2026-11-02、「宇都宮selectのまことです」「部門はギャンブル大好き部門」）でも確認",
+  },
+];
+
+export const entrantUpdates: EntrantRawRecord[] = generatedEntrants.map((e) => {
+  const sup = categorySupplements.find((x) => x.entrantId === e.entrantId && !e.categoryOriginal);
+  return sup ? { ...e, categoryOriginal: sup.categoryOriginal, notes: [e.notes, sup.note].filter(Boolean).join("。") } : e;
+});
+export const entrantSources: Phase3RawSource[] = generatedSources.map((src) => {
+  const rels = categorySupplements.filter((x) => entrantUpdates.some((e) => e.entrantId === x.entrantId && e.sourceIds.includes(src.sourceId) && e.categoryOriginal === x.categoryOriginal));
+  return rels.length ? { ...src, relationIds: [...src.relationIds, ...rels.map((r) => r.relationId).filter((id) => !src.relationIds.includes(id))] } : src;
+});
+export const entrantRelations: Phase3RawRelation[] = [
+  ...generatedRelations,
+  ...categorySupplements.flatMap((x) => {
+    const e = entrantUpdates.find((y) => y.entrantId === x.entrantId && y.categoryOriginal === x.categoryOriginal);
+    return e ? [{ relationId: x.relationId, storeId: e.storeId, categoryOriginal: x.categoryOriginal, categoryNormalized: null, confidence: "unverified" as const, sourceIds: e.sourceIds, phase1RecordIds: [], notes: "本人の投稿の部門表記（同じアカウントからのDMでも確認）" }] : [];
+  }),
+];
