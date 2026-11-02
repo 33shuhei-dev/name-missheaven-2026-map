@@ -194,3 +194,13 @@ describe("掲載依頼（本人）：らん（夕月・愛媛県・2026新人部
     expect(new Set(rans.map((e) => e.storeId)).size).toBe(rans.length);
   });
 });
+
+describe("掲載依頼（本人）：あいか（ニューティアラ・茨城県・おっぱい自慢部門）", () => {
+  it("既存のニューティアラ（茨城県）に1名追加。バッジ確認（probable）", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0057")!;
+    expect(rec.storeId).toBe("mh26-sns-store-cc5f21ad4b1dc72c");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("おっぱい自慢部門");
+    expect(site.entrants.filter((e) => e.name === "あいか")).toHaveLength(1);
+  });
+});

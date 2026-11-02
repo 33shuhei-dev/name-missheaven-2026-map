@@ -867,6 +867,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。部門名は依頼文の表記「2026新人部門」（画像のノミネート表示は「2026年部門」までしか読み取れないため、依頼文の原文を採用。サイトにある「新人部門」とは統合しない）。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-02）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0057",
+    name: "あいか",
+    storeId: "mh26-sns-store-cc5f21ad4b1dc72c",
+    sourceIds: ["ent-src-0043"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「茨城県」「おっぱい自慢」のバッジ（出場者本人の掲載依頼のスクリーンショットで確認。部門の文字は一部しか写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-02",
+    categoryOriginal: "おっぱい自慢部門",
+    personalUrl: "https://www.cityheaven.net/ibaraki/A0802/A080202/newtiara/girlid-66353555/",
+    confidence: "probable",
+    checkedAt: "2026-11-02",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。依頼文の部門名は「おっパイ自慢部門」。バッジの表記「おっぱい自慢」にサイトにある既存の部門名「おっぱい自慢部門」と同じ形で「部門」を付けた。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1336,6 +1351,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人から提供された在籍ページのスクリーンショット（ノミネート表示）とDMの依頼文。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0043",
+    url: "https://www.cityheaven.net/ibaraki/A0802/A080202/newtiara/girlid-66353555/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-sns-store-cc5f21ad4b1dc72c"],
+    relationIds: ["ent-rel-0037"],
+    checkedAt: "2026-11-02",
+    notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・茨城県・おっぱい自慢）とDMの依頼文。画像は保存していない",
+  },
 ];
 
 /**
@@ -1692,6 +1718,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0042"],
     phase1RecordIds: [],
     notes: "依頼文の部門名（出場者本人の掲載依頼）。画像のノミネート表示と合わせて確認",
+  },
+  {
+    relationId: "ent-rel-0037",
+    storeId: "mh26-sns-store-cc5f21ad4b1dc72c",
+    categoryOriginal: "おっぱい自慢部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0043"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
   },
 ];
 
