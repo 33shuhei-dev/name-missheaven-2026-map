@@ -34,9 +34,9 @@ describe("このサイトについて：修正・削除の問い合わせ窓口"
 });
 
 describe("掲載依頼の案内：URLかスクショのお願い", () => {
-  it("フォーム・案内に「在籍ページのURLかスクリーンショット」の記載がある", () => {
+  it("フォーム・案内に「在籍ページのスクショ」のお願いがある", () => {
     for (const f of ["components/ListingRequestCta.tsx", "components/ListingRequestForm.tsx", "app/about/page.tsx"]) {
-      expect(readFileSync(f, "utf8"), f).toMatch(/URL(か|・|、)?(または)?スク(リーン)?ショット|URLかスクショ|スクリーンショット/);
+      expect(readFileSync(f, "utf8"), f).toMatch(/スクショ|スクリーンショット/);
     }
   });
 });
@@ -55,5 +55,13 @@ describe("掲載依頼の案内：出場者ご本人からのDMも歓迎", () =>
   it("案内と「このサイトについて」に、ご本人からのDM歓迎の文がある", () => {
     expect(readFileSync("components/ListingRequestCta.tsx", "utf8")).toContain("出場者ご本人</strong>からのDMも待っています");
     expect(readFileSync("app/about/page.tsx", "utf8")).toContain("出場者ご本人からのDMも歓迎です");
+  });
+});
+
+describe("掲載依頼の案内：リンクは貼らずスクショをお願いする（凍結リスクの回避）", () => {
+  it("案内・フォーム・「このサイトについて」に、リンクを貼らずスクショをお願いする文がある", () => {
+    for (const f of ["components/ListingRequestCta.tsx", "components/ListingRequestForm.tsx", "app/about/page.tsx"]) {
+      expect(readFileSync(f, "utf8"), f).toContain("リンクは貼らず");
+    }
   });
 });
