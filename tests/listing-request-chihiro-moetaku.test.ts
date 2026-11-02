@@ -183,3 +183,14 @@ describe("掲載依頼（本人）：じゅな（LALA・静岡県・次世代看
     expect(site.entrants.filter((e) => e.name === "じゅな")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼（本人）：らん（夕月・愛媛県・2026新人部門）", () => {
+  it("既存の夕月（愛媛県）に1名追加。部門は依頼文の原文（統合しない）。probable。同名の別人は別のまま", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0056")!;
+    expect(rec.storeId).toBe("mh26-p3b-store-de125eaeb54195ea");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("2026新人部門");
+    const rans = site.entrants.filter((e) => e.name === "らん");
+    expect(new Set(rans.map((e) => e.storeId)).size).toBe(rans.length);
+  });
+});

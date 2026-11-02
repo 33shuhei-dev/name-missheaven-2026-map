@@ -852,6 +852,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。部門名は依頼文の表記「次世代看板娘部門」（サイトにある「次世代看板部門」とは表記が異なるため、統合せず原文のまま記録）。バッジの部門表記は未確認のため unverified。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-02）。在籍ページの画像のノミネート表示（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0056",
+    name: "らん",
+    storeId: "mh26-p3b-store-de125eaeb54195ea",
+    sourceIds: ["ent-src-0042"],
+    evidence:
+      "出場者本人からの掲載依頼（DM）の文面に、店舗（愛媛 夕月）・名前（らん）・部門（2026新人部門）の記載。在籍ページの画像に「全国ミスヘブン総選挙」「2026年部門 らん NOMINATION」の表示（本人提供のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-02",
+    categoryOriginal: "2026新人部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-02",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。部門名は依頼文の表記「2026新人部門」（画像のノミネート表示は「2026年部門」までしか読み取れないため、依頼文の原文を採用。サイトにある「新人部門」とは統合しない）。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1310,6 +1325,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（「全国ミスヘブン総選挙」の表示）、およびDMの依頼文。部門名は依頼文の表記。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0042",
+    url: "https://www.cityheaven.net/ehime/A3801/A380101/dougo_yuuzuki/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-p3b-store-de125eaeb54195ea"],
+    relationIds: ["ent-rel-0036"],
+    checkedAt: "2026-11-02",
+    notes: "出場者本人から提供された在籍ページのスクリーンショット（ノミネート表示）とDMの依頼文。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。画像は保存していない",
+  },
 ];
 
 /**
@@ -1656,6 +1682,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0041"],
     phase1RecordIds: [],
     notes: "依頼文の部門名（出場者本人の掲載依頼）。バッジの部門表記は未確認",
+  },
+  {
+    relationId: "ent-rel-0036",
+    storeId: "mh26-p3b-store-de125eaeb54195ea",
+    categoryOriginal: "2026新人部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0042"],
+    phase1RecordIds: [],
+    notes: "依頼文の部門名（出場者本人の掲載依頼）。画像のノミネート表示と合わせて確認",
   },
 ];
 
