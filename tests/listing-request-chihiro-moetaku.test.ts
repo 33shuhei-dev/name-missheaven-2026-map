@@ -309,3 +309,12 @@ describe("掲載依頼：にこ（花嫁）（Yシャツと私・東京都・ロ
     expect(rec.categoryOriginal).toBe("ロリっ子部門");
   });
 });
+
+describe("掲載依頼：Venus（埼玉県・大宮）の15人", () => {
+  it("既存のVenusに15人追加。部門はバッジの表記。probable。登録済みの人は増やさない", () => {
+    const store = site.stores.find((s) => s.id === "mh26-p3b-store-6324b842fadbf58a")!;
+    const names = site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name);
+    for (const n of ["ほたる", "沙耶", "まひる", "しの", "桃香", "リズ", "ねむ", "こころ", "彩〜あや〜", "モナ", "うさぎ", "なつ", "えりか", "れあ", "つむぎ", "かな", "なごみ", "ひいらぎ", "心美"]) expect(names.filter((x) => x === n)).toHaveLength(1);
+    for (const c of ["マッサージ得意部門", "ギャンブル大好き部門", "店長一押し部門", "大宮ソープ部門", "性格がドS部門"]) expect(store.categoryOriginals).toContain(c);
+  });
+});
