@@ -423,6 +423,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（さゆり）本人からの掲載依頼（DM、2026-11-03）を起点に追加。DMに「東京リップ池袋のさゆりです！巨乳部門でエントリーしてます！」とあり、本人提供の在籍ページのスクリーンショット（店舗名「東京リップ池袋店」）とURL（tokyo/A1305/A130505/i-lip）で店名と都道府県を確認。スクリーンショットには過去の年度の順位のバッジが写っているが、2026年のノミネートのバッジは写っておらず、根拠には使っていない。本人の申告のみのため unverified。東京リップ上野店・立川店とは別の店舗。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-03）。在籍ページのノミネートのバッジ（スクリーンショット）で確認 ──
+  {
+    storeId: "mh26-upd-store-0015",
+    storeName: "ラブマシーン広島",
+    storeNameOriginals: ["ラブマシーン広島", "ラブマシーングループ"],
+    prefecture: "広島県",
+    listingArea: "中区",
+    listingAreas: ["中区"],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://share.google/7n9YLiPVKnHyJAZL9",
+    storePublicUrl: null,
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-11-03",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0017"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者（れいこ）本人からの掲載依頼（DM、2026-11-03）を起点に追加。DMに「ラブマシーン広島からデリヘル部門エントリーしてます」とあり、本人提供のスクリーンショットで、在籍ページの画像に「全国ミスヘブン総選挙2026」「広島県」「デリヘル 部門 ノミネート」のバッジを確認。店名・掲載地域（中区）・業態（デリヘル）は共有リンクのタイトル「「れいこ」ラブマシーン広島 [ラブマシーングループ] - 中区/デリヘル」による。リンクはGoogleの共有リンクで、店舗ページのURL自体は未確認（推測しない）。調査環境からは本文を直接確認していないため probable。正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -625,6 +650,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-03",
     notes: "出場者本人からのDMの申告（東京リップ池袋店・巨乳部門）と、本人提供の在籍ページのURL・スクリーンショット。2026年のノミネートのバッジは写っていない（過去の年度の順位のバッジは根拠に使っていない）。画像は保存していない。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0017",
+    url: "https://share.google/7n9YLiPVKnHyJAZL9",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0015"],
+    relationIds: [],
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・広島県・デリヘル部門）、およびGoogle共有リンク（リンク先は未確認）。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
