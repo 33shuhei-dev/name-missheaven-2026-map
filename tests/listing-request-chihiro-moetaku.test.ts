@@ -250,3 +250,21 @@ describe("掲載依頼（本人）：れいこ（ラブマシーン広島・広�
     expect(rec.categoryOriginal).toBe("デリヘル部門");
   });
 });
+
+describe("掲載依頼：まどか（ガーデン-人妻ダイスキ-）・愛理（グランドオペラ東京）", () => {
+  it("まどか：既存のガーデン（愛知県）に追加。バッジ確認（probable）。同名の別人とは別", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0062")!;
+    expect(rec.storeId).toBe("mh26-nat-store-44836c2248dded79");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("尾張部門");
+  });
+  it("愛理：東京都の新しい1店舗1名。unverified。愛知・神奈川のグランドオペラとは別", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0016")!;
+    expect(store.name).toBe("グランドオペラ東京");
+    expect(store.prefectureName).toBe("東京都");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["愛理"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0063")!;
+    expect(rec.confidence).toBe("unverified");
+    expect(rec.categoryOriginal).toBe("コスプレアイドル部門");
+  });
+});

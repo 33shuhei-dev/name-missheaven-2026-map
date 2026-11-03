@@ -448,6 +448,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（れいこ）本人からの掲載依頼（DM、2026-11-03）を起点に追加。DMに「ラブマシーン広島からデリヘル部門エントリーしてます」とあり、本人提供のスクリーンショットで、在籍ページの画像に「全国ミスヘブン総選挙2026」「広島県」「デリヘル 部門 ノミネート」のバッジを確認。店名・掲載地域（中区）・業態（デリヘル）は共有リンクのタイトル「「れいこ」ラブマシーン広島 [ラブマシーングループ] - 中区/デリヘル」による。リンクはGoogleの共有リンクで、店舗ページのURL自体は未確認（推測しない）。調査環境からは本文を直接確認していないため probable。正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（ファンからのDM）を起点に追加（2026-11-03）。出場者本人のXの告知（スクリーンショット）で出場・部門を確認。ヘブンのバッジは未確認 ──
+  {
+    storeId: "mh26-upd-store-0016",
+    storeName: "グランドオペラ東京",
+    storeNameOriginals: ["グランドオペラ東京"],
+    prefecture: "東京都",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/girlid-67224771/?lo=1",
+    storePublicUrl: "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/",
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-03",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0018"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（ファンからのDM、2026-11-03）を起点に追加。依頼文に名前（愛理）・店舗（グランドオペラ東京・東京都）・在籍ページのURL（tokyo/A1303/A130301/tokyo_guranop）があり、都道府県・店舗ページのURLはその表記どおり。出場は、本人のXの告知画像（「MISS ミスヘブン2026 コスプレアイドル部門 候補者：愛理」）のスクリーンショットで確認。ヘブンの在籍ページのバッジは未確認、X投稿の在籍ページとの対応は依頼者の申告のため unverified。愛知県の「グランドオペラ名古屋」、神奈川県の「グランドオペラ横浜」とは別の店舗。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -661,6 +686,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-03",
     notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・広島県・デリヘル部門）、およびGoogle共有リンク（リンク先は未確認）。画像は保存していない。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0018",
+    url: "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/girlid-67224771/?lo=1",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0016"],
+    relationIds: [],
+    checkedAt: "2026-11-03",
+    notes: "ファンから提供された在籍ページのURLと、出場者本人のXの告知画像（コスプレアイドル部門・候補者：愛理）のスクリーンショット。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
