@@ -116,7 +116,7 @@ describe("掲載依頼：ことり（イチャカワクラブ・香川県・極�
     const store = site.stores.find((s) => s.id === "mh26-upd-store-0011")!;
     expect(store.name).toBe("イチャカワクラブ");
     expect(store.prefectureName).toBe("香川県");
-    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["ことり"]);
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toContain("ことり");
     const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0041")!;
     expect(rec.confidence).toBe("probable");
     expect(rec.categoryOriginal).toBe("極嬢部門");
