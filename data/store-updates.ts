@@ -473,6 +473,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（ファンからのDM、2026-11-03）を起点に追加。依頼文に名前（愛理）・店舗（グランドオペラ東京・東京都）・在籍ページのURL（tokyo/A1303/A130301/tokyo_guranop）があり、都道府県・店舗ページのURLはその表記どおり。出場は、本人のXの告知画像（「MISS ミスヘブン2026 コスプレアイドル部門 候補者：愛理」）のスクリーンショットで確認。ヘブンの在籍ページのバッジは未確認、X投稿の在籍ページとの対応は依頼者の申告のため unverified。愛知県の「グランドオペラ名古屋」、神奈川県の「グランドオペラ横浜」とは別の店舗。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-04）。店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ）で確認 ──
+  {
+    storeId: "mh26-upd-store-0017",
+    storeName: "大宮ソープ キュート",
+    storeNameOriginals: ["大宮ソープ キュート", "CUTE"],
+    prefecture: "埼玉県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/saitama/A1101/A110101/cute/girllist/",
+    storePublicUrl: "https://www.cityheaven.net/saitama/A1101/A110101/cute/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-04",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0019"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（DM、2026-11-04）を起点に追加。依頼者提供の店舗ページの女の子一覧のスクリーンショット（店舗ロゴ「CUTE 大宮ソープ キュート」）で店名を確認し、各人の画像に「全国ミスヘブン総選挙2026」「埼玉県」「各部門 ノミネート」のバッジを確認。店名は、ロゴの表記（「大宮ソープ キュート」「CUTE」）による。都道府県・公開ページURLは、バッジとURL（saitama/A1101/A110101/cute）の表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -697,6 +722,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-03",
     notes: "ファンから提供された在籍ページのURLと、出場者本人のXの告知画像（コスプレアイドル部門・候補者：愛理）のスクリーンショット。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0019",
+    url: "https://www.cityheaven.net/saitama/A1101/A110101/cute/girllist/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0017"],
+    relationIds: [],
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼者から提供された、店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・埼玉県・各部門）。画像は保存していない。URLは店舗の女の子一覧のページ（個人用のパラメータは除いた）。掲載依頼を起点に追加",
   },
 ];
 
