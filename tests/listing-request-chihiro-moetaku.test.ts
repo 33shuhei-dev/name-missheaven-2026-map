@@ -217,3 +217,13 @@ describe("掲載依頼（本人）：さゆり（東京リップ池袋店・東�
     expect(rec.personalUrl).not.toContain("mypage_flg");
   });
 });
+
+describe("掲載依頼：雪鍋ましろ（しらゆき姫・香川県・大好き♡おっぱい部門）", () => {
+  it("既存のしらゆき姫（香川県）に1名追加。バッジ確認（probable）。部門は既存の表記。同名の別人とは別", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0059")!;
+    expect(rec.storeId).toBe("mh26-p3b-store-8ab29c22e82643a6");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("大好き♡おっぱい部門");
+    expect(site.entrants.filter((e) => e.name === "雪鍋ましろ")).toHaveLength(1);
+  });
+});
