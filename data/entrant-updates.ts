@@ -1028,6 +1028,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼を起点に追加（2026-11-03）。名前・部門名は告知バナーの表記。同名の別店舗の「かえで」とは別の人物。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-03）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0068",
+    name: "もも",
+    storeId: "mh26-nat-store-c18fd8f63c567d71",
+    sourceIds: ["ent-src-0051"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「ぽっちゃり 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "ぽっちゃり部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼（DM）を起点に追加（2026-11-03）。名前は依頼文と共有リンクのタイトル「「もも」白いぽっちゃりさん 錦糸町店」の表記。部門名はバッジの表記と依頼文（「ぽっちゃり」）に「部門」を付けたもの。同名の別店舗の「もも」とは別の人物。個別の在籍ページのURLは未提供。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1585,6 +1600,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼者から提供された、ロイヤルフラッシュの店舗ページの告知バナー（あみ・さな・すず・ゆいな・かえでのノミネート表示）と、すず本人のDM・在籍ページのスクリーンショット。画像は保存していない。ゆいな（店長イチオシ部門）はサイトにすでに登録がある",
   },
+  {
+    sourceId: "ent-src-0051",
+    url: "https://share.google/9lflWzdpXRPwrg5AV",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-nat-store-c18fd8f63c567d71"],
+    relationIds: ["ent-rel-0048"],
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・東京都・ぽっちゃり部門）と、Google共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -2051,6 +2077,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0050"],
     phase1RecordIds: [],
     notes: "店舗ページの告知バナーの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0048",
+    storeId: "mh26-nat-store-c18fd8f63c567d71",
+    categoryOriginal: "ぽっちゃり部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0051"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記と依頼文（掲載依頼のスクリーンショット）",
   },
 ];
 

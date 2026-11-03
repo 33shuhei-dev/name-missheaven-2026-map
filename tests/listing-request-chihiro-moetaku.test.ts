@@ -278,3 +278,14 @@ describe("掲載依頼：ロイヤルフラッシュ（茨城県・土浦）の4
     for (const id of ["0064", "0065", "0066", "0067"]) expect(entrantUpdates.find((e) => e.entrantId === `mh26-ent-${id}`)!.confidence).toBe("probable");
   });
 });
+
+describe("掲載依頼：もも（白いぽっちゃりさん 錦糸町店・東京都・ぽっちゃり部門）", () => {
+  it("既存の錦糸町店に1名追加。バッジ確認（probable）", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0068")!;
+    expect(rec.storeId).toBe("mh26-nat-store-c18fd8f63c567d71");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("ぽっちゃり部門");
+    const store = site.stores.find((s) => s.id === rec.storeId)!;
+    expect(site.entrants.filter((e) => e.storeId === store.id && e.name === "もも")).toHaveLength(1);
+  });
+});
