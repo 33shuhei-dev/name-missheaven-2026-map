@@ -897,6 +897,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-03）。部門名はDMの表記。2026年のノミネートのバッジは未確認のため unverified（スクリーンショットの過去の年度の順位バッジは根拠にしていない）。同名の別店舗の「さゆり」とは別の人物。本人のページのURLは本人提供のもの（個人用の ?mypage_flg は除いた）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-03）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0059",
+    name: "雪鍋ましろ",
+    storeId: "mh26-p3b-store-8ab29c22e82643a6",
+    sourceIds: ["ent-src-0045"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「香川県」「大好きおっぱい♡ 部門」のバッジ（掲載依頼のスクリーンショットで確認。部門の文字は一部しか写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "大好き♡おっぱい部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼（第三者からのDM）を起点に追加（2026-11-03）。名前は在籍ページのタイトル「雪鍋ましろ【プレミア】」のうち、【プレミア】（ランクの表記）を除いたもの。部門名は、バッジの表記「大好き おっぱい♡」に、サイトにある既存の部門名「大好き♡おっぱい部門」と同じ形で「部門」を付けた。スクリーンショットには過去の年度の順位のバッジも写っているが、2026年の根拠には使っていない。同名の「ましろ」（PaleTTe）とは別の人物。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1388,6 +1403,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "出場者本人からのDMの申告と、本人提供の在籍ページのURL・スクリーンショット。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0045",
+    url: "https://share.google/HPOhMVgKWTjtJf5bc",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-p3b-store-8ab29c22e82643a6"],
+    relationIds: ["ent-rel-0039"],
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・香川県・大好きおっぱい♡）と、タイトル「「雪鍋ましろ【プレミア】」しらゆき姫 - 高松/ソープ」のGoogle共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1764,6 +1790,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0044"],
     phase1RecordIds: [],
     notes: "DMの申告の部門名（出場者本人）。2026年のノミネートのバッジは未確認",
+  },
+  {
+    relationId: "ent-rel-0039",
+    storeId: "mh26-p3b-store-8ab29c22e82643a6",
+    categoryOriginal: "大好き♡おっぱい部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0045"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
