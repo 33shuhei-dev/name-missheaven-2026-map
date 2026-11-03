@@ -300,3 +300,12 @@ describe("グループの公式ページから追加：リッチドールなん�
     for (const id of ["0069", "0070", "0071", "0072", "0073"]) expect(entrantUpdates.find((e) => e.entrantId === `mh26-ent-${id}`)!.confidence).toBe("probable");
   });
 });
+
+describe("掲載依頼：にこ（花嫁）（Yシャツと私・東京都・ロリっ子部門）", () => {
+  it("既存のYシャツと私（東京都）に1名追加。バッジ確認（probable）。同名の別店舗の人とは別", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0074")!;
+    expect(rec.storeId).toBe("mh26-p3b-store-c7a3853697174bc1");
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("ロリっ子部門");
+  });
+});
