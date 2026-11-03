@@ -227,3 +227,13 @@ describe("掲載依頼：雪鍋ましろ（しらゆき姫・香川県・大好�
     expect(site.entrants.filter((e) => e.name === "雪鍋ましろ")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼：ヨル（CLUB バニー・滋賀県・ソープ部門）", () => {
+  it("既存のCLUB バニー（滋賀県）に1名追加。バッジ未確認のため unverified", () => {
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0060")!;
+    expect(rec.storeId).toBe("mh26-nat-store-8ec15ee288b2d376");
+    expect(rec.confidence).toBe("unverified");
+    expect(rec.categoryOriginal).toBe("ソープ部門");
+    expect(site.entrants.filter((e) => e.name === "ヨル")).toHaveLength(1);
+  });
+});

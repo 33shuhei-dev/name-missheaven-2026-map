@@ -912,6 +912,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼（第三者からのDM）を起点に追加（2026-11-03）。名前は在籍ページのタイトル「雪鍋ましろ【プレミア】」のうち、【プレミア】（ランクの表記）を除いたもの。部門名は、バッジの表記「大好き おっぱい♡」に、サイトにある既存の部門名「大好き♡おっぱい部門」と同じ形で「部門」を付けた。スクリーンショットには過去の年度の順位のバッジも写っているが、2026年の根拠には使っていない。同名の「ましろ」（PaleTTe）とは別の人物。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-03）。調査（検索）は行っていない。2026年のノミネートのバッジは未確認 ──
+  {
+    entrantId: "mh26-ent-0060",
+    name: "ヨル",
+    storeId: "mh26-nat-store-8ec15ee288b2d376",
+    sourceIds: ["ent-src-0046"],
+    evidence:
+      "掲載依頼（DM、2026-11-03）の文面に、名前（ヨル）・店舗（CLUBバニー・滋賀県）・部門（ソープ）の記載。依頼者提供の在籍ページのスクリーンショット（店舗名「CLUB バニー」、雄琴／ソープ）で店名と所在を確認（2026年のノミネートのバッジは写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "ソープ部門",
+    personalUrl: null,
+    confidence: "unverified",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼を起点に追加（2026-11-03）。名前は依頼文と在籍ページのタイトル「ヨル【攻め受けの二刀流】」のうち、【攻め受けの二刀流】（キャッチフレーズ）を除いたもの。部門名は依頼文の「ソープ」に「部門」を付けたもの。2026年のノミネートのバッジは未確認のため unverified。店舗は、サイトにある同名の「CLUB バニー」（滋賀県）に追加（別名の「クラブバニー雄琴」は表記が異なるため統合していない）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1414,6 +1429,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・香川県・大好きおっぱい♡）と、タイトル「「雪鍋ましろ【プレミア】」しらゆき姫 - 高松/ソープ」のGoogle共有リンク（リンク先は未確認）。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0046",
+    url: "https://share.google/Ym9Z0t9CNVLPrUlZ9",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-nat-store-8ec15ee288b2d376"],
+    relationIds: ["ent-rel-0040"],
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショットと、タイトル「「ヨル【攻め受けの二刀流】」CLUB バニー - 雄琴/ソープ」のGoogle共有リンク（リンク先は未確認）。2026年のバッジは写っていない。画像は保存していない",
+  },
 ];
 
 /**
@@ -1800,6 +1826,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0045"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0040",
+    storeId: "mh26-nat-store-8ec15ee288b2d376",
+    categoryOriginal: "ソープ部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0046"],
+    phase1RecordIds: [],
+    notes: "依頼文の部門名（ソープ）。2026年のノミネートのバッジは未確認",
   },
 ];
 
