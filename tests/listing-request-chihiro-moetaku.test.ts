@@ -318,3 +318,13 @@ describe("掲載依頼：Venus（埼玉県・大宮）の15人", () => {
     for (const c of ["マッサージ得意部門", "ギャンブル大好き部門", "店長一押し部門", "大宮ソープ部門", "性格がドS部門"]) expect(store.categoryOriginals).toContain(c);
   });
 });
+
+describe("掲載依頼：大宮ソープ キュート（埼玉県）の15人", () => {
+  it("埼玉県の新しい1店舗に15人。部門はバッジの表記。probable", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0017")!;
+    expect(store.name).toBe("大宮ソープ キュート");
+    expect(store.prefectureName).toBe("埼玉県");
+    expect(site.entrants.filter((e) => e.storeId === store.id)).toHaveLength(15);
+    for (const c of ["大宮ソープ部門", "店長一押し部門", "おっぱい自慢部門", "スタイル自慢部門", "大食い部門"]) expect(store.categoryOriginals).toContain(c);
+  });
+});
