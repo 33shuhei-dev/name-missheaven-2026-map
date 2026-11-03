@@ -237,3 +237,16 @@ describe("掲載依頼：ヨル（CLUB バニー・滋賀県・ソープ部門�
     expect(site.entrants.filter((e) => e.name === "ヨル")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼（本人）：れいこ（ラブマシーン広島・広島県・デリヘル部門）", () => {
+  it("広島県の新しい1店舗1名。バッジ確認（probable）。店舗ページURLは推測しない", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0015")!;
+    expect(store.name).toBe("ラブマシーン広島");
+    expect(store.prefectureName).toBe("広島県");
+    expect(store.storePublicUrl ?? null).toBeNull();
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["れいこ"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0061")!;
+    expect(rec.confidence).toBe("probable");
+    expect(rec.categoryOriginal).toBe("デリヘル部門");
+  });
+});

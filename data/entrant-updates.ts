@@ -927,6 +927,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼を起点に追加（2026-11-03）。名前は依頼文と在籍ページのタイトル「ヨル【攻め受けの二刀流】」のうち、【攻め受けの二刀流】（キャッチフレーズ）を除いたもの。部門名は依頼文の「ソープ」に「部門」を付けたもの。2026年のノミネートのバッジは未確認のため unverified。店舗は、サイトにある同名の「CLUB バニー」（滋賀県）に追加（別名の「クラブバニー雄琴」は表記が異なるため統合していない）。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-03）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0061",
+    name: "れいこ",
+    storeId: "mh26-upd-store-0015",
+    sourceIds: ["ent-src-0047"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「広島県」「デリヘル 部門 ノミネート」のバッジ（出場者本人の掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "デリヘル部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-03）。名前は共有リンクのタイトル「「れいこ」ラブマシーン広島」の表記。部門名はバッジの表記とDMの依頼文。個別の在籍ページのURLは未提供。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1440,6 +1455,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "掲載依頼者から提供された在籍ページのスクリーンショットと、タイトル「「ヨル【攻め受けの二刀流】」CLUB バニー - 雄琴/ソープ」のGoogle共有リンク（リンク先は未確認）。2026年のバッジは写っていない。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0047",
+    url: "https://share.google/7n9YLiPVKnHyJAZL9",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0015"],
+    relationIds: ["ent-rel-0041"],
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からのDMの依頼文と在籍ページのスクリーンショット（ノミネートのバッジ）、およびGoogle共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -1836,6 +1862,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0046"],
     phase1RecordIds: [],
     notes: "依頼文の部門名（ソープ）。2026年のノミネートのバッジは未確認",
+  },
+  {
+    relationId: "ent-rel-0041",
+    storeId: "mh26-upd-store-0015",
+    categoryOriginal: "デリヘル部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0047"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
   },
 ];
 
