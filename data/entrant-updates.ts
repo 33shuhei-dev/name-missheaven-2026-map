@@ -971,6 +971,63 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "ファンからの掲載依頼を起点に追加（2026-11-03）。名前・部門名は本人の告知画像の表記。店舗・在籍ページのURLは依頼者の提供で、X投稿の人物との対応は依頼者の申告のため unverified。依頼者は本人の許可の要否を気にしていたが、本人自身がXで出場を公表している内容のみ記録した。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-03）。ロイヤルフラッシュ（茨城県・土浦）の店舗ページの告知バナー（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0064",
+    name: "あみ",
+    storeId: "mh26-nat-store-038556133163fde5",
+    sourceIds: ["ent-src-0050"],
+    evidence:
+      "店舗ページの告知バナー（スクリーンショット）に、「あみ」と「スタイル自慢部門 NOMINATION」の表示（全国ミスヘブン総選挙2026の告知。掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "スタイル自慢部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼を起点に追加（2026-11-03）。名前・部門名は告知バナーの表記。同名の別店舗の「あみ」とは別の人物。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
+  },
+  {
+    entrantId: "mh26-ent-0065",
+    name: "さな",
+    storeId: "mh26-nat-store-038556133163fde5",
+    sourceIds: ["ent-src-0050"],
+    evidence:
+      "店舗ページの告知バナー（スクリーンショット）に、「さな」と「土浦ソープ部門 NOMINATION」の表示（全国ミスヘブン総選挙2026の告知。掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "土浦ソープ部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼を起点に追加（2026-11-03）。名前・部門名は告知バナーの表記。同名の別店舗の「さな」とは別の人物。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
+  },
+  {
+    entrantId: "mh26-ent-0066",
+    name: "すず",
+    storeId: "mh26-nat-store-038556133163fde5",
+    sourceIds: ["ent-src-0050"],
+    evidence:
+      "店舗ページの告知バナーに「すず」と「おっぱい自慢部門 NOMINATION」の表示。在籍ページの画像に「全国ミスヘブン総選挙2026」「茨城県」「おっぱい自慢 部門 ノミネート」のバッジ（本人からのDMのスクリーンショットでも確認）（全国ミスヘブン総選挙2026の告知。掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "おっぱい自慢部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼を起点に追加（2026-11-03）。名前・部門名は告知バナーの表記。 本人（すず）からの掲載依頼（DM）でも確認。同名の別店舗の「すず」とは別の人物。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
+  },
+  {
+    entrantId: "mh26-ent-0067",
+    name: "かえで",
+    storeId: "mh26-nat-store-038556133163fde5",
+    sourceIds: ["ent-src-0050"],
+    evidence:
+      "店舗ページの告知バナー（スクリーンショット）に、「かえで」と「マッサージ得意部門 NOMINATION」の表示（全国ミスヘブン総選挙2026の告知。掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "マッサージ得意部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼を起点に追加（2026-11-03）。名前・部門名は告知バナーの表記。同名の別店舗の「かえで」とは別の人物。個別の在籍ページのURLは未提供のため、情報源のURLは店舗ページ。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1517,6 +1574,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "ファンから提供された在籍ページのURLと、出場者本人のXの告知画像（コスプレアイドル部門・候補者：愛理）のスクリーンショット。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0050",
+    url: "https://www.cityheaven.net/ibaraki/A0802/A080202/royal-flash/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-nat-store-038556133163fde5"],
+    relationIds: ["ent-rel-0044", "ent-rel-0045", "ent-rel-0046", "ent-rel-0047"],
+    checkedAt: "2026-11-03",
+    notes: "掲載依頼者から提供された、ロイヤルフラッシュの店舗ページの告知バナー（あみ・さな・すず・ゆいな・かえでのノミネート表示）と、すず本人のDM・在籍ページのスクリーンショット。画像は保存していない。ゆいな（店長イチオシ部門）はサイトにすでに登録がある",
+  },
 ];
 
 /**
@@ -1943,6 +2011,46 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0049"],
     phase1RecordIds: [],
     notes: "出場者本人のXの告知画像の部門表記（ファンからの掲載依頼）。ヘブンのバッジは未確認",
+  },
+  {
+    relationId: "ent-rel-0044",
+    storeId: "mh26-nat-store-038556133163fde5",
+    categoryOriginal: "スタイル自慢部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0050"],
+    phase1RecordIds: [],
+    notes: "店舗ページの告知バナーの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0045",
+    storeId: "mh26-nat-store-038556133163fde5",
+    categoryOriginal: "土浦ソープ部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0050"],
+    phase1RecordIds: [],
+    notes: "店舗ページの告知バナーの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0046",
+    storeId: "mh26-nat-store-038556133163fde5",
+    categoryOriginal: "おっぱい自慢部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0050"],
+    phase1RecordIds: [],
+    notes: "店舗ページの告知バナーの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0047",
+    storeId: "mh26-nat-store-038556133163fde5",
+    categoryOriginal: "マッサージ得意部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0050"],
+    phase1RecordIds: [],
+    notes: "店舗ページの告知バナーの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 

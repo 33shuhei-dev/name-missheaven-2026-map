@@ -268,3 +268,13 @@ describe("掲載依頼：まどか（ガーデン-人妻ダイスキ-）・愛�
     expect(rec.categoryOriginal).toBe("コスプレアイドル部門");
   });
 });
+
+describe("掲載依頼：ロイヤルフラッシュ（茨城県・土浦）の4人", () => {
+  it("既存のロイヤルフラッシュに4人追加。部門は告知バナーの表記。同名の別店舗の人とは別", () => {
+    const store = site.stores.find((s) => s.id === "mh26-nat-store-038556133163fde5")!;
+    const names = site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name);
+    for (const n of ["あみ", "さな", "すず", "かえで", "ゆいな"]) expect(names).toContain(n);
+    for (const c of ["スタイル自慢部門", "土浦ソープ部門", "おっぱい自慢部門", "マッサージ得意部門"]) expect(store.categoryOriginals).toContain(c);
+    for (const id of ["0064", "0065", "0066", "0067"]) expect(entrantUpdates.find((e) => e.entrantId === `mh26-ent-${id}`)!.confidence).toBe("probable");
+  });
+});
