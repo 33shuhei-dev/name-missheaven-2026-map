@@ -114,6 +114,34 @@
    "notes": "本人SNSで出場確認（検索で発見。本人からの掲載申請ではない）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
   },
   {
+   "storeId": "mh26-hv-store-0e3caedd19e08f44",
+   "storeName": ".com福井",
+   "storeNameOriginals": [
+    ".com福井"
+   ],
+   "prefecture": null,
+   "listingArea": null,
+   "listingAreas": [],
+   "formalElectionArea": null,
+   "categoryOriginal": null,
+   "categoryOriginals": [],
+   "participationEvidenceUrl": "https://x.com/fukui_mura/status/2117429293253075266",
+   "storePublicUrl": null,
+   "sourceType": "store",
+   "confidence": "unverified",
+   "participationType": "third_party_reported",
+   "checkedAt": "2026-10-29",
+   "phase1RecordIds": [],
+   "phase2RecordIds": [],
+   "isNewSincePhase1": true,
+   "sourceIds": [
+    "hv-src-6918a1931adab5d7"
+   ],
+   "publicUrlAccessStatus": "unknown",
+   "cityheavenKey": null,
+   "notes": "店舗または第三者のSNS投稿で出場の記載を確認（出場者本人の投稿ではない。未確認）。都道府県の根拠：投稿に都道府県の記載がなく、地域未判明のまま掲載（2026-10-29 の運営判断）。公開ページURLは確認できていないため空欄。掲載地域・正式選挙エリアは未確認。"
+  },
+  {
    "storeId": "mh26-hv-store-18930cd6e6908564",
    "storeName": "広島シャーベット別館",
    "storeNameOriginals": [
@@ -1716,6 +1744,7 @@
     "hv-src-944c06beae57c3c2",
     "hv-src-ade18a00f12eff0f",
     "hv-src-6360f92087a7c52f",
+    "hv-src-167fce246a6a93d3",
     "hv-src-cd8030e1c02d1fa8",
     "hv-src-b9b2955dd12318ad",
     "hv-src-7cdb8b44a1fc5449",
@@ -1774,7 +1803,8 @@
     "hv-src-b46fa36a9aacacc7",
     "hv-src-28feefdf06b59189",
     "hv-src-4dcd054a3c5d38a9",
-    "hv-src-e1562d0913fa57e2"
+    "hv-src-e1562d0913fa57e2",
+    "hv-src-9ff38a9fecaa9394"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -1921,7 +1951,8 @@
    "phase2RecordIds": [],
    "isNewSincePhase1": true,
    "sourceIds": [
-    "hv-src-4557c754fc55b7c2"
+    "hv-src-4557c754fc55b7c2",
+    "hv-src-4e21f7139d8de236"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -2152,7 +2183,8 @@
    "sourceIds": [
     "hv-src-c2426da2a654bf3c",
     "hv-src-19ab615a8071ffca",
-    "hv-src-7926127e4a8d1c96"
+    "hv-src-7926127e4a8d1c96",
+    "hv-src-d97939f304a4d08d"
    ],
    "publicUrlAccessStatus": "unknown",
    "cityheavenKey": null,
@@ -2443,6 +2475,19 @@
    "relationIds": [],
    "checkedAt": "2026-10-29",
    "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-6918a1931adab5d7",
+   "url": "https://x.com/fukui_mura/status/2117429293253075266",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-hv-store-0e3caedd19e08f44"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
   },
   {
    "sourceId": "hv-src-46f39124d43b4615",
@@ -4044,6 +4089,19 @@
    "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
   },
   {
+   "sourceId": "hv-src-167fce246a6a93d3",
+   "url": "https://x.com/FirstClass_0901/status/2117450998310727806",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "store_announcement",
+   "storeIds": [
+    "mh26-sns-store-615bff80641320e3"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の店舗（または所属グループ）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-cd8030e1c02d1fa8",
    "url": "https://x.com/FirstClass_0901/status/2111741506449281494",
    "sourceType": "store",
@@ -4460,6 +4518,19 @@
    "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
   },
   {
+   "sourceId": "hv-src-9ff38a9fecaa9394",
+   "url": "https://x.com/SPA03729741/status/2117452698782245085",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-6384b03f765df596"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
    "sourceId": "hv-src-cb3da81a70170ecd",
    "url": "https://x.com/55ma1ma1/status/2115450347732996598",
    "sourceType": "entrant_social",
@@ -4605,6 +4676,19 @@
   {
    "sourceId": "hv-src-4557c754fc55b7c2",
    "url": "https://x.com/hama_kazu25/status/2115371766038347871",
+   "sourceType": "store",
+   "accessStatus": "search_index_only",
+   "publisherRole": "third_party_social_found",
+   "storeIds": [
+    "mh26-sns-store-85cc144495a63b3b"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の第三者（ファンなど）のX投稿の公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。出場者本人の投稿ではなく、未確認の情報"
+  },
+  {
+   "sourceId": "hv-src-4e21f7139d8de236",
+   "url": "https://x.com/hama_kazu25/status/2117392578886959180",
    "sourceType": "store",
    "accessStatus": "search_index_only",
    "publisherRole": "third_party_social_found",
@@ -4800,6 +4884,19 @@
   {
    "sourceId": "hv-src-7926127e4a8d1c96",
    "url": "https://x.com/svwfn/status/2117298289259483299",
+   "sourceType": "entrant_social",
+   "accessStatus": "search_index_only",
+   "publisherRole": "entrant_social_found",
+   "storeIds": [
+    "mh26-sns-store-d30f1fbf1b68065d"
+   ],
+   "relationIds": [],
+   "checkedAt": "2026-10-29",
+   "notes": "所属する出場者の本人のXの公開投稿を、Yahoo!リアルタイム検索（robots.txtで許可）の結果で確認。本人からの掲載申請ではなく、検索で見つけた本人の出場表明"
+  },
+  {
+   "sourceId": "hv-src-d97939f304a4d08d",
+   "url": "https://x.com/svwfn/status/2117446229584232804",
    "sourceType": "entrant_social",
    "accessStatus": "search_index_only",
    "publisherRole": "entrant_social_found",
