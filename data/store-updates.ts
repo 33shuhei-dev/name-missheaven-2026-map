@@ -398,6 +398,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（このは）本人からの掲載依頼（DM、2026-11-02）を起点に追加。依頼文に名前・店舗（スチュワーデス・新潟県）・部門（おっぱい部門）があり、本人提供のスクリーンショット（店舗ロゴ「スチュワーデス NIIGATA SOAPLAND STEWARDESS」、タイトル「「このは」スチュワ…」）で店名を確認。在籍ページの画像に「全国ミスヘブン総選挙2026」「新潟県」「おっぱい 部門 ノミネート」のバッジを確認。その後（2026-11-02）、本人から在籍ページのURL（niigata/A1501/A150101/stw）の提供があり、店舗ページのURLと情報源のURLを設定した。岐阜県の「スチュアーデス」とは別の店舗（表記も所在も異なる）。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-03）。2026年のノミネートのバッジは未確認 ──
+  {
+    storeId: "mh26-upd-store-0014",
+    storeName: "東京リップ池袋店",
+    storeNameOriginals: ["東京リップ池袋店"],
+    prefecture: "東京都",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/tokyo/A1305/A130505/i-lip/girlid-49640476/",
+    storePublicUrl: "https://www.cityheaven.net/tokyo/A1305/A130505/i-lip/",
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-11-03",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0016"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者（さゆり）本人からの掲載依頼（DM、2026-11-03）を起点に追加。DMに「東京リップ池袋のさゆりです！巨乳部門でエントリーしてます！」とあり、本人提供の在籍ページのスクリーンショット（店舗名「東京リップ池袋店」）とURL（tokyo/A1305/A130505/i-lip）で店名と都道府県を確認。スクリーンショットには過去の年度の順位のバッジが写っているが、2026年のノミネートのバッジは写っておらず、根拠には使っていない。本人の申告のみのため unverified。東京リップ上野店・立川店とは別の店舗。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -589,6 +614,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-02",
     notes: "出場者本人からのDMの依頼文と、本人提供の在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・新潟県・おっぱい部門）。その後（2026-11-02）、本人から在籍ページのURLの提供があり、情報源のURLに設定した。画像は保存していない。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0016",
+    url: "https://www.cityheaven.net/tokyo/A1305/A130505/i-lip/girlid-49640476/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0014"],
+    relationIds: [],
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からのDMの申告（東京リップ池袋店・巨乳部門）と、本人提供の在籍ページのURL・スクリーンショット。2026年のノミネートのバッジは写っていない（過去の年度の順位のバッジは根拠に使っていない）。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
