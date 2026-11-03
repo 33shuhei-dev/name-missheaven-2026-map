@@ -1114,6 +1114,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "店舗（グループ）の公式ページの告知を起点に追加（2026-11-03）。名前・部門名は告知の表記どおり（年齢の記載は記録しない）。ページに日付の表示はない。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（DM）を起点に追加（2026-11-04）。在籍ページのノミネートのバッジ（スクリーンショット）で確認。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0074",
+    name: "にこ（花嫁）",
+    storeId: "mh26-p3b-store-c7a3853697174bc1",
+    sourceIds: ["ent-src-0053"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「東京都」「ロリっ子 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-04",
+    categoryOriginal: "ロリっ子部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼（DM）を起点に追加（2026-11-04）。名前は共有リンクのタイトル「「にこ（花嫁）」Yシャツと私 - 吉原/ソープ」の表記のまま（括弧内の「花嫁」は在籍名の一部か、キャッチフレーズか分からないため、そのまま記録）。部門名はバッジの表記に「部門」を付けたもの（サイトにある既存の「ロリっ子部門」と同じ形）。同名の別店舗の「にこ」とは別の人物。個別の在籍ページのURLは未提供。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1693,6 +1708,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "リッチドール＆品格グループの公式イベントページ（リッチドールなんばの項）。「2026ミスヘブン総選挙　今年も5人のエントリーしました！」と、5人のエントリー一覧（名前・部門）を確認した。ChatGPTの調査で見つかったURLを、調査側が公開ページとして取得して確認",
   },
+  {
+    sourceId: "ent-src-0053",
+    url: "https://share.google/XpXAUlfKUQVU50fJQ",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-p3b-store-c7a3853697174bc1"],
+    relationIds: ["ent-rel-0054"],
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼者から提供された在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・東京都・ロリっ子部門）と、Google共有リンク（リンク先は未確認）。画像は保存していない",
+  },
 ];
 
 /**
@@ -2219,6 +2245,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0052"],
     phase1RecordIds: [],
     notes: "店舗（グループ）の公式イベントページのエントリー一覧の部門表記",
+  },
+  {
+    relationId: "ent-rel-0054",
+    storeId: "mh26-p3b-store-c7a3853697174bc1",
+    categoryOriginal: "ロリっ子部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0053"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
