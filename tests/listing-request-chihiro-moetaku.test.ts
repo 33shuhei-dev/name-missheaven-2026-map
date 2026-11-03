@@ -289,3 +289,14 @@ describe("掲載依頼：もも（白いぽっちゃりさん 錦糸町店・東
     expect(site.entrants.filter((e) => e.storeId === store.id && e.name === "もも")).toHaveLength(1);
   });
 });
+
+describe("グループの公式ページから追加：リッチドールなんば（大阪府）の5人", () => {
+  it("既存のリッチドールなんば店に5人。部門は告知の表記。probable", () => {
+    const store = site.stores.find((s) => s.id === "mh26-p3b-store-d2207376dea2130e")!;
+    expect(store.prefectureName).toBe("大阪府");
+    const names = site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name).sort();
+    expect(names).toEqual(["アルカ", "キラ", "クレハ", "コノミ", "ミオ"].sort());
+    for (const c of ["100名店在籍部門", "尻フェチ部門", "ニューヒロイン部門", "くじら部門", "ギャル部門"]) expect(store.categoryOriginals).toContain(c);
+    for (const id of ["0069", "0070", "0071", "0072", "0073"]) expect(entrantUpdates.find((e) => e.entrantId === `mh26-ent-${id}`)!.confidence).toBe("probable");
+  });
+});
