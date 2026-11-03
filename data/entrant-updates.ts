@@ -942,6 +942,35 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-03",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-03）。名前は共有リンクのタイトル「「れいこ」ラブマシーン広島」の表記。部門名はバッジの表記とDMの依頼文。個別の在籍ページのURLは未提供。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼を起点に追加（2026-11-03）。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0062",
+    name: "まどか",
+    storeId: "mh26-nat-store-44836c2248dded79",
+    sourceIds: ["ent-src-0048"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「愛知県」「尾張 部門 ノミネート」のバッジ（出場者本人の掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "尾張部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からの掲載依頼（DM）を起点に追加（2026-11-03）。名前は依頼文と共有リンクのタイトル「「まどか」ガーデン -人妻ダイスキ- - 一宮・稲沢/デリヘル」の表記。部門名はバッジと依頼文の表記。同名の別店舗の「まどか」とは別の人物。個別の在籍ページのURLは未提供。プロフィール・写真等は保存していない",
+  },
+  {
+    entrantId: "mh26-ent-0063",
+    name: "愛理",
+    storeId: "mh26-upd-store-0016",
+    sourceIds: ["ent-src-0049"],
+    evidence:
+      "出場者本人のXの告知画像（スクリーンショット）に「MISS ミスヘブン2026 コスプレアイドル部門 候補者：愛理」「現在の目標：10月16日までに40票」の記載。ファンからの掲載依頼（DM）で、店舗（グランドオペラ東京）と在籍ページのURLの提供あり。ヘブンの在籍ページのバッジは未確認。調査側は本文を直接取得していない",
+    evidenceDate: "2026-10-16",
+    categoryOriginal: "コスプレアイドル部門",
+    personalUrl: "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/girlid-67224771/?lo=1",
+    confidence: "unverified",
+    checkedAt: "2026-11-03",
+    notes: "ファンからの掲載依頼を起点に追加（2026-11-03）。名前・部門名は本人の告知画像の表記。店舗・在籍ページのURLは依頼者の提供で、X投稿の人物との対応は依頼者の申告のため unverified。依頼者は本人の許可の要否を気にしていたが、本人自身がXで出場を公表している内容のみ記録した。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1466,6 +1495,28 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-03",
     notes: "出場者本人からのDMの依頼文と在籍ページのスクリーンショット（ノミネートのバッジ）、およびGoogle共有リンク（リンク先は未確認）。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0048",
+    url: "https://share.google/eu9VZ75RqxQQuIZpU",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-nat-store-44836c2248dded79"],
+    relationIds: ["ent-rel-0042"],
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からのDMの依頼文と在籍ページのスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・愛知県・尾張部門）、およびGoogle共有リンク（リンク先は未確認）。画像は保存していない",
+  },
+  {
+    sourceId: "ent-src-0049",
+    url: "https://www.cityheaven.net/tokyo/A1303/A130301/tokyo_guranop/girlid-67224771/?lo=1",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0016"],
+    relationIds: ["ent-rel-0043"],
+    checkedAt: "2026-11-03",
+    notes: "ファンから提供された在籍ページのURLと、出場者本人のXの告知画像（コスプレアイドル部門・候補者：愛理）のスクリーンショット。画像は保存していない",
+  },
 ];
 
 /**
@@ -1872,6 +1923,26 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0047"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
+  },
+  {
+    relationId: "ent-rel-0042",
+    storeId: "mh26-nat-store-44836c2248dded79",
+    categoryOriginal: "尾張部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0048"],
+    phase1RecordIds: [],
+    notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
+  },
+  {
+    relationId: "ent-rel-0043",
+    storeId: "mh26-upd-store-0016",
+    categoryOriginal: "コスプレアイドル部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0049"],
+    phase1RecordIds: [],
+    notes: "出場者本人のXの告知画像の部門表記（ファンからの掲載依頼）。ヘブンのバッジは未確認",
   },
 ];
 
