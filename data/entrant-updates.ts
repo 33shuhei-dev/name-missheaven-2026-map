@@ -882,6 +882,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-02）。依頼文の部門名は「おっパイ自慢部門」。バッジの表記「おっぱい自慢」にサイトにある既存の部門名「おっぱい自慢部門」と同じ形で「部門」を付けた。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
   },
+  // ── 出場者本人からの掲載依頼（DM）を起点に追加（2026-11-03）。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0058",
+    name: "さゆり",
+    storeId: "mh26-upd-store-0014",
+    sourceIds: ["ent-src-0044"],
+    evidence:
+      "出場者本人からの掲載依頼（DM、2026-11-03）の文面に「東京リップ池袋のさゆりです！巨乳部門でエントリーしてます！」。本人提供の在籍ページのスクリーンショットで店舗名（東京リップ池袋店）を確認（2026年のノミネートのバッジは写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-03",
+    categoryOriginal: "巨乳部門",
+    personalUrl: "https://www.cityheaven.net/tokyo/A1305/A130505/i-lip/girlid-49640476/",
+    confidence: "unverified",
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-03）。部門名はDMの表記。2026年のノミネートのバッジは未確認のため unverified（スクリーンショットの過去の年度の順位バッジは根拠にしていない）。同名の別店舗の「さゆり」とは別の人物。本人のページのURLは本人提供のもの（個人用の ?mypage_flg は除いた）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -1362,6 +1377,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-02",
     notes: "出場者本人から提供された在籍ページのURLとスクリーンショット（ノミネートのバッジ：全国ミスヘブン総選挙2026・茨城県・おっぱい自慢）とDMの依頼文。画像は保存していない",
   },
+  {
+    sourceId: "ent-src-0044",
+    url: "https://www.cityheaven.net/tokyo/A1305/A130505/i-lip/girlid-49640476/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0014"],
+    relationIds: ["ent-rel-0038"],
+    checkedAt: "2026-11-03",
+    notes: "出場者本人からのDMの申告と、本人提供の在籍ページのURL・スクリーンショット。画像は保存していない",
+  },
 ];
 
 /**
@@ -1728,6 +1754,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0043"],
     phase1RecordIds: [],
     notes: "在籍ページの画像のバッジの部門表記と依頼文（出場者本人の掲載依頼）",
+  },
+  {
+    relationId: "ent-rel-0038",
+    storeId: "mh26-upd-store-0014",
+    categoryOriginal: "巨乳部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0044"],
+    phase1RecordIds: [],
+    notes: "DMの申告の部門名（出場者本人）。2026年のノミネートのバッジは未確認",
   },
 ];
 

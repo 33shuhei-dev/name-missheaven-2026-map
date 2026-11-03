@@ -204,3 +204,16 @@ describe("掲載依頼（本人）：あいか（ニューティアラ・茨城�
     expect(site.entrants.filter((e) => e.name === "あいか")).toHaveLength(1);
   });
 });
+
+describe("掲載依頼（本人）：さゆり（東京リップ池袋店・東京都・巨乳部門）", () => {
+  it("東京都の新しい1店舗1名。unverified。上野店・立川店とは別。URLの個人用パラメータは除く", () => {
+    const store = site.stores.find((s) => s.id === "mh26-upd-store-0014")!;
+    expect(store.name).toBe("東京リップ池袋店");
+    expect(store.prefectureName).toBe("東京都");
+    expect(site.entrants.filter((e) => e.storeId === store.id).map((e) => e.name)).toEqual(["さゆり"]);
+    const rec = entrantUpdates.find((e) => e.entrantId === "mh26-ent-0058")!;
+    expect(rec.confidence).toBe("unverified");
+    expect(rec.categoryOriginal).toBe("巨乳部門");
+    expect(rec.personalUrl).not.toContain("mypage_flg");
+  });
+});
