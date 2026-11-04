@@ -20,3 +20,10 @@ describe("特集ページ（200人と15万票）", () => {
     expect(readFileSync("components/SiteFooter.tsx", "utf8")).toContain('href="/feature"');
   });
 });
+
+describe("特集への入口", () => {
+  it("トップにバナー、ヘッダーに目立つ「特集」リンクがある", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("feature-banner");
+    expect(readFileSync("components/SiteHeader.tsx", "utf8")).toContain("site-nav__feature");
+  });
+});

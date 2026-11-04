@@ -2289,3 +2289,55 @@ p {
 .feature-table th {
   font-weight: 700;
 }
+
+/* 特集への入口 */
+.feature-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--gradient);
+  color: #fff;
+  text-decoration: none;
+}
+.feature-banner__tag {
+  flex: none;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: #fff;
+  color: var(--accent);
+  font-size: 0.8125rem;
+  font-weight: 800;
+}
+.feature-banner__text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+  flex: 1;
+}
+.feature-banner__text strong {
+  font-size: 1.0625rem;
+}
+.feature-banner__text span {
+  font-size: 0.8125rem;
+  opacity: 0.95;
+}
+.feature-banner__go {
+  flex: none;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.site-nav .site-nav__feature {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--gradient);
+  color: #fff;
+  font-weight: 800;
+}
+@media (min-width: 720px) {
+  .feature-banner {
+    max-width: 560px;
+  }
+}
