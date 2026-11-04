@@ -80,6 +80,9 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
   }, [items, state.q, state.pref, state.area, state.confidence]);
 
   const hasCondition = !!(state.q.trim() || state.kind || state.pref || state.area || state.confidence);
+  // 条件を何も指定していないときは、全体の件数（出場者の合計を含む）を表示しない
+  const showCounts = !!(state.q.trim() || state.pref || state.area || state.confidence);
+  const hasFilter = !!(state.kind || state.pref || state.area || state.confidence);
 
   return (
     <div className="search">
@@ -102,7 +105,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
               <option value="">すべて</option>
               {places.map((p) => (
                 <option key={p.slug} value={p.slug}>
-                  {p.name}（{p.recordCount}）
+                  {p.name}
                 </option>
               ))}
             </select>
@@ -150,7 +153,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
 
       <div className="kind-tabs" role="group" aria-label="種別で絞り込み">
         <button type="button" className={`chip${state.kind === "" ? " is-active" : ""}`} aria-pressed={state.kind === ""} onClick={() => update({ kind: "" })}>
-          すべて<span className="chip__count">{kindCounts.total}</span>
+          すべて{showCounts && <span className="chip__count">{kindCounts.total}</span>}
         </button>
         {SEARCH_KIND_ORDER.map((k) => (
           <button
@@ -161,7 +164,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
             onClick={() => update({ kind: k })}
           >
             {SEARCH_KIND_LABEL[k]}
-            <span className="chip__count">{kindCounts.c[k] ?? 0}</span>
+            {showCounts && <span className="chip__count">{kindCounts.c[k] ?? 0}</span>}
           </button>
         ))}
       </div>
@@ -169,12 +172,17 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
       <section className="section" aria-live="polite">
         <h2>
           {hasCondition ? "検索結果" : "すべての項目"}
-          <span className="count">{hits.length}件</span>
+          {showCounts && <span className="count">{hits.length}件</span>}
         </h2>
         {hits.length === 0 ? (
           <div className="empty">
             <p>条件に一致する項目はありません。</p>
             <p className="hint">語を短くする、絞り込みを外すなどしてお試しください。掲載していない情報は「存在しない」という意味ではありません。</p>
+            {hasFilter && state.q.trim() && (
+              <button type="button" className="button button--block" onClick={() => update({ kind: "", pref: "", area: "", confidence: "" })}>
+                絞り込みを外して「{state.q.trim()}」だけで探す
+              </button>
+            )}
             <ListingRequestCta />
           </div>
         ) : (
@@ -212,6 +220,7 @@ export function SearchClient({ items, places }: { items: SearchItem[]; places: P
             さらに表示（残り {hits.length - limit}件）
           </button>
         )}
+        {hits.length > 0 && state.q.trim() && <ListingRequestCta compact />}
       </section>
     </div>
   );

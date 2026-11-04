@@ -15,7 +15,7 @@ export function ListingRequestCta({ compact = false, forStore = false }: { compa
         のDMへ。
       </p>
       <Link href="/about#listing" className="listing-cta__more">
-        依頼文を作る ›
+        掲載依頼の文面を作る ›
       </Link>
     </aside>
   );
