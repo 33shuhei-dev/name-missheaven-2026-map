@@ -328,3 +328,14 @@ describe("掲載依頼：大宮ソープ キュート（埼玉県）の15人", (
     for (const c of ["大宮ソープ部門", "店長一押し部門", "おっぱい自慢部門", "スタイル自慢部門", "大食い部門"]) expect(store.categoryOriginals).toContain(c);
   });
 });
+
+describe("掲載依頼: れおな（NEW GENERATION・栃木県）", () => {
+  it("店・人・部門が載り、確からしさは probable", () => {
+    const store = site.stores.find((s) => s.name === "NEW GENERATION")!;
+    expect(store.prefectureName).toBe("栃木県");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name === "れおな")!;
+    expect(e).toBeTruthy();
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("マッサージ得意部門");
+    expect(store.categoryOriginals).toContain("マッサージ得意部門");
+  });
+});

@@ -1551,6 +1551,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-04",
     notes: "掲載依頼（DM）を起点に追加（2026-11-04）。名前は女の子一覧の表示名。部門名はバッジの表記に「部門」を付けたもの（バッジの下端は一部が隠れている）。個別の在籍ページのURLは未提供のため、情報源のURLは店舗の女の子一覧のページ。同じ店の別のカードは、スクリーンショットに写っていないため未登録（一覧は全101件）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（2026-11-04）。NEW GENERATION（栃木県）の在籍ページのバッジのスクリーンショットで確認 ──
+  {
+    entrantId: "mh26-ent-0105",
+    name: "れおな",
+    storeId: "mh26-upd-store-0018",
+    sourceIds: ["ent-src-0056"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「栃木県」「マッサージ得意 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-04",
+    categoryOriginal: "マッサージ得意部門",
+    personalUrl: null,
+    confidence: "probable",
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼（2026-11-04）を起点に追加。名前はページ題名「れおな」。部門名はバッジの表記に「部門」を付けたもの。情報源のURLはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2162,6 +2177,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0063", "ent-rel-0064", "ent-rel-0065", "ent-rel-0066", "ent-rel-0067"],
     checkedAt: "2026-11-04",
     notes: "掲載依頼者から提供された、大宮ソープ キュート（埼玉県）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・埼玉県・各部門）。画像は保存していない",
+  },
+  {
+    sourceId: "ent-src-0056",
+    url: "https://share.google/dZZm23THbBZiZ2df6",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0018"],
+    relationIds: ["ent-rel-0068"],
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼者から提供された、NEW GENERATION（栃木県）の在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・栃木県・マッサージ得意 部門 ノミネート）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない",
   },
 ];
 
@@ -2799,6 +2825,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0055"],
     phase1RecordIds: [],
     notes: "店舗の女の子一覧の画像のバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0068",
+    storeId: "mh26-upd-store-0018",
+    categoryOriginal: "マッサージ得意部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0056"],
+    phase1RecordIds: [],
+    notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
