@@ -23,3 +23,19 @@ describe("掲載依頼：画面の作り", () => {
     expect(readFileSync("app/store/[id]/page.tsx", "utf8")).toContain("<ListingRequestCta compact forStore />");
   });
 });
+
+describe("掲載依頼・検索の導線の改善（UXレビューの反映）", () => {
+  it("フォームは、URLの入力欄を持たず、コピー後に「まだ送信されていません」を案内する", () => {
+    const form = readFileSync("components/ListingRequestForm.tsx", "utf8");
+    expect(form).not.toContain("prefectureFromHeavenUrl");
+    expect(form).toContain("まだ送信されていません");
+    expect(form).toContain("リンクは貼りません");
+  });
+  it("案内のリンク名は「掲載依頼の文面を作る」。検索は都道府県の件数を出さず、0件時に絞り込み解除を出す", () => {
+    expect(readFileSync("components/ListingRequestCta.tsx", "utf8")).toContain("掲載依頼の文面を作る");
+    const s = readFileSync("components/SearchClient.tsx", "utf8");
+    expect(s).not.toContain("{p.name}（{p.recordCount}）");
+    expect(s).toContain("絞り込みを外して");
+    expect(s).toContain("showCounts");
+  });
+});

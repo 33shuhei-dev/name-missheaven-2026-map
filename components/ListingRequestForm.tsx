@@ -2,19 +2,15 @@
 
 import { useState } from "react";
 import { CONTACT_X_HANDLE, CONTACT_X_URL } from "@/lib/contact";
-import { prefectureFromHeavenUrl } from "@/lib/cityheaven-url";
 
 /**
  * 掲載依頼の文面を作ってコピーする。入力内容はどこにも送信・保存しない（コピーしてXのDMに貼ってもらう）。
  */
 export function ListingRequestForm() {
-  const [f, setF] = useState({ name: "", store: "", pref: "", division: "", evidence: "" });
+  const [f, setF] = useState({ name: "", store: "", pref: "", division: "" });
   const [copied, setCopied] = useState(false);
   const set = (k: keyof typeof f) => (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    // 在籍ページのURLを貼ったら、URLの文字列から都道府県を自動で入れる（未入力のときだけ）
-    const pref = k === "evidence" && !f.pref ? (prefectureFromHeavenUrl(value) ?? "") : f.pref;
-    setF({ ...f, [k]: value, pref });
+    setF({ ...f, [k]: e.target.value });
     setCopied(false);
   };
   const text = [
@@ -22,7 +18,7 @@ export function ListingRequestForm() {
     `①名前：${f.name}`,
     `②お店・都道府県：${f.store}${f.pref ? `（${f.pref}）` : ""}`,
     `③部門：${f.division || "（分かれば）"}`,
-    `④出場が分かるもの：${f.evidence || "（在籍ページのスクリーンショットを添付。リンクは貼りません）"}`,
+    "④出場が分かるもの：在籍ページのスクリーンショットを添付します（リンクは貼りません）",
   ].join("\n");
 
   async function copy() {
@@ -57,10 +53,6 @@ export function ListingRequestForm() {
         <span>③部門（分かれば）</span>
         <input value={f.division} onChange={set("division")} placeholder="例：ビジュアル部門" autoComplete="off" />
       </label>
-      <label>
-        <span>④出場が分かるもの（リンクは貼らず、スクショをDMに添付）</span>
-        <input value={f.evidence} onChange={set("evidence")} placeholder="例：在籍ページのスクショを添付します" autoComplete="off" />
-      </label>
       <pre className="req-form__preview" aria-label="DMに貼る文面">{text}</pre>
       <div className="req-form__actions">
         <button type="button" className="req-form__copy" onClick={copy}>
@@ -70,7 +62,12 @@ export function ListingRequestForm() {
           2. {CONTACT_X_HANDLE} を開いてDMに貼る ↗
         </a>
       </div>
-      <p className="hint hint--tight">アカウント凍結のリスクを避けるため、<strong>リンクは貼らず、在籍ページのスクリーンショット</strong>（「全国ミスヘブン総選挙2026」のバッジが写っているもの）をDMに添付してください。店舗・都道府県・部門を確実に登録できます。入力した内容はこのサイトには送信・保存されません。コピーした文面をXのDMに貼って送ってください。</p>
+      {copied && (
+        <p className="hint hint--tight" role="status">
+          <strong>まだ送信されていません。</strong>XのDMに貼り、リンクは貼らずにスクリーンショットを添付してください。
+        </p>
+      )}
+      <p className="hint hint--tight">アカウント凍結のリスクを避けるため、<strong>リンクは貼らず、在籍ページのスクリーンショット</strong>（「全国ミスヘブン総選挙2026」のバッジが写っているもの）をDMに添付してください。内容を確認して掲載します。入力した内容はこのサイトには送信・保存されません。コピーした文面をXのDMに貼って送ってください。</p>
     </div>
   );
 }
