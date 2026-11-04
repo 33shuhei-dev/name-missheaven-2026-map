@@ -2269,3 +2269,23 @@ p {
   color: var(--accent);
   background: var(--surface);
 }
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 0.75rem;
+}
+.feature-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.875rem;
+}
+.feature-table th,
+.feature-table td {
+  border: 1px solid var(--border, #ddd);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+.feature-table th {
+  font-weight: 700;
+}

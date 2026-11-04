@@ -137,6 +137,8 @@ export default function HomePage() {
         本サイトは非公式です。公開情報から確認できた範囲の情報で、公式情報ではありません。全出場者・全部門の網羅や正式な選挙エリアを示すものではないため、詳しい出場者情報は各店舗の公開ページでご確認ください。
         {stats.lastCheckedAt && ` 最終確認日：${stats.lastCheckedAt}。`}
         <Link href="/about">このサイトについて・データの内訳</Link>
+        {" ／ "}
+        <Link href="/feature">特集：まず200人、そして15万票へ</Link>
       </p>
     </div>
   );
