@@ -498,6 +498,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（DM、2026-11-04）を起点に追加。依頼者提供の店舗ページの女の子一覧のスクリーンショット（店舗ロゴ「CUTE 大宮ソープ キュート」）で店名を確認し、各人の画像に「全国ミスヘブン総選挙2026」「埼玉県」「各部門 ノミネート」のバッジを確認。店名は、ロゴの表記（「大宮ソープ キュート」「CUTE」）による。都道府県・公開ページURLは、バッジとURL（saitama/A1101/A110101/cute）の表記どおり。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（2026-11-04）。本人ページのバッジのスクリーンショットで確認 ──
+  {
+    storeId: "mh26-upd-store-0018",
+    storeName: "NEW GENERATION",
+    storeNameOriginals: ["NEW GENERATION", "ニュージェネレーション"],
+    prefecture: "栃木県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://share.google/dZZm23THbBZiZ2df6",
+    storePublicUrl: null,
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "store_banner_reported",
+    checkedAt: "2026-11-04",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0020"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（2026-11-04）を起点に追加。依頼者提供のスクリーンショット（ヘブンの在籍ページ）の店舗ロゴ「NEW GENERATION」とページ題名で店名を、バッジ「全国ミスヘブン総選挙2026」「栃木県」で都道府県を確認。リンクはGoogleの共有リンクで、店舗ページのURLは未確認のため storePublicUrl は空。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -733,6 +758,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-04",
     notes: "掲載依頼者から提供された、店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・埼玉県・各部門）。画像は保存していない。URLは店舗の女の子一覧のページ（個人用のパラメータは除いた）。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0020",
+    url: "https://share.google/dZZm23THbBZiZ2df6",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0018"],
+    relationIds: [],
+    checkedAt: "2026-11-04",
+    notes: "掲載依頼者から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・栃木県・マッサージ得意 部門 ノミネート）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
