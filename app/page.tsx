@@ -38,6 +38,15 @@ export default function HomePage() {
         <p className="hero__lead">
           ミスヘブン総選挙2026の出場情報を、<strong>推しの名前・部門・地域</strong>から探せる非公式まとめです。
         </p>
+        {/* 特集への入口（目立たせる） */}
+        <Link href="/feature" className="feature-banner">
+          <span className="feature-banner__tag">特集</span>
+          <span className="feature-banner__text">
+            <strong>まず200人、そして15万票へ</strong>
+            <span>2026年の神15を、数字で考える</span>
+          </span>
+          <span className="feature-banner__go" aria-hidden="true">›</span>
+        </Link>
         {/* 推しから探す（目的を持って来た人の入口） */}
         <div className="hero-search">
           <p className="hero-search__label">

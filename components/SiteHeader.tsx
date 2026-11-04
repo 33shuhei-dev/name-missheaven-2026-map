@@ -12,6 +12,7 @@ export function SiteHeader() {
           <Link href="/">全国地図</Link>
           <Link href="/search">検索</Link>
           <Link href="/categories">部門一覧</Link>
+          <Link href="/feature" className="site-nav__feature">特集</Link>
           <Link href="/about">このサイト</Link>
         </nav>
       </div>
