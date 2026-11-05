@@ -362,3 +362,14 @@ describe("掲載依頼: 蒼（紫蘭マダム・福岡県・人妻部門）", ()
     expect(e.divisions.map((d) => d.categoryOriginal)).toContain("人妻部門");
   });
 });
+
+describe("掲載依頼: ぷりん（岡山市ちゃんこ・岡山県・巨乳部門）", () => {
+  it("店と人と部門が載り、未確認", () => {
+    const store = site.stores.find((s) => s.name === "岡山市ちゃんこ")!;
+    expect(store.prefectureName).toBe("岡山県");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name === "ぷりん")!;
+    expect(e).toBeTruthy();
+    expect(e.confidence).toBe("unverified");
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("巨乳部門");
+  });
+});
