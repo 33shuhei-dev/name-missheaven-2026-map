@@ -1596,6 +1596,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-05",
     notes: "掲載依頼（本人からのDM、2026-11-05）を起点に追加。DMの名前表記は「紫蘭マダム 蒼」、ページ上の表示名は「蒼(あおい)」。部門名はバッジの表記に「部門」を付けたもの（バッジの下端は一部が隠れている）。画像には「日本代表」「福岡県代表」の順位バッジも写っているが、数字が読み取りにくいため記録しない。個人ページのURLは依頼者が提供したもの。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-05）。調査（検索）は行っていない ──
+  {
+    entrantId: "mh26-ent-0108",
+    name: "ぷりん",
+    storeId: "mh26-upd-store-0019",
+    sourceIds: ["ent-src-0059"],
+    evidence:
+      "出場者本人からの掲載依頼（DM、2026-11-05）の共有カードに「巨乳部門 ぷりん 岡山市ちゃんこ」（2026年のバッジは写っていない。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-05",
+    categoryOriginal: "巨乳部門",
+    personalUrl: "https://www.cityheaven.net/okayama/A3301/A330101/okayamasi_cyanko/girlid-62991033/",
+    confidence: "unverified",
+    checkedAt: "2026-11-05",
+    notes: "出場者本人からの掲載依頼を起点に追加（2026-11-05）。部門名・店名は共有カードの表記。2026年のバッジは未確認のため unverified。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2240,6 +2255,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0070"],
     checkedAt: "2026-11-05",
     notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・福岡県・人妻部門）とページのURL。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "ent-src-0059",
+    url: "https://www.cityheaven.net/okayama/A3301/A330101/okayamasi_cyanko/girlid-62991033/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0019"],
+    relationIds: ["ent-rel-0071"],
+    checkedAt: "2026-11-05",
+    notes: "出場者本人からのDMの申告（共有カード：巨乳部門・ぷりん・岡山市ちゃんこ）と、本人提供の在籍ページのURL。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
@@ -2907,6 +2933,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0058"],
     phase1RecordIds: [],
     notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0071",
+    storeId: "mh26-upd-store-0019",
+    categoryOriginal: "巨乳部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0059"],
+    phase1RecordIds: [],
+    notes: "本人のDMの共有カードの部門表記（2026年のバッジは未確認）",
   },
 ];
 

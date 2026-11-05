@@ -523,6 +523,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "掲載依頼（2026-11-04）を起点に追加。依頼者提供のスクリーンショット（ヘブンの在籍ページ）の店舗ロゴ「NEW GENERATION」とページ題名で店名を、バッジ「全国ミスヘブン総選挙2026」「栃木県」で都道府県を確認。リンクはGoogleの共有リンクで、店舗ページのURLは未確認のため storePublicUrl は空。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-05）。共有カード（部門名・名前・店名）のスクリーンショットで確認 ──
+  {
+    storeId: "mh26-upd-store-0019",
+    storeName: "岡山市ちゃんこ",
+    storeNameOriginals: ["岡山市ちゃんこ"],
+    prefecture: "岡山県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/okayama/A3301/A330101/okayamasi_cyanko/girlid-62991033/",
+    storePublicUrl: "https://www.cityheaven.net/okayama/A3301/A330101/okayamasi_cyanko/",
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-11-05",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0021"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者（ぷりん）本人からの掲載依頼（DM、2026-11-05）を起点に追加。DMの共有カードに「巨乳部門 ぷりん 岡山市ちゃんこ」とあり、本人提供の在籍ページのURL（okayama/A3301/A330101/okayamasi_cyanko）で都道府県を確認。2026年のバッジは写っておらず、本人の申告のみのため unverified。店名は共有カードの表記による。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -769,6 +794,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-04",
     notes: "掲載依頼者から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・栃木県・マッサージ得意 部門 ノミネート）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0021",
+    url: "https://www.cityheaven.net/okayama/A3301/A330101/okayamasi_cyanko/girlid-62991033/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_social_post",
+    storeIds: ["mh26-upd-store-0019"],
+    relationIds: [],
+    checkedAt: "2026-11-05",
+    notes: "出場者本人からのDMの申告（共有カード：巨乳部門・ぷりん・岡山市ちゃんこ）と、本人提供の在籍ページのURL。2026年のバッジは写っていない。画像は保存していない。本人申請を起点に追加",
   },
 ];
 
