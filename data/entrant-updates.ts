@@ -1575,11 +1575,11 @@ const manualEntrants: EntrantRawRecord[] = [
     evidence:
       "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」のバナー（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない。部門のバッジは写っていない）",
     evidenceDate: "2026-11-05",
-    categoryOriginal: null,
+    categoryOriginal: "横浜部門",
     personalUrl: null,
     confidence: "unverified",
     checkedAt: "2026-11-05",
-    notes: "掲載依頼（DM、2026-11-05）を起点に追加。依頼文は「横浜 バニーラウンジのあみちさん」で、依頼者は本人以外（応援アカウント）。店は、同じ店の別の出場者が登録済みの「横浜ジャパンクラブバニーラウンジ」（ページ題名「JAPAN CLUB BUNNY LOUNGE」、神奈川県）に対応づけた。部門は画像から読み取れないため未登録。リンクはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
+    notes: "掲載依頼（DM、2026-11-05）を起点に追加。依頼文は「横浜 バニーラウンジのあみちさん」で、依頼者は本人以外（応援アカウント）。店は、同じ店の別の出場者が登録済みの「横浜ジャパンクラブバニーラウンジ」（ページ題名「JAPAN CLUB BUNNY LOUNGE」、神奈川県）に対応づけた。部門「横浜部門」は、運営者が依頼者（応援アカウント）とのやり取りで聞いた内容で、画像のバッジでは確認できていない（そのため unverified）。リンクはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
   },
 ];
 
@@ -2211,7 +2211,7 @@ const manualEntrantSources: Phase3RawSource[] = [
     accessStatus: "user_screenshot_only",
     publisherRole: "entrant_page",
     storeIds: ["mh26-sns-store-5191340c58b4e245"],
-    relationIds: [],
+    relationIds: ["ent-rel-0069"],
     checkedAt: "2026-11-05",
     notes: "掲載依頼者（応援アカウント）から提供された、在籍ページのスクリーンショット（「全国ミスヘブン総選挙2026」のバナー）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
   },
@@ -2861,6 +2861,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0056"],
     phase1RecordIds: [],
     notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0069",
+    storeId: "mh26-sns-store-5191340c58b4e245",
+    categoryOriginal: "横浜部門",
+    categoryNormalized: null,
+    confidence: "unverified",
+    sourceIds: ["ent-src-0057"],
+    phase1RecordIds: [],
+    notes: "部門名は依頼のやり取りで聞いた内容（画像のバッジでは未確認）",
   },
 ];
 

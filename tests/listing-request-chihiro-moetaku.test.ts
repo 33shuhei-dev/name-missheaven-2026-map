@@ -347,6 +347,7 @@ describe("掲載依頼: あみち（横浜ジャパンクラブバニーラウ�
     const e = site.entrants.find((x) => x.storeId === store.id && x.name === "あみち")!;
     expect(e).toBeTruthy();
     expect(e.confidence).toBe("unverified");
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("横浜部門");
     expect(site.stores.filter((s) => s.name.includes("バニーラウンジ"))).toHaveLength(1);
   });
 });
