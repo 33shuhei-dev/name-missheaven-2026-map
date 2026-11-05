@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = { title: "特集：まず200人、そして15万票へ" };
@@ -44,6 +45,14 @@ export default function FeaturePage() {
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集" }]} />
       <h1>特集：まず200人、そして15万票へ</h1>
       <p className="hint">2026年の神15を、数字で考える。公開されている制度の情報をもとにした計算で、予測ではありません。</p>
+      <Image
+        className="feature-cover"
+        src="/feature-cover.jpg"
+        alt="まず200人。そして15万票へ。2026年の神15を数学で考える"
+        width={1200}
+        height={676}
+        priority
+      />
 
       <section className="section card prose">
         <h2>先に結論</h2>
@@ -54,6 +63,26 @@ export default function FeaturePage() {
           <li>15万票は2025年の実績で、<strong>2026年の神15のボーダーではありません</strong>。神15に必要な票数は、公開データがなく推定できません。</li>
         </ul>
       </section>
+
+      <div className="feature-flow" aria-label="200人から15万票までの流れ">
+        <div className="feature-flow__box">
+          <strong>200人</strong>
+          <span>日本代表の称号</span>
+          <small>本選の投票者数の条件</small>
+        </div>
+        <span className="feature-flow__arrow" aria-hidden="true">→</span>
+        <div className="feature-flow__box">
+          <strong>1,000人〜</strong>
+          <span>15万票に必要な理論上の最少人数</span>
+          <small>全員が50枚・3倍の場合</small>
+        </div>
+        <span className="feature-flow__arrow" aria-hidden="true">→</span>
+        <div className="feature-flow__box">
+          <strong>15万票</strong>
+          <span>2025年グランプリの実績</span>
+          <small>2026年のボーダーではない</small>
+        </div>
+      </div>
 
       <section className="section card prose">
         <h2>2025年と2026年で変わったルール</h2>
@@ -112,6 +141,18 @@ export default function FeaturePage() {
           ]}
         />
         <p>1,000人は「全員が50枚を使い、全員が3倍の条件を満たす」場合の理論上の最少人数です。現実には下の行ほど近い可能性がありますが、どの行が実態に近いかを示すデータは公開されていません。これは予測ではなく、条件を変えたときの目安です。簡易計算なので、本気で目標を決めるときは、倍率別のグループに分けて見積もるのが安全です。</p>
+        <h3>平均だけで計算すると、ずれることがある（仮の例）</h3>
+        <p>平均枚数×平均倍率の計算は、「たくさん使う人ほど倍率も高い」といった相関を無視します（一般に E[枚数×倍率] ≠ E[枚数]×E[倍率]）。厳密には、倍率別のグループに分けて「人数×枚数×倍率」を足し合わせます。投票した1,000人を次の3グループとした場合です。</p>
+        <Table
+          head={["グループ", "人数", "枚数", "倍率", "票数"]}
+          rows={[
+            ["ネット予約の常連", "300人", "50枚", "3倍", "45,000票"],
+            ["ときどき利用", "400人", "30枚", "2倍", "24,000票"],
+            ["予約なし", "300人", "20枚", "1倍", "6,000票"],
+            ["合計", "1,000人", "平均33枚", "平均2倍", "75,000票"],
+          ]}
+        />
+        <p>平均33枚×平均2倍×1,000人で単純計算すると66,000票で、9,000票足りません。枚数の多い人ほど倍率も高いためです。</p>
         <p>同じ考え方で、200人から投票されたときの理論上の最大は200×50×3＝30,000票です。全員が50枚・3倍の場合の上限で、実際の票数ではありません。</p>
       </section>
 
@@ -180,7 +221,7 @@ export default function FeaturePage() {
 
       <section className="section card prose">
         <h2>本選までに、出場者と応援者ができること</h2>
-        <p>ブロック本選の投票は11月17日に始まり、終了は11月23日です。地方予選の結果発表は11月11日の予定と案内されています。最新の日程は公式の告知で確認してください。</p>
+        <p>ブロック本選の投票は11月17日に始まり、終了は11月23日23:59です。地方予選の結果発表は11月11日の予定と案内されています。最新の日程は公式の告知で確認してください。</p>
         <ul>
           <li>目標を人数で置く。まず「200人」。投票者数の進捗は姫デコで毎日確認できます。</li>
           <li>地方予選の投票者数を振り返り、応援活動の規模と参加率の目安をつかむ。</li>
@@ -207,7 +248,7 @@ export default function FeaturePage() {
           <li>「200人＝日本代表」の称号の対応。</li>
           <li>2025年の倍率制度が2026年と同じだったか。換算は同じ倍率と仮定した計算です。</li>
         </ul>
-        <p>この特集は有志による非公式の計算で、公式の見解や予測ではありません。数字はすべて、式と前提をもとに計算した目安です。</p>
+        <p>この特集は有志（<a href="https://x.com/rego0701" target="_blank" rel="noopener noreferrer">@rego0701</a>）による非公式の計算で、公式の見解や予測ではありません。数字はすべて、式と前提をもとに計算した目安です。</p>
       </section>
     </>
   );

@@ -2290,6 +2290,52 @@ p {
   font-weight: 700;
 }
 
+.feature-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 12px;
+  border-radius: var(--radius);
+}
+.feature-flow {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  gap: 8px;
+  margin: 0 0 12px;
+}
+.feature-flow__box {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+  padding: 12px 10px;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.feature-flow__box strong {
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+.feature-flow__box small {
+  color: var(--muted);
+}
+.feature-flow__arrow {
+  align-self: center;
+  color: var(--muted);
+  font-weight: 700;
+}
+@media (max-width: 640px) {
+  .feature-flow {
+    grid-template-columns: 1fr;
+  }
+  .feature-flow__arrow {
+    transform: rotate(90deg);
+  }
+}
+
 /* 特集への入口 */
 .feature-banner {
   display: flex;
