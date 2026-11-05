@@ -1,5 +1,5 @@
 {
-  "description": "調査担当（Grok）がXで見つけ、運営者が投稿の内容を目視で確認した出場者（2026-11-05）",
+  "description": "調査担当（Grok）がXで見つけた出場者（2026-11-05）。最初の3人は運営者が投稿を目視で確認済み（probable）、残りは未確認",
   "entrants": [
     {
       "entrantId": "mh26-ent-g-0f8a92bbef6b2db5",
@@ -45,6 +45,36 @@
       "confidence": "probable",
       "checkedAt": "2026-11-05",
       "notes": "X投稿の本文を直接確認して追加。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
+    },
+    {
+      "entrantId": "mh26-ent-g-7d96cfe1a9a1de5c",
+      "name": "かれん",
+      "storeId": "mh26-sns-store-07ac9d1304cbfd1f",
+      "sourceIds": [
+        "ent-src-g-7d96cfe1a9a1de5c"
+      ],
+      "evidence": "Xの投稿（2026-09-10）に、ミスヘブン総選挙2026の出場の記載があると、調査担当が本文で確認（2026年の出場）",
+      "evidenceDate": "2026-09-10",
+      "categoryOriginal": null,
+      "personalUrl": null,
+      "confidence": "unverified",
+      "checkedAt": "2026-11-05",
+      "notes": "X投稿の本文を調査担当が確認して追加。運営者の目視は未実施のため未確認。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
+    },
+    {
+      "entrantId": "mh26-ent-g-a989f6d71cedfdeb",
+      "name": "あやか",
+      "storeId": "mh26-p3b-store-e90b16a05c5f87ac",
+      "sourceIds": [
+        "ent-src-g-a989f6d71cedfdeb"
+      ],
+      "evidence": "Xの投稿（2026-10-02）に、ミスヘブン総選挙2026の出場の記載があると、調査担当が本文で確認（2026年の出場）",
+      "evidenceDate": "2026-10-02",
+      "categoryOriginal": null,
+      "personalUrl": null,
+      "confidence": "unverified",
+      "checkedAt": "2026-11-05",
+      "notes": "X投稿の本文を調査担当が確認して追加。運営者の目視は未実施のため未確認。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
     }
   ],
   "sources": [
@@ -86,6 +116,32 @@
       "relationIds": [],
       "checkedAt": "2026-11-05",
       "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得し、運営者が投稿の内容を目視で確認（2026-11-05）。本人からの掲載申請ではなく、検索で見つけた出場表明"
+    },
+    {
+      "sourceId": "ent-src-g-7d96cfe1a9a1de5c",
+      "url": "https://x.com/karenikeoku_114/status/2097969553800380670",
+      "sourceType": "entrant_social",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "entrant_social_found",
+      "storeIds": [
+        "mh26-sns-store-07ac9d1304cbfd1f"
+      ],
+      "relationIds": [],
+      "checkedAt": "2026-11-05",
+      "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得（運営者の目視確認は未実施）。本人からの掲載申請ではない"
+    },
+    {
+      "sourceId": "ent-src-g-a989f6d71cedfdeb",
+      "url": "https://x.com/ayaka_fanta0509/status/2105725838167818491",
+      "sourceType": "entrant_social",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "entrant_social_found",
+      "storeIds": [
+        "mh26-p3b-store-e90b16a05c5f87ac"
+      ],
+      "relationIds": [],
+      "checkedAt": "2026-11-05",
+      "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得（運営者の目視確認は未実施）。本人からの掲載申請ではない"
     }
   ],
   "relations": []
