@@ -2267,6 +2267,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     checkedAt: "2026-11-05",
     notes: "出場者本人からのDMの申告（共有カード：巨乳部門・ぷりん・岡山市ちゃんこ）と、本人提供の在籍ページのURL。画像は保存していない。本人申請を起点に追加",
   },
+  {
+    sourceId: "ent-src-0060",
+    url: "https://www.cityheaven.net/tokyo/A1303/A130301/tora-hitoduma/girlid-59919916/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-nat-store-e1e33399707599f5"],
+    relationIds: [],
+    checkedAt: "2026-11-05",
+    notes: "提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・東京都・ルックス部門）とページのURL（個人用のパラメータは除いた）。画像は保存していない。すでに載っている出場者の確認として追加",
+  },
 ];
 
 /**
@@ -2963,9 +2974,24 @@ const categorySupplements = [
   },
 ];
 
-export const entrantUpdates: EntrantRawRecord[] = generatedEntrants.map((e) => {
-  const sup = categorySupplements.find((x) => x.entrantId === e.entrantId && !e.categoryOriginal);
-  return sup ? { ...e, categoryOriginal: sup.categoryOriginal, notes: [e.notes, sup.note].filter(Boolean).join("。") } : e;
+/**
+ * すでに載っている出場者に、あとから届いた根拠（スクリーンショット）を加えて確からしさを上げる。
+ * 元の根拠は残し、新しい情報源を足す。
+ */
+const evidenceAdditions: { entrantId: string; sourceId: string; confidence: "probable"; note: string }[] = [
+  {
+    entrantId: "mh26-ent-n-dd9c957e545c0da5",
+    sourceId: "ent-src-0060",
+    confidence: "probable",
+    note: "2026-11-05に提供された在籍ページのスクリーンショットで、「全国ミスヘブン総選挙2026」「東京都」「ルックス 部門」のバッジを確認（元の根拠は本人のページの出場の記述）。画像には過去の順位のバッジも写っているが、根拠には使っていない",
+  },
+];
+
+export const entrantUpdates: EntrantRawRecord[] = generatedEntrants.map((e0) => {
+  const sup = categorySupplements.find((x) => x.entrantId === e0.entrantId && !e0.categoryOriginal);
+  const e = sup ? { ...e0, categoryOriginal: sup.categoryOriginal, notes: [e0.notes, sup.note].filter(Boolean).join("。") } : e0;
+  const add = evidenceAdditions.find((x) => x.entrantId === e.entrantId);
+  return add ? { ...e, sourceIds: [...e.sourceIds, add.sourceId], confidence: add.confidence, notes: [e.notes, add.note].filter(Boolean).join("。") } : e;
 });
 export const entrantSources: Phase3RawSource[] = generatedSources.map((src) => {
   const rels = categorySupplements.filter((x) => entrantUpdates.some((e) => e.entrantId === x.entrantId && e.sourceIds.includes(src.sourceId) && e.categoryOriginal === x.categoryOriginal));

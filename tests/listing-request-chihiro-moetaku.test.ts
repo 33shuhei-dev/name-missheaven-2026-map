@@ -373,3 +373,13 @@ describe("掲載依頼: ぷりん（岡山市ちゃんこ・岡山県・巨乳�
     expect(e.divisions.map((d) => d.categoryOriginal)).toContain("巨乳部門");
   });
 });
+
+describe("掲載依頼: 天音とき（ミセス虎の穴）の確認を追加", () => {
+  it("すでにいる出場者が、スクリーンショットで probable に上がる（重複しない）", () => {
+    const store = site.stores.find((s) => s.name.startsWith("ミセス虎の穴"))!;
+    const list = site.entrants.filter((x) => x.storeId === store.id && x.name === "天音とき");
+    expect(list).toHaveLength(1);
+    expect(list[0].confidence).toBe("probable");
+    expect(list[0].divisions.map((d) => d.categoryOriginal)).toContain("ルックス部門");
+  });
+});
