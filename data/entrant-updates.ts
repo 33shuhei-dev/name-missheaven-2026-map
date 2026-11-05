@@ -1581,6 +1581,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-05",
     notes: "掲載依頼（DM、2026-11-05）を起点に追加。依頼文は「横浜 バニーラウンジのあみちさん」で、依頼者は本人以外（応援アカウント）。店は、同じ店の別の出場者が登録済みの「横浜ジャパンクラブバニーラウンジ」（ページ題名「JAPAN CLUB BUNNY LOUNGE」、神奈川県）に対応づけた。部門「横浜部門」は、運営者が依頼者（応援アカウント）とのやり取りで聞いた内容で、画像のバッジでは確認できていない（そのため unverified）。リンクはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-05）。在籍ページのバッジのスクリーンショットで確認 ──
+  {
+    entrantId: "mh26-ent-0107",
+    name: "蒼(あおい)",
+    storeId: "mh26-nat-store-9ea06de936797de7",
+    sourceIds: ["ent-src-0058"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「福岡県」「人妻 部門」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-05",
+    categoryOriginal: "人妻部門",
+    personalUrl: "https://www.cityheaven.net/fukuoka/A4003/A400301/j_h_madam/girlid-54675354/",
+    confidence: "probable",
+    checkedAt: "2026-11-05",
+    notes: "掲載依頼（本人からのDM、2026-11-05）を起点に追加。DMの名前表記は「紫蘭マダム 蒼」、ページ上の表示名は「蒼(あおい)」。部門名はバッジの表記に「部門」を付けたもの（バッジの下端は一部が隠れている）。画像には「日本代表」「福岡県代表」の順位バッジも写っているが、数字が読み取りにくいため記録しない。個人ページのURLは依頼者が提供したもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2214,6 +2229,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0069"],
     checkedAt: "2026-11-05",
     notes: "掲載依頼者（応援アカウント）から提供された、在籍ページのスクリーンショット（「全国ミスヘブン総選挙2026」のバナー）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "ent-src-0058",
+    url: "https://www.cityheaven.net/fukuoka/A4003/A400301/j_h_madam/girlid-54675354/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-nat-store-9ea06de936797de7"],
+    relationIds: ["ent-rel-0070"],
+    checkedAt: "2026-11-05",
+    notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・福岡県・人妻部門）とページのURL。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
@@ -2871,6 +2897,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0057"],
     phase1RecordIds: [],
     notes: "部門名は依頼のやり取りで聞いた内容（画像のバッジでは未確認）",
+  },
+  {
+    relationId: "ent-rel-0070",
+    storeId: "mh26-nat-store-9ea06de936797de7",
+    categoryOriginal: "人妻部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0058"],
+    phase1RecordIds: [],
+    notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
