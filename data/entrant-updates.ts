@@ -1566,6 +1566,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-04",
     notes: "掲載依頼（2026-11-04）を起点に追加。名前はページ題名「れおな」。部門名はバッジの表記に「部門」を付けたもの。情報源のURLはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（ファンの応援アカウントからのDM、2026-11-05）。在籍ページのスクリーンショットで確認 ──
+  {
+    entrantId: "mh26-ent-0106",
+    name: "あみち",
+    storeId: "mh26-sns-store-5191340c58b4e245",
+    sourceIds: ["ent-src-0057"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」のバナー（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない。部門のバッジは写っていない）",
+    evidenceDate: "2026-11-05",
+    categoryOriginal: null,
+    personalUrl: null,
+    confidence: "unverified",
+    checkedAt: "2026-11-05",
+    notes: "掲載依頼（DM、2026-11-05）を起点に追加。依頼文は「横浜 バニーラウンジのあみちさん」で、依頼者は本人以外（応援アカウント）。店は、同じ店の別の出場者が登録済みの「横浜ジャパンクラブバニーラウンジ」（ページ題名「JAPAN CLUB BUNNY LOUNGE」、神奈川県）に対応づけた。部門は画像から読み取れないため未登録。リンクはGoogleの共有リンク（リンク先は未確認）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2188,6 +2203,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0068"],
     checkedAt: "2026-11-04",
     notes: "掲載依頼者から提供された、NEW GENERATION（栃木県）の在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・栃木県・マッサージ得意 部門 ノミネート）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない",
+  },
+  {
+    sourceId: "ent-src-0057",
+    url: "https://share.google/577VRxGr76tUeeO7R",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-sns-store-5191340c58b4e245"],
+    relationIds: [],
+    checkedAt: "2026-11-05",
+    notes: "掲載依頼者（応援アカウント）から提供された、在籍ページのスクリーンショット（「全国ミスヘブン総選挙2026」のバナー）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 

@@ -339,3 +339,14 @@ describe("掲載依頼: れおな（NEW GENERATION・栃木県）", () => {
     expect(store.categoryOriginals).toContain("マッサージ得意部門");
   });
 });
+
+describe("掲載依頼: あみち（横浜ジャパンクラブバニーラウンジ）", () => {
+  it("既存の店に追加され、未確認として載る", () => {
+    const store = site.stores.find((s) => s.name === "横浜ジャパンクラブバニーラウンジ")!;
+    expect(store.prefectureName).toBe("神奈川県");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name === "あみち")!;
+    expect(e).toBeTruthy();
+    expect(e.confidence).toBe("unverified");
+    expect(site.stores.filter((s) => s.name.includes("バニーラウンジ"))).toHaveLength(1);
+  });
+});
