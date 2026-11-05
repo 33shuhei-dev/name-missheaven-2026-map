@@ -6,6 +6,7 @@ import finishing from "./entrants/finishing-2026-10-06.json";
 import snsFound from "./entrants/sns-found-2026-10-08.json";
 import discovery from "./entrants/discovery-2026-10-08.json";
 import harvest from "./entrants/harvest-2026-10-27.json";
+import grokX from "./entrants/grok-x-2026-11-05.json";
 
 /** Phase 3b の保存済み検索結果の全国再解析（2026-10-06。新たな検索なし。神奈川県は下の実証分） */
 const nationwideReanalysis = nationwide as unknown as {
@@ -30,6 +31,13 @@ const discoveryBatch = discovery as unknown as {
 
 /** 投票期間の定期収集（Yahoo!リアルタイム検索）で、本人の出場表明を確認して追加した分（2026-10-27〜） */
 const harvestBatch = harvest as unknown as {
+  entrants: EntrantRawRecord[];
+  sources: Phase3RawSource[];
+  relations: Phase3RawRelation[];
+};
+
+/** 調査担当（Grok）がXで見つけ、運営者が投稿を目視で確認して追加した分（2026-11-05。本人からの掲載申請ではない） */
+const grokXBatch = grokX as unknown as {
   entrants: EntrantRawRecord[];
   sources: Phase3RawSource[];
   relations: Phase3RawRelation[];
@@ -2957,9 +2965,9 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
 ];
 
-const generatedEntrants: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants, ...harvestBatch.entrants];
-const generatedSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources];
-const generatedRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations];
+const generatedEntrants: EntrantRawRecord[] = [...manualEntrants, ...nationwideReanalysis.entrants, ...pilot3Batch.entrants, ...nationalBatch.entrants, ...finishingBatch.entrants, ...snsFoundBatch.entrants, ...discoveryBatch.entrants, ...harvestBatch.entrants, ...grokXBatch.entrants];
+const generatedSources: Phase3RawSource[] = [...manualEntrantSources, ...nationwideReanalysis.sources, ...pilot3Batch.sources, ...nationalBatch.sources, ...finishingBatch.sources, ...snsFoundBatch.sources, ...discoveryBatch.sources, ...harvestBatch.sources, ...grokXBatch.sources];
+const generatedRelations: Phase3RawRelation[] = [...manualEntrantRelations, ...nationwideReanalysis.relations, ...pilot3Batch.relations, ...nationalBatch.relations, ...finishingBatch.relations, ...snsFoundBatch.relations, ...discoveryBatch.relations, ...harvestBatch.relations, ...grokXBatch.relations];
 
 /**
  * 自動生成した出場者（収集バッチ）に、あとから分かった部門を補う（バッチは毎日作り直すため、補いはここ＝手動の層に置く）。

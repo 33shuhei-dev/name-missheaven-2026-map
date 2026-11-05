@@ -1,0 +1,92 @@
+{
+  "description": "調査担当（Grok）がXで見つけ、運営者が投稿の内容を目視で確認した出場者（2026-11-05）",
+  "entrants": [
+    {
+      "entrantId": "mh26-ent-g-0f8a92bbef6b2db5",
+      "name": "めい",
+      "storeId": "mh26-nat-store-85a06d067c5e6f0c",
+      "sourceIds": [
+        "ent-src-g-0f8a92bbef6b2db5"
+      ],
+      "evidence": "POTENTIAL（ポテンシャル川崎）の店舗公式Xが、ミスヘブン総選挙2026の川崎部門にめいがエントリーしたと告知（投稿日2026-09-23）。「2026」の出場の記載を本文で確認",
+      "evidenceDate": "2026-09-23",
+      "categoryOriginal": null,
+      "personalUrl": null,
+      "confidence": "probable",
+      "checkedAt": "2026-11-05",
+      "notes": "X投稿の本文を直接確認して追加。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
+    },
+    {
+      "entrantId": "mh26-ent-g-6a9d9b20ef668e0e",
+      "name": "ゆきみ",
+      "storeId": "mh26-store-248d3d1f3170df17",
+      "sourceIds": [
+        "ent-src-g-6a9d9b20ef668e0e"
+      ],
+      "evidence": "本人のXに「川崎Essenceゆきみ」として、ミスヘブン総選挙2026へのノミネート表明（投稿日2026-09-16）。「2026」の出場の記載を本文で確認",
+      "evidenceDate": "2026-09-16",
+      "categoryOriginal": null,
+      "personalUrl": "https://x.com/yukimidaifuk2u",
+      "confidence": "probable",
+      "checkedAt": "2026-11-05",
+      "notes": "X投稿の本文を直接確認して追加。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
+    },
+    {
+      "entrantId": "mh26-ent-g-fbe038e5bd9bdca0",
+      "name": "みさき",
+      "storeId": "mh26-p3b-store-fb52ad78860d51ec",
+      "sourceIds": [
+        "ent-src-g-fbe038e5bd9bdca0"
+      ],
+      "evidence": "Quality Plus横浜の店舗公式Xが、みさきのミスヘブン総選挙2026へのノミネートを告知（投稿日2026-09-27）。「2026」の出場の記載を本文で確認",
+      "evidenceDate": "2026-09-27",
+      "categoryOriginal": null,
+      "personalUrl": null,
+      "confidence": "probable",
+      "checkedAt": "2026-11-05",
+      "notes": "X投稿の本文を直接確認して追加。部門名は投稿にあるが、店舗×部門の根拠が未整備のため未登録"
+    }
+  ],
+  "sources": [
+    {
+      "sourceId": "ent-src-g-0f8a92bbef6b2db5",
+      "url": "https://x.com/POTENTIAL0124/status/2102754547462721604",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "storeIds": [
+        "mh26-nat-store-85a06d067c5e6f0c"
+      ],
+      "relationIds": [],
+      "checkedAt": "2026-11-05",
+      "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得し、運営者が投稿の内容を目視で確認（2026-11-05）。本人からの掲載申請ではなく、検索で見つけた出場表明"
+    },
+    {
+      "sourceId": "ent-src-g-6a9d9b20ef668e0e",
+      "url": "https://x.com/yukimidaifuk2u/status/2100191321663348742",
+      "sourceType": "entrant_social",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "entrant_social_found",
+      "storeIds": [
+        "mh26-store-248d3d1f3170df17"
+      ],
+      "relationIds": [],
+      "checkedAt": "2026-11-05",
+      "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得し、運営者が投稿の内容を目視で確認（2026-11-05）。本人からの掲載申請ではなく、検索で見つけた出場表明"
+    },
+    {
+      "sourceId": "ent-src-g-fbe038e5bd9bdca0",
+      "url": "https://x.com/Qualityplus0307/status/2104122452314046670",
+      "sourceType": "store",
+      "accessStatus": "primary_body_checked",
+      "publisherRole": "store_announcement",
+      "storeIds": [
+        "mh26-p3b-store-fb52ad78860d51ec"
+      ],
+      "relationIds": [],
+      "checkedAt": "2026-11-05",
+      "notes": "X API（調査担当Grok）で個別投稿の本文と投稿日を取得し、運営者が投稿の内容を目視で確認（2026-11-05）。本人からの掲載申請ではなく、検索で見つけた出場表明"
+    }
+  ],
+  "relations": []
+}
