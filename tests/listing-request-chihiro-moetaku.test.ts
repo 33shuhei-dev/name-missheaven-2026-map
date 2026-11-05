@@ -351,3 +351,14 @@ describe("掲載依頼: あみち（横浜ジャパンクラブバニーラウ�
     expect(site.stores.filter((s) => s.name.includes("バニーラウンジ"))).toHaveLength(1);
   });
 });
+
+describe("掲載依頼: 蒼（紫蘭マダム・福岡県・人妻部門）", () => {
+  it("既存の店に追加され、人妻部門で probable", () => {
+    const store = site.stores.find((s) => s.name.includes("紫蘭マダム"))!;
+    expect(store.prefectureName).toBe("福岡県");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name.startsWith("蒼"))!;
+    expect(e).toBeTruthy();
+    expect(e.confidence).toBe("probable");
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("人妻部門");
+  });
+});
