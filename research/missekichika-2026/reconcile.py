@@ -89,8 +89,10 @@ raw = (load("grok_confirmed_2026-11-06.csv", "grok_confirmed_check.json", "grok�
        + load("own_2026-11-06.csv", "own_check.json", "自前調査", True)
        + load("grok_pending_2026-11-06.csv", "grok_pending_check.json", "grokメモ（要確認）", False))
 store_rows = []
+SRC = {"x_": "X（Yahoo!リアルタイム検索）", "sweep_yesgrp": "YESグループ公式エントリー一覧", "sweep_news": "店舗の駅ちかニュース",
+       "sweep_areas": "エリア別写メ日記一覧", "sweep_diary": "店舗の写メ日記・ニュース一括調査"}
 for f in sorted(CAND.glob("x_*.csv")) + sorted(CAND.glob("sweep_*.csv")):
-    o, s = load_simple(f.name, "X（Yahoo!リアルタイム検索）" if f.name.startswith("x_") else "店舗の写メ日記・ニュース一括調査")
+    o, s = load_simple(f.name, next(v for k, v in SRC.items() if f.name.startswith(k)))
     raw += o; store_rows += s
 
 # 同一人物をまとめる: 駅ちかの女の子ID → Xアカウント → 都道府県＋源氏名＋店名
@@ -198,6 +200,7 @@ for k in ("公式一覧", "本人・店舗の公開告知", "要確認"): s.appe
 s.append(["行数（人×部門）", len(entr)]); s.append([])
 s.append(["大会エリア", "人数"])
 for a in dict.fromkeys(AREA_OF.values()): s.append([a, cnt_area.get(a, 0)])
+s.append(["（都道府県未特定・Xのみ）", cnt_area.get("", 0)])
 s.append([]); s.append(["大会エリア", "都道府県", "人数"])
 for p, a in AREA_OF.items():
     if cnt_pref.get((a, p)): s.append([a, p, cnt_pref[(a, p)]])
