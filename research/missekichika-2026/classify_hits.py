@@ -10,9 +10,10 @@ import json, re, sys, collections
 
 KW = re.compile(r"ミス\s*駅|駅[ちチ][かカ]\S{0,8}総選挙|駅[ちチ][かカ]\s*総選挙|駅♡か|MISS\s*EKICHIKA", re.I)
 ENTRY = re.compile(r"出場|エントリー|参加(させ|する|します|しま|になり|が決|中|して|いた|決定|予定)|出て(る|い|ます)|出ちゃ|ノミネート|出ます|でます|出る(こと|ことに|よ|の)|でることに|"
-                   r"出させて|挑戦|代表|選ばれ|推薦|決まり|決定|パネル")
+                   r"出させて|挑戦|代表|選ばれ|推薦|決まり|決定|パネル|参戦|でる(事|こと|よ|みたい|らしい)|出る(らしい|みたい|事)|参加です|エリアで")
 BANNER = re.compile(r"(ミス駅ちか|MISS\s*EKICHIKA).{0,40}(出場中|エントリー中|参加中)", re.I)
 HEAVEN = re.compile(r"ミス\s*ヘ|ヘブン|ヘ♡ン|天国")
+MIN_ID = 419_000_000  # 日記IDは通し番号。2026-10-17≈422.98M、10-23≈424.10M、11-06≈426.6M（1日≈18万）から逆算した 2026-09-28 付近
 DIV = re.compile(r"(デリヘル|ヘルス|ソープ|人妻|熟女|お姉さん|ギャル|キレカワ|ロリ|おっぱい|風俗エステ|メンズエステ|メンエス)\s*[/／・]?\s*\S{0,6}部門")
 
 
@@ -41,6 +42,7 @@ def main(out, paths):
     for h in hits:
         if h.get("kind") == "news": news.append(h); continue
         if h["diary_id"] in seen: continue
+        if int(h["diary_id"]) < MIN_ID: continue  # 2026-09-28 より前（前年以前）の日記
         seen.add(h["diary_id"])
         g, w = grade(h["title"] + " ／ " + h["body"])
         div = DIV.findall(h["title"] + h["body"])
