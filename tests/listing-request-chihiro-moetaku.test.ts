@@ -394,3 +394,14 @@ describe("掲載依頼: ゆめ（アイドル研究所・大阪府・撮影OK女
     expect(e.divisions.map((d) => d.categoryOriginal)).toContain("撮影OK女子部門");
   });
 });
+
+describe("掲載依頼: ZONE（兵庫県）の女の子一覧", () => {
+  it("店と10人が載り、probable", () => {
+    const store = site.stores.find((s) => s.name === "ZONE")!;
+    expect(store.prefectureName).toBe("兵庫県");
+    const list = site.entrants.filter((e) => e.storeId === store.id);
+    expect(list).toHaveLength(10);
+    for (const e of list) expect(e.confidence).toBe("probable");
+    for (const c of ["有名店部門", "兵庫泡姫部門", "極嬢部門", "感度抜群部門", "アイドルロリ部門", "巨乳部門", "癒し系部門", "店長オススメ部門"]) expect(store.categoryOriginals).toContain(c);
+  });
+});
