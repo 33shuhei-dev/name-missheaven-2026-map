@@ -548,6 +548,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（ぷりん）本人からの掲載依頼（DM、2026-11-05）を起点に追加。DMの共有カードに「巨乳部門 ぷりん 岡山市ちゃんこ」とあり、本人提供の在籍ページのURL（okayama/A3301/A330101/okayamasi_cyanko）で都道府県を確認。2026年のバッジは写っておらず、本人の申告のみのため unverified。店名は共有カードの表記による。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-06）。在籍ページのバッジのスクリーンショットで確認 ──
+  {
+    storeId: "mh26-upd-store-0020",
+    storeName: "アイドル研究所",
+    storeNameOriginals: ["アイドル研究所", "IDOL LAB."],
+    prefecture: "大阪府",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/osaka/A2701/A270101/idolkenkyujo/girlid-65491380/",
+    storePublicUrl: "https://www.cityheaven.net/osaka/A2701/A270101/idolkenkyujo/",
+    sourceType: "store",
+    confidence: "probable",
+    participationType: "entrant_self_reported",
+    checkedAt: "2026-11-06",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0022"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "出場者（ゆめ）本人からの掲載依頼（DM、2026-11-06）を起点に追加。依頼文に「アイドル研究所（大阪府）」「撮影OK女子部門」とあり、本人提供の在籍ページのスクリーンショット（店舗ロゴ「アイドル研究所 IDOL LAB.」、バッジ：全国ミスヘブン総選挙2026・大阪府・撮影OK女子 部門 ノミネート）と、URL（osaka/A2701/A270101/idolkenkyujo）で店名・都道府県を確認。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -805,6 +830,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-05",
     notes: "出場者本人からのDMの申告（共有カード：巨乳部門・ぷりん・岡山市ちゃんこ）と、本人提供の在籍ページのURL。2026年のバッジは写っていない。画像は保存していない。本人申請を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0022",
+    url: "https://www.cityheaven.net/osaka/A2701/A270101/idolkenkyujo/girlid-65491380/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0020"],
+    relationIds: [],
+    checkedAt: "2026-11-06",
+    notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・大阪府・撮影OK女子部門 ノミネート）とページのURL（個人用のパラメータは除いた）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 

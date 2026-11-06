@@ -383,3 +383,14 @@ describe("掲載依頼: 天音とき（ミセス虎の穴）の確認を追加",
     expect(list[0].divisions.map((d) => d.categoryOriginal)).toContain("ルックス部門");
   });
 });
+
+describe("掲載依頼: ゆめ（アイドル研究所・大阪府・撮影OK女子部門）", () => {
+  it("店と人と部門が載り、probable", () => {
+    const store = site.stores.find((s) => s.name === "アイドル研究所")!;
+    expect(store.prefectureName).toBe("大阪府");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name === "ゆめ")!;
+    expect(e).toBeTruthy();
+    expect(e.confidence).toBe("probable");
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("撮影OK女子部門");
+  });
+});

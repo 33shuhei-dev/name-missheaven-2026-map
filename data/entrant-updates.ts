@@ -1619,6 +1619,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-05",
     notes: "出場者本人からの掲載依頼を起点に追加（2026-11-05）。部門名・店名は共有カードの表記。2026年のバッジは未確認のため unverified。本人のページのURLは本人提供のもの。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-06）。在籍ページのバッジのスクリーンショットで確認 ──
+  {
+    entrantId: "mh26-ent-0109",
+    name: "ゆめ",
+    storeId: "mh26-upd-store-0020",
+    sourceIds: ["ent-src-0061"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「大阪府」「撮影OK女子 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-06",
+    categoryOriginal: "撮影OK女子部門",
+    personalUrl: "https://www.cityheaven.net/osaka/A2701/A270101/idolkenkyujo/girlid-65491380/",
+    confidence: "probable",
+    checkedAt: "2026-11-06",
+    notes: "掲載依頼（本人からのDM、2026-11-06）を起点に追加。名前はDMの表記（ページ上の表示名は「ゆめ【地下アイドル】」）。部門名はDMの表記で、バッジの表記と一致。個人ページのURLは本人提供のもの（個人用のパラメータは除いた）。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2285,6 +2300,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-05",
     notes: "提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・東京都・ルックス部門）とページのURL（個人用のパラメータは除いた）。画像は保存していない。すでに載っている出場者の確認として追加",
+  },
+  {
+    sourceId: "ent-src-0061",
+    url: "https://www.cityheaven.net/osaka/A2701/A270101/idolkenkyujo/girlid-65491380/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0020"],
+    relationIds: ["ent-rel-0072"],
+    checkedAt: "2026-11-06",
+    notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・大阪府・撮影OK女子部門 ノミネート）とページのURL。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
@@ -2962,6 +2988,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0059"],
     phase1RecordIds: [],
     notes: "本人のDMの共有カードの部門表記（2026年のバッジは未確認）",
+  },
+  {
+    relationId: "ent-rel-0072",
+    storeId: "mh26-upd-store-0020",
+    categoryOriginal: "撮影OK女子部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0061"],
+    phase1RecordIds: [],
+    notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
