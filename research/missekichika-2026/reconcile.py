@@ -67,9 +67,53 @@ def load(csvname, checkname, source, counted):
     return out
 
 
-cands = (load("grok_confirmed_2026-11-06.csv", "grok_confirmed_check.json", "grokメモ（確認済み）", True)
-         + load("own_2026-11-06.csv", "own_check.json", "自前調査", True)
-         + load("grok_pending_2026-11-06.csv", "grok_pending_check.json", "grokメモ（要確認）", False))
+def load_simple(csvname, source):
+    """X・店舗日記の一括調査の候補（確認状況: 本人告知／店舗告知／要確認／店舗単位）。根拠は収集時に本文を読んで判定済み。"""
+    out, stores = [], []
+    for r in csv.DictReader(open(CAND / csvname, encoding="utf-8")):
+        st = r["確認状況"]
+        if st == "店舗単位":
+            stores.append([AREA_OF.get(r["都道府県"], ""), r["都道府県"], r["所属店舗"], r.get("根拠メモ", ""),
+                           r["出場根拠の投稿URL"], DATE, f'{r.get("Xアカウント", "")} {r["投稿日時"]}'.strip()])
+            continue
+        prof = r.get("駅ちかプロフィールURL") or ""
+        out.append(dict(pref=r["都道府県"], name=r["公開名"], shop=r["所属店舗"], division=r.get("出場部門") or "",
+                        profile=prof, evidence=r["出場根拠の投稿URL"], posted=r["投稿日時"],
+                        memo=(f'{r["Xアカウント"]} ' if r.get("Xアカウント") else "") + (r.get("根拠メモ") or ""),
+                        id=gid(prof), source=f"{source}（{st}）", counted=st in ("本人告知", "店舗告知"), alive=True,
+                        xacc=(r.get("Xアカウント") or "").split(" ")[0], check_note="収集時に本文を確認"))
+    return out, stores
+
+
+raw = (load("grok_confirmed_2026-11-06.csv", "grok_confirmed_check.json", "grokメモ（確認済み）", True)
+       + load("own_2026-11-06.csv", "own_check.json", "自前調査", True)
+       + load("grok_pending_2026-11-06.csv", "grok_pending_check.json", "grokメモ（要確認）", False))
+store_rows = []
+for f in sorted(CAND.glob("x_*.csv")) + sorted(CAND.glob("sweep_*.csv")):
+    o, s = load_simple(f.name, "X（Yahoo!リアルタイム検索）" if f.name.startswith("x_") else "店舗の写メ日記・ニュース一括調査")
+    raw += o; store_rows += s
+
+# 同一人物をまとめる: 駅ちかの女の子ID → Xアカウント → 都道府県＋源氏名＋店名
+cands, index = [], {}
+for c in raw:
+    keys = [k for k in (("id", c["id"]) if c["id"] else None,
+                        ("x", c.get("xacc")) if c.get("xacc") and not c["id"] else None,
+                        ("nk", c["pref"], norm(c["name"]), norm(c["shop"])) if c["pref"] and c["shop"] else None) if k]
+    hit = next((index[k] for k in keys if k in index), None)
+    if hit is None:
+        c["sources"] = [c["source"]]; cands.append(c); hit = c
+    else:
+        hit["sources"].append(c["source"])
+        if c["counted"] and not hit["counted"]:  # 確認済みの根拠を表に出す
+            for f in ("evidence", "posted", "source", "alive", "check_note"): hit[f] = c[f]
+            hit["memo"] = c["memo"] + "／" + hit["memo"]; hit["counted"] = True
+        else:
+            hit["memo"] += f'／別の根拠: {c["evidence"]}（{c["posted"]}）'
+        hit["division"] = hit["division"] or c["division"]
+        hit["profile"] = hit["profile"] or c["profile"]; hit["id"] = hit["id"] or c["id"]
+        hit["pref"] = hit["pref"] or c["pref"]; hit["shop"] = hit["shop"] or c["shop"]
+    for k in keys: index.setdefault(k, hit)
+for c in cands: c["source"] = "＋".join(dict.fromkeys(c["sources"]))
 # 自前調査で根拠を確かめた補足
 for c in cands:
     if c["name"] == "ふうか":
@@ -179,8 +223,9 @@ sheet(fin, COLS, [], [9, 11, 9, 14, 26, 14, 40, 44, 11, 16, 12, 16, 60, 14])
 fin.append(["（予選結果発表は 2026-11-27 12:00。確認日時点では対象者なし）"])
 
 st = wb.create_sheet("店舗単位")
-sheet(st, ["大会エリア", "都道府県", "所属店舗", "公表された参加人数", "根拠URL", "確認日", "備考"],
-      [["（確認日時点で、参加人数だけを公表した店舗告知は見つかっていない）"]], [12, 10, 30, 14, 50, 12, 60])
+sheet(st, ["大会エリア", "都道府県", "所属店舗", "告知の内容（人数）", "根拠URL", "確認日", "備考"],
+      store_rows or [["（確認日時点で、参加人数だけを公表した店舗告知は見つかっていない）"]], [12, 10, 30, 40, 50, 12, 40])
+st.append([]); st.append(["店舗単位の告知は、氏名が分かった人数には加えていない"])
 
 op = wb.create_sheet("公式公開状況")
 sheet(op, ["エリア", "部門", "URL", "HTTP", "ページタイトル", "2026公開", "件数"],
