@@ -573,31 +573,6 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（ゆめ）本人からの掲載依頼（DM、2026-11-06）を起点に追加。依頼文に「アイドル研究所（大阪府）」「撮影OK女子部門」とあり、本人提供の在籍ページのスクリーンショット（店舗ロゴ「アイドル研究所 IDOL LAB.」、バッジ：全国ミスヘブン総選挙2026・大阪府・撮影OK女子 部門 ノミネート）と、URL（osaka/A2701/A270101/idolkenkyujo）で店名・都道府県を確認。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
-  // ── 掲載依頼（2026-11-06）。店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ）で確認 ──
-  {
-    storeId: "mh26-upd-store-0021",
-    storeName: "ZONE",
-    storeNameOriginals: ["ZONE"],
-    prefecture: "兵庫県",
-    listingArea: null,
-    listingAreas: [],
-    formalElectionArea: null,
-    categoryOriginal: null,
-    categoryOriginals: [],
-    participationEvidenceUrl: "https://share.google/dCq9Se45sBgExbvMi",
-    storePublicUrl: null,
-    sourceType: "store",
-    confidence: "probable",
-    participationType: "store_banner_reported",
-    checkedAt: "2026-11-06",
-    phase1RecordIds: [],
-    phase2RecordIds: [],
-    isNewSincePhase1: true,
-    sourceIds: ["upd-src-0023"],
-    publicUrlAccessStatus: "unknown",
-    notes:
-      "掲載依頼（2026-11-06）を起点に追加。依頼者提供のスクリーンショット（ページ題名「女の子一覧：ZONE - 福原柳筋/ソープ」、店舗ロゴ「ZONE」）で店名を、各人の画像のバッジ「全国ミスヘブン総選挙2026」「兵庫県」「各部門 ノミネート」で都道府県を確認。リンクはGoogleの共有リンクで、店舗ページのURLは未確認のため storePublicUrl は空。同じ兵庫県の「＆ZONE」と同じ店の可能性があるが（出場者のももかが両方に関わる）、確認できていないため別の店舗として登録した。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
-  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -866,17 +841,6 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-06",
     notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・大阪府・撮影OK女子部門 ノミネート）とページのURL（個人用のパラメータは除いた）。画像は保存していない。掲載依頼を起点に追加",
-  },
-  {
-    sourceId: "upd-src-0023",
-    url: "https://share.google/dCq9Se45sBgExbvMi",
-    sourceType: "store",
-    accessStatus: "user_screenshot_only",
-    publisherRole: "store_announcement",
-    storeIds: ["mh26-upd-store-0021"],
-    relationIds: [],
-    checkedAt: "2026-11-06",
-    notes: "掲載依頼者から提供された、ZONE（兵庫県・福原）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・兵庫県・各部門）とGoogleの共有リンク（リンク先は未確認）。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
