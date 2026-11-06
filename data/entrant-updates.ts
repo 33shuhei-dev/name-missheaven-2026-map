@@ -1638,7 +1638,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0110",
     name: "Yua",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「有名店 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1652,7 +1652,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0111",
     name: "Urara",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「兵庫泡姫 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1666,7 +1666,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0112",
     name: "Hime",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「極嬢 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1680,7 +1680,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0113",
     name: "Ichigo",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「感度抜群 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1694,7 +1694,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0114",
     name: "Mogu",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「アイドルロリ 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1708,7 +1708,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0115",
     name: "Rika",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「巨乳 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1722,7 +1722,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0116",
     name: "Emu",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「癒し系 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1736,7 +1736,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0117",
     name: "Chiko",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「癒し系 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1750,7 +1750,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0118",
     name: "Kanon",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「感度抜群 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -1764,7 +1764,7 @@ const manualEntrants: EntrantRawRecord[] = [
   {
     entrantId: "mh26-ent-0119",
     name: "Aisu",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     sourceIds: ["ent-src-0062"],
     evidence:
       "ヘブンの店舗ページの女の子一覧の画像に「全国ミスヘブン総選挙2026」「兵庫県」「店長オススメ 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
@@ -2459,10 +2459,10 @@ const manualEntrantSources: Phase3RawSource[] = [
     sourceType: "store",
     accessStatus: "user_screenshot_only",
     publisherRole: "store_announcement",
-    storeIds: ["mh26-upd-store-0021"],
+    storeIds: ["mh26-sns-store-dd52b692de4bcd19"],
     relationIds: ["ent-rel-0073", "ent-rel-0074", "ent-rel-0075", "ent-rel-0076", "ent-rel-0077", "ent-rel-0078", "ent-rel-0079", "ent-rel-0080"],
     checkedAt: "2026-11-06",
-    notes: "掲載依頼者から提供された、ZONE（兵庫県）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・兵庫県・各部門）とGoogleの共有リンク。画像は保存していない",
+    notes: "掲載依頼者から提供された、ZONE（兵庫県）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・兵庫県・各部門）とGoogleの共有リンク。店舗ページのURL（hyogo/A2801/A280101/zone_kobe）の提供で、既存の店「＆ZONE」と同じ店と確認できたため、その店に所属させた。画像は保存していない",
   },
 ];
 
@@ -3153,7 +3153,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0073",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "有名店部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3163,7 +3163,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0074",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "兵庫泡姫部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3173,7 +3173,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0075",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "極嬢部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3183,7 +3183,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0076",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "感度抜群部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3193,7 +3193,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0077",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "アイドルロリ部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3203,7 +3203,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0078",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "巨乳部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3213,7 +3213,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0079",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "癒し系部門",
     categoryNormalized: null,
     confidence: "probable",
@@ -3223,7 +3223,7 @@ const manualEntrantRelations: Phase3RawRelation[] = [
   },
   {
     relationId: "ent-rel-0080",
-    storeId: "mh26-upd-store-0021",
+    storeId: "mh26-sns-store-dd52b692de4bcd19",
     categoryOriginal: "店長オススメ部門",
     categoryNormalized: null,
     confidence: "probable",
