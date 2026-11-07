@@ -1775,6 +1775,21 @@ const manualEntrants: EntrantRawRecord[] = [
     checkedAt: "2026-11-06",
     notes: "掲載依頼を起点に追加（2026-11-06）。名前は女の子一覧の表示名のうち、先頭の英字の部分（表示名は一覧で途中までしか見えない）。部門名はバッジの表記に「部門」を付けたもの。個別の在籍ページのURLは未提供のため、情報源はGoogleの共有リンク。プロフィール・写真等は保存していない",
   },
+  // ── 掲載依頼（本人からのDM、2026-11-07）。在籍ページのバッジのスクリーンショットで確認 ──
+  {
+    entrantId: "mh26-ent-0120",
+    name: "ツバサ",
+    storeId: "mh26-upd-store-0021",
+    sourceIds: ["ent-src-0063"],
+    evidence:
+      "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「鹿児島県」「地元っ娘 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
+    evidenceDate: "2026-11-07",
+    categoryOriginal: "地元っ娘部門",
+    personalUrl: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
+    confidence: "probable",
+    checkedAt: "2026-11-07",
+    notes: "掲載依頼（本人からのDM、2026-11-07）を起点に追加。名前・部門はDMの表記で、バッジの表記と一致（バッジの「部門」に「ノミネート」が続く）。個人ページのURLは本人提供のもの。プロフィール・写真等は保存していない",
+  },
 ];
 
 /** 出場者の根拠の情報源（店舗の情報源とは別に、人物の根拠として追加したもの） */
@@ -2463,6 +2478,17 @@ const manualEntrantSources: Phase3RawSource[] = [
     relationIds: ["ent-rel-0073", "ent-rel-0074", "ent-rel-0075", "ent-rel-0076", "ent-rel-0077", "ent-rel-0078", "ent-rel-0079", "ent-rel-0080"],
     checkedAt: "2026-11-06",
     notes: "掲載依頼者から提供された、ZONE（兵庫県）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・兵庫県・各部門）とGoogleの共有リンク。店舗ページのURL（hyogo/A2801/A280101/zone_kobe）の提供で、既存の店「＆ZONE」と同じ店と確認できたため、その店に所属させた。画像は保存していない",
+  },
+  {
+    sourceId: "ent-src-0063",
+    url: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
+    sourceType: "entrant_social",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0021"],
+    relationIds: ["ent-rel-0081"],
+    checkedAt: "2026-11-07",
+    notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・鹿児島県・地元っ娘部門 ノミネート）とページのURL。画像は保存していない。掲載依頼を起点に追加",
   },
 ];
 
@@ -3230,6 +3256,16 @@ const manualEntrantRelations: Phase3RawRelation[] = [
     sourceIds: ["ent-src-0062"],
     phase1RecordIds: [],
     notes: "店舗の女の子一覧の画像のバッジの部門表記（掲載依頼のスクリーンショット）",
+  },
+  {
+    relationId: "ent-rel-0081",
+    storeId: "mh26-upd-store-0021",
+    categoryOriginal: "地元っ娘部門",
+    categoryNormalized: null,
+    confidence: "probable",
+    sourceIds: ["ent-src-0063"],
+    phase1RecordIds: [],
+    notes: "在籍ページのバッジの部門表記（掲載依頼のスクリーンショット）",
   },
 ];
 
