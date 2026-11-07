@@ -2599,17 +2599,25 @@ input::placeholder { color:#a99aaf; }
   .site-nav { flex: 0 0 100%; order: 3; margin: 0 -16px; padding: 0 16px 4px; gap: 2px; }
   .site-nav .site-nav__home { display: none; }
   .site-nav a { min-height: 40px; }
-  .vote-stage { padding: 20px 14px 18px; }
-  .vote-stage__eyebrow { margin-bottom: 4px; }
-  .stage-title { font-size: clamp(2.6rem, 12vw, 3.6rem); margin: 6px auto 2px; line-height: .9; filter: drop-shadow(0 0 10px #ed30d8bd); }
-  .stage-title span:nth-child(2) { margin-left: 8px; }
-  .stage-title span:nth-child(3) { margin-left: 16px; }
-  .stage-title b { font-size: .4em; right: -14px; top: -4px; }
-  .stage-tag { margin: 10px 0 12px; font-size: 1rem; }
-  .vote-player { margin-bottom: 12px; padding: 8px 12px; }
-  .stage-cta { gap: 8px; margin-top: 10px; }
-  .stage-cta a { min-height: 56px; padding: 8px 14px; }
-  .stage-cta small { display: none; }
-  .stage-led { display: none; }
-  .stage-crowd { height: 46px; }
 }
+
+/* ===== 派手バージョン（ステージ演出を強める） ===== */
+.vote-stage { padding-top: 40px; padding-bottom: 64px; }
+.stage-title { filter: drop-shadow(0 0 22px #ff3be0) drop-shadow(0 0 48px #a62bff); animation: stage-glow 2.6s ease-in-out infinite alternate; }
+.stage-title span { background-size: 100% 100%; }
+.stage-lights i { opacity: .72; filter: blur(7px); animation: stage-sweep 5.5s ease-in-out infinite alternate; }
+.stage-lights i:nth-child(even) { animation-direction: alternate-reverse; animation-duration: 6.8s; }
+.stage-led { opacity: .6; animation: stage-led 1.8s steps(2, end) infinite; }
+.stage-crowd { opacity: 1; }
+.stage-tag { text-shadow: 0 0 10px #ff57e8, 0 0 28px #c13bff; }
+.stage-cta a { box-shadow: 0 0 22px #fc40c5aa, 0 0 44px #fc40c533, inset 0 1px 8px #ffffff80; animation: stage-pulse 2.2s ease-in-out infinite alternate; }
+.stage-cta__map { animation-delay: .6s !important; }
+.vote-player { box-shadow: 0 0 26px #ce2effaa, 0 0 56px #ce2eff44; }
+.vote-mv-launcher__watch { background: linear-gradient(115deg,#ff3fb8,#9a43ff); border-color: #ffb0ec; box-shadow: 0 0 16px #ff3fb899; }
+.vote-stage__eyebrow { text-shadow: 0 0 12px #ff4bd8; }
+@keyframes stage-glow { from { filter: drop-shadow(0 0 16px #ff3be0) drop-shadow(0 0 36px #a62bff); } to { filter: drop-shadow(0 0 30px #ff5cf0) drop-shadow(0 0 64px #c24bff); } }
+@keyframes stage-sweep { from { transform: rotate(var(--r1, -18deg)); } to { transform: rotate(var(--r2, 22deg)); } }
+@keyframes stage-led { 50% { opacity: .22; } }
+@keyframes stage-pulse { to { transform: translateY(-2px) scale(1.012); } }
+@media (max-width: 680px) { .stage-cta small { display: block; } .stage-led { display: block; } }
+@media (prefers-reduced-motion: reduce) { .stage-title, .stage-lights i, .stage-led, .stage-cta a { animation: none; } }
