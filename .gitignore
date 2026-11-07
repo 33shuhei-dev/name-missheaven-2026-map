@@ -6,3 +6,7 @@ next-env.d.ts
 .env*.local
 .vercel
 coverage/
+*.mp4
+*.webm
+*.mov
+*.m4v

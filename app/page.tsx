@@ -10,6 +10,7 @@ import { CategoryCard } from "@/components/CategoryCard";
 import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 import { SchedulePanel } from "@/components/SchedulePanel";
 import { ListingRequestCta } from "@/components/ListingRequestCta";
+import { VoteAudioPlayer } from "@/components/VoteAudioPlayer";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -28,8 +29,29 @@ export default function HomePage() {
 
   return (
     <div className="home">
+      <section className="vote-stage" aria-labelledby="vote-stage-title">
+        <div className="stage-lights" aria-hidden="true"><i/><i/><i/><i/><i/></div>
+        <div className="stage-led stage-led--left" aria-hidden="true"/><div className="stage-led stage-led--right" aria-hidden="true"/>
+        <div className="vote-stage__content">
+          <p className="vote-stage__eyebrow">THE FAN EXPERIENCE · 2026</p>
+          <h2 className="stage-title" id="vote-stage-title"><span>VOTE</span><span>VOTE</span><span>VOTE</span><b aria-hidden="true">♕</b></h2>
+          <p className="stage-tag">推しに、投票を。</p>
+          <VoteAudioPlayer />
+          <div className="stage-cta">
+            <a href="#find-your-oshi" className="stage-cta__main"><span>♕</span><strong>推しを探す<small>名前・部門から選ぶ</small></strong><span aria-hidden="true">→</span></a>
+            <a href="#map" className="stage-cta__map"><span>♧</span><strong>全国マップを見る<small>地域から探す</small></strong><span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div className="stage-crowd" aria-hidden="true"/>
+      </section>
+      <section className="stage-fast-links" aria-label="便利なメニュー">
+        <a href="#categories"><span>♕</span><strong>部門から探す</strong><small>カテゴリー一覧</small></a>
+        <a href="#map"><span>♧</span><strong>全国マップ</strong><small>都道府県から</small></a>
+        <Link href="/search?kind=store"><span>▣</span><strong>店舗情報</strong><small>店舗から探す</small></Link>
+        <Link href="/about"><span>✎</span><strong>掲載について</strong><small>情報・掲載依頼</small></Link>
+      </section>
       {/* ファーストビュー：何のサイトか・何ができるか・次に押す場所 */}
-      <section className="hero">
+      <section className="hero" id="find-your-oshi">
         <h1 className="hero__title">
           <span className="hero__unofficial">非公式</span>
           <span className="hero__event">ミスヘブン総選挙2026</span>
