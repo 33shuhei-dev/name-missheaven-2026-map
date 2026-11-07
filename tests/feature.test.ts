@@ -27,3 +27,12 @@ describe("特集への入口", () => {
     expect(readFileSync("components/SiteHeader.tsx", "utf8")).toContain("site-nav__feature");
   });
 });
+
+describe("応援曲の動画", () => {
+  it("トップに動画があり、自動再生しない", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("<AnthemVideo />");
+    const src = readFileSync("components/AnthemVideo.tsx", "utf8");
+    expect(src).toContain("非公式・有志制作");
+    expect(src).not.toContain("autoPlay");
+  });
+});

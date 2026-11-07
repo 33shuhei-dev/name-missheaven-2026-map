@@ -10,6 +10,7 @@ import { CategoryCard } from "@/components/CategoryCard";
 import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 import { SchedulePanel } from "@/components/SchedulePanel";
 import { ListingRequestCta } from "@/components/ListingRequestCta";
+import { AnthemVideo } from "@/components/AnthemVideo";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -91,6 +92,8 @@ export default function HomePage() {
           <li>店舗の公開ページで詳しく見る</li>
         </ol>
       </section>
+
+      <AnthemVideo />
 
       {/* 部門の面白さ：データに実在する部門名から */}
       <section className="section fun-cats" id="categories" aria-labelledby="fun-heading">
