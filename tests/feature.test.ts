@@ -27,3 +27,14 @@ describe("特集への入口", () => {
     expect(readFileSync("components/SiteHeader.tsx", "utf8")).toContain("site-nav__feature");
   });
 });
+
+describe("応援曲の動画", () => {
+  it("トップのステージの中に動画があり、自動再生しない（非公式・有志制作の表記つき）", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("<VoteAudioPlayer />");
+    const src = readFileSync("components/VoteAudioPlayer.tsx", "utf8");
+    expect(src).toContain("/vote-vote-vote-lyric-mv.mp4");
+    expect(src).toContain("非公式・有志制作");
+    expect(src).not.toContain("autoPlay");
+    expect(src).toContain('preload="none"');
+  });
+});

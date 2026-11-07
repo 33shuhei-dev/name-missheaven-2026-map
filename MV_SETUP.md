@@ -1,9 +1,8 @@
-# MV設定
+# MV（動画）について
 
-動画はリポジトリに含めません。`VoteVoteVote_MV_web_complete.mp4` を外部の公開ストレージに置き、HTTPSの動画URLを `NEXT_PUBLIC_VOTE_MV_URL` に設定してください。URL未設定時は「MV準備中」と表示し、再生ボタンを無効化します。
+応援曲「Vote Vote Vote」のリリックビデオは、サイト内の公開ファイルを使います（外部URLの設定は不要です）。
 
-ローカルでは `.env.example` を `.env.local` にコピーし、URLを入力して開発サーバーを起動し直してください。Vercelのプレビューでは、このブランチに適用するPreview環境変数として設定してから再ビルドします。本番の環境変数や公開は所有者の確認後に変更してください。
-
-`NEXT_PUBLIC_` の値はブラウザーに公開されます。秘密鍵や認証が必要なURLを入れず、閲覧者が取得できる動画配信用URLを使用してください。配信元は `Content-Type: video/mp4` と範囲リクエスト（シーク）の対応を確認してください。
-
-動画ファイルは `.gitignore` で除外しています。設定後はNext.jsの再ビルドが必要です。実際の配信URLはまだ設定していません。
+- 動画：`public/vote-vote-vote-lyric-mv.mp4`（縦型 720x1280・約34MB）
+- ポスター画像：`public/vote-vote-vote-poster.jpg`
+- 表示：トップのステージの中（`components/VoteAudioPlayer.tsx`）。自動再生はしない。`preload="none"`。
+- 差し替えるときは、同じファイル名で `public/` に置き換える。

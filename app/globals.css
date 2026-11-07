@@ -2388,8 +2388,7 @@ p {
   }
 }
 
-/* ===========================================================
-   VOTE 2026 / STAGE EDITION — visual layer
+/* ====================================================   VOTE 2026 / STAGE EDITION — visual layer
    =========================================================== */
 :root {
   --bg: #0b0914;
@@ -2621,3 +2620,26 @@ input::placeholder { color:#a99aaf; }
 @keyframes stage-pulse { to { transform: translateY(-2px) scale(1.012); } }
 @media (max-width: 680px) { .stage-cta small { display: block; } .stage-led { display: block; } }
 @media (prefers-reduced-motion: reduce) { .stage-title, .stage-lights i, .stage-led, .stage-cta a { animation: none; } }
+/* 応援曲の動画（縦型。スマホでは幅いっぱい、PCでは細めに中央寄せ） */
+.anthem {
+  padding: 16px;
+}
+.anthem__video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto 12px;
+  background: #000;
+  border-radius: var(--radius);
+}
+
+/* ===== ステージの中の動画（縦型MV） ===== */
+.stage-mv { margin: 14px auto 6px; display: grid; justify-items: center; gap: 10px; }
+.stage-mv__frame { position: relative; padding: 6px; border-radius: 22px; background: linear-gradient(160deg,#ff4bd3,#8b3dff 55%,#4cc9ff); box-shadow: 0 0 22px #ff3be0b0, 0 0 60px #a62bff80, 0 0 110px #a62bff40; animation: stage-glow-frame 2.6s ease-in-out infinite alternate; }
+.stage-mv__video { display: block; width: min(64vw, 270px); aspect-ratio: 9 / 16; object-fit: cover; background: #000; border-radius: 17px; }
+.stage-mv__caption { display: grid; gap: 2px; text-align: center; font-size: .72rem; color: #e6cdf0; }
+.stage-mv__caption strong { font-size: .95rem; letter-spacing: .12em; color: #fff; text-shadow: 0 0 12px #ff57e8; }
+@keyframes stage-glow-frame { from { box-shadow: 0 0 16px #ff3be0a0, 0 0 44px #a62bff70, 0 0 90px #a62bff30; } to { box-shadow: 0 0 30px #ff5cf0c0, 0 0 76px #c24bff90, 0 0 130px #c24bff50; } }
+@media (min-width: 900px) { .stage-mv__video { width: 300px; } }
+@media (prefers-reduced-motion: reduce) { .stage-mv__frame { animation: none; } }
