@@ -44,12 +44,6 @@ export default function HomePage() {
         </div>
         <div className="stage-crowd" aria-hidden="true"/>
       </section>
-      <section className="stage-fast-links" aria-label="便利なメニュー">
-        <a href="#categories"><span>♕</span><strong>部門から探す</strong><small>カテゴリー一覧</small></a>
-        <a href="#map"><span>♧</span><strong>全国マップ</strong><small>都道府県から</small></a>
-        <Link href="/search?kind=store"><span>▣</span><strong>店舗情報</strong><small>店舗から探す</small></Link>
-        <Link href="/about"><span>✎</span><strong>掲載について</strong><small>情報・掲載依頼</small></Link>
-      </section>
       {/* ファーストビュー：何のサイトか・何ができるか・次に押す場所 */}
       <section className="hero" id="find-your-oshi">
         <h1 className="hero__title">
@@ -112,6 +106,12 @@ export default function HomePage() {
           <li>店舗を見つける</li>
           <li>店舗の公開ページで詳しく見る</li>
         </ol>
+      </section>
+      <section className="stage-fast-links" aria-label="便利なメニュー">
+        <a href="#categories"><span>♕</span><strong>部門から探す</strong><small>カテゴリー一覧</small></a>
+        <a href="#map"><span>♧</span><strong>全国マップ</strong><small>都道府県から</small></a>
+        <Link href="/search?kind=store"><span>▣</span><strong>店舗情報</strong><small>店舗から探す</small></Link>
+        <Link href="/about"><span>✎</span><strong>掲載について</strong><small>情報・掲載依頼</small></Link>
       </section>
 
       {/* 部門の面白さ：データに実在する部門名から */}
