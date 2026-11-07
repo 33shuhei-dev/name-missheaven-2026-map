@@ -2387,3 +2387,17 @@ p {
     max-width: 560px;
   }
 }
+
+/* 応援曲の動画（縦型。スマホでは幅いっぱい、PCでは細めに中央寄せ） */
+.anthem {
+  padding: 16px;
+}
+.anthem__video {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto 12px;
+  background: #000;
+  border-radius: var(--radius);
+}
