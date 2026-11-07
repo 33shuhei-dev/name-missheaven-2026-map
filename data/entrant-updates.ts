@@ -1785,7 +1785,7 @@ const manualEntrants: EntrantRawRecord[] = [
       "ヘブンの在籍ページの画像に「全国ミスヘブン総選挙2026」「鹿児島県」「地元っ娘 部門 ノミネート」のバッジ（掲載依頼のスクリーンショットで確認。調査側は本文を直接取得していない）",
     evidenceDate: "2026-11-07",
     categoryOriginal: "地元っ娘部門",
-    personalUrl: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
+    personalUrl: "https://www.cityheaven.net/kagoshima/A4601/A460102/newcandy/girlid-57093013/",
     confidence: "probable",
     checkedAt: "2026-11-07",
     notes: "掲載依頼（本人からのDM、2026-11-07）を起点に追加。名前・部門はDMの表記で、バッジの表記と一致（バッジの「部門」に「ノミネート」が続く）。個人ページのURLは本人提供のもの。プロフィール・写真等は保存していない",
@@ -2481,7 +2481,7 @@ const manualEntrantSources: Phase3RawSource[] = [
   },
   {
     sourceId: "ent-src-0063",
-    url: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
+    url: "https://www.cityheaven.net/kagoshima/A4601/A460102/newcandy/girlid-57093013/",
     sourceType: "entrant_social",
     accessStatus: "user_screenshot_only",
     publisherRole: "entrant_page",

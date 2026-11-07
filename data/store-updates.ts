@@ -584,8 +584,8 @@ const manualStores: Phase3RawStore[] = [
     formalElectionArea: null,
     categoryOriginal: null,
     categoryOriginals: [],
-    participationEvidenceUrl: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
-    storePublicUrl: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/",
+    participationEvidenceUrl: "https://www.cityheaven.net/kagoshima/A4601/A460102/newcandy/girlid-57093013/",
+    storePublicUrl: "https://www.cityheaven.net/kagoshima/A4601/A460102/newcandy/",
     sourceType: "store",
     confidence: "probable",
     participationType: "entrant_self_reported",
@@ -596,7 +596,7 @@ const manualStores: Phase3RawStore[] = [
     sourceIds: ["upd-src-0023"],
     publicUrlAccessStatus: "unknown",
     notes:
-      "出場者（ツバサ）本人からの掲載依頼（DM、2026-11-07）を起点に追加。依頼文に「キャンディ（鹿児島県）」「地元っ娘」とあり、本人提供の在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・鹿児島県・地元っ娘 部門 ノミネート）で都道府県・部門を確認。店名は依頼文の表記による（URLの店舗キーは newcandy）。リンクは姉妹サイト（yoasobi-heaven.com）の在籍ページのURLで、店舗ページのURLはそこから個人部分を除いたもの。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
+      "出場者（ツバサ）本人からの掲載依頼（DM、2026-11-07）を起点に追加。依頼文に「キャンディ（鹿児島県）」「地元っ娘」とあり、本人提供の在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・鹿児島県・地元っ娘 部門 ノミネート）で都道府県・部門を確認。店名は依頼文の表記による（URLの店舗キーは newcandy）。在籍ページのURLは本人提供のもの（後から、ヘブンネットのURLに差し替えた）で、店舗ページのURLはそこから個人部分を除いたもの。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
 ];
 
@@ -869,7 +869,7 @@ const manualSources: Phase3RawSource[] = [
   },
   {
     sourceId: "upd-src-0023",
-    url: "https://yoasobi-heaven.com/ja/kagoshima/YA4601/newcandy/girlid-57093013/",
+    url: "https://www.cityheaven.net/kagoshima/A4601/A460102/newcandy/girlid-57093013/",
     sourceType: "store",
     accessStatus: "user_screenshot_only",
     publisherRole: "entrant_page",
