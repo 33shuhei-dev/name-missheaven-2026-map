@@ -406,3 +406,14 @@ describe("掲載依頼: ZONE（兵庫県）の女の子一覧", () => {
     for (const c of ["有名店部門", "兵庫泡姫部門", "極嬢部門", "感度抜群部門", "アイドルロリ部門", "巨乳部門", "癒し系部門", "店長オススメ部門"]) expect(store.categoryOriginals).toContain(c);
   });
 });
+
+describe("掲載依頼: ツバサ（キャンディ・鹿児島県・地元っ娘部門）", () => {
+  it("店と人と部門が載り、probable", () => {
+    const store = site.stores.find((s) => s.name === "キャンディ")!;
+    expect(store.prefectureName).toBe("鹿児島県");
+    const e = site.entrants.find((x) => x.storeId === store.id && x.name === "ツバサ")!;
+    expect(e).toBeTruthy();
+    expect(e.confidence).toBe("probable");
+    expect(e.divisions.map((d) => d.categoryOriginal)).toContain("地元っ娘部門");
+  });
+});
