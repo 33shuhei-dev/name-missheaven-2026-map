@@ -29,10 +29,12 @@ describe("特集への入口", () => {
 });
 
 describe("応援曲の動画", () => {
-  it("トップに動画があり、自動再生しない", () => {
-    expect(readFileSync("app/page.tsx", "utf8")).toContain("<AnthemVideo />");
-    const src = readFileSync("components/AnthemVideo.tsx", "utf8");
+  it("トップのステージの中に動画があり、自動再生しない（非公式・有志制作の表記つき）", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("<VoteAudioPlayer />");
+    const src = readFileSync("components/VoteAudioPlayer.tsx", "utf8");
+    expect(src).toContain("/vote-vote-vote-lyric-mv.mp4");
     expect(src).toContain("非公式・有志制作");
     expect(src).not.toContain("autoPlay");
+    expect(src).toContain('preload="none"');
   });
 });
