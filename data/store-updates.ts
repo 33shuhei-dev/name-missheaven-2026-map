@@ -612,16 +612,16 @@ const manualStores: Phase3RawStore[] = [
     participationEvidenceUrl: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/girlid-65769667/",
     storePublicUrl: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/",
     sourceType: "store",
-    confidence: "unverified",
-    participationType: "candidate",
+    confidence: "probable",
+    participationType: "store_banner_reported",
     checkedAt: "2026-11-09",
     phase1RecordIds: [],
     phase2RecordIds: [],
     isNewSincePhase1: true,
-    sourceIds: ["upd-src-0024"],
+    sourceIds: ["upd-src-0024", "upd-src-0025"],
     publicUrlAccessStatus: "unknown",
     notes:
-      "掲載依頼（DM、2026-11-09）を起点に追加。依頼文に「福原・モンテクラブ・黒木みれい」と在籍ページのURL（hyogo/A2801/A280102/monte）があり、店名・都道府県・店舗ページのURLはその表記による。2026年の出場を示すバッジや告知は添えられていないため unverified。依頼者が出場者本人か第三者かは不明のため、候補（未確認）として扱う。掲載地域・正式選挙エリアは未確認。",
+      "掲載依頼（DM、2026-11-09）を起点に追加。依頼文に「福原・モンテクラブ・黒木みれい」と在籍ページのURL（hyogo/A2801/A280102/monte）があり、店名・都道府県・店舗ページのURLはその表記による。その後、依頼者から店舗ページの女の子一覧のスクリーンショットが提供され、各人の画像に「全国ミスヘブン総選挙2026」「兵庫県」「各部門」のバッジと「当店からノミネート!!」の表記を確認したため、probable に更新した。調査環境からは本文を直接確認していない。掲載地域・正式選挙エリアは未確認。",
   },
 ];
 
@@ -913,6 +913,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-09",
     notes: "掲載依頼（DM）の文面にあった、在籍ページのURL（個人用のパラメータは除いた）。ページの本文は確認していない。2026年の出場を示す根拠は添えられていない",
+  },
+  {
+    sourceId: "upd-src-0025",
+    url: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/girllist/",
+    sourceType: "store",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "store_announcement",
+    storeIds: ["mh26-upd-store-0022"],
+    relationIds: [],
+    checkedAt: "2026-11-09",
+    notes: "依頼者から提供された、モンテクラブ（兵庫県）の店舗ページの女の子一覧のスクリーンショット（各人のノミネートのバッジ：全国ミスヘブン総選挙2026・兵庫県・各部門、「当店からノミネート!!」）。画像は保存していない。URLは店舗の女の子一覧のページ",
   },
 ];
 

@@ -432,3 +432,16 @@ describe("掲載依頼: 5人（福原・雄琴）。名前・店名・URLによ�
     expect(site.stores.find((s) => s.name === "モンテクラブ")!.prefectureName).toBe("兵庫県");
   });
 });
+
+describe("掲載依頼: モンテクラブ（兵庫県）の女の子一覧", () => {
+  it("店が probable に上がり、バッジのある5人が載る。バッジのない黒木みれいは未確認のまま", () => {
+    const store = site.stores.find((s) => s.name === "モンテクラブ")!;
+    expect(store.confidence).toBe("probable");
+    const by = (n: string) => site.entrants.find((e) => e.storeId === store.id && e.name === n)!;
+    for (const [n, c] of [["南雲 さよ", "癒し系部門"], ["美竹 ゆりあ", "極嬢部門"], ["朝比奈 梨央", "店長オススメ部門"], ["桜坂 しずく", "パイパン部門"], ["神原 みのり", "巨乳部門"]]) {
+      expect(by(n).confidence).toBe("probable");
+      expect(by(n).divisions.map((d) => d.categoryOriginal)).toContain(c);
+    }
+    expect(by("黒木みれい").confidence).toBe("unverified");
+  });
+});
