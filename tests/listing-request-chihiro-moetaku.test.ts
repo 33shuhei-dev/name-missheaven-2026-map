@@ -417,3 +417,18 @@ describe("掲載依頼: ツバサ（キャンディ・鹿児島県・地元っ�
     expect(e.divisions.map((d) => d.categoryOriginal)).toContain("地元っ娘部門");
   });
 });
+
+describe("掲載依頼: 5人（福原・雄琴）。名前・店名・URLによる未確認", () => {
+  it("5人が既存の店または新しい店に載り、すべて unverified", () => {
+    const find = (store: string, name: string) => {
+      const st = site.stores.find((s) => s.name.startsWith(store))!;
+      return site.entrants.find((x) => x.storeId === st.id && x.name === name)!;
+    };
+    for (const [store, name] of [["The White", "りん"], ["The White", "はつこい"], ["モンテクラブ", "黒木みれい"], ["キューティースタイル", "夢乃ゆめ"], ["キュアル神戸", "汐美るる"]]) {
+      const e = find(store, name);
+      expect(e, `${store}/${name}`).toBeTruthy();
+      expect(e.confidence).toBe("unverified");
+    }
+    expect(site.stores.find((s) => s.name === "モンテクラブ")!.prefectureName).toBe("兵庫県");
+  });
+});

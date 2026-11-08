@@ -598,6 +598,31 @@ const manualStores: Phase3RawStore[] = [
     notes:
       "出場者（ツバサ）本人からの掲載依頼（DM、2026-11-07）を起点に追加。依頼文に「キャンディ（鹿児島県）」「地元っ娘」とあり、本人提供の在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・鹿児島県・地元っ娘 部門 ノミネート）で都道府県・部門を確認。店名は依頼文の表記による（URLの店舗キーは newcandy）。在籍ページのURLは本人提供のもの（後から、ヘブンネットのURLに差し替えた）で、店舗ページのURLはそこから個人部分を除いたもの。調査環境からは本文を直接確認していないため probable。掲載地域・正式選挙エリアは未確認。",
   },
+  // ── 掲載依頼（DM、2026-11-09）。依頼文の名前・店名・在籍ページのURLによる（2026年の出場の根拠は未確認） ──
+  {
+    storeId: "mh26-upd-store-0022",
+    storeName: "モンテクラブ",
+    storeNameOriginals: ["モンテクラブ"],
+    prefecture: "兵庫県",
+    listingArea: null,
+    listingAreas: [],
+    formalElectionArea: null,
+    categoryOriginal: null,
+    categoryOriginals: [],
+    participationEvidenceUrl: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/girlid-65769667/",
+    storePublicUrl: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/",
+    sourceType: "store",
+    confidence: "unverified",
+    participationType: "candidate",
+    checkedAt: "2026-11-09",
+    phase1RecordIds: [],
+    phase2RecordIds: [],
+    isNewSincePhase1: true,
+    sourceIds: ["upd-src-0024"],
+    publicUrlAccessStatus: "unknown",
+    notes:
+      "掲載依頼（DM、2026-11-09）を起点に追加。依頼文に「福原・モンテクラブ・黒木みれい」と在籍ページのURL（hyogo/A2801/A280102/monte）があり、店名・都道府県・店舗ページのURLはその表記による。2026年の出場を示すバッジや告知は添えられていないため unverified。依頼者が出場者本人か第三者かは不明のため、候補（未確認）として扱う。掲載地域・正式選挙エリアは未確認。",
+  },
 ];
 
 const manualRelations: Phase3RawRelation[] = [
@@ -877,6 +902,17 @@ const manualSources: Phase3RawSource[] = [
     relationIds: [],
     checkedAt: "2026-11-07",
     notes: "出場者本人から提供された、在籍ページのスクリーンショット（バッジ：全国ミスヘブン総選挙2026・鹿児島県・地元っ娘部門 ノミネート）とページのURL。画像は保存していない。掲載依頼を起点に追加",
+  },
+  {
+    sourceId: "upd-src-0024",
+    url: "https://www.cityheaven.net/hyogo/A2801/A280102/monte/girlid-65769667/",
+    sourceType: "other",
+    accessStatus: "user_screenshot_only",
+    publisherRole: "entrant_page",
+    storeIds: ["mh26-upd-store-0022"],
+    relationIds: [],
+    checkedAt: "2026-11-09",
+    notes: "掲載依頼（DM）の文面にあった、在籍ページのURL（個人用のパラメータは除いた）。ページの本文は確認していない。2026年の出場を示す根拠は添えられていない",
   },
 ];
 
