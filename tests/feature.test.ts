@@ -45,6 +45,6 @@ describe("特集：総選挙の歴史", () => {
     expect(src).toContain("わからなかったこと");
     expect(src).toContain("確認できていない");
     expect(src).toContain("媒体の記事のみ");
-    expect(src).not.toContain("11/24");
+    expect(src).toContain("運営者の確認による11/23(月) 23:59");
   });
 });
