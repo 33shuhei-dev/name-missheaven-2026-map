@@ -38,3 +38,13 @@ describe("応援曲の動画", () => {
     expect(src).toContain('preload="none"');
   });
 });
+
+describe("特集：総選挙の歴史", () => {
+  it("確認できたことだけを載せ、わからなかったことを明記している", () => {
+    const src = readFileSync("app/feature/history/page.tsx", "utf8");
+    expect(src).toContain("わからなかったこと");
+    expect(src).toContain("確認できていない");
+    expect(src).toContain("媒体の記事のみ");
+    expect(src).not.toContain("11/24");
+  });
+});
