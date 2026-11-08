@@ -38,3 +38,13 @@ describe("応援曲の動画", () => {
     expect(src).toContain('preload="none"');
   });
 });
+
+describe("特集：部門図鑑", () => {
+  it("部門名を原文のまま出し、確認できた範囲の数字であることを書いている", () => {
+    const src = readFileSync("app/feature/zukan/page.tsx", "utf8");
+    expect(src).toContain("summarizeCategories");
+    expect(src).toContain("確認できた範囲");
+    expect(src).toContain("まとめたり言い換えたりしていません");
+    expect(readFileSync("app/feature/page.tsx", "utf8")).toContain("/feature/zukan");
+  });
+});

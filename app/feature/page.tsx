@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -45,6 +46,9 @@ export default function FeaturePage() {
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集" }]} />
       <h1>特集：まず200人、そして15万票へ</h1>
       <p className="hint">2026年の神15を、数字で考える。公開されている制度の情報をもとにした計算で、予測ではありません。</p>
+      <p className="hint hint--tight">
+        ほかの特集：<Link href="/feature/zukan">部門図鑑（タイプ別に眺める）›</Link>
+      </p>
       <Image
         className="feature-cover"
         src="/feature-cover.jpg"
