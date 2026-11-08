@@ -51,3 +51,13 @@ describe("特集：総選挙の歴史", () => {
     expect(src).toContain("歩み：歴代グランプリと、応援のかたちの変化");
   });
 });
+
+describe("特集：2026年に向けて", () => {
+  it("事実と見立てを分け、確かめられないことと終了日の注記がある", () => {
+    const src = readFileSync("app/feature/strategy/page.tsx", "utf8");
+    expect(src).toContain("見立て");
+    expect(src).toContain("確かめられないこと");
+    expect(src).toContain("運営者の確認による11/23(月) 23:59");
+    expect(src).toContain("2026年の神15の枠の配分は、確認できていません");
+  });
+});

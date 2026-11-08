@@ -190,7 +190,7 @@ export default function HistoryPage() {
           <li>2022〜2024年の投票者数などを載せた広告資料は、本文を読めず、確認できていないため載せていません。</li>
         </ul>
         <p>この特集は有志による非公式のまとめで、公式の見解ではありません。情報が見つかり次第、追加します。</p>
-        <p><Link href="/feature">特集：まず200人、そして15万票へ ›</Link></p>
+        <p><Link href="/feature">特集：まず200人、そして15万票へ ›</Link>　<Link href="/feature/strategy">特集：2026年に向けて ›</Link></p>
       </section>
     </>
   );
