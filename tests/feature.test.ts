@@ -38,3 +38,32 @@ describe("応援曲の動画", () => {
     expect(src).toContain('preload="none"');
   });
 });
+
+describe("特集：総選挙の歴史", () => {
+  it("確認できたことだけを載せ、わからなかったことを明記している", () => {
+    const src = readFileSync("app/feature/history/page.tsx", "utf8");
+    expect(src).toContain("わからなかったこと");
+    expect(src).toContain("確認できていない");
+    expect(src).toContain("媒体の記事のみ");
+    expect(src).toContain("運営者の確認による11/23(月) 23:59");
+    expect(src).toContain("近年の大会では、投票参加者数や得票数の記録更新が報じられています");
+    expect(src).not.toContain("規模は年々大きくなっています");
+    expect(src).toContain("歩み：歴代グランプリと、応援のかたちの変化");
+    expect(src).toContain("2026年の戦略：歴史から何が言えるか");
+    expect(src).toContain("結果を予測するものではなく、保証もしません");
+    expect(src).toContain("2026年の神15の枠の配分は、確認できていません");
+  });
+});
+
+describe("特集の入口（特集1・特集2）", () => {
+  it("どちらの特集ページにも、特集1・特集2の切り替えがある", () => {
+    expect(readFileSync("app/feature/page.tsx", "utf8")).toContain("<FeatureTabs current={1} />");
+    expect(readFileSync("app/feature/history/page.tsx", "utf8")).toContain("<FeatureTabs current={2} />");
+    const tabs = readFileSync("components/FeatureTabs.tsx", "utf8");
+    expect(tabs).toContain('href: "/feature"');
+    expect(tabs).toContain('href: "/feature/history"');
+  });
+  it("トップに、特集1・特集2の入口がある", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("FEATURES.map");
+  });
+});

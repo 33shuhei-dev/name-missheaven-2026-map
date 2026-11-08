@@ -11,6 +11,7 @@ import { RandomCategoryButton } from "@/components/RandomCategoryButton";
 import { SchedulePanel } from "@/components/SchedulePanel";
 import { ListingRequestCta } from "@/components/ListingRequestCta";
 import { VoteAudioPlayer } from "@/components/VoteAudioPlayer";
+import { FEATURES } from "@/components/FeatureTabs";
 
 export default function HomePage() {
   const { stats, unknownPrefecture } = site;
@@ -55,14 +56,16 @@ export default function HomePage() {
           ミスヘブン総選挙2026の出場情報を、<strong>推しの名前・部門・地域</strong>から探せる非公式まとめです。
         </p>
         {/* 特集への入口（目立たせる） */}
-        <Link href="/feature" className="feature-banner">
-          <span className="feature-banner__tag">特集</span>
-          <span className="feature-banner__text">
-            <strong>まず200人、そして15万票へ</strong>
-            <span>2026年の神15を、数字で考える</span>
-          </span>
-          <span className="feature-banner__go" aria-hidden="true">›</span>
-        </Link>
+        {FEATURES.map((f) => (
+          <Link key={f.no} href={f.href} className="feature-banner">
+            <span className="feature-banner__tag">特集{f.no}</span>
+            <span className="feature-banner__text">
+              <strong>{f.title}</strong>
+              <span>{f.lead}</span>
+            </span>
+            <span className="feature-banner__go" aria-hidden="true">›</span>
+          </Link>
+        ))}
         {/* 推しから探す（目的を持って来た人の入口） */}
         <div className="hero-search">
           <p className="hero-search__label">
