@@ -31,7 +31,7 @@ const MANY_MIN_STORES = 3;
 
 const VIEWS: { id: View; label: string; note?: string }[] = [
   { id: "all", label: "全部" },
-  { id: "many", label: "店舗が多い", note: `このサイトで見つかった店舗が${MANY_MIN_STORES}店以上の部門を、多い順に並べています。` },
+  { id: "many", label: "店舗が多い", note: `このサイトで見つかった店舗が${MANY_MIN_STORES}店以上の部門を、多い順に並べています（順位つき）。` },
   { id: "wide", label: "全国に広い", note: "2つ以上の都道府県で見つかった部門を、都道府県が多い順に並べています。" },
   {
     id: "rare",
@@ -175,8 +175,9 @@ export function CategoryExplorer({
         <p className="empty">条件に一致する部門名はありません。</p>
       ) : (
         <ul className="cat-grid">
-          {list.map((r) => (
+          {list.map((r, i) => (
             <li key={r.name}>
+              {view === "many" && !q && !pref && <p className="hint hint--tight">{i + 1}位</p>}
               <CategoryCard row={r} />
             </li>
           ))}

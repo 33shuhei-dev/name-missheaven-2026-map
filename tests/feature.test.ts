@@ -38,3 +38,13 @@ describe("応援曲の動画", () => {
     expect(src).toContain('preload="none"');
   });
 });
+
+describe("特集：本選ガイド", () => {
+  it("終了日と繰越なし・1日10票の説明があり、24日の表記はない", () => {
+    const src = readFileSync("app/feature/honsen/page.tsx", "utf8");
+    expect(src).toContain("11/23（月）");
+    expect(src).toContain("繰越なし");
+    expect(src).toContain("1日10票");
+    expect(src).not.toContain("11/24");
+  });
+});
