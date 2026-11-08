@@ -90,7 +90,8 @@ raw = (load("grok_confirmed_2026-11-06.csv", "grok_confirmed_check.json", "grok�
        + load("grok_pending_2026-11-06.csv", "grok_pending_check.json", "grokメモ（要確認）", False))
 store_rows = []
 SRC = {"x_": "X（Yahoo!リアルタイム検索）", "sweep_yesgrp": "YESグループ公式エントリー一覧", "sweep_news": "店舗の駅ちかニュース",
-       "sweep_areas": "エリア別写メ日記一覧", "sweep_diary": "店舗の写メ日記・ニュース一括調査"}
+       "sweep_areas": "エリア別写メ日記一覧", "sweep_diary": "店舗の写メ日記・ニュース一括調査",
+       "sweep_manual": "運営者からの情報提供（公開根拠を確認）"}
 for f in sorted(CAND.glob("x_*.csv")) + sorted(CAND.glob("sweep_*.csv")):
     o, s = load_simple(f.name, next(v for k, v in SRC.items() if f.name.startswith(k)))
     raw += o; store_rows += s
