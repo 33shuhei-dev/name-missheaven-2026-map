@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 
-export const metadata: Metadata = { title: "特集：総選挙の歴史（ルールと盛り上がりの移り変わり）" };
+export const metadata: Metadata = { title: "特集：総選挙の歩みと、2026年の戦略" };
 
 type Row = { year: string; what: string; src: string; href: string; level: string };
 
@@ -63,11 +63,19 @@ const RULES: { item: string; before: string; after: string; src: string; href: s
 export default function HistoryPage() {
   return (
     <>
-      <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集", href: "/feature" }, { label: "総選挙の歴史" }]} />
-      <h1>特集：総選挙の歴史</h1>
+      <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集", href: "/feature" }, { label: "歩みと2026年の戦略" }]} />
+      <h1>特集：総選挙の歩みと、2026年の戦略</h1>
       <p className="hint">
-        ルールの変化と、盛り上がりの移り変わりを、公開されている情報から振り返る特集です。出典のページを実際に開いて確認できたことだけを載せています。わからないことは「わからない」と書きます。
+        前半は、ルールの変化と盛り上がりの移り変わりを、公開されている情報から振り返ります。後半は、その歴史を踏まえて、2026年の本選をどう戦うかを考えます。事実は出典を開いて確認できたことだけを載せ、私たちの見立ては、そう分かるように分けて書いています。
       </p>
+      <nav className="history-toc" aria-label="この特集の目次">
+        <a href="#story">歩み</a>
+        <a href="#timeline">年表</a>
+        <a href="#rules">ルールの変化</a>
+        <a href="#numbers">盛り上がりの数字</a>
+        <a href="#strategy">2026年の戦略</a>
+        <a href="#unknown">わからなかったこと</a>
+      </nav>
 
       <section className="section card prose">
         <h2>先に、わかっていること</h2>
@@ -122,7 +130,7 @@ export default function HistoryPage() {
         <p className="hint">調査日：2026年11月8日。確認できていない項目は、下の「わからなかったこと」にまとめています。</p>
       </section>
 
-      <section className="section card prose">
+      <section className="section card prose" id="timeline">
         <h2>年表</h2>
         <ol className="history-list">
           {TIMELINE.map((r, i) => (
@@ -141,7 +149,7 @@ export default function HistoryPage() {
         <p className="hint">「媒体の記事のみ」は、公式ではなくニュースサイトや求人サイトの記事で確認できたという意味です。</p>
       </section>
 
-      <section className="section card prose">
+      <section className="section card prose" id="rules">
         <h2>ルールの変化</h2>
         <ul className="history-list">
           {RULES.map((r) => (
@@ -159,7 +167,7 @@ export default function HistoryPage() {
         </ul>
       </section>
 
-      <section className="section card prose">
+      <section className="section card prose" id="numbers">
         <h2>盛り上がりの数字</h2>
         <div className="table-wrap">
           <table className="feature-table">
@@ -179,7 +187,45 @@ export default function HistoryPage() {
         <p className="hint">数字の集計の範囲は、出典ごとに違うことがあります（例：総投票を倍率の適用前で数えるか、後で数えるか）。年をまたいで単純に比べないでください。</p>
       </section>
 
-      <section className="section card prose">
+      <section className="section card prose" id="strategy">
+        <h2>2026年の戦略：歴史から何が言えるか</h2>
+        <p>ここからは、前半の事実を踏まえた、私たちの見立てです。結果を予測するものではなく、保証もしません。</p>
+
+        <h3>まず、事実（出典つき）</h3>
+        <ul>
+          <li>2025年から、本選に進む条件が「順位の上位約10%」から「50人からの投票」に変わり、2026年も同じです（<a href="https://www.girlsheaven-job.net/girlsbox/miss-heaven-2025/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazine</a>、<a href="https://www.hgjn-help.com/faq/show/13558?site_domain=heavennet_faq" target="_blank" rel="noopener noreferrer nofollow ugc">2026年公式FAQ</a>）。</li>
+          <li>称号も人数で決まります（都道府県代表50人、ブロック代表100人、日本代表200人）。神15は別の基準で、ブロックごとに枠があります（東京3、北海道・東北2、東海2、関西2、ほかの6ブロックは各1の合計15名。2025年の表記）。</li>
+          <li>2026年は、チケットが最大50票、1キャストへは1日10票まで。予選の余りは本選に持ち越せません。ネット予約を実際に利用した人の票は、2倍・3倍になります（<a href="https://www.hgjn-help.com/faq/show/13558?site_domain=heavennet_faq" target="_blank" rel="noopener noreferrer nofollow ugc">2026年公式FAQ</a>）。</li>
+        </ul>
+
+        <h3>私たちの見立て（5つ）</h3>
+        <ol>
+          <li><strong>勝負が「票数」から「人数」に移っています。</strong>2025年のグランプリは約15万票でしたが、2026年は1人が1キャストへ入れられる上限が50票です。2025年は有料会員に最大100票の枠がありましたが、2026年の公式FAQには、その記載がありません。少数の人が大量に入れる戦い方は効きにくくなり、広く応援者を集めた人が強くなると考えられます（<Link href="/feature">前の特集</Link>の「候補A・B」の例と同じ考え方です）。</li>
+          <li><strong>倍率が、差になりやすい点です。</strong>同じ50票でも、ネット予約を利用した人の票は3倍の150票になります。応援者に実際に来てもらう動きがある人は、票数が伸びやすいはずです。電話予約・姫予約は対象外です。</li>
+          <li><strong>神15は、ブロックごとの勝負です。</strong>枠が3つの東京と、1つの九州南・沖縄では、入る難しさが違うはずです。「全国で15位」を目指すより、「自分のブロックの枠に入る」と考えるほうが現実的です。ただし、ボーダーの票数は公開されていないので、これは見立てにとどまります。</li>
+          <li><strong>前年の上位は、強い傾向があります。</strong>朝日奈みうさんは、2023年の準グランプリから、2024年のグランプリになりました。南星聖来さんは、2年連続で準グランプリです（<a href="https://ins-press.com/topic-903" target="_blank" rel="noopener noreferrer nofollow ugc">アインズプレス</a>）。ただし、これは小さな例の数で、法則ではありません。初出場の人が不利、という意味でもありません。</li>
+          <li><strong>本選は7日間で、早く動くほど有利です。</strong>1日10票までなので、50票に届くのは最短で5日目です。最終日にまとめて頼むより、初日からの毎日の声かけが効きます。</li>
+        </ol>
+
+        <h3>立場ごとの戦略</h3>
+        <ul>
+          <li><strong>出場者：</strong>目標は、まず200人から投票されることです（日本代表）。毎日の呼びかけは短く、前日に投票してくれた人に、お礼（投票ありがとうミテネ）を送ります。ネット予約の倍率の条件は、正しく伝えます。</li>
+          <li><strong>お店：</strong>複数の出場者がいるお店は、お店のアカウントで、日替わりで応援先を紹介すると、応援者が分散しにくくなります。</li>
+          <li><strong>応援する人：</strong>持ち票は全キャスト共通です。応援先が複数なら、毎日少しずつ配ります。最終日の駆け込みより、毎日入れるほうが、応援先の進捗に反映されます。</li>
+        </ul>
+
+        <h3>確かめられないこと</h3>
+        <ul>
+          <li>神15のボーダーの票数、ブロックごとの競争の強さ、2026年の有料会員枠の扱い（廃止か、記載がないだけかは、確認できていません）。</li>
+          <li>2026年の神15の枠の配分は、確認できていません。2025年の枠を、2026年にそのまま当てはめてはいません。</li>
+          <li>見立て1〜5は、公開された制度と過去の結果から考えたものです。</li>
+        </ul>
+        <p>
+          本選のスケジュールは、<Link href="/feature">前の特集</Link>に、日ごとの動きをまとめています（本選は11/17〜11/23。終了は運営者の確認による11/23(月) 23:59）。
+        </p>
+      </section>
+
+      <section className="section card prose" id="unknown">
         <h2>わからなかったこと</h2>
         <ul>
           <li>第1回がいつか、各年の回次の一覧は、公式の資料では見つかっていません。</li>
@@ -190,7 +236,7 @@ export default function HistoryPage() {
           <li>2022〜2024年の投票者数などを載せた広告資料は、本文を読めず、確認できていないため載せていません。</li>
         </ul>
         <p>この特集は有志による非公式のまとめで、公式の見解ではありません。情報が見つかり次第、追加します。</p>
-        <p><Link href="/feature">特集：まず200人、そして15万票へ ›</Link>　<Link href="/feature/strategy">特集：2026年に向けて ›</Link></p>
+        <p><Link href="/feature">特集：まず200人、そして15万票へ ›</Link></p>
       </section>
     </>
   );

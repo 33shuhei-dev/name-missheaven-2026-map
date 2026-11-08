@@ -2657,3 +2657,7 @@ input::placeholder { color:#a99aaf; }
 .history-item__level { padding: 1px 8px; border-radius: 999px; background: var(--unverified-bg); color: var(--unverified); font-size: .72rem; font-weight: 700; }
 .history-item__tag { display: inline-block; margin-right: 8px; padding: 1px 8px; border-radius: 999px; background: var(--unverified-bg); color: var(--unverified); font-size: .72rem; font-weight: 800; }
 .history-item__tag--now { background: var(--confirmed-bg); color: var(--confirmed); }
+
+.history-toc { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
+.history-toc a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: .82rem; font-weight: 700; text-decoration: none; background: var(--surface); }
+.history-toc a:hover { border-color: var(--accent); }
