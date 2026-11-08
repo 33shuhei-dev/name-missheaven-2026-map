@@ -2643,3 +2643,5 @@ input::placeholder { color:#a99aaf; }
 @keyframes stage-glow-frame { from { box-shadow: 0 0 16px #ff3be0a0, 0 0 44px #a62bff70, 0 0 90px #a62bff30; } to { box-shadow: 0 0 30px #ff5cf0c0, 0 0 76px #c24bff90, 0 0 130px #c24bff50; } }
 @media (min-width: 900px) { .stage-mv__video { width: 300px; } }
 @media (prefers-reduced-motion: reduce) { .stage-mv__frame { animation: none; } }
+
+.feature-table td.nowrap { white-space: nowrap; }
