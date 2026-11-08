@@ -54,3 +54,9 @@ describe("特集：総選挙の歴史", () => {
     expect(src).toContain("2026年の神15の枠の配分は、確認できていません");
   });
 });
+
+describe("特集の入口", () => {
+  it("200人の特集から、歩みと戦略の特集へリンクしている", () => {
+    expect(readFileSync("app/feature/page.tsx", "utf8")).toContain("/feature/history");
+  });
+});
