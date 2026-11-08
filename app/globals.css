@@ -2661,3 +2661,11 @@ input::placeholder { color:#a99aaf; }
 .history-toc { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0 14px; }
 .history-toc a { padding: 6px 12px; border: 1px solid var(--border); border-radius: 999px; font-size: .82rem; font-weight: 700; text-decoration: none; background: var(--surface); }
 .history-toc a:hover { border-color: var(--accent); }
+
+/* 特集の切り替え（特集1・特集2） */
+.feature-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 4px 0 14px; }
+.feature-tab { display: grid; gap: 2px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); text-decoration: none; min-width: 0; }
+.feature-tab__no { font-size: .72rem; font-weight: 900; color: var(--accent); letter-spacing: .08em; }
+.feature-tab__title { font-size: .85rem; font-weight: 800; color: var(--text); line-height: 1.35; }
+.feature-tab--active { border-color: var(--accent); background: var(--accent-weak); box-shadow: 0 0 0 1px var(--accent) inset; }
+.feature-banner + .feature-banner { margin-top: 0; }

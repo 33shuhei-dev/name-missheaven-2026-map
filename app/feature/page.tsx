@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { FeatureTabs } from "@/components/FeatureTabs";
 
-export const metadata: Metadata = { title: "特集：まず200人、そして15万票へ" };
+export const metadata: Metadata = { title: "特集1：まず200人、そして15万票へ" };
 
 type Row = readonly string[];
 
@@ -43,11 +44,9 @@ export default function FeaturePage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集" }]} />
-      <h1>特集：まず200人、そして15万票へ</h1>
+      <FeatureTabs current={1} />
+      <h1>特集1：まず200人、そして15万票へ</h1>
       <p className="hint">2026年の神15を、数字で考える。公開されている制度の情報をもとにした計算で、予測ではありません。</p>
-      <p className="hint hint--tight">
-        ほかの特集：<Link href="/feature/history">総選挙の歩みと、2026年の戦略 ›</Link>
-      </p>
       <Image
         className="feature-cover"
         src="/feature-cover.jpg"

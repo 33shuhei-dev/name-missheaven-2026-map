@@ -55,8 +55,15 @@ describe("特集：総選挙の歴史", () => {
   });
 });
 
-describe("特集の入口", () => {
-  it("200人の特集から、歩みと戦略の特集へリンクしている", () => {
-    expect(readFileSync("app/feature/page.tsx", "utf8")).toContain("/feature/history");
+describe("特集の入口（特集1・特集2）", () => {
+  it("どちらの特集ページにも、特集1・特集2の切り替えがある", () => {
+    expect(readFileSync("app/feature/page.tsx", "utf8")).toContain("<FeatureTabs current={1} />");
+    expect(readFileSync("app/feature/history/page.tsx", "utf8")).toContain("<FeatureTabs current={2} />");
+    const tabs = readFileSync("components/FeatureTabs.tsx", "utf8");
+    expect(tabs).toContain('href: "/feature"');
+    expect(tabs).toContain('href: "/feature/history"');
+  });
+  it("トップに、特集1・特集2の入口がある", () => {
+    expect(readFileSync("app/page.tsx", "utf8")).toContain("FEATURES.map");
   });
 });

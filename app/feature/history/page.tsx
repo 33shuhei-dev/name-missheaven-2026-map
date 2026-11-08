@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { FeatureTabs } from "@/components/FeatureTabs";
 
-export const metadata: Metadata = { title: "特集：総選挙の歩みと、2026年の戦略" };
+export const metadata: Metadata = { title: "特集2：総選挙の歩みと、2026年の戦略" };
 
 type Row = { year: string; what: string; src: string; href: string; level: string };
 
@@ -64,7 +65,8 @@ export default function HistoryPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "特集", href: "/feature" }, { label: "歩みと2026年の戦略" }]} />
-      <h1>特集：総選挙の歩みと、2026年の戦略</h1>
+      <FeatureTabs current={2} />
+      <h1>特集2：総選挙の歩みと、2026年の戦略</h1>
       <p className="hint">
         前半は、ルールの変化と盛り上がりの移り変わりを、公開されている情報から振り返ります。後半は、その歴史を踏まえて、2026年の本選をどう戦うかを考えます。事実は出典を開いて確認できたことだけを載せ、私たちの見立ては、そう分かるように分けて書いています。
       </p>
@@ -200,7 +202,7 @@ export default function HistoryPage() {
 
         <h3>私たちの見立て（5つ）</h3>
         <ol>
-          <li><strong>勝負が「票数」から「人数」に移っています。</strong>2025年のグランプリは約15万票でしたが、2026年は1人が1キャストへ入れられる上限が50票です。2025年は有料会員に最大100票の枠がありましたが、2026年の公式FAQには、その記載がありません。少数の人が大量に入れる戦い方は効きにくくなり、広く応援者を集めた人が強くなると考えられます（<Link href="/feature">前の特集</Link>の「候補A・B」の例と同じ考え方です）。</li>
+          <li><strong>勝負が「票数」から「人数」に移っています。</strong>2025年のグランプリは約15万票でしたが、2026年は1人が1キャストへ入れられる上限が50票です。2025年は有料会員に最大100票の枠がありましたが、2026年の公式FAQには、その記載がありません。少数の人が大量に入れる戦い方は効きにくくなり、広く応援者を集めた人が強くなると考えられます（<Link href="/feature">特集1</Link>の「候補A・B」の例と同じ考え方です）。</li>
           <li><strong>倍率が、差になりやすい点です。</strong>同じ50票でも、ネット予約を利用した人の票は3倍の150票になります。応援者に実際に来てもらう動きがある人は、票数が伸びやすいはずです。電話予約・姫予約は対象外です。</li>
           <li><strong>神15は、ブロックごとの勝負です。</strong>枠が3つの東京と、1つの九州南・沖縄では、入る難しさが違うはずです。「全国で15位」を目指すより、「自分のブロックの枠に入る」と考えるほうが現実的です。ただし、ボーダーの票数は公開されていないので、これは見立てにとどまります。</li>
           <li><strong>前年の上位は、強い傾向があります。</strong>朝日奈みうさんは、2023年の準グランプリから、2024年のグランプリになりました。南星聖来さんは、2年連続で準グランプリです（<a href="https://ins-press.com/topic-903" target="_blank" rel="noopener noreferrer nofollow ugc">アインズプレス</a>）。ただし、これは小さな例の数で、法則ではありません。初出場の人が不利、という意味でもありません。</li>
@@ -221,7 +223,7 @@ export default function HistoryPage() {
           <li>見立て1〜5は、公開された制度と過去の結果から考えたものです。</li>
         </ul>
         <p>
-          本選のスケジュールは、<Link href="/feature">前の特集</Link>に、日ごとの動きをまとめています（本選は11/17〜11/23。終了は運営者の確認による11/23(月) 23:59）。
+          本選のスケジュールは、<Link href="/feature">特集1</Link>に、日ごとの動きをまとめています（本選は11/17〜11/23。終了は運営者の確認による11/23(月) 23:59）。
         </p>
       </section>
 
@@ -236,7 +238,7 @@ export default function HistoryPage() {
           <li>2022〜2024年の投票者数などを載せた広告資料は、本文を読めず、確認できていないため載せていません。</li>
         </ul>
         <p>この特集は有志による非公式のまとめで、公式の見解ではありません。情報が見つかり次第、追加します。</p>
-        <p><Link href="/feature">特集：まず200人、そして15万票へ ›</Link></p>
+        <p><Link href="/feature">特集1：まず200人、そして15万票へ ›</Link></p>
       </section>
     </>
   );
