@@ -14,7 +14,10 @@ const TIMELINE: Row[] = [
   { year: "2023", what: "グランプリはまりてんさん", src: "姫デコ magazine", href: "https://www.girlsheaven-job.net/girlsbox/mariten00/", level: "媒体の記事のみ" },
   { year: "2024", what: "グランプリは朝日奈みうさん、準グランプリは聖来さん、3位はえみりさん。総投票は695万票で史上最多と記載（朝日奈みうさんは前年の準グランプリからのリベンジ）", src: "姫デコ magazine（2025/12/17更新）", href: "https://www.girlsheaven-job.net/girlsbox/miss-heaven-2024-grandprix/", level: "媒体の記事のみ" },
   { year: "2024", what: "ブロック本選の結果発表は12月3日（火）12時。グランプリの発表配信は12月21日（土）21時から（YouTube）", src: "ヘブンネット公式FAQ（2024/12/3）", href: "https://www.hgjn-help.com/info_and_news/show/320?site_domain=heavennet_faq", level: "公式" },
+  { year: "2024", what: "予選は10/29（火）12:00〜11/4（月・祝）23:59。同一キャストへの投票は1日5回まで（0時にリセット）", src: "ヘブンネット公式FAQ（2024/10/29）", href: "https://www.hgjn-help.com/info_and_news/show/302?site_domain=heavennet_faq", level: "公式" },
   { year: "2025", what: "グランプリは白星ホタルさん（関西ブロック）、準グランプリはセラさん、3位は小林ルルさん。投票した会員は約51万人、エントリーは約1万人、グランプリは約15万票（史上最多）", src: "インスプレス／姫デコ magazine", href: "https://ins-press.com/topic-903", level: "媒体の記事のみ" },
+  { year: "2025", what: "ブロック本選の結果は12月3日（水）12時に発表。グランプリの発表は12月20日（土）21時から、ヘブンTVで動画配信", src: "ヘブンネット公式FAQ（2025/12/3）", href: "https://www.hgjn-help.com/info_and_news/show/468?site_domain=recruit_faq", level: "公式" },
+  { year: "2026", what: "8月3日に、2026年大会のティザーサイトが公開された", src: "ヘブンネット公式FAQ（2026/8/3）", href: "https://www.hgjn-help.com/info_and_news/show/561?site_domain=recruit_faq", level: "公式" },
   { year: "2026", what: "地方予選10/28〜11/3、ブロック本選11/17〜11/23。チケットは最大50票（事前ミッション40＋期間中10）", src: "ヘブンnavi／公式FAQ", href: "https://link-f.biz/archives/25134", level: "公式・媒体" },
 ];
 
@@ -39,6 +42,13 @@ const RULES: { item: string; before: string; after: string; src: string; href: s
     after: "2026年：全員、1日10票まで・最大50票（有料会員の枠は記載なし）",
     src: "姫デコ magazine／2026年公式FAQ",
     href: "https://www.hgjn-help.com/faq/show/13558?site_domain=heavennet_faq",
+  },
+  {
+    item: "1日の投票の上限",
+    before: "2024年：同一キャストへは1日5回まで（公式FAQの表記。「回」で数えている）",
+    after: "2025年は一般会員1日10票まで、2026年も1日10票まで（「票」で数えている）。回と票では単位が違うため、「2倍になった」とは言い切れません",
+    src: "ヘブンネット公式FAQ（2024年）／姫デコ magazine／2026年公式FAQ",
+    href: "https://www.hgjn-help.com/info_and_news/show/302?site_domain=heavennet_faq",
   },
   {
     item: "チケットと倍率",
@@ -129,7 +139,9 @@ export default function HistoryPage() {
         <h2>わからなかったこと</h2>
         <ul>
           <li>第1回がいつか、各年の回次の一覧は、公式の資料では見つかっていません。</li>
-          <li>2015〜2020年のグランプリや、2021〜2022年の準グランプリ・3位、2023年の3位は、確認できていません。</li>
+          <li>2015〜2020年のグランプリや、2021〜2022年の準グランプリ・3位、2023年の3位は、確認できていません。（過去の結果を公式Xが発表した投稿の情報もありますが、投稿を直接開けなかったため、載せていません。）</li>
+          <li>2024年の総投票数は、記事では695万票ですが、別の資料には1,600万票という数字もあります。集計の範囲が違うのか、確認できていないため、どちらか一方に決めていません。</li>
+          <li>2026年の本選の終了日は、公式FAQの中に11/23と11/24の両方の記載があります。この特集では、運営者の確認による11/23(月) 23:59を使っています。</li>
           <li>2023年以前のチケットの枚数や、ネット予約の倍率がいつ始まったかは、確認できていません。</li>
           <li>2022〜2024年の投票者数などを載せた広告資料は、本文を読めず、確認できていないため載せていません。</li>
         </ul>
