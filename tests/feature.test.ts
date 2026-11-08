@@ -46,5 +46,8 @@ describe("特集：総選挙の歴史", () => {
     expect(src).toContain("確認できていない");
     expect(src).toContain("媒体の記事のみ");
     expect(src).toContain("運営者の確認による11/23(月) 23:59");
+    expect(src).toContain("近年の大会では、投票参加者数や得票数の記録更新が報じられています");
+    expect(src).not.toContain("規模は年々大きくなっています");
+    expect(src).toContain("歩み：歴代グランプリと、応援のかたちの変化");
   });
 });

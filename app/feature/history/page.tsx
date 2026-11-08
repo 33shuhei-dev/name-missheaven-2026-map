@@ -11,7 +11,8 @@ const TIMELINE: Row[] = [
   { year: "2015", what: "「2015年からスタートしたイベント」と説明されている", src: "ABEMA TIMES（2025/9/12）", href: "https://times.abema.tv/articles/-/10198348", level: "媒体の記事のみ" },
   { year: "2021", what: "全国総合ランキングの1位は天野リリスさん（記事は「1万1877人の頂点に」と表記）", src: "ABEMA TIMES（2025/9/12）", href: "https://times.abema.tv/articles/-/10198348", level: "媒体の記事のみ" },
   { year: "2022", what: "グランプリ（全国1位）は西本ちかさん", src: "姫デコ magazine", href: "https://www.girlsheaven-job.net/girlsbox/nisihimoto-chika/", level: "媒体の記事のみ" },
-  { year: "2023", what: "グランプリはまりてんさん", src: "姫デコ magazine", href: "https://www.girlsheaven-job.net/girlsbox/mariten00/", level: "媒体の記事のみ" },
+  { year: "2022", what: "全国TOP10の発表（グランプリを含む）。グランプリ発表は12月5日（月）19時からYouTube「代官山メロン」でライブ配信され、アーカイブは12月8日から配信", src: "ヘブンネット公式FAQ（2022/11/28・12/6）", href: "https://www.hgjn-help.com/info_and_news/show/131?site_domain=heavennet_faq", level: "公式" },
+  { year: "2023", what: "グランプリはまりてんさん、準グランプリは朝日奈みうさん。結果は12月17日に発表され、神15も登壇。まりてんさん本人は、講談社の記事で「6万票をいただいた」と語っている（本人の説明）", src: "集英社オンライン／姫デコ magazine／講談社（現代ビジネス）", href: "https://shueisha.online/articles/-/188951", level: "媒体の記事のみ" },
   { year: "2024", what: "グランプリは朝日奈みうさん、準グランプリは聖来さん、3位はえみりさん。総投票は695万票で史上最多と記載（朝日奈みうさんは前年の準グランプリからのリベンジ）", src: "姫デコ magazine（2025/12/17更新）", href: "https://www.girlsheaven-job.net/girlsbox/miss-heaven-2024-grandprix/", level: "媒体の記事のみ" },
   { year: "2024", what: "ブロック本選の結果発表は12月3日（火）12時。グランプリの発表配信は12月21日（土）21時から（YouTube）", src: "ヘブンネット公式FAQ（2024/12/3）", href: "https://www.hgjn-help.com/info_and_news/show/320?site_domain=heavennet_faq", level: "公式" },
   { year: "2024", what: "予選は10/29（火）12:00〜11/4（月・祝）23:59。同一キャストへの投票は1日5回まで（0時にリセット）", src: "ヘブンネット公式FAQ（2024/10/29）", href: "https://www.hgjn-help.com/info_and_news/show/302?site_domain=heavennet_faq", level: "公式" },
@@ -73,9 +74,52 @@ export default function HistoryPage() {
         <ul>
           <li>総選挙は、媒体の記事で「2015年からスタート」と説明されています。</li>
           <li>グランプリは、2022年が西本ちかさん、2023年がまりてんさん、2024年が朝日奈みうさん、2025年が白星ホタルさんです。</li>
-          <li>規模は年々大きくなっています。2024年は総投票695万票で史上最多、2025年は投票した会員が約51万人、グランプリが約15万票で、どちらも「史上最多」と書かれています。</li>
+          <li>近年の大会では、投票参加者数や得票数の記録更新が報じられています（2024年は総投票695万票、2025年は投票人数51万人・グランプリ約15万票。いずれも媒体の記事の表記です）。</li>
           <li>ルールは、2025年に本選へ進む条件が「順位の上位約10%」から「50人からの投票」に変わりました。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="story">
+        <h2>歩み：歴代グランプリと、応援のかたちの変化</h2>
+        <p>
+          総選挙を振り返ると、歴代グランプリの顔ぶれとともに、投票の仕組みにも変化が見えてきます。ここでは、出典を開いて確認できたことだけで、近年の歩みをたどります。
+        </p>
+
+        <h3>2015年に始まったと報じられる総選挙</h3>
+        <p>
+          大会の始まりについて、<a href="https://times.abema.tv/articles/-/10013935" target="_blank" rel="noopener noreferrer nofollow ugc">ABEMA TIMES</a>は「2015年からスタートしたイベント」と説明しています。ただし、第1回当時の公式の告知や、各年の正式な回次の一覧は、今回の調査では確認できていません。
+        </p>
+        <p>
+          2021年は、同記事によると、全国総合ランキングの頂点に天野リリスさんが立ちました。記事はその順位を「1万1877人の頂点」と表現していて、少なくともこの年には、1万人を超えるキャストが名を連ねる大会だったことが分かります。
+        </p>
+
+        <h3>西本ちか、まりてん、そして朝日奈みうへ</h3>
+        <p>
+          2022年のグランプリは西本ちかさん（<a href="https://www.girlsheaven-job.net/girlsbox/nisihimoto-chika/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazine</a>）。この年のグランプリ発表は、12月5日19時からYouTubeでライブ配信され、グランプリを含む全国TOP10が特設サイトで公開されたと、<a href="https://www.hgjn-help.com/info_and_news/show/131?site_domain=heavennet_faq" target="_blank" rel="noopener noreferrer nofollow ugc">公式FAQ</a>が案内しています。
+        </p>
+        <p>
+          2023年は、12月17日に結果が発表され、まりてんさんが全国No.1に選ばれました（<a href="https://shueisha.online/articles/-/188951" target="_blank" rel="noopener noreferrer nofollow ugc">集英社オンライン</a>）。準グランプリは朝日奈みうさんです（<a href="https://www.girlsheaven-job.net/girlsbox/missheaven2023-grand-prix/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazine</a>）。まりてんさん本人は、講談社の記事で、6万票をいただいて頂点に立てたと語っています（本人の説明で、運営の集計表ではありません）。
+        </p>
+        <p>
+          2024年は、前年に準グランプリだった朝日奈みうさんが優勝しました。同年の準グランプリは聖来さん、3位はえみりさんです（<a href="https://www.girlsheaven-job.net/girlsbox/miss-heaven-2024-grandprix/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazine</a>）。年ごとに名前を並べるだけでは見えにくいのですが、前年の成績を添えると、翌年の結果とのつながりが見えてきます。
+        </p>
+
+        <h3>2025年の転換点：本選へ進む基準が変わった</h3>
+        <p>
+          制度の面で大きな変化が確認できるのは2025年です。<a href="https://www.girlsheaven-job.net/girlsbox/miss-heaven-2025/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazineの解説</a>によると、地方予選から本選に進む条件は、従来の「都道府県の総合順位で上位約10%」から、「50人のユーザーから投票を受けること」に変わりました。順位の競争から、必要な支持人数を達成する条件への変更と読めます。記事は、より多くのキャストが、地域の代表として見てもらえることを目的として説明しています。
+        </p>
+        <p>
+          本選では、100人の投票でブロック代表、200人で日本代表という称号もできました。数えているのは「投票した人数」で、同じ人の複数の投票を含む「票数」とは別です。姫デコで、投票人数の進捗を確認できるようになったことも、同じ解説に書かれています。
+        </p>
+        <p>
+          この年のグランプリは白星ホタルさんで、史上最多の約15万票。3位は小林ルルさんで、投票人数は51万人、エントリーは1万人と記載されています（<a href="https://www.girlsheaven-job.net/girlsbox/miss-heaven-grandprix/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazine</a>）。同じ解説には、2024年の投票人数が41.5万人だったことも書かれています。
+        </p>
+
+        <h3>数字で歴史を読むときに</h3>
+        <p>
+          大会の規模を知るために、数字は欠かせません。ただし、参加キャストの数、投票した人の数、総投票数、優勝者の得票数は、それぞれ別のものを数えています。2024年の総投票数は、記事では695万票ですが、別の資料には1,600万票という数字もあり、集計の範囲が違うのか、確認できていません。そのため、年をまたぐ前年比の計算や、どちらか一方を確定値とする扱いは控えています。
+        </p>
+        <p className="hint">調査日：2026年11月8日。確認できていない項目は、下の「わからなかったこと」にまとめています。</p>
       </section>
 
       <section className="section card prose">
@@ -126,7 +170,7 @@ export default function HistoryPage() {
               </tr>
             </thead>
             <tbody>
-              <tr><td className="nowrap">2024</td><td>総投票 695万票（史上最多と記載）</td></tr>
+              <tr><td className="nowrap">2024</td><td>総投票 695万票（史上最多と記載）／投票人数 41.5万人（2025年の解説記事の記載）</td></tr>
               <tr><td className="nowrap">2025</td><td>投票した会員 約51万人／エントリー 約1万人／グランプリ 約15万票（いずれも史上最多と記載）</td></tr>
               <tr><td className="nowrap">2026</td><td>参加キャスト 約1万人（地方予選の案内より）</td></tr>
             </tbody>
