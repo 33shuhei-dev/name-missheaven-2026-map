@@ -3,7 +3,28 @@ import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
 
-export const metadata: Metadata = { title: "特集1：まず200人、そして15万票へ" };
+const FEATURE_TITLE = "特集1：まず200人、そして15万票へ";
+const FEATURE_DESCRIPTION = "2026年の神15を、数字で考える。公開されている制度の情報をもとにした計算で、予測ではありません。";
+
+export const metadata: Metadata = {
+  title: FEATURE_TITLE,
+  description: FEATURE_DESCRIPTION,
+  // ページ側で openGraph を書くとルートの設定は丸ごと置き換わるため、必要な項目をここでも指定する
+  openGraph: {
+    type: "article",
+    locale: "ja_JP",
+    title: FEATURE_TITLE,
+    description: FEATURE_DESCRIPTION,
+    url: "/feature",
+    images: [{ url: "/og-feature.jpg", width: 1200, height: 630, alt: "まず200人。そして15万票へ。2026年の神15を数学で考える" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: FEATURE_TITLE,
+    description: FEATURE_DESCRIPTION,
+    images: ["/og-feature.jpg"],
+  },
+};
 
 type Row = readonly string[];
 

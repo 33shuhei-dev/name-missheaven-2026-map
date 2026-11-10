@@ -2669,3 +2669,7 @@ input::placeholder { color:#a99aaf; }
 .feature-tab__title { font-size: .85rem; font-weight: 800; color: var(--text); line-height: 1.35; }
 .feature-tab--active { border-color: var(--accent); background: var(--accent-weak); box-shadow: 0 0 0 1px var(--accent) inset; }
 .feature-banner + .feature-banner { margin-top: 0; }
+
+/* 特集：見出しの折り返しを整える（「15万 / 票へ」のように途中で切れるのを防ぐ） */
+.feature-tab__title, h1 { text-wrap: balance; }
+.feature-flow__box strong { white-space: nowrap; }
