@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { YuzuSupportFooterLine } from "@/components/YuzuSupportLink";
 
 export function SiteFooter() {
   return (
@@ -15,6 +16,7 @@ export function SiteFooter() {
           {" ／ "}
           <Link href="/feature">特集：200人と15万票</Link>
         </p>
+        <YuzuSupportFooterLine />
         <p className="site-footer__credit">地図：国土地理院「地球地図日本」をもとに jpn-atlas（BSD-3-Clause）を加工して作成</p>
       </div>
     </footer>

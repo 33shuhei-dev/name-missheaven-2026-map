@@ -2673,3 +2673,7 @@ input::placeholder { color:#a99aaf; }
 /* 特集：見出しの折り返しを整える（「15万 / 票へ」のように途中で切れるのを防ぐ） */
 .feature-tab__title, h1 { text-wrap: balance; }
 .feature-flow__box strong { white-space: nowrap; }
+
+/* 運営者の応援ツールへのリンク：ラベルが長くてもスマホ幅で折り返す（横スクロールを出さない） */
+.yuzu-support .ext-link { flex-wrap: wrap; padding: 8px 12px; }
+.yuzu-support .ext-link__label { flex: 1 1 12em; min-width: 0; overflow-wrap: anywhere; }

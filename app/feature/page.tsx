@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
+import { YuzuSupportNote } from "@/components/YuzuSupportLink";
 
 const FEATURE_TITLE = "特集1：まず200人、そして15万票へ";
 const FEATURE_DESCRIPTION = "2026年の神15を、数字で考える。公開されている制度の情報をもとにした計算で、予測ではありません。";
@@ -254,6 +255,8 @@ export default function FeaturePage() {
         </ul>
         <p>数字は、目標を立てるための地図です。まずは200人。そこから先は、毎日の数字が教えてくれます。</p>
       </section>
+
+      <YuzuSupportNote />
 
       <section className="section card prose">
         <h2>出典・確認できていない点</h2>
