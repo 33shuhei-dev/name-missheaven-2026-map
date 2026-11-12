@@ -69,3 +69,19 @@ describe("特集の入口（特集1・特集2）", () => {
     expect(readFileSync("app/page.tsx", "utf8")).toContain("FEATURES.map");
   });
 });
+
+describe("特集3：予選の結果", () => {
+  it("都道府県の数字が、投稿の全国合計（7634人／9908人）と一致する", async () => {
+    const { YOSEN, YOSEN_TOTAL } = await import("@/lib/yosen");
+    expect(YOSEN.reduce((s, r) => s + r[1], 0)).toBe(YOSEN_TOTAL.advanced);
+    expect(YOSEN.reduce((s, r) => s + r[2], 0)).toBe(YOSEN_TOTAL.nominees);
+    expect(YOSEN.every((r) => r[1] <= r[2])).toBe(true);
+  });
+  it("公式の発表ではなく有志の集計であること、出典、見立ての断りを書いている", () => {
+    const src = readFileSync("app/feature/yosen/page.tsx", "utf8");
+    expect(src).toContain("公式の発表ではなく、有志の集計");
+    expect(src).toContain("@hiropyon_0405");
+    expect(src).toContain("私たちの見立て");
+    expect(src).toContain("青森・山形は、元の投稿の表に載っていない");
+  });
+});
