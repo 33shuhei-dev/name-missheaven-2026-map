@@ -465,3 +465,17 @@ describe("Xの公開投稿の調査（2026-11-12）：29人を未確認で追加
     expect(site.entrants.filter((e) => e.storeId === osaka.id && e.divisions.some((d) => d.categoryOriginal === "大阪府アイドル部門")).length).toBeGreaterThanOrEqual(15);
   });
 });
+
+describe("プロフィールのリンクの調査（2026-11-12）：24人を未確認で追加", () => {
+  it("人と店が載り、すべて unverified", () => {
+    const pairs: [string, string][] = [["GALAXY PLUS", "きらら"], ["エンジェルマスカット", "まひろ"], ["俺の妻", "せつな"], ["川崎ソープ SAPPHIRE サファイア", "ギンガ"], ["F＆J", "れんか"], ["BLUE LOVERS", "ちはる"], ["Crest", "菜月"], ["アムール", "カナデ"]];
+    for (const [store, name] of pairs) {
+      const st = site.stores.find((s) => s.name.startsWith(store));
+      expect(st, store).toBeTruthy();
+      const e = site.entrants.find((x) => x.storeId === st!.id && x.name === name);
+      expect(e, `${store}/${name}`).toBeTruthy();
+      expect(e!.confidence).toBe("unverified");
+    }
+    expect(site.stores.find((s) => s.name === "BLUE LOVERS")!.prefectureName).toBe("岐阜県");
+  });
+});
