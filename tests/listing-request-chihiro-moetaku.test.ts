@@ -445,3 +445,37 @@ describe("掲載依頼: モンテクラブ（兵庫県）の女の子一覧", ()
     expect(by("黒木みれい").confidence).toBe("unverified");
   });
 });
+
+describe("Xの公開投稿の調査（2026-11-12）：29人を未確認で追加", () => {
+  it("既存の店と新しい店に載り、すべて unverified。重複しない", () => {
+    const pairs: [string, string][] = [
+      ["プロフィール大阪", "れん"], ["プロフィール大阪", "初花"], ["プロフィール大阪", "きさき"],
+      ["Quality Plus横浜", "まいか"], ["Quality Plus横浜", "ましろ"], ["Masquerade", "めろ"], ["Babel CLASS", "いと"],
+      ["クラブピア熊本", "すぎもっと"], ["さくらんぼ女学院", "らむ"], ["大阪フェチクラブ", "るい"], ["桜色学園", "るあ"], ["サキュバススタイル", "Succubus"],
+    ];
+    for (const [store, name] of pairs) {
+      const st = site.stores.find((s) => s.name === store);
+      expect(st, store).toBeTruthy();
+      const list = site.entrants.filter((e) => e.storeId === st!.id && e.name === name);
+      expect(list, `${store}/${name}`).toHaveLength(1);
+      expect(list[0].confidence).toBe("unverified");
+    }
+    expect(site.stores.find((s) => s.name === "さくらんぼ女学院")!.prefectureName).toBe("岡山県");
+    const osaka = site.stores.find((s) => s.name === "プロフィール大阪")!;
+    expect(site.entrants.filter((e) => e.storeId === osaka.id && e.divisions.some((d) => d.categoryOriginal === "大阪府アイドル部門")).length).toBeGreaterThanOrEqual(15);
+  });
+});
+
+describe("プロフィールのリンクの調査（2026-11-12）：24人を未確認で追加", () => {
+  it("人と店が載り、すべて unverified", () => {
+    const pairs: [string, string][] = [["GALAXY PLUS", "きらら"], ["エンジェルマスカット", "まひろ"], ["俺の妻", "せつな"], ["川崎ソープ SAPPHIRE サファイア", "ギンガ"], ["F＆J", "れんか"], ["BLUE LOVERS", "ちはる"], ["Crest", "菜月"], ["アムール", "カナデ"]];
+    for (const [store, name] of pairs) {
+      const st = site.stores.find((s) => s.name.startsWith(store));
+      expect(st, store).toBeTruthy();
+      const e = site.entrants.find((x) => x.storeId === st!.id && x.name === name);
+      expect(e, `${store}/${name}`).toBeTruthy();
+      expect(e!.confidence).toBe("unverified");
+    }
+    expect(site.stores.find((s) => s.name === "BLUE LOVERS")!.prefectureName).toBe("岐阜県");
+  });
+});
