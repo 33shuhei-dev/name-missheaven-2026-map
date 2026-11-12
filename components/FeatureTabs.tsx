@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /** 特集の切り替え（特集1・特集2）。どの特集ページにも置いて、以前の特集が埋もれないようにする */
 export const FEATURES = [
-  { no: 1, href: "/feature", title: "まず200人、そして15万票へ", lead: "2026年の神15を、数字で考える" },
+  { no: 1, href: "/feature", title: "票は分散する。7,634人の本選を、どう戦うか", lead: "200人の人数戦と、神15の票数戦" },
   { no: 2, href: "/feature/history", title: "総選挙の歩みと、2026年の戦略", lead: "歴代の結果とルールの変化から、本選の戦い方を考える" },
   { no: 3, href: "/feature/yosen", title: "予選を突破したのは何人？", lead: "都道府県別の本選進出率を読み解く" },
 ] as const;

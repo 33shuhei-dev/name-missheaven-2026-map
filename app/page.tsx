@@ -172,7 +172,7 @@ export default function HomePage() {
         {stats.lastCheckedAt && ` 最終確認日：${stats.lastCheckedAt}。`}
         <Link href="/about">このサイトについて・データの内訳</Link>
         {" ／ "}
-        <Link href="/feature">特集：まず200人、そして15万票へ</Link>
+        <Link href="/feature">特集：票は分散する。7,634人の本選を、どう戦うか</Link>
       </p>
     </div>
   );
