@@ -187,6 +187,12 @@ export default function YosenPage() {
           <Link href="/feature">特集1 ›</Link>　<Link href="/feature/history">特集2 ›</Link>
         </p>
       </section>
+
+      <section className="section card prose feature-next">
+        <h2>次に読む：特集1</h2>
+        <p>本選に進んだのは7,634人。持ち票は最大50枚なので、応援したい人が増えるほど、1人への票は薄まります。去年の1位15万票は、そのままは比べられません。</p>
+        <p><Link href="/feature"><strong>特集1：票は分散する。7,634人の本選を、どう戦うか ›</strong></Link></p>
+      </section>
     </>
   );
 }

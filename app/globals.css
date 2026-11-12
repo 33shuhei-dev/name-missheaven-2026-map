@@ -2707,3 +2707,7 @@ input::placeholder { color:#a99aaf; }
 .feature-appendix-title {
   margin: 28px 0 8px;
 }
+
+.feature-next {
+  border-left: 4px solid var(--accent);
+}
