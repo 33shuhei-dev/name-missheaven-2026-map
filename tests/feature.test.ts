@@ -51,9 +51,11 @@ describe("特集：総選挙の歴史", () => {
     expect(src).toContain("歩み：歴代グランプリと、応援のかたちの変化");
     expect(src).toContain("2026年の戦略：歴史から何が言えるか");
     expect(src).toContain("結果を予測するものではなく、保証もしません");
-    expect(src).toContain("2026年の神15の枠の配分は、確認できていません");
-    expect(src).toContain("寄せられた情報（予測・公式未確認）");
-    expect(src).toContain("公式の発表ではなく、確認できていません");
+    expect(src).toContain("2026年の神15の枠の配分は、公式には確認できていません");
+    expect(src).toContain("公式の発表とは言い切れません");
+    expect(src).toContain("https://link-f.biz/archives/25125");
+    expect(src).not.toContain("北関東3 ※");
+    expect(src).toContain("12月19日（土）21:00");
   });
 });
 
