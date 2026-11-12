@@ -51,6 +51,15 @@ export default function FeaturePage() {
       <p className="hint">予選の結果（本選進出7,634人）を受けて書き直した特集です。制度の情報と数字をもとにした考察で、結果の予測ではありません。</p>
 
       <section className="section card prose">
+        <h2>30秒で読む</h2>
+        <ol>
+          <li><strong>本選は7,634人。</strong>持ち票は最大50枚なので、推しが増えるほど1人への票は薄まります。</li>
+          <li><strong>去年の1位15万票は、そのままは比べられません。</strong>ルール・顔ぶれ・参加者数が変わっているためです（今年の目安は、200人と、自分のブロックの順位）。</li>
+          <li><strong>作戦は、①第一希望になってもらう　②倍率を正しく伝える　③200人を先に取る。</strong>数式での整理は、この下にあります。</li>
+        </ol>
+      </section>
+
+      <section className="section card prose">
         <h2>先に結論</h2>
         <ul>
           <li>1人の投票者が持つ票は、最大50枚。予選で残った票は本選に持ち越せず、本選初日に同じ枚数が付与し直されます。</li>
