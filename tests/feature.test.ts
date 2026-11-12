@@ -109,3 +109,23 @@ describe("特集3：本文の数字が計算と一致する", () => {
     expect(src).toContain(`${t[1].name}（${t[1].rate.toFixed(1)}%）`);
   });
 });
+
+describe("特集3：なぜ多いのか・激戦の戦い方", () => {
+  it("事実・試算・見立てを分け、旧ルールとの比較は目安と断っている", () => {
+    const src = readFileSync("app/feature/yosen/page.tsx", "utf8");
+    expect(src).toContain("なぜ7,634人も本選に進めたのか");
+    expect(src).toContain("試算：旧ルールなら、何人だったか");
+    expect(src).toContain("あくまで目安です");
+    expect(src).toContain("運営の意図は、どう説明されているか");
+    expect(src).toContain("運営自身の言葉ではありません");
+    expect(src).toContain("さらなる激戦をどう戦うか");
+    expect(src).toContain("結果を保証するものではありません");
+  });
+  it("試算の数字が正しい（9,908人の10%≈991人、7,634÷991≈7.7倍）", async () => {
+    const { YOSEN_TOTAL } = await import("@/lib/yosen");
+    const old = Math.round(YOSEN_TOTAL.nominees * 0.1);
+    expect(old).toBe(991);
+    expect((YOSEN_TOTAL.advanced / old).toFixed(1)).toBe("7.7");
+    expect(Math.round(YOSEN_TOTAL.advanced / 15)).toBe(509);
+  });
+});

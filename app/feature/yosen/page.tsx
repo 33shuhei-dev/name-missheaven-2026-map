@@ -30,6 +30,9 @@ export default function YosenPage() {
   const top5Share = (top5.reduce((s, r) => s + r[2], 0) / YOSEN_TOTAL.nominees) * 100;
   const rate = pct(YOSEN_TOTAL.advanced, YOSEN_TOTAL.nominees);
   const blocks = blockTotals();
+  const oldRule = Math.round(YOSEN_TOTAL.nominees * 0.1);
+  const ratio = (YOSEN_TOTAL.advanced / oldRule).toFixed(1);
+  const perSlot = Math.round(YOSEN_TOTAL.advanced / 15);
 
   return (
     <>
@@ -48,6 +51,7 @@ export default function YosenPage() {
           </li>
           <li>進出率が高かったのは、三重（96.8%）、岩手（96.0%）、香川（94.2%）、山梨（90.4%）、滋賀（88.7%）。ノミネートが30人以上の県での比較です。</li>
           <li>低かったのは、沖縄（47.5%）、栃木（59.1%）、石川（62.2%）、富山（68.7%）、千葉（69.8%）です。</li>
+          <li>本選に進んだ人数は、旧ルール（順位の上位約10%）の目安の約{ratio}倍です。2025年から、条件が「50人の投票」に変わったためです（試算で、目安）。</li>
           <li>ノミネートは東京・愛知・大阪・福岡・神奈川の5都府県に集中し、全体の{top5Share.toFixed(1)}%を占めます。</li>
         </ul>
       </section>
@@ -59,6 +63,28 @@ export default function YosenPage() {
           <p className="yosen-total__rate">全国平均の進出率 {rate}%</p>
         </div>
         <p className="hint">本選に進むには、地方予選で50人のユーザーから投票されることが条件でした。順位ではなく、投票した人数で決まる仕組みです（詳しくは<Link href="/feature/history">特集2</Link>）。本選は11/17(火)12:00に始まり、グランプリの発表は12/19(土)21:00からの配信です。</p>
+      </section>
+
+      <section className="section card prose" id="why">
+        <h2>なぜ7,634人も本選に進めたのか</h2>
+        <h3>事実：本選に進む条件が変わった</h3>
+        <p>
+          2025年から、本選に進む条件が、「都道府県の総合順位で上位約10%」から、「地方予選で50人のユーザーから投票されること」に変わりました（<a href="https://www.girlsheaven-job.net/girlsbox/miss-heaven-2025/" target="_blank" rel="noopener noreferrer nofollow ugc">姫デコ magazineの解説</a>、<a href="https://www.hgjn-help.com/faq/show/13558?site_domain=heavennet_faq" target="_blank" rel="noopener noreferrer nofollow ugc">2026年公式FAQ</a>）。順位を競う条件ではなく、人数の条件です。50人に届けば、何人でも進めます。
+        </p>
+        <h3>試算：旧ルールなら、何人だったか</h3>
+        <p>
+          旧ルールの「上位約10%」を、今回のノミネート{YOSEN_TOTAL.nominees.toLocaleString()}人にそのまま当てはめると、約{oldRule.toLocaleString()}人です。実際の{YOSEN_TOTAL.advanced.toLocaleString()}人は、その<strong>約{ratio}倍</strong>になります。ただし、旧ルールの細かい切り方（都道府県ごとの端数処理など）は分からないため、あくまで目安です。
+        </p>
+        <h3>運営の意図は、どう説明されているか</h3>
+        <ul>
+          <li>姫デコ magazineは、条件を変えた目的を、「より多くのキャストに、本選での露出の機会を与えるため」と説明しています（媒体の記事による説明で、運営自身の言葉ではありません）。</li>
+          <li>同じ解説は、2025年から、人数による称号（都道府県代表・ブロック代表・日本代表）と、投票人数の進捗表示（姫デコ）を導入したこと、PRを年末中心から、マイヘブンの女の子検索を使った年間のものへ広げたことも、あわせて説明しています。</li>
+          <li><strong>見立て：</strong>この組み合わせは、「順位の上位だけが残る大会」から、「多くの人が、自分の支持者の数を伸ばしながら参加する大会」への転換のように読めます。ただし、運営がこれ以外にどんな狙いを持っているかは、公表されていません。</li>
+        </ul>
+        <h3>進めなかった人は、どんな人か</h3>
+        <p>
+          全国平均で23.0%の人が、本選に進んでいません。集計した人は、この中に「辞退・退店による不進出を含む」と書いています。沖縄（47.5%）や栃木（59.1%）のように、率が低い県の理由は、確認できていません。
+        </p>
       </section>
 
       <section className="section card prose">
@@ -109,6 +135,36 @@ export default function YosenPage() {
           <li><strong>人数が多いことは、進出率の低さとは結びつきません。</strong>東京は平均より低めでしたが、大阪・福岡・愛知は平均より高く、規模の大きさだけでは説明できません。</li>
           <li><strong>本選では、進んだ人どうしの競争になります。</strong>7,634人が残り、次の目標は、ブロック代表（100人）や日本代表（200人）の称号です（<Link href="/feature">特集1</Link>）。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="battle">
+        <h2>さらなる激戦をどう戦うか</h2>
+        <p>
+          本選は、{YOSEN_TOTAL.advanced.toLocaleString()}人が、神15の15枠（単純に割ると、1枠あたり約{perSlot}人）を争う場です。ここからは、事実を土台にした私たちの見立てです。結果を保証するものではありません。
+        </p>
+        <ul>
+          <li>
+            <strong>出発点は、すでに50人いるということ。</strong>本選に進んだ人は、予選で50人以上のユーザーから投票されています（進出の条件）。200人（日本代表）は、その約4倍です。予選で投票してくれた人に、本選でもう一度お願いするのが、いちばん近道だと考えられます。予選の余りの票は持ち越せませんが、本選の初日に、同じ枚数が再び付与されます。
+          </li>
+          <li>
+            <strong>「人数」を増やす動きが、そのまま効きます。</strong>称号は、票数ではなく、投票した人数で決まります。1人が1キャストへ入れられるのは、最大50票（1日10票）。1人の応援者から取れる票は決まっているので、新しい応援者を増やすことが、票を増やす、ほぼ唯一の道です（<Link href="/feature">特集1</Link>の計算を参照）。
+          </li>
+          <li>
+            <strong>倍率は、人数とは別の差になります。</strong>ネット予約を実際に利用した人の票は、最大3倍です（電話予約・姫予約は対象外）。人数を増やしたうえで、予約の流れを作れる人が、票数でも上に行きます。ルールに反する方法（正当なWeb予約でないと判断された投票は、無効になります）は、避けるべきです。
+          </li>
+          <li>
+            <strong>本選の部門は、自分では選べません。</strong>本選は全国共通の5部門で、部門は、お店が選んだ業種・ジャンルに紐づいて決まります（ヘブンnaviの記事）。予選の部門の順位は、そのまま比べられません。部門を変えて戦う戦略は、取れません。
+          </li>
+          <li>
+            <strong>自分のブロックの「枠の取り合い」を意識する。</strong>神15は、ブロックごとの枠です。上の表で、枠1つあたりの進出者数が多いブロック（北関東、南関東、九州北）は、枠が1つしかありません。ただし、これは進出者数の目安で、票の集まり方までは分かりません。
+          </li>
+          <li>
+            <strong>7日間を、早く始める。</strong>1日10票までなので、50票に届くのは最短で5日目です。初日から毎日の声かけをして、前日に投票してくれた人にお礼（投票ありがとうミテネ）を送る、という流れが、人数を伸ばします（日ごとの動きは<Link href="/feature/history">特集2</Link>）。
+          </li>
+        </ul>
+        <p className="hint">
+          ここでの「戦略」は、公開されたルールと、今回の数字から考えた見立てです。勝つための近道があるわけではなく、確かめられないこと（票の集まり方、ブロックごとの競争の強さ、神15のボーダー）も多く残っています。
+        </p>
       </section>
 
       <section className="section card prose">

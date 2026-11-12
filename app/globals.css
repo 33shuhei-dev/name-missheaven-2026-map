@@ -2686,3 +2686,5 @@ input::placeholder { color:#a99aaf; }
 .yosen-block__rate { font-weight: 900; color: var(--accent); text-align: right; grid-row: 1; grid-column: 2; }
 .yosen-block__num { font-size: .85rem; color: var(--muted); grid-column: 1; }
 .yosen-block__slot { font-size: .8rem; color: var(--muted); grid-column: 1 / -1; }
+
+.history-toc + .yosen-toc { margin-top: 0; }
