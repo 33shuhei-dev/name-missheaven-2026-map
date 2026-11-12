@@ -5,7 +5,7 @@ import { FeatureTabs } from "@/components/FeatureTabs";
 
 export const metadata: Metadata = { title: "特集3：予選を突破したのは何人？ 都道府県別の本選進出率" };
 
-import { YOSEN, YOSEN_TOTAL } from "@/lib/yosen";
+import { YOSEN, YOSEN_TOTAL, blockTotals } from "@/lib/yosen";
 
 const pct = (a: number, n: number) => ((a / n) * 100).toFixed(1);
 const SRC_URL = "https://x.com/hiropyon_0405";
@@ -29,6 +29,7 @@ export default function YosenPage() {
   const top5 = byNominee.slice(0, 5);
   const top5Share = (top5.reduce((s, r) => s + r[2], 0) / YOSEN_TOTAL.nominees) * 100;
   const rate = pct(YOSEN_TOTAL.advanced, YOSEN_TOTAL.nominees);
+  const blocks = blockTotals();
 
   return (
     <>
@@ -57,7 +58,7 @@ export default function YosenPage() {
           <p className="yosen-total__big">{YOSEN_TOTAL.advanced.toLocaleString()}人<span> ／ {YOSEN_TOTAL.nominees.toLocaleString()}人</span></p>
           <p className="yosen-total__rate">全国平均の進出率 {rate}%</p>
         </div>
-        <p className="hint">本選に進むには、地方予選で50人のユーザーから投票されることが条件でした。順位ではなく、投票した人数で決まる仕組みです（詳しくは<Link href="/feature/history">特集2</Link>）。</p>
+        <p className="hint">本選に進むには、地方予選で50人のユーザーから投票されることが条件でした。順位ではなく、投票した人数で決まる仕組みです（詳しくは<Link href="/feature/history">特集2</Link>）。本選は11/17(火)12:00に始まり、グランプリの発表は12/19(土)21:00からの配信です。</p>
       </section>
 
       <section className="section card prose">
@@ -74,6 +75,30 @@ export default function YosenPage() {
         <h2>ノミネートが集中している地域</h2>
         <ul className="yosen-list">{top5.map((r) => <Pref key={r[0]} row={r} />)}</ul>
         <p>上位5都府県で、全体の{top5Share.toFixed(1)}%です。人数が多い都府県でも、進出率はさまざまです。東京は73.8%（全国平均より低い）、大阪は81.4%、福岡は81.8%（どちらも平均より高い）でした。</p>
+      </section>
+
+      <section className="section card prose">
+        <h2>ブロックごとに見ると</h2>
+        <p>
+          本選は、全国10ブロックで行われます。都道府県の数字を、ブロックごとに足し合わせました（私たちの計算です。元の投稿には、ブロックごとの合計は書かれていません）。神15の枠は、<a href="https://link-f.biz/archives/25125" target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnaviの記事</a>（2026年11月10日）の「上位N位まで」の表によります。
+        </p>
+        <ul className="yosen-list">
+          {blocks.map((b) => (
+            <li key={b.name} className="yosen-block">
+              <span className="yosen-block__name">{b.name}</span>
+              <span className="yosen-block__num">進出{b.advanced}人／ノミネート{b.nominees}人</span>
+              <span className="yosen-block__rate">{b.rate.toFixed(1)}%</span>
+              <span className="yosen-block__slot">神15の枠 {b.slots}（枠1つあたり 約{Math.round(b.perSlot)}人）</span>
+            </li>
+          ))}
+        </ul>
+        <p className="hint">
+          「枠1つあたり」は、進出した人数を神15の枠の数で割った目安です。同じ人数でも、票の集まり方や、本選の部門（全国共通の5部門）の分かれ方で、実際の競争の強さは変わります。この数字だけで、入りやすさは判断できません。
+        </p>
+        <ul>
+          <li>進出率が高いのは、関西（81.0%）、東海・九州北（どちらも80.9%）。低いのは、九州南・沖縄（69.2%）と北陸・甲信越（71.0%）です。</li>
+          <li>神15の枠1つあたりの進出者数は、北関東（589人）・南関東（733人）・九州北（677人）で多く、枠が1つしかないためです。東京は約532人、関西は約567人と、枠の数が多い分、1枠あたりは少なめです。</li>
+        </ul>
       </section>
 
       <section className="section card prose">
@@ -98,7 +123,7 @@ export default function YosenPage() {
         <ul>
           <li>この数字は、有志が集めたもので、公式の発表ではありません。集計の方法は、元の投稿をご覧ください。</li>
           <li>全国平均には、辞退や退店で進出しなかった人も含まれます（集計した人の説明）。</li>
-          <li>青森・山形は、元の投稿の表に載っていないため、この特集でも載せていません。</li>
+          <li>青森・山形・鳥取・島根は、元の投稿の表に載っていないため、この特集でも載せていません（合計は、載っている43都道府県で、全国の数字と一致しています）。</li>
           <li>このサイトに載っている出場者の数は、このサイトで確認できた一部で、ここでの全国の数字とは別のものです。</li>
           <li>この特集は有志による非公式のまとめで、公式の見解ではありません。</li>
         </ul>

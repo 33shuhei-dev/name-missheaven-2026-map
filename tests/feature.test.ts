@@ -82,6 +82,20 @@ describe("特集3：予選の結果", () => {
     expect(src).toContain("公式の発表ではなく、有志の集計");
     expect(src).toContain("@hiropyon_0405");
     expect(src).toContain("私たちの見立て");
-    expect(src).toContain("青森・山形は、元の投稿の表に載っていない");
+    expect(src).toContain("青森・山形・鳥取・島根は、元の投稿の表に載っていない");
+  });
+});
+
+describe("特集3：ブロック別のまとめ", () => {
+  it("ブロックの分け方が、都道府県を重複なく、すべてを含み、合計が全国と一致する", async () => {
+    const { YOSEN, YOSEN_TOTAL, YOSEN_BLOCKS, blockTotals } = await import("@/lib/yosen");
+    const all = YOSEN_BLOCKS.flatMap((b) => [...b.prefs]);
+    expect(new Set(all).size).toBe(all.length);
+    expect([...all].sort()).toEqual(YOSEN.map((r) => r[0]).sort());
+    const t = blockTotals();
+    expect(t.reduce((s, b) => s + b.advanced, 0)).toBe(YOSEN_TOTAL.advanced);
+    expect(t.reduce((s, b) => s + b.nominees, 0)).toBe(YOSEN_TOTAL.nominees);
+    expect(YOSEN_BLOCKS.reduce((s, b) => s + b.slots, 0)).toBe(15);
+    expect(t.find((b) => b.name === "関西")!.advanced).toBe(1133);
   });
 });

@@ -17,3 +17,29 @@ export const YOSEN: readonly (readonly [string, number, number])[] = [
 export const YOSEN_TOTAL = { advanced: 7634, nominees: 9908 } as const;
 
 
+
+/**
+ * ブロック別のまとめ。ブロックの分け方は、集計した人（@hiropyon_0405）の都道府県の並びに合わせた
+ * （神15の枠は、ヘブンnaviの記事（2026-11-10）の「上位N位まで」の表）。
+ */
+export const YOSEN_BLOCKS: readonly { name: string; prefs: readonly string[]; slots: number }[] = [
+  { name: "北海道・東北", prefs: ["北海道", "宮城", "福島", "岩手", "秋田"], slots: 2 },
+  { name: "東京", prefs: ["東京"], slots: 3 },
+  { name: "北関東", prefs: ["埼玉", "群馬", "栃木", "茨城"], slots: 1 },
+  { name: "南関東", prefs: ["千葉", "神奈川"], slots: 1 },
+  { name: "北陸・甲信越", prefs: ["石川", "福井", "富山", "新潟", "山梨", "長野"], slots: 1 },
+  { name: "東海", prefs: ["愛知", "岐阜", "三重", "静岡"], slots: 2 },
+  { name: "関西", prefs: ["大阪", "和歌山", "京都", "滋賀", "兵庫", "奈良"], slots: 2 },
+  { name: "中四国", prefs: ["岡山", "広島", "山口", "愛媛", "香川", "徳島", "高知"], slots: 1 },
+  { name: "九州北", prefs: ["福岡", "大分", "佐賀", "長崎"], slots: 1 },
+  { name: "九州南・沖縄", prefs: ["熊本", "鹿児島", "宮崎", "沖縄"], slots: 1 },
+];
+
+export function blockTotals() {
+  return YOSEN_BLOCKS.map((b) => {
+    const rows = YOSEN.filter((r) => b.prefs.includes(r[0]));
+    const advanced = rows.reduce((s, r) => s + r[1], 0);
+    const nominees = rows.reduce((s, r) => s + r[2], 0);
+    return { ...b, advanced, nominees, rate: (advanced / nominees) * 100, perSlot: advanced / b.slots };
+  });
+}
