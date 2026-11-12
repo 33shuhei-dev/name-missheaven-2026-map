@@ -99,3 +99,13 @@ describe("特集3：ブロック別のまとめ", () => {
     expect(t.find((b) => b.name === "関西")!.advanced).toBe(1133);
   });
 });
+
+describe("特集3：本文の数字が計算と一致する", () => {
+  it("進出率の最低・最高が、本文の記載と一致する", async () => {
+    const { blockTotals } = await import("@/lib/yosen");
+    const src = readFileSync("app/feature/yosen/page.tsx", "utf8");
+    const t = blockTotals().sort((a, b) => a.rate - b.rate);
+    expect(src).toContain(`${t[0].name}（${t[0].rate.toFixed(1)}%）`);
+    expect(src).toContain(`${t[1].name}（${t[1].rate.toFixed(1)}%）`);
+  });
+});
