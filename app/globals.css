@@ -2755,3 +2755,21 @@ input::placeholder { color:#a99aaf; }
 .mv__reset { text-align: center; margin: 0; }
 .mv__reset button { background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: .8rem; min-height: var(--tap); }
 @media (prefers-reduced-motion: reduce) { .mv__pop { animation: none; opacity: 0; } .mv__btn { transition: none; } .mv__meter-bar i { transition: none; } }
+
+/* 無限投票：画像まわり */
+.mv__hero { margin-top: 8px; padding: 14px 12px 18px; border-radius: var(--radius); border: 2px solid #5a3a8a; background: #14081f url(/game/bg.webp) center / cover no-repeat; color: #fff; }
+.mv__hero .mv__counts > div { background: rgba(20, 8, 40, .72); border-color: rgba(255, 255, 255, .2); }
+.mv__hero .mv__counts small, .mv__hero .mv__counts b span { color: #d9cdf0; }
+.mv__hero .mv__rate { color: #e6dcf7; }
+.mv__mascot { display: flex; justify-content: center; margin: 6px 0 -10px; pointer-events: none; }
+.mv__mascot img { height: 150px; width: auto; filter: drop-shadow(0 6px 12px rgba(0, 0, 0, .45)); }
+.mv__btn { border: 0; background: none; box-shadow: none; filter: drop-shadow(0 10px 18px rgba(118, 80, 204, .55)); }
+.mv__btn-img { object-fit: contain; pointer-events: none; -webkit-user-drag: none; }
+.mv__btn-main, .mv__btn-sub { position: relative; z-index: 1; }
+.mv__pop-spark { width: 22px; height: 22px; vertical-align: middle; margin-right: 2px; }
+.mv__chair-row img { width: 26px; height: auto; }
+.mv__up-ic { width: 52px; height: 52px; flex: none; }
+.mv__ups li { justify-content: flex-start; }
+.mv__up-info { flex: 1; min-width: 0; }
+.mv__medal { width: 28px; height: 28px; vertical-align: middle; margin-right: 4px; }
+.mv__medal.is-off { filter: grayscale(1) opacity(.4); }

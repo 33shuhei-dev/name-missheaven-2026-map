@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 /**
@@ -39,6 +40,9 @@ const UPGRADES: readonly Upgrade[] = [
 ] as const;
 
 type Ach = { id: string; label: string; note: string; test: (s: Save) => boolean };
+
+const ICONS: Record<string, string> = { oen: "up-oen", yobi: "up-yobi", rate: "up-rate", thanks: "up-thanks", tour: "up-tour", chair: "up-chair" };
+const MEDALS: Record<string, string> = { a3: "medal-pref", a4: "medal-block", a5: "medal-japan" };
 
 const ACHS: readonly Ach[] = [
   { id: "a1", label: "はじめの1人", note: "", test: (s) => s.totalVoters >= 1 },
@@ -109,6 +113,8 @@ export function MugenVote() {
   const [refill, setRefill] = useState(false);
   const [pops, setPops] = useState<Pop[]>([]);
   const [toast, setToast] = useState("");
+  const [mood, setMood] = useState<"idle" | "happy" | "sleep">("idle");
+  const lastTap = useRef(0);
   const popId = useRef(0);
   const sRef = useRef(s);
   useEffect(() => {
@@ -197,6 +203,17 @@ export function MugenVote() {
     };
   }, [ready]);
 
+  // マスコットの様子：タップ中は大喜び、しばらく放っておくとねむる
+  useEffect(() => {
+    if (!ready) return;
+    lastTap.current = Date.now();
+    const t = setInterval(() => {
+      const dt = Date.now() - lastTap.current;
+      setMood(dt < 1200 ? "happy" : dt > 12000 ? "sleep" : "idle");
+    }, 400);
+    return () => clearInterval(t);
+  }, [ready]);
+
   useEffect(() => {
     if (!toast) return;
     const t = setTimeout(() => setToast(""), 5000);
@@ -216,6 +233,8 @@ export function MugenVote() {
     });
     sRef.current = next;
     setS(next);
+    lastTap.current = Date.now();
+    setMood("happy");
     // 持ち票のメーター（本物の制度のまね。この遊びでは、無限に補充される）
     setTickets((t) => {
       if (t <= 1) {
@@ -265,6 +284,8 @@ export function MugenVote() {
 
   const chairs = 15 + d.extraChairs;
   const lit = s.seen.length;
+  const crowned = s.seen.includes("a5");
+  const mascot = mood === "sleep" ? "mascot-sleep" : mood === "happy" ? "mascot-happy" : crowned ? "mascot-crown" : "mascot-idle";
   const latest = ACHS.filter((a) => s.seen.includes(a.id)).slice(-1)[0];
 
   return (
@@ -273,6 +294,7 @@ export function MugenVote() {
         これは遊びです。<strong>本物の投票ではありません。</strong>何も送信されません。
       </p>
 
+      <div className="mv__hero">
       <div className="mv__counts">
         <div>
           <small>投票した人</small>
@@ -286,6 +308,10 @@ export function MugenVote() {
       <p className="mv__rate">
         1秒に {fmt(d.autoVoters)}人 ／ 1人あたり {d.mult}倍 ／ 1タップ {d.perTap}人
       </p>
+
+      <div className="mv__mascot" aria-hidden="true">
+        <Image src={`/game/${mascot}.webp`} alt="" width={480} height={480} unoptimized draggable={false} />
+      </div>
 
       <div className="mv__stage">
         <button
@@ -303,14 +329,17 @@ export function MugenVote() {
             }
           }}
         >
+          <Image className="mv__btn-img" src="/game/btn.webp" alt="" fill sizes="280px" unoptimized draggable={false} priority />
           <span className="mv__btn-main">投票</span>
           <span className="mv__btn-sub">タップ</span>
           {pops.map((p) => (
             <i key={p.id} className="mv__pop" style={{ left: `${p.x}%`, top: `${p.y}%` }} aria-hidden="true">
+              <Image className="mv__pop-spark" src="/game/spark.webp" alt="" width={22} height={22} unoptimized />
               {p.text}
             </i>
           ))}
         </button>
+      </div>
       </div>
 
       <div className="mv__meter" aria-hidden="true">
@@ -327,7 +356,7 @@ export function MugenVote() {
         <h2>椅子（{lit} / 15 脚が埋まりました）</h2>
         <div className="mv__chair-row" aria-hidden="true">
           {Array.from({ length: chairs }, (_, i) => (
-            <span key={i} className={i < lit ? "is-on" : i >= 15 ? "is-extra" : ""} />
+            <Image key={i} src={`/game/${i < lit ? "chair-on" : i >= 15 ? "chair-extra" : "chair-off"}.webp`} alt="" width={26} height={26} unoptimized />
           ))}
         </div>
         {latest ? (
@@ -350,6 +379,7 @@ export function MugenVote() {
             const can = !maxed && s.votes >= c;
             return (
               <li key={u.id}>
+                <Image className="mv__up-ic" src={`/game/${ICONS[u.id]}.webp`} alt="" width={52} height={52} unoptimized />
                 <div className="mv__up-info">
                   <b>{u.name}</b>
                   <span className="mv__up-n">{n}</span>
@@ -369,7 +399,10 @@ export function MugenVote() {
         <ul>
           {ACHS.map((a) => (
             <li key={a.id} className={s.seen.includes(a.id) ? "is-on" : ""}>
-              {s.seen.includes(a.id) ? "✔ " + a.label : "？？？"}
+              {MEDALS[a.id] ? (
+                <Image className={s.seen.includes(a.id) ? "mv__medal" : "mv__medal is-off"} src={`/game/${MEDALS[a.id]}.webp`} alt="" width={28} height={28} unoptimized />
+              ) : null}
+              {s.seen.includes(a.id) ? (MEDALS[a.id] ? "" : "✔ ") + a.label : "？？？"}
             </li>
           ))}
         </ul>
