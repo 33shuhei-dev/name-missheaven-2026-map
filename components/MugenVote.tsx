@@ -31,11 +31,11 @@ type Upgrade = {
 };
 
 const UPGRADES: readonly Upgrade[] = [
-  { id: "oen", name: "応援団", desc: "1秒に、1人ずつ投票してくれる", base: 15, growth: 1.15 },
-  { id: "yobi", name: "呼びかけ", desc: "1タップで投票する人が、+1人", base: 50, growth: 1.45 },
-  { id: "rate", name: "倍率アップ", desc: "1人あたりの票が増える（最大3倍まで）", base: 500, growth: 10, max: 2 },
-  { id: "thanks", name: "お礼メッセージ", desc: "応援団の働きが、1.25倍", base: 300, growth: 1.9 },
-  { id: "tour", name: "全国ツアー", desc: "1秒に、20人ずつ投票してくれる", base: 2000, growth: 1.2 },
+  { id: "oen", name: "応援団", desc: "1秒に、1人ずつ投票してくれる", base: 15, growth: 1.16 },
+  { id: "yobi", name: "呼びかけ", desc: "1タップで投票する人が、+1人", base: 80, growth: 1.6 },
+  { id: "rate", name: "倍率アップ", desc: "1人あたりの票が増える（最大3倍まで）", base: 10000, growth: 15, max: 2 },
+  { id: "thanks", name: "お礼メッセージ", desc: "応援団の働きが、1.25倍", base: 1000, growth: 2.2 },
+  { id: "tour", name: "全国ツアー", desc: "1秒に、20人ずつ投票してくれる", base: 20000, growth: 1.25 },
   { id: "chair", name: "椅子の増設", desc: "椅子が1脚ふえる。意味はありません", base: 15000, growth: 3, max: 5 },
 ] as const;
 
@@ -56,9 +56,9 @@ const ACHS: readonly Ach[] = [
   { id: "a9", label: "7,634人：本選に進んだ人数ぶん", note: "特集3の数字", test: (s) => s.totalVoters >= 7634 },
   { id: "a10", label: "1万票", note: "", test: (s) => s.totalVotes >= 10000 },
   { id: "a11", label: "15万票：去年の1位の目安", note: "特集1の数字", test: (s) => s.totalVotes >= 150000 },
-  { id: "a12", label: "100万票", note: "", test: (s) => s.totalVotes >= 1000000 },
+  { id: "a12", label: "3億票", note: "", test: (s) => s.totalVotes >= 300000000 },
   { id: "a13", label: "倍率3倍に到達", note: "", test: (s) => (s.owned.rate ?? 0) >= 2 },
-  { id: "a14", label: "応援団が10組", note: "", test: (s) => (s.owned.oen ?? 0) >= 10 },
+  { id: "a14", label: "応援団が30組", note: "", test: (s) => (s.owned.oen ?? 0) >= 30 },
   { id: "a15", label: "全部そろった（意味はありません）", note: "", test: (s) => s.seen.length >= 14 },
 ] as const;
 
