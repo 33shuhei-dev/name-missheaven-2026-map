@@ -12,8 +12,11 @@ import { YOSEN_BLOCKS } from "@/lib/yosen";
 const SAVE_KEY = "mugen-touhyou-v1";
 const MAX_OFFLINE_SEC = 8 * 3600;
 const BOOST_SEC = 30;
-const BGM_SRC = "/game/bgm.m4a"; // AAC。再生できない環境では、下のOpusを使う
-const BGM_SRC_FALLBACK = "/game/bgm.ogg";
+/** 音楽のプレイリスト（AAC。再生できない環境ではOpusを使う）。1曲が終わると、次の曲へ */
+const TRACKS = [
+  { title: "VOTE VOTE VOTE（応援曲・非公式／有志制作）", base: "/game/bgm-1" },
+  { title: "TRACKSIDE（Suno／運営者の制作）", base: "/game/bgm-2" },
+] as const;
 const BGM_VOLUME = 0.12; // 小音量
 const SITE_URL = "https://name-missheaven-2026-map.vercel.app/game";
 
@@ -254,6 +257,9 @@ export function MugenVote() {
   const lineTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
   const bgmRef = useRef<HTMLAudioElement | null>(null);
+  const trackRef = useRef(0);
+  const [track, setTrack] = useState(0);
+  const [playing, setPlaying] = useState(false);
   const sRef = useRef(s);
   useEffect(() => {
     sRef.current = s;
@@ -303,27 +309,53 @@ export function MugenVote() {
     }
   }, []);
 
-  // 音楽：サイトの応援曲を、小音量でくり返す。ユーザーが触ったあと（最初のタップ）から流れる
+  // 音楽：複数の曲を、小音量で順番に流す。ユーザーが触ったあと（最初のタップ）から流れる
+  const srcOf = useCallback((a: HTMLAudioElement, i: number) => {
+    const t = TRACKS[i % TRACKS.length];
+    return a.canPlayType('audio/mp4; codecs="mp4a.40.2"') ? `${t.base}.m4a` : `${t.base}.ogg`;
+  }, []);
+  const playTrack = useCallback(
+    (i: number) => {
+      const a = bgmRef.current;
+      if (!a) return;
+      const idx = ((i % TRACKS.length) + TRACKS.length) % TRACKS.length;
+      trackRef.current = idx;
+      setTrack(idx);
+      a.src = srcOf(a, idx);
+      void a.play().catch(() => undefined);
+    },
+    [srcOf],
+  );
   const startMusic = useCallback(() => {
     if (!sRef.current.music) return;
     try {
       let a = bgmRef.current;
       if (!a) {
         a = new Audio();
-        a.src = a.canPlayType('audio/mp4; codecs="mp4a.40.2"') ? BGM_SRC : BGM_SRC_FALLBACK;
-        a.loop = true;
+        a.loop = false;
         a.preload = "none";
         a.volume = BGM_VOLUME;
+        a.addEventListener("ended", () => playTrack(trackRef.current + 1));
+        a.addEventListener("play", () => setPlaying(true));
+        a.addEventListener("pause", () => setPlaying(false));
         bgmRef.current = a;
+        // 最初の曲は、ランダムに選ぶ（毎回同じ曲から始まらない）
+        playTrack(Math.floor(Math.random() * TRACKS.length));
+        return;
       }
       if (a.paused) void a.play().catch(() => undefined);
     } catch {
       /* 音が出せない端末でも、遊べる */
     }
-  }, []);
+  }, [playTrack]);
   const stopMusic = useCallback(() => {
     bgmRef.current?.pause();
   }, []);
+  const nextTrack = () => {
+    if (!sRef.current.music) return;
+    if (!bgmRef.current) startMusic();
+    else playTrack(trackRef.current + 1);
+  };
 
   // タブを隠したら止め、戻ったら（ONなら）再開。ページを離れたときも止める
   useEffect(() => {
@@ -717,11 +749,16 @@ export function MugenVote() {
         <button type="button" className="mv__sound" aria-pressed={s.music} onClick={toggleMusic}>
           音楽：{s.music ? "ON" : "OFF"}
         </button>
+        <button type="button" className="mv__sound" onClick={nextTrack} disabled={!s.music}>
+          次の曲
+        </button>
         <button type="button" className="mv__sound" aria-pressed={s.sound} onClick={toggleSound}>
           効果音：{s.sound ? "ON" : "OFF"}
         </button>
       </p>
-      <p className="mv__meter-note">音楽は、このサイトの応援曲（非公式・有志制作）を、小さな音で流します。最初のタップから始まります。</p>
+      <p className="mv__meter-note" aria-live="polite">
+        {s.music && playing ? `♪ ${TRACKS[track].title}` : "音楽は、小さな音で流れます。最初のタップから始まります。"}
+      </p>
 
       <section className="mv__chairs" aria-label="椅子">
         <h2>椅子（{lit} / 15 脚が埋まりました）</h2>
