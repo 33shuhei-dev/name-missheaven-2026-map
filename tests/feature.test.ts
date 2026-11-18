@@ -194,3 +194,32 @@ describe("ゲームの枠（サイト内の入口）", () => {
   });
 });
 
+describe("無限投票：音楽（2曲を小音量で順番に）", () => {
+  const game = readFileSync("components/MugenVote.tsx", "utf8");
+  it("小音量で、1曲ごとに次の曲へ進み、ボタンで止められ、最初のタップから流れる（自動再生はしない）", () => {
+    const v = Number(/BGM_VOLUME = ([0-9.]+)/.exec(game)?.[1]);
+    expect(v).toBeGreaterThan(0);
+    expect(v).toBeLessThanOrEqual(0.2);
+    expect(game).toContain('addEventListener("ended"');
+    expect(game).toContain("音楽：");
+    expect(game).toContain("次の曲");
+    expect(game).not.toContain("autoplay");
+    expect(game).toContain("startMusic();");
+  });
+  it("曲の一覧と音声ファイル（AACとOpus）が揃っている", () => {
+    for (const b of ["bgm-1", "bgm-2"]) {
+      expect(game).toContain(`/game/${b}`);
+      expect(readFileSync(`public/game/${b}.m4a`).length).toBeGreaterThan(100000);
+      expect(readFileSync(`public/game/${b}.ogg`).length).toBeGreaterThan(100000);
+    }
+    expect(game).toContain("何度でも（Suno／運営者の制作）");
+    expect(game).not.toContain("TRACKSIDE");
+  });
+  it("公開する音声ファイルに、歌詞や制作IDなどのメタデータが入っていない", () => {
+    for (const f of ["bgm-1.m4a", "bgm-2.m4a"]) {
+      const txt = readFileSync(`public/game/${f}`).toString("latin1");
+      expect(txt).not.toContain("made with suno");
+      expect(txt).not.toContain("[Verse");
+    }
+  });
+});

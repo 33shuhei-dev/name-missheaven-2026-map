@@ -12,6 +12,12 @@ import { YOSEN_BLOCKS } from "@/lib/yosen";
 const SAVE_KEY = "mugen-touhyou-v1";
 const MAX_OFFLINE_SEC = 8 * 3600;
 const BOOST_SEC = 30;
+/** 音楽のプレイリスト（AAC。再生できない環境ではOpusを使う）。1曲が終わると、次の曲へ */
+const TRACKS = [
+  { title: "VOTE VOTE VOTE（応援曲・非公式／有志制作）", base: "/game/bgm-1" },
+  { title: "何度でも（Suno／運営者の制作）", base: "/game/bgm-2" },
+] as const;
+const BGM_VOLUME = 0.12; // 小音量
 const SITE_URL = "https://name-missheaven-2026-map.vercel.app/game";
 
 type Save = {
@@ -25,6 +31,7 @@ type Save = {
   play: number; // 遊んだ秒数
   announced: boolean; // 発表ごっこを見たか
   sound: boolean; // 効果音（初期はオフ）
+  music: boolean; // 音楽（最初のタップで流れる。いつでも止められる）
   pet: number; // マスコットをなでた回数
   gift: boolean; // ひみつの贈り物を受け取ったか
 };
@@ -96,6 +103,7 @@ function fresh(): Save {
     play: 0,
     announced: false,
     sound: false,
+    music: true,
     pet: 0,
     gift: false,
   };
@@ -248,6 +256,10 @@ export function MugenVote() {
   const playRef = useRef(0);
   const lineTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const ctxRef = useRef<AudioContext | null>(null);
+  const bgmRef = useRef<HTMLAudioElement | null>(null);
+  const trackRef = useRef(0);
+  const [track, setTrack] = useState(0);
+  const [playing, setPlaying] = useState(false);
   const sRef = useRef(s);
   useEffect(() => {
     sRef.current = s;
@@ -296,6 +308,68 @@ export function MugenVote() {
       /* 音が出せない端末でも、遊べる */
     }
   }, []);
+
+  // 音楽：複数の曲を、小音量で順番に流す。ユーザーが触ったあと（最初のタップ）から流れる
+  const srcOf = useCallback((a: HTMLAudioElement, i: number) => {
+    const t = TRACKS[i % TRACKS.length];
+    return a.canPlayType('audio/mp4; codecs="mp4a.40.2"') ? `${t.base}.m4a` : `${t.base}.ogg`;
+  }, []);
+  const playTrack = useCallback(
+    (i: number) => {
+      const a = bgmRef.current;
+      if (!a) return;
+      const idx = ((i % TRACKS.length) + TRACKS.length) % TRACKS.length;
+      trackRef.current = idx;
+      setTrack(idx);
+      a.src = srcOf(a, idx);
+      void a.play().catch(() => undefined);
+    },
+    [srcOf],
+  );
+  const startMusic = useCallback(() => {
+    if (!sRef.current.music) return;
+    try {
+      let a = bgmRef.current;
+      if (!a) {
+        a = new Audio();
+        a.loop = false;
+        a.preload = "none";
+        a.volume = BGM_VOLUME;
+        a.addEventListener("ended", () => playTrack(trackRef.current + 1));
+        a.addEventListener("play", () => setPlaying(true));
+        a.addEventListener("pause", () => setPlaying(false));
+        bgmRef.current = a;
+        // 最初の曲は、ランダムに選ぶ（毎回同じ曲から始まらない）
+        playTrack(Math.floor(Math.random() * TRACKS.length));
+        return;
+      }
+      if (a.paused) void a.play().catch(() => undefined);
+    } catch {
+      /* 音が出せない端末でも、遊べる */
+    }
+  }, [playTrack]);
+  const stopMusic = useCallback(() => {
+    bgmRef.current?.pause();
+  }, []);
+  const nextTrack = () => {
+    if (!sRef.current.music) return;
+    if (!bgmRef.current) startMusic();
+    else playTrack(trackRef.current + 1);
+  };
+
+  // タブを隠したら止め、戻ったら（ONなら）再開。ページを離れたときも止める
+  useEffect(() => {
+    const onVis = () => {
+      if (document.visibilityState === "hidden") stopMusic();
+      else if (bgmRef.current && sRef.current.music) startMusic();
+    };
+    document.addEventListener("visibilitychange", onVis);
+    return () => {
+      document.removeEventListener("visibilitychange", onVis);
+      bgmRef.current?.pause();
+      bgmRef.current = null;
+    };
+  }, [startMusic, stopMusic]);
 
   // 読み込み（放置ぶんの加算つき）。端末の保存データを読むので、描画のあとに行う
   useEffect(() => {
@@ -469,6 +543,7 @@ export function MugenVote() {
     lastTap.current = Date.now();
     setMood("happy");
     sfx("tap");
+    startMusic();
     if (next.taps % 60 === 0) say(TAP_LINES[(next.taps / 60) % TAP_LINES.length]);
     // 持ち票のメーター（本物の制度のまね。この遊びでは、無限に補充される）
     setTickets((t) => {
@@ -528,6 +603,15 @@ export function MugenVote() {
     setS(next);
     setBounce(true);
     setTimeout(() => setBounce(false), 300);
+  };
+
+  const toggleMusic = () => {
+    const cur = sRef.current;
+    const next = { ...cur, music: !cur.music };
+    sRef.current = next;
+    setS(next);
+    if (next.music) startMusic();
+    else stopMusic();
   };
 
   const toggleSound = () => {
@@ -662,9 +746,18 @@ export function MugenVote() {
         {refill ? "持ち票がなくなりました…と思いきや、無限に補充されます。" : "本物の持ち票は最大50枚。ここでは、いくらでも補充されます。"}
       </p>
       <p className="mv__tools">
+        <button type="button" className="mv__sound" aria-pressed={s.music} onClick={toggleMusic}>
+          音楽：{s.music ? "ON" : "OFF"}
+        </button>
+        <button type="button" className="mv__sound" onClick={nextTrack} disabled={!s.music}>
+          次の曲
+        </button>
         <button type="button" className="mv__sound" aria-pressed={s.sound} onClick={toggleSound}>
           効果音：{s.sound ? "ON" : "OFF"}
         </button>
+      </p>
+      <p className="mv__meter-note" aria-live="polite">
+        {s.music && playing ? `♪ ${TRACKS[track].title}` : "音楽は、小さな音で流れます。最初のタップから始まります。"}
       </p>
 
       <section className="mv__chairs" aria-label="椅子">

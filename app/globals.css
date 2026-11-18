@@ -2822,3 +2822,5 @@ input::placeholder { color:#a99aaf; }
 .game-corner__go { flex: none; font-weight: 800; color: #f4c66a; white-space: nowrap; }
 .game-tag { margin: 0 0 4px; }
 .game-tag span { display: inline-block; padding: 1px 12px; border-radius: 999px; background: #f4c66a; color: #3a2400; font-size: .8rem; font-weight: 800; }
+
+.mv__tools { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
