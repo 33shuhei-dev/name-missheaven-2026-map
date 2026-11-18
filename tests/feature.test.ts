@@ -131,3 +131,26 @@ describe("特集3：なぜ多いのか・激戦の戦い方", () => {
     expect(Math.round(YOSEN_TOTAL.advanced / 15)).toBe(509);
   });
 });
+
+describe("無限投票（遊び）", () => {
+  const game = readFileSync("components/MugenVote.tsx", "utf8");
+  it("本物の投票ではないことと、何も送信しないことを明記している", () => {
+    expect(game).toContain("本物の投票ではありません");
+    expect(game).toContain("何も送信されません");
+    expect(game).toContain("非公式");
+    expect(game).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+  });
+  it("実績は15個で、称号の条件（50/100/200人）と特集の数字（7,634人・15万票）に対応している", () => {
+    expect((game.match(/\{ id: "a\d+"/g) ?? []).length).toBe(15);
+    expect(game).toContain("50人：都道府県代表");
+    expect(game).toContain("100人：ブロック代表");
+    expect(game).toContain("200人：日本代表");
+    expect(game).toContain("7634");
+    expect(game).toContain("150000");
+  });
+  it("倍率は最大3倍（制度と同じ）で、フッターからリンクされ、検索には出ない設定のまま", () => {
+    expect(game).toMatch(/id: "rate"[^}]*max: 2/);
+    expect(readFileSync("components/SiteFooter.tsx", "utf8")).toContain('href="/game"');
+    expect(readFileSync("app/layout.tsx", "utf8")).toContain("index: false");
+  });
+});
