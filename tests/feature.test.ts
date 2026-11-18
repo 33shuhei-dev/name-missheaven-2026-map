@@ -212,7 +212,8 @@ describe("無限投票：音楽（2曲を小音量で順番に）", () => {
       expect(readFileSync(`public/game/${b}.m4a`).length).toBeGreaterThan(100000);
       expect(readFileSync(`public/game/${b}.ogg`).length).toBeGreaterThan(100000);
     }
-    expect(game).toContain("TRACKSIDE");
+    expect(game).toContain("何度でも（Suno／運営者の制作）");
+    expect(game).not.toContain("TRACKSIDE");
   });
   it("公開する音声ファイルに、歌詞や制作IDなどのメタデータが入っていない", () => {
     for (const f of ["bgm-1.m4a", "bgm-2.m4a"]) {

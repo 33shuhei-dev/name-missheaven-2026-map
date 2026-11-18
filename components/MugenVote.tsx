@@ -15,7 +15,7 @@ const BOOST_SEC = 30;
 /** 音楽のプレイリスト（AAC。再生できない環境ではOpusを使う）。1曲が終わると、次の曲へ */
 const TRACKS = [
   { title: "VOTE VOTE VOTE（応援曲・非公式／有志制作）", base: "/game/bgm-1" },
-  { title: "TRACKSIDE（Suno／運営者の制作）", base: "/game/bgm-2" },
+  { title: "何度でも（Suno／運営者の制作）", base: "/game/bgm-2" },
 ] as const;
 const BGM_VOLUME = 0.12; // 小音量
 const SITE_URL = "https://name-missheaven-2026-map.vercel.app/game";
