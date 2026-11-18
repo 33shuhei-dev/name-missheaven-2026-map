@@ -176,3 +176,11 @@ describe("無限投票：追加要素", () => {
   });
 });
 
+describe("無限投票：ページを移っても記録が残る", () => {
+  it("サイト内の移動（アンマウント）とタブを隠したときにも保存する", () => {
+    const game = readFileSync("components/MugenVote.tsx", "utf8");
+    expect(game).toContain("save(); // サイト内で別のページへ移ったとき");
+    expect(game).toContain('"visibilitychange"');
+  });
+});
+
