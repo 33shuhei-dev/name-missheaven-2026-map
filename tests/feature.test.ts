@@ -154,3 +154,25 @@ describe("無限投票（遊び）", () => {
     expect(readFileSync("app/layout.tsx", "utf8")).toContain("index: false");
   });
 });
+
+describe("無限投票：追加要素", () => {
+  const game = readFileSync("components/MugenVote.tsx", "utf8");
+  it("金の流れ星・ひとこと・記録カード・発表ごっこ・効果音（初期オフ）・隠し要素がある", () => {
+    expect(game).toContain("金の流れ星");
+    expect(game).toContain("記録カードを作る");
+    expect(game).toContain("発表ごっこ");
+    expect(game).toContain("ひみつの贈り物");
+    expect(game).toMatch(/sound: false/);
+  });
+  it("カードは遊びと明記し、通信せず、「ミスヘブン」の語を使わない", () => {
+    expect(game).toContain("非公式のお遊び／本物の投票ではありません");
+    expect(game).not.toContain("ミスヘブン");
+    expect(game).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+  });
+  it("全国ツアーのブロックは、特集3と同じ10ブロック", async () => {
+    const { YOSEN_BLOCKS } = await import("@/lib/yosen");
+    expect(YOSEN_BLOCKS.length).toBe(10);
+    expect(game).toContain("YOSEN_BLOCKS");
+  });
+});
+
