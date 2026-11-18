@@ -176,3 +176,21 @@ describe("無限投票：追加要素", () => {
   });
 });
 
+describe("無限投票：ページを移っても記録が残る", () => {
+  it("サイト内の移動（アンマウント）とタブを隠したときにも保存する", () => {
+    const game = readFileSync("components/MugenVote.tsx", "utf8");
+    expect(game).toContain("save(); // サイト内で別のページへ移ったとき");
+    expect(game).toContain('"visibilitychange"');
+  });
+});
+
+describe("ゲームの枠（サイト内の入口）", () => {
+  it("ヘッダー・トップ・フッターから、特集とは別の「ゲーム」としてリンクしている", () => {
+    expect(readFileSync("components/SiteHeader.tsx", "utf8")).toContain('href="/game" className="site-nav__game"');
+    const home = readFileSync("app/page.tsx", "utf8");
+    expect(home).toContain("game-corner");
+    expect(home).toContain("本物の投票ではありません");
+    expect(readFileSync("components/SiteFooter.tsx", "utf8")).toContain("ゲーム：無限投票");
+  });
+});
+

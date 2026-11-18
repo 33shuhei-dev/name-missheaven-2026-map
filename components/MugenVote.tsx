@@ -394,10 +394,16 @@ export function MugenVote() {
       }
     };
     const t = setInterval(save, 3000);
+    const onHide = () => {
+      if (document.visibilityState === "hidden") save();
+    };
     window.addEventListener("pagehide", save);
+    document.addEventListener("visibilitychange", onHide);
     return () => {
       clearInterval(t);
       window.removeEventListener("pagehide", save);
+      document.removeEventListener("visibilitychange", onHide);
+      save(); // サイト内で別のページへ移ったときも、そこまでの記録を残す
     };
   }, [ready]);
 

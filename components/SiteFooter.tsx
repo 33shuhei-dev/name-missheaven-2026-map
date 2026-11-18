@@ -15,7 +15,7 @@ export function SiteFooter() {
           {" ／ "}
           <Link href="/feature">特集</Link>
           {" ／ "}
-          <Link href="/game">無限投票（遊び）</Link>
+          <Link href="/game">ゲーム：無限投票</Link>
         </p>
         <p className="site-footer__credit">地図：国土地理院「地球地図日本」をもとに jpn-atlas（BSD-3-Clause）を加工して作成</p>
       </div>

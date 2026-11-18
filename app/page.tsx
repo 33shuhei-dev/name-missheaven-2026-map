@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/lib/data";
 import { UNKNOWN_PREFECTURE_SLUG } from "@/data/geo";
@@ -66,6 +67,16 @@ export default function HomePage() {
             <span className="feature-banner__go" aria-hidden="true">›</span>
           </Link>
         ))}
+        {/* ゲームコーナー（特集とは別の枠。遊びであることを明記） */}
+        <Link href="/game" className="game-corner">
+          <Image className="game-corner__pic" src="/game/mascot-happy.webp" alt="" width={96} height={96} unoptimized />
+          <span className="game-corner__text">
+            <span className="game-corner__tag">ゲーム</span>
+            <strong>無限投票</strong>
+            <span>投票に見えるだけの、意味のないタップゲーム（本物の投票ではありません）</span>
+          </span>
+          <span className="game-corner__go" aria-hidden="true">あそぶ ›</span>
+        </Link>
         {/* 推しから探す（目的を持って来た人の入口） */}
         <div className="hero-search">
           <p className="hero-search__label">
