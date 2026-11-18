@@ -194,3 +194,21 @@ describe("ゲームの枠（サイト内の入口）", () => {
   });
 });
 
+describe("無限投票：音楽（サイトの応援曲を小音量で）", () => {
+  const game = readFileSync("components/MugenVote.tsx", "utf8");
+  it("小音量でくり返し、ボタンで止められ、最初のタップから流れる（自動再生はしない）", () => {
+    expect(game).toContain("/game/bgm.m4a");
+    const v = Number(/BGM_VOLUME = ([0-9.]+)/.exec(game)?.[1]);
+    expect(v).toBeGreaterThan(0);
+    expect(v).toBeLessThanOrEqual(0.2);
+    expect(game).toContain("a.loop = true");
+    expect(game).toContain("音楽：");
+    expect(game).not.toContain("autoplay");
+    expect(game).toContain("startMusic();");
+  });
+  it("応援曲の音声ファイルがある", () => {
+    expect(readFileSync("public/game/bgm.m4a").length).toBeGreaterThan(100000);
+    expect(readFileSync("public/game/bgm.ogg").length).toBeGreaterThan(100000);
+  });
+});
+
