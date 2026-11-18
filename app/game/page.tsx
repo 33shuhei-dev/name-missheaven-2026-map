@@ -16,7 +16,8 @@ export const metadata: Metadata = {
 export default function GamePage() {
   return (
     <>
-      <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "無限投票（遊び）" }]} />
+      <Breadcrumbs items={[{ label: "全国", href: "/" }, { label: "ゲーム：無限投票" }]} />
+      <p className="game-tag"><span>ゲーム</span></p>
       <h1>無限投票</h1>
       <p className="hint">投票しているように見えるだけの、意味のないタップゲームです。非公式の遊びで、本物の投票とは関係ありません。</p>
       <MugenVote />

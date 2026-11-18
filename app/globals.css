@@ -2809,3 +2809,16 @@ input::placeholder { color:#a99aaf; }
 .mv__announce-note { font-size: .9rem; color: #d9cdf0; }
 .mv__announce-main button { margin-top: 16px; min-height: var(--tap); padding: 0 28px; border-radius: 24px; border: 0; background: var(--gradient); color: #fff; font-weight: 800; font-size: 1rem; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) { .mv__star { animation: none; left: 40%; } .mv__announce-drum, .mv__announce-big { animation: none; } .mv__mascot-btn img { transition: none; } }
+
+/* ゲームの枠（ヘッダー・トップ・ゲームページ） */
+.site-nav .site-nav__game { background: #f4c66a; color: #3a2400; border: 0; font-weight: 900; border-radius: 999px; padding: 0 14px; }
+.site-nav .site-nav__game:hover { background: #ffd986; color: #3a2400; }
+.game-corner { display: flex; align-items: center; gap: 12px; margin: 12px 0; padding: 10px 14px; border-radius: 14px; border: 2px solid #f4c66a; background: linear-gradient(135deg, #2a1040, #4a1f72); color: #fff; text-decoration: none; }
+.game-corner__pic { flex: none; width: 72px; height: 72px; object-fit: contain; }
+.game-corner__text { display: grid; gap: 2px; min-width: 0; flex: 1; }
+.game-corner__text strong { font-size: 1.15rem; }
+.game-corner__text > span:last-child { font-size: .8rem; opacity: .92; }
+.game-corner__tag { justify-self: start; padding: 1px 10px; border-radius: 999px; background: #f4c66a; color: #3a2400; font-size: .75rem; font-weight: 800; }
+.game-corner__go { flex: none; font-weight: 800; color: #f4c66a; white-space: nowrap; }
+.game-tag { margin: 0 0 4px; }
+.game-tag span { display: inline-block; padding: 1px 12px; border-radius: 999px; background: #f4c66a; color: #3a2400; font-size: .8rem; font-weight: 800; }

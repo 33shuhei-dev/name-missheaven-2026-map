@@ -15,6 +15,7 @@ export function SiteHeader() {
           <Link href="/" className="site-nav__home">⌂ <span>ホーム</span></Link>
           <Link href="/search">♡ <span>推しを探す</span></Link>
           <Link href="/feature" className="site-nav__feature">特集</Link>
+          <Link href="/game" className="site-nav__game">ゲーム</Link>
           <Link href="/categories">♕ <span>部門から探す</span></Link>
           <Link href="/#map">♧ <span>全国マップ</span></Link>
           <Link href="/search?kind=store">▣ <span>店舗情報</span></Link>
