@@ -5,7 +5,7 @@ export const FEATURES = [
   { no: 1, href: "/feature", title: "票は分散する。7,634人の本選を、どう戦うか", lead: "200人の人数戦と、神15の票数戦" },
   { no: 2, href: "/feature/history", title: "総選挙の歩みと、2026年の戦略", lead: "歴代の結果とルールの変化から、本選の戦い方を考える" },
   { no: 3, href: "/feature/yosen", title: "予選を突破したのは何人？", lead: "都道府県別の本選進出率を読み解く" },
-  { no: 4, href: "/feature/kami15", title: "神15の椅子は、部門に関係ある？", lead: "本選7,594人の顔ぶれを、部門とブロックで読む" },
+  { no: 4, href: "/feature/bumon", title: "本選は、49の小さな選挙だった", lead: "部門ごとの人数から読む、順位アイコンの狭き門と広き門" },
 ] as const;
 
 export function FeatureTabs({ current }: { current: 1 | 2 | 3 | 4 }) {

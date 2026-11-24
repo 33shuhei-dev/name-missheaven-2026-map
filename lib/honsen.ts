@@ -33,3 +33,14 @@ export function honsenBlockTotal(block: string): number {
 export function honsenDeptTotals(): number[] {
   return HONSEN_DEPTS.map((_, i) => HONSEN.reduce((s, b) => s + b.counts[i], 0));
 }
+
+/** ブロック×部門の「小さな選挙」。人数が0（部門なし）のものは除く */
+export function honsenCells(): { block: string; dept: string; n: number }[] {
+  return HONSEN.flatMap((b) => b.counts.map((n, i) => ({ block: b.block, dept: HONSEN_DEPTS[i], n }))).filter((c) => c.n > 0);
+}
+
+/** 順位アイコンは「各部門10位以内」（ヘブンnavi 2026-11-10）。ブロック×部門ごとに10位までとして数える */
+export const ICON_RANK = 10;
+export function iconSlots(n: number): number {
+  return Math.min(ICON_RANK, n);
+}

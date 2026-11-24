@@ -224,7 +224,7 @@ describe("無限投票：音楽（2曲を小音量で順番に）", () => {
   });
 });
 
-describe("特集4：本選の顔ぶれ（部門×ブロック）", () => {
+describe("特集4：本選は49の小さな選挙", () => {
   it("ブロックごとの部門の合計が、全国の総数（7,594人）と一致し、予選の通過者を超えない", async () => {
     const { HONSEN, HONSEN_TOTAL, honsenBlockTotal, honsenDeptTotals } = await import("@/lib/honsen");
     const { YOSEN_BLOCKS, blockTotals } = await import("@/lib/yosen");
@@ -235,13 +235,25 @@ describe("特集4：本選の顔ぶれ（部門×ブロック）", () => {
     expect(honsenBlockTotal("東京")).toBe(1591);
     expect(HONSEN.find((b) => b.block === "九州北")!.counts[0]).toBe(175);
   });
-  it("ページは、補正の理由・公式でないこと・確認できていないことを書き、特集の一覧に載っている", () => {
-    const src = readFileSync("app/feature/kami15/page.tsx", "utf8");
+  it("小さな選挙は49、最小14人・最大620人、アイコン枠は490人（全体の6.5%）で、本文の数字と一致する", async () => {
+    const { honsenCells, iconSlots, HONSEN_TOTAL } = await import("@/lib/honsen");
+    const cells = honsenCells();
+    expect(cells.length).toBe(49);
+    expect(Math.min(...cells.map((c) => c.n))).toBe(14);
+    expect(Math.max(...cells.map((c) => c.n))).toBe(620);
+    const icons = cells.reduce((s, c) => s + iconSlots(c.n), 0);
+    expect(icons).toBe(490);
+    expect(((icons / HONSEN_TOTAL) * 100).toFixed(1)).toBe("6.5");
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
+    for (const s of ["49の小さな選挙", "約44倍", "490人（全体の6.5%）", "東京のデリヘルは1.6%", "九州南・沖縄のエステは71%"]) expect(src).toContain(s);
+  });
+  it("ページは、補正の理由・公式でないこと・解釈であることを書き、特集の一覧に載っている", () => {
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
     expect(src).toContain("公式の発表ではありません");
     expect(src).toContain("私たちの推定");
-    expect(src).toContain("確認できていないこと");
+    expect(src).toContain("私たちの解釈");
     expect(src).toContain("<FeatureTabs current={4} />");
-    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/kami15"');
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/bumon"');
   });
 });
 
