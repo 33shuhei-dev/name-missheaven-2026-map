@@ -223,3 +223,25 @@ describe("無限投票：音楽（2曲を小音量で順番に）", () => {
     }
   });
 });
+
+describe("特集4：本選の顔ぶれ（部門×ブロック）", () => {
+  it("ブロックごとの部門の合計が、全国の総数（7,594人）と一致し、予選の通過者を超えない", async () => {
+    const { HONSEN, HONSEN_TOTAL, honsenBlockTotal, honsenDeptTotals } = await import("@/lib/honsen");
+    const { YOSEN_BLOCKS, blockTotals } = await import("@/lib/yosen");
+    expect(HONSEN.reduce((s, b) => s + honsenBlockTotal(b.block), 0)).toBe(HONSEN_TOTAL);
+    expect(honsenDeptTotals().reduce((s, v) => s + v, 0)).toBe(HONSEN_TOTAL);
+    expect(HONSEN.map((b) => b.block).sort()).toEqual(YOSEN_BLOCKS.map((b) => b.name).sort());
+    for (const b of blockTotals()) expect(honsenBlockTotal(b.name)).toBeLessThanOrEqual(b.advanced);
+    expect(honsenBlockTotal("東京")).toBe(1591);
+    expect(HONSEN.find((b) => b.block === "九州北")!.counts[0]).toBe(175);
+  });
+  it("ページは、補正の理由・公式でないこと・確認できていないことを書き、特集の一覧に載っている", () => {
+    const src = readFileSync("app/feature/kami15/page.tsx", "utf8");
+    expect(src).toContain("公式の発表ではありません");
+    expect(src).toContain("私たちの推定");
+    expect(src).toContain("確認できていないこと");
+    expect(src).toContain("<FeatureTabs current={4} />");
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/kami15"');
+  });
+});
+
