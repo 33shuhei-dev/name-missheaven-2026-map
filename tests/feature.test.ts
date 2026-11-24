@@ -257,3 +257,19 @@ describe("特集4：本選は49の小さな選挙", () => {
   });
 });
 
+describe("特集4：神15への狭き門", () => {
+  it("本文の数字（約506人に1人・南関東730人に1脚・九州南・沖縄276人に1脚）が計算と一致する", async () => {
+    const { HONSEN_TOTAL, honsenBlockTotal } = await import("@/lib/honsen");
+    const { YOSEN_BLOCKS } = await import("@/lib/yosen");
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
+    expect(Math.round(HONSEN_TOTAL / 15)).toBe(506);
+    const per = (b: string) => honsenBlockTotal(b) / YOSEN_BLOCKS.find((x) => x.name === b)!.slots;
+    expect(Math.round(per("南関東"))).toBe(730);
+    expect(Math.round(per("九州南・沖縄"))).toBe(276);
+    expect(((1 / per("南関東")) * 100).toFixed(2)).toBe("0.14");
+    expect(((1 / per("九州南・沖縄")) * 100).toFixed(2)).toBe("0.36");
+    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「総合票」と明記した文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
+    expect(YOSEN_BLOCKS.filter((b) => b.slots === 1).length).toBe(6);
+  });
+});
+

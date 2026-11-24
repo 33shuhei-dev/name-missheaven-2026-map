@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
 import { HONSEN, HONSEN_DEPTS, HONSEN_TOTAL, honsenBlockTotal, honsenCells, honsenDeptTotals, iconSlots, ICON_RANK } from "@/lib/honsen";
+import { YOSEN_BLOCKS } from "@/lib/yosen";
 
 export const metadata: Metadata = { title: "特集4：本選は、49の小さな選挙だった 部門ごとの人数から読む" };
 
@@ -52,6 +53,12 @@ export default function BumonPage() {
     return { d, blocks: cs.length, total: dept[i], slots, rate: (slots / dept[i]) * 100 };
   });
   const narrow = bySize.slice(0, 6);
+  const slotOf = Object.fromEntries(YOSEN_BLOCKS.map((b) => [b.name, b.slots]));
+  const chairs = HONSEN.map((b) => {
+    const total = honsenBlockTotal(b.block);
+    const sl = slotOf[b.block];
+    return { block: b.block, total, sl, per: total / sl, rate: (sl / total) * 100 };
+  }).sort((a, b) => b.per - a.per);
   const wide = [...cells].sort((a, b) => a.n - b.n).slice(0, 6);
 
   return (
@@ -67,6 +74,7 @@ export default function BumonPage() {
           <li><strong>本選は、10ブロック×5部門の「小さな選挙」の集まりです。</strong>人数が0の部門（北陸・甲信越のヘルス・ホテヘル）を除くと、49あります。</li>
           <li><strong>小さな選挙の大きさは、14人から620人まで、約44倍違います。</strong>最も大きい東京のデリヘル（620人）と、最も小さい九州南・沖縄のエステ（14人）です。</li>
           <li><strong>「各部門10位以内」の順位アイコンは、計算上490人（全体の6.5%）です。</strong>ただし、入りやすさは部門で大きく違います。東京のデリヘルは1.6%、九州南・沖縄のエステは71%です。</li>
+          <li><strong>神15への門は、さらに狭くなります。</strong>神15は、ブロックの総合票（部門を混ぜた票）で決まる、と私たちは認識しています。全国で15人は、7,594人の約0.2%（約506人に1人）です。最も狭い南関東は、730人に1脚です。</li>
           <li><strong>人数が少ない＝楽、とは限りません。</strong>順位は票で決まるので、票の量が分からない今は、「入りやすさの目安」までしか言えません。</li>
         </ol>
       </section>
@@ -133,6 +141,33 @@ export default function BumonPage() {
         <p className="hint">注意：この割合は、人数だけから出した「入りやすさの目安」です。10位に入るために必要な票の数は、部門によって違うはずで、今は分かりません。人数が少ない部門は、票も少ないかもしれません。</p>
       </section>
 
+      <section className="section card prose" id="kami15">
+        <h2>神15への狭き門</h2>
+        <p>
+          神15は、ブロックごとの「総合」の票（部門を混ぜた票）で決まる、と私たちは認識しています。ヘブンnaviの記事には、神15が「ブロックごとに上位N位まで」と書かれていて、部門ごとの枠は書かれていません（「総合票」と明記した文は、確認できていません）。そのため、ここでは、<strong>部門に関係なく、ブロックの全員で椅子を争う</strong>ものとして、数えます。
+        </p>
+        <h3>3つの門</h3>
+        <Table
+          head={["門", "人数", "全体に対する割合"]}
+          rows={[
+            ["本選の名簿", `${n(HONSEN_TOTAL)}人`, "100%"],
+            [`順位アイコン（各部門${ICON_RANK}位以内）`, `${n(iconTotal)}人`, `${pct(iconTotal, HONSEN_TOTAL)}%（約${Math.round(HONSEN_TOTAL / iconTotal)}人に1人）`],
+            ["神15（ブロックの総合票）", "15人", `${pct(15, HONSEN_TOTAL, 2)}%（約${Math.round(HONSEN_TOTAL / 15)}人に1人）`],
+          ]}
+        />
+        <h3>ブロックごとの、椅子1脚あたり</h3>
+        <Table
+          head={["ブロック", "名簿", "椅子", "1脚あたり", "椅子に座れる割合"]}
+          rows={chairs.map((c) => [c.block, `${n(c.total)}人`, `${c.sl}脚`, `約${n(Math.round(c.per))}人`, `${c.rate.toFixed(2)}%`])}
+        />
+        <ul>
+          <li>いちばん狭いのは、南関東（730人に1脚、0.14%）、九州北（672人）、北関東（588人）です。いちばん広いのは、九州南・沖縄（276人に1脚、0.36%）です。</li>
+          <li>順位アイコンの「広き門」は、神15には<strong>通じません</strong>。たとえば、北関東のエステは15人で、10位以内に入りやすい部門ですが、神15は、北関東の588人全員で、1つの椅子を争います。神15にとっては、部門の中の順位より、ブロック全体の総合順位が全てです。</li>
+          <li>椅子が1脚のブロックは6つで、総合1位だけが神15に入ります。</li>
+        </ul>
+        <p className="hint">「椅子に座れる割合」は、名簿の人数だけから出した目安です。票を入れる人の数がブロックごとに違うので、これだけで、取りやすさは決められません。また、名簿が同じでも、票は一部の人気の人に集まるので、実際の差は、人数の割合よりずっと大きくなります。</p>
+      </section>
+
       <section className="section card prose">
         <h2>ブロックごとの「色」</h2>
         <p>部門の構成は、ブロックごとに大きく違います。最も多い部門の割合です。</p>
@@ -160,7 +195,7 @@ export default function BumonPage() {
           rows={[
             ["本選の名簿の構成（どの部門・どのブロックが大きいか）", "部門ごとの票の量、投票した人の数"],
             ["順位アイコンの圏内に入る割合の目安（10÷人数）", "10位に入るために必要な票の数"],
-            ["ブロックごとの部門の「色」の違い", "神15が部門を問わないのか（ブロックの総合順位で決まると考えるのが自然だが、確認できていない）"],
+            ["ブロックごとの部門の「色」の違い", "神15が総合票で決まることの、公式の文での確認（私たちは、総合票と認識している）"],
             ["小さな選挙の大きさの差（14〜620人）", "人数の少ない部門が、本当に楽なのかどうか"],
           ]}
         />
@@ -175,6 +210,7 @@ export default function BumonPage() {
             ["各部門の10位の得票数（出れば）", "人数の多い部門ほど、10位のラインは高いのか。人数と票の関係が見える"],
             ["部門1位の得票数", "小さな部門の1位は、大きな部門の1位に比べて、票が少ないのか"],
             ["神15の15人が、どの部門か", "人数の割合（デリヘル33%・ソープ32.5%・人妻17%・ヘルス・ホテヘル11%・エステ7%）と比べて、偏りが大きければ、部門による有利・不利がある"],
+            ["椅子が1脚のブロック（6つ）の総合1位が、どの部門か", "総合票で決まるなら、1位は、人数の多い部門から出やすいのか。それとも、部門の人数と関係なく出るのか"],
             ["小さな部門の1位が、ブロックの総合でも上位に入るか", "部門を混ぜた順位でも、小さな選挙の1位に、チャンスがあるのか"],
           ]}
         />
@@ -186,6 +222,7 @@ export default function BumonPage() {
         <ul>
           <li>本選の部門者数：<a href={SRC_URL} target="_blank" rel="noopener noreferrer nofollow ugc">@hiropyon_0405</a> さんの集計（2026年11月24日）。公式の発表ではありません。東京の計と九州北のデリヘルは、私たちが補正しました（上の注記）。</li>
           <li>部門・順位アイコン・神15の枠：<a href={NAVI} target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnaviの記事</a>（2026年11月10日）。媒体の記事で、公式の発表とは言い切れません。</li>
+          <li>神15が、ブロックの総合票（部門を混ぜた票）で決まるという点は、私たちの認識で、公式の文では確認できていません。</li>
           <li>順位アイコンを「ブロック×部門ごとの10位以内」と数えたのは、私たちの解釈です（記事には「各部門10位以内」とだけ書かれています）。同順位の扱いなどで、実際と違う可能性があります。</li>
           <li>ブロック本選結果の日程：過去の公式FAQの告知（2024年・2025年はどちらも12月3日12:00）。2026年は未確認です。</li>
           <li>この特集は、有志による非公式の考察で、公式の見解や、結果の予測ではありません。</li>
