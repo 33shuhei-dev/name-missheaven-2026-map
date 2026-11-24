@@ -223,3 +223,53 @@ describe("無限投票：音楽（2曲を小音量で順番に）", () => {
     }
   });
 });
+
+describe("特集4：本選は49の小さな選挙", () => {
+  it("ブロックごとの部門の合計が、全国の総数（7,594人）と一致し、予選の通過者を超えない", async () => {
+    const { HONSEN, HONSEN_TOTAL, honsenBlockTotal, honsenDeptTotals } = await import("@/lib/honsen");
+    const { YOSEN_BLOCKS, blockTotals } = await import("@/lib/yosen");
+    expect(HONSEN.reduce((s, b) => s + honsenBlockTotal(b.block), 0)).toBe(HONSEN_TOTAL);
+    expect(honsenDeptTotals().reduce((s, v) => s + v, 0)).toBe(HONSEN_TOTAL);
+    expect(HONSEN.map((b) => b.block).sort()).toEqual(YOSEN_BLOCKS.map((b) => b.name).sort());
+    for (const b of blockTotals()) expect(honsenBlockTotal(b.name)).toBeLessThanOrEqual(b.advanced);
+    expect(honsenBlockTotal("東京")).toBe(1591);
+    expect(HONSEN.find((b) => b.block === "九州北")!.counts[0]).toBe(175);
+  });
+  it("小さな選挙は49、最小14人・最大620人、アイコン枠は490人（全体の6.5%）で、本文の数字と一致する", async () => {
+    const { honsenCells, iconSlots, HONSEN_TOTAL } = await import("@/lib/honsen");
+    const cells = honsenCells();
+    expect(cells.length).toBe(49);
+    expect(Math.min(...cells.map((c) => c.n))).toBe(14);
+    expect(Math.max(...cells.map((c) => c.n))).toBe(620);
+    const icons = cells.reduce((s, c) => s + iconSlots(c.n), 0);
+    expect(icons).toBe(490);
+    expect(((icons / HONSEN_TOTAL) * 100).toFixed(1)).toBe("6.5");
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
+    for (const s of ["49の小さな選挙", "約44倍", "490人（全体の6.5%）", "東京のデリヘルは1.6%", "九州南・沖縄のエステは71%"]) expect(src).toContain(s);
+  });
+  it("ページは、補正の理由・公式でないこと・解釈であることを書き、特集の一覧に載っている", () => {
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
+    expect(src).toContain("公式の発表ではありません");
+    expect(src).toContain("私たちの推定");
+    expect(src).toContain("私たちの解釈");
+    expect(src).toContain("<FeatureTabs current={4} />");
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/bumon"');
+  });
+});
+
+describe("特集4：神15への狭き門", () => {
+  it("本文の数字（約506人に1人・南関東730人に1脚・九州南・沖縄276人に1脚）が計算と一致する", async () => {
+    const { HONSEN_TOTAL, honsenBlockTotal } = await import("@/lib/honsen");
+    const { YOSEN_BLOCKS } = await import("@/lib/yosen");
+    const src = readFileSync("app/feature/bumon/page.tsx", "utf8");
+    expect(Math.round(HONSEN_TOTAL / 15)).toBe(506);
+    const per = (b: string) => honsenBlockTotal(b) / YOSEN_BLOCKS.find((x) => x.name === b)!.slots;
+    expect(Math.round(per("南関東"))).toBe(730);
+    expect(Math.round(per("九州南・沖縄"))).toBe(276);
+    expect(((1 / per("南関東")) * 100).toFixed(2)).toBe("0.14");
+    expect(((1 / per("九州南・沖縄")) * 100).toFixed(2)).toBe("0.36");
+    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「総合票」と明記した文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
+    expect(YOSEN_BLOCKS.filter((b) => b.slots === 1).length).toBe(6);
+  });
+});
+
