@@ -2824,3 +2824,8 @@ input::placeholder { color:#a99aaf; }
 .game-tag span { display: inline-block; padding: 1px 12px; border-radius: 999px; background: #f4c66a; color: #3a2400; font-size: .8rem; font-weight: 800; }
 
 .mv__tools { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+
+/* 運営者より（広告・案内であることを明記する小さな枠） */
+.operator-note { margin: 18px 0 4px; padding: 12px 14px; border: 1px dashed var(--accent); border-radius: 12px; background: var(--accent-weak); font-size: .9rem; }
+.operator-note strong { display: inline-block; margin-bottom: 2px; color: var(--accent); }
+.operator-note p { margin: 4px 0 0; }
