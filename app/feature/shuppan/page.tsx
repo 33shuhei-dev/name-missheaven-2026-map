@@ -2,10 +2,46 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
+import { CopyBlock } from "@/components/CopyBlock";
+import { PrepChecklist, type PrepItem } from "@/components/PrepChecklist";
 
 export const metadata: Metadata = { title: "特集5：数字にされる、ということ 出場者の視点" };
 
 const NAVI = "https://link-f.biz/archives/25125";
+
+const PREP: readonly PrepItem[] = [
+  { id: "p1", label: "応援者との連絡手段を、2つ以上にした", hint: "1つが止まっても、別の方法で連絡が取れる形" },
+  { id: "p2", label: "応援者への案内文を、手元に保存した", hint: "投票の手順、期間、お礼の文章。端末のメモやファイルに" },
+  { id: "p3", label: "プロフィールと主な投稿の控えを取った", hint: "アカウントが使えなくなっても、文章を作り直せるように" },
+  { id: "p4", label: "各サービスの規約と、表示のルールを確認した", hint: "センシティブな内容の扱いなど。投稿する前に" },
+  { id: "p5", label: "数字を見る時間を決めた", hint: "1日に何回、いつ見るか。見ない時間も決める" },
+  { id: "p6", label: "発信を軽くする日を決めた", hint: "7日間の中に、短い投稿だけの日を入れる" },
+  { id: "p7", label: "話せる相手を1人決めた", hint: "数字の悩みを、1人で抱えないために" },
+  { id: "p8", label: "結果の発表の日の予定を、軽くした", hint: "信頼できる人と過ごせるように" },
+] as const;
+
+const TEMPLATES = [
+  {
+    title: "初日のお願い",
+    text: "いよいよ本選が始まりました。\nいつも応援ありがとうございます。\n投票は［期間］まで、1日10票までです。\nお時間のあるときに、のぞいてもらえたらうれしいです。\n#総選挙",
+    note: "［　］の中を、自分の言葉に変えて使います。期間と手順は、公式の案内に合わせてください。",
+  },
+  {
+    title: "前日に投票してくれた人へのお礼",
+    text: "昨日、投票してくれたみなさん、ありがとうございました。\n画面を見て、うれしくなりました。\n今日も、無理のない範囲で、よろしくお願いします。",
+    note: "お礼は、数字が動かない日にも、できることのひとつです。",
+  },
+  {
+    title: "発信を軽くする日",
+    text: "今日は、短くひとことだけにします。\nいつもありがとうございます。\nゆっくり、また明日。",
+    note: "休む日を先に決めておくと、「やりすぎたかも」という後悔が減ります。",
+  },
+  {
+    title: "結果が出たあと（順位に関係なく）",
+    text: "結果が出ました。\n応援してくれたみなさん、本当にありがとうございました。\n数字の大きさとは別に、この期間をやりきれたのは、みなさんのおかげです。\nこれからも、よろしくお願いします。",
+    note: "結果が思うようでなかった日の文章は、あとで、自分で書き直して大丈夫です。",
+  },
+] as const;
 
 export default function ShuppanPage() {
   return (
@@ -39,6 +75,20 @@ export default function ShuppanPage() {
         <p className="hint">本選は11月17日〜23日の7日間でした。ブロック本選の結果は、過去2年は12月3日12:00に発表されています（2026年は未確認）。神15・グランプリの発表は、12月19日（土）21:00の動画配信です。</p>
       </section>
 
+      <section className="section card prose" id="days">
+        <h2>7日間と、発表の前後：気持ちの流れ（考察）</h2>
+        <p>本選は、11月17日（火）12:00から23日（月）23:59までの7日間でした。数字を毎日見る期間に、起きやすいことを、時間軸で整理します（一般的に起こりやすいと考えられることで、個人の体験ではありません）。</p>
+        <ol className="timeline">
+          <li><b>1日目（11/17）</b><span>始まりの熱がある日。お願いを、まとめて出したくなる。<em>備え：投稿の型を、先に作っておく。</em></span></li>
+          <li><b>2〜3日目</b><span>最初の数字が出て、比べたくなる。見えるのは自分の人数だけで、位置は分からない。<em>備え：数字を見る時間を決める。</em></span></li>
+          <li><b>4〜5日目</b><span>中だるみ。お願いが「しつこくないか」気になりやすい。<em>備え：発信を軽くする日を入れる。</em></span></li>
+          <li><b>6日目</b><span>終わりが見え、気持ちが急ぐ。<em>備え：お礼を忘れない。</em></span></li>
+          <li><b>最終日（11/23）</b><span>締め切りの23:59まで。やりきる気持ちと、疲れが、重なる。<em>備え：終わったあとの予定を、先に決める。</em></span></li>
+          <li><b>結果の発表まで</b><span>数字が止まり、待つ時間になる。ブロック本選の結果は、過去2年は12月3日12:00（2026年は未確認）。<em>備え：数字を見る頻度を、いったん下げる。</em></span></li>
+          <li><b>12月19日（土）21:00</b><span>神15・グランプリの発表（動画配信）。<em>備え：予定を軽くして、信頼できる人と過ごす。</em></span></li>
+        </ol>
+      </section>
+
       <section className="section card prose">
         <h2>数値化される、期待とプレッシャー</h2>
         <p>数字が毎日変わる仕組みは、励みにもなりますが、負担にもなりえます。次の3つは、よくある形だと考えられます（考察です）。</p>
@@ -56,6 +106,17 @@ export default function ShuppanPage() {
           <li><strong>休む日を、決める。</strong>7日間は長いです。発信を軽くする日を、先に決めておきます。</li>
           <li><strong>話せる相手を、1人持つ。</strong>数字の悩みは、1人で抱えると、大きくなります。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="numbers">
+        <h2>数字で見る：ほとんどの人は、圏外で終わる仕組み</h2>
+        <p>本選の名簿は7,594人（<Link href="/feature/bumon">特集4</Link>）です。順位アイコンは「各部門10位以内」で、計算上490人（6.5%）です。神15は15人（約0.2%）です。</p>
+        <ul>
+          <li>順位アイコンの圏内は、約16人に1人。<strong>残りの約93.5%は、圏外で終わる</strong>前提の仕組みです。</li>
+          <li>神15は、約506人に1人です。<strong>ほとんどの出場者は、神15に入りません。</strong>それは、能力や努力の結果、というより、椅子の数が少ないためです。</li>
+        </ul>
+        <p>つまり、結果が思うようでなかったとしても、<strong>それは「ふつうのこと」</strong>です。圏外の約7,100人は、全員、同じ7日間を、やりきっています。</p>
+        <p className="hint">計算は、特集4の解釈（順位アイコンを、ブロック×部門ごとの10位以内と数える）にもとづく目安です。</p>
       </section>
 
       <section className="section card prose">
@@ -78,6 +139,20 @@ export default function ShuppanPage() {
           <li><strong>止められたときは、焦らない。</strong>サービスが用意している、異議申し立ての手続きに従います。止められたあとに、別のアカウントを次々に作ることは、規約違反になるおそれがあり、状況を悪くすることがあります。</li>
           <li><strong>1つの場所に、連絡先をまとめておく。</strong>応援者が、あなたを見つけ直せる場所（たとえば、自分で管理するページ）があると、安心です。</li>
         </ul>
+      </section>
+
+      <section className="section card prose" id="templates">
+        <h2>そのまま使える、投稿の文例</h2>
+        <p>毎日の投稿を、ゼロから考えるのは大変です。コピーして、自分の言葉に変えて使ってください。店名・本名・連絡先は、入れていません。投票のページのURLも、入れていません（最新の案内は、公式で確認してください）。</p>
+        {TEMPLATES.map((t) => (
+          <CopyBlock key={t.title} title={t.title} text={t.text} note={t.note} />
+        ))}
+      </section>
+
+      <section className="section card prose" id="prep">
+        <h2>備えのチェックリスト</h2>
+        <p>凍結や、数字の波に備えて、前もってできることです。チェックは、あなたの端末の中だけに残ります。</p>
+        <PrepChecklist items={PREP} />
       </section>
 
       <section className="section card prose">

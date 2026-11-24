@@ -298,3 +298,24 @@ describe("特集5・6：出場者の視点と、応援する側として", () =>
   });
 });
 
+describe("特集5：作り込み（時間軸・数字・文例・チェックリスト）", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("時間軸・数字で見る・文例・備えのチェックリストがある", () => {
+    for (const s of ["7日間と、発表の前後", "ほとんどの人は、圏外で終わる仕組み", "そのまま使える、投稿の文例", "備えのチェックリスト", "<PrepChecklist", "<CopyBlock"]) expect(a).toContain(s);
+  });
+  it("数字は特集4と一致する（490人・6.5%、約93.5%、約506人に1人）", async () => {
+    const { honsenCells, iconSlots, HONSEN_TOTAL } = await import("@/lib/honsen");
+    const icons = honsenCells().reduce((s, c) => s + iconSlots(c.n), 0);
+    expect(icons).toBe(490);
+    expect((100 - (icons / HONSEN_TOTAL) * 100).toFixed(1)).toBe("93.5");
+    expect(Math.round(HONSEN_TOTAL / 15)).toBe(506);
+    for (const s of ["490人（6.5%）", "約93.5%", "約506人に1人"]) expect(a).toContain(s);
+  });
+  it("文例に、URL・店名・「ミスヘブン」を入れていない。チェックリストは通信せず端末内だけに保存する", () => {
+    const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
+    expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
+    for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+    expect(readFileSync("components/PrepChecklist.tsx", "utf8")).toContain("localStorage");
+  });
+});
+
