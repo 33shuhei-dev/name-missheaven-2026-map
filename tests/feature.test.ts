@@ -273,3 +273,32 @@ describe("特集4：神15への狭き門", () => {
   });
 });
 
+describe("特集5：出場者のみなさんへ", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("苦労・現実（ひとりでは難しい）・仕組みづくり・締めのことばがある", () => {
+    for (const s of ["見えるのに、分からない。7日間の苦労", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "どんな結果でも、楽しかったなら、勝ち", "おつかれさまでした。そして、ありがとう。", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+  });
+  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語や、出場者個人の名前（ゆず以外）を使わない", () => {
+    expect(a).not.toContain("/feature/ouen");
+    expect(a).not.toContain("ミスヘブン");
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
+  });
+  it("運営者の案内は「運営者より」と明記し、個別の投稿・URLは載せず、規約をすり抜ける方法は書かない", () => {
+    expect(a).toContain("<strong>運営者より</strong>");
+    expect(a).toContain("ご本人の了承があるものに限ります");
+    const sec = a.slice(a.indexOf('id="trend"'), a.indexOf('id="genjitsu"'));
+    expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
+    expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+    expect(a).toContain("ルールをすり抜ける方法は、書きません");
+  });
+  it("結果発表は12月2日（水）12:00。文例に、URL・店名・「ミスヘブン」を入れていない", () => {
+    expect(a).toContain("12月2日（水）12:00");
+    expect(a).not.toContain("12月3日");
+    const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
+    expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
+  });
+  it("チェックリストと文例は、通信せず、端末の中だけで動く", () => {
+    for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+  });
+});
+

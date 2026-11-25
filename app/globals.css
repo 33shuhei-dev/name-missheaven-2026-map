@@ -2824,3 +2824,34 @@ input::placeholder { color:#a99aaf; }
 .game-tag span { display: inline-block; padding: 1px 12px; border-radius: 999px; background: #f4c66a; color: #3a2400; font-size: .8rem; font-weight: 800; }
 
 .mv__tools { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
+
+/* 特集5：時間軸・文例・チェックリスト */
+.timeline { list-style: none; margin: 8px 0; padding: 0; border-left: 3px solid var(--accent); }
+.timeline li { position: relative; padding: 4px 0 14px 16px; }
+.timeline li::before { content: ""; position: absolute; left: -9px; top: 9px; width: 13px; height: 13px; border-radius: 50%; background: var(--accent); }
+.timeline b { display: block; }
+.timeline span { display: block; font-size: .92rem; }
+.timeline em { display: block; margin-top: 2px; font-style: normal; font-size: .85rem; color: var(--accent); font-weight: 700; }
+.copyblock { margin: 12px 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--surface); }
+.copyblock__head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 12px; background: var(--navy-weak); }
+.copyblock__head button { min-height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: var(--gradient); color: #fff; font-weight: 800; cursor: pointer; }
+.copyblock__text { margin: 0; padding: 12px; white-space: pre-wrap; word-break: break-word; font: inherit; font-size: .92rem; line-height: 1.7; user-select: all; }
+.copyblock__note { margin: 0; padding: 0 12px 10px; font-size: .8rem; color: var(--muted); }
+.prep ul { list-style: none; margin: 8px 0; padding: 0; }
+.prep li { margin: 0 0 8px; }
+.prep label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); cursor: pointer; min-height: var(--tap); }
+.prep input { width: 22px; height: 22px; margin-top: 2px; flex: none; accent-color: var(--accent); }
+.prep small { display: block; color: var(--muted); font-size: .8rem; }
+.prep__count { font-weight: 800; margin: 6px 0; }
+.prep__note { font-size: .78rem; color: var(--muted); }
+
+/* 運営者より（広告・案内であることを明記する小さな枠） */
+.operator-note { margin: 18px 0 4px; padding: 12px 14px; border: 1px dashed var(--accent); border-radius: 12px; background: var(--accent-weak); font-size: .9rem; }
+.operator-note strong { display: inline-block; margin-bottom: 2px; color: var(--accent); }
+.operator-note p { margin: 4px 0 0; }
+
+/* 特集5：締めのことば・運営者より（小さく） */
+.letter { margin: 6px 0; padding: 14px 16px; border-left: 4px solid var(--accent); background: var(--accent-weak); border-radius: 0 12px 12px 0; }
+.letter p { margin: 0 0 .7em; }
+.letter p:last-child { margin-bottom: 0; }
+.operator-note--small { font-size: .82rem; }
