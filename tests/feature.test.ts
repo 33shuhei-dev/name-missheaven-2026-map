@@ -332,3 +332,14 @@ describe("特集1：スマホで数字の途中で折り返さない", () => {
   });
 });
 
+describe("特集5：しんどかった声の一覧（うれしかった声と並べる）", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("しんどかった声が、8つの傾向で独立した節にあり、相互投票・応援する側の負担を含む。個別の投稿・URLは載せない", () => {
+    const sec = a.slice(a.indexOf('id="tsurai"'), a.indexOf('id="ureshii"'));
+    for (const s of ["しんどかった声", "相互投票をめぐる摩擦", "応援する側の負担", "凍結・一時停止への警戒", "燃え尽きへの注意", "限界の声"]) expect(sec).toContain(s);
+    expect((sec.match(/<li>/g) ?? []).length).toBe(8);
+    expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+    expect(a.indexOf('id="tsurai"')).toBeLessThan(a.indexOf('id="ureshii"'));
+  });
+});
+
