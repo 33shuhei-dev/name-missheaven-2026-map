@@ -9,7 +9,10 @@ export const metadata: Metadata = { title: "特集1：票は分散する。7,634
 
 type Row = readonly string[];
 
+const NUMERIC = /^[\d,.\s%約人票万倍位脚※・/~〜\-（）()]+$/;
+
 function Table({ head, rows }: { head: Row; rows: readonly Row[] }) {
+  // 数字だけのセルは、スマホで数字の途中で折り返さない（文章のセルは、そのまま折り返す）
   return (
     <div className="table-wrap">
       <table className="feature-table">
@@ -24,7 +27,7 @@ function Table({ head, rows }: { head: Row; rows: readonly Row[] }) {
           {rows.map((r) => (
             <tr key={r.join("|")}>
               {r.map((c, i) => (
-                <td key={i}>{c}</td>
+                <td key={i} className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}>{c}</td>
               ))}
             </tr>
           ))}

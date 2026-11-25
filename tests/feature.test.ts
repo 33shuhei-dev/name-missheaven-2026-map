@@ -268,8 +268,82 @@ describe("特集4：神15への狭き門", () => {
     expect(Math.round(per("九州南・沖縄"))).toBe(276);
     expect(((1 / per("南関東")) * 100).toFixed(2)).toBe("0.14");
     expect(((1 / per("九州南・沖縄")) * 100).toFixed(2)).toBe("0.36");
-    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「総合票」と明記した文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
+    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「部門を問わない」とまで書いた文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
     expect(YOSEN_BLOCKS.filter((b) => b.slots === 1).length).toBe(6);
   });
 });
 
+describe("特集5：楽しかったなら、勝ち。", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("楽しい気持ちも同じ重さで入れ、気持ちの地図・しんどかった声・うれしかった声・もらったもの・理由・言いかえ・ふりかえり・現実・お守り・締めがある", () => {
+    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "しんどかった声", "うれしかった声", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お守り①", "お守り②", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("楽しかったなら、勝ち。");
+  });
+  it("「ひとりでは、上位は難しい」の節に、力の図・ひとりとみんなの比較・強い一文・役割分担の例がある", () => {
+    const sec = a.slice(a.indexOf('id="genjitsu"'), a.indexOf('id="freeze"'));
+    for (const s of ["順位は、あなたひとりの力の点数では、ありません。", "数字に見える力", "ひとりで、全部", "みんなで、分ける", "「努力が足りなかった」ということには、", "役割分担の例", "あくまで「例」です"]) expect(sec).toContain(s);
+    expect(sec).toContain("お店のスタッフ");
+  });
+  it("文字だらけを避けるため、各節に要点（keypoint）があり、長い補足は、たたんである（details）", () => {
+    expect((a.match(/className="keypoint/g) ?? []).length).toBeGreaterThanOrEqual(8);
+    expect((a.match(/<details className="fold">/g) ?? []).length).toBeGreaterThanOrEqual(3);
+    expect(a).toContain("気持ちの曲線");
+    expect(a).toContain("イメージの図です。数値ではありません");
+  });
+  it("しんどかった声は8つ、うれしかった声は4つ。個別の投稿・URLは載せない", () => {
+    const tsurai = a.slice(a.indexOf("const TSURAI"), a.indexOf("] as const;", a.indexOf("const TSURAI")));
+    const ureshii = a.slice(a.indexOf("const URESHII"), a.indexOf("] as const;", a.indexOf("const URESHII")));
+    expect((tsurai.match(/\{ t: "/g) ?? []).length).toBe(8);
+    expect((ureshii.match(/\{ t: "/g) ?? []).length).toBe(4);
+    for (const s of ["相互投票の摩擦", "応援する側の負担", "凍結への警戒", "燃え尽きへの注意", "限界の声"]) expect(tsurai).toContain(s);
+    const voices = a.slice(a.indexOf('id="map"'), a.indexOf('id="moratta"'));
+    expect(voices).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+    expect(voices).toContain("個別の投稿は、本人を守るために、載せません");
+  });
+  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
+    expect(a).not.toContain("/feature/ouen");
+    expect(a).not.toContain("ミスヘブン");
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
+  });
+  it("運営者の案内は「運営者より」と明記し、ゆず係へリンクする。規約をすり抜ける方法は書かない", () => {
+    expect(a).toContain("<strong>運営者より</strong>");
+    expect(a).toContain("ご本人の了承があるものに限ります");
+    expect(a).toContain("https://yuzu-gakari.vercel.app/");
+    expect(a).toContain("ルールをすり抜ける方法は、書きません");
+  });
+  it("結果発表は12月2日（水）12:00。コピーして使う文例と、相談窓口（ホットライン）の案内は載せない", () => {
+    expect(a).toContain("12月2日（水）12:00");
+    expect(a).not.toContain("12月3日");
+    expect(a).not.toMatch(/CopyBlock|TEMPLATES|投稿の文例|ホットライン/);
+    expect(readFileSync("components/SelfCheck.tsx", "utf8")).not.toContain("ホットライン");
+  });
+  it("ふりかえりチェックは、うれしかったこと・しんどかったことの両方を持ち、診断ではないと明記し、通信も保存もしない", () => {
+    const sc = readFileSync("components/SelfCheck.tsx", "utf8");
+    expect(sc).toContain("うれしかったこと");
+    expect(sc).toContain("しんどかったこと");
+    expect(sc).toContain("診断ではありません");
+    expect(sc).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon|localStorage/);
+    expect(readFileSync("components/PrepChecklist.tsx", "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+  });
+});
+
+describe("特集4：日程の訂正とスマホ対応", () => {
+  const b = readFileSync("app/feature/bumon/page.tsx", "utf8");
+  it("結果発表は12月2日（水）12:00。12月3日の記述は残っていない", () => {
+    expect(b).toContain("12月2日（水）12:00");
+    expect(b).not.toContain("12月3日");
+  });
+  it("ブロック×部門は、スマホの幅に収まる色付きの表で、数字の表は途中で折り返さない", () => {
+    expect(b).toContain("<HeatTable />");
+    expect(b).toContain("feature-table--dense");
+    expect(readFileSync("app/globals.css", "utf8")).toContain(".heat__row");
+  });
+});
+
+describe("特集1：スマホで数字の途中で折り返さない", () => {
+  it("数字だけのセルは、折り返さない設定になっている", () => {
+    const src = readFileSync("app/feature/page.tsx", "utf8");
+    expect(src).toContain("const NUMERIC =");
+    expect(src).toContain('className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}');
+  });
+});

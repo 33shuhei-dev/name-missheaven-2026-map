@@ -6,9 +6,10 @@ export const FEATURES = [
   { no: 2, href: "/feature/history", title: "総選挙の歩みと、2026年の戦略", lead: "歴代の結果とルールの変化から、本選の戦い方を考える" },
   { no: 3, href: "/feature/yosen", title: "予選を突破したのは何人？", lead: "都道府県別の本選進出率を読み解く" },
   { no: 4, href: "/feature/bumon", title: "本選は、49の小さな選挙だった", lead: "部門ごとの人数から読む。順位アイコンと、神15への狭き門" },
+  { no: 5, href: "/feature/shuppan", title: "楽しかったなら、勝ち。", lead: "出場者のみなさんへ：うれしかったことも、しんどかったことも、ぜんぶ" },
 ] as const;
 
-export function FeatureTabs({ current }: { current: 1 | 2 | 3 | 4 }) {
+export function FeatureTabs({ current }: { current: 1 | 2 | 3 | 4 | 5 }) {
   return (
     <nav className="feature-tabs" aria-label="特集の一覧">
       {FEATURES.map((f) => (

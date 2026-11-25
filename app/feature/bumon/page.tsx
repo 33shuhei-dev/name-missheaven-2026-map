@@ -9,10 +9,10 @@ export const metadata: Metadata = { title: "特集4：本選は、49の小さな
 
 type Row = readonly string[];
 
-function Table({ head, rows }: { head: Row; rows: readonly Row[] }) {
+function Table({ head, rows, dense = false }: { head: Row; rows: readonly Row[]; dense?: boolean }) {
   return (
     <div className="table-wrap">
-      <table className="feature-table">
+      <table className={dense ? "feature-table feature-table--dense" : "feature-table"}>
         <thead>
           <tr>
             {head.map((h) => (
@@ -35,6 +35,55 @@ function Table({ head, rows }: { head: Row; rows: readonly Row[] }) {
 }
 
 const n = (v: number) => v.toLocaleString("ja-JP");
+
+/** 人数の色（対数）。多いほど金、少ないほど濃い紫。スマホでも数字が読めるよう、セルに色を付ける */
+function heat(v: number): { bg: string; fg: string } {
+  const lo = Math.log(14);
+  const hi = Math.log(620);
+  const t = Math.min(1, Math.max(0, (Math.log(v) - lo) / (hi - lo)));
+  const a = [58, 22, 92];
+  const b = [214, 59, 143];
+  const c = [244, 198, 106];
+  const mix = (x: number[], y: number[], u: number) => x.map((q, i) => Math.round(q + (y[i] - q) * u));
+  const rgb = t < 0.55 ? mix(a, b, t / 0.55) : mix(b, c, (t - 0.55) / 0.45);
+  return { bg: `rgb(${rgb.join(",")})`, fg: t > 0.72 ? "#3a2400" : "#fff" };
+}
+
+const SHORT_DEPTS = ["デリヘル", "ヘルス", "ソープ", "エステ", "人妻"] as const;
+
+function HeatTable() {
+  return (
+    <div className="heat" role="table" aria-label="ブロック別・部門別の本選の人数">
+      <div className="heat__row heat__row--head" role="row">
+        <span role="columnheader" />
+        {SHORT_DEPTS.map((d) => (
+          <span key={d} role="columnheader">{d}</span>
+        ))}
+        <span role="columnheader">計</span>
+      </div>
+      {HONSEN.map((b) => (
+        <div className="heat__row" role="row" key={b.block}>
+          <span className="heat__name" role="rowheader">{b.block}</span>
+          {b.counts.map((c, i) =>
+            c === 0 ? (
+              <span key={i} className="heat__cell heat__cell--none" role="cell">なし</span>
+            ) : (
+              <span key={i} className="heat__cell" role="cell" style={{ background: heat(c).bg, color: heat(c).fg }}>
+                {c}
+                {b.block === "九州北" && i === 0 ? <sup>※2</sup> : null}
+              </span>
+            ),
+          )}
+          <span className="heat__total" role="cell">
+            {n(honsenBlockTotal(b.block))}
+            {b.block === "東京" ? <sup>※1</sup> : null}
+          </span>
+        </div>
+      ))}
+      <p className="heat__legend">色が金に近いほど、人数が多い（紫が濃いほど少ない）。「ヘルス」は、ヘルス・ホテヘル部門です。</p>
+    </div>
+  );
+}
 const pct = (a: number, b: number, d = 1) => ((a / b) * 100).toFixed(d);
 const NAVI = "https://link-f.biz/archives/25125";
 const SRC_URL = "https://x.com/hiropyon_0405";
@@ -84,19 +133,13 @@ export default function BumonPage() {
         <p>
           <a href={SRC_URL} target="_blank" rel="noopener noreferrer nofollow ugc">@hiropyon_0405</a> さんの集計（2026年11月24日 12:06の投稿。公式の発表ではありません）で、ブロック本選の「各ブロックの部門者数」が出ました。総数は{n(HONSEN_TOTAL)}人です。
         </p>
-        <Table
-          head={["ブロック", ...HONSEN_DEPTS, "計"]}
-          rows={HONSEN.map((b) => [
-            b.block,
-            ...b.counts.map((c, i) => (b.block === "九州北" && i === 0 ? `${n(c)}※2` : b.block === "北陸・甲信越" && i === 1 ? "部門なし" : n(c))),
-            b.block === "東京" ? `${n(honsenBlockTotal(b.block))}※1` : n(honsenBlockTotal(b.block)),
-          ])}
-        />
+        <HeatTable />
         <p className="hint">
           ※1 東京の計は、投稿では「1951人」でしたが、部門の合計は1,591人です。※2 九州北のデリヘルは、投稿では「672人」（九州北の計と同じ数字）でしたが、計から他の4部門を引くと175人です。この2か所を直すと、10ブロックの合計が、投稿の総数（{n(HONSEN_TOTAL)}人）とぴったり一致します。ただし、元の投稿の訂正は確認していないため、補正は私たちの推定です。
         </p>
         <Table
-          head={["部門", "全国の人数", "割合"]}
+          dense
+          head={["部門", "人数", "割合"]}
           rows={HONSEN_DEPTS.map((d, i) => [d, `${n(dept[i])}人`, `${pct(dept[i], HONSEN_TOTAL)}%`])}
         />
         <p>デリヘル（{pct(dept[0], HONSEN_TOTAL)}%）とソープ（{pct(dept[2], HONSEN_TOTAL)}%）で、約3分の2です。</p>
@@ -113,11 +156,10 @@ export default function BumonPage() {
           <li>100人以上の選挙は29、200人以上は{bySize.filter((c) => c.n >= 200).length}です。</li>
           <li>大きい10の選挙だけで、全体の{top10Share.toFixed(1)}%を占めます。</li>
         </ul>
-        <h3>大きい選挙・小さい選挙</h3>
-        <Table
-          head={["大きい選挙（上位6）", "人数", "小さい選挙（下位6）", "人数"]}
-          rows={narrow.map((c, i) => [`${c.block}・${c.dept}`, `${n(c.n)}人`, `${wide[i].block}・${wide[i].dept}`, `${n(wide[i].n)}人`])}
-        />
+        <h3>大きい選挙（上位6）</h3>
+        <Table dense head={["選挙", "人数"]} rows={narrow.map((c) => [`${c.block}・${c.dept}`, `${n(c.n)}人`])} />
+        <h3>小さい選挙（下位6）</h3>
+        <Table dense head={["選挙", "人数"]} rows={wide.map((c) => [`${c.block}・${c.dept}`, `${n(c.n)}人`])} />
       </section>
 
       <section className="section card prose">
@@ -126,14 +168,15 @@ export default function BumonPage() {
           順位アイコンの対象は、各部門の10位以内です。1つの選挙の人数が{ICON_RANK}人以上なら、枠は{ICON_RANK}人です。つまり、<strong>「10 ÷ 人数」が、アイコンの圏内に入る割合の目安</strong>になります。49の選挙の枠を足すと、{n(iconTotal)}人で、全体の{pct(iconTotal, HONSEN_TOTAL)}%です。
         </p>
         <Table
-          head={["部門", "選挙の数", "人数", "アイコンの枠", "圏内の割合", "言いかえると"]}
-          rows={deptRows.map((r) => [r.d, `${r.blocks}`, `${n(r.total)}人`, `${r.slots}人`, `${r.rate.toFixed(1)}%`, `約${(100 / r.rate).toFixed(0)}人に1人`])}
+          dense
+          head={["部門", "人数", "枠", "圏内"]}
+          rows={deptRows.map((r) => [r.d, `${n(r.total)}人`, `${r.slots}人`, `${r.rate.toFixed(1)}%`])}
         />
-        <h3>いちばん狭い門、いちばん広い門</h3>
-        <Table
-          head={["狭き門（10位以内の割合）", "広き門（10位以内の割合）"]}
-          rows={narrow.map((c, i) => [`${c.block}・${c.dept}（${n(c.n)}人）：${pct(iconSlots(c.n), c.n)}%`, `${wide[i].block}・${wide[i].dept}（${wide[i].n}人）：${Math.round((iconSlots(wide[i].n) / wide[i].n) * 100)}%`])}
-        />
+        <p className="hint">「枠」は、その部門のアイコンの人数（選挙の数×10人。ヘルス・ホテヘルは選挙が9つ）。「圏内」は、枠÷人数です。言いかえると、デリヘル・ソープは約25人に1人、人妻は約13人に1人、ヘルス・ホテヘルは約9人に1人、エステは約5〜6人に1人です。</p>
+        <h3>狭き門（圏内に入る割合が低い）</h3>
+        <Table dense head={["選挙", "人数", "10位以内"]} rows={narrow.map((c) => [`${c.block}・${c.dept}`, `${n(c.n)}人`, `${pct(iconSlots(c.n), c.n)}%`])} />
+        <h3>広き門（圏内に入る割合が高い）</h3>
+        <Table dense head={["選挙", "人数", "10位以内"]} rows={wide.map((c) => [`${c.block}・${c.dept}`, `${n(c.n)}人`, `${Math.round((iconSlots(c.n) / c.n) * 100)}%`])} />
         <ul>
           <li>エステは、全国の約5〜6人に1人が圏内です。デリヘル・ソープは、約25人に1人です。</li>
           <li>小さい部門（北関東・九州南・沖縄のヘルス・ホテヘル、エステなど）は、半分以上が圏内に入る計算です。</li>
@@ -144,35 +187,38 @@ export default function BumonPage() {
       <section className="section card prose" id="kami15">
         <h2>神15への狭き門</h2>
         <p>
-          神15は、ブロックごとの「総合」の票（部門を混ぜた票）で決まる、と私たちは認識しています。ヘブンnaviの記事には、神15が「ブロックごとに上位N位まで」と書かれていて、部門ごとの枠は書かれていません（「総合票」と明記した文は、確認できていません）。そのため、ここでは、<strong>部門に関係なく、ブロックの全員で椅子を争う</strong>ものとして、数えます。
+          神15は、ブロックごとの「総合」の票（部門を混ぜた票）で決まる、と私たちは認識しています。ヘブンnaviの記事では、称号の表に「神15＝ブロック本選上位入賞者15名」とあり、神15の人数は「ブロックごとに上位N位まで」と書かれていて、部門ごとの枠はありません。副賞の案内にも、「ブロック総合『1位〜10位』」とあります。ただし、「部門を問わない」とまで書いた文は、確認できていません。そのため、ここでは、<strong>部門に関係なく、ブロックの全員で椅子を争う</strong>ものとして、数えます。
         </p>
         <h3>3つの門</h3>
         <Table
-          head={["門", "人数", "全体に対する割合"]}
+          dense
+          head={["門", "人数", "割合", "目安"]}
           rows={[
-            ["本選の名簿", `${n(HONSEN_TOTAL)}人`, "100%"],
-            [`順位アイコン（各部門${ICON_RANK}位以内）`, `${n(iconTotal)}人`, `${pct(iconTotal, HONSEN_TOTAL)}%（約${Math.round(HONSEN_TOTAL / iconTotal)}人に1人）`],
-            ["神15（ブロックの総合票）", "15人", `${pct(15, HONSEN_TOTAL, 2)}%（約${Math.round(HONSEN_TOTAL / 15)}人に1人）`],
+            ["本選の名簿", `${n(HONSEN_TOTAL)}人`, "100%", "―"],
+            [`アイコン圏（各部門${ICON_RANK}位）`, `${n(iconTotal)}人`, `${pct(iconTotal, HONSEN_TOTAL)}%`, `約${Math.round(HONSEN_TOTAL / iconTotal)}人に1人`],
+            ["神15（総合票）", "15人", `${pct(15, HONSEN_TOTAL, 2)}%`, `約${Math.round(HONSEN_TOTAL / 15)}人に1人`],
           ]}
         />
         <h3>ブロックごとの、椅子1脚あたり</h3>
         <Table
-          head={["ブロック", "名簿", "椅子", "1脚あたり", "椅子に座れる割合"]}
-          rows={chairs.map((c) => [c.block, `${n(c.total)}人`, `${c.sl}脚`, `約${n(Math.round(c.per))}人`, `${c.rate.toFixed(2)}%`])}
+          dense
+          head={["ブロック", "名簿", "椅子", "1脚", "割合"]}
+          rows={chairs.map((c) => [c.block, n(c.total), `${c.sl}`, n(Math.round(c.per)), `${c.rate.toFixed(2)}%`])}
         />
         <ul>
           <li>いちばん狭いのは、南関東（730人に1脚、0.14%）、九州北（672人）、北関東（588人）です。いちばん広いのは、九州南・沖縄（276人に1脚、0.36%）です。</li>
           <li>順位アイコンの「広き門」は、神15には<strong>通じません</strong>。たとえば、北関東のエステは15人で、10位以内に入りやすい部門ですが、神15は、北関東の588人全員で、1つの椅子を争います。神15にとっては、部門の中の順位より、ブロック全体の総合順位が全てです。</li>
           <li>椅子が1脚のブロックは6つで、総合1位だけが神15に入ります。</li>
         </ul>
-        <p className="hint">「椅子に座れる割合」は、名簿の人数だけから出した目安です。票を入れる人の数がブロックごとに違うので、これだけで、取りやすさは決められません。また、名簿が同じでも、票は一部の人気の人に集まるので、実際の差は、人数の割合よりずっと大きくなります。</p>
+        <p className="hint">表の単位は、名簿は人、椅子は脚、「1脚」は椅子1脚あたりの名簿の人数、「割合」は椅子に座れる割合（椅子÷名簿）です。この割合は、名簿の人数だけから出した目安です。票を入れる人の数がブロックごとに違うので、これだけで、取りやすさは決められません。また、名簿が同じでも、票は一部の人気の人に集まるので、実際の差は、人数の割合よりずっと大きくなります。</p>
       </section>
 
       <section className="section card prose">
         <h2>ブロックごとの「色」</h2>
         <p>部門の構成は、ブロックごとに大きく違います。最も多い部門の割合です。</p>
         <Table
-          head={["ブロック", "最も多い部門", "割合", "部門の数"]}
+          dense
+          head={["ブロック", "最多の部門", "割合", "部門数"]}
           rows={HONSEN.map((b) => {
             const t = honsenBlockTotal(b.block);
             const m = Math.max(...b.counts);
@@ -195,7 +241,7 @@ export default function BumonPage() {
           rows={[
             ["本選の名簿の構成（どの部門・どのブロックが大きいか）", "部門ごとの票の量、投票した人の数"],
             ["順位アイコンの圏内に入る割合の目安（10÷人数）", "10位に入るために必要な票の数"],
-            ["ブロックごとの部門の「色」の違い", "神15が総合票で決まることの、公式の文での確認（私たちは、総合票と認識している）"],
+            ["ブロックごとの部門の「色」の違い", "神15が部門を問わないと明記した文（記事の表現からは、ブロックの総合順位で決まると読める）"],
             ["小さな選挙の大きさの差（14〜620人）", "人数の少ない部門が、本当に楽なのかどうか"],
           ]}
         />
@@ -203,7 +249,7 @@ export default function BumonPage() {
 
       <section className="section card prose" id="check">
         <h2>答え合わせ：結果が出たら、ここを見る</h2>
-        <p>ブロック本選の結果は、過去2年とも、12月3日の12:00に発表されました（2026年の日時は、まだ確認できていません）。神15・グランプリの発表は、12月19日（土）21:00の動画配信です。</p>
+        <p>ブロック本選の結果は、12月2日（水）12:00から発表されます（ヘブンnaviの日程表）。「私の憧れの人気姫」の順位発表も、同じ日です。神15・グランプリの発表は、12月19日（土）21:00からの動画配信です。</p>
         <Table
           head={["見るところ", "分かること"]}
           rows={[
@@ -222,9 +268,9 @@ export default function BumonPage() {
         <ul>
           <li>本選の部門者数：<a href={SRC_URL} target="_blank" rel="noopener noreferrer nofollow ugc">@hiropyon_0405</a> さんの集計（2026年11月24日）。公式の発表ではありません。東京の計と九州北のデリヘルは、私たちが補正しました（上の注記）。</li>
           <li>部門・順位アイコン・神15の枠：<a href={NAVI} target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnaviの記事</a>（2026年11月10日）。媒体の記事で、公式の発表とは言い切れません。</li>
-          <li>神15が、ブロックの総合票（部門を混ぜた票）で決まるという点は、私たちの認識で、公式の文では確認できていません。</li>
+          <li>神15が、ブロックの総合票（部門を混ぜた票）で決まるという点は、記事の表現（「神15＝ブロック本選上位入賞者」「ブロック総合1位〜10位」）にもとづく私たちの認識で、「部門を問わない」と明記した文は確認できていません。</li>
           <li>順位アイコンを「ブロック×部門ごとの10位以内」と数えたのは、私たちの解釈です（記事には「各部門10位以内」とだけ書かれています）。同順位の扱いなどで、実際と違う可能性があります。</li>
-          <li>ブロック本選結果の日程：過去の公式FAQの告知（2024年・2025年はどちらも12月3日12:00）。2026年は未確認です。</li>
+          <li>結果発表の日程：<a href={NAVI} target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnaviの記事</a>の日程表（12月2日（水）12:00〜ブロック本選の結果発表、12月19日（土）21:00〜グランプリ発表）。</li>
           <li>この特集は、有志による非公式の考察で、公式の見解や、結果の予測ではありません。</li>
         </ul>
         <p>
