@@ -268,16 +268,16 @@ describe("特集4：神15への狭き門", () => {
     expect(Math.round(per("九州南・沖縄"))).toBe(276);
     expect(((1 / per("南関東")) * 100).toFixed(2)).toBe("0.14");
     expect(((1 / per("九州南・沖縄")) * 100).toFixed(2)).toBe("0.36");
-    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「総合票」と明記した文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
+    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「部門を問わない」とまで書いた文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
     expect(YOSEN_BLOCKS.filter((b) => b.slots === 1).length).toBe(6);
   });
 });
 
-describe("特集5：その「ごめんなさい」、いらなかったよ。", () => {
+describe("特集5：楽しかったなら、勝ち。", () => {
   const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
-  it("フック・気持ちの地図・4つの正体・言い換え・セルフチェック・現実・お守り・締めがある", () => {
-    for (const s of ["こんな夜、ありませんでしたか", "気持ちの地図", "4つの正体", "その言葉、言い換えてみよう", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "お守り③", "どんな結果でも、楽しかったなら、勝ち", "その「ごめんなさい」は、いらなかったよ", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
-    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("その「ごめんなさい」、いらなかったよ。");
+  it("楽しかった気持ちも同じ重さで入れ、気持ちの地図・もらったもの・4つの理由・言いかえ・ふりかえり・現実・お守り・締めがある", () => {
+    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "お守り③", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("楽しかったなら、勝ち。");
   });
   it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
     expect(a).not.toContain("/feature/ouen");
@@ -287,8 +287,9 @@ describe("特集5：その「ごめんなさい」、いらなかったよ。", 
   it("運営者の案内は「運営者より」と明記。気持ちの地図は、個別の投稿・URLを載せない。規約をすり抜ける方法は書かない", () => {
     expect(a).toContain("<strong>運営者より</strong>");
     expect(a).toContain("ご本人の了承があるものに限ります");
-    const sec = a.slice(a.indexOf('id="map"'), a.indexOf('id="shotai"'));
+    const sec = a.slice(a.indexOf('id="map"'), a.indexOf('id="moratta"'));
     expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
+    expect(sec).toContain("「楽しかった」「やってよかった」という声は、十分に拾えていない可能性があります");
     expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(a).toContain("ルールをすり抜ける方法は、書きません");
   });
@@ -298,11 +299,34 @@ describe("特集5：その「ごめんなさい」、いらなかったよ。", 
     const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
     expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
   });
-  it("セルフチェックは診断ではないと明記し、通信も保存もしない。チェックリストと文例も通信しない", () => {
+  it("ふりかえりチェックは、うれしかったこと・しんどかったことの両方を持ち、診断ではないと明記し、通信も保存もしない", () => {
     const sc = readFileSync("components/SelfCheck.tsx", "utf8");
+    expect(sc).toContain("うれしかったこと");
+    expect(sc).toContain("しんどかったこと");
     expect(sc).toContain("診断ではありません");
     expect(sc).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon|localStorage/);
     for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+  });
+});
+
+describe("特集4：日程の訂正とスマホ対応", () => {
+  const b = readFileSync("app/feature/bumon/page.tsx", "utf8");
+  it("結果発表は12月2日（水）12:00。12月3日の記述は残っていない", () => {
+    expect(b).toContain("12月2日（水）12:00");
+    expect(b).not.toContain("12月3日");
+  });
+  it("ブロック×部門は、スマホの幅に収まる色付きの表で、数字の表は途中で折り返さない", () => {
+    expect(b).toContain("<HeatTable />");
+    expect(b).toContain("feature-table--dense");
+    expect(readFileSync("app/globals.css", "utf8")).toContain(".heat__row");
+  });
+});
+
+describe("特集1：スマホで数字の途中で折り返さない", () => {
+  it("数字だけのセルは、折り返さない設定になっている", () => {
+    const src = readFileSync("app/feature/page.tsx", "utf8");
+    expect(src).toContain("const NUMERIC =");
+    expect(src).toContain('className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}');
   });
 });
 
