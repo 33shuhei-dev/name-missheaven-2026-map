@@ -268,7 +268,7 @@ describe("特集4：神15への狭き門", () => {
     expect(Math.round(per("九州南・沖縄"))).toBe(276);
     expect(((1 / per("南関東")) * 100).toFixed(2)).toBe("0.14");
     expect(((1 / per("九州南・沖縄")) * 100).toFixed(2)).toBe("0.36");
-    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「総合票」と明記した文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
+    for (const s of ["約506人に1人", "730人に1脚", "276人に1脚", "神15への狭き門", "「部門を問わない」とまで書いた文は、確認できていません", "椅子が1脚のブロックは6つ"]) expect(src).toContain(s);
     expect(YOSEN_BLOCKS.filter((b) => b.slots === 1).length).toBe(6);
   });
 });
@@ -316,6 +316,26 @@ describe("特集5：作り込み（時間軸・数字・文例・チェックリ
     expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
     for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
     expect(readFileSync("components/PrepChecklist.tsx", "utf8")).toContain("localStorage");
+  });
+});
+
+describe("特集5：調査の反映（日程の訂正・投稿の傾向・Xの公式ヘルプ）", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("結果発表は12月2日（水）12:00。12月3日の記述は残っていない", () => {
+    expect(a).toContain("12月2日（水）12:00");
+    expect(a).not.toContain("12月3日");
+    expect(readFileSync("app/feature/bumon/page.tsx", "utf8")).toContain("12月2日（水）12:00");
+    expect(readFileSync("app/feature/bumon/page.tsx", "utf8")).not.toContain("12月3日");
+  });
+  it("投稿の傾向は、個別の投稿を載せず、URLも出さない（本人を守る）", () => {
+    const sec = a.slice(a.indexOf('id="trend"'), a.indexOf('id="trend"') + 3500);
+    expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
+    expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+  });
+  it("Xの公式ヘルプは、直接確認できていないことを書き、規約をすり抜ける方法は書かない", () => {
+    expect(a).toContain("直接アクセスできなかったため");
+    expect(a).toContain("ルールをすり抜ける方法は、書きません");
+    expect(a).toContain("help.x.com/ja/rules-and-policies/adult-content");
   });
 });
 
