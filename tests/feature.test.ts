@@ -288,8 +288,10 @@ describe("特集5：楽しかったなら、勝ち。", () => {
     expect(a).toContain("<strong>運営者より</strong>");
     expect(a).toContain("ご本人の了承があるものに限ります");
     const sec = a.slice(a.indexOf('id="map"'), a.indexOf('id="moratta"'));
+    expect(a).toContain("https://yuzu-gakari.vercel.app/");
+    expect(a).toContain("うれしかった声");
     expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
-    expect(sec).toContain("「楽しかった」「やってよかった」という声は、十分に拾えていない可能性があります");
+    expect(sec).toContain("うれしかった・楽しかった声は、次の節で、別に集めた調査から、まとめています");
     expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(a).toContain("ルールをすり抜ける方法は、書きません");
   });
