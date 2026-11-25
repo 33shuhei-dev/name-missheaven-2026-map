@@ -2855,3 +2855,25 @@ input::placeholder { color:#a99aaf; }
 .letter p { margin: 0 0 .7em; }
 .letter p:last-child { margin-bottom: 0; }
 .operator-note--small { font-size: .82rem; }
+
+/* 特集5：フック・言い換え・セルフチェック */
+.hookbox { margin: 6px 0 12px; padding: 14px 16px; border: 2px solid var(--accent); border-radius: 14px; background: var(--accent-weak); }
+.hookbox h2 { margin: 0 0 6px; }
+.hookbox ul { list-style: none; margin: 8px 0; padding: 0; }
+.hookbox li { padding: 6px 0 6px 28px; position: relative; font-weight: 700; }
+.hookbox li::before { content: "☑"; position: absolute; left: 0; top: 5px; color: var(--accent); }
+.hookbox p:last-child { margin-bottom: 0; }
+.swap { width: 100%; border-collapse: separate; border-spacing: 0 8px; }
+.swap td { vertical-align: top; padding: 10px 12px; font-size: .92rem; }
+.swap td:first-child { background: var(--unverified-bg); border-radius: 10px 0 0 10px; color: var(--muted); width: 46%; }
+.swap td:last-child { background: var(--confirmed-bg); border-radius: 0 10px 10px 0; color: var(--confirmed); font-weight: 700; }
+.swap__arrow { display: none; }
+.selfcheck ul { list-style: none; margin: 8px 0; padding: 0; }
+.selfcheck li { margin: 0 0 8px; }
+.selfcheck label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); cursor: pointer; min-height: var(--tap); }
+.selfcheck input { width: 22px; height: 22px; margin-top: 2px; flex: none; accent-color: var(--accent); }
+.selfcheck__count { font-weight: 800; margin: 8px 0 4px; }
+.selfcheck__result { padding: 12px 14px; border-radius: 12px; background: var(--navy-weak); }
+.selfcheck__result p { margin: 4px 0 0; }
+.selfcheck__note { font-size: .78rem; color: var(--muted); }
+.mapmark { display: inline-block; margin-left: 6px; padding: 0 8px; border-radius: 10px; background: var(--accent); color: #fff; font-size: .72rem; font-weight: 800; vertical-align: middle; }

@@ -273,20 +273,21 @@ describe("特集4：神15への狭き門", () => {
   });
 });
 
-describe("特集5：出場者のみなさんへ", () => {
+describe("特集5：その「ごめんなさい」、いらなかったよ。", () => {
   const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
-  it("苦労・現実（ひとりでは難しい）・仕組みづくり・締めのことばがある", () => {
-    for (const s of ["見えるのに、分からない。7日間の苦労", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "どんな結果でも、楽しかったなら、勝ち", "おつかれさまでした。そして、ありがとう。", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+  it("フック・気持ちの地図・4つの正体・言い換え・セルフチェック・現実・お守り・締めがある", () => {
+    for (const s of ["こんな夜、ありませんでしたか", "気持ちの地図", "4つの正体", "その言葉、言い換えてみよう", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "お守り③", "どんな結果でも、楽しかったなら、勝ち", "その「ごめんなさい」は、いらなかったよ", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("その「ごめんなさい」、いらなかったよ。");
   });
-  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語や、出場者個人の名前（ゆず以外）を使わない", () => {
+  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
     expect(a).not.toContain("/feature/ouen");
     expect(a).not.toContain("ミスヘブン");
     expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
   });
-  it("運営者の案内は「運営者より」と明記し、個別の投稿・URLは載せず、規約をすり抜ける方法は書かない", () => {
+  it("運営者の案内は「運営者より」と明記。気持ちの地図は、個別の投稿・URLを載せない。規約をすり抜ける方法は書かない", () => {
     expect(a).toContain("<strong>運営者より</strong>");
     expect(a).toContain("ご本人の了承があるものに限ります");
-    const sec = a.slice(a.indexOf('id="trend"'), a.indexOf('id="genjitsu"'));
+    const sec = a.slice(a.indexOf('id="map"'), a.indexOf('id="shotai"'));
     expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
     expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(a).toContain("ルールをすり抜ける方法は、書きません");
@@ -297,7 +298,10 @@ describe("特集5：出場者のみなさんへ", () => {
     const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
     expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
   });
-  it("チェックリストと文例は、通信せず、端末の中だけで動く", () => {
+  it("セルフチェックは診断ではないと明記し、通信も保存もしない。チェックリストと文例も通信しない", () => {
+    const sc = readFileSync("components/SelfCheck.tsx", "utf8");
+    expect(sc).toContain("診断ではありません");
+    expect(sc).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon|localStorage/);
     for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
   });
 });
