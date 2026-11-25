@@ -276,7 +276,7 @@ describe("特集4：神15への狭き門", () => {
 describe("特集5：楽しかったなら、勝ち。", () => {
   const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
   it("楽しかった気持ちも同じ重さで入れ、気持ちの地図・もらったもの・4つの理由・言いかえ・ふりかえり・現実・お守り・締めがある", () => {
-    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "お守り③", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
     expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("楽しかったなら、勝ち。");
   });
   it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
@@ -295,11 +295,11 @@ describe("特集5：楽しかったなら、勝ち。", () => {
     expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(a).toContain("ルールをすり抜ける方法は、書きません");
   });
-  it("結果発表は12月2日（水）12:00。文例に、URL・店名・「ミスヘブン」を入れていない", () => {
+  it("結果発表は12月2日（水）12:00。コピーして使う文例と、相談窓口（ホットライン）の案内は載せない", () => {
     expect(a).toContain("12月2日（水）12:00");
     expect(a).not.toContain("12月3日");
-    const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
-    expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
+    expect(a).not.toMatch(/CopyBlock|TEMPLATES|投稿の文例|ホットライン/);
+    expect(readFileSync("components/SelfCheck.tsx", "utf8")).not.toContain("ホットライン");
   });
   it("ふりかえりチェックは、うれしかったこと・しんどかったことの両方を持ち、診断ではないと明記し、通信も保存もしない", () => {
     const sc = readFileSync("components/SelfCheck.tsx", "utf8");
@@ -307,7 +307,7 @@ describe("特集5：楽しかったなら、勝ち。", () => {
     expect(sc).toContain("しんどかったこと");
     expect(sc).toContain("診断ではありません");
     expect(sc).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon|localStorage/);
-    for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+    expect(readFileSync("components/PrepChecklist.tsx", "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
   });
 });
 

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
-import { CopyBlock } from "@/components/CopyBlock";
 import { PrepChecklist, type PrepItem } from "@/components/PrepChecklist";
 import { SelfCheck } from "@/components/SelfCheck";
 
@@ -23,29 +22,6 @@ const PREP: readonly PrepItem[] = [
   { id: "p7", label: "発信を軽くする日を決めた", hint: "7日間の中に、短い投稿だけの日を入れる" },
   { id: "p8", label: "話せる相手を1人決めた", hint: "数字の悩みを、1人で抱えないために" },
   { id: "p9", label: "結果の発表の日の予定を、軽くした", hint: "信頼できる人と過ごせるように" },
-] as const;
-
-const TEMPLATES = [
-  {
-    title: "初日のお願い",
-    text: "いよいよ本選が始まりました。\nいつも応援ありがとうございます。\n投票は［期間］まで、同じ人へは1日10回までです。\nお時間のあるときに、のぞいてもらえたらうれしいです。\n#総選挙",
-    note: "［　］の中を、自分の言葉に変えて使います。期間と手順は、公式の案内に合わせてください。",
-  },
-  {
-    title: "前日に投票してくれた人へのお礼",
-    text: "昨日、投票してくれたみなさん、ありがとうございました。\n画面を見て、うれしくなりました。\n今日も、無理のない範囲で、よろしくお願いします。",
-    note: "お礼は、数字が動かない日にも、できることのひとつです。",
-  },
-  {
-    title: "発信を軽くする日",
-    text: "今日は、短くひとことだけにします。\nいつもありがとうございます。\nゆっくり、また明日。",
-    note: "休む日を先に決めておくと、「やりすぎたかも」という後悔が減ります。",
-  },
-  {
-    title: "結果が出たあと（順位に関係なく）",
-    text: "結果が出ました。\n応援してくれたみなさん、本当にありがとうございました。\n数字の大きさとは別に、この期間をやりきれたのは、みなさんのおかげです。\nこれからも、よろしくお願いします。",
-    note: "結果が思うようでなかった日の文章は、あとで、自分で書き直して大丈夫です。",
-  },
 ] as const;
 
 export default function ShuppanPage() {
@@ -187,16 +163,8 @@ export default function ShuppanPage() {
         </ul>
       </section>
 
-      <section className="section card prose" id="templates">
-        <h2>お守り②：そのまま使える、投稿の文例</h2>
-        <p>毎日の投稿を、ゼロから考えるのは大変です。コピーして、自分の言葉に変えて使ってください。店名・本名・連絡先は、入れていません。投票のページのURLも、入れていません（最新の案内は、公式で確認してください）。</p>
-        {TEMPLATES.map((t) => (
-          <CopyBlock key={t.title} title={t.title} text={t.text} note={t.note} />
-        ))}
-      </section>
-
       <section className="section card prose" id="prep">
-        <h2>お守り③：備えのチェックリスト</h2>
+        <h2>お守り②：備えのチェックリスト</h2>
         <p>凍結や、数字の波に備えて、前もってできることです。チェックは、あなたの端末の中だけに残ります。</p>
         <PrepChecklist items={PREP} />
       </section>
@@ -210,7 +178,6 @@ export default function ShuppanPage() {
           <li><strong>目標のあとの「虚脱感」に備える。</strong>期間中は、気持ちが張っています。終わったあとに、疲れや、「何のために頑張っていたのか」という虚しさが、あとから来ることがあります。休む、予定を入れる、人と話す、数字から離れる。</li>
           <li><strong>結果と、自分の価値は、別です。</strong>順位は、その期間の、その仕組みの中での数字です。</li>
         </ul>
-        <p className="hint">つらさが続くときは、1人で抱えず、相談できる場所があります。たとえば、「よりそいホットライン」（0120-279-338、24時間・無料。最新の案内は公式サイトで確認してください）です。</p>
       </section>
 
       <section className="section card prose" id="owari">
