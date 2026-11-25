@@ -1,14 +1,16 @@
 import Link from "next/link";
 
-/** 特集の切り替え（特集1〜4）。どの特集ページにも置いて、以前の特集が埋もれないようにする */
+/** 特集の切り替え（特集1〜6）。どの特集ページにも置いて、以前の特集が埋もれないようにする */
 export const FEATURES = [
   { no: 1, href: "/feature", title: "票は分散する。7,634人の本選を、どう戦うか", lead: "200人の人数戦と、神15の票数戦" },
   { no: 2, href: "/feature/history", title: "総選挙の歩みと、2026年の戦略", lead: "歴代の結果とルールの変化から、本選の戦い方を考える" },
   { no: 3, href: "/feature/yosen", title: "予選を突破したのは何人？", lead: "都道府県別の本選進出率を読み解く" },
   { no: 4, href: "/feature/bumon", title: "本選は、49の小さな選挙だった", lead: "部門ごとの人数から読む。順位アイコンと、神15への狭き門" },
+  { no: 5, href: "/feature/shuppan", title: "数字にされる、ということ", lead: "出場者の視点：期待とプレッシャー、凍結への備え" },
+  { no: 6, href: "/feature/ouen", title: "応援する側として", lead: "本人を守る応援のしかたと、やってはいけないこと" },
 ] as const;
 
-export function FeatureTabs({ current }: { current: 1 | 2 | 3 | 4 }) {
+export function FeatureTabs({ current }: { current: 1 | 2 | 3 | 4 | 5 | 6 }) {
   return (
     <nav className="feature-tabs" aria-label="特集の一覧">
       {FEATURES.map((f) => (

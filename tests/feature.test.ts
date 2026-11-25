@@ -273,3 +273,49 @@ describe("特集4：神15への狭き門", () => {
   });
 });
 
+describe("特集5・6：出場者の視点と、応援する側として", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  const b = readFileSync("app/feature/ouen/page.tsx", "utf8");
+  it("特集5は、一般的な考察であること・助言ではないこと・規約をすり抜ける方法は書かないことを明記している", () => {
+    expect(a).toContain("個人の体験ではなく、一般的な考え方です");
+    expect(a).toContain("医療や法律の助言ではありません");
+    expect(a).toContain("ルールをすり抜ける方法は、書きません");
+    expect(a).toContain("<FeatureTabs current={5} />");
+  });
+  it("特集6は、本人の個人情報・写真を載せない線引きと、運営者の案内を「運営者より」と明記している", () => {
+    expect(b).toContain("顔写真、年齢、身体の情報、店名・所在地、私生活は、載せません");
+    expect(b).toContain("本人の了承を、取る");
+    expect(b).toContain('className="operator-note"');
+    expect(b).toContain("<strong>運営者より</strong>");
+    expect(b).toContain("<FeatureTabs current={6} />");
+  });
+  it("2本とも、特集の一覧に載り、「ミスヘブン」の語や、出場者個人の名前を使っていない", () => {
+    const tabs = readFileSync("components/FeatureTabs.tsx", "utf8");
+    expect(tabs).toContain('href: "/feature/shuppan"');
+    expect(tabs).toContain('href: "/feature/ouen"');
+    for (const src of [a, b]) expect(src).not.toContain("ミスヘブン");
+    expect(a).not.toContain("ゆず");
+  });
+});
+
+describe("特集5：作り込み（時間軸・数字・文例・チェックリスト）", () => {
+  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
+  it("時間軸・数字で見る・文例・備えのチェックリストがある", () => {
+    for (const s of ["7日間と、発表の前後", "ほとんどの人は、圏外で終わる仕組み", "そのまま使える、投稿の文例", "備えのチェックリスト", "<PrepChecklist", "<CopyBlock"]) expect(a).toContain(s);
+  });
+  it("数字は特集4と一致する（490人・6.5%、約93.5%、約506人に1人）", async () => {
+    const { honsenCells, iconSlots, HONSEN_TOTAL } = await import("@/lib/honsen");
+    const icons = honsenCells().reduce((s, c) => s + iconSlots(c.n), 0);
+    expect(icons).toBe(490);
+    expect((100 - (icons / HONSEN_TOTAL) * 100).toFixed(1)).toBe("93.5");
+    expect(Math.round(HONSEN_TOTAL / 15)).toBe(506);
+    for (const s of ["490人（6.5%）", "約93.5%", "約506人に1人"]) expect(a).toContain(s);
+  });
+  it("文例に、URL・店名・「ミスヘブン」を入れていない。チェックリストは通信せず端末内だけに保存する", () => {
+    const tpl = a.slice(a.indexOf("const TEMPLATES"), a.indexOf("] as const;", a.indexOf("const TEMPLATES")));
+    expect(tpl).not.toMatch(/https?:|cityheaven|ミスヘブン/);
+    for (const f of ["components/PrepChecklist.tsx", "components/CopyBlock.tsx"]) expect(readFileSync(f, "utf8")).not.toMatch(/fetch\(|XMLHttpRequest|sendBeacon/);
+    expect(readFileSync("components/PrepChecklist.tsx", "utf8")).toContain("localStorage");
+  });
+});
+
