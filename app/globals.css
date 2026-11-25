@@ -2898,3 +2898,60 @@ input::placeholder { color:#a99aaf; }
 .heat__row { grid-template-columns: minmax(70px, 1.5fr) repeat(5, minmax(0, 1fr)) minmax(52px, 1.2fr); }
 .selfcheck fieldset { border: 0; margin: 0 0 8px; padding: 0; }
 .selfcheck legend { font-weight: 800; margin: 6px 0; padding: 0; }
+
+/* 特集5：文字だらけを解消する見せ方（要点・カード・図・たたみ） */
+.keypoint { margin: 4px 0 14px; padding: 12px 14px; border-radius: 12px; background: var(--accent-weak); border-left: 4px solid var(--accent); font-size: 1.08rem; font-weight: 800; line-height: 1.6; }
+.keypoint--big { font-size: 1.3rem; }
+.small { font-size: .82rem; color: var(--muted); }
+.jump { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 14px; }
+.jump a { padding: 6px 12px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface); font-size: .82rem; font-weight: 700; text-decoration: none; color: inherit; min-height: 34px; display: inline-flex; align-items: center; }
+.hookbox__small { font-size: .82rem; color: var(--muted); }
+.vgrid { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 8px 0; }
+@media (min-width: 560px) { .vgrid { grid-template-columns: 1fr 1fr; } }
+.vcard { padding: 12px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.vcard b { display: block; font-size: .98rem; margin-bottom: 2px; }
+.vcard p { margin: 0; font-size: .88rem; line-height: 1.65; color: var(--muted); }
+.vcard--tsurai { border-left: 4px solid #8a78b8; }
+.vcard--ureshii { border-left: 4px solid #e0a63a; }
+.reasons { list-style: none; margin: 8px 0; padding: 0; display: grid; gap: 10px; counter-reset: r; }
+.reasons li { position: relative; padding: 12px 14px 12px 52px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); counter-increment: r; }
+.reasons li::before { content: counter(r); position: absolute; left: 12px; top: 12px; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+.reasons b { display: block; }
+.reasons p { margin: 2px 0 0; font-size: .88rem; color: var(--muted); }
+.curve { margin: 6px 0 10px; }
+.curve svg { width: 100%; height: auto; display: block; }
+.curve__axis { stroke: var(--border); stroke-width: 1; }
+.curve__line { stroke: var(--accent); stroke-width: 3.2; stroke-linecap: round; }
+.curve__dot { fill: var(--accent); stroke: var(--surface); stroke-width: 2; }
+.curve__mood { fill: var(--text); font-size: 11px; font-weight: 800; }
+.curve__stage { fill: var(--muted); font-size: 9.5px; }
+.curve figcaption { font-size: .78rem; color: var(--muted); text-align: center; margin-top: 2px; }
+.fold { margin: 8px 0; border: 1px solid var(--border); border-radius: 12px; padding: 0 14px; background: var(--surface); }
+.fold summary { cursor: pointer; font-weight: 800; padding: 12px 0; min-height: var(--tap); display: flex; align-items: center; }
+.fold[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 8px; }
+.fold > :last-child { margin-bottom: 12px; }
+.sum { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0; }
+.sum__item { padding: 8px 12px; border-radius: 99px; background: var(--navy-weak); font-weight: 800; font-size: .88rem; }
+.sum__item--total { background: var(--accent); color: #fff; }
+.sum__op { font-weight: 900; color: var(--accent); font-size: 1.1rem; }
+.vs { display: grid; grid-template-columns: 1fr; gap: 10px; margin: 8px 0; }
+@media (min-width: 560px) { .vs { grid-template-columns: 1fr 1fr; } }
+.vs__col { padding: 12px 14px; border-radius: 12px; border: 2px solid var(--border); }
+.vs__col b { display: block; font-size: 1.02rem; }
+.vs__col ul { margin: 6px 0; padding-left: 1.2em; }
+.vs__col p { margin: 6px 0 0; font-weight: 800; font-size: .9rem; }
+.vs__col--alone { border-color: #8a78b8; background: rgba(138, 120, 184, .08); }
+.vs__col--team { border-color: #e0a63a; background: rgba(224, 166, 58, .1); }
+.bigquote { margin: 16px 0; padding: 18px 16px; border-radius: 14px; background: var(--gradient); color: #fff; font-size: 1.2rem; font-weight: 900; line-height: 1.7; text-align: center; }
+.roles { margin: 8px 0; font-variant-numeric: tabular-nums; }
+.roles__row { display: grid; grid-template-columns: minmax(96px, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 4px; margin-bottom: 4px; align-items: stretch; }
+.roles__row--head span { font-size: .72rem; font-weight: 800; text-align: center; color: var(--muted); }
+.roles__what { font-size: .8rem; font-weight: 700; display: flex; align-items: center; line-height: 1.35; }
+.roles__c { display: flex; align-items: center; justify-content: center; min-height: 40px; border-radius: 8px; font-weight: 900; font-size: 1.05rem; }
+.roles__c--main { background: var(--accent); color: #fff; }
+.roles__c--help { background: var(--accent-weak); color: var(--accent); }
+.roles__c--none { background: var(--unverified-bg); color: var(--muted); }
+.dates { display: grid; gap: 8px; margin: 6px 0 10px; }
+.dates div { padding: 10px 14px; border-radius: 12px; background: var(--navy-weak); }
+.dates b { display: block; }
+.dates span { font-size: .88rem; color: var(--muted); }

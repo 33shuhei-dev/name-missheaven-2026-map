@@ -275,24 +275,40 @@ describe("特集4：神15への狭き門", () => {
 
 describe("特集5：楽しかったなら、勝ち。", () => {
   const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
-  it("楽しかった気持ちも同じ重さで入れ、気持ちの地図・もらったもの・4つの理由・言いかえ・ふりかえり・現実・お守り・締めがある", () => {
-    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お店や応援者と、がんばりの仕組みをつくる", "お守り①", "お守り②", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
+  it("楽しい気持ちも同じ重さで入れ、気持ちの地図・しんどかった声・うれしかった声・もらったもの・理由・言いかえ・ふりかえり・現実・お守り・締めがある", () => {
+    for (const s of ["7日間、どんな日でしたか", "7日間の、気持ちの地図", "しんどかった声", "うれしかった声", "7日間で、もらったもの", "あなたのせいじゃない、4つの理由", "気持ちが軽くなる、言いかえ", "<SelfCheck />", "ひとりでは、上位は難しい。それは、現実です", "お守り①", "お守り②", "どんな結果でも、楽しかったなら、勝ち", "楽しんでいい。楽しい気持ちは、あなたの力になる", "<FeatureTabs current={5} />"]) expect(a).toContain(s);
     expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain("楽しかったなら、勝ち。");
+  });
+  it("「ひとりでは、上位は難しい」の節に、力の図・ひとりとみんなの比較・強い一文・役割分担の例がある", () => {
+    const sec = a.slice(a.indexOf('id="genjitsu"'), a.indexOf('id="freeze"'));
+    for (const s of ["順位は、あなたひとりの力の点数では、ありません。", "数字に見える力", "ひとりで、全部", "みんなで、分ける", "「努力が足りなかった」ということには、", "役割分担の例", "あくまで「例」です"]) expect(sec).toContain(s);
+    expect(sec).toContain("お店のスタッフ");
+  });
+  it("文字だらけを避けるため、各節に要点（keypoint）があり、長い補足は、たたんである（details）", () => {
+    expect((a.match(/className="keypoint/g) ?? []).length).toBeGreaterThanOrEqual(8);
+    expect((a.match(/<details className="fold">/g) ?? []).length).toBeGreaterThanOrEqual(3);
+    expect(a).toContain("気持ちの曲線");
+    expect(a).toContain("イメージの図です。数値ではありません");
+  });
+  it("しんどかった声は8つ、うれしかった声は4つ。個別の投稿・URLは載せない", () => {
+    const tsurai = a.slice(a.indexOf("const TSURAI"), a.indexOf("] as const;", a.indexOf("const TSURAI")));
+    const ureshii = a.slice(a.indexOf("const URESHII"), a.indexOf("] as const;", a.indexOf("const URESHII")));
+    expect((tsurai.match(/\{ t: "/g) ?? []).length).toBe(8);
+    expect((ureshii.match(/\{ t: "/g) ?? []).length).toBe(4);
+    for (const s of ["相互投票の摩擦", "応援する側の負担", "凍結への警戒", "燃え尽きへの注意", "限界の声"]) expect(tsurai).toContain(s);
+    const voices = a.slice(a.indexOf('id="map"'), a.indexOf('id="moratta"'));
+    expect(voices).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+    expect(voices).toContain("個別の投稿は、本人を守るために、載せません");
   });
   it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
     expect(a).not.toContain("/feature/ouen");
     expect(a).not.toContain("ミスヘブン");
     expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
   });
-  it("運営者の案内は「運営者より」と明記。気持ちの地図は、個別の投稿・URLを載せない。規約をすり抜ける方法は書かない", () => {
+  it("運営者の案内は「運営者より」と明記し、ゆず係へリンクする。規約をすり抜ける方法は書かない", () => {
     expect(a).toContain("<strong>運営者より</strong>");
     expect(a).toContain("ご本人の了承があるものに限ります");
-    const sec = a.slice(a.indexOf('id="map"'), a.indexOf('id="moratta"'));
     expect(a).toContain("https://yuzu-gakari.vercel.app/");
-    expect(a).toContain("うれしかった声");
-    expect(sec).toContain("個別の投稿は、本人を守るために、載せません");
-    expect(sec).toContain("うれしかった・楽しかった声は、次の節で、別に集めた調査から、まとめています");
-    expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(a).toContain("ルールをすり抜ける方法は、書きません");
   });
   it("結果発表は12月2日（水）12:00。コピーして使う文例と、相談窓口（ホットライン）の案内は載せない", () => {
@@ -331,15 +347,3 @@ describe("特集1：スマホで数字の途中で折り返さない", () => {
     expect(src).toContain('className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}');
   });
 });
-
-describe("特集5：しんどかった声の一覧（うれしかった声と並べる）", () => {
-  const a = readFileSync("app/feature/shuppan/page.tsx", "utf8");
-  it("しんどかった声が、8つの傾向で独立した節にあり、相互投票・応援する側の負担を含む。個別の投稿・URLは載せない", () => {
-    const sec = a.slice(a.indexOf('id="tsurai"'), a.indexOf('id="ureshii"'));
-    for (const s of ["しんどかった声", "相互投票をめぐる摩擦", "応援する側の負担", "凍結・一時停止への警戒", "燃え尽きへの注意", "限界の声"]) expect(sec).toContain(s);
-    expect((sec.match(/<li>/g) ?? []).length).toBe(8);
-    expect(sec).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
-    expect(a.indexOf('id="tsurai"')).toBeLessThan(a.indexOf('id="ureshii"'));
-  });
-});
-
