@@ -300,10 +300,9 @@ describe("特集5：楽しかったなら、勝ち。", () => {
     expect(voices).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(voices).toContain("個別の投稿は、本人を守るために、載せません");
   });
-  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
-    expect(a).not.toContain("/feature/ouen");
+  it("「ミスヘブン」の語を使わない。応援する側の特集（特集6）へ案内している", () => {
     expect(a).not.toContain("ミスヘブン");
-    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
+    expect(a).toContain("/feature/ouen");
   });
   it("運営者の案内は「運営者より」と明記し、ゆず係へリンクする。規約をすり抜ける方法は書かない", () => {
     expect(a).toContain("<strong>運営者より</strong>");
@@ -347,3 +346,33 @@ describe("特集1：スマホで数字の途中で折り返さない", () => {
     expect(src).toContain('className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}');
   });
 });
+
+describe("特集6：応援も、がんばりだった。（応援する側）", () => {
+  const o = readFileSync("app/feature/ouen/page.tsx", "utf8");
+  it("気持ちの地図・しんどかった声・届いていた声・理由・ふりかえり・届く応援・守る応援・つくる応援・締めがある", () => {
+    for (const s of ["応援した7日間、どんな日でしたか", "応援した7日間の、気持ちの地図", "しんどかった声", "推しに、届いていた声", "あなたのせいじゃない、4つの理由", "<SelfCheck", "届く応援のかたち", "守る応援：やらないこと", "つくる応援", "応援も、がんばりだった", "<FeatureTabs current={6} />"]) expect(o).toContain(s);
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/ouen"');
+  });
+  it("応援する側の声が少ないことを明記し、個別の投稿・URLは載せない。文例・ホットラインは載せない", () => {
+    expect(o).toContain("応援する側の声は、調査で見つかった投稿が、出場者より少なく");
+    const voices = o.slice(o.indexOf('id="map"'), o.indexOf('id="shotai"'));
+    expect(voices).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
+    expect(o).not.toMatch(/CopyBlock|ホットライン|ミスヘブン/);
+  });
+  it("票のルールは公式FAQ・ヘブンnaviの内容（1日10回、最大50票、持ち越しなし、称号は人数）。12月2日（水）12:00", () => {
+    for (const s of ["同じキャストへは、1日10回まで", "最大50票", "持ち越せません", "「投票した人の数」で決まります"]) expect(o).toContain(s);
+    expect(o).toContain("12月2日（水）12:00");
+    expect(o).not.toContain("12月3日");
+  });
+  it("「運営者より」と明記し、守る応援・つくる応援の線引き（本人の了承・載せないもの・削除）がある", () => {
+    expect(o).toContain("<strong>運営者より</strong>");
+    for (const s of ["本人の了承を、取る", "載せないものを、決める", "削除の依頼に、すぐ応じる", "詮索しない", "写真を、勝手に使わない"]) expect(o).toContain(s);
+  });
+  it("応援者向けのふりかえりチェックは、うれしい・しんどいの両方を、4つずつ持つ", () => {
+    const g = o.slice(o.indexOf("good={["), o.indexOf("]}", o.indexOf("good={[")));
+    const t = o.slice(o.indexOf("tired={["), o.indexOf("]}", o.indexOf("tired={[")));
+    expect((g.match(/"/g) ?? []).length / 2).toBe(4);
+    expect((t.match(/"/g) ?? []).length / 2).toBe(4);
+  });
+});
+

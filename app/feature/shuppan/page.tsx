@@ -362,6 +362,7 @@ export default function ShuppanPage() {
           <p>ドキドキした日も、疲れた日も、うれしかった日も、ぜんぶ、あなたの7日間。</p>
           <p>どんな結果でも、この期間をやりきった、あなたに。おつかれさまでした。そして、ありがとう。</p>
         </div>
+        <p className="small">応援する側のみなさんへの特集は、<Link href="/feature/ouen">特集6</Link>にあります。</p>
       </section>
 
       <section className="section card prose">
