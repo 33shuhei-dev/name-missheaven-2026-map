@@ -102,6 +102,7 @@ export default function OuenPage() {
         <a href="#tsurai">しんどかった声</a>
         <a href="#todoita">届いた声</a>
         <a href="#shotai">しんどい理由</a>
+        <a href="#sakusen">迷ったとき</a>
         <a href="#check">ふりかえり</a>
         <a href="#kataku">届く応援</a>
         <a href="#mamoru">守る応援</a>
@@ -172,6 +173,34 @@ export default function OuenPage() {
           ))}
         </ol>
         <p className="small">考察です。</p>
+      </section>
+
+      <section className="section card prose" id="sakusen">
+        <h2>推しに全票か、広げるか：迷ったときの考え方<span className="mapmark">考察</span></h2>
+        <p className="keypoint">「人数」と「票数」は、同じ人が、両方に貢献できます。</p>
+        <figure className="curve">
+          <svg viewBox="0 0 360 150" role="img" aria-labelledby="sk-t">
+            <title id="sk-t">あなた1人が推しに全票を入れると、人数は1人ぶん、票数は全票ぶん、どちらも推しに入る、という図。</title>
+            <rect x="10" y="50" width="86" height="48" rx="10" className="curve__dot" opacity="0.15" />
+            <text x="53" y="79" textAnchor="middle" className="curve__mood">あなた</text>
+            <line x1="100" y1="64" x2="180" y2="34" className="curve__axis" />
+            <line x1="100" y1="84" x2="180" y2="114" className="curve__axis" />
+            <rect x="184" y="14" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
+            <text x="267" y="31" textAnchor="middle" className="curve__mood">人数 ＋1人</text>
+            <text x="267" y="46" textAnchor="middle" className="curve__stage">1票でも、数えられる</text>
+            <rect x="184" y="94" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
+            <text x="267" y="111" textAnchor="middle" className="curve__mood">票数 ＋全票</text>
+            <text x="267" y="126" textAnchor="middle" className="curve__stage">入れた分だけ、増える</text>
+          </svg>
+          <figcaption>称号は「投票した人の数」で決まります。何票入れても、1人は1人です。</figcaption>
+        </figure>
+        <p>だから、推しに全票を入れても、推しの人数は減りません。迷いが出るのは、次の場面です。</p>
+        <div className="vgrid">
+          <div className="vcard vcard--ureshii"><b>迷ったら、まず推しに</b><p>人数も、票数も、損をしません。基本の形です。</p></div>
+          <div className="vcard"><b>相互のときは、余った票で</b><p>「入れるから入れて」は、相手の人数は増えますが、推しの票は減ります。余った票の範囲で、気持ちよくできる分だけ。</p></div>
+          <div className="vcard"><b>人数が足りないときは、人を呼ぶ</b><p>人数を増やすのは、あなたの票ではなく、あなたが連れてくる、新しい誰かです。</p></div>
+        </div>
+        <p className="small">考察です。神15などの順位が、票数だけで決まるのかは、公式に確認できていません。本選の投票は11/23に終わっているので、次回に向けた考え方としても、読んでください。</p>
       </section>
 
       <section className="section card prose" id="check">
