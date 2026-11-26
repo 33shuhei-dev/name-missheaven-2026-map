@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FeatureTabs } from "@/components/FeatureTabs";
-import { SelfCheck } from "@/components/SelfCheck";
 
 export const metadata: Metadata = { title: "特集6：応援も、がんばりだった。 応援する側のみなさんへ" };
 
@@ -103,7 +102,6 @@ export default function OuenPage() {
         <a href="#todoita">届いた声</a>
         <a href="#shotai">しんどい理由</a>
         <a href="#sakusen">迷ったとき</a>
-        <a href="#check">ふりかえり</a>
         <a href="#kataku">届く応援</a>
         <a href="#mamoru">守る応援</a>
         <a href="#tsukuru">つくる応援</a>
@@ -201,25 +199,6 @@ export default function OuenPage() {
           <div className="vcard"><b>人数が足りないときは、人を呼ぶ</b><p>人数を増やすのは、あなたの票ではなく、あなたが連れてくる、新しい誰かです。</p></div>
         </div>
         <p className="small">考察です。神15などの順位が、票数だけで決まるのかは、公式に確認できていません。本選の投票は11/23に終わっているので、次回に向けた考え方としても、読んでください。</p>
-      </section>
-
-      <section className="section card prose" id="check">
-        <h2>応援した7日間の、ふりかえりチェック</h2>
-        <p className="keypoint">うれしかったことも、しんどかったことも、どちらも、あっていいんです。</p>
-        <SelfCheck
-          good={[
-            "推しの数字が増えて、自分のことのように、うれしかった",
-            "「ありがとう」を言われて、報われた気がした",
-            "同じ推しの仲間と、盛り上がれた",
-            "応援していて、楽しいと思えた瞬間があった",
-          ]}
-          tired={[
-            "票の配分に迷って、疲れた",
-            "推しの様子を、何度も見に行ってしまった",
-            "自分の応援が、足りているか、不安になった",
-            "眠れない、食欲がないなど、体にも影響が出た",
-          ]}
-        />
       </section>
 
       <section className="section card prose" id="kataku">

@@ -350,7 +350,7 @@ describe("特集1：スマホで数字の途中で折り返さない", () => {
 describe("特集6：応援も、がんばりだった。（応援する側）", () => {
   const o = readFileSync("app/feature/ouen/page.tsx", "utf8");
   it("気持ちの地図・しんどかった声・届いていた声・理由・ふりかえり・届く応援・守る応援・つくる応援・締めがある", () => {
-    for (const s of ["応援した7日間、どんな日でしたか", "応援した7日間の、気持ちの地図", "しんどかった声", "推しに、届いていた声", "あなたのせいじゃない、4つの理由", "<SelfCheck", "推しに全票か、広げるか", "「人数」と「票数」は、同じ人が、両方に貢献できます", "届く応援のかたち", "守る応援：やらないこと", "つくる応援", "応援も、がんばりだった", "<FeatureTabs current={6} />"]) expect(o).toContain(s);
+    for (const s of ["応援した7日間、どんな日でしたか", "応援した7日間の、気持ちの地図", "しんどかった声", "推しに、届いていた声", "あなたのせいじゃない、4つの理由", "推しに全票か、広げるか", "「人数」と「票数」は、同じ人が、両方に貢献できます", "届く応援のかたち", "守る応援：やらないこと", "つくる応援", "応援も、がんばりだった", "<FeatureTabs current={6} />"]) expect(o).toContain(s);
     expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/ouen"');
   });
   it("応援する側の声が少ないことを明記し、個別の投稿・URLは載せない。文例・ホットラインは載せない", () => {
@@ -367,12 +367,6 @@ describe("特集6：応援も、がんばりだった。（応援する側）", 
   it("「運営者より」と明記し、守る応援・つくる応援の線引き（本人の了承・載せないもの・削除）がある", () => {
     expect(o).toContain("<strong>運営者より</strong>");
     for (const s of ["本人の了承を、取る", "載せないものを、決める", "削除の依頼に、すぐ応じる", "詮索しない", "写真を、勝手に使わない"]) expect(o).toContain(s);
-  });
-  it("応援者向けのふりかえりチェックは、うれしい・しんどいの両方を、4つずつ持つ", () => {
-    const g = o.slice(o.indexOf("good={["), o.indexOf("]}", o.indexOf("good={[")));
-    const t = o.slice(o.indexOf("tired={["), o.indexOf("]}", o.indexOf("tired={[")));
-    expect((g.match(/"/g) ?? []).length / 2).toBe(4);
-    expect((t.match(/"/g) ?? []).length / 2).toBe(4);
   });
 });
 
