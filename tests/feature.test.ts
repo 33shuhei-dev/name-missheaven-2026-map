@@ -300,10 +300,9 @@ describe("特集5：楽しかったなら、勝ち。", () => {
     expect(voices).not.toMatch(/x\.com\/|twitter\.com\/|status\//);
     expect(voices).toContain("個別の投稿は、本人を守るために、載せません");
   });
-  it("特集6へのリンクを持たない（未公開のため）。「ミスヘブン」の語を使わない", () => {
-    expect(a).not.toContain("/feature/ouen");
+  it("「ミスヘブン」の語を使わない。応援する側の特集（特集6）へ案内している", () => {
     expect(a).not.toContain("ミスヘブン");
-    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).not.toContain("/feature/ouen");
+    expect(a).toContain("/feature/ouen");
   });
   it("運営者の案内は「運営者より」と明記し、ゆず係へリンクする。規約をすり抜ける方法は書かない", () => {
     expect(a).toContain("<strong>運営者より</strong>");
@@ -345,5 +344,28 @@ describe("特集1：スマホで数字の途中で折り返さない", () => {
     const src = readFileSync("app/feature/page.tsx", "utf8");
     expect(src).toContain("const NUMERIC =");
     expect(src).toContain('className={NUMERIC.test(c.trim()) ? "nowrap" : undefined}');
+  });
+});
+
+describe("特集6：応援も、がんばりだった。（応援する側）", () => {
+  const o = readFileSync("app/feature/ouen/page.tsx", "utf8");
+  it("気持ちの地図・決めること5つ・声・理由・締めがある。ふりかえりチェックは置かない", () => {
+    for (const s of ["応援した7日間、どんな日でしたか", "応援した7日間の、気持ちの地図", "応援者が決めること、5つ", "① 票の配分", "② 入れるタイミング", "③ 倍率", "④ 相互活動", "⑤ 推しとの、すり合わせ", "答えは、推しの子次第", "しんどかった声", "推しに、届いていた声", "あなたのせいじゃない、4つの理由", "応援も、がんばりだった", "<FeatureTabs current={6} />"]) expect(o).toContain(s);
+    expect(o).not.toContain("SelfCheck");
+    expect(readFileSync("components/FeatureTabs.tsx", "utf8")).toContain('href: "/feature/ouen"');
+  });
+  it("応援する側の声が少ないことを明記し、個別の投稿・URLは載せない。文例・ホットラインは載せない", () => {
+    expect(o).toContain("応援する側の声は、調査で見つかった投稿が、出場者より少なく");
+    expect(o).not.toMatch(/x\.com\/(?!rego0701)|twitter\.com\/|status\//);
+    expect(o).not.toMatch(/CopyBlock|ホットライン|ミスヘブン/);
+  });
+  it("票のルールは公式の内容（1日10回、持ち越しなし、称号は人数）。12月2日（水）12:00。順位への効き方は断定しない", () => {
+    for (const s of ["1日10回まで", "最短で5日", "持ち越せません", "「投票した人の数」で決まります", "確認できていません"]) expect(o).toContain(s);
+    expect(o).toContain("12月2日（水）12:00");
+    expect(o).not.toContain("12月3日");
+  });
+  it("「運営者より」と明記し、線引き（了承・削除・詮索しない）がある", () => {
+    expect(o).toContain("<strong>運営者より</strong>");
+    for (const s of ["本人の了承を取る", "削除の依頼には、すぐ応じる", "詮索しない"]) expect(o).toContain(s);
   });
 });

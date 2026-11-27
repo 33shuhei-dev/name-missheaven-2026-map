@@ -2,14 +2,14 @@
 
 import { useState } from "react";
 
-const GOOD = [
+const GOOD_DEFAULT = [
   "数字が増えて、うれしかった日があった",
   "「ありがとう」を、言ったり、言われたりした",
   "応援してくれる人の存在に、助けられた",
   "楽しいと思えた瞬間があった",
 ] as const;
 
-const TIRED = [
+const TIRED_DEFAULT = [
   "進捗バーを、何度も開いてしまった",
   "お願いの文を、書いては消した",
   "休むのが、怖かった",
@@ -17,7 +17,9 @@ const TIRED = [
 ] as const;
 
 /** 7日間のふりかえりチェック。診断ではない。答えは、この画面の中だけで使い、どこにも送らない・保存しない */
-export function SelfCheck() {
+export function SelfCheck({ good: goodItems, tired: tiredItems }: { good?: readonly string[]; tired?: readonly string[] } = {}) {
+  const GOOD = goodItems ?? GOOD_DEFAULT;
+  const TIRED = tiredItems ?? TIRED_DEFAULT;
   const [good, setGood] = useState<boolean[]>(() => GOOD.map(() => false));
   const [tired, setTired] = useState<boolean[]>(() => TIRED.map(() => false));
   const g = good.filter(Boolean).length;

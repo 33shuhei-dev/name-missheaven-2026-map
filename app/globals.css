@@ -2955,3 +2955,4 @@ input::placeholder { color:#a99aaf; }
 .dates div { padding: 10px 14px; border-radius: 12px; background: var(--navy-weak); }
 .dates b { display: block; }
 .dates span { font-size: .88rem; color: var(--muted); }
+.keypoint--soft { background: var(--navy-weak); border-left-color: #e0a63a; font-size: 1rem; }
