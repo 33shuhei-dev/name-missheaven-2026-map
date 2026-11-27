@@ -98,13 +98,10 @@ export default function OuenPage() {
 
       <nav className="jump" aria-label="この特集の目次">
         <a href="#map">気持ちの地図</a>
+        <a href="#kimeru">決めること5つ</a>
         <a href="#tsurai">しんどかった声</a>
         <a href="#todoita">届いた声</a>
         <a href="#shotai">しんどい理由</a>
-        <a href="#sakusen">迷ったとき</a>
-        <a href="#kataku">届く応援</a>
-        <a href="#mamoru">守る応援</a>
-        <a href="#tsukuru">つくる応援</a>
       </nav>
 
       <section className="section card prose" id="map">
@@ -127,6 +124,76 @@ export default function OuenPage() {
           <figcaption>投稿の傾向と、考察をもとにした、イメージの図です。数値ではありません。</figcaption>
         </figure>
         <p className="small">応援する側の声は、調査で見つかった投稿が、出場者より少なく、傾向は、目安です。個別の投稿は、本人を守るために、載せません。</p>
+      </section>
+
+      <section className="section card prose" id="kimeru">
+        <h2>応援者が決めること、5つ<span className="mapmark">考察</span></h2>
+        <p className="keypoint">票の使い方に、正解はありません。迷うポイントと、考える順番を、整理します。</p>
+        <ol className="reasons">
+          <li><b>① 票の配分</b><p>推しに全票か、広げるか。</p></li>
+          <li><b>② 入れるタイミング</b><p>毎日少しずつか、まとめてか。</p></li>
+          <li><b>③ 倍率</b><p>ネット予約を、どう考えるか。</p></li>
+          <li><b>④ 相互活動</b><p>やるか、やらないか。</p></li>
+          <li><b>⑤ 推しとの、すり合わせ</b><p>ここは、推しの子次第。</p></li>
+        </ol>
+        <p className="small">考察です。数字や制度は、公式の案内を確認してください。</p>
+
+        <h3 id="d1">① 票の配分：推しに全票か、広げるか</h3>
+        <p className="keypoint">「人数」と「票数」は、同じ人が、両方に貢献できます。</p>
+        <figure className="curve">
+          <svg viewBox="0 0 360 150" role="img" aria-labelledby="sk-t">
+            <title id="sk-t">あなた1人が推しに全票を入れると、人数は1人ぶん、票数は全票ぶん、どちらも推しに入る、という図。</title>
+            <rect x="10" y="50" width="86" height="48" rx="10" className="curve__dot" opacity="0.15" />
+            <text x="53" y="79" textAnchor="middle" className="curve__mood">あなた</text>
+            <line x1="100" y1="64" x2="180" y2="34" className="curve__axis" />
+            <line x1="100" y1="84" x2="180" y2="114" className="curve__axis" />
+            <rect x="184" y="14" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
+            <text x="267" y="31" textAnchor="middle" className="curve__mood">人数 ＋1人</text>
+            <text x="267" y="46" textAnchor="middle" className="curve__stage">1票でも、数えられる</text>
+            <rect x="184" y="94" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
+            <text x="267" y="111" textAnchor="middle" className="curve__mood">票数 ＋全票</text>
+            <text x="267" y="126" textAnchor="middle" className="curve__stage">入れた分だけ、増える</text>
+          </svg>
+          <figcaption>称号は「投票した人の数」で決まります。何票入れても、1人は1人です。</figcaption>
+        </figure>
+        <p>だから、推しに全票を入れても、推しの人数は減りません。人数を増やすのは、あなたの票ではなく、あなたが連れてくる、新しい誰かです。</p>
+        <p className="small">神15などの順位が、票数だけで決まるのかは、公式に確認できていません。</p>
+
+        <h3 id="d2">② 入れるタイミング：毎日か、まとめてか</h3>
+        <p className="keypoint">同じキャストへは、1日10回まで。50票を使い切るには、最短で5日かかります。</p>
+        <div className="vgrid">
+          <div className="vcard vcard--ureshii"><b>毎日、少しずつ</b><p>推しの進み具合が、毎日動きます。応援している実感も続きます。最終日の時間切れも、避けられます。</p></div>
+          <div className="vcard"><b>まとめて、一気に</b><p>1日10回の上限があるので、1日では入れきれません。後ろに寄せるほど、使い切れないおそれが出ます。</p></div>
+        </div>
+        <p className="small">本選は 11/17〜11/23（<a href={FAQ_START} target="_blank" rel="noopener noreferrer nofollow ugc">公式FAQ</a>）。使わなかった票は、持ち越せません（<a href={NAVI} target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnavi</a>）。順位への効き方は、見立てで、確認できていません。</p>
+
+        <h3 id="d3">③ 倍率：ネット予約を、どう考えるか</h3>
+        <p className="keypoint">倍率は、「投票先のキャストを、ネット予約で実際に利用した」人にだけ付きます。</p>
+        <div className="vgrid">
+          <div className="vcard"><b>倍率がない人も、たくさんいる</b><p>電話予約・姫予約は、対象外です。倍率がなくても、あなたの票は、ちゃんと届いています。</p></div>
+          <div className="vcard"><b>無理に、利用しなくていい</b><p>票のために、お金や時間を、無理に使わない。続けられる範囲で。</p></div>
+          <div className="vcard"><b>条件は、守る</b><p>条件を満たさない形の呼びかけは、投票が無効になるおそれがあります。公式の案内どおりに。</p></div>
+        </div>
+        <p className="small">倍率は、重複せず、いちばん高いものだけが適用されます。詳しくは<Link href="/feature">特集1</Link>にまとめています。</p>
+
+        <h3 id="d4">④ 相互活動：やるか、やらないか</h3>
+        <p className="keypoint">相互は、自分の票を、相手に回すことです。推しに入れる票は、その分、減ります。</p>
+        <div className="vgrid">
+          <div className="vcard"><b>やる場合</b><p>推しに入れたあとの、余った票の範囲で。「返さなきゃ」にならない形で。</p></div>
+          <div className="vcard"><b>やらない場合</b><p>それも、ひとつの応援です。断っても、関係が壊れない言い方を、考えます。</p></div>
+          <div className="vcard vcard--tsurai"><b>しんどくなるとき</b><p>頼み合いが、義務になったとき。「入れたのに、返ってこない」と感じたとき。</p></div>
+        </div>
+        <p className="small">相互への違和感や不満の声は、実際の投稿にも見られました（このあとの節）。</p>
+
+        <h3 id="d5">⑤ 推しとの、すり合わせ：答えは、推しの子次第</h3>
+        <p className="keypoint">数字を見たいか、拡散してほしいか。これは、推しの子によって、ちがいます。</p>
+        <div className="vgrid">
+          <div className="vcard"><b>数字は、共有してほしい？</b><p>励みになる子もいれば、見たくない子もいます。</p></div>
+          <div className="vcard"><b>拡散は、していい？</b><p>広めてほしい子もいれば、静かに応援してほしい子もいます。</p></div>
+          <div className="vcard"><b>お願いは、どのくらい？</b><p>しつこくなっていないか。「お願い疲れ」は、出場者側にもあります。</p></div>
+          <div className="vcard"><b>結果のあとは？</b><p>おつかれさまを、すぐ伝えたいか。少し休ませたいか。</p></div>
+        </div>
+        <p className="keypoint keypoint--soft">迷ったら、推しの子に、聞いてみる。それが、いちばん確かです。</p>
       </section>
 
       <section className="section card prose" id="tsurai">
@@ -173,86 +240,6 @@ export default function OuenPage() {
         <p className="small">考察です。</p>
       </section>
 
-      <section className="section card prose" id="sakusen">
-        <h2>推しに全票か、広げるか：迷ったときの考え方<span className="mapmark">考察</span></h2>
-        <p className="keypoint">「人数」と「票数」は、同じ人が、両方に貢献できます。</p>
-        <figure className="curve">
-          <svg viewBox="0 0 360 150" role="img" aria-labelledby="sk-t">
-            <title id="sk-t">あなた1人が推しに全票を入れると、人数は1人ぶん、票数は全票ぶん、どちらも推しに入る、という図。</title>
-            <rect x="10" y="50" width="86" height="48" rx="10" className="curve__dot" opacity="0.15" />
-            <text x="53" y="79" textAnchor="middle" className="curve__mood">あなた</text>
-            <line x1="100" y1="64" x2="180" y2="34" className="curve__axis" />
-            <line x1="100" y1="84" x2="180" y2="114" className="curve__axis" />
-            <rect x="184" y="14" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
-            <text x="267" y="31" textAnchor="middle" className="curve__mood">人数 ＋1人</text>
-            <text x="267" y="46" textAnchor="middle" className="curve__stage">1票でも、数えられる</text>
-            <rect x="184" y="94" width="166" height="40" rx="8" className="curve__dot" opacity="0.15" />
-            <text x="267" y="111" textAnchor="middle" className="curve__mood">票数 ＋全票</text>
-            <text x="267" y="126" textAnchor="middle" className="curve__stage">入れた分だけ、増える</text>
-          </svg>
-          <figcaption>称号は「投票した人の数」で決まります。何票入れても、1人は1人です。</figcaption>
-        </figure>
-        <p>だから、推しに全票を入れても、推しの人数は減りません。迷いが出るのは、次の場面です。</p>
-        <div className="vgrid">
-          <div className="vcard vcard--ureshii"><b>迷ったら、まず推しに</b><p>人数も、票数も、損をしません。基本の形です。</p></div>
-          <div className="vcard"><b>相互のときは、余った票で</b><p>「入れるから入れて」は、相手の人数は増えますが、推しの票は減ります。余った票の範囲で、気持ちよくできる分だけ。</p></div>
-          <div className="vcard"><b>人数が足りないときは、人を呼ぶ</b><p>人数を増やすのは、あなたの票ではなく、あなたが連れてくる、新しい誰かです。</p></div>
-        </div>
-        <p className="small">考察です。神15などの順位が、票数だけで決まるのかは、公式に確認できていません。本選の投票は11/23に終わっているので、次回に向けた考え方としても、読んでください。</p>
-      </section>
-
-      <section className="section card prose" id="kataku">
-        <h2>届く応援のかたち</h2>
-        <p className="keypoint">推しが「心強かった」と言った応援は、特別なことでは、ありませんでした。</p>
-        <div className="vgrid">
-          <div className="vcard vcard--ureshii"><b>短くても、ひとこと</b><p>長い文章より、「今日も、おつかれさま」のような、ひとことが、負担にならず、続きます。</p></div>
-          <div className="vcard vcard--ureshii"><b>数字が動かない日にも</b><p>増えない日に、変わらず、そばにいてくれることが、いちばんの励みになる、と考えられます。</p></div>
-          <div className="vcard vcard--ureshii"><b>手順を、正しく伝える</b><p>投票の手順や期間を、迷わない形で、伝えます。</p></div>
-          <div className="vcard vcard--ureshii"><b>結果のあとの、ねぎらい</b><p>順位に関係なく、やりきったことに、声をかけます。</p></div>
-        </div>
-        <div className="keypoint keypoint--soft">
-          <p style={{ margin: 0 }}>50票の使い方に、正解は、ありません。1人に集めても、分けても、自由です（同じ人へは、1日10回まで）。自分が、無理なく続けられる形で。</p>
-        </div>
-        <details className="fold">
-          <summary>票のルールの要点</summary>
-          <ul>
-            <li>同じキャストへは、1日10回まで。本選は、11/17〜11/23（<a href={FAQ_START} target="_blank" rel="noopener noreferrer nofollow ugc">公式FAQ</a>）。</li>
-            <li>1人のキャストに入れられるのは、最大50票。予選の使わなかったチケットは、本選に持ち越せません（<a href={NAVI} target="_blank" rel="noopener noreferrer nofollow ugc">ヘブンnavi</a>）。</li>
-            <li>称号（ブロック代表・日本代表）は、票の数ではなく、「投票した人の数」で決まります。同じ人が、何票入れても、人数としては、1人です。</li>
-            <li>票の倍率には、条件があります。詳しくは、公式の案内で確認してください（<Link href="/feature">特集1</Link>にも、まとめています）。</li>
-            <li>公式の仕組みに沿わない方法で、票を増やそうとする呼びかけは、投票が無効になるおそれがあります。</li>
-          </ul>
-        </details>
-      </section>
-
-      <section className="section card prose" id="mamoru">
-        <h2>守る応援：やらないこと</h2>
-        <p className="keypoint">応援は、本人のため。本人を、守る応援が、いちばん、長く続きます。</p>
-        <div className="vgrid">
-          {MAMORU.map((v) => (
-            <div key={v.t} className="vcard">
-              <b>{v.t}</b>
-              <p>{v.d}</p>
-            </div>
-          ))}
-        </div>
-        <p>相互投票は、頼んだ側も、頼まれた側も、返せなかった、返してもらえなかったことで、関係を壊さないようにします。投票は、自分の意思で、見返りを求めずに。</p>
-      </section>
-
-      <section className="section card prose" id="tsukuru">
-        <h2>つくる応援：応援サイトや企画を作るときの線引き</h2>
-        <p className="keypoint">サイトやゲーム、ポスターで盛り上げる人たちも、いました。作るなら、この5つを。</p>
-        <div className="vgrid">
-          {TSUKURU.map((v) => (
-            <div key={v.t} className="vcard vcard--ureshii">
-              <b>{v.t}</b>
-              <p>{v.d}</p>
-            </div>
-          ))}
-        </div>
-        <p className="small">このサイトの「<Link href="/game">無限投票</Link>」も、「本物の投票ではない」と、明記しています。</p>
-      </section>
-
       <section className="section card prose" id="owari">
         <h2>応援も、がんばりだった</h2>
         <div className="letter">
@@ -261,6 +248,23 @@ export default function OuenPage() {
           <p>うれしかった日は、思いきり、喜んでください。しんどかった日は、ゆっくり、休んでください。</p>
           <p>応援してくれて、ありがとう。おつかれさまでした。</p>
         </div>
+        <details className="fold">
+          <summary>応援のときの線引き（守ること・つくるとき）</summary>
+          <p><b>守ること</b></p>
+          <ul>
+            <li>詮索しない（本名・年齢・住んでいる場所・私生活）。</li>
+            <li>写真や動画を、了承なく、転載しない。</li>
+            <li>身元につながる広め方をしない。</li>
+            <li>ほかの出場者を、攻撃しない。</li>
+            <li>DMなどで、返信や、会うことを、しつこく求めない。</li>
+          </ul>
+          <p><b>応援サイトなどを、つくるとき</b></p>
+          <ul>
+            <li>本人の了承を取る。載せないもの（顔写真・年齢・身体・店名・所在地・私生活）を決める。</li>
+            <li>削除の依頼には、すぐ応じる。非公式と明記する。</li>
+            <li>投票に見える機能は、「本物の投票ではない」と明記する。このサイトの<Link href="/game">無限投票</Link>も、そうしています。</li>
+          </ul>
+        </details>
         <p className="small">出場者のみなさんへの特集は、<Link href="/feature/shuppan">特集5</Link>にあります。</p>
       </section>
 
